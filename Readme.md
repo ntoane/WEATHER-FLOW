@@ -11,6 +11,12 @@
 | ----------- | ----------- |
 | A/Prof Deshendran Moodley | Computer Science       |
 
+# NM to Note :
+
+For future usages, make sure that you install corrrect protobuff version <=3.20
+
+pip3 install protobuf==3.20.0
+
 # Requirements
 
 python3

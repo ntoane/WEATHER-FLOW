@@ -19,7 +19,7 @@ def train(stations, increment):
     """
 
     physical_devices = tf.config.list_physical_devices('GPU')
-    tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
+    #tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 
     forecasting_horizons = [3, 6, 9, 12, 24]
 
