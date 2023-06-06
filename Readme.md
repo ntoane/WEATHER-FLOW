@@ -5,7 +5,10 @@
 
 | Member     | Student Number |
 | ----------- | ----------- |
-| Mikhail Davidson      | DVDMOH003       |
+| Adeeb Gaibie     | GBXADE002      |
+| Dennis Hammerschlag     | HMMDEN001      |
+| Hamza Amir     | AMRHAM001      |
+
 
 | Staff Member     | Department |
 | ----------- | ----------- |
