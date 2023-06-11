@@ -1,47 +1,32 @@
 import argparse
-import HPO.sarimaHPO as sarimaHPO
-import HPO.lstmHPO as lstmHPO
 import HPO.tcnHPO as tcnHPO
 import HPO.gwnHPO as gwnHPO
-import HPO.wgnHPO as wgnHPO
 
-import Train.sarimaTrain as sarimaTrain
-import Train.lstmTrain as lstmTrain
 import Train.tcnTrain as tcnTrain
 import Train.gwnTrain as gwnTrain
-import Train.wgnTrain as wgnTrain
-
-import Evaluation.sarimaEval as sarimaEval
 import Evaluation.baselineEval as baselineEval
 import Evaluation.gwnEval as gwnEval
-import Evaluation.wgnEval as wgnEval
 
 parser = argparse.ArgumentParser()
 
 # Random Search HPO arguments
 parser.add_argument('--num_configs', type=int, default=30, help='number of random configurations to search through')
-parser.add_argument('--tune_lstm', type=bool, help='whether to perform random search HPO on LSTM models')
-parser.add_argument('--tune_sarima', type=bool, help='whether to perform random search HPO on SARIMA models')
 parser.add_argument('--tune_tcn', type=bool, help='whether to perform random search HPO on TCN models')
 parser.add_argument('--tune_gwn', type=bool, help='whether to perform random search HPO on GWN model')
-parser.add_argument('--tune_wgn', type=bool, help='whether to perform random search HPO on WGN model')
+
 
 # Train final baseline and GNN model arguments
-parser.add_argument('--train_sarima', type=bool, help='whether to train final sarima models')
-parser.add_argument('--train_lstm', type=bool, help='whether to train final LSTM models')
 parser.add_argument('--train_tcn', type=bool, help='whether to train final TCN models')
 parser.add_argument('--train_gwn', type=bool, help='whether to train final GWN model')
-parser.add_argument('--train_wgn', type=bool, help='whether to train final WGN model')
+
 
 # Calculate metrics of final models' results arguments
-parser.add_argument('--eval_sarima', type=bool, help='whether to report final sarima metrics')
-parser.add_argument('--eval_lstm', type=bool, help='whether to report final lstm metrics')
 parser.add_argument('--eval_tcn', type=bool, help='whether to report final tcn metrics')
 parser.add_argument('--eval_gwn', type=bool, help='whether to report final gwn metrics')
-parser.add_argument('--eval_wgn', type=bool, help='whether to report final wgn metrics')
 
 parser.add_argument('--n_stations', type=int, default=21, help='number of weather stations')
 parser.add_argument('--n_split', type=int, default=27, help='number of splits in walk-forward validation')
+
 
 # Graph WaveNet arguments, default arguments are optimal hyper-parameters
 parser.add_argument('--device', type=str, default='cpu', help='device to place model on')  #changed this to "cpu" from "cuda"
@@ -115,14 +100,7 @@ if __name__ == '__main__':
                      39432, 41640, 43848, 46008, 48192, 50400, 52608,
                      54768, 56952, 59160, 61368, 63528, 65712, 67920, 70128 - args.forecast]
 
-    # Random search SARIMA
-    if args.tune_sarima:
-        sarimaHPO.hpo(stations, increment, args.num_configs)
-
-    # Random search LSTM
-    if args.tune_lstm:
-        lstmHPO.hpo(stations, increment, args)
-
+######### Random Search ##############
     # Random search TCN
     if args.tune_tcn:
         tcnHPO.hpo(stations, increment, args)
@@ -131,18 +109,8 @@ if __name__ == '__main__':
     if args.tune_gwn:
         gwnHPO.hpo(increment, args)
 
-    # Random search GWN
-    if args.tune_wgn:
-        wgnHPO.hpo(increment, args)
-
-    # Train final SARIMA models
-    if args.train_sarima:
-        sarimaTrain.train(stations, increment)
-
-    # Train final LSTM models
-    if args.train_lstm:
-        lstmTrain.train(stations, increment)
-
+ 
+############ Training ###############
     # Train final TCN models
     if args.train_tcn:
         tcnTrain.train(stations, increment)
@@ -151,18 +119,8 @@ if __name__ == '__main__':
     if args.train_gwn:
         gwnTrain.train(increment, args)
 
-    # Train final WGN models
-    if args.train_wgn:
-        wgnTrain.train(wgn_increment, args)
-
-    # Record metrics for final SARIMA models
-    if args.eval_sarima:
-        sarimaEval.eval(stations, increment)
-
-    # Record metrics for final LSTM models
-    if args.eval_lstm:
-        baselineEval.eval(stations, 'LSTM')
-
+    
+############ Recordings ##############
     # Record metrics for final TCN models
     if args.eval_tcn:
         baselineEval.eval(stations, 'TCN')
@@ -171,7 +129,5 @@ if __name__ == '__main__':
     if args.eval_gwn:
         gwnEval.eval(stations, args)
 
-    # Record metrics for final WGN models
-    if args.eval_wgn:
-        wgnEval.eval(stations, args)
+
 
