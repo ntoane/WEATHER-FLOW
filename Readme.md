@@ -1,4 +1,4 @@
-# Weather-DL 
+# Weather-Flow
 
 *Deep Learning pipeline for weather prediction using temporal and spatio-temporal deep learning models.* 
 
@@ -14,27 +14,31 @@
 | ----------- | ----------- |
 | A/Prof Deshendran Moodley | Computer Science       |
 
-# NM to Note :
-
-For future usages, make sure that you install corrrect protobuff version <=3.20
-
-pip3 install protobuf==3.20.0
 
 # Requirements
 
 python3
 (3.8.10 is working)
 
-See `requirements.txt`
+See `requirements_all.txt`
 
 
 # Installation
 
-`virtualenv -p /usr/bin/python3.8 venv`
+* First create a new virtual environment by running the following command:
+python3.8 -m venv myenv
 
-`source venv/bin/activate`
+* Activate the virtual environment. 
+* The activation command varies depending on your operating system:
 
-`pip3 install -r requirements.txt`
+* On Windows
+myenv\Scripts\activate
+
+* On Linux or Mac OS X
+source myenv/bin/activate
+
+* Install all necerssary dependencies and modules in requirements_all.txt
+pip3 install -r requirements_all.txt
 
 
 # Experiments
@@ -42,57 +46,26 @@ See `requirements.txt`
 ## Random-Search Hyper-Parameter Optimisation(HPO)
 
 Baseline HPO across 21 weather stations on 24 hour forecasting horizon:
+python3 main.py --tune_tcn=True
 
-`python3 main.py --tune_sarima=True`
-
-`python3 main.py --tune_lstm=True`
-
-`python3 main.py --tune_tcn=True`
-
-WGN GNN HPO on 24 hour forecasting horizon:
-
-`python3 main.py --tune_wgn=True`
 
 GWN GNN HPO on 24 hour forecasting horizon:
-
-`python3 main.py --tune_gwn=True`
+python3 main.py --tune_gwn=True
 
 
 ## Training Models Using Optimal Hyper-Parameters
 
 Baseline HPO across 21 weather stations on [3, 6, 9, 12, 24] hour forecasting horizon:
-
-`python3 main.py --train_sarima=True`
-
-`python3 main.py --train_lstm=True`
-
-`python3 main.py --train_tcn=True`
-
-WGN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon:
-
-`python3 main.py --train_wgn=True`
+python3 main.py --train_tcn=True
 
 GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon:
-
-`python3 main.py --train_gwn=True`
+python3 main.py --train_gwn=True
 
 
 ## Evaluate Models' Performance(MSE, RMSE, MAE, SMAPE)
 
-
- Evaluation across 21 weather stations on [3, 6, 9, 12, 24] hour forecasting horizon:
-
-`python3 main.py --eval_sarima=True`
-
-`python3 main.py --eval_lstm=True`
-
-`python3 main.py --eval_tcn=True`
-
-
-WGN GNN evaluation on [3, 6, 9, 12, 24] hour forecasting horizon on each of the 21 weather stations:
-
-`python3 main.py --eval_wgn=True`
+Evaluation across 21 weather stations on [3, 6, 9, 12, 24] hour forecasting horizon:
+python3 main.py --eval_tcn=True
 
 GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon on each of the 21 weather stations:
-
-`python3 main.py --eval_gwn=True`
+python3 main.py --eval_gwn=True
