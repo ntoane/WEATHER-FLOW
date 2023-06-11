@@ -23,6 +23,7 @@ pip3 install protobuf==3.20.0
 # Requirements
 
 python3
+(3.8.10 is working)
 
 See `requirements.txt`
 

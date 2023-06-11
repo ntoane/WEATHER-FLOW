@@ -22,8 +22,8 @@ def train(stations, increment):
         increment - Walk-forward validation split points.
     """
 
-    physical_devices = tf.config.list_physical_devices('GPU')
-    tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
+    # physical_devices = tf.config.list_physical_devices('CPU') #CPU
+    # tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 
     forecasting_horizons = [3, 6, 9, 12, 24]
 
