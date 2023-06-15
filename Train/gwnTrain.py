@@ -122,8 +122,9 @@ def train(increment, args):
 
     for forecast_len in forecast_horizons:
         args.seq_length = forecast_len
-        print('Training WGN models through walk-forward validation on a forecasting horizon of: ', args.seq_length)
-
+        #print('Training WGN models through walk-forward validation on a forecasting horizon of: ', args.seq_length)
+        print('Training GWN models through walk-forward validation on a forecasting horizon of: ', args.seq_length)
+        
         for k in range(args.n_split):
             fileDictionary = {'predFile': 'Results/GWN/' + str(forecast_len) + ' Hour Forecast/Predictions/outputs_' +
                                           str(k) + '.pkl',
