@@ -5,7 +5,7 @@ import HPO.gwnHPO as gwnHPO
 import Train.tcnTrain as tcnTrain
 import Train.gwnTrain as gwnTrain
 import Evaluation.baselineEval as baselineEval
-import Evaluation.gwnEval as gwnEval
+
 
 parser = argparse.ArgumentParser()
 
@@ -123,11 +123,11 @@ if __name__ == '__main__':
 ############ Recordings ##############
     # Record metrics for final TCN models
     if args.eval_tcn:
-        baselineEval.eval(stations, 'TCN')
+        baselineEval.TcnEval(stations, 'TCN')
 
     # Record metrics for final GWN models
     if args.eval_gwn:
-        gwnEval.eval(stations, args)
+        baselineEval.GwnEval(stations, args)
 
 
 
