@@ -1,19 +1,16 @@
 # Weather-Flow
 
-*Deep Learning pipeline for weather prediction using temporal and spatio-temporal deep learning models.* 
+*Deep Learning pipeline for weather prediction using temporal and spatio-temporal deep learning models.*
 
+| Member              | Student Number |
+| ------------------- | -------------- |
+| Adeeb Gaibie        | GBXADE002      |
+| Dennis Hammerschlag | HMMDEN001      |
+| Hamza Amir          | AMRHAM001      |
 
-| Member     | Student Number |
-| ----------- | ----------- |
-| Adeeb Gaibie     | GBXADE002      |
-| Dennis Hammerschlag     | HMMDEN001      |
-| Hamza Amir     | AMRHAM001      |
-
-
-| Staff Member     | Department |
-| ----------- | ----------- |
-| A/Prof Deshendran Moodley | Computer Science       |
-
+| Staff Member              | Department       |
+| ------------------------- | ---------------- |
+| A/Prof Deshendran Moodley | Computer Science |
 
 # Requirements
 
@@ -22,16 +19,14 @@ python3
 
 See `requirements_all.txt`
 
-
 # Installation
 
 * First create a new virtual environment by running the following command:
 
 'python3.8 -m venv myenv'
 
-* Activate the virtual environment. 
+* Activate the virtual environment.
 * The activation command varies depending on your operating system:
-
 * On Windows
 
 'myenv\Scripts\activate'
@@ -44,7 +39,6 @@ See `requirements_all.txt`
 
 'pip3 install -r requirements_all.txt'
 
-
 # Experiments
 
 ## Random-Search Hyper-Parameter Optimisation(HPO)
@@ -53,11 +47,9 @@ Baseline HPO across 21 weather stations on 24 hour forecasting horizon:
 
 'python3 main.py --tune_tcn=True'
 
-
 GWN GNN HPO on 24 hour forecasting horizon:
 
 'python3 main.py --tune_gwn=True'
-
 
 ## Training Models Using Optimal Hyper-Parameters
 
@@ -68,7 +60,6 @@ Baseline HPO across 21 weather stations on [3, 6, 9, 12, 24] hour forecasting ho
 GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon:
 
 'python3 main.py --train_gwn=True'
-
 
 ## Evaluate Models' Performance(MSE, RMSE, MAE, SMAPE)
 
