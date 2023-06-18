@@ -1,4 +1,7 @@
 import argparse
+import logging
+import Evaluation.modelLogger as modelLogger
+
 import HPO.tcnHPO as tcnHPO
 import HPO.gwnHPO as gwnHPO
 
@@ -50,7 +53,7 @@ parser.add_argument('--patience', type=int, default=9, help='patience')
 parser.add_argument('--learning_rate', type=float, default=0.001, help='learning rate')
 parser.add_argument('--dropout', type=float, default=0.3, help='dropout rate')
 parser.add_argument('--weight_decay', type=float, default=0.0001, help='weight decay rate')
-parser.add_argument('--epochs', type=int, default=30, help='')
+parser.add_argument('--epochs', type=int, default=3, help='')
 parser.add_argument('--save', type=str, default='Garage/Final Models/GWN/', help='save path')
 
 # Low Rank-Weighted GNN arguments, default arguments are optimal hyper-parameters

@@ -12,7 +12,7 @@
   * Extend Davidson’s experimental platform to evaluate all our individual ST-GNN variants, along with the baseline models.
   * Ensure that the adjacency matrix depicting the weather stations’ dependencies on each other is effectively captured by the visualisation methods.
   * Validate and evaluate the developed experimental platform using the baseline techniques and our individual techniques.
-  * Ensure that the experimental platform is highly usable, easily integratable for new techniques, and well designed to allow for easy future use.
+  * Ensure that the experimental platform is highly usable, easily integratable for new techniques and well designed to allow for easy future use.
 * Brief explanation of the experimental pipeline used for, GWN, and TCN as baselines:
 
   * TCN: The TCN baseline model is evaluated using a specific experiment pipeline. Separate ***TCN models are built for each weather station.*** Walk-forward validation is performed on each station's dataset, resulting in multiple training, validation, and test splits. Hyper-parameter optimization is done for the first three splits, considering parameters such as epochs, batch size, learning rate, input window size, number of layers, dropout rate, layer normalization, and number of filters. The optimal parameters are selected based on the lowest error across all splits for the 24-hour prediction horizon. The models are trained and evaluated for each split, and the predictions for each split are concatenated. SMAPE metrics are calculated using the concatenated predicted values and the actual values.

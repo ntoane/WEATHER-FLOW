@@ -4,6 +4,10 @@ import Utils.gwnUtils as utils
 import Utils.metrics as metrics
 import numpy as np
 
+import logging
+from Evaluation.modelLogger import modelLogger
+
+
 def TcnEval(stations, model):
     """
     Calculates the LSTM/TCN model's performance on the test set for each station. These metrics are written to a file
@@ -64,6 +68,8 @@ def GwnEval(stations, args):
      """
     num_splits = 27
     num_stations = 21
+    gwn_logger = modelLogger('gwn', 'Evaluation/Logs/GWN/gwn_logs.txt')
+    gwn_logger.info('baselineEval : Starting to compute evaluation error metrics.')
 
     # Iterate over each station
     for station in range(num_stations):
@@ -108,6 +114,7 @@ def GwnEval(stations, args):
                         file.write('This is the MAE ' + str(abs_val) + '\n')
                         file.write('This is the RMSE ' + str(root) + '\n')
                         file.write('This is the SMAPE ' + str(ape) + '\n')
+                        gwn_logger.info('baselineEval : Finished computing evaluation error metrics.')
             except IOError:
                 #metric_file = f'Results/GWN/Metrics/{stations[station]}/metrics_{horizon}'
                 #print(f'Error: Unable to write metrics to {metric_file}')

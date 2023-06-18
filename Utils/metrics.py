@@ -3,7 +3,6 @@ from sklearn.metrics import mean_squared_error
 from sklearn.metrics import mean_absolute_error
 import math
 
-
 def smape(actual, predicted):
     """
     Calculates the SMAPE metric

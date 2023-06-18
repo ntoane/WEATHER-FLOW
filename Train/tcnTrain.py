@@ -7,6 +7,8 @@ from keras.models import load_model
 from tcn import TCN
 import tensorflow as tf
 
+import logging
+from Evaluation.modelLogger import modelLogger
 
 def train(stations, increment):
     """
@@ -26,13 +28,23 @@ def train(stations, increment):
     # tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 
     forecasting_horizons = [3, 6, 9, 12, 24]
+    
 
     for forecast_len in forecasting_horizons:
         configFile = open("Train/Best Configurations/tcn_params.txt", "r")
-
+        # tcn_logger = modelLogger('tcn', 'all','Evaluation/Logs/TCN/tcn_logs.txt')
+    
         for station in stations:
             # printing out which station we are forecasting
+            # tcn_logger = modelLogger('tcn', '{1}', 'TCN training started on split {0}/27 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+            #                                                                                          forecast_len))
+                                                                                            
+            tcn_logger = modelLogger('tcn', str(station),'Evaluation/Logs/TCN/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
             print('Forecasting at station ', station)
+            #print('Evaluation/Logs/TCN/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
+            
+            tcn_logger.info('tcnTrain : TCN model training started at ' + station)
+            print('tcnTrain : TCN model training started at ' + station)
 
             # pulling in weather station data
             weatherData = 'Data/Weather Station Data/' + station + '.csv'
@@ -74,9 +86,15 @@ def train(stations, increment):
 
             num_splits = 27
             for k in range(num_splits):
-                print('TCN Model on split {0}/27 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                print('TCN training started on split {0}/27 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                                                                                                     forecast_len))
+                tcn_logger.info('tcnTrain :TCN Model on split {0}/27 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                      forecast_len))
 
+                # lossFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
+                #        'loss.csv'
+                
+                
                 saveFile = 'Garage/Final Models/TCN/' + station + '/' + str(forecast_len) + ' Hour Models/Best_Model_' \
                            + str(n_ahead_length) + '_walk_' + str(k) + '.h5'
 
@@ -147,11 +165,16 @@ def train(stations, increment):
                     # predictions to dataframe
                     resultsDF = pd.concat([resultsDF, pd.Series(yhat.reshape(-1, ))])
 
+                tcn_logger.info('tcnTrain : TCN training done on split {0}/27 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                                                                                                     forecast_len))
                 # Targets to dataframe
                 targetDF = pd.concat([targetDF, pd.Series(Y_test.reshape(-1, ))])
-
+              
+            tcn_logger.info('tcnTrain : TCN training finished at ' + station)  
+                
             resultsDF.to_csv(resultsFile)
             lossDF.to_csv(lossFile)
             targetDF.to_csv(targetFile)
-
+            
+        tcn_logger.info('tcnTrain : TCN training finished at all stations set for training :)')
         configFile.close()

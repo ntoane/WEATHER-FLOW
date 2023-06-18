@@ -5,6 +5,8 @@ import time
 from Engine.gwnEngine import trainer
 import numpy as np
 import pickle
+import logging
+from Evaluation.modelLogger import modelLogger
 
 
 def train_model(args, data_sets, split, supports, adj_init, dictionary):
@@ -61,6 +63,7 @@ def train_model(args, data_sets, split, supports, adj_init, dictionary):
         validation_loss = engine.validate(validationLoader, args)
         validationLossArray.append(validation_loss)
         validationTime = time.time() - validationStart
+        
 
         print(
             'Epoch {:2d} | Train Time: {:4.2f}s | Train Loss: {:5.4f} | Validation Time: {:5.4f} | Validation Loss: '
@@ -80,6 +83,7 @@ def train_model(args, data_sets, split, supports, adj_init, dictionary):
 
 #         print(util.get_adj_matrix(engine.model))
     engine.model = util.load_model(dictionary['modelFile'])
+    #gwn_logger.info('GWN model initialized.')
 
     testStart = time.time()
     test_loss, predictions, targets = engine.test(testLoader, args)
@@ -115,7 +119,14 @@ def train(increment, args):
         increment - Walk-forward validation split points.
     """
 
+    gwn_logger = modelLogger('gwn', 'all', 'Evaluation/Logs/GWN/gwn_logs.txt') 
+    #gwn_logger = modelLogger('gwn', 'all','Evaluation/Logs/GWN/' + str(forecast_len) + ' Hour Forecast/'+'/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
+   
+    # args is the weather station ?
+    # no it is Data/Graph Neural Network Data/Graph Station Data/Graph.csv 
+    # this is a csv file with all weather stations in 1 file, each hour by hour
     data = pd.read_csv(args.data)
+    #print(args.data)
     data = data.drop(['StasName', 'DateT'], axis=1)
 
     forecast_horizons = [3, 6, 9, 12, 24]
@@ -124,7 +135,7 @@ def train(increment, args):
         args.seq_length = forecast_len
         #print('Training WGN models through walk-forward validation on a forecasting horizon of: ', args.seq_length)
         print('Training GWN models through walk-forward validation on a forecasting horizon of: ', args.seq_length)
-        
+        gwn_logger.info('gwnTrain : Training GWN models through walk-forward validation on a forecasting horizon of: '+ str(args.seq_length))
         for k in range(args.n_split):
             fileDictionary = {'predFile': 'Results/GWN/' + str(forecast_len) + ' Hour Forecast/Predictions/outputs_' +
                                           str(k) + '.pkl',
@@ -154,4 +165,7 @@ def train(increment, args):
                 adjinit = None
 
             torch.manual_seed(0)
+            gwn_logger.info('gwnTrain : GWN model initialised.')
             train_model(args, data_sets, split, supports, adjinit, fileDictionary)
+            gwn_logger.info('gwnTrain : GWN model training done.')
+            

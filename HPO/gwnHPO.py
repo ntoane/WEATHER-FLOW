@@ -8,6 +8,11 @@ import Utils.metrics as metrics
 import warnings
 warnings.filterwarnings("error")
 
+import logging
+from Evaluation.modelLogger import modelLogger
+
+
+
 
 def train_model(args, data, split, supports, adj_init, model_file):
     """
@@ -97,6 +102,9 @@ def hpo(increment, args):
     """
     data = pd.read_csv(args.data)
     data = data.drop(['StasName', 'DateT'], axis=1)
+    
+    gwn_logger = modelLogger('gwn', 'Evaluation/Logs/GWN/gwn_logs.txt')
+    gwn_logger.info('gwnHPO : Locating the best configuration settings.')
 
     textFile = 'HPO/Best Parameters/GWN/configurations.txt'
     f = open(textFile, 'w')
@@ -131,6 +139,7 @@ def hpo(increment, args):
             torch.manual_seed(0)
 
             try:
+                
                 print('This is the HPO configuration: \n',
                       'Dropout - ', args.dropout, '\n',
                       'Lag_length - ', args.lag_length, '\n',
@@ -155,3 +164,4 @@ def hpo(increment, args):
 
     f.write('This is the best configuration ' + str(best_cfg) + ' with an MSE of ' + str(best_mse))
     f.close()
+    gwn_logger.info('gwnHPO : GWN best configuration found.')
