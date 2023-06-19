@@ -7,7 +7,7 @@ import Models.tcntwo as tcn_two
 from keras.models import load_model
 
 import logging
-from Evaluation.modelLogger import modelLogger
+from Logs.modelLogger import modelLogger
 
 
 def hpo(stations, increment, args):
@@ -26,7 +26,7 @@ def hpo(stations, increment, args):
 
     for station in stations:
         # printing out which station we are forecasting
-        tcn_logger = modelLogger('tcn', str(station),'Evaluation/Logs/TCN/HPO/' + str(station) +'/'+'tcn_' + str(station) + '.txt')
+        tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/HPO/' + str(station) +'/'+'tcn_' + str(station) + '.txt')
         print('Performing TCN random search HPO at station: ', station)
         tcn_logger.info('tcnHPO : TCN HPO training started at ' + station)
         

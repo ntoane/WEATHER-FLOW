@@ -1,6 +1,6 @@
 import argparse
-import logging
-import Evaluation.modelLogger as modelLogger
+
+import Logs.modelLogger as modelLogger
 
 import HPO.tcnHPO as tcnHPO
 import HPO.gwnHPO as gwnHPO

@@ -5,7 +5,7 @@ import Utils.metrics as metrics
 import numpy as np
 
 import logging
-from Evaluation.modelLogger import modelLogger
+from Logs.modelLogger import modelLogger
 
 
 def TcnEval(stations, model):
@@ -21,13 +21,22 @@ def TcnEval(stations, model):
         model - Whether these metrics are being calculated for the LSTM or TCN model
     """
 
+    tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Evaluation/'+'tcn_all_stations.txt')  
+    tcn_logger.info('baselineEval : TCN evaluation started at all stations set for evaluation :)') 
+    
     for station in stations:
         for horizon in [3, 6, 9, 12, 24]:
             try:
+                tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Evaluation/'+'tcn_' + str(station) +'.txt')  
+                tcn_logger.info('baselineEval : TCN evaluation started at' + str(station)+' for the horizon of ' +str(horizon) ) 
+                
+                
                 # Set the file paths for predictions, targets, and metrics
                 yhat_path = f'Results/{model}/{horizon} Hour Forecast/{station}/Predictions/result.csv'
                 target_path = f'Results/{model}/{horizon} Hour Forecast/{station}/Targets/target.csv'
                 metric_file = f'Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt'
+                
+               
                 # Read the predictions and targets from the CSV files
                 preds = pd.read_csv(yhat_path).drop(['Unnamed: 0'], axis=1)
                 targets = pd.read_csv(target_path).drop(['Unnamed: 0'], axis=1)
@@ -44,6 +53,10 @@ def TcnEval(stations, model):
                     metric.write('This is the MAE: {}\n'.format(mae))
                     metric.write('This is the RMSE: {}\n'.format(rmse))
                     metric.write('This is the SMAPE: {}\n'.format(smape))
+                
+                tcn_logger.info('baselineEval : TCN evaluation done at' + str(station)+' for the horizon of ' +str(horizon) ) 
+                tcn_logger.info('baselineEval : TCN evaluation of ' + str(station)+' for the horizon of ' +str(horizon) +' was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt' ) 
+                
                 # Print the metrics for the current station and horizon length
                 print('SMAPE: {0} at the {1} station forecasting {2} hours ahead.'.format(smape, station, horizon))
                 print('MSE: {0} at the {1} station forecasting {2} hours ahead.'.format(mse, station, horizon))
@@ -52,7 +65,9 @@ def TcnEval(stations, model):
                 print('')
             except IOError:
                 print('Error! : Unable to read data or write metrics for station {} and horizon length {}. Please review the data or code for the metrics for errors.'.format(station, horizon))
+                tcn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}. Please review the data or code for the metrics for errors.'.format(station, horizon))
                 
+    tcn_logger.info('baselineEval : Finished evaluation of TCN error metrics for all stations.')  
                 
 def GwnEval(stations, args):
     """
@@ -68,8 +83,9 @@ def GwnEval(stations, args):
      """
     num_splits = 27
     num_stations = 21
-    gwn_logger = modelLogger('gwn', 'Evaluation/Logs/GWN/gwn_logs.txt')
-    gwn_logger.info('baselineEval : Starting to compute evaluation error metrics.')
+    gwn_logger = modelLogger('gwn','all','Logs/GWN/gwn_all_stations.txt')
+    gwn_logger.info('baselineEval : Starting to compute evaluation error metrics for all stations.')
+    
 
     # Iterate over each station
     for station in range(num_stations):
@@ -78,11 +94,15 @@ def GwnEval(stations, args):
             try:
                 pred = []
                 real = []
+                gwn_logger = modelLogger('gwn', str(station),'Logs/GWN/Evaluation/'+'gwn_' + str(station) +'.txt')  
+                gwn_logger.info('baselineEval : GWN evaluation started at' + str(station)+' for the horizon of ' +str(horizon) ) 
                 # Read predictions and targets for each split and append them to pred and real lists
                 for split in range(num_splits):
                     results_file = f'Results/GWN/{horizon} Hour Forecast/Predictions/outputs_{split}.pkl'
                     targets_file = f'Results/GWN/{horizon} Hour Forecast/Targets/targets_{split}.pkl'
                     metric_file = f'Results/GWN/Metrics/{stations[station]}/metrics_{horizon}'
+                    
+                    gwn_logger = modelLogger('gwn', str(station), 'Logs/GWN/gwn_.txt')
                     
                     yhat = utils.load_pickle(results_file)
                     target = utils.load_pickle(targets_file)
@@ -119,7 +139,9 @@ def GwnEval(stations, args):
                 #metric_file = f'Results/GWN/Metrics/{stations[station]}/metrics_{horizon}'
                 #print(f'Error: Unable to write metrics to {metric_file}')
                 print('Error! : Unable to read data or write metrics for station {} and forecast length {}. Please review the data or code for the metrics for errors.'.format(station, horizon))
-                
+                gwn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}. Please review the data or code for the metrics for errors.'.format(station, horizon))
+    
+    gwn_logger.info('baselineEval : Finished evaluation of GWN error metrics for all stations.')            
                 
 # Will be removed in the future
 # def eval(stations, model):

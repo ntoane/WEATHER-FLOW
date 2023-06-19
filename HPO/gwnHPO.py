@@ -9,7 +9,7 @@ import warnings
 warnings.filterwarnings("error")
 
 import logging
-from Evaluation.modelLogger import modelLogger
+from Logs.modelLogger import modelLogger
 
 
 
@@ -106,7 +106,7 @@ def hpo(increment, args):
     # gwn_logger = modelLogger('gwn','all' 'Evaluation/Logs/GWN/gwn_logs.txt')
     # gwn_logger.info('gwnHPO : Locating the best configuration settings.')
     
-    gwn_logger = modelLogger('tcn', 'all','Evaluation/Logs/GWN/HPO/'+'gwn_all_stations.txt')
+    gwn_logger = modelLogger('gwn', 'all','Logs/GWN/HPO/'+'gwn_all_stations.txt')
     print('Performing GWN random search HPO at all stations: ')
     gwn_logger.info('tcnHPO : TCN HPO started at all stations :)')
 

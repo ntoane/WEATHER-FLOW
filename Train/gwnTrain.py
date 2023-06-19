@@ -6,7 +6,7 @@ from Engine.gwnEngine import trainer
 import numpy as np
 import pickle
 import logging
-from Evaluation.modelLogger import modelLogger
+from Logs.modelLogger import modelLogger
 
 
 def train_model(args, data_sets, split, supports, adj_init, dictionary):
@@ -119,7 +119,7 @@ def train(increment, args):
         increment - Walk-forward validation split points.
     """
 
-    gwn_logger = modelLogger('gwn', 'all', 'Evaluation/Logs/GWN/Train/gwn_all_stations.txt') 
+    gwn_logger = modelLogger('gwn', 'all', 'Logs/GWN/Train/gwn_all_stations.txt') 
     
     # args is the weather station ?
     # no it is Data/Graph Neural Network Data/Graph Station Data/Graph.csv 
