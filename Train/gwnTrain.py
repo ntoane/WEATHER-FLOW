@@ -145,7 +145,9 @@ def train(increment, args):
                               'validationLossFile': 'Results/GWN/' + str(forecast_len) +
                                                     ' Hour Forecast/Matrices/adjacency_matrix_' + str(k) + '.csv',
                               'modelFile': 'Garage/Final Models/GWN/' + str(forecast_len) +
-                                           ' Hour Models/model_split_' + str(k)
+                                           ' Hour Models/model_split_' + str(k),
+                              'matrixFile': 'Results/GWN/' + str(forecast_len) + ' Hour Forecast/Matrices/adjacency_matrix_' +
+                                           str(k) + '.csv'
             }
 
             split = [increment[k] * args.n_stations, increment[k + 1] * args.n_stations, increment[k + 2] *
