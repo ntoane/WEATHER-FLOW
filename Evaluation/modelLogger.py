@@ -16,6 +16,7 @@ class modelLogger:
         self.logger.setLevel(logging.DEBUG)
         
         self.logger = logging.getLogger(station)
+        self.logger.setLevel(logging.DEBUG)
         
         file_handler = logging.FileHandler(log_file)
         file_handler.setLevel(logging.DEBUG)

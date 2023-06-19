@@ -103,8 +103,8 @@ def hpo(increment, args):
     data = pd.read_csv(args.data)
     data = data.drop(['StasName', 'DateT'], axis=1)
     
-    gwn_logger = modelLogger('gwn', 'Evaluation/Logs/GWN/gwn_logs.txt')
-    gwn_logger.info('gwnHPO : Locating the best configuration settings.')
+    # gwn_logger = modelLogger('gwn','all' 'Evaluation/Logs/GWN/gwn_logs.txt')
+    # gwn_logger.info('gwnHPO : Locating the best configuration settings.')
 
     textFile = 'HPO/Best Parameters/GWN/configurations.txt'
     f = open(textFile, 'w')

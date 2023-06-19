@@ -6,6 +6,8 @@ import Models.tcnone as tcn_one
 import Models.tcntwo as tcn_two
 from keras.models import load_model
 
+import logging
+from Evaluation.modelLogger import modelLogger
 
 def hpo(stations, increment, args):
     """
@@ -23,7 +25,10 @@ def hpo(stations, increment, args):
 
     for station in stations:
         # printing out which station we are forecasting
+        tcn_logger = modelLogger('tcn', str(station),'Evaluation/Logs/TCN/HPO/' + str(station) +'/'+'tcn_' + str(station) + '.txt')
         print('Performing TCN random search HPO at station: ', station)
+        tcn_logger.info('tcnHPO : TCN HPO training started at ' + station)
+        
         # pulling in weather station data
         weatherData = 'Data/Weather Station Data/' + station + '.csv'
         ts = utils.create_dataset(weatherData)
@@ -114,7 +119,8 @@ def hpo(stations, increment, args):
             if ave_mse < best_mse:
                 best_mse = ave_mse
                 best_cfg = cfg
-
+        tcn_logger.info('tcnHPO : Best parameters found at station ' + station + ': ' + str(best_cfg) + ' with MSE =' + str(best_mse) +
+                '\n')
         f.write('Best parameters found at station ' + station + ': ' + str(best_cfg) + ' with MSE =' + str(best_mse) +
                 '\n')
         f.close()

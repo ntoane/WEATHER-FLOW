@@ -8,6 +8,7 @@ from tcn import TCN
 import tensorflow as tf
 
 import logging
+import os
 from Evaluation.modelLogger import modelLogger
 
 def train(stations, increment):
@@ -38,11 +39,10 @@ def train(stations, increment):
             # printing out which station we are forecasting
             # tcn_logger = modelLogger('tcn', '{1}', 'TCN training started on split {0}/27 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
             #                                                                                          forecast_len))
-                                                                                            
+            
             tcn_logger = modelLogger('tcn', str(station),'Evaluation/Logs/TCN/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
             print('Forecasting at station ', station)
             #print('Evaluation/Logs/TCN/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
-            
             tcn_logger.info('tcnTrain : TCN model training started at ' + station)
             print('tcnTrain : TCN model training started at ' + station)
 
