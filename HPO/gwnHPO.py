@@ -105,6 +105,10 @@ def hpo(increment, args):
     
     # gwn_logger = modelLogger('gwn','all' 'Evaluation/Logs/GWN/gwn_logs.txt')
     # gwn_logger.info('gwnHPO : Locating the best configuration settings.')
+    
+    gwn_logger = modelLogger('tcn', 'all','Evaluation/Logs/GWN/HPO/'+'gwn_all_stations.txt')
+    print('Performing GWN random search HPO at all stations: ')
+    gwn_logger.info('tcnHPO : TCN HPO started at all stations :)')
 
     textFile = 'HPO/Best Parameters/GWN/configurations.txt'
     f = open(textFile, 'w')
@@ -164,4 +168,5 @@ def hpo(increment, args):
 
     f.write('This is the best configuration ' + str(best_cfg) + ' with an MSE of ' + str(best_mse))
     f.close()
-    gwn_logger.info('gwnHPO : GWN best configuration found.')
+    gwn_logger.info('gwnHPO : GWN best configuration found = ' +str(best_cfg) + ' with an MSE of ' + str(best_mse))
+    gwn_logger.info('tcnHPO : TCN HPO finished at all stations :)')

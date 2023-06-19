@@ -119,9 +119,8 @@ def train(increment, args):
         increment - Walk-forward validation split points.
     """
 
-    gwn_logger = modelLogger('gwn', 'all', 'Evaluation/Logs/GWN/gwn_logs.txt') 
-    #gwn_logger = modelLogger('gwn', 'all','Evaluation/Logs/GWN/' + str(forecast_len) + ' Hour Forecast/'+'/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
-   
+    gwn_logger = modelLogger('gwn', 'all', 'Evaluation/Logs/GWN/Train/gwn_all_stations.txt') 
+    
     # args is the weather station ?
     # no it is Data/Graph Neural Network Data/Graph Station Data/Graph.csv 
     # this is a csv file with all weather stations in 1 file, each hour by hour

@@ -29,7 +29,8 @@ def train(stations, increment):
     # tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 
     forecasting_horizons = [3, 6, 9, 12, 24]
-    
+    tcn_logger = modelLogger('tcn', 'all','Evaluation/Logs/TCN/Train/'+'tcn_all_stations.txt')  
+    tcn_logger.info('tcnTrain : TCN training started at all stations set for training :)') 
 
     for forecast_len in forecasting_horizons:
         configFile = open("Train/Best Configurations/tcn_params.txt", "r")
@@ -40,7 +41,7 @@ def train(stations, increment):
             # tcn_logger = modelLogger('tcn', '{1}', 'TCN training started on split {0}/27 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
             #                                                                                          forecast_len))
             
-            tcn_logger = modelLogger('tcn', str(station),'Evaluation/Logs/TCN/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
+            tcn_logger = modelLogger('tcn', str(station),'Evaluation/Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
             print('Forecasting at station ', station)
             #print('Evaluation/Logs/TCN/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
             tcn_logger.info('tcnTrain : TCN model training started at ' + station)
@@ -175,6 +176,8 @@ def train(stations, increment):
             resultsDF.to_csv(resultsFile)
             lossDF.to_csv(lossFile)
             targetDF.to_csv(targetFile)
-            
-        tcn_logger.info('tcnTrain : TCN training finished at all stations set for training :)')
+        
         configFile.close()
+     
+    tcn_logger.info('tcnTrain : TCN training finished at all stations set for training :)')
+        
