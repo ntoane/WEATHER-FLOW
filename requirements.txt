@@ -9,3 +9,6 @@ statsmodels==0.12.2
 tensorflow==2.8.0
 torch==1.10.1
 #tensorflow_gpu
+networkx
+matplotlib
+basemap

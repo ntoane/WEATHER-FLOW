@@ -9,8 +9,15 @@ import Train.tcnTrain as tcnTrain
 import Train.gwnTrain as gwnTrain
 import Evaluation.baselineEval as baselineEval
 
+import Visualisations.geoVis as geoVis
 
 parser = argparse.ArgumentParser()
+
+# Visualise Adjacency Matrix
+parser.add_argument('--geoVis', type=bool, help='whether to train final TCN models')
+parser.add_argument('--modelVis', type=str, help='whether to train final TCN models')
+parser.add_argument('--horizonVis', type=str, help='whether to train final TCN models')
+parser.add_argument('--splitVis', type=str, help='whether to train final TCN models')
 
 # Random Search HPO arguments
 parser.add_argument('--num_configs', type=int, default=30, help='number of random configurations to search through')
@@ -132,5 +139,8 @@ if __name__ == '__main__':
     if args.eval_gwn:
         baselineEval.GwnEval(stations, args)
 
+############ Visualisations ##############
+    if args.geoVis:
+        geoVis.plot(args)
 
 

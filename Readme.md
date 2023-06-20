@@ -70,3 +70,8 @@ Evaluation across 21 weather stations on [3, 6, 9, 12, 24] hour forecasting hori
 GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon on each of the 21 weather stations:
 
 'python3 main.py --eval_gwn=True'
+
+
+## Generate visualisation
+
+ python3 main.py --geoVis=True --modelVis=GWN --horizonVis=3 --splitVis=0
