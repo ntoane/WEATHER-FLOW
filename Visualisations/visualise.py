@@ -18,7 +18,7 @@ def create_graph(adj_matrix):
             G.add_node(number, pos=(float(lon), float(lat)), province=province)
 
     for i in range(adj_matrix.shape[0]):
-        strongest_influence_indices = np.argsort(adj_matrix[:, i])[-2:]  # Enter number of influential stations
+        strongest_influence_indices = np.argsort(adj_matrix[:, i])[-1:]  # Enter number of influential stations
         for j in strongest_influence_indices:
             if adj_matrix[j, i] > 0:
                 G.add_edge(list(G.nodes())[j], list(G.nodes())[i])
@@ -29,8 +29,9 @@ def create_graph(adj_matrix):
 def plot_graph(adj_matrix, province_colours):
     G = create_graph(adj_matrix)
     node_positions = nx.get_node_attributes(G, 'pos')
+    
+    fig, ax = plt.subplots(figsize=(8, 8),dpi=300)
 
-    fig, ax = plt.subplots(figsize=(8, 8))
 
     min_lon = min(pos[0] for pos in node_positions.values())
     max_lon = max(pos[0] for pos in node_positions.values())
@@ -47,13 +48,13 @@ def plot_graph(adj_matrix, province_colours):
         urcrnrlon=max_lon + 0.2 * width, urcrnrlat=max_lat + 0.2 * height,
         resolution='i', ax=ax
     )
-
+    m.drawcoastlines(linewidth=0.5)
     m.drawmapboundary(fill_color='lightblue')
     m.fillcontinents(color='white', lake_color='lightblue')
 
     node_degrees = G.out_degree()
 
-    node_sizes = [50 * degree + 80 for _, degree in node_degrees]
+    node_sizes = [100 * degree + 80 for _, degree in node_degrees]
     node_colors = [province_colours[G.nodes[node]['province']] for node in G.nodes()]
     nx.draw_networkx_nodes(G, pos=node_positions, node_color=node_colors, node_size=node_sizes, ax=ax)
 
