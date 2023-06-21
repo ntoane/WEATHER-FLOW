@@ -74,4 +74,4 @@ GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon on each of the 21 weat
 
 ## Generate visualisation
 
- python3 main.py --geoVis=True --modelVis=GWN --horizonVis=3 --splitVis=0
+ python3 main.py --vis=True --modelVis=GWN --horizonVis=3 --splitVis=0
