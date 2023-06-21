@@ -5,12 +5,13 @@ import HPO.gwnHPO as gwnHPO
 import Train.tcnTrain as tcnTrain
 import Train.gwnTrain as gwnTrain
 import Evaluation.baselineEval as baselineEval
-import Visualisations.geoVis as geoVis
+import Visualisations.visualise as visualise
 
 # Parse the command-line arguments
 parser = argparse.ArgumentParser()
 parser.add_argument('--config', type=str, help='path to YAML config file')
 args = parser.parse_args()
+
 
 # Load the YAML config file
 with open('config.yaml', 'r') as file:
@@ -123,7 +124,7 @@ if __name__ == '__main__':
         baselineEval.GwnEval(stations, config)
 
 ############ Visualisations #############
-    if config['geoVis']['default']:
-        geoVis.plot(config)
+    if config['vis']['default']:
+        visualise.plot(config)
 
 

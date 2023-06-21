@@ -1,0 +1,8 @@
+2023-06-19 22:41:47,948 - all - INFO - gwnTrain : Training GWN models through walk-forward validation on a forecasting horizon of: 3
+2023-06-19 22:41:47,955 - all - INFO - gwnTrain : GWN model initialised.
+2023-06-19 22:46:38,355 - all - INFO - gwnTrain : GWN model training done.
+2023-06-19 22:46:38,366 - all - INFO - gwnTrain : GWN model initialised.
+2023-06-20 00:47:59,025 - all - INFO - gwnTrain : Training GWN models through walk-forward validation on a forecasting horizon of: 3
+2023-06-20 00:47:59,052 - all - INFO - gwnTrain : GWN model initialised.
+2023-06-21 02:12:16,187 - all - INFO - gwnTrain : Training GWN models through walk-forward validation on a forecasting horizon of: 3
+2023-06-21 02:12:16,215 - all - INFO - gwnTrain : GWN model initialised.
