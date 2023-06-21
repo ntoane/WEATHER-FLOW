@@ -5,12 +5,10 @@ import Utils.baselineUtils as utils
 import Models.tcnone as tcn_one
 import Models.tcntwo as tcn_two
 from keras.models import load_model
-
-import logging
+import yaml
 from Logs.modelLogger import modelLogger
 
-
-def hpo(stations, increment, args):
+def hpo(stations, increment, config):
     """
     Performs random search HPO on the TCN model. Trains a group of TCN models for each weather station with different
     hyper-parameters on a train set and then tests the models' performance on the validation set. The configuration with
@@ -18,10 +16,13 @@ def hpo(stations, increment, args):
 
     Parameters:
         stations - List of weather satations.
-        args -  Parser of parameters.
+        config -  Configuration file used for parameters.
         increment - Walk-forward validation split points.
     """
-
+    # Load the YAML config file
+    with open('config.yaml', 'r') as file:
+        config = yaml.safe_load(file)
+    
     num_splits = 2
 
     for station in stations:
@@ -39,7 +40,7 @@ def hpo(stations, increment, args):
         best_mse = 999999
         best_cfg = []
 
-        for i in range(args.num_configs):
+        for i in range(config['num_configs']['default']):
             # generate random parameters
             cfg = utils.generateRandomTCNParameters()
 

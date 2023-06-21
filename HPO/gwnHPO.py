@@ -7,14 +7,10 @@ import numpy as np
 import Utils.metrics as metrics
 import warnings
 warnings.filterwarnings("error")
-
-import logging
 from Logs.modelLogger import modelLogger
+import yaml
 
-
-
-
-def train_model(args, data, split, supports, adj_init, model_file):
+def train_model(config, data, split, supports, adj_init, model_file):
     """
     Trains a GWN model and calculates MSE on validation set for random search HPO. Train and validation sets scaled
     using MinMax normalization. Scaled train and validation data then processed into sliding window input-output pairs.
@@ -23,7 +19,7 @@ def train_model(args, data, split, supports, adj_init, model_file):
 
     Parameters:
         data_split - Split of data within walk-forward validation.
-        args - Parser of parameters.
+        config - Configuration file of parameters.
         train_data - Training data used to train GWN model.
         validate_data - Validation data on which the GWN model is tested.
         lag - length of the input sequence
@@ -40,28 +36,28 @@ def train_model(args, data, split, supports, adj_init, model_file):
 
     scaler = util.NormScaler(train_data.min(), train_data.max())
 
-    engine = trainer(scaler, supports, adj_init, args)
+    engine = trainer(scaler, supports, adj_init, config)
 
-    x_train, y_train = util.sliding_window(scaler.transform(train_data), args.lag_length, args.seq_length, split, 0)
-    x_validation, y_validation = util.sliding_window(scaler.transform(validate_data), args.lag_length, args.seq_length,
+    x_train, y_train = util.sliding_window(scaler.transform(train_data), config['lag_length']['default'], config['seq_length']['default'], split, 0)
+    x_validation, y_validation = util.sliding_window(scaler.transform(validate_data), config['lag_length']['default'], config['seq_length']['default'],
                                                      split, 1)
 
-    trainLoader = util.DataLoader(x_train, y_train, args.batch_size)
-    validationLoader = util.DataLoader(x_validation, y_validation, args.batch_size)
+    trainLoader = util.DataLoader(x_train, y_train, config['batch_size']['default'])
+    validationLoader = util.DataLoader(x_validation, y_validation, config['batch_size']['default'])
 
     min_val_loss = np.inf
     trainLossArray = []
     validationLossArray = []
 
-    for epoch in range(args.epochs):
+    for epoch in range(config['epochs']['default']):
         patience = 0
         trainStart = time.time()
-        train_loss = engine.train(trainLoader, args)
+        train_loss = engine.train(trainLoader, config)
         trainLossArray.append(train_loss)
         trainTime = time.time() - trainStart
 
         validationStart = time.time()
-        validation_loss = engine.validate(validationLoader, args)
+        validation_loss = engine.validate(validationLoader, config)
         validationLossArray.append(validation_loss)
         validationTime = time.time() - validationStart
 
@@ -77,12 +73,12 @@ def train_model(args, data, split, supports, adj_init, model_file):
         else:
             patience += 1
 
-        if patience == args.patience:
+        if patience == config['patience']['default']:
             break
 
     engine.model = util.load_model(model_file)
     testStart = time.time()
-    validation_test_loss, predictions, targets = engine.test(validationLoader, args)
+    validation_test_loss, predictions, targets = engine.test(validationLoader, config)
     testTime = time.time() - testStart
 
     print('Inference Time: {:4.2f}s | Loss on validation set: {:5.4f} '.format(
@@ -91,16 +87,20 @@ def train_model(args, data, split, supports, adj_init, model_file):
     return predictions, targets
 
 
-def hpo(increment, args):
+def hpo(increment, initialConfig):
     """
     Performs random search HPO on the GWN model. Trains a group of GWN models with different hyper-parameters on a train
     set and then tests the models' performance on the validation set. The configuration with the lowest MSE is then
     written to a file.
     Parameters:
-        args -  Parser of parameters.
+        config -  Configuration file of parameters.
         increment - Walk-forward validation split points.
     """
-    data = pd.read_csv(args.data)
+    # Load the YAML config file
+    with open('config.yaml', 'r') as file:
+        initialConfig = yaml.safe_load(file)
+    
+    data = pd.read_csv(initialConfig['data']['default'])
     data = data.drop(['StasName', 'DateT'], axis=1)
     
     # gwn_logger = modelLogger('gwn','all' 'Evaluation/Logs/GWN/gwn_logs.txt')
@@ -117,27 +117,28 @@ def hpo(increment, args):
     best_cfg = []
 
     num_splits = 2
-    for i in range(args.num_configs):
-        config = util.generateRandomParameters(args)
+    for i in range(initialConfig['num_configs']['default']):
+        config = util.generateRandomParameters(initialConfig)
         valid_config = True
         targets = []
         preds = []
 
         for k in range(num_splits):
             modelFile = 'Garage/HPO Models/GWN/model_split_' + str(k)
-
-            split = [increment[k] * args.n_stations, increment[k + 1] * args.n_stations,
-                     increment[k + 2] * args.n_stations]
+            split = [increment[k] * int(initialConfig['n_stations']['default']), 
+                     increment[k + 1] * int(initialConfig['n_stations']['default']),
+                     increment[k + 2] * initialConfig['n_stations']['default']]
             data_sets = [data[:split[0]], data[split[0]:split[1]], data[split[1]:split[2]]]
 
-            adj_matrix = util.load_adj(adjFile=args.adjdata, adjtype=args.adjtype)
-            supports = [torch.tensor(i).to(args.device) for i in adj_matrix]
+            adj_matrix = util.load_adj(adjFile=initialConfig['adjdata']['default'], 
+                                       adjtype=initialConfig['adjtype']['default'])
+            supports = [torch.tensor(i).to(initialConfig['device']['default']) for i in adj_matrix]
 
-            if args.randomadj:
+            if initialConfig['randomadj']['default']:
                 adjinit = None
             else:
                 adjinit = supports[0]
-            if args.aptonly:
+            if initialConfig['aptonly']['default']:
                 supports = None
 
             torch.manual_seed(0)
@@ -145,12 +146,12 @@ def hpo(increment, args):
             try:
                 
                 print('This is the HPO configuration: \n',
-                      'Dropout - ', args.dropout, '\n',
-                      'Lag_length - ', args.lag_length, '\n',
-                      'Hidden Units - ', args.nhid, '\n',
-                      'Layers - ', args.num_layers, '\n',
-                      'Batch Size - ', args.batch_size, '\n')
-                output, real = train_model(args, data_sets, split, supports, adjinit, modelFile)
+                      'Dropout - ', initialConfig['dropout']['default'], '\n',
+                      'Lag_length - ', initialConfig['lag_length']['default'], '\n',
+                      'Hidden Units - ', initialConfig['nhid']['default'], '\n',
+                      'Layers - ', initialConfig['num_layers']['default'], '\n',
+                      'Batch Size - ', initialConfig['batch_size']['default'], '\n')
+                output, real = train_model(initialConfig, data_sets, split, supports, adjinit, modelFile)
 
             except Warning:
                 valid_config = False
@@ -168,5 +169,6 @@ def hpo(increment, args):
 
     f.write('This is the best configuration ' + str(best_cfg) + ' with an MSE of ' + str(best_mse))
     f.close()
+    textFile.close()
     gwn_logger.info('gwnHPO : GWN best configuration found = ' +str(best_cfg) + ' with an MSE of ' + str(best_mse))
     gwn_logger.info('tcnHPO : TCN HPO finished at all stations :)')

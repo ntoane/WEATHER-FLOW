@@ -1,0 +1,212 @@
+# Configuration pyyaml file with configuration settings required (as args) for main.py
+
+############################ Train final baseline and GNN model arguments ############################
+train_tcn:
+  type: bool
+  default: false
+  help: whether to train final TCN models
+train_gwn:
+  type: bool
+  default: false
+  help: whether to train final GWN model
+
+
+############################ Random Search HPO arguments ############################ 
+tune_tcn:
+  type: bool
+  default: false
+  help: whether to perform random search HPO on TCN models
+tune_gwn:
+  type: bool
+  default: false
+  help: whether to perform random search HPO on GWN model
+num_configs:
+  type: int
+  default: 30
+  help: number of random configurations to search through
+
+############################  Calculate metrics of final models' results arguments ############################
+eval_tcn:
+  type: bool
+  default: false
+  help: whether to report final TCN metrics
+eval_gwn:
+  type: bool
+  default: false
+  help: whether to report final GWN metrics
+
+n_stations:
+  type: int
+  default: 21
+  help: number of weather stations
+n_split:
+  type: int
+  default: 27
+  help: number of splits in walk-forward validation
+
+############################ Visualise Adjacency Matrix ############################
+geoVis:
+  type: bool
+  default: false
+  help: whether to visualize the adjacency matrix
+modelVis:
+  type: str
+  default: TCN
+  help: the model to visualize
+horizonVis:
+  type: str
+  default: daily
+  help: the horizon to visualize
+splitVis:
+  type: str
+  default: train
+  help: the split to visualize
+
+
+############################# Graph WaveNet arguments, default arguments are optimal hyper-parameters ############################
+device:
+  type: str
+  default: cpu
+  help: device to place model on
+data:
+  type: str
+  default: 'Data/Graph Neural Network Data/Graph Station Data/Graph.csv'
+  help: data path
+adjdata:
+  type: str
+  default: 'Data/Graph Neural Network Data/Adjacency Matrix/adj_mx.pkl'
+  help: adj data path
+adjtype:
+  type: str
+  default: doubletransition
+  help: adj type
+gcn_bool:
+  type: bool
+  default: true
+  help: whether to add graph convolution layer
+aptonly:
+  type: bool
+  default: true
+  help: whether only adaptive adj
+addaptadj:
+  type: bool
+  default: true
+  help: whether add adaptive adj
+randomadj:
+  type: bool
+  default: true
+  help: whether random initialize adaptive adj
+seq_length:
+  type: int
+  default: 24
+  help: length of output sequence
+lag_length:
+  type: int
+  default: 12
+  help: length of input sequence
+nhid:
+  type: int
+  default: 32
+  help: ''
+in_dim:
+  type: int
+  default: 6
+  help: number of features in input
+num_nodes:
+  type: int
+  default: 21
+  help: number of nodes in graph (num weather stations)
+num_layers:
+  type: int
+  default: 2
+  help: number of layers
+batch_size:
+  type: int
+  default: 64
+  help: batch size
+patience:
+  type: int
+  default: 9
+  help: patience
+learning_rate:
+  type: float
+  default: 0.001
+  help: learning rate
+dropout:
+  type: float
+  default: 0.3
+  help: dropout rate
+weight_decay:
+  type: float
+  default: 0.0001
+  help: weight decay rate
+epochs:
+  type: int
+  default: 3
+  help: ''
+save:
+  type: str
+  default: 'Garage/Final Models/GWN/'
+  help: save path
+
+############################# Low Rank-Weighted GNN arguments, default arguments are optimal hyper-parameters ############################
+adjTrainable:
+  type: bool
+  default: true
+  help: adjacency matrix a trainable parameter
+use_sparse:
+  type: bool
+  default: false
+  help: Use sparse adjacency matrix
+nlayers:
+  type: int
+  default: 2
+  help: number of gconv layers
+features:
+  type: int
+  default: 6
+  help: number of features
+nbatch_size:
+  type: int
+  default: 32
+  help: batch size
+nbatches:
+  type: int
+  default: 15000
+  help: number of batches to train on
+nhidden:
+  type: int
+  default: 8
+  help: ''
+nsteps:
+  type: int
+  default: 24
+  help: length of input sequence
+mask_len:
+  type: int
+  default: 0
+  help: length of input to be used as context
+forecast:
+  type: int
+  default: 24
+  help: how many steps into the future to forecast
+rank:
+  type: int
+  default: null
+  help: rank of adjacency matrix
+display_step:
+  type: int
+  default: 500
+  help: display metrics after number of batches
+between_lr_updates:
+  type: int
+  default: 500
+  help: display metrics after number of batches
+learningRate:
+  type: float
+  default: 0.01
+  help: display metrics after number of batches
+lr_factor:
+  type: float
+  default: 0.9
+  help: display metrics after number of batches

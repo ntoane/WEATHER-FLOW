@@ -69,7 +69,7 @@ def TcnEval(stations, model):
                 
     tcn_logger.info('baselineEval : Finished evaluation of TCN error metrics for all stations.')  
                 
-def GwnEval(stations, args):
+def GwnEval(stations, config):
     """
      Calculates the GWN model's performance on the test set across all forecasting horizons [3, 6, 9, 12, 24] for each
      individual station. The predictions are read from the results file for each split of the walk-forward validation
@@ -79,7 +79,7 @@ def GwnEval(stations, args):
 
      Parameters:
          stations - List of the weather stations.
-         args - Parser of parameter arguments.
+         config - Conguration file of parameter arguments.
      """
     num_splits = 27
     num_stations = 21
@@ -110,10 +110,12 @@ def GwnEval(stations, args):
                     real.extend(np.array(target).flatten())
                 
                     # Reshape pred and real arrays
-                    pred = np.array(pred).reshape((int(len(real) / (args.n_stations * args.seq_length)), args.n_stations,
-                                                args.seq_length))
-                    real = np.array(real).reshape((int(len(real) / (args.n_stations * args.seq_length)), args.n_stations,
-                                                args.seq_length))
+                    pred = np.array(pred).reshape((int(len(real) / (config['n_stations']['default'] * config['seq_length']['default'])), 
+                                                config['n_stations']['default'],
+                                                config['seq_length']['default']))
+                    real = np.array(real).reshape((int(len(real) / (config['n_stations']['default'] * config['seq_length']['default'])), 
+                                                config['n_stations']['default'],
+                                                config['seq_length']['default']))
 
                     # Open metric_file for writing
                     with open(metric_file, 'w') as file:

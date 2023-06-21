@@ -83,6 +83,7 @@
     * Check on [tensorflow](https://www.tensorflow.org/guide/versions) or [pytorch](https://pytorch.org/docs/stable/index.html) for a specific version that's compatible.
     * Downgrade specific modules such as scki-learn or pandas, to make sure they don't intefere with anything.
     * Also if it is only a specific model not working, ie a more complex one such as GWN, then refer to the original code base for that and try get that working isolation. Then afterwards you will after have a better idea on the packages and versions needed to get it running, and you can try adapt them to fit in the experimental platform.
+    * Can always manually install the module with your computer's package manager which can work. Don't forget to set the path to the installed package.
 * Frequently asked questions about the platform and its usage
 
 ## References & Resources

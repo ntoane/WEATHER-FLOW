@@ -5,7 +5,7 @@ from scipy.sparse import linalg
 import pandas as pd
 from Models.graphWaveNet import *
 from numpy import random
-
+import yaml
 
 class DataLoader(object):
     """
@@ -293,12 +293,12 @@ def sliding_window(df, lag, forecast, split, set):
     return x, y
 
 
-def generateRandomParameters(args):
+def generateRandomParameters(config):
     """
     Generates a random configuration of hyper-parameters from the pre-defined search space.
 
     Parameters:
-        args -  Parser of parameters.
+        config -  Conguration file of initial parameters.
 
     Returns:
         config - list of HPO parameters
@@ -318,11 +318,11 @@ def generateRandomParameters(args):
     num_layers = layers[random.randint(len(layers))]
     epoch = epochs[random.randint(len(epochs))]
 
-    args.batch_size = batch
-    args.dropout = dropout
-    args.nhid = units
-    args.lag_length = lag
-    args.num_layers = num_layers
-    args.epochs = epoch
+    config['batch_size']['default'] = batch
+    config['dropout']['default'] = dropout
+    config['nhid']['default'] = units
+    config['lag_length']['default'] = lag
+    config['num_layers']['default'] = num_layers
+    config['epochs']['default'] = epoch
 
     return [batch, dropout, units, lag, num_layers, epoch]

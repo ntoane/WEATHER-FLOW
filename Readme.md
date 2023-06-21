@@ -1,6 +1,6 @@
 # Weather-Flow
 
-*Deep Learning pipeline for weather prediction using temporal and spatio-temporal deep learning models.*
+*The Deep Learning pipeline for weather prediction, developed as an experimental platform for the UCT Cognitive Systems Lab, incorporates temporal and spatio-temporal deep learning models. This pipeline aims to facilitate experimentation and integration of the latest and most cutting-edge ST-GNN (Spatio-Temporal Graph Neural Network) models for weather forecasting.*
 
 | Member              | Student Number |
 | ------------------- | -------------- |
@@ -15,7 +15,6 @@
 # Requirements
 
 python3
-(3.8.10 is working)
 
 See `requirements_all.txt`
 
@@ -35,43 +34,44 @@ See `requirements_all.txt`
 
 'source myenv/bin/activate'
 
-* Install all necerssary dependencies and modules in requirements_all.txt
+* Install all necessary dependencies and modules in requirements_all.txt
 
 'pip3 install -r requirements_all.txt'
 
-# Experiments :
+# Experiments:
 
-## Training Models Using Optimal Hyper-Parameters
+*Only use the following command for all training, HPO and evaluation experiments with the models. Change the default configuration in the config.yaml file for the intended option of either training or performing HPO or evaluating the models to true.*
 
-Baseline HPO across 21 weather stations on [3, 6, 9, 12, 24] hour forecasting horizon:
+python3 main.py --config config.yaml
 
-'python3 main.py --train_tcn=True'
+### More details on Training, performing HPO and evaluating Models
 
-GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon:
+***Training Models Using Optimal Hyper-Parameters***
 
-'python3 main.py --train_gwn=True'
+For TCN:
+Baseline training across 21 weather stations on [3, 6, 9, 12, 24] hour forecasting horizon.
 
-## Random-Search Hyper-Parameter Optimisation(HPO)
+For GWN:
+GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon.
 
-Baseline HPO across 21 weather stations on 24 hour forecasting horizon:
+***Performing Random-Search Hyper-Parameter Optimisation(HPO)***
 
-'python3 main.py --tune_tcn=True'
+For TCN:
+Baseline HPO across 21 weather stations on 24 hour forecasting horizon.
 
-GWN GNN HPO on 24 hour forecasting horizon:
+For GWN:
+GWN GNN HPO on 24 hour forecasting horizon.
 
-'python3 main.py --tune_gwn=True'
+***Evaluating Models' Performance(MSE, RMSE, MAE, SMAPE)***
 
-## Evaluate Models' Performance(MSE, RMSE, MAE, SMAPE)
+For TCN:
+Evaluation across 21 weather stations on [3, 6, 9, 12, 24] hour forecasting horizon.
 
-Evaluation across 21 weather stations on [3, 6, 9, 12, 24] hour forecasting horizon:
-
-'python3 main.py --eval_tcn=True'
-
+For GWN:
 GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon on each of the 21 weather stations:
-
-'python3 main.py --eval_gwn=True'
-
 
 ## Generate visualisation
 
- python3 main.py --geoVis=True --modelVis=GWN --horizonVis=3 --splitVis=0
+Sinply use following command but remember to set default value for geoVis == True
+
+python3 main.py --config config.yaml
