@@ -12,3 +12,4 @@ torch==1.10.1
 networkx
 matplotlib
 basemap
+seaborn
