@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.basemap import Basemap
 import seaborn as sns
 import csv
-import sys
 
 def create_graph(adj_matrix):
     G = nx.DiGraph()
@@ -32,14 +31,11 @@ def plot_graph(adj_matrix, province_colours):
     
     fig, ax = plt.subplots(figsize=(8, 8),dpi=300)
 
-
     min_lon = min(pos[0] for pos in node_positions.values())
     max_lon = max(pos[0] for pos in node_positions.values())
     min_lat = min(pos[1] for pos in node_positions.values())
     max_lat = max(pos[1] for pos in node_positions.values())
 
-    center_lon = (min_lon + max_lon) / 2
-    center_lat = (min_lat + max_lat) / 2
     width = max_lon - min_lon
     height = max_lat - min_lat
 
@@ -53,13 +49,12 @@ def plot_graph(adj_matrix, province_colours):
     m.fillcontinents(color='white', lake_color='lightblue')
 
     node_degrees = G.out_degree()
-
     node_sizes = [100 * degree + 80 for _, degree in node_degrees]
     node_colors = [province_colours[G.nodes[node]['province']] for node in G.nodes()]
     nx.draw_networkx_nodes(G, pos=node_positions, node_color=node_colors, node_size=node_sizes, ax=ax)
 
     edge_colors = [province_colours[G.nodes[u]['province']] for u, v in G.edges()]
-    nx.draw_networkx_edges(G, pos=node_positions, edge_color=edge_colors, arrows=True, arrowstyle='->', width=0.5, ax=ax)
+    nx.draw_networkx_edges(G, pos=node_positions, edge_color=edge_colors, arrows=True, arrowstyle='->', width=1, ax=ax)
 
     nx.draw_networkx_labels(
         G, pos=node_positions, labels={node: node for node in G.nodes()},
@@ -71,19 +66,14 @@ def plot_graph(adj_matrix, province_colours):
         for province, color in province_colours.items()
     ]
     ax.legend(handles=legend_elements, loc='upper right')
-
     ax.set_title("Strongest Dependencies")
-
     fig.savefig('Visualisations/geographicVis.png')
 
 
 def plot_heatmap(adj_matrix):
-    fig_heatmap, ax_heatmap = plt.subplots(figsize=(8, 8))
-
+    fig_heatmap, ax_heatmap = plt.subplots()
     sns.heatmap(adj_matrix, cmap='YlGnBu', ax=ax_heatmap)
-
     ax_heatmap.set_title("Adjacency Matrix Heatmap")
-
     fig_heatmap.savefig('Visualisations/heatmap.png')
 
 
