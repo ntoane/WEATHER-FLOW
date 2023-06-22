@@ -19,7 +19,7 @@
   * GWN: GWN is a variant of ST-GNN that combines TCN layers and graph convolutional layers. It utilizes a self-adaptive adjacency matrix learned through gradient descent in the graph convolutional module. The experimental pipeline for these models follows a similar process as the TCN model, but with some differences. ***Instead of separate models for each weather station, a single model is used for all stations***. In addition to TCN's hyper-parameters, the adjacency matrices need to be considered. The adjacency matrix is of the self-adaptive type and is randomly initialized.
   * *Note for more details on the baselines please refer to our Proposal document.*
 
-## Installation & Setup
+## Installation & Setup & Configuration
 
 * System requirements:
 
@@ -36,8 +36,10 @@
 * Installation instructions for Python and necessary libraries:
 
   * Same as seen in the Readme.md
-  * Please refer to FAQ's for any installation errors, as these may be frequently encountered types of errors that can be guided through.
-* Configuration steps for setting up the experimental platform
+  * Please refer to FAQ's for any installation errors, as these may be frequently encountered errors that can be guided through with some tips and tricks.
+* Configuration settings for setting up the experimental platform with the models
+
+  * *config.yaml* file contains all the configuration settings, whereby for the boolean setting the default values can be adjusted to be true or false depending on the model and experiment intended to be run. The other settings that have the default initial values such as the hidden layers etc. the default numbers can be altered too for future experiments.
 
 ## Data Preprocessing
 
@@ -90,9 +92,12 @@
 
 * List of relevant research papers, articles, and books:
   * [Davidsons Paper](https://www.springerprofessional.de/en/st-gnns-for-weather-prediction-in-south-africa/23774860)
-* Links to external resources and libraries used in the platform
+* Links to external resources and libraries used in the platform that are most likely to cause version and dependency errors:
   * [Tensorflow](https://www.tensorflow.org)
   * [Pytorch](https://pytorch.org)
+  * [NumPy](https://numpy.org/doc/stable/)
+  * [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
+  * 
 * 
 
 ## Appendix

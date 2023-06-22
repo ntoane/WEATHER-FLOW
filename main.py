@@ -124,7 +124,7 @@ if __name__ == '__main__':
         baselineEval.GwnEval(stations, config)
 
 ############ Visualisations #############
-    if config['vis']['default']:
+    if config['geoVis']['default']:
         visualise.plot(config)
 
 
