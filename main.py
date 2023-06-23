@@ -19,7 +19,7 @@ with open('config.yaml', 'r') as file:
 
 if __name__ == '__main__':
     # Access the configuration default values from config file
-    geo_vis = config['geoVis']['default']
+    vis = config['vis']['default']
     model_vis = config['modelVis']['default']
     horizon_vis = config['horizonVis']['default']
     split_vis = config['splitVis']['default']
@@ -124,7 +124,7 @@ if __name__ == '__main__':
         baselineEval.GwnEval(stations, config)
 
 ############ Visualisations #############
-    if config['geoVis']['default']:
+    if config['vis']['default']:
         visualise.plot(config)
 
 

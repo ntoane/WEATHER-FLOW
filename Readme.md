@@ -72,10 +72,6 @@ GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon on each of the 21 weat
 
 ## Generate visualisation
 
-<<<<<<< HEAD
-Sinply use following command but remember to set default value for geoVis == True
-
+In config yalm set:  vis default value to true 
+Then run:
 python3 main.py --config config.yaml
-=======
- python3 main.py --vis=True --modelVis=GWN --horizonVis=3 --splitVis=0
->>>>>>> ade9e0206968d451b5708958106280fd0650bf4d

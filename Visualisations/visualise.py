@@ -25,7 +25,7 @@ def create_graph(adj_matrix):
     return G
 
 
-def plot_graph(adj_matrix, province_colours):
+def plot_map(adj_matrix, province_colours):
     G = create_graph(adj_matrix)
     node_positions = nx.get_node_attributes(G, 'pos')
     
@@ -77,8 +77,8 @@ def plot_heatmap(adj_matrix):
     fig_heatmap.savefig('Visualisations/heatmap.png')
 
 
-def plot(args):
-    matrix_path = "Results/" + args.modelVis + "/" + args.horizonVis + " Hour Forecast/Matrices/adjacency_matrix_" + args.splitVis + ".csv"
+def plot(config):
+    matrix_path = "Results/" + config['modelVis']['default'] + "/" + config['horizonVis']['default'] + " Hour Forecast/Matrices/adjacency_matrix_" + config['splitVis']['default'] + ".csv"
     df = pd.read_csv(matrix_path, index_col=0)
     adj_matrix = df.values
 
@@ -88,5 +88,5 @@ def plot(args):
     'Northern Cape': 'green'
     }
 
-    plot_graph(adj_matrix,province_colours)
+    plot_map(adj_matrix,province_colours)
     plot_heatmap(adj_matrix)

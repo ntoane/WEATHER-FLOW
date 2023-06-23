@@ -45,21 +45,21 @@ n_split:
   help: number of splits in walk-forward validation
 
 ############################ Visualise Adjacency Matrix ############################
-geoVis:
+vis:
   type: bool
   default: false
-  help: whether to visualize the adjacency matrix
+  help: whether to create visualisations
 modelVis:
   type: str
-  default: TCN
+  default: GWN
   help: the model to visualize
 horizonVis:
   type: str
-  default: daily
+  default: "3"
   help: the horizon to visualize
 splitVis:
   type: str
-  default: train
+  default: "0"
   help: the split to visualize
 
 
