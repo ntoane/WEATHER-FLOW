@@ -6,7 +6,7 @@
 
 * Overview of the experimental platform
 
-  * This experimental platform was initially created by Davidson for [his Masters project at UCT](https://www.springerprofessional.de/en/st-gnns-for-weather-prediction-in-south-africa/23774860). It was initially not designed for future use, but since then has become enhanced to be a clear, easy-to-use experimental platform for the cognitive systems lab, that's customizable and extensible with code modularity maximized and code coupling minimized.
+  * This experimental platform was initially created by Davidson for [his Masters project at UCT](https://www.springerprofessional.de/en/st-gnns-for-weather-prediction-in-south-africa/23774860). It was initially not designed for future use, but since then has become enhanced to be a clear, easy-to-use experimental platform for the cognitive systems lab, that's customizable and extensible with code modularity maximized and code coupling minimized as much as possible.
 * Aims & Objectives of the experimental platform
 
   * Extend Davidson’s experimental platform to evaluate all our individual ST-GNN variants, along with the baseline models.
@@ -15,8 +15,20 @@
   * Ensure that the experimental platform is highly usable, easily integratable for new techniques and well designed to allow for easy future use.
 * Brief explanation of the experimental pipeline used for, GWN, and TCN as baselines:
 
-  * TCN: The TCN baseline model is evaluated using a specific experiment pipeline. Separate ***TCN models are built for each weather station.*** Walk-forward validation is performed on each station's dataset, resulting in multiple training, validation, and test splits. Hyper-parameter optimization is done for the first three splits, considering parameters such as epochs, batch size, learning rate, input window size, number of layers, dropout rate, layer normalization, and number of filters. The optimal parameters are selected based on the lowest error across all splits for the 24-hour prediction horizon. The models are trained and evaluated for each split, and the predictions for each split are concatenated. SMAPE metrics are calculated using the concatenated predicted values and the actual values.
-  * GWN: GWN is a variant of ST-GNN that combines TCN layers and graph convolutional layers. It utilizes a self-adaptive adjacency matrix learned through gradient descent in the graph convolutional module. The experimental pipeline for these models follows a similar process as the TCN model, but with some differences. ***Instead of separate models for each weather station, a single model is used for all stations***. In addition to TCN's hyper-parameters, the adjacency matrices need to be considered. The adjacency matrix is of the self-adaptive type and is randomly initialized.
+  * TCN:
+    * Separate ***TCN models are built for each weather station.***
+    * Walk-forward validation is performed on each station's dataset, resulting in multiple training, validation, and test splits.
+    * Hyper-parameter optimization is done for the first three splits, considering parameters such as epochs, batch size, learning rate, input window size, number of layers, dropout rate, layer normalization, and number of filters.
+    * The optimal parameters are selected based on the lowest error across all splits for the 24-hour prediction horizon.
+    * The models are trained and evaluated for each split, and the predictions for each split are concatenated.
+    * This has been deemed to be a respectable baseline to compare other, newer models, prediction accuracy on.
+    * SMAPE metrics are calculated using the concatenated predicted values and the actual values.
+  * GWN:
+    * GWN is a variant of ST-GNN that combines TCN layers and graph convolutional layers.
+    * ***A single model is built for all stations***.
+    * It utilizes a self-adaptive adjacency matrix learned through gradient descent in the graph convolutional module.
+    * The experimental pipeline for these models follows a similar process as the TCN model, but with some differences. In addition to TCN's hyper-parameters, the adjacency matrices need to be considered.
+    * The adjacency matrix is of the self-adaptive type and is randomly initialized. This model had evidently become a reputable baseline that other, cutting-edge models, can be effectively compared against.
   * *Note for more details on the baselines please refer to our Proposal document.*
 
 ## Installation & Setup & Configuration
@@ -82,16 +94,25 @@
 * Common issues and solutions:
   * Dependency or library conflicts:
     * Ensure you are using a virtual enviornment with modules in the requirements_all.txt correctly installed.
-    * Check on [tensorflow](https://www.tensorflow.org/guide/versions) or [pytorch](https://pytorch.org/docs/stable/index.html) for a specific version that's compatible.
+    * Check on [tensorflow](https://www.tensorflow.org/guide/versions) or [pytorch](https://pytorch.org/docs/stable/index.html) for a specific version that's compatible, even if it is a lower version than the one currently stated in the requirements.txt file.
     * Downgrade specific modules such as scki-learn or pandas, to make sure they don't intefere with anything.
     * Also if it is only a specific model not working, ie a more complex one such as GWN, then refer to the original code base for that and try get that working isolation. Then afterwards you will after have a better idea on the packages and versions needed to get it running, and you can try adapt them to fit in the experimental platform.
     * Can always manually install the module with your computer's package manager which can work. Don't forget to set the path to the installed package.
-* Frequently asked questions about the platform and its usage
+* Frequently asked questions about the platform and its usage:
+  * Can the platform handle large-scale datasets?
+  * How can I fine-tune or customize the TCN and GWN models within the platform?
+  * How accurate are the TCN and GWN models in weather temperature prediction?
+  * Are there any specific data requirements or preprocessing steps for using this platform?
+  * What are the advantages of using TCN and GWN models as baselines?
+  * Can I use my own spatial-temporal GNN models with this platform
 
 ## References & Resources
 
-* List of relevant research papers, articles, and books:
+* List of relevant and foundational research papers, articles, and books:
   * [Davidsons Paper](https://www.springerprofessional.de/en/st-gnns-for-weather-prediction-in-south-africa/23774860)
+  * [Yaml Configuration Files](https://elib.psu.by/handle/123456789/36942)
+  * [Experimental Platform Concept #1 ](https://pure.mpg.de/rest/items/item_3020343/component/file_3036194/content),  [Experimental Platform Concept #2](https://openaccess.thecvf.com/content_ICCV_2019/html/Savva_Habitat_A_Platform_for_Embodied_AI_Research_ICCV_2019_paper.html)
+  * 
 * Links to external resources and libraries used in the platform that are most likely to cause version and dependency errors:
   * [Tensorflow](https://www.tensorflow.org)
   * [Pytorch](https://pytorch.org)
