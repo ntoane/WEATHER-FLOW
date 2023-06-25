@@ -55,12 +55,15 @@
 
 ## Data Preprocessing
 
-* Description of the weather station data used
-  * We have currently gathered weather stations for Eastern Cape, Northern Cape and Western Cape, totalling at XXX weather stations in total. This is more than previously used by Davidson.
+* Description
+  * We have currently gathered weather stations for Eastern Cape, Northern Cape and Western Cape provided by South African Weather Services (SAWS), totalling at 45 weather stations in total, 15 stations each per province. This is more than previously used by Davidson.
 * Steps for data preprocessing and cleaning
-* Handling missing values and outliers
+  * Python script was wriiten to ensure data was filtered according to individual stations and only stations that had below 5% missing data were selected
+* Handling missing values and time records
+  * We implemented Inverse Distance Weigthing method (IDW) to handle the missing time records or variables in the data
 * Splitting the data into training and test sets
-
+  * Data was split using walk forward validtion method
+  
 ## Model Architecture
 
 * Overview of the neural network models used (GWN and TCN)
