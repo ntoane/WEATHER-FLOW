@@ -9,7 +9,7 @@ import csv
 def create_graph(adj_matrix):
     G = nx.DiGraph()
 
-    with open('Data/Weather Station Data/Provinces/Provinces.csv', 'r') as file:
+    with open('Data/Locations/Locations.csv', 'r') as file:
         reader = csv.reader(file)
         next(reader)  # Skip the header row
         for row in reader:
