@@ -70,11 +70,24 @@ if __name__ == '__main__':
     lr_factor = config['lr_factor']['default']
 
     # list of all weather stations
-    stations = ['Atlantis', 'Calvinia WO', 'Cape Columbine', 'Cape Point',
-                'Cape Town - Royal Yacht Club', 'Cape Town Slangkop', 'Excelsior Ceres', 'Hermanus',
-                'Jonkershoek', 'Kirstenbosch', 'Ladismith', 'Molteno Resevoir', 'Paarl',
-                'Porterville', 'Robben Island', 'Robertson', 'SA Astronomical Observatory',
-                'Struisbaai', 'Tygerhoek', 'Wellington', 'Worcester AWS']
+    # stations = ['Atlantis', 'Calvinia WO', 'Cape Columbine', 'Cape Point',
+    #             'Cape Town - Royal Yacht Club', 'Cape Town Slangkop', 'Excelsior Ceres', 'Hermanus',
+    #             'Jonkershoek', 'Kirstenbosch', 'Ladismith', 'Molteno Resevoir', 'Paarl',
+    #             'Porterville', 'Robben Island', 'Robertson', 'SA Astronomical Observatory',
+    #             'Struisbaai', 'Tygerhoek', 'Wellington', 'Worcester AWS']
+
+    #new stations
+
+    stations = ['ADDO ELEPHANT PARK', 'ALEXANDERBAAI', 'ALIWAL-NORTH PLAATKOP', 'BARKLY-OOS (CAERLEON)',
+                'BRANDVLEI', 'CALVINIA WO', 'CAPE TOWN WO', 'DE AAR WO', 'DOHNE - AGR', 'EAST LONDON WO',
+                'EXCELSIOR CERES', 'FORT BEAUFORT', 'FRASERBURG', 'GEORGE WITFONTEIN', 'GEORGE WO', 
+                'GRAAFF - REINET', 'GRAHAMSTOWN', 'KOINGNAAS', 'LADISMITH', 'LAINGSBURG', 'LANGGEWENS',
+                'MALMESBURY', 'MOLTENO RESERVOIR','NOUPOORT','OUDTSHOORN', 'PATENSIE','POFADDER', 
+                'PORT ALFRED - AIRPORT','PORT ELIZABETH AWOS', 'PORT ELIZABETH AWS','PORT NOLLOTH','PORTERVILLE', 
+                'PRIESKA', 'REDELINGSHUYS-AWS','RIVERSDALE','SOMERSET EAST','SPRINGBOK WO','TWEE RIVIEREN',
+                'UITENHAGE','UPINGTON WO', 'VANWYKSVLEI','VIOOLSDRIF - AWS','VREDENDAL','WILLOWMORE','WORCESTER-AWS'
+]
+
 
     """
     List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 

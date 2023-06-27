@@ -69,13 +69,12 @@ def train_model(config, data, split, supports, adj_init, model_file):
             min_val_loss = validation_loss
             patience = 0
             util.save_model(engine.model, model_file)
-
         else:
             patience += 1
 
         if patience == config['patience']['default']:
             break
-
+        
     engine.model = util.load_model(model_file)
     testStart = time.time()
     validation_test_loss, predictions, targets = engine.test(validationLoader, config)
@@ -101,7 +100,7 @@ def hpo(increment, initialConfig):
         initialConfig = yaml.safe_load(file)
     
     data = pd.read_csv(initialConfig['data']['default'])
-    data = data.drop(['StasName', 'DateT'], axis=1)
+    data = data.drop(['StasName', 'DateT','Latitude', 'Longitude'], axis=1)  #added latitude and longitude
     
     # gwn_logger = modelLogger('gwn','all' 'Evaluation/Logs/GWN/gwn_logs.txt')
     # gwn_logger.info('gwnHPO : Locating the best configuration settings.')
@@ -125,11 +124,11 @@ def hpo(increment, initialConfig):
 
         for k in range(num_splits):
             modelFile = 'Garage/HPO Models/GWN/model_split_' + str(k)
+            
             split = [increment[k] * int(initialConfig['n_stations']['default']), 
                      increment[k + 1] * int(initialConfig['n_stations']['default']),
                      increment[k + 2] * initialConfig['n_stations']['default']]
             data_sets = [data[:split[0]], data[split[0]:split[1]], data[split[1]:split[2]]]
-
             adj_matrix = util.load_adj(adjFile=initialConfig['adjdata']['default'], 
                                        adjtype=initialConfig['adjtype']['default'])
             supports = [torch.tensor(i).to(initialConfig['device']['default']) for i in adj_matrix]
@@ -150,7 +149,9 @@ def hpo(increment, initialConfig):
                       'Lag_length - ', initialConfig['lag_length']['default'], '\n',
                       'Hidden Units - ', initialConfig['nhid']['default'], '\n',
                       'Layers - ', initialConfig['num_layers']['default'], '\n',
-                      'Batch Size - ', initialConfig['batch_size']['default'], '\n')
+                      'Batch Size - ', initialConfig['batch_size']['default'], '\n',
+                      'Epochs - ', initialConfig['epochs']['default'])
+
                 output, real = train_model(initialConfig, data_sets, split, supports, adjinit, modelFile)
 
             except Warning:
