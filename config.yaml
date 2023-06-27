@@ -47,7 +47,7 @@ n_split:
 ############################ Visualise Adjacency Matrix ############################
 vis:
   type: bool
-  default: false
+  default: true
   help: whether to create visualisations
 modelVis:
   type: str

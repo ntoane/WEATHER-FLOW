@@ -1,0 +1,2 @@
+2023-06-27 13:43:19,472 - Atlantis - INFO - tcnTrain : TCN model training started at Atlantis
+2023-06-27 13:43:19,652 - Atlantis - INFO - tcnTrain :TCN Model on split 1/27 at Atlantis station forecasting 3 hours ahead.
