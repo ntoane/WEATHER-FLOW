@@ -19,7 +19,7 @@ def train_model(config, data_sets, split, supports, adj_init, dictionary):
 
     Parameters:
         data_split - Split of data within walk-forward validation.
-        args - Parser of parameters.
+        args (config) - Parser of parameters.
         train_data - Training data used to train GWN model.
         validate_data - Validation data on which the GWN model is validated.
         test_data - Test data on which the GWN model is tested.
@@ -131,7 +131,7 @@ def train(increment, config):
     # this is a csv file with all weather stations in 1 file, each hour by hour
     data = pd.read_csv(config['data']['default'])
     #print(args.data)
-    data = data.drop(['StasName', 'DateT'], axis=1)
+    data = data.drop(['StasName', 'DateT', 'Latitude', 'Longitude'], axis=1)  #added latitude and longitude
 
     forecast_horizons = [3, 6, 9, 12, 24]
 

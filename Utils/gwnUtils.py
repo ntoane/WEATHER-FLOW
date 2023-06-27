@@ -252,15 +252,15 @@ def sliding_window(df, lag, forecast, split, set):
         x, y - returns x input and y output
     """
     if set == 0:
-        samples = int(split[0] / 21)
+        samples = int(split[0] / 45)
     if set == 1:
-        samples = int(split[1] / 21 - split[0] / 21)
+        samples = int(split[1] / 45 - split[0] / 45)
     if set == 2:
-        samples = int(split[2] / 21 - split[1] / 21)
+        samples = int(split[2] / 45 - split[1] / 45)
 
 
     dfy = df.drop(['Rain', 'Humidity', 'Pressure', 'WindSpeed', 'WindDir'], axis=1)
-    stations = 21
+    stations = 45
     features = 6
 
     df = df.values.reshape(samples, stations, features)

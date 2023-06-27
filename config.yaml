@@ -37,11 +37,11 @@ eval_gwn:
 
 n_stations:
   type: int
-  default: 21
+  default: 45  #was 21
   help: number of weather stations
 n_split:
   type: int
-  default: 27
+  default: 47     #was27
   help: number of splits in walk-forward validation
 
 ############################ Visualise Adjacency Matrix ############################
@@ -70,11 +70,11 @@ device:
   help: device to place model on
 data:
   type: str
-  default: 'Data/Graph Neural Network Data/Graph Station Data/Graph.csv'
+  default: 'DataNew/Graph Neural Network Data/Graph Station Data/Graph.csv' #DataNew
   help: data path
 adjdata:
   type: str
-  default: 'Data/Graph Neural Network Data/Adjacency Matrix/adj_mx.pkl'
+  default: 'DataNew/Graph Neural Network Data/Adjacency Matrix/adj_mx.pkl'  #DataNew
   help: adj data path
 adjtype:
   type: str
@@ -114,7 +114,7 @@ in_dim:
   help: number of features in input
 num_nodes:
   type: int
-  default: 21
+  default: 45  #was 21
   help: number of nodes in graph (num weather stations)
 num_layers:
   type: int
@@ -142,7 +142,7 @@ weight_decay:
   help: weight decay rate
 epochs:
   type: int
-  default: 3
+  default: 2
   help: ''
 save:
   type: str
