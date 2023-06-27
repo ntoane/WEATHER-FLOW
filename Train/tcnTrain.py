@@ -14,7 +14,7 @@ from Logs.modelLogger import modelLogger
 def train(stations, increment):
     """
     Trains the final TCN models for each weather station across all forecasting horizons
-    using walk-forward validation across 27 splits. Ideal parameters are read in from a text file. The parameters are
+    using walk-forward validation across 47 splits. Ideal parameters are read in from a text file. The parameters are
     then converted to a list. The train, validation, and test sets are normalised using MinMax scaler, the normalised
     sets are then processed into sliding-window input-output pairs. The TCN model is the instantiated, trained on the
     train set and tested on the test set. The predictions, targets, and losses are written to .csv files for each
@@ -38,7 +38,7 @@ def train(stations, increment):
     
         for station in stations:
             # printing out which station we are forecasting
-            # tcn_logger = modelLogger('tcn', '{1}', 'TCN training started on split {0}/27 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+            # tcn_logger = modelLogger('tcn', '{1}', 'TCN training started on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
             #                                                                                          forecast_len))
             
             tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
@@ -48,7 +48,7 @@ def train(stations, increment):
             print('tcnTrain : TCN model training started at ' + station)
 
             # pulling in weather station data
-            weatherData = 'Data/Weather Station Data/' + station + '.csv'
+            weatherData = 'DataNew/Weather Station Data/' + station + '.csv'
             ts = utils.create_dataset(weatherData)
 
             # reading in the parameters from the text file
@@ -85,11 +85,11 @@ def train(stations, increment):
             lossFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
                        'loss.csv'
 
-            num_splits = 27
+            num_splits = 47 # was 27
             for k in range(num_splits):
-                print('TCN training started on split {0}/27 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                print('TCN training started on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                      forecast_len))
-                tcn_logger.info('tcnTrain :TCN Model on split {0}/27 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                tcn_logger.info('tcnTrain :TCN Model on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                      forecast_len))
 
                 # lossFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
@@ -166,7 +166,7 @@ def train(stations, increment):
                     # predictions to dataframe
                     resultsDF = pd.concat([resultsDF, pd.Series(yhat.reshape(-1, ))])
 
-                tcn_logger.info('tcnTrain : TCN training done on split {0}/27 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                tcn_logger.info('tcnTrain : TCN training done on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                      forecast_len))
                 # Targets to dataframe
                 targetDF = pd.concat([targetDF, pd.Series(Y_test.reshape(-1, ))])

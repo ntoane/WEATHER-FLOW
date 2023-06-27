@@ -32,7 +32,7 @@ def hpo(stations, increment, config):
         tcn_logger.info('tcnHPO : TCN HPO training started at ' + station)
         
         # pulling in weather station data
-        weatherData = 'Data/Weather Station Data/' + station + '.csv'
+        weatherData = 'DataNew/Weather Station Data/' + station + '.csv'
         ts = utils.create_dataset(weatherData)
 
         textFile = 'HPO/Best Parameters/TCN/' + station + '_configurations.txt'

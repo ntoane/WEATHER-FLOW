@@ -1,0 +1,2 @@
+2023-06-28 01:46:12,043 - ADDO ELEPHANT PARK - INFO - tcnTrain : TCN model training started at ADDO ELEPHANT PARK
+2023-06-28 01:46:12,276 - ADDO ELEPHANT PARK - INFO - tcnTrain :TCN Model on split 1/47 at ADDO ELEPHANT PARK station forecasting 3 hours ahead.

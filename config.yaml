@@ -14,11 +14,11 @@ train_gwn:
 ############################ Random Search HPO arguments ############################ 
 tune_tcn:
   type: bool
-  default: false
+  default: true
   help: whether to perform random search HPO on TCN models
 tune_gwn:
   type: bool
-  default: true
+  default: false
   help: whether to perform random search HPO on GWN model
 num_configs:
   type: int
@@ -52,15 +52,15 @@ vis:
 modelVis:
   type: str
   default: GWN
-  help: the model to visualize
+  help: the model to visualise
 horizonVis:
   type: str
   default: "3"
-  help: the horizon to visualize
+  help: the horizon to visualise
 splitVis:
   type: str
   default: "0"
-  help: the split to visualize
+  help: the split to visualise
 
 
 ############################# Graph WaveNet arguments, default arguments are optimal hyper-parameters ############################
