@@ -63,7 +63,7 @@
   * We implemented Inverse Distance Weigthing method (IDW) to handle the missing time records or variables in the data
 * Splitting the data into training and test sets
   * Data was split using walk forward validtion method
-  
+
 ## Model Architecture
 
 * Overview of the neural network models used (GWN and TCN)
@@ -103,26 +103,48 @@
     * Can always manually install the module with your computer's package manager which can work. Don't forget to set the path to the installed package.
 * Frequently asked questions about the platform and its usage:
   * Can the platform handle large-scale datasets?
+
+    * Yes currently the platform is able to handle such large datasets, an example is a .csv file with several weather columns of data that spands about 5 126 800 rows.
   * How can I fine-tune or customize the TCN and GWN models within the platform?
-  * How accurate are the TCN and GWN models in weather temperature prediction?
+
+    * Yes such customization settings can be located within the config.yaml file under the relevant section.
+  * How accurate are the TCN and GWN baseline models in weather temperature prediction?
+
+    * These models have been chosen as baselines as they are evidently amongst the most reputable within the ST-GNN domain. Although they haven't explicitly been used for the weather temperature prediction problem, they will most likely yield impressive results, given their success in the Traffic prediction domain.
   * Are there any specific data requirements or preprocessing steps for using this platform?
-  * What are the advantages of using TCN and GWN models as baselines?
+
+    * Currently we have only used data given to us from South African Weather Services (SAWS), that is in a certain column format. We have created a module dedicated to pre-processing the data.
   * Can I use my own spatial-temporal GNN models with this platform
+
+    * Yes that's the primary goal of this experimental platform, is for it to be highly usable and easily integrated with any cutting-edge ST-GNN technoque that may arise in the following years.
 
 ## References & Resources
 
 * List of relevant and foundational research papers, articles, and books:
-  * [Davidsons Paper](https://www.springerprofessional.de/en/st-gnns-for-weather-prediction-in-south-africa/23774860)
-  * [Yaml Configuration Files](https://elib.psu.by/handle/123456789/36942)
-  * [Experimental Platform Concept #1 ](https://pure.mpg.de/rest/items/item_3020343/component/file_3036194/content),  [Experimental Platform Concept #2](https://openaccess.thecvf.com/content_ICCV_2019/html/Savva_Habitat_A_Platform_for_Embodied_AI_Research_ICCV_2019_paper.html)
-  * 
+
+  * Foundational Theory:
+
+    * [Davidsons Paper](https://www.springerprofessional.de/en/st-gnns-for-weather-prediction-in-south-africa/23774860)
+    * [Pillay&#39;s Paper](https://link.springer.com/chapter/10.1007/978-3-030-95070-5_7)
+  * Experimental Platform:
+
+    * [Concept #1 ](https://pure.mpg.de/rest/items/item_3020343/component/file_3036194/content)
+    * [Concept #2](https://openaccess.thecvf.com/content_ICCV_2019/html/Savva_Habitat_A_Platform_for_Embodied_AI_Research_ICCV_2019_paper.html)
+    * [Concept #3](https://www.emerald.com/insight/content/doi/10.1108/JMTM-02-2022-0092/full/html)
+  * Visualizations
+
+    * [Concept #1](https://link.springer.com/chapter/10.1007/978-3-031-22321-1_7)
+    * [Concept #2](https://www.sciencedirect.com/science/article/pii/S0950705122000508?casa_token=3CtDCSkfVKMAAAAA:mjnnTlS7FpjsFqTF7xEY0nj7CH5fjse7kVukBX5AWVVYemiWDWxMK31MQXuiTk4o_5P_a6-5Zew)
+
+
+
 * Links to external resources and libraries used in the platform that are most likely to cause version and dependency errors:
   * [Tensorflow](https://www.tensorflow.org)
   * [Pytorch](https://pytorch.org)
   * [NumPy](https://numpy.org/doc/stable/)
   * [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
-  * 
-* 
+  * [Yaml Configuration Files](https://elib.psu.by/handle/123456789/36942)
+
 
 ## Appendix
 

@@ -126,5 +126,12 @@ if __name__ == '__main__':
 ############ Visualisations #############
     if config['vis']['default']:
         visualise.plot(config)
+     
+############ Else condition #############   
+    else :
+        print("You have not set any of the models in the config.yaml file to True. Please review the config.yaml file again before continuing. :)")
+    
+        
+    
 
 
