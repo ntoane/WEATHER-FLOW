@@ -3,7 +3,7 @@
 ############################ Train final baseline and GNN model arguments ############################
 train_tcn:
   type: bool
-  default: false
+  default: true
   help: whether to train final TCN models
 train_gwn:
   type: bool
@@ -14,7 +14,7 @@ train_gwn:
 ############################ Random Search HPO arguments ############################ 
 tune_tcn:
   type: bool
-  default: true
+  default: false
   help: whether to perform random search HPO on TCN models
 tune_gwn:
   type: bool
@@ -63,7 +63,7 @@ splitVis:
   help: the split to visualise
 
 
-############################# Graph WaveNet arguments, default arguments are optimal hyper-parameters ############################
+###################### Baseline GWN args, default arguments are optimal hyper-parameters ######################
 device:
   type: str
   default: cpu
@@ -149,64 +149,44 @@ save:
   default: 'Garage/Final Models/GWN/'
   help: save path
 
-############################# Low Rank-Weighted GNN arguments, default arguments are optimal hyper-parameters ############################
-adjTrainable:
-  type: bool
-  default: true
-  help: adjacency matrix a trainable parameter
-use_sparse:
-  type: bool
-  default: false
-  help: Use sparse adjacency matrix
-nlayers:
+####################### Baseline TCN args, default arguments are optimal hyper-parameters ########################
+epoch: 
   type: int
-  default: 2
-  help: number of gconv layers
-features:
-  type: int
-  default: 6
-  help: number of features
-nbatch_size:
-  type: int
-  default: 32
-  help: batch size
-nbatches:
-  type: int
-  default: 15000
-  help: number of batches to train on
-nhidden:
-  type: int
-  default: 8
-  help: ''
-nsteps:
-  type: int
-  default: 24
-  help: length of input sequence
-mask_len:
-  type: int
-  default: 0
-  help: length of input to be used as context
-forecast:
-  type: int
-  default: 24
-  help: how many steps into the future to forecast
-rank:
-  type: int
-  default: null
-  help: rank of adjacency matrix
-display_step:
-  type: int
-  default: 500
-  help: display metrics after number of batches
-between_lr_updates:
-  type: int
-  default: 500
-  help: display metrics after number of batches
-learningRate:
+  default: 40
+  help: epochs to run for training
+lr:
   type: float
   default: 0.01
-  help: display metrics after number of batches
-lr_factor:
-  type: float
-  default: 0.9
-  help: display metrics after number of batches
+  help: learning rate
+patience:
+  type: int
+  default: 5
+  help: patience value for early stopping
+loss_metric:
+  type: str
+  default: 'MSE'
+  help: loss metric to optimize
+kernels:
+  type: int
+  default: 2
+  help: number of kernels
+dilations:
+  type: list
+  default: [1, 2, 4, 8, 16, 32, 64]
+  help: list of dilation values
+batch_norm:
+  type: bool
+  default: false
+  help: whether to use batch normalization
+weight_norm:
+  type: bool
+  default: false
+  help: whether to use weight normalization
+layer_norm:
+  type: bool
+  default: true
+  help: whether to use layer normalization
+padding:
+  type: str
+  default: 'causal'
+  help: type of padding to use

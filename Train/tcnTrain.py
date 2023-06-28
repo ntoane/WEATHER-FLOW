@@ -6,12 +6,10 @@ import pandas as pd
 from keras.models import load_model
 from tcn import TCN
 import tensorflow as tf
-
-import logging
-import os
 from Logs.modelLogger import modelLogger
+import yaml
 
-def train(stations, increment):
+def train(stations, increment, config):
     """
     Trains the final TCN models for each weather station across all forecasting horizons
     using walk-forward validation across 47 splits. Ideal parameters are read in from a text file. The parameters are
@@ -23,6 +21,7 @@ def train(stations, increment):
     Parameters:
         stations -  List of weather stations.
         increment - Walk-forward validation split points.
+        config - Configuration file with parameters.
     """
 
     # physical_devices = tf.config.list_physical_devices('CPU') #CPU
@@ -55,25 +54,29 @@ def train(stations, increment):
             params = configFile.readline()
             cfg = utils.stringtoCfgTCN(params)
 
-            # setting parameters for tcn model
+            # dynamically set hpo settings set for tcn model
             layers = int(cfg[0])
             filters = int(cfg[1])
             lag_length = int(cfg[2])
             batch = int(cfg[3])
             dropout = float(cfg[4])
             activation = cfg[5]
-            epoch = 40
-            lr = 0.01
-            patience = 5
-            loss_metric = 'MSE'
-            kernels = 2
-            dilations = [1, 2, 4, 8, 16, 32, 64]
-            batch_norm = False
-            weight_norm = False
-            layer_norm = True
-            padding = 'causal'
+            
+            # default settings from config file for tcn model
+            epoch = config['epoch']['default']
+            lr = config['lr']['default']
+            patience = config['patience']['default']
+            loss_metric = config['loss_metric']['default']
+            kernels = config['kernels']['default']
+            dilations = config['dilations']['default']
+            batch_norm = config['batch_norm']['default']
+            weight_norm = config['weight_norm']['default']
+            layer_norm = config['layer_norm']['default']
+            padding = config['padding']['default']
+            #n_ahead_length = config['n_ahead_length']['default']
+            # This config setting changes for each of the forecast_len in the above list for the horizon, thus not in config file
             n_ahead_length = forecast_len
-
+             
             lossDF = pd.DataFrame()
             resultsDF = pd.DataFrame()
             targetDF = pd.DataFrame()
@@ -109,7 +112,7 @@ def train(stations, increment):
 
                 # Defining input shape
                 n_ft = train.shape[1]
-
+                
                 # Creating the X and Y for forecasting
                 X_train, Y_train = utils.create_X_Y(train, lag_length, n_ahead_length)
 

@@ -53,31 +53,32 @@ if __name__ == '__main__':
     weight_decay = config['weight_decay']['default']
     epochs = config['epochs']['default']
     save = config['save']['default']
-    adjTrainable = config['adjTrainable']['default']
-    use_sparse = config['use_sparse']['default']
-    nlayers = config['nlayers']['default']
-    features = config['features']['default']
-    nbatch_size = config['nbatch_size']['default']
-    nbatches = config['nbatches']['default']
-    nhidden = config['nhidden']['default']
-    nsteps = config['nsteps']['default']
-    mask_len = config['mask_len']['default']
-    forecast = config['forecast']['default']
-    rank = config['rank']['default']
-    display_step = config['display_step']['default']
-    between_lr_updates = config['between_lr_updates']['default']
-    learningRate = config['learningRate']['default']
-    lr_factor = config['lr_factor']['default']
+    
+    # old settings for a model deleted from yaml 
+    #adjTrainable = config['adjTrainable']['default']
+    # use_sparse = config['use_sparse']['default']
+    # nlayers = config['nlayers']['default']
+    # features = config['features']['default']
+    # nbatch_size = config['nbatch_size']['default']
+    # nbatches = config['nbatches']['default']
+    # nhidden = config['nhidden']['default']
+    # nsteps = config['nsteps']['default']
+    # mask_len = config['mask_len']['default']
+    # forecast = config['forecast']['default']
+    # rank = config['rank']['default']
+    # display_step = config['display_step']['default']
+    # between_lr_updates = config['between_lr_updates']['default']
+    # learningRate = config['learningRate']['default']
+    # lr_factor = config['lr_factor']['default']
 
-    # list of all weather stations
+    # list of all weather stations - Davidsons initial stations
     # stations = ['Atlantis', 'Calvinia WO', 'Cape Columbine', 'Cape Point',
     #             'Cape Town - Royal Yacht Club', 'Cape Town Slangkop', 'Excelsior Ceres', 'Hermanus',
     #             'Jonkershoek', 'Kirstenbosch', 'Ladismith', 'Molteno Resevoir', 'Paarl',
     #             'Porterville', 'Robben Island', 'Robertson', 'SA Astronomical Observatory',
     #             'Struisbaai', 'Tygerhoek', 'Wellington', 'Worcester AWS']
 
-    #new stations
-
+    # list of new stations
     stations = ['ADDO ELEPHANT PARK', 'ALEXANDERBAAI', 'ALIWAL-NORTH PLAATKOP', 'BARKLY-OOS (CAERLEON)',
                 'BRANDVLEI', 'CALVINIA WO', 'CAPE TOWN WO', 'DE AAR WO', 'DOHNE - AGR', 'EAST LONDON WO',
                 'EXCELSIOR CERES', 'FORT BEAUFORT', 'FRASERBURG', 'GEORGE WITFONTEIN', 'GEORGE WO', 
@@ -95,13 +96,13 @@ if __name__ == '__main__':
     data, resulting in rolling walk-forward validation where the train size increases each increment, with the 
     validation and test sets each being 3 months' worth of data.
     """
+    # old davidson increments
     # increment = [8784, 10944, 13128, 15336, 17544, 19704, 21888,
     #              24096, 26304, 28464, 30648, 32856, 35064, 37248,
     #              39432, 41640, 43848, 46008, 48192, 50400, 52608,
     #              54768, 56952, 59160, 61368, 63528, 65712, 67920, 70128]
     
     #new increments:
-
     increment = [8760, 10920, 13106, 15312, 17520, 19704, 21888, 24096, 26304,
                  28464, 30648, 32856, 35064, 37224, 39408, 41616, 43824, 45984,
                  48168, 50376, 52584, 54768, 56952, 59160, 61368, 63528, 65712,
@@ -110,21 +111,20 @@ if __name__ == '__main__':
                  107352, 109536, 111744, 113929]
     
     
-
-
-    """
-    Adjusted increment list seen above for WGN model. A number of steps are removed when shifting the time-series up
-    to process the data into input-output pairs. args.forecast = forecast length(24 hours).
-    """
-    wgn_increment = [8784, 10944, 13128, 15336, 17544, 19704, 21888,
-                     24096, 26304, 28464, 30648, 32856, 35064, 37248,
-                     39432, 41640, 43848, 46008, 48192, 50400, 52608,
-                     54768, 56952, 59160, 61368, 63528, 65712, 67920, 70128 -  config['forecast']['default'] ] 
+    # believe these increments are for the deleted WGN model
+    # """
+    # Adjusted increment list seen above for WGN model. A number of steps are removed when shifting the time-series up
+    # to process the data into input-output pairs. args.forecast = forecast length(24 hours).
+    # """
+    # wgn_increment = [8784, 10944, 13128, 15336, 17544, 19704, 21888,
+    #                  24096, 26304, 28464, 30648, 32856, 35064, 37248,
+    #                  39432, 41640, 43848, 46008, 48192, 50400, 52608,
+    #                  54768, 56952, 59160, 61368, 63528, 65712, 67920, 70128 -  config['forecast']['default'] ] 
 
 ############ Training ###############
     # Train final TCN models
     if config['train_tcn']['default']:
-        tcnTrain.train(stations, increment)
+        tcnTrain.train(stations, increment, config)
     
     # Train final GWN models
     if config['train_gwn']['default']:

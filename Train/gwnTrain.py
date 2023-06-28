@@ -19,7 +19,7 @@ def train_model(config, data_sets, split, supports, adj_init, dictionary):
 
     Parameters:
         data_split - Split of data within walk-forward validation.
-        args (config) - Parser of parameters.
+        config - Configuration file with parameters.
         train_data - Training data used to train GWN model.
         validate_data - Validation data on which the GWN model is validated.
         test_data - Test data on which the GWN model is tested.
