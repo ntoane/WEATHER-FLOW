@@ -7,7 +7,6 @@ from keras.models import load_model
 from tcn import TCN
 import tensorflow as tf
 from Logs.modelLogger import modelLogger
-import yaml
 
 def train(stations, increment, config):
     """
@@ -28,7 +27,7 @@ def train(stations, increment, config):
     # tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 
     forecasting_horizons = [3, 6, 9, 12, 24]
-    tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Train/'+'tcn_all_stations.txt')  
+    tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Train/'+'tcn_all_stations.txt', log_enabled=False)  
     tcn_logger.info('tcnTrain : TCN training started at all stations set for training :)') 
 
     for forecast_len in forecasting_horizons:
@@ -40,7 +39,7 @@ def train(stations, increment, config):
             # tcn_logger = modelLogger('tcn', '{1}', 'TCN training started on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
             #                                                                                          forecast_len))
             
-            tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
+            tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt' , log_enabled=False)
             print('Forecasting at station ', station)
             #print('Evaluation/Logs/TCN/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
             tcn_logger.info('tcnTrain : TCN model training started at ' + station)
@@ -62,19 +61,9 @@ def train(stations, increment, config):
             dropout = float(cfg[4])
             activation = cfg[5]
             
-            # default settings from config file for tcn model
-            epoch = config['epoch']['default']
-            lr = config['lr']['default']
-            patience = config['patience']['default']
-            loss_metric = config['loss_metric']['default']
-            kernels = config['kernels']['default']
-            dilations = config['dilations']['default']
-            batch_norm = config['batch_norm']['default']
-            weight_norm = config['weight_norm']['default']
-            layer_norm = config['layer_norm']['default']
-            padding = config['padding']['default']
-            #n_ahead_length = config['n_ahead_length']['default']
-            # This config setting changes for each of the forecast_len in the above list for the horizon, thus not in config file
+            # default settings from config file for tcn model are set when the model is initialized
+            
+            # This setting changes for each of the forecast_len in the above list for the horizon, thus not in config file
             n_ahead_length = forecast_len
              
             lossDF = pd.DataFrame()
@@ -126,12 +115,13 @@ def train(stations, increment, config):
                 if layers == 1:
                     tcn_model = tcn_one.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                    n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-                                                   epochs=epoch, batch_size=batch, act_func=activation,
-                                                   loss=loss_metric,
-                                                   learning_rate=lr, batch_norm=batch_norm, layer_norm=layer_norm,
-                                                   weight_norm=weight_norm, kernel=kernels, filters=filters,
-                                                   dilations=dilations, padding=padding, dropout=dropout,
-                                                   patience=patience, save=saveFile)
+                                                   epochs=config['epoch']['default'], batch_size=config['batch_size']['default'], 
+                                                   act_func=activation, loss=config['loss_metric']['default'],
+                                                   learning_rate=config['learning_rate']['default'], batch_norm=config['batch_norm']['default'], 
+                                                   layer_norm=config['layer_norm']['default'],
+                                                   weight_norm=config['weight_norm']['default'], kernel=config['kernels']['default'], filters=filters,
+                                                   dilations=config['dilations']['default'], padding=config['padding']['default'], dropout=dropout,
+                                                   patience=config['patience']['default'], save=saveFile)
 
                     # Training the model
                     model, history = tcn_model.temperature_model()
@@ -149,12 +139,13 @@ def train(stations, increment, config):
                 else:
                     tcn_model = tcn_two.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                    n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-                                                   epochs=epoch, batch_size=batch, act_func=activation,
-                                                   loss=loss_metric,
-                                                   learning_rate=lr, batch_norm=batch_norm, layer_norm=layer_norm,
-                                                   weight_norm=weight_norm, kernel=kernels, filters=filters,
-                                                   dilations=dilations, padding=padding, dropout=dropout,
-                                                   patience=patience, save=saveFile)
+                                                   epochs=config['epoch']['default'], batch_size=config['batch_size']['default'], 
+                                                   act_func=activation, loss=config['loss_metric']['default'],
+                                                   learning_rate=config['learning_rate']['default'], batch_norm=config['batch_norm']['default'], 
+                                                   layer_norm=config['layer_norm']['default'],
+                                                   weight_norm=config['weight_norm']['default'], kernel=config['kernels']['default'], filters=filters,
+                                                   dilations=config['dilations']['default'], padding=config['padding']['default'], dropout=dropout,
+                                                   patience=config['patience']['default'], save=saveFile)
 
                     # Training the model
                     model, history = tcn_model.temperature_model()
@@ -179,7 +170,7 @@ def train(stations, increment, config):
             resultsDF.to_csv(resultsFile)
             lossDF.to_csv(lossFile)
             targetDF.to_csv(targetFile)
-        
+    
         configFile.close()
      
     tcn_logger.info('tcnTrain : TCN training finished at all stations set for training :)')

@@ -27,7 +27,7 @@ def hpo(stations, increment, config):
 
     for station in stations:
         # printing out which station we are forecasting
-        tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/HPO/' + str(station) +'/'+'tcn_' + str(station) + '.txt')
+        tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/HPO/' + str(station) +'/'+'tcn_' + str(station) + '.txt', log_enabled=False)
         print('Performing TCN random search HPO at station: ', station)
         tcn_logger.info('tcnHPO : TCN HPO training started at ' + station)
         

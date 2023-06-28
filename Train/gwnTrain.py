@@ -124,7 +124,7 @@ def train(increment, config):
     with open('config.yaml', 'r') as file:
         config = yaml.safe_load(file)
     
-    gwn_logger = modelLogger('gwn', 'all', 'Logs/GWN/Train/gwn_all_stations.txt') 
+    gwn_logger = modelLogger('gwn', 'all', 'Logs/GWN/Train/gwn_all_stations.txt', log_enabled=False) 
     
     # data is the weather station ?
     # no it is Data/Graph Neural Network Data/Graph Station Data/Graph.csv 

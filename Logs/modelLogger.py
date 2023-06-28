@@ -4,7 +4,7 @@ logger class that uses Python's logging module as a flexible logging framework.
 It allows you to log messages at different levels, define custom log handlers, and configure log formatting. 
 """
 class modelLogger:
-    def __init__(self, model_name, station, log_file):
+    def __init__(self, model_name, station, log_file,log_enabled=True):
         """
         Initializes the ModelLogger class.
 
@@ -18,13 +18,16 @@ class modelLogger:
         self.logger = logging.getLogger(station)
         self.logger.setLevel(logging.DEBUG)
         
-        file_handler = logging.FileHandler(log_file)
-        file_handler.setLevel(logging.DEBUG)
-        
-        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-        file_handler.setFormatter(formatter)
-        
-        self.logger.addHandler(file_handler)
+        # Allows us to switch the logging system on and off
+        if log_enabled:
+            
+            file_handler = logging.FileHandler(log_file)
+            file_handler.setLevel(logging.DEBUG)
+            
+            formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+            file_handler.setFormatter(formatter)
+            
+            self.logger.addHandler(file_handler)
     
     def info(self, message):
         """

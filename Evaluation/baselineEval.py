@@ -21,13 +21,13 @@ def TcnEval(stations, model):
         model - Whether these metrics are being calculated for the LSTM or TCN model
     """
 
-    tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Evaluation/'+'tcn_all_stations.txt')  
+    tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Evaluation/'+'tcn_all_stations.txt', log_enabled=False)  
     tcn_logger.info('baselineEval : TCN evaluation started at all stations set for evaluation :)') 
     
     for station in stations:
         for horizon in [3, 6, 9, 12, 24]:
             try:
-                tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Evaluation/'+'tcn_' + str(station) +'.txt')  
+                tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Evaluation/'+'tcn_' + str(station) +'.txt', log_enabled=False)  
                 tcn_logger.info('baselineEval : TCN evaluation started at' + str(station)+' for the horizon of ' +str(horizon) ) 
                 
                 
@@ -83,7 +83,7 @@ def GwnEval(stations, config):
      """
     num_splits = 47  #was 27
     num_stations = 45  #was 21
-    gwn_logger = modelLogger('gwn','all','Logs/GWN/gwn_all_stations.txt')
+    gwn_logger = modelLogger('gwn','all','Logs/GWN/gwn_all_stations.txt', log_enabled=False)
     gwn_logger.info('baselineEval : Starting to compute evaluation error metrics for all stations.')
     
 
@@ -94,7 +94,7 @@ def GwnEval(stations, config):
             try:
                 pred = []
                 real = []
-                gwn_logger = modelLogger('gwn', str(station),'Logs/GWN/Evaluation/'+'gwn_' + str(station) +'.txt')  
+                gwn_logger = modelLogger('gwn', str(station),'Logs/GWN/Evaluation/'+'gwn_' + str(station) +'.txt', log_enabled=False)  
                 gwn_logger.info('baselineEval : GWN evaluation started at' + str(station)+' for the horizon of ' +str(horizon) ) 
                 # Read predictions and targets for each split and append them to pred and real lists
                 for split in range(num_splits):
@@ -102,7 +102,7 @@ def GwnEval(stations, config):
                     targets_file = f'Results/GWN/{horizon} Hour Forecast/Targets/targets_{split}.pkl'
                     metric_file = f'Results/GWN/Metrics/{stations[station]}/metrics_{horizon}'
                     
-                    gwn_logger = modelLogger('gwn', str(station), 'Logs/GWN/gwn_.txt')
+                    gwn_logger = modelLogger('gwn', str(station), 'Logs/GWN/gwn_.txt', log_enabled=False)
                     
                     yhat = utils.load_pickle(results_file)
                     target = utils.load_pickle(targets_file)

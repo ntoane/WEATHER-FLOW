@@ -105,7 +105,7 @@ def hpo(increment, initialConfig):
     # gwn_logger = modelLogger('gwn','all' 'Evaluation/Logs/GWN/gwn_logs.txt')
     # gwn_logger.info('gwnHPO : Locating the best configuration settings.')
     
-    gwn_logger = modelLogger('gwn', 'all','Logs/GWN/HPO/'+'gwn_all_stations.txt')
+    gwn_logger = modelLogger('gwn', 'all','Logs/GWN/HPO/'+'gwn_all_stations.txt', log_enabled=False)
     print('Performing GWN random search HPO at all stations: ')
     gwn_logger.info('tcnHPO : TCN HPO started at all stations :)')
 
