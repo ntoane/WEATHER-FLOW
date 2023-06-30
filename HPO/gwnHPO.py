@@ -86,7 +86,7 @@ def train_model(config, data, split, supports, adj_init, model_file):
     return predictions, targets
 
 
-def hpo(increment, initialConfig):
+def hpo(initialConfig):
     """
     Performs random search HPO on the GWN model. Trains a group of GWN models with different hyper-parameters on a train
     set and then tests the models' performance on the validation set. The configuration with the lowest MSE is then
@@ -95,10 +95,14 @@ def hpo(increment, initialConfig):
         config -  Configuration file of parameters.
         increment - Walk-forward validation split points.
     """
+    
+    #dont need this as config is passed?
     # Load the YAML config file
     with open('config.yaml', 'r') as file:
         initialConfig = yaml.safe_load(file)
     
+    increment = initialConfig['increment']['default']
+
     data = pd.read_csv(initialConfig['data']['default'])
     data = data.drop(['StasName', 'DateT','Latitude', 'Longitude'], axis=1)  #added latitude and longitude
     

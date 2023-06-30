@@ -8,7 +8,7 @@ import logging
 from Logs.modelLogger import modelLogger
 
 
-def TcnEval(stations, model):
+def TcnEval(model, config):
     """
     Calculates the LSTM/TCN model's performance on the test set for each station. These metrics are written to a file
     for each station. The predictions are read from the results file for each station. The targets are pulled from
@@ -20,6 +20,8 @@ def TcnEval(stations, model):
         stations - List of the weather stations.
         model - Whether these metrics are being calculated for the LSTM or TCN model
     """
+
+    stations = config['stations']['default']
 
     tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Evaluation/'+'tcn_all_stations.txt', log_enabled=False)  
     tcn_logger.info('baselineEval : TCN evaluation started at all stations set for evaluation :)') 
@@ -69,7 +71,7 @@ def TcnEval(stations, model):
                 
     tcn_logger.info('baselineEval : Finished evaluation of TCN error metrics for all stations.')  
                 
-def GwnEval(stations, config):
+def GwnEval(config):
     """
      Calculates the GWN model's performance on the test set across all forecasting horizons [3, 6, 9, 12, 24] for each
      individual station. The predictions are read from the results file for each split of the walk-forward validation
@@ -81,6 +83,7 @@ def GwnEval(stations, config):
          stations - List of the weather stations.
          config - Conguration file of parameter arguments.
      """
+    stations = config['stations']['default']
     num_splits = config['n_split']['default']    #was 27 (made use config)
     num_stations = config['n_stations']['default']    #was 21 (made us config)
     gwn_logger = modelLogger('gwn','all','Logs/GWN/gwn_all_stations.txt', log_enabled=False)

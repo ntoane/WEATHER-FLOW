@@ -109,7 +109,7 @@ def train_model(config, data_sets, split, supports, adj_init, dictionary):
     adjDataFrame.to_csv(dictionary['matrixFile'])
 
 
-def train(increment, config):
+def train(config):
     """
     Trains and tests the final GWN model through walk-forward validation across all 5 foreacasting horizons.
     A GWN model, with the same parameters, is trained across 27 splits. The predictions, targets, losses and adjacency
@@ -120,9 +120,12 @@ def train(increment, config):
         increment - Walk-forward validation split points.
     """
 
+    #dont need this as config is passed?
     # Load the YAML config file
-    with open('config.yaml', 'r') as file:
-        config = yaml.safe_load(file)
+    # with open('config.yaml', 'r') as file:
+    #     config = yaml.safe_load(file)
+
+    increment = config['increment']['default']
     
     gwn_logger = modelLogger('gwn', 'all', 'Logs/GWN/Train/gwn_all_stations.txt', log_enabled=False) 
     

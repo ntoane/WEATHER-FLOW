@@ -8,7 +8,7 @@ from keras.models import load_model
 import yaml
 from Logs.modelLogger import modelLogger
 
-def hpo(stations, increment, config):
+def hpo(config):
     """
     Performs random search HPO on the TCN model. Trains a group of TCN models for each weather station with different
     hyper-parameters on a train set and then tests the models' performance on the validation set. The configuration with
@@ -25,6 +25,9 @@ def hpo(stations, increment, config):
     # with open('config.yaml', 'r') as file:
     #     config = yaml.safe_load(file)
     
+    increment = config['increment']['default']
+    stations = config['stations']['default']
+
     num_splits = 2
 
     for station in stations:

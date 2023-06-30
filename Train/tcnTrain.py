@@ -8,7 +8,7 @@ from tcn import TCN
 import tensorflow as tf
 from Logs.modelLogger import modelLogger
 
-def train(stations, increment, config):
+def train(config):
     """
     Trains the final TCN models for each weather station across all forecasting horizons
     using walk-forward validation across 47 splits. Ideal parameters are read in from a text file. The parameters are
@@ -26,6 +26,8 @@ def train(stations, increment, config):
     # physical_devices = tf.config.list_physical_devices('CPU') #CPU
     # tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 
+    increment = config['increment']['default']
+    stations = config['stations']['default']
     forecasting_horizons = [3, 6, 9, 12, 24]
     tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Train/'+'tcn_all_stations.txt', log_enabled=False)  
     tcn_logger.info('tcnTrain : TCN training started at all stations set for training :)') 
