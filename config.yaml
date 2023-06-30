@@ -52,7 +52,7 @@ train_gwn:
 ############################ Random Search HPO arguments ############################ 
 tune_tcn:
   type: bool
-  default: true
+  default: false
   help: whether to perform random search HPO on TCN models
 tune_gwn:
   type: bool
@@ -76,7 +76,7 @@ eval_gwn:
 ############################ Visualise Adjacency Matrix ############################
 vis:
   type: bool
-  default: false
+  default: true
   help: whether to create visualisations
 modelVis:
   type: str

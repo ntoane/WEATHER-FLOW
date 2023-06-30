@@ -123,7 +123,7 @@ def train(config):
                                                    layer_norm=config['layer_norm']['default'],
                                                    weight_norm=config['weight_norm']['default'], kernel=config['kernels']['default'], filters=filters,
                                                    dilations=config['dilations']['default'], padding=config['padding']['default'], dropout=dropout,
-                                                   patience=config['patience']['default'], save=saveFile)
+                                                   patience=config['patienceTCN']['default'], save=saveFile)
 
                     # Training the model
                     model, history = tcn_model.temperature_model()
@@ -141,13 +141,13 @@ def train(config):
                 else:
                     tcn_model = tcn_two.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                    n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-                                                   epochs=config['epoch']['default'], batch_size=config['batch_size']['default'], 
+                                                   epochs=config['epochTCN']['default'], batch_size=config['batch_size']['default'], 
                                                    act_func=activation, loss=config['loss_metric']['default'],
                                                    learning_rate=config['learning_rate']['default'], batch_norm=config['batch_norm']['default'], 
                                                    layer_norm=config['layer_norm']['default'],
                                                    weight_norm=config['weight_norm']['default'], kernel=config['kernels']['default'], filters=filters,
                                                    dilations=config['dilations']['default'], padding=config['padding']['default'], dropout=dropout,
-                                                   patience=config['patience']['default'], save=saveFile)
+                                                   patience=config['patienceTCN']['default'], save=saveFile)
 
                     # Training the model
                     model, history = tcn_model.temperature_model()
