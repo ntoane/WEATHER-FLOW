@@ -81,8 +81,8 @@ def GwnEval(stations, config):
          stations - List of the weather stations.
          config - Conguration file of parameter arguments.
      """
-    num_splits = 47  #was 27
-    num_stations = 45  #was 21
+    num_splits = config['n_split']['default']    #was 27 (made use config)
+    num_stations = config['n_stations']['default']    #was 21 (made us config)
     gwn_logger = modelLogger('gwn','all','Logs/GWN/gwn_all_stations.txt', log_enabled=False)
     gwn_logger.info('baselineEval : Starting to compute evaluation error metrics for all stations.')
     

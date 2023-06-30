@@ -115,7 +115,7 @@ def train(stations, increment, config):
                 if layers == 1:
                     tcn_model = tcn_one.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                    n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-                                                   epochs=config['epoch']['default'], batch_size=config['batch_size']['default'], 
+                                                   epochs=config['epochs']['default'], batch_size=config['batch_size']['default'], 
                                                    act_func=activation, loss=config['loss_metric']['default'],
                                                    learning_rate=config['learning_rate']['default'], batch_norm=config['batch_norm']['default'], 
                                                    layer_norm=config['layer_norm']['default'],

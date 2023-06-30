@@ -18,67 +18,7 @@ with open('config.yaml', 'r') as file:
     config = yaml.safe_load(file)
 
 if __name__ == '__main__':
-    # Access the configuration default values from config file
-    vis = config['vis']['default']
-    model_vis = config['modelVis']['default']
-    horizon_vis = config['horizonVis']['default']
-    split_vis = config['splitVis']['default']
-    num_configs = config['num_configs']['default']
-    tune_tcn = config['tune_tcn']['default']
-    tune_gwn = config['tune_gwn']['default']
-    train_tcn = config['train_tcn']['default']
-    train_gwn = config['train_gwn']['default']
-    eval_tcn = config['eval_tcn']['default']
-    eval_gwn = config['eval_gwn']['default']
-    n_stations = config['n_stations']['default']
-    n_split = config['n_split']['default']
-    device = config['device']['default']
-    data = config['data']['default']
-    adjdata = config['adjdata']['default']
-    adjtype = config['adjtype']['default']
-    gcn_bool = config['gcn_bool']['default']
-    aptonly = config['aptonly']['default']
-    addaptadj = config['addaptadj']['default']
-    randomadj = config['randomadj']['default']
-    seq_length = config['seq_length']['default']
-    lag_length = config['lag_length']['default']
-    nhid = config['nhid']['default']
-    in_dim = config['in_dim']['default']
-    num_nodes = config['num_nodes']['default']
-    num_layers = config['num_layers']['default']
-    batch_size = config['batch_size']['default']
-    patience = config['patience']['default']
-    learning_rate = config['learning_rate']['default']
-    dropout = config['dropout']['default']
-    weight_decay = config['weight_decay']['default']
-    epochs = config['epochs']['default']
-    save = config['save']['default']
-    
-    # old settings for a model deleted from yaml 
-    #adjTrainable = config['adjTrainable']['default']
-    # use_sparse = config['use_sparse']['default']
-    # nlayers = config['nlayers']['default']
-    # features = config['features']['default']
-    # nbatch_size = config['nbatch_size']['default']
-    # nbatches = config['nbatches']['default']
-    # nhidden = config['nhidden']['default']
-    # nsteps = config['nsteps']['default']
-    # mask_len = config['mask_len']['default']
-    # forecast = config['forecast']['default']
-    # rank = config['rank']['default']
-    # display_step = config['display_step']['default']
-    # between_lr_updates = config['between_lr_updates']['default']
-    # learningRate = config['learningRate']['default']
-    # lr_factor = config['lr_factor']['default']
 
-    # list of all weather stations - Davidsons initial stations
-    # stations = ['Atlantis', 'Calvinia WO', 'Cape Columbine', 'Cape Point',
-    #             'Cape Town - Royal Yacht Club', 'Cape Town Slangkop', 'Excelsior Ceres', 'Hermanus',
-    #             'Jonkershoek', 'Kirstenbosch', 'Ladismith', 'Molteno Resevoir', 'Paarl',
-    #             'Porterville', 'Robben Island', 'Robertson', 'SA Astronomical Observatory',
-    #             'Struisbaai', 'Tygerhoek', 'Wellington', 'Worcester AWS']
-
-    # list of new stations
     stations = ['ADDO ELEPHANT PARK', 'ALEXANDERBAAI', 'ALIWAL-NORTH PLAATKOP', 'BARKLY-OOS (CAERLEON)',
                 'BRANDVLEI', 'CALVINIA WO', 'CAPE TOWN WO', 'DE AAR WO', 'DOHNE - AGR', 'EAST LONDON WO',
                 'EXCELSIOR CERES', 'FORT BEAUFORT', 'FRASERBURG', 'GEORGE WITFONTEIN', 'GEORGE WO', 
@@ -89,37 +29,20 @@ if __name__ == '__main__':
                 'UITENHAGE','UPINGTON WO', 'VANWYKSVLEI','VIOOLSDRIF - AWS','VREDENDAL','WILLOWMORE','WORCESTER-AWS'
 ]
 
-
     """
     List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 
     8784 is one year's worth of data, the next step is 3 months of data, and the following step is also 3 months of 
     data, resulting in rolling walk-forward validation where the train size increases each increment, with the 
     validation and test sets each being 3 months' worth of data.
     """
-    # old davidson increments
-    # increment = [8784, 10944, 13128, 15336, 17544, 19704, 21888,
-    #              24096, 26304, 28464, 30648, 32856, 35064, 37248,
-    #              39432, 41640, 43848, 46008, 48192, 50400, 52608,
-    #              54768, 56952, 59160, 61368, 63528, 65712, 67920, 70128]
-    
-    #new increments:
-    increment = [8760, 10920, 13106, 15312, 17520, 19704, 21888, 24096, 26304,
+
+    increment = [100,200,300,8760, 10920, 13106, 15312, 17520, 19704, 21888, 24096, 26304,
                  28464, 30648, 32856, 35064, 37224, 39408, 41616, 43824, 45984,
                  48168, 50376, 52584, 54768, 56952, 59160, 61368, 63528, 65712,
                  67920, 70128, 72288, 74472, 76680, 78888, 81048, 83232, 85440,
                  87648, 89832, 92016, 94224, 96432, 98592, 100776, 102984, 105192,
                  107352, 109536, 111744, 113929]
-    
-    
-    # believe these increments are for the deleted WGN model
-    # """
-    # Adjusted increment list seen above for WGN model. A number of steps are removed when shifting the time-series up
-    # to process the data into input-output pairs. args.forecast = forecast length(24 hours).
-    # """
-    # wgn_increment = [8784, 10944, 13128, 15336, 17544, 19704, 21888,
-    #                  24096, 26304, 28464, 30648, 32856, 35064, 37248,
-    #                  39432, 41640, 43848, 46008, 48192, 50400, 52608,
-    #                  54768, 56952, 59160, 61368, 63528, 65712, 67920, 70128 -  config['forecast']['default'] ] 
+
 
 ############ Training ###############
     # Train final TCN models

@@ -42,10 +42,10 @@ def train_model(config, data_sets, split, supports, adj_init, dictionary):
 
     engine = trainer(scaler, supports, adj_init, config)
 
-    x_train, y_train = util.sliding_window(scaler.transform(train_data), config['lag_length']['default'], config['seq_length']['default'], split, 0)
+    x_train, y_train = util.sliding_window(scaler.transform(train_data), config['lag_length']['default'], config['seq_length']['default'], split, 0, config['n_stations']['default'])
     x_validation, y_validation = util.sliding_window(scaler.transform(validate_data), config['lag_length']['default'], config['seq_length']['default'],
-                                                     split, 1)
-    x_test, y_test = util.sliding_window(scaler.transform(test_data), config['lag_length']['default'], config['seq_length']['default'], split, 2)
+                                                     split, 1, config['n_stations']['default'])
+    x_test, y_test = util.sliding_window(scaler.transform(test_data), config['lag_length']['default'], config['seq_length']['default'], split, 2, config['n_stations']['default'])
 
     trainLoader = util.DataLoader(x_train, y_train, config['batch_size']['default'])
     validationLoader = util.DataLoader(x_validation, y_validation, config['batch_size']['default'])

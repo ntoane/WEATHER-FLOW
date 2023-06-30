@@ -19,9 +19,11 @@ def hpo(stations, increment, config):
         config -  Configuration file used for parameters.
         increment - Walk-forward validation split points.
     """
+
+    #dont need this as config is a parameter?
     # Load the YAML config file
-    with open('config.yaml', 'r') as file:
-        config = yaml.safe_load(file)
+    # with open('config.yaml', 'r') as file:
+    #     config = yaml.safe_load(file)
     
     num_splits = 2
 

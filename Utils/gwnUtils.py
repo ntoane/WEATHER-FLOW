@@ -239,7 +239,7 @@ def load_model(file_name):
 
 
 
-def sliding_window(df, lag, forecast, split, set):
+def sliding_window(df, lag, forecast, split, set, n_stations):
     """
     Converts array to times-series input-output sliding-window pairs.
     Parameters:
@@ -252,15 +252,15 @@ def sliding_window(df, lag, forecast, split, set):
         x, y - returns x input and y output
     """
     if set == 0:
-        samples = int(split[0] / 45)
+        samples = int(split[0] / n_stations)
     if set == 1:
-        samples = int(split[1] / 45 - split[0] / 45)
+        samples = int(split[1] / 45 - split[0] / n_stations)
     if set == 2:
-        samples = int(split[2] / 45 - split[1] / 45)
+        samples = int(split[2] / 45 - split[1] / n_stations)
 
 
     dfy = df.drop(['Rain', 'Humidity', 'Pressure', 'WindSpeed', 'WindDir'], axis=1)
-    stations = 45
+    stations = n_stations
     features = 6
 
     df = df.values.reshape(samples, stations, features)

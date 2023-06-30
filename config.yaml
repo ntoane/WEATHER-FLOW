@@ -1,9 +1,20 @@
 # Configuration pyyaml file with configuration settings required (as args) for main.py
 
+############################ General data configurations ############################
+n_stations:
+  type: int
+  default: 45  #was 21
+  help: number of weather stations
+n_split:
+  type: int
+  default: 47     #was27
+  help: number of splits in walk-forward validation
+
+
 ############################ Train final baseline and GNN model arguments ############################
 train_tcn:
   type: bool
-  default: true
+  default: false
   help: whether to train final TCN models
 train_gwn:
   type: bool
@@ -18,7 +29,7 @@ tune_tcn:
   help: whether to perform random search HPO on TCN models
 tune_gwn:
   type: bool
-  default: false
+  default: true
   help: whether to perform random search HPO on GWN model
 num_configs:
   type: int
@@ -34,15 +45,6 @@ eval_gwn:
   type: bool
   default: false
   help: whether to report final GWN metrics
-
-n_stations:
-  type: int
-  default: 45  #was 21
-  help: number of weather stations
-n_split:
-  type: int
-  default: 47     #was27
-  help: number of splits in walk-forward validation
 
 ############################ Visualise Adjacency Matrix ############################
 vis:
@@ -112,10 +114,6 @@ in_dim:
   type: int
   default: 6
   help: number of features in input
-num_nodes:
-  type: int
-  default: 45  #was 21
-  help: number of nodes in graph (num weather stations)
 num_layers:
   type: int
   default: 2
@@ -158,10 +156,10 @@ lr:
   type: float
   default: 0.01
   help: learning rate
-patience:
-  type: int
-  default: 5
-  help: patience value for early stopping
+# patience:
+#   type: int
+#   default: 5
+#   help: patience value for early stopping
 loss_metric:
   type: str
   default: 'MSE'

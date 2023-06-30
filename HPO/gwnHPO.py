@@ -38,9 +38,9 @@ def train_model(config, data, split, supports, adj_init, model_file):
 
     engine = trainer(scaler, supports, adj_init, config)
 
-    x_train, y_train = util.sliding_window(scaler.transform(train_data), config['lag_length']['default'], config['seq_length']['default'], split, 0)
+    x_train, y_train = util.sliding_window(scaler.transform(train_data), config['lag_length']['default'], config['seq_length']['default'], split, 0, config['n_stations']['default'])
     x_validation, y_validation = util.sliding_window(scaler.transform(validate_data), config['lag_length']['default'], config['seq_length']['default'],
-                                                     split, 1)
+                                                     split, 1, config['n_stations']['default'])
 
     trainLoader = util.DataLoader(x_train, y_train, config['batch_size']['default'])
     validationLoader = util.DataLoader(x_validation, y_validation, config['batch_size']['default'])
@@ -74,7 +74,7 @@ def train_model(config, data, split, supports, adj_init, model_file):
 
         if patience == config['patience']['default']:
             break
-        
+
     engine.model = util.load_model(model_file)
     testStart = time.time()
     validation_test_loss, predictions, targets = engine.test(validationLoader, config)
