@@ -41,7 +41,7 @@ n_split:
 ############################ Train final baseline and GNN model arguments ############################
 train_tcn:
   type: bool
-  default: false
+  default: true
   help: whether to train final TCN models
 train_gwn:
   type: bool
