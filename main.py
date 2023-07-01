@@ -12,18 +12,18 @@ parser = argparse.ArgumentParser()
 parser.add_argument('--config', type=str, help='path to YAML config file')
 args = parser.parse_args()
 
-# Load the YAML config file
+# Load the YAML config file which contains all the required settings for platform
 with open('config.yaml', 'r') as file:
     config = yaml.safe_load(file)
 
 if __name__ == '__main__':
 
 ############ Training ###############
-    # Train final TCN models
+    # Train final TCN models using config settings specified
     if config['train_tcn']['default']:
         tcnTrain.train(config)
     
-    # Train final GWN models
+    # Train final GWN models using the config settings specified
     if config['train_gwn']['default']:
         gwnTrain.train(config)
   

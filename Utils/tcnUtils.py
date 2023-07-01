@@ -111,7 +111,7 @@ def generateRandomTCNParameters():
     Generates a random configuration of hyper-parameters from the pre-defined search space.
 
     Returns:
-        configuration_list - Returns randomly selected configuration of LSTM hyper-parameters.
+        configuration_list - Returns randomly selected configuration of TCN hyper-parameters.
     """
 
     activation = 'relu'
@@ -160,54 +160,6 @@ def generateRandomTCNParameters():
     return cfg
 
 
-def generateRandomLSTMParameters():
-    """
-    Generates a random configuration of hyper-parameters from the pre-defined search space.
-
-    Returns:
-        configuration_list - Returns randomly selected configuration of LSTM hyper-parameters.
-    """
-
-    activation = 'tanh'
-    epoch = 40
-    patience = 5
-    loss_metric = 'MSE'
-    n_ahead_length = 24
-    units = [30, 40, 50, 60]
-    batch_size = [32, 64, 125]
-    lag_length = [48, 72, 168]
-    dropout = [0.1, 0.2, 0.3]
-    lr = [0.0001, 0.0003, 0.0005, 0.0007, 0.0009, 0.001, 0.003, 0.005]
-    l1 = [1e-3, 1e-2]
-    l2 = [1e-3, 1e-2]
-    bias_reg = [1e-3, 1e-2]
-
-    units = units[random.randint(len(units))]
-    batch_size = batch_size[random.randint(len(batch_size))]
-    lag_length = lag_length[random.randint(len(lag_length))]
-    dropout = dropout[random.randint(len(dropout))]
-    lr = lr[random.randint(len(lr))]
-    l1 = l1[random.randint(len(l1))]
-    l2 = l2[random.randint(len(l2))]
-    bias_reg = bias_reg[random.randint(len(bias_reg))]
-
-    cfg = {'Activation': activation,
-           'Epochs': epoch,
-           'Patience': patience,
-           'Loss': loss_metric,
-           'Forecast Horizon': n_ahead_length,
-           'Units': units,
-           'Batch Size': batch_size,
-           'Lag': lag_length,
-           'Dropout': dropout,
-           'lr': lr,
-           'l1': l1,
-           'l2': l2,
-           'Bias': bias_reg}
-
-    return cfg
-
-
 def stringtoCfgTCN(params):
     """
     Creates a configuration of the optimal hyper-parameters for each weather station.
@@ -216,30 +168,12 @@ def stringtoCfgTCN(params):
         params -  String of optimal hyper-parameters.
 
     Returns:
-        config -  List of hyper-parameters for the LSTM model.
+        config -  List of hyper-parameters for the TCN model.
     """
 
     parameters = params.split(", ")
     config = []
     for i in range(len(parameters)):
         config.append(str.strip(parameters[i]))
-
-    return config
-
-
-def stringtoCfgLSTM(params):
-    """
-    Creates a configuration of the optimal hyper-parameters for each weather station.
-
-    Parameters:
-        params -  String of optimal hyper-parameters.
-
-    Returns:
-        config -  List of hyper-parameters for the LSTM model.
-    """
-    string = params.split(", ")
-    config = [int(string[0]), int(string[1]), int(string[2]), int(string[3]), float(str(string[4])),
-              float(str(string[5])), float(str(string[6])), float(string[7]),
-              float(str.strip(string[8]))]
 
     return config
