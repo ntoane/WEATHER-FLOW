@@ -5,7 +5,7 @@ import HPO.gwnHPO as gwnHPO
 import Train.tcnTrain as tcnTrain
 import Train.gwnTrain as gwnTrain
 import Evaluation.baselineEval as baselineEval
-#import Visualisations.visualise as visualise
+import Visualisations.visualise as visualise
 
 # Parse the command-line arguments
 parser = argparse.ArgumentParser()
@@ -53,8 +53,8 @@ def main():
         baselineEval.GwnEval(config)
 
 ############ Visualisations #############
-    # if config['vis']['default']:
-    #     visualise.plot(config)
+    if config['vis']['default']:
+        visualise.plot(config)
      
 ############ Else condition #############   
     else :

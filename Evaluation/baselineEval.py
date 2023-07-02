@@ -22,12 +22,13 @@ def TcnEval(model, config):
     """
 
     stations = config['stations']['default']
+    horizons = config['horizons']['default']
 
     tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Evaluation/'+'tcn_all_stations.txt', log_enabled=False)  
     tcn_logger.info('baselineEval : TCN evaluation started at all stations set for evaluation :)') 
     
     for station in stations:
-        for horizon in [3, 6, 9, 12, 24]:
+        for horizon in horizons:
             try:
                 tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Evaluation/'+'tcn_' + str(station) +'.txt', log_enabled=False)  
                 tcn_logger.info('baselineEval : TCN evaluation started at' + str(station)+' for the horizon of ' +str(horizon) ) 
@@ -83,6 +84,7 @@ def GwnEval(config):
          stations - List of the weather stations.
          config - Conguration file of parameter arguments.
      """
+    horizons = config['horizons']['default']
     stations = config['stations']['default']
     num_splits = config['n_split']['default']    #was 27 (made use config)
     num_stations = config['n_stations']['default']    #was 21 (made us config)
@@ -93,7 +95,7 @@ def GwnEval(config):
     # Iterate over each station
     for station in range(num_stations):
         # Iterate over each forecasting horizon
-        for horizon in [3, 6, 9, 12, 24]:
+        for horizon in horizons:
             try:
                 pred = []
                 real = []

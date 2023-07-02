@@ -28,7 +28,7 @@ def train(config):
 
     increment = config['increment']['default']
     stations = config['stations']['default']
-    forecasting_horizons = [3, 6, 9, 12, 24]
+    forecasting_horizons = config['horizons']['default']
     tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Train/'+'tcn_all_stations.txt', log_enabled=False)  
     tcn_logger.info('tcnTrain : TCN training started at all stations set for training :)') 
 

@@ -27,6 +27,12 @@ stations:
                 'UITENHAGE','UPINGTON WO', 'VANWYKSVLEI','VIOOLSDRIF - AWS','VREDENDAL','WILLOWMORE','WORCESTER-AWS']
   help: list of all stations names
 
+
+horizons:
+  type: int[]
+  default: [3, 6, 9, 12, 24]
+  help: forecast horizons
+
 n_stations:
   type: int
   default: 45
@@ -90,6 +96,11 @@ splitVis:
   type: str
   default: "0"
   help: the split to visualise
+locations_path:
+  type: str
+  default: 'DataNew/Locations/Locations.csv'
+  help: path to csv containg station coordinates
+  
 
 
 ###################### Baseline GWN args, default arguments are optimal hyper-parameters ######################

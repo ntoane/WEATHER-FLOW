@@ -136,7 +136,7 @@ def train(config):
     #print(args.data)
     data = data.drop(['StasName', 'DateT', 'Latitude', 'Longitude'], axis=1)  #added latitude and longitude
 
-    forecast_horizons = [3, 6, 9, 12, 24]
+    forecast_horizons = config['horizons']['default']
 
     for forecast_len in forecast_horizons:
         config['seq_length']['default'] = forecast_len

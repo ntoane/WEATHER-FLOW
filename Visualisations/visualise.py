@@ -6,10 +6,11 @@ from mpl_toolkits.basemap import Basemap
 import seaborn as sns
 import csv
 
-def create_graph(adj_matrix):
+def create_graph(adj_matrix, config):
     G = nx.DiGraph()
 
-    with open('DataNew/Locations/Locations.csv', 'r') as file:
+    locations_path = config['locations_path']['default'] #'DataNew/Locations/Locations.csv'
+    with open(locations_path, 'r') as file:
         reader = csv.reader(file)
         next(reader)  # Skip the header row
         for row in reader:
@@ -25,8 +26,8 @@ def create_graph(adj_matrix):
     return G
 
 
-def plot_map(adj_matrix, province_colours):
-    G = create_graph(adj_matrix)
+def plot_map(adj_matrix, province_colours, config):
+    G = create_graph(adj_matrix, config)
     node_positions = nx.get_node_attributes(G, 'pos')
     
     fig, ax = plt.subplots(figsize=(8, 8),dpi=300)
@@ -88,5 +89,5 @@ def plot(config):
     'Northern Cape': 'green'
     }
 
-    plot_map(adj_matrix,province_colours)
+    plot_map(adj_matrix,province_colours, config)
     plot_heatmap(adj_matrix)
