@@ -41,7 +41,7 @@ n_split:
 ############################ Train final baseline and GNN model arguments ############################
 train_tcn:
   type: bool
-  default: true
+  default: false
   help: whether to train final TCN models
 train_gwn:
   type: bool
@@ -76,7 +76,7 @@ eval_gwn:
 ############################ Visualise Adjacency Matrix ############################
 vis:
   type: bool
-  default: true
+  default: false
   help: whether to create visualisations
 modelVis:
   type: str
