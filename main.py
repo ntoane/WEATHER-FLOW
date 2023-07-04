@@ -5,7 +5,8 @@ import HPO.gwnHPO as gwnHPO
 import Train.tcnTrain as tcnTrain
 import Train.gwnTrain as gwnTrain
 import Evaluation.baselineEval as baselineEval
-import Visualisations.visualise as visualise
+import plotter
+# import Visualisations.visualise as visualise
 
 # Parse the command-line arguments
 parser = argparse.ArgumentParser()
@@ -47,14 +48,16 @@ def main():
     # Record metrics for final TCN models
     if config['eval_tcn']['default']:
         baselineEval.TcnEval('TCN', config)
+        plotter.create('TCN')
 
     # Record metrics for final GWN models
     if config['eval_gwn']['default']:
         baselineEval.GwnEval(config)
+        plotter.create('GWN')
 
-############ Visualisations #############
-    if config['vis']['default']:
-        visualise.plot(config)
+# ############ Visualisations #############
+#     if config['vis']['default']:
+#         visualise.plot(config)
      
 ############ Else condition #############   
     else :

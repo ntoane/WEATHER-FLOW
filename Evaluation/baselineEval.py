@@ -105,7 +105,7 @@ def GwnEval(config):
                 for split in range(num_splits):
                     results_file = f'Results/GWN/{horizon} Hour Forecast/Predictions/outputs_{split}.pkl'
                     targets_file = f'Results/GWN/{horizon} Hour Forecast/Targets/targets_{split}.pkl'
-                    metric_file = f'Results/GWN/Metrics/{stations[station]}/metrics_{horizon}'
+                    metric_file = f'Results/GWN/{horizon} Hour Forecast/{station}/Metrics/metrics.txt'
                     
                     gwn_logger = modelLogger('gwn', str(station), 'Logs/GWN/gwn_.txt', log_enabled=False)
                     
