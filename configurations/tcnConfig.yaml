@@ -15,10 +15,10 @@ patience:
   type: int
   default: 5
   help: patience value for early stopping
-loss_metric:
-  type: str
-  default: 'MSE'
-  help: loss metric to optimize
+# loss_metric:
+#   type: str
+#   default: 'MSE'
+#   help: loss metric to optimize
 kernels:
   type: int
   default: 2
