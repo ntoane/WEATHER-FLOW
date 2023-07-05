@@ -2,10 +2,9 @@ import numpy as np
 from tcn import TCN
 import Utils.metrics as metrics
 import Utils.tcnUtils as utils
-import Models.tcnone as tcn_one
-import Models.tcntwo as tcn_two
+import Models.TCN.tcnone as tcn_one
+import Models.TCN.tcntwo as tcn_two
 from keras.models import load_model
-import yaml
 from Logs.modelLogger import modelLogger
 
 def hpo(sharedConfig,tcnConfig):
@@ -19,11 +18,6 @@ def hpo(sharedConfig,tcnConfig):
         config -  Configuration file used for parameters.
         increment - Walk-forward validation split points.
     """
-
-    #dont need this as config is a parameter?
-    # Load the YAML config file
-    # with open('config.yaml', 'r') as file:
-    #     config = yaml.safe_load(file)
 
     increment = sharedConfig['increment']['default']
     stations = sharedConfig['stations']['default']

@@ -3,7 +3,7 @@ import numpy as np
 import scipy.sparse as sp
 from scipy.sparse import linalg
 import pandas as pd
-from Models.graphWaveNet import *
+from Models.GWN.graphWaveNet import *
 from numpy import random
 import yaml
 

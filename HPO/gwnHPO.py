@@ -2,7 +2,7 @@ import pandas as pd
 import Utils.gwnUtils as util
 import torch
 import time
-from Engine.gwnEngine import trainer
+from Models.GWN.gwnEngine import trainer
 import numpy as np
 import Utils.metrics as metrics
 import warnings

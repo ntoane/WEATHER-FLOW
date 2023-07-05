@@ -1,5 +1,5 @@
 import torch.optim as optim
-from Models.graphWaveNet import *
+from Models.GWN.graphWaveNet import *
 import torch as torch
 
 class trainer:
