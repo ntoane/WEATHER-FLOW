@@ -8,7 +8,7 @@ import logging
 from Logs.modelLogger import modelLogger
 
 
-def TcnEval(model, config):
+def TcnEval(model, sharedConfig, tcnConfig):
     """
     Calculates the LSTM/TCN model's performance on the test set for each station. These metrics are written to a file
     for each station. The predictions are read from the results file for each station. The targets are pulled from
@@ -21,8 +21,8 @@ def TcnEval(model, config):
         model - Whether these metrics are being calculated for the LSTM or TCN model
     """
 
-    stations = config['stations']['default']
-    horizons = config['horizons']['default']
+    stations = sharedConfig['stations']['default']
+    horizons = sharedConfig['horizons']['default']
 
     tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Evaluation/'+'tcn_all_stations.txt', log_enabled=False)  
     tcn_logger.info('baselineEval : TCN evaluation started at all stations set for evaluation :)') 
@@ -72,7 +72,7 @@ def TcnEval(model, config):
                 
     tcn_logger.info('baselineEval : Finished evaluation of TCN error metrics for all stations.')  
                 
-def GwnEval(config):
+def GwnEval(sharedConfig, tcnConfig):
     """
      Calculates the GWN model's performance on the test set across all forecasting horizons [3, 6, 9, 12, 24] for each
      individual station. The predictions are read from the results file for each split of the walk-forward validation
@@ -84,10 +84,9 @@ def GwnEval(config):
          stations - List of the weather stations.
          config - Conguration file of parameter arguments.
      """
-    horizons = config['horizons']['default']
-    stations = config['stations']['default']
-    num_splits = config['n_split']['default']    #was 27 (made use config)
-    num_stations = config['n_stations']['default']    #was 21 (made us config)
+    horizons = sharedConfig['horizons']['default']
+    num_splits = sharedConfig['n_split']['default']    #was 27 (made use config)
+    num_stations = sharedConfig['n_stations']['default']    #was 21 (made us config)
     gwn_logger = modelLogger('gwn','all','Logs/GWN/gwn_all_stations.txt', log_enabled=False)
     gwn_logger.info('baselineEval : Starting to compute evaluation error metrics for all stations.')
     
@@ -115,12 +114,12 @@ def GwnEval(config):
                     real.extend(np.array(target).flatten())
                 
                     # Reshape pred and real arrays
-                    pred = np.array(pred).reshape((int(len(real) / (config['n_stations']['default'] * config['seq_length']['default'])), 
-                                                config['n_stations']['default'],
-                                                config['seq_length']['default']))
-                    real = np.array(real).reshape((int(len(real) / (config['n_stations']['default'] * config['seq_length']['default'])), 
-                                                config['n_stations']['default'],
-                                                config['seq_length']['default']))
+                    pred = np.array(pred).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * tcnConfig['seq_length']['default'])), 
+                                                sharedConfig['n_stations']['default'],
+                                                tcnConfig['seq_length']['default']))
+                    real = np.array(real).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * tcnConfig['seq_length']['default'])), 
+                                                sharedConfig['n_stations']['default'],
+                                                tcnConfig['seq_length']['default']))
 
                     # Open metric_file for writing
                     with open(metric_file, 'w') as file:

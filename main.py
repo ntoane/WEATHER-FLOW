@@ -14,8 +14,9 @@ parser.add_argument('--config', type=str, help='path to YAML config file')
 args = parser.parse_args()
 
 # Load the YAML config file which contains all the required settings for platform
-with open('config.yaml', 'r') as file:
-    config = yaml.safe_load(file)
+with open('configurations/sharedConfig.yaml', 'r') as file:
+    sharedConfig = yaml.safe_load(file)
+
 
 
 complete = False
@@ -26,38 +27,45 @@ def main():
 
     print("............................................................")
     print("Experimental Platform running")
+
 ############ Training ###############
     # Train final TCN models using config settings specified
-    if config['train_tcn']['default']:
-        tcnTrain.train(config)
+    if sharedConfig['train_tcn']['default']:
+        tcnConfig = getSpecificConfig('tcn')
+        tcnTrain.train(sharedConfig, tcnConfig)
     
 # Train final GWN models using the config settings specified
-    if config['train_gwn']['default']:
-        gwnTrain.train(config)
+    if sharedConfig['train_gwn']['default']:
+        gwnConfig = getSpecificConfig('gwn')
+        gwnTrain.train(sharedConfig, gwnConfig)
   
 ######### Random Search ##############
     # Random search TCN
-    if config['tune_tcn']['default']:
-        tcnHPO.hpo(config)
+    if sharedConfig['tune_tcn']['default']:
+        tcnConfig = getSpecificConfig('tcn')
+        tcnHPO.hpo(sharedConfig, tcnConfig)
 
 # Random search GWN
-    if config['tune_gwn']['default']:
-        gwnHPO.hpo(config)
+    if sharedConfig['tune_gwn']['default']:
+        gwnConfig = getSpecificConfig('gwn')
+        gwnHPO.hpo(sharedConfig, gwnConfig)
 
 ############ Recordings ##############
     # Record metrics for final TCN models
-    if config['eval_tcn']['default']:
-        baselineEval.TcnEval('TCN', config)
+    if sharedConfig['eval_tcn']['default']:
+        tcnConfig = getSpecificConfig('tcn')
+        baselineEval.TcnEval('TCN', sharedConfig, tcnConfig)
         plotter.create('TCN')
 
     # Record metrics for final GWN models
-    if config['eval_gwn']['default']:
-        baselineEval.GwnEval(config)
+    if sharedConfig['eval_gwn']['default']:
+        gwnConfig = getSpecificConfig('gwn')
+        baselineEval.GwnEval(sharedConfig, gwnConfig)
         plotter.create('GWN')
 
 # ############ Visualisations #############
-#     if config['vis']['default']:
-#         visualise.plot(config)
+#     if sharedConfig['vis']['default']:
+#         visualise.plot(sharedConfig)
      
 ############ Else condition #############   
     else :
@@ -72,7 +80,7 @@ def main():
                     print('Enter which of the following settings to change or c to continue : train_tcn,train_gwn,tune_tcn,tune_gwn,eval_tcn,eval_gwn,vis')
                     userInput = input()
                     if userInput in configOptions:
-                        config[userInput]['default'] = not config[userInput]['default']
+                        sharedConfig[userInput]['default'] = not sharedConfig[userInput]['default']
                     elif userInput == 'c':
                         loop = False
                     else:
@@ -80,6 +88,9 @@ def main():
                 complete = True
                 main()
         
+def getSpecificConfig(modelName):
+    with open('configurations/'+ modelName +'Config.yaml', 'r') as file:
+        return yaml.safe_load(file)
 
 if __name__ == '__main__':
     main()

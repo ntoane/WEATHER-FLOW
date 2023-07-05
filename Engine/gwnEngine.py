@@ -7,16 +7,16 @@ class trainer:
         Initialise GWN Model, place the model on the GPU, intialise optimiser and loss metric for GWN model
     """
 
-    def __init__(self, scaler, supports, aptinit, config):
+    def __init__(self, scaler, supports, aptinit, sharedConfig,gwnConfig):
 
-        self.model = gwnet(config['device']['default'], num_nodes=config['n_stations']['default'], dropout=config['dropout']['default'], supports=supports,
-                           gcn_bool=config['gcn_bool']['default'], addaptadj=config['addaptadj']['default'],
-                           aptinit=aptinit, in_dim=config['in_dim']['default'], out_dim=config['seq_length']['default'], residual_channels=config['nhid']['default'],
-                           dilation_channels=config['nhid']['default'], skip_channels=config['nhid']['default'] * 8, end_channels=config['nhid']['default'] * 16,
-                           layers=config['num_layers']['default'])
-        self.model.to(config['device']['default'])
-        self.optimizer = optim.Adam(self.model.parameters(), lr=config['learning_rate']['default'], weight_decay=config['weight_decay']['default'])
-        self.loss = nn.MSELoss(reduction='mean').to(config['device']['default'])
+        self.model = gwnet(gwnConfig['device']['default'], num_nodes=sharedConfig['n_stations']['default'], dropout=gwnConfig['dropout']['default'], supports=supports,
+                           gcn_bool=gwnConfig['gcn_bool']['default'], addaptadj=gwnConfig['addaptadj']['default'],
+                           aptinit=aptinit, in_dim=gwnConfig['in_dim']['default'], out_dim=gwnConfig['seq_length']['default'], residual_channels=gwnConfig['nhid']['default'],
+                           dilation_channels=gwnConfig['nhid']['default'], skip_channels=gwnConfig['nhid']['default'] * 8, end_channels=gwnConfig['nhid']['default'] * 16,
+                           layers=gwnConfig['num_layers']['default'])
+        self.model.to(gwnConfig['device']['default'])
+        self.optimizer = optim.Adam(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
+        self.loss = nn.MSELoss(reduction='mean').to(gwnConfig['device']['default'])
         self.scaler = scaler
 
     def train(self, trainLoader, config):
