@@ -1,6 +1,7 @@
 # User Guide to the Experimental Platform
 
-*This is an expanded version of the initial ReadMe.md file, that elaborates on the usage, customizability of the experimental platform when 'plugging in' future cutting-edge ST-GNN models.*
+*This is an expanded version of the initial ReadMe.md file, that elaborates on the usage, customizability of the experimental platform and provides a step by step process of integrating a new cutting-edge ST-GNN model implementation.*
+
 
 ## Introduction
 
@@ -13,25 +14,9 @@
   * Ensure that the adjacency matrix depicting the weather stations’ dependencies on each other is effectively captured by the visualisation methods.
   * Validate and evaluate the developed experimental platform using the baseline techniques and our individual techniques.
   * Ensure that the experimental platform is highly usable, easily integratable for new techniques and well designed to allow for easy future use.
-* Brief explanation of the experimental pipeline used for, GWN, and TCN as baselines:
+* 
 
-  * TCN:
-    * Separate ***TCN models are built for each weather station.***
-    * Walk-forward validation is performed on each station's dataset, resulting in multiple training, validation, and test splits.
-    * Hyper-parameter optimization is done for the first three splits, considering parameters such as epochs, batch size, learning rate, input window size, number of layers, dropout rate, layer normalization, and number of filters.
-    * The optimal parameters are selected based on the lowest error across all splits for the 24-hour prediction horizon.
-    * The models are trained and evaluated for each split, and the predictions for each split are concatenated.
-    * This has been deemed to be a respectable baseline to compare other, newer models, prediction accuracy on.
-    * SMAPE metrics are calculated using the concatenated predicted values and the actual values.
-  * GWN:
-    * GWN is a variant of ST-GNN that combines TCN layers and graph convolutional layers.
-    * ***A single model is built for all stations***.
-    * It utilizes a self-adaptive adjacency matrix learned through gradient descent in the graph convolutional module.
-    * The experimental pipeline for these models follows a similar process as the TCN model, but with some differences. In addition to TCN's hyper-parameters, the adjacency matrices need to be considered.
-    * The adjacency matrix is of the self-adaptive type and is randomly initialized. This model had evidently become a reputable baseline that other, cutting-edge models, can be effectively compared against.
-  * *Note for more details on the baselines please refer to our Proposal document.*
-
-## Installation & Setup & Configuration
+## Installation & Setup
 
 * System requirements:
 
@@ -49,9 +34,54 @@
 
   * Same as seen in the Readme.md
   * Please refer to FAQ's for any installation errors, as these may be frequently encountered errors that can be guided through with some tips and tricks.
-* Configuration settings for setting up the experimental platform with the models
 
-  * *config.yaml* file contains all the configuration settings, whereby for the boolean setting the default values can be adjusted to be true or false depending on the model and experiment intended to be run. The other settings that have the default initial values such as the hidden layers etc. the default numbers can be altered too for future experiments.
+
+## New Model Integration
+
+These are the steps to follow when integrating a new ST-GNN model (such as *<model_name>*) implementation to the experimental platform :
+
+* Configurations settings for <model_name> :
+  * Create a new config.yaml file for the model in *configurations/"<model_name>Config.yaml"*
+  * Use/add any configuration settings that are general to *"sharedConfig.yaml"* file
+* Module placing for <model_name> :
+  * Model logic goes in *Models/<model_name>/"<model_name>.py"*
+  * Training Logic goes in the *Train/"<model_name>Train.py"*
+  * Hyper-parameter optimization logic goes in *HPO/"<model_name>HPO.py*
+  * Evaluation logic in the *Evaluation/"<model_name>eval.py"*
+* Shared data for experimentation is in *Data/* module :
+  * Depending on methodology of the cutting-edge ST-GNN model, either can obtain an:
+    * Adjacency matrix -> "adj_mx.pkl"
+      * Found in *Data/Graph_Neural_Network_Data/Adjacency_Matrix/adj_mx.pkl*
+      * *Please note that .pkl files can be 'unpickled' and converted into a readable fomat (such as a .csv file) by the function load_pickle in Utils/gwnUtils.py*
+    * .csv fie with all the weather station data :
+      * Either in one large .csv file
+        * Located in Data/Graph_Neural_Network_data/Graph_Station_Data
+      * Or one weather station in a single .csv file
+        * Located in Data/Weather_Station_Data
+* Logs :
+  * The "*/Logs/modelLogger"* logic is available to be implemented in the code of the model implementation, following the pre-defined steps in the Logging metrics subsection.
+  * Logging information can be saved to *Logs/<model_name>/<run_type</<model_name>*
+    * <run_type> is the type of experiment with the model, usually either Training, HPO or Evaluation
+* Visualisation/ module:
+  * This module has "visualise.py" which contains the methods used for visualising the data collected from the experimentation.
+  * Currently visualised into either an adjacency matrix heatmap and a graph of South Africa with links between the weather stations across the provinces we have the data for in Western cape, Northern Cape and Eastern Cape, with the size of the node denoting the strength.
+  * Saved to ..
+* Plots/ module:
+  * Module Plots/ has "plotter.py" which contains the logic for plotting graphs with the sepcified metrics
+  * Saved to <module_name>/`<metric>.jpg`
+
+
+## Configurations
+
+This subsection deals with the methodology of the configurations/ module that sets up the experimental platform with the specified model implementation with the desired settings.
+
+* Shared config settings in *"sharedConfig.yaml"* that has *:*
+  * General data configurations that all models may use.
+  * Boolean settings that can be adjusted to change what model to use, aswell as the types of experimentations to do on them (either training, hpo or evaluation). The user of the experimental platform is also able to set multiple settings to true. For example a user can set "train_tcn" and "train_gwn" to true, and the platform will first train the TCN model anf afterwards will train the GWN model. The user can just leave their PC running and come back after and both models should have finished their training.
+* Model specific config settings :
+  * Naming convention is "<model_name>Config.yaml"
+  * This config file will have all the configuration settings that's only used by a single model
+
 
 ## Data Preprocessing
 
@@ -62,74 +92,53 @@
 * Handling missing values and time records
   * We implemented Inverse Distance Weigthing method (IDW) to handle the missing time records or variables in the data
 * Splitting the data into training and test sets
-  * Data was split using walk forward validtion method
+  * Data was split using walk forward validation method
 
+## Experimental pipeline
 
-## New Model Integration
+Brief explanation of the experimental pipeline used for, GWN, and TCN as baselines:
 
-These are the steps to follow when integrating a new ST-GNN model implementation to the experimental platform :
-
-* Configurations settings for <model_name> :
-  * Create a new config.yaml file for the model in *configurations/"<model_name>Config.yaml"*
-  * Use/add any configuration settings that are general to *"sharedConfig.yaml"* file
-* Module placing for <model_name>:
-  * Model logic goes in *Models/<model_name>/"<model_name>.py"*
-  * Training Logic goes in the *Train/"<model_name>Train.py"*
-  * Hyper-parameter optimization logic goes in *HPO/"<model_name>HPO.py*
-  * Evaluation logic in the *Evaluation/"<model_name>eval.py"*
-* Shared data for experimentation is in *Data/* module
-  * Depending on methodology of the cutting-edge ST-GNN model, either can obtain an:
-    * Adjacency matrix -> "adj_mx.pkl"
-      * Found in *Data/Graph_Neural_Network_Data/Adjacency_Matrix/adj_mx.pkl*
-      * *Please note that .pkl files can be 'unpickled' and converted into a readable fomat (such as a .csv file) by the function load_pickle in Utils/gwnUtils.py*
-    * .csv fie with all the weather station data :
-      * Either in one large .csv file
-        * Located in Data/Graph_Neural_Network_data/Graph_Station_Data
-      * Or one weather station in a single .csv file
-        * Located in Data/Weather_Station_Data
-* Logs:
-  * The "*/Logs/modelLogger"* logic is available to be implemented in the code of the model implementation, following the pre-defined steps in the Logging metrics subsection.
-  * Logging information can be saved to *Logs/<model_name>/<run_type</<model_name>*
-    * <run_type> is the type of experiment with the model, usually either Training, HPO or Evaluation
-* Visualisation:
-
-
-## Model Architecture
-
-* Overview of the neural network models used (GWN and TCN)
-* Detailed explanation of the architecture and components of each model
-* Configuration options for customizing the models (e.g., number of layers, hidden units, etc.)
-
-## Training
-
-* Setting up the training process
-* Defining loss functions, optimizers, and learning rates
-* Training procedures and hyperparameter tuning
-* Monitoring and logging training progress
-
-## Prediction & Evaluation
-
-* Using the trained models for weather prediction
-* Instructions for making predictions on new data
-* Evaluation metrics and performance analysis (MSE, RMSE, MAE, etc.)
-* Comparing the results of GWN and TCN baselines
-
-## Logging metrics 
-
-* Logging:
-  * Logs
-
-
-## Visualization
-
-* Vis
-  * vis
+* TCN:
+  * Separate ***TCN models are built for each weather station.***
+  * Walk-forward validation is performed on each station's dataset, resulting in multiple training, validation, and test splits.
+  * Hyper-parameter optimization is done for the first three splits, considering parameters such as epochs, batch size, learning rate, input window size, number of layers, dropout rate, layer normalization, and number of filters.
+  * The optimal parameters are selected based on the lowest error across all splits for the 24-hour prediction horizon.
+  * The models are trained and evaluated for each split, and the predictions for each split are concatenated.
+  * This has been deemed to be a respectable baseline to compare other, newer models, prediction accuracy on.
+  * SMAPE metrics are calculated using the concatenated predicted values and the actual values.
+* GWN:
+  * ***A single model is built for all stations***.
+  * GWN is a variant of ST-GNN that combines TCN layers and graph convolutional layers.
+  * It utilizes a self-adaptive adjacency matrix learned through gradient descent in the graph convolutional module.
+  * The experimental pipeline for these models follows a similar process as the TCN model, but with some differences. In addition to TCN's hyper-parameters, the adjacency matrices need to be considered.
+  * The adjacency matrix is of the self-adaptive type and is randomly initialized. This model had evidently become a reputable baseline that other, cutting-edge models, can be effectively compared against.
+* *Note for more details on the baselines please refer to our Proposal document.*
 
 ## Customization & Extension
 
-* Guidelines for customizing the experimental platform
+Guidelines for customizing the experimental platform in terms of Training, Prediction & Evaluation, Logging information, Visualization
+
 * Adding new models or modifying existing ones
 * Incorporating additional data sources or features
+* Training custimizations:
+
+  * Trains ...
+  * Setting up the training process
+  * Defining loss functions, optimizers, and learning rates
+  * Training procedures and hyperparameter tuning
+  * Monitoring and logging training progress
+* Prediction & evaluations customizations:
+
+  * Pred ...
+  * 
+  * Using the trained models for weather prediction
+  * Instructions for making predictions on new data
+  * Evaluation metrics and performance analysis (MSE, RMSE, MAE, etc.)
+  * Comparing the results of GWN and TCN baselines
+* Logging information:
+
+  * Logs...
+* Visualization
 
 ## Troubleshooting & FAQs
 
