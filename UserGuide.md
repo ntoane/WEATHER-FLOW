@@ -64,6 +64,36 @@
 * Splitting the data into training and test sets
   * Data was split using walk forward validtion method
 
+
+## New Model Integration
+
+These are the steps to follow when integrating a new ST-GNN model implementation to the experimental platform :
+
+* Configurations settings for <model_name> :
+  * Create a new config.yaml file for the model in *configurations/"<model_name>Config.yaml"*
+  * Use/add any configuration settings that are general to *"sharedConfig.yaml"* file
+* Module placing for <model_name>:
+  * Model logic goes in *Models/<model_name>/"<model_name>.py"*
+  * Training Logic goes in the *Train/"<model_name>Train.py"*
+  * Hyper-parameter optimization logic goes in *HPO/"<model_name>HPO.py*
+  * Evaluation logic in the *Evaluation/"<model_name>eval.py"*
+* Shared data for experimentation is in *Data/* module
+  * Depending on methodology of the cutting-edge ST-GNN model, either can obtain an:
+    * Adjacency matrix -> "adj_mx.pkl"
+      * Found in *Data/Graph_Neural_Network_Data/Adjacency_Matrix/adj_mx.pkl*
+      * *Please note that .pkl files can be 'unpickled' and converted into a readable fomat (such as a .csv file) by the function load_pickle in Utils/gwnUtils.py*
+    * .csv fie with all the weather station data :
+      * Either in one large .csv file
+        * Located in Data/Graph_Neural_Network_data/Graph_Station_Data
+      * Or one weather station in a single .csv file
+        * Located in Data/Weather_Station_Data
+* Logs:
+  * The "*/Logs/modelLogger"* logic is available to be implemented in the code of the model implementation, following the pre-defined steps in the Logging metrics subsection.
+  * Logging information can be saved to *Logs/<model_name>/<run_type</<model_name>*
+    * <run_type> is the type of experiment with the model, usually either Training, HPO or Evaluation
+* Visualisation:
+
+
 ## Model Architecture
 
 * Overview of the neural network models used (GWN and TCN)
@@ -84,7 +114,16 @@
 * Evaluation metrics and performance analysis (MSE, RMSE, MAE, etc.)
 * Comparing the results of GWN and TCN baselines
 
-## Logging metrics & Visualization
+## Logging metrics 
+
+* Logging:
+  * Logs
+
+
+## Visualization
+
+* Vis
+  * vis
 
 ## Customization & Extension
 
@@ -135,16 +174,13 @@
 
     * [Concept #1](https://link.springer.com/chapter/10.1007/978-3-031-22321-1_7)
     * [Concept #2](https://www.sciencedirect.com/science/article/pii/S0950705122000508?casa_token=3CtDCSkfVKMAAAAA:mjnnTlS7FpjsFqTF7xEY0nj7CH5fjse7kVukBX5AWVVYemiWDWxMK31MQXuiTk4o_5P_a6-5Zew)
-
-
-
 * Links to external resources and libraries used in the platform that are most likely to cause version and dependency errors:
+
   * [Tensorflow](https://www.tensorflow.org)
   * [Pytorch](https://pytorch.org)
   * [NumPy](https://numpy.org/doc/stable/)
   * [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
   * [Yaml Configuration Files](https://elib.psu.by/handle/123456789/36942)
-
 
 ## Appendix
 
