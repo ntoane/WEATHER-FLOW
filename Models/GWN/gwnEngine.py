@@ -16,7 +16,16 @@ class trainer:
                            layers=gwnConfig['num_layers']['default'])
         self.model.to(gwnConfig['device']['default'])
         self.optimizer = optim.Adam(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
-        self.loss = nn.MSELoss(reduction='mean').to(gwnConfig['device']['default'])
+       
+        if (sharedConfig['loss_function']['default'] == 'L1Loss'):
+            self.loss = nn.L1Loss(reduction='mean').to(gwnConfig['device']['default'])
+        elif(sharedConfig['loss_function']['default'] == 'CrossEntropyLoss'):
+            self.loss = nn.CrossEntropyLoss(reduction='mean').to(gwnConfig['device']['default'])
+        elif(sharedConfig['loss_function']['default'] == 'NLLLoss'):
+            self.loss = nn.NLLLoss(reduction='mean').to(gwnConfig['device']['default'])
+        else:
+            self.loss = nn.MSELoss(reduction='mean').to(gwnConfig['device']['default'])
+
         self.scaler = scaler
 
     def train(self, trainLoader, config):

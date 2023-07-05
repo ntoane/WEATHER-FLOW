@@ -43,6 +43,10 @@ n_split:
   default: 47
   help: number of splits in walk-forward validation
 
+loss_function:
+  type: string
+  default: 'MSELoss'
+  help: type of loss function used (currently accepts following; NLLLoss,CrossEntropyLoss,L1Loss AND MSELoss as default)
 
 ############################ Train final baseline and GNN model arguments ############################
 train_tcn:
