@@ -5,7 +5,7 @@ import HPO.gwnHPO as gwnHPO
 import Train.tcnTrain as tcnTrain
 import Train.gwnTrain as gwnTrain
 import Evaluation.baselineEval as baselineEval
-import plotter
+import Plots.plotter as plotter
 # import Visualisations.visualise as visualise
 
 # Parse the command-line arguments
@@ -16,8 +16,6 @@ args = parser.parse_args()
 # Load the YAML config file which contains all the required settings for platform
 with open('configurations/sharedConfig.yaml', 'r') as file:
     sharedConfig = yaml.safe_load(file)
-
-
 
 complete = False
 def main():
