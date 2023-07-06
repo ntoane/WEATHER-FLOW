@@ -13,7 +13,7 @@ class temporalcn:
 
     def __init__(self, x_train, y_train, x_val, y_val, n_lag, n_features, n_ahead, epochs, batch_size,
                  act_func, loss, learning_rate, batch_norm, layer_norm, weight_norm, kernel,
-                 filters, dilations, padding, dropout, patience, save):
+                 filters, dilations, padding, dropout, patience, save, optimizer):
         """"
         Initialize a temporalcn object.
 
@@ -63,6 +63,7 @@ class temporalcn:
         self.dropout = dropout
         self.patience = patience
         self.save = save
+        self.optimizer = optimizer
         
 
     def temperature_model(self):
@@ -92,7 +93,11 @@ class temporalcn:
         model.add(Dense(self.n_ahead, activation="linear"))
 
         # Configure optimizer and compile the model
-        opt = keras.optimizers.Adam(learning_rate=self.learning_rate, decay=1e-2 / self.epochs)
+        if (self.optimizer == 'SGD'):
+            opt = keras.optimizers.SGD(learning_rate=self.learning_rate, decay=1e-2 / self.epochs)
+        elif (self.optimizer == 'RMSprop'):
+            opt = keras.optimizers.RMSprop(learning_rate=self.learning_rate, decay=1e-2 / self.epochs)
+        else: opt = keras.optimizers.Adam(learning_rate=self.learning_rate, decay=1e-2 / self.epochs)
         model.compile(loss=self.loss,
                       optimizer=opt,
                       metrics=[self.loss, 'mape'])

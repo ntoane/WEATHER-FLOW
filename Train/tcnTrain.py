@@ -128,7 +128,7 @@ def train(sharedConfig,tcnConfig):
                                                    layer_norm=tcnConfig['layer_norm']['default'],
                                                    weight_norm=tcnConfig['weight_norm']['default'], kernel=tcnConfig['kernels']['default'], filters=filters,
                                                    dilations=tcnConfig['dilations']['default'], padding=tcnConfig['padding']['default'], dropout=dropout,
-                                                   patience=tcnConfig['patience']['default'], save=saveFile)
+                                                   patience=tcnConfig['patience']['default'], save=saveFile, optimizer=sharedConfig['optimizer']['default'])
 
                     # Training the model
                     model, history = tcn_model.temperature_model()
@@ -147,12 +147,12 @@ def train(sharedConfig,tcnConfig):
                     tcn_model = tcn_two.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                    n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
                                                    epochs=tcnConfig['epoch']['default'], batch_size=tcnConfig['batch_size']['default'], 
-                                                   act_func=activation, loss=tcnConfig['loss_metric']['default'],
+                                                   act_func=activation, loss=loss_function,
                                                    learning_rate=tcnConfig['lr']['default'], batch_norm=tcnConfig['batch_norm']['default'], 
                                                    layer_norm=tcnConfig['layer_norm']['default'],
                                                    weight_norm=tcnConfig['weight_norm']['default'], kernel=tcnConfig['kernels']['default'], filters=filters,
                                                    dilations=tcnConfig['dilations']['default'], padding=tcnConfig['padding']['default'], dropout=dropout,
-                                                   patience=tcnConfig['patience']['default'], save=saveFile)
+                                                   patience=tcnConfig['patience']['default'], save=saveFile, optimizer=sharedConfig['optimizer']['default'])
 
                     # Training the model
                     model, history = tcn_model.temperature_model()

@@ -15,7 +15,12 @@ class trainer:
                            dilation_channels=gwnConfig['nhid']['default'], skip_channels=gwnConfig['nhid']['default'] * 8, end_channels=gwnConfig['nhid']['default'] * 16,
                            layers=gwnConfig['num_layers']['default'])
         self.model.to(gwnConfig['device']['default'])
-        self.optimizer = optim.Adam(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
+        
+        if (sharedConfig['optimizer']['default'] == 'SGD'):
+            self.optimizer = optim.SGD(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
+        elif (sharedConfig['optimizer']['default'] == 'RMSprop'):
+            self.optimizer = optim.RMSprop(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
+        else: self.optimizer = optim.Adam(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
        
         if (sharedConfig['loss_function']['default'] == 'MAE'):
             self.loss = nn.L1Loss(reduction='mean').to(gwnConfig['device']['default'])

@@ -46,7 +46,12 @@ n_split:
 loss_function:
   type: string
   default: 'MSE'     #Only accepts MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
-  help: type of loss function used (currently accepts following; NLLLoss,CrossEntropyLoss,L1Loss AND MSELoss as default)
+  help: type of loss function used (to add another method look at User Guide), default type set to MSE
+
+optimizer:
+  type: string
+  default: 'Adam'     #Only accepts Adam, SGD, RMSprop.
+  help: type of optimizers used for model (to add another method look at User Guide), default type set to Adam
 
 ############################ Train final baseline and GNN model arguments ############################
 train_tcn:
