@@ -78,10 +78,16 @@ This subsection deals with the methodology of the configurations/ module that se
 * Shared config settings in *"sharedConfig.yaml"* that has *:*
   * General data configurations that all models may use.
   * Boolean settings that can be adjusted to change what model to use, aswell as the types of experimentations to do on them (either training, hpo or evaluation). The user of the experimental platform is also able to set multiple settings to true. For example a user can set "train_tcn" and "train_gwn" to true, and the platform will first train the TCN model anf afterwards will train the GWN model. The user can just leave their PC running and come back after and both models should have finished their training.
+  * Common loss function and optimizer can be set in this file, however a model only uses it if its own configuration file specifies that it is not using an independent method(that is it is using the common settings)
 * Model specific config settings :
   * Naming convention is "<model_name>Config.yaml"
   * This config file will have all the configuration settings that's only used by a single model
-
+  * If an independent loss function or optimizer wants to be used set approiate boolean flag to true and set method desired (eg. set use_optimizer to true and set optimizer to SGD if Stochastic Gradient Descent is required).Default settings for loss function and optimizer is MSE and Adam respectively 
+* Current config settings available for following:
+  * Loss function can be set to: MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
+  * Optimizers can be set to: Adam, SGD, RMSprop.
+  * If desired method/settings for above is not in options then it needs to be set in Model and Train code of the model in question and can be easily used
+  S
 
 ## Data Preprocessing
 
