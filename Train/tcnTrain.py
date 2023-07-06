@@ -113,7 +113,10 @@ def train(sharedConfig,tcnConfig):
                 # Get the X feature set for training
                 X_test, Y_test = utils.create_X_Y(test, lag_length, n_ahead_length)
 
-                loss_function = sharedConfig['loss_function']['default']
+                lossF = ['MSE', 'MAE', 'sparse_categorical_crossentropy', 'categorical_crossentropy']
+                if (sharedConfig['loss_function']['default'] in lossF):
+                    loss_function = sharedConfig['loss_function']['default']
+                else: loss_function = 'MSE'
 
                 # Creating the tcn model for temperature prediction
                 if layers == 1:
