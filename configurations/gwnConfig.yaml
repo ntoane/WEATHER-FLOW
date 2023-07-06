@@ -67,6 +67,14 @@ dropout:
   type: float
   default: 0.3
   help: dropout rate
+use_loss_metric:
+  type: boolean
+  default: false
+  help: should it model used independent loss metric or shared
+loss_metric:
+  type: str
+  default: 'MSE'  #Only accepts MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
+  help: independent loss metric to optimize
 weight_decay:
   type: float
   default: 0.0001
@@ -79,4 +87,12 @@ save:
   type: str
   default: 'Garage/Final Models/GWN/'
   help: save path
+use_optimizer:
+  type: boolean
+  default: false
+  help: should model used independent optimizer or shared
+optimizer:
+  type: string
+  default: 'Adam'     #Only accepts Adam, SGD, RMSprop.
+  help: type of optimizers used for model (to add another method look at User Guide), default type set to Adam
 

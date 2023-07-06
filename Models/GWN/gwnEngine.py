@@ -16,20 +16,37 @@ class trainer:
                            layers=gwnConfig['num_layers']['default'])
         self.model.to(gwnConfig['device']['default'])
         
-        if (sharedConfig['optimizer']['default'] == 'SGD'):
-            self.optimizer = optim.SGD(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
-        elif (sharedConfig['optimizer']['default'] == 'RMSprop'):
-            self.optimizer = optim.RMSprop(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
-        else: self.optimizer = optim.Adam(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
-       
-        if (sharedConfig['loss_function']['default'] == 'MAE'):
-            self.loss = nn.L1Loss(reduction='mean').to(gwnConfig['device']['default'])
-        elif(sharedConfig['loss_function']['default'] == 'sparse_categorical_crossentropy'):
-            self.loss = nn.CrossEntropyLoss(reduction='mean').to(gwnConfig['device']['default'])
-        elif(sharedConfig['loss_function']['default'] == 'categorical_crossentropy'):
-            self.loss = nn.NLLLoss(reduction='mean').to(gwnConfig['device']['default'])
+        if (gwnConfig['use_optimizer']['default']):
+            if (gwnConfig['optimizer']['default'] == 'SGD'):
+                self.optimizer = optim.SGD(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
+            elif (gwnConfig['optimizer']['default'] == 'RMSprop'):
+                self.optimizer = optim.RMSprop(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
+            else: self.optimizer = optim.Adam(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
         else:
-            self.loss = nn.MSELoss(reduction='mean').to(gwnConfig['device']['default'])
+            if (sharedConfig['optimizer']['default'] == 'SGD'):
+                self.optimizer = optim.SGD(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
+            elif (sharedConfig['optimizer']['default'] == 'RMSprop'):
+                self.optimizer = optim.RMSprop(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
+            else: self.optimizer = optim.Adam(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
+
+        if (gwnConfig['use_loss_function']['default']):
+            if (gwnConfig['loss_function']['default'] == 'MAE'):
+                self.loss = nn.L1Loss(reduction='mean').to(gwnConfig['device']['default'])
+            elif(gwnConfig['loss_function']['default'] == 'sparse_categorical_crossentropy'):
+                self.loss = nn.CrossEntropyLoss(reduction='mean').to(gwnConfig['device']['default'])
+            elif(gwnConfig['loss_function']['default'] == 'categorical_crossentropy'):
+                self.loss = nn.NLLLoss(reduction='mean').to(gwnConfig['device']['default'])
+            else:
+                self.loss = nn.MSELoss(reduction='mean').to(gwnConfig['device']['default'])
+        else:
+            if (sharedConfig['loss_function']['default'] == 'MAE'):
+                self.loss = nn.L1Loss(reduction='mean').to(gwnConfig['device']['default'])
+            elif(sharedConfig['loss_function']['default'] == 'sparse_categorical_crossentropy'):
+                self.loss = nn.CrossEntropyLoss(reduction='mean').to(gwnConfig['device']['default'])
+            elif(sharedConfig['loss_function']['default'] == 'categorical_crossentropy'):
+                self.loss = nn.NLLLoss(reduction='mean').to(gwnConfig['device']['default'])
+            else:
+                self.loss = nn.MSELoss(reduction='mean').to(gwnConfig['device']['default'])
 
         self.scaler = scaler
 

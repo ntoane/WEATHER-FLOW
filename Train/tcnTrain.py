@@ -113,10 +113,21 @@ def train(sharedConfig,tcnConfig):
                 # Get the X feature set for training
                 X_test, Y_test = utils.create_X_Y(test, lag_length, n_ahead_length)
 
+                if (tcnConfig['use_optimizer']['default']):
+                    opt = tcnConfig['optimizer']['default']
+                else:
+                    opt = sharedConfig['optimizer']['default']
+                    
+                
                 lossF = ['MSE', 'MAE', 'sparse_categorical_crossentropy', 'categorical_crossentropy']
-                if (sharedConfig['loss_function']['default'] in lossF):
-                    loss_function = sharedConfig['loss_function']['default']
-                else: loss_function = 'MSE'
+                if (tcnConfig['use_loss_function']['default']):
+                    if (tcnConfig['loss_function']['default'] in lossF):
+                        loss_function = tcnConfig['loss_function']['default']
+                    else: loss_function = 'MSE'
+                else:    
+                    if (sharedConfig['loss_function']['default'] in lossF):
+                        loss_function = sharedConfig['loss_function']['default']
+                    else: loss_function = 'MSE'
 
                 # Creating the tcn model for temperature prediction
                 if layers == 1:
@@ -128,7 +139,7 @@ def train(sharedConfig,tcnConfig):
                                                    layer_norm=tcnConfig['layer_norm']['default'],
                                                    weight_norm=tcnConfig['weight_norm']['default'], kernel=tcnConfig['kernels']['default'], filters=filters,
                                                    dilations=tcnConfig['dilations']['default'], padding=tcnConfig['padding']['default'], dropout=dropout,
-                                                   patience=tcnConfig['patience']['default'], save=saveFile, optimizer=sharedConfig['optimizer']['default'])
+                                                   patience=tcnConfig['patience']['default'], save=saveFile, optimizer=opt)
 
                     # Training the model
                     model, history = tcn_model.temperature_model()
