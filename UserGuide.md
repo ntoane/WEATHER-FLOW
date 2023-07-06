@@ -86,8 +86,7 @@ This subsection deals with the methodology of the configurations/ module that se
 * Current config settings available for following:
   * Loss function can be set to: MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
   * Optimizers can be set to: Adam, SGD, RMSprop.
-  * If desired method/settings for above is not in options then it needs to be set in Model and Train code of the model in question and can be easily used
-  S
+  * If desired method/settings for above is not in options then it needs to be set in Model and Train code of the model in question.
 
 ## Data Preprocessing
 
