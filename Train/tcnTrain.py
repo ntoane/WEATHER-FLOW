@@ -113,14 +113,14 @@ def train(sharedConfig,tcnConfig):
                 # Get the X feature set for training
                 X_test, Y_test = utils.create_X_Y(test, lag_length, n_ahead_length)
 
-                
+                loss_function = sharedConfig['loss_function']['default']
 
                 # Creating the tcn model for temperature prediction
                 if layers == 1:
                     tcn_model = tcn_one.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                    n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
                                                    epochs=tcnConfig['epochs']['default'], batch_size=tcnConfig['batch_size']['default'], 
-                                                   act_func=activation, loss=tcnConfig['loss_metric']['default'],
+                                                   act_func=activation, loss=loss_function,
                                                    learning_rate=tcnConfig['lr']['default'], batch_norm=tcnConfig['batch_norm']['default'], 
                                                    layer_norm=tcnConfig['layer_norm']['default'],
                                                    weight_norm=tcnConfig['weight_norm']['default'], kernel=tcnConfig['kernels']['default'], filters=filters,

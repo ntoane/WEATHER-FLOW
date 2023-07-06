@@ -45,7 +45,7 @@ n_split:
 
 loss_function:
   type: string
-  default: 'MSELoss'
+  default: 'MSE'     #Only accepts MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
   help: type of loss function used (currently accepts following; NLLLoss,CrossEntropyLoss,L1Loss AND MSELoss as default)
 
 ############################ Train final baseline and GNN model arguments ############################

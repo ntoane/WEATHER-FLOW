@@ -17,11 +17,11 @@ class trainer:
         self.model.to(gwnConfig['device']['default'])
         self.optimizer = optim.Adam(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
        
-        if (sharedConfig['loss_function']['default'] == 'L1Loss'):
+        if (sharedConfig['loss_function']['default'] == 'MAE'):
             self.loss = nn.L1Loss(reduction='mean').to(gwnConfig['device']['default'])
-        elif(sharedConfig['loss_function']['default'] == 'CrossEntropyLoss'):
+        elif(sharedConfig['loss_function']['default'] == 'sparse_categorical_crossentropy'):
             self.loss = nn.CrossEntropyLoss(reduction='mean').to(gwnConfig['device']['default'])
-        elif(sharedConfig['loss_function']['default'] == 'NLLLoss'):
+        elif(sharedConfig['loss_function']['default'] == 'categorical_crossentropy'):
             self.loss = nn.NLLLoss(reduction='mean').to(gwnConfig['device']['default'])
         else:
             self.loss = nn.MSELoss(reduction='mean').to(gwnConfig['device']['default'])
