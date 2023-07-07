@@ -77,7 +77,7 @@ def hpo(sharedConfig,tcnConfig):
                                                    weight_norm=cfg['Weight Norm'], kernel=cfg['Kernels'],
                                                    filters=cfg['Filters'], dilations=cfg['Dilations'],
                                                    padding=cfg['Padding'], dropout=cfg['Dropout'],
-                                                   patience=cfg['Patience'], save=saveFile)
+                                                   patience=cfg['Patience'], save=saveFile,  optimizer=sharedConfig['optimizer']['default'])
 
                     # Training the model
                     model, history = tcn_model.temperature_model()
@@ -97,7 +97,7 @@ def hpo(sharedConfig,tcnConfig):
                                                    weight_norm=cfg['Weight Norm'], kernel=cfg['Kernels'],
                                                    filters=cfg['Filters'], dilations=cfg['Dilations'],
                                                    padding=cfg['Padding'], dropout=cfg['Dropout'],
-                                                   patience=cfg['Patience'], save=saveFile)
+                                                   patience=cfg['Patience'], save=saveFile,  optimizer=sharedConfig['optimizer']['default'])
 
                     # Training the model
                     model, history = tcn_model.temperature_model()

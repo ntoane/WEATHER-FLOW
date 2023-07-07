@@ -15,7 +15,7 @@ patience:
   type: int
   default: 5
   help: patience value for early stopping
-use_loss_metric:
+use_loss_function:
   type: boolean
   default: false
   help: should model use independent loss metric or shared

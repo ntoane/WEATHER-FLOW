@@ -67,7 +67,7 @@ dropout:
   type: float
   default: 0.3
   help: dropout rate
-use_loss_metric:
+use_loss_function:
   type: boolean
   default: false
   help: should it model used independent loss metric or shared
