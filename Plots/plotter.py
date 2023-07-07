@@ -1,32 +1,37 @@
 import matplotlib.pyplot as plt
 import yaml
 
-def create(model):
-# def main():
+# def create(model):
+def main():
     print("Creating box and whiskers plot")
     metrics = {'MSE': {3:[],6:[],9:[],12:[],24:[]},'MAE': {3:[],6:[],9:[],12:[],24:[]},'RMSE': {3:[],6:[],9:[],12:[],24:[]},'SMAPE': {3:[],6:[],9:[],12:[],24:[]}}
 
-    with open('config.yaml', 'r') as file:
+    with open('../configurations/sharedConfig.yaml', 'r') as file:
         config = yaml.safe_load(file)
 
     horizons = config['horizons']['default']
     stations = config['stations']['default']
     
     start = 12
-    # model = "TCN"
+    model = "TCN"
     # Iterate over each station
     for station in stations:
         # Iterate over each forecasting horizon
         for horizon in horizons:
             try:
-                metric_file = f'Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt'
+                metric_file = f'../Results/{model}/Metrics/{station}/metrics_{horizon}.txt'
+                # metric_file = f'../Results/Metrics/{station}/metrics_{horizon}'
+
+                # metric_file = f'../Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt'
                 with open(metric_file, 'r') as file:
                     # Read the file line by line
                     lines = file.readlines()   
 
                 for line in lines:
                 # print(line)
-                    collin_index = line.index(":")
+                    # collin_index = line.index(":")
+                    collin_index = line[start:].index(" ") + 12
+                    # print(collin_index)
                     metric = line[start:collin_index]
                     # print(metric)
                     if metric in metrics:
@@ -36,6 +41,7 @@ def create(model):
                         metrics[metric][horizon].append(value)
 
             except Exception as e:
+                print(e)
                 print('Error! : Unable to read data or write metrics for station {} and forecast length {}. Please review the data or code for the metrics for errors.'.format(station, horizon))
     # print(metrics)
     
@@ -76,6 +82,7 @@ def create(model):
 
         # Save the box plot to a file
         plt.savefig(f'Plots/{model}/{key}_BWplot.png')
+        # plt.savefig(f'{key}_BWplot.png')
 
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
