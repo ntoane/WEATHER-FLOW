@@ -6,7 +6,7 @@
 
 * Overview of the experimental platform
 
-  * This experimental platform was initially created by Davidson for [his Masters project at UCT](https://www.springerprofessional.de/en/st-gnns-for-weather-prediction-in-south-africa/23774860). It was initially not designed for future use, but since then has become enhanced to be a clear, easy-to-use experimental platform for the cognitive systems lab, that's customizable and extensible with code modularity maximized and code coupling minimized as much as possible.
+  * This experimental platform was initially created by Davidson for [his Masters project at UCT](https://www.springerprofessional.de/en/st-gnns-for-weather-prediction-in-south-africa/23774860). It was initially not designed for future use, but since then has become enhanced to be a clear, easy-to-use experimental platform for the Adaptive and Cognitive Systems Lab, that's customizable and extensible with code modularity maximized and code coupling minimized as much as possible.
 * Aims & Objectives of the experimental platform
 
   * Extend Davidson’s experimental platform to evaluate all our individual ST-GNN variants, along with the baseline models.
