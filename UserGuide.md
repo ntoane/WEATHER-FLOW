@@ -68,7 +68,8 @@ These are the steps to follow when integrating a new ST-GNN model (such as *<mod
   * Saved to ..
 * Plots/ module:
   * Module Plots/ has "plotter.py" which contains the logic for plotting graphs with the sepcified metrics
-  * Saved to <module_name>/`<metric>.jpg`
+  * Saved to <module_name>/`<metric><plot>.jpg`
+  * Currently plots box and whiskers diagram
 
 
 ## Configurations
@@ -93,7 +94,7 @@ This subsection deals with the methodology of the configurations/ module that se
 * Description
   * We have currently gathered weather stations for Eastern Cape, Northern Cape and Western Cape provided by South African Weather Services (SAWS), totalling at 45 weather stations in total, 15 stations each per province. This is more than previously used by Davidson.
 * Steps for data preprocessing and cleaning
-  * Python script was wriiten to ensure data was filtered according to individual stations and only stations that had below 5% missing data were selected
+  * Python script was wriiten to ensure data was filtered according to individual stations and only stations that had below 5% missing data were selected for the learning process
 * Handling missing values and time records
   * We implemented Inverse Distance Weigthing method (IDW) to handle the missing time records or variables in the data
 * Splitting the data into training and test sets
