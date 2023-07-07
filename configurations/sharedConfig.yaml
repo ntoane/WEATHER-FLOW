@@ -1,7 +1,40 @@
 # Configuration pyyaml file with configuration settings required (as args) for main.py
 
-############################ General data configurations ############################
+############################ Train baselines (GWN & TCN) ############################
+train_tcn:
+  type: bool
+  default: false
+  help: whether to train final TCN models
+train_gwn:
+  type: bool
+  default: false
+  help: whether to train final GWN model
 
+############################ Random Search HPO arguments (GWN & TCN) ############################ 
+tune_tcn:
+  type: bool
+  default: false
+  help: whether to perform random search HPO on TCN models
+tune_gwn:
+  type: bool
+  default: false
+  help: whether to perform random search HPO on GWN model
+num_configs:
+  type: int
+  default: 30
+  help: number of random configurations to search through
+
+############################ Perform evaluations calculating metrics of final models' results (GWN & TCN) ############################
+eval_tcn:
+  type: bool
+  default: false
+  help: whether to report final TCN metrics
+eval_gwn:
+  type: bool
+  default: false
+  help: whether to report final GWN metrics
+
+############################ General data configurations ############################
 increment: 
   type: int[]
   default: [100,200,300,8760, 10920, 13106, 15312, 17520, 19704, 21888, 24096, 26304,
@@ -32,7 +65,6 @@ stations:
   #               'UITENHAGE','UPINGTON WO', 'VANWYKSVLEI','VIOOLSDRIF - AWS','VREDENDAL','WILLOWMORE','WORCESTER-AWS']
   help: list of all stations names
 
-
 horizons:
   type: int[]
   default: [3, 6, 9, 12, 24]
@@ -48,6 +80,8 @@ n_split:
   default: 47
   help: number of splits in walk-forward validation
 
+################################# Loss and Optimizer  ###############################
+
 loss_function:
   type: string
   default: 'MSE'     #Only accepts MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
@@ -57,41 +91,6 @@ optimizer:
   type: string
   default: 'Adam'     #Only accepts Adam, SGD, RMSprop.
   help: type of optimizers used for model (to add another method look at User Guide), default type set to Adam
-
-############################ Train final baseline and GNN model arguments ############################
-train_tcn:
-  type: bool
-  default: false
-  help: whether to train final TCN models
-train_gwn:
-  type: bool
-  default: false
-  help: whether to train final GWN model
-
-
-############################ Random Search HPO arguments ############################ 
-tune_tcn:
-  type: bool
-  default: false
-  help: whether to perform random search HPO on TCN models
-tune_gwn:
-  type: bool
-  default: false
-  help: whether to perform random search HPO on GWN model
-num_configs:
-  type: int
-  default: 30
-  help: number of random configurations to search through
-
-############################  Calculate metrics of final models' results arguments ############################
-eval_tcn:
-  type: bool
-  default: false
-  help: whether to report final TCN metrics
-eval_gwn:
-  type: bool
-  default: false
-  help: whether to report final GWN metrics
 
 ############################ Visualise Adjacency Matrix ############################
 vis:
@@ -114,4 +113,3 @@ locations_path:
   type: str
   default: 'DataNew/Locations/Locations.csv'
   help: path to csv containg station coordinates
-  

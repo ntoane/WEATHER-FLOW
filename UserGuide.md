@@ -2,7 +2,6 @@
 
 *This is an expanded version of the initial ReadMe.md file, that elaborates on the usage, customizability of the experimental platform and provides a step by step process of integrating a new cutting-edge ST-GNN model implementation.*
 
-
 ## Introduction
 
 * Overview of the experimental platform
@@ -34,7 +33,6 @@
 
   * Same as seen in the Readme.md
   * Please refer to FAQ's for any installation errors, as these may be frequently encountered errors that can be guided through with some tips and tricks.
-
 
 ## New Model Integration
 
@@ -71,22 +69,23 @@ These are the steps to follow when integrating a new ST-GNN model (such as *<mod
   * Saved to <module_name>/`<metric><plot>.jpg`
   * Currently plots box and whiskers diagram
 
-
 ## Configurations
 
-This subsection deals with the methodology of the configurations/ module that sets up the experimental platform with the specified model implementation with the desired settings.
+This subsection describes the methodology of the configurations/ module that sets up the experimental platform with the specified model implementation and desired settings.
 
-* Shared config settings in *"sharedConfig.yaml"* that has *:*
-  * General data configurations that all models may use.
-  * Boolean settings that can be adjusted to change what model to use, aswell as the types of experimentations to do on them (either training, hpo or evaluation). The user of the experimental platform is also able to set multiple settings to true. For example a user can set "train_tcn" and "train_gwn" to true, and the platform will first train the TCN model anf afterwards will train the GWN model. The user can just leave their PC running and come back after and both models should have finished their training.
-  * Common loss function and optimizer can be set in this file, however a model only uses it if its own configuration file specifies that it is not using an independent method(that is it is using the common settings)
-* Model specific config settings :
-  * Naming convention is "<model_name>Config.yaml"
-  * This config file will have all the configuration settings that's only used by a single model
-  * If an independent loss function or optimizer wants to be used set approiate boolean flag to true and set method desired (eg. set use_optimizer to true and set optimizer to SGD if Stochastic Gradient Descent is required).Default settings for loss function and optimizer is MSE and Adam respectively 
-* Current config settings available for following:
-  * Loss function can be set to: MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
-  * Optimizers can be set to: Adam, SGD, RMSprop.
+* Shared config settings in *"sharedConfig.yaml"* that has general data configurations that all models may use:
+  * Boolean settings to select different models and types of experiments (training, HPO, or evaluation). Multiple settings can be set to true, enabling sequential training of different models. For example, if a user sets "train_tcn" and "train_gwn" to true, the platform will first train the TCN model and then proceed to train the GWN model. Users can leave their PC running, and both models will complete their training when they return.
+  * General data configurations include increment steps, list of stations in data and the numbe rof horizons etc.
+  * Common loss function and optimizer can be set in this file, however a model only uses it if its own configuration file specifies that it is not using an independent method (that is it is using the common settings)
+  * Visualization settings are also found here, with its relevant settings.
+* Model specific config settings in "<model_name>Config.yaml" that's only used by a single model:
+  * This Yaml file contains settings that are used in the configuration and initialisation of a specific model.
+  * If an independent loss function or optimizer wants to be used set appropriate boolean flag to true and set method desired (eg. set use_optimizer to true and set optimizer to SGD if Stochastic Gradient Descent is required). Default settings for loss function and optimizer is MSE and Adam respectively
+* Please note: Current config settings available for following:
+  * Loss function can be set to:
+    * MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
+  * Optimizers can be set to:
+    * Adam, SGD, RMSprop.
   * If desired method/settings for above is not in options then it needs to be set in Model and Train code of the model in question.
 
 ## Data Preprocessing
@@ -179,7 +178,7 @@ Guidelines for customizing the experimental platform in terms of Training, Predi
   * Foundational Theory:
 
     * [Davidsons Paper](https://www.springerprofessional.de/en/st-gnns-for-weather-prediction-in-south-africa/23774860)
-    * [Pillay&#39;s Paper](https://link.springer.com/chapter/10.1007/978-3-030-95070-5_7)
+    * [Pillays Paper](https://link.springer.com/chapter/10.1007/978-3-030-95070-5_7)
   * Experimental Platform:
 
     * [Concept #1 ](https://pure.mpg.de/rest/items/item_3020343/component/file_3036194/content)
