@@ -29,7 +29,7 @@ class trainer:
                 self.optimizer = optim.RMSprop(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
             else: self.optimizer = optim.Adam(self.model.parameters(), lr=gwnConfig['learning_rate']['default'], weight_decay=gwnConfig['weight_decay']['default'])
 
-        if (gwnConfig['use_loss_metric']['default']):
+        if (gwnConfig['use_loss_function']['default']):
             if (gwnConfig['loss_function']['default'] == 'MAE'):
                 self.loss = nn.L1Loss(reduction='mean').to(gwnConfig['device']['default'])
             elif(gwnConfig['loss_function']['default'] == 'sparse_categorical_crossentropy'):

@@ -47,7 +47,7 @@ def train(sharedConfig,tcnConfig):
             print('tcnTrain : TCN model training started at ' + station)
 
             # pulling in weather station data
-            weatherData = 'Data/Weather Station Data/' + station + '.csv'
+            weatherData = 'DataNew/Weather Station Data/' + station + '.csv'
             ts = utils.create_dataset(weatherData)
 
             # reading in the parameters from the text file
@@ -120,7 +120,7 @@ def train(sharedConfig,tcnConfig):
                     
                 
                 lossF = ['MSE', 'MAE', 'sparse_categorical_crossentropy', 'categorical_crossentropy']
-                if (tcnConfig['use_loss_metric']['default']):
+                if (tcnConfig['use_loss_function']['default']):
                     if (tcnConfig['loss_function']['default'] in lossF):
                         loss_function = tcnConfig['loss_function']['default']
                     else: loss_function = 'MSE'

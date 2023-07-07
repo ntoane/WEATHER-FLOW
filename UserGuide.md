@@ -53,9 +53,9 @@ These are the steps to follow when integrating a new ST-GNN model (such as *<mod
       * *Please note that .pkl files can be 'unpickled' and converted into a readable fomat (such as a .csv file) by the function load_pickle in Utils/gwnUtils.py*
     * .csv fie with all the weather station data :
       * Either in one large .csv file
-        * Located in Data/Graph_Neural_Network_data/Graph_Station_Data/
+        * Located in Data/Graph_Neural_Network_data/Graph_Station_Data
       * Or one weather station in a single .csv file
-        * Located in Data/Weather_Station_Data/
+        * Located in Data/Weather_Station_Data
 * Logs :
   * The "*/Logs/modelLogger"* logic is available to be implemented in the code of the model implementation, following the pre-defined steps in the Logging metrics subsection.
   * Logging information can be saved to *Logs/<model_name>/<run_type</<model_name>*

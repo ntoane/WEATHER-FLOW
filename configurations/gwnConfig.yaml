@@ -5,11 +5,11 @@ device:
   help: device to place model on
 data:
   type: str
-  default: 'Data/Graph Neural Network Data/Graph Station Data/Graph.csv'
+  default: 'DataNew/Graph Neural Network Data/Graph Station Data/Graph.csv' #DataNew
   help: data path
 adjdata:
   type: str
-  default: 'Data/Graph Neural Network Data/Adjacency Matrix/adj_mx.pkl' 
+  default: 'DataNew/Graph Neural Network Data/Adjacency Matrix/adj_mx.pkl'  #DataNew
   help: adj data path
 adjtype:
   type: str

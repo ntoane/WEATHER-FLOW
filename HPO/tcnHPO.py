@@ -31,7 +31,7 @@ def hpo(sharedConfig,tcnConfig):
         tcn_logger.info('tcnHPO : TCN HPO training started at ' + station)
         
         # pulling in weather station data
-        weatherData = 'Data/Weather Station Data/' + station + '.csv'
+        weatherData = 'DataNew/Weather Station Data/' + station + '.csv'
         ts = utils.create_dataset(weatherData)
 
         textFile = 'HPO/Best Parameters/TCN/' + station + '_configurations.txt'
@@ -77,7 +77,7 @@ def hpo(sharedConfig,tcnConfig):
                                                    weight_norm=cfg['Weight Norm'], kernel=cfg['Kernels'],
                                                    filters=cfg['Filters'], dilations=cfg['Dilations'],
                                                    padding=cfg['Padding'], dropout=cfg['Dropout'],
-                                                   patience=cfg['Patience'], save=saveFile,optimizer=sharedConfig['optimizer']['default'])
+                                                   patience=cfg['Patience'], save=saveFile)
 
                     # Training the model
                     model, history = tcn_model.temperature_model()
@@ -97,7 +97,7 @@ def hpo(sharedConfig,tcnConfig):
                                                    weight_norm=cfg['Weight Norm'], kernel=cfg['Kernels'],
                                                    filters=cfg['Filters'], dilations=cfg['Dilations'],
                                                    padding=cfg['Padding'], dropout=cfg['Dropout'],
-                                                   patience=cfg['Patience'], save=saveFile, optimizer=sharedConfig['optimizer']['default'])
+                                                   patience=cfg['Patience'], save=saveFile)
 
                     # Training the model
                     model, history = tcn_model.temperature_model()
