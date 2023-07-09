@@ -1,5 +1,6 @@
 import pandas as pd
 import Utils.gwnUtils as util
+import Utils.sharedUtils as sharedUtil
 import torch
 import time
 from Models.GWN.gwnEngine import trainer
@@ -38,8 +39,8 @@ def train_model(sharedConfig, gwnConfig, data, split, supports, adj_init, model_
 
     engine = trainer(scaler, supports, adj_init, sharedConfig, gwnConfig)
 
-    x_train, y_train = util.sliding_window(scaler.transform(train_data), gwnConfig['lag_length']['default'], gwnConfig['seq_length']['default'], split, 0, sharedConfig['n_stations']['default'])
-    x_validation, y_validation = util.sliding_window(scaler.transform(validate_data), gwnConfig['lag_length']['default'], gwnConfig['seq_length']['default'],
+    x_train, y_train = sharedUtil.sliding_window(scaler.transform(train_data), gwnConfig['lag_length']['default'], gwnConfig['seq_length']['default'], split, 0, sharedConfig['n_stations']['default'])
+    x_validation, y_validation = sharedUtil.sliding_window(scaler.transform(validate_data), gwnConfig['lag_length']['default'], gwnConfig['seq_length']['default'],
                                                      split, 1, sharedConfig['n_stations']['default'])
 
     trainLoader = util.DataLoader(x_train, y_train, gwnConfig['batch_size']['default'])
