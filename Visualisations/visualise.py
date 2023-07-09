@@ -7,6 +7,25 @@ import seaborn as sns
 import csv
 import os
 
+# def create_graph(adj_matrix, config):
+#     G = nx.DiGraph()
+
+#     locations_path = config['locations_path']['default'] #'DataNew/Locations/Locations.csv'
+#     with open(locations_path, 'r') as file:
+#         reader = csv.reader(file)
+#         next(reader)  # Skip the header row
+#         for row in reader:
+#             number, station_name, lat, lon, province = row
+#             G.add_node(number, pos=(float(lon), float(lat)), province=province)
+
+#     for i in range(adj_matrix.shape[0]):
+#         strongest_influence_indices = np.argsort(adj_matrix[:, i])[-1:]  # Enter number of influential stations
+#         for j in strongest_influence_indices:
+#             if adj_matrix[j, i] > 0:
+#                 G.add_edge(list(G.nodes())[j], list(G.nodes())[i])
+
+#     return G
+
 def create_graph(adj_matrix, config):
     G = nx.DiGraph()
 
@@ -18,13 +37,15 @@ def create_graph(adj_matrix, config):
             number, station_name, lat, lon, province = row
             G.add_node(number, pos=(float(lon), float(lat)), province=province)
 
-    for i in range(adj_matrix.shape[0]):
-        strongest_influence_indices = np.argsort(adj_matrix[:, i])[-1:]  # Enter number of influential stations
+    for i in range(adj_matrix.shape[1]):  # Iterate over the columns instead of rows
+        strongest_influence_indices = np.argsort(adj_matrix[i, :])[-1:]  # Enter number of influential stations
         for j in strongest_influence_indices:
-            if adj_matrix[j, i] > 0:
-                G.add_edge(list(G.nodes())[j], list(G.nodes())[i])
+            if adj_matrix[i, j] > 0:  # Use adj_matrix[i, j] instead of adj_matrix[j, i]
+                G.add_edge(list(G.nodes())[j], list(G.nodes())[i])  # Swap the order of nodes
 
     return G
+
+
 
 
 def plot_map(adj_matrix, config, split):
