@@ -107,8 +107,8 @@ horizonVis:
   help: the horizon to visualise
 splitVis:
   type: str
-  default: "0"
-  help: the split to visualise
+  default: 0
+  help: the split number up to which visualisations should be generated for
 locations_path:
   type: str
   default: 'DataNew/Locations/Locations.csv'

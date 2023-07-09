@@ -6,7 +6,7 @@ import Train.tcnTrain as tcnTrain
 import Train.gwnTrain as gwnTrain
 import Evaluation.baselineEval as baselineEval
 import Plots.plotter as plotter
-# import Visualisations.visualise as visualise
+import Visualisations.visualise as visualise
 
 # Parse the command-line arguments
 parser = argparse.ArgumentParser()
@@ -62,8 +62,8 @@ def main():
         plotter.create('GWN')
 
 # ############ Visualisations #############
-#     if sharedConfig['vis']['default']:
-#         visualise.plot(sharedConfig)
+    if sharedConfig['vis']['default']:
+        visualise.plot(sharedConfig)
      
 ############ Else condition #############   
     else :
