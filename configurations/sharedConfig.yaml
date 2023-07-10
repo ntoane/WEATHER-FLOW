@@ -3,7 +3,7 @@
 ############################ Train baselines (GWN & TCN) ############################
 train_tcn:
   type: bool
-  default: false
+  default: true
   help: whether to train final TCN models
 train_gwn:
   type: bool
@@ -37,7 +37,7 @@ eval_gwn:
 ############################ General data configurations ############################
 increment: 
   type: int[]
-  default: [100,200,300,8760, 10920, 13106, 15312, 17520, 19704, 21888, 24096, 26304,
+  default: [8760, 10920, 13106, 15312, 17520, 19704, 21888, 24096, 26304,
                  28464, 30648, 32856, 35064, 37224, 39408, 41616, 43824, 45984,
                  48168, 50376, 52584, 54768, 56952, 59160, 61368, 63528, 65712,
                  67920, 70128, 72288, 74472, 76680, 78888, 81048, 83232, 85440,
@@ -77,7 +77,7 @@ n_stations:
 
 n_split:
   type: int
-  default: 47
+  default: 3
   help: number of splits in walk-forward validation
 
 ################################# Loss and Optimizer  ###############################

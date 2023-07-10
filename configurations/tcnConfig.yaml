@@ -1,7 +1,7 @@
 ####################### Baseline TCN args, default arguments are optimal hyper-parameters ########################
 epochs: 
   type: int
-  default: 40
+  default: 2
   help: epochs to run for training
 batch_size:
   type: int

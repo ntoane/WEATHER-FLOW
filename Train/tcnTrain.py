@@ -5,6 +5,7 @@ import pandas as pd
 from keras.models import load_model
 from tcn import TCN
 import tensorflow as tf
+import os
 from Logs.modelLogger import modelLogger
 
 def train(sharedConfig,tcnConfig):
@@ -73,16 +74,26 @@ def train(sharedConfig,tcnConfig):
 
             targetFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Targets/' + \
                          'target.csv'
+            # Specify the directory path
+            target_path = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Targets/' 
+            # Create the directory if it doesn't exist
+            os.makedirs(target_path, exist_ok=True)
             resultsFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
                           'result.csv'
+            result_path = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/'
+            # Create the directory if it doesn't exist
+            os.makedirs(result_path, exist_ok=True)
             lossFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
                        'loss.csv'
+            loss_path = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/'
+            # Create the directory if it doesn't exist
+            os.makedirs(loss_path, exist_ok=True)
 
             num_splits = sharedConfig['n_split']['default']# was 27
 
             for k in range(num_splits):
-                print('TCN training started on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
-                                                                                                     forecast_len))
+                print('TCN training started on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                                                                                                     forecast_len, num_splits))
                 tcn_logger.info('tcnTrain :TCN Model on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                      forecast_len))
 
@@ -157,7 +168,7 @@ def train(sharedConfig,tcnConfig):
                 else:
                     tcn_model = tcn_two.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                    n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-                                                   epochs=tcnConfig['epoch']['default'], batch_size=tcnConfig['batch_size']['default'], 
+                                                   epochs=tcnConfig['epochs']['default'], batch_size=tcnConfig['batch_size']['default'], 
                                                    act_func=activation, loss=loss_function,
                                                    learning_rate=tcnConfig['lr']['default'], batch_norm=tcnConfig['batch_norm']['default'], 
                                                    layer_norm=tcnConfig['layer_norm']['default'],
