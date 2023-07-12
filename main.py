@@ -59,7 +59,7 @@ def main():
     if sharedConfig['eval_gwn']['default']:
         gwnConfig = getSpecificConfig('gwn')
         baselineEval.GwnEval(sharedConfig, gwnConfig)
-        plotter.create('GWN')
+        plotter.create('GWN', sharedConfig)
 
 # ############ Visualisations #############
     if sharedConfig['vis']['default']:

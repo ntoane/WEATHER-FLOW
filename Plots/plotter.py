@@ -1,13 +1,14 @@
 import matplotlib.pyplot as plt
 import yaml
 
-# def create(model):
-def main():
+def create(model, sharedConfig):
+# def main():
+    config = sharedConfig
     print("Creating box and whiskers plot")
     metrics = {'MSE': {3:[],6:[],9:[],12:[],24:[]},'MAE': {3:[],6:[],9:[],12:[],24:[]},'RMSE': {3:[],6:[],9:[],12:[],24:[]},'SMAPE': {3:[],6:[],9:[],12:[],24:[]}}
 
-    with open('../configurations/sharedConfig.yaml', 'r') as file:
-        config = yaml.safe_load(file)
+    # with open('../configurations/sharedConfig.yaml', 'r') as file:
+    #     config = yaml.safe_load(file)
 
     horizons = config['horizons']['default']
     stations = config['stations']['default']
@@ -84,5 +85,5 @@ def main():
         plt.savefig(f'Plots/{model}/{key}_BWplot.png')
         # plt.savefig(f'{key}_BWplot.png')
 
-if __name__ == '__main__':
-    main()
+# if __name__ == '__main__':
+#     main()

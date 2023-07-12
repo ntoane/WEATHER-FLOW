@@ -3,6 +3,7 @@ import Utils.metrics as metrics
 import Utils.gwnUtils as utils
 import Utils.metrics as metrics
 import numpy as np
+import os
 
 import logging
 from Logs.modelLogger import modelLogger
@@ -72,7 +73,7 @@ def TcnEval(model, sharedConfig, tcnConfig):
                 
     tcn_logger.info('baselineEval : Finished evaluation of TCN error metrics for all stations.')  
                 
-def GwnEval(sharedConfig, tcnConfig):
+def GwnEval(sharedConfig, gwnConfig):
     """
      Calculates the GWN model's performance on the test set across all forecasting horizons [3, 6, 9, 12, 24] for each
      individual station. The predictions are read from the results file for each split of the walk-forward validation
@@ -104,22 +105,33 @@ def GwnEval(sharedConfig, tcnConfig):
                 for split in range(num_splits):
                     results_file = f'Results/GWN/{horizon} Hour Forecast/Predictions/outputs_{split}.pkl'
                     targets_file = f'Results/GWN/{horizon} Hour Forecast/Targets/targets_{split}.pkl'
-                    metric_file = f'Results/GWN/{horizon} Hour Forecast/{station}/Metrics/metrics.txt'
+
+                    metric_file_directory = f'Results/GWN/{horizon} Hour Forecast/{station}/Metrics/'
+                    metric_filename = 'metrics.txt'
+                    if not os.path.exists(metric_file_directory):
+                        os.makedirs(metric_file_directory)
+
+                    metric_file = os.path.join(metric_file_directory, metric_filename)
+
+
+
+
                     
                     gwn_logger = modelLogger('gwn', str(station), 'Logs/GWN/gwn_.txt', log_enabled=False)
-                    
                     yhat = utils.load_pickle(results_file)
                     target = utils.load_pickle(targets_file)
-                    pred.extend(np.array(yhat).flatten())
-                    real.extend(np.array(target).flatten())
-                
+                    # pred.extend(np.array(yhat).flatten())
+                    # real.extend(np.array(target).flatten())
+                    pred = np.append(pred, np.array(yhat).flatten())
+                    real = np.append(real, np.array(target).flatten())
+
                     # Reshape pred and real arrays
-                    pred = np.array(pred).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * tcnConfig['seq_length']['default'])), 
+                    pred = np.array(pred).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * gwnConfig['seq_length']['default'])), 
                                                 sharedConfig['n_stations']['default'],
-                                                tcnConfig['seq_length']['default']))
-                    real = np.array(real).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * tcnConfig['seq_length']['default'])), 
+                                                gwnConfig['seq_length']['default']))
+                    real = np.array(real).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * gwnConfig['seq_length']['default'])), 
                                                 sharedConfig['n_stations']['default'],
-                                                tcnConfig['seq_length']['default']))
+                                                gwnConfig['seq_length']['default']))
 
                     # Open metric_file for writing
                     with open(metric_file, 'w') as file:
