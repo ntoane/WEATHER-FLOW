@@ -10,17 +10,18 @@ def create(model, sharedConfig):
     # with open('../configurations/sharedConfig.yaml', 'r') as file:
     #     config = yaml.safe_load(file)
 
-    horizons = config['horizons']['default']
+    # horizons = config['horizons']['default']
+    horizons = [3]
     stations = config['stations']['default']
     
     start = 12
-    model = "TCN"
+    # model = "TCN"
     # Iterate over each station
     for station in stations:
         # Iterate over each forecasting horizon
         for horizon in horizons:
             try:
-                metric_file = f'../Results/{model}/Metrics/{station}/metrics_{horizon}.txt'
+                metric_file = f'Results/{model}/{horizon}_Hour_Forecast/Metrics/{station}/metrics.txt'
                 # metric_file = f'../Results/Metrics/{station}/metrics_{horizon}'
 
                 # metric_file = f'../Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt'

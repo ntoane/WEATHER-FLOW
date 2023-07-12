@@ -37,8 +37,8 @@ def TcnEval(model, sharedConfig, tcnConfig):
                 
                 # Set the file paths for predictions, targets, and metrics
                 yhat_path = f'Results/{model}/{horizon} Hour Forecast/{station}/Predictions/result.csv'
-                target_path = f'Results/{model}/{horizon} Hour Forecast/{station}/Targets/target.csv'
-                metric_file = f'Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt'
+                target_path = f'Results/{model}/{horizon}Hour Forecast/{station}/Targets/target.csv'
+                metric_file = f'Results/{model}/{horizon}_Hour_Forecast/Metrics/{station}/metrics.txt'
                 
                
                 # Read the predictions and targets from the CSV files
@@ -58,8 +58,8 @@ def TcnEval(model, sharedConfig, tcnConfig):
                     metric.write('This is the RMSE: {}\n'.format(rmse))
                     metric.write('This is the SMAPE: {}\n'.format(smape))
                 
-                tcn_logger.info('baselineEval : TCN evaluation done at' + str(station)+' for the horizon of ' +str(horizon) ) 
-                tcn_logger.info('baselineEval : TCN evaluation of ' + str(station)+' for the horizon of ' +str(horizon) +' was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt' ) 
+                tcn_logger.info('baselineEval : TCN evaluation done at' + station+' for the horizon of ' +str(horizon) ) 
+                tcn_logger.info('baselineEval : TCN evaluation of ' + station+' for the horizon of ' +str(horizon) +' was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt' ) 
                 
                 # Print the metrics for the current station and horizon length
                 print('SMAPE: {0} at the {1} station forecasting {2} hours ahead.'.format(smape, station, horizon))
@@ -87,26 +87,27 @@ def GwnEval(sharedConfig, gwnConfig):
      """
     horizons = sharedConfig['horizons']['default']
     num_splits = sharedConfig['n_split']['default']    #was 27 (made use config)
-    num_stations = sharedConfig['n_stations']['default']    #was 21 (made us config)
+    stations = sharedConfig['stations']['default']    #was 21 (made us config)
     gwn_logger = modelLogger('gwn','all','Logs/GWN/gwn_all_stations.txt', log_enabled=False)
     gwn_logger.info('baselineEval : Starting to compute evaluation error metrics for all stations.')
     
-
+    s = -1
     # Iterate over each station
-    for station in range(num_stations):
+    for station in stations:
         # Iterate over each forecasting horizon
+        s = s + 1
         for horizon in horizons:
             try:
                 pred = []
                 real = []
-                gwn_logger = modelLogger('gwn', str(station),'Logs/GWN/Evaluation/'+'gwn_' + str(station) +'.txt', log_enabled=False)  
-                gwn_logger.info('baselineEval : GWN evaluation started at' + str(station)+' for the horizon of ' +str(horizon) ) 
+                gwn_logger = modelLogger('gwn', station,'Logs/GWN/Evaluation/'+'gwn_' + station +'.txt', log_enabled=False)  
+                gwn_logger.info('baselineEval : GWN evaluation started at' + station+' for the horizon of ' +str(horizon) ) 
                 # Read predictions and targets for each split and append them to pred and real lists
                 for split in range(num_splits):
                     results_file = f'Results/GWN/{horizon} Hour Forecast/Predictions/outputs_{split}.pkl'
                     targets_file = f'Results/GWN/{horizon} Hour Forecast/Targets/targets_{split}.pkl'
 
-                    metric_file_directory = f'Results/GWN/{horizon} Hour Forecast/{station}/Metrics/'
+                    metric_file_directory = f'Results/GWN/{horizon}_Hour_Forecast/Metrics/{station}/'
                     metric_filename = 'metrics.txt'
                     if not os.path.exists(metric_file_directory):
                         os.makedirs(metric_file_directory)
@@ -135,18 +136,18 @@ def GwnEval(sharedConfig, gwnConfig):
 
                     # Open metric_file for writing
                     with open(metric_file, 'w') as file:
-                        preds = pred[:, station, :]
-                        real_values = real[:, station, :]
+                        preds = pred[:, s, :]
+                        real_values = real[:, s, :]
                         # Calculate metrics
                         root = metrics.rmse(real_values, preds)
                         square = metrics.mse(real_values, preds)
                         abs_val = metrics.mae(real_values, preds)
                         ape = metrics.smape(real_values, preds)
                         # Print and write metrics
-                        print('RMSE: {0} for station {1} forecasting {2} hours ahead'.format(root, station+1, horizon))
-                        print('MSE: {0} for station {1} forecasting {2} hours ahead'.format(square, station+1, horizon))
-                        print('MAE: {0} for station {1} forecasting {2} hours ahead'.format(abs_val, station+1, horizon))
-                        print('SMAPE: {0} for station {1} forecasting {2} hours ahead'.format(ape, station+1, horizon))
+                        print('RMSE: {0} for station {1} forecasting {2} hours ahead'.format(root, station, horizon))
+                        print('MSE: {0} for station {1} forecasting {2} hours ahead'.format(square, station, horizon))
+                        print('MAE: {0} for station {1} forecasting {2} hours ahead'.format(abs_val, station, horizon))
+                        print('SMAPE: {0} for station {1} forecasting {2} hours ahead'.format(ape, station, horizon))
                         print('')
                         file.write('This is the MSE ' + str(square) + '\n')
                         file.write('This is the MAE ' + str(abs_val) + '\n')
