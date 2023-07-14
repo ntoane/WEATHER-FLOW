@@ -33,7 +33,7 @@ def train(sharedConfig,tcnConfig):
     tcn_logger.info('tcnTrain : TCN training started at all stations set for training :)') 
 
     for forecast_len in forecasting_horizons:
-        configFile = open("Train/Best Configurations/tcn_params.txt", "r")
+        configFile = open("Execute/Best Configurations/tcn_params.txt", "r")
         # tcn_logger = modelLogger('tcn', 'all','Evaluation/Logs/TCN/tcn_logs.txt')
     
         for station in stations:
@@ -203,4 +203,3 @@ def train(sharedConfig,tcnConfig):
         configFile.close()
      
     tcn_logger.info('tcnTrain : TCN training finished at all stations set for training :)')
-        

@@ -6,11 +6,7 @@ import time
 from Models.GWN.gwnEngine import trainer
 import numpy as np
 import pickle
-import logging
 from Logs.modelLogger import modelLogger
-import yaml
-
-
 
 def train_model(sharedConfig, gwnConfig, data_sets, split, supports, adj_init, dictionary):
     """
@@ -179,4 +175,3 @@ def train(sharedConfig, gwnConfig):
             gwn_logger.info('gwnTrain : GWN model initialised.')
             train_model(sharedConfig, gwnConfig, data_sets, split, supports, adjinit, fileDictionary)
             gwn_logger.info('gwnTrain : GWN model training done.')
-            

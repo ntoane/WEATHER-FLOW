@@ -9,7 +9,6 @@ import Utils.metrics as metrics
 import warnings
 warnings.filterwarnings("error")
 from Logs.modelLogger import modelLogger
-import yaml
 
 def train_model(sharedConfig, gwnConfig, data, split, supports, adj_init, model_file):
     """
@@ -97,13 +96,7 @@ def hpo(sharedConfig, gwnConfig):
         increment - Walk-forward validation split points.
     """
     
-    #dont need this as config is passed?
-    # Load the YAML config file
-    # with open('config.yaml', 'r') as file:
-    #     initialConfig = yaml.safe_load(file)
-    
     increment = sharedConfig['increment']['default']
-
     data = pd.read_csv(gwnConfig['data']['default'])
     data = data.drop(['StasName', 'DateT','Latitude', 'Longitude'], axis=1)  #added latitude and longitude
     

@@ -2,11 +2,11 @@ import argparse
 import yaml
 import HPO.tcnHPO as tcnHPO
 import HPO.gwnHPO as gwnHPO
-import Train.tcnTrain as tcnTrain
-import Train.gwnTrain as gwnTrain
-import Evaluation.baselineEval as baselineEval
+import Execute.tcnExecute as tcnExecute
+import Execute.gwnExecute as gwnExecute
+import Logs.baselineEval as baselineEval
 import Plots.plotter as plotter
-# import Visualisations.visualise as visualise
+import Visualisations.visualise as visualise
 
 # Parse the command-line arguments
 parser = argparse.ArgumentParser()
@@ -30,12 +30,12 @@ def main():
     # Train final TCN models using config settings specified
     if sharedConfig['train_tcn']['default']:
         tcnConfig = getSpecificConfig('tcn')
-        tcnTrain.train(sharedConfig, tcnConfig)
+        tcnExecute.train(sharedConfig, tcnConfig)
     
 # Train final GWN models using the config settings specified
     if sharedConfig['train_gwn']['default']:
         gwnConfig = getSpecificConfig('gwn')
-        gwnTrain.train(sharedConfig, gwnConfig)
+        gwnExecute.train(sharedConfig, gwnConfig)
   
 ######### Random Search ##############
     # Random search TCN
@@ -92,8 +92,3 @@ def getSpecificConfig(modelName):
 
 if __name__ == '__main__':
     main()
-
-        
-    
-
-

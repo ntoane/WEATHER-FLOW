@@ -4,10 +4,8 @@ import Utils.gwnUtils as utils
 import Utils.metrics as metrics
 import numpy as np
 import os
-
 import logging
 from Logs.modelLogger import modelLogger
-
 
 def TcnEval(model, sharedConfig, tcnConfig):
     """
