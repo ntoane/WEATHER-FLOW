@@ -1,0 +1,453 @@
+2023-07-14 23:30:09,938 - eval_tcn - INFO - baselineEval : TCN evaluation started at all stations set for evaluation :)
+2023-07-14 23:31:23,973 - eval_tcn - INFO - baselineEval : TCN evaluation started at all stations set for evaluation :)
+2023-07-14 23:31:23,975 - eval_tcn - INFO - baselineEval : TCN evaluation started atADDO ELEPHANT PARK for the horizon of 3
+2023-07-14 23:31:24,001 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ADDO ELEPHANT PARK and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,002 - eval_tcn - INFO - baselineEval : TCN evaluation started atADDO ELEPHANT PARK for the horizon of 6
+2023-07-14 23:31:24,002 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ADDO ELEPHANT PARK and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,003 - eval_tcn - INFO - baselineEval : TCN evaluation started atADDO ELEPHANT PARK for the horizon of 9
+2023-07-14 23:31:24,003 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ADDO ELEPHANT PARK and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,003 - eval_tcn - INFO - baselineEval : TCN evaluation started atADDO ELEPHANT PARK for the horizon of 12
+2023-07-14 23:31:24,004 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ADDO ELEPHANT PARK and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,004 - eval_tcn - INFO - baselineEval : TCN evaluation started atADDO ELEPHANT PARK for the horizon of 24
+2023-07-14 23:31:24,005 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ADDO ELEPHANT PARK and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,005 - eval_tcn - INFO - baselineEval : TCN evaluation started atALEXANDERBAAI for the horizon of 3
+2023-07-14 23:31:24,012 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ALEXANDERBAAI and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,012 - eval_tcn - INFO - baselineEval : TCN evaluation started atALEXANDERBAAI for the horizon of 6
+2023-07-14 23:31:24,013 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ALEXANDERBAAI and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,013 - eval_tcn - INFO - baselineEval : TCN evaluation started atALEXANDERBAAI for the horizon of 9
+2023-07-14 23:31:24,014 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ALEXANDERBAAI and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,014 - eval_tcn - INFO - baselineEval : TCN evaluation started atALEXANDERBAAI for the horizon of 12
+2023-07-14 23:31:24,015 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ALEXANDERBAAI and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,015 - eval_tcn - INFO - baselineEval : TCN evaluation started atALEXANDERBAAI for the horizon of 24
+2023-07-14 23:31:24,016 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ALEXANDERBAAI and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,016 - eval_tcn - INFO - baselineEval : TCN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 3
+2023-07-14 23:31:24,025 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ALIWAL-NORTH PLAATKOP and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,026 - eval_tcn - INFO - baselineEval : TCN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 6
+2023-07-14 23:31:24,026 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ALIWAL-NORTH PLAATKOP and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,027 - eval_tcn - INFO - baselineEval : TCN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 9
+2023-07-14 23:31:24,027 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ALIWAL-NORTH PLAATKOP and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,028 - eval_tcn - INFO - baselineEval : TCN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 12
+2023-07-14 23:31:24,028 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ALIWAL-NORTH PLAATKOP and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,029 - eval_tcn - INFO - baselineEval : TCN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 24
+2023-07-14 23:31:24,030 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station ALIWAL-NORTH PLAATKOP and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,030 - eval_tcn - INFO - baselineEval : TCN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 3
+2023-07-14 23:31:24,040 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station BARKLY-OOS (CAERLEON) and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,041 - eval_tcn - INFO - baselineEval : TCN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 6
+2023-07-14 23:31:24,041 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station BARKLY-OOS (CAERLEON) and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,042 - eval_tcn - INFO - baselineEval : TCN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 9
+2023-07-14 23:31:24,042 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station BARKLY-OOS (CAERLEON) and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,043 - eval_tcn - INFO - baselineEval : TCN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 12
+2023-07-14 23:31:24,044 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station BARKLY-OOS (CAERLEON) and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,045 - eval_tcn - INFO - baselineEval : TCN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 24
+2023-07-14 23:31:24,045 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station BARKLY-OOS (CAERLEON) and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,046 - eval_tcn - INFO - baselineEval : TCN evaluation started atBRANDVLEI for the horizon of 3
+2023-07-14 23:31:24,057 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station BRANDVLEI and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,058 - eval_tcn - INFO - baselineEval : TCN evaluation started atBRANDVLEI for the horizon of 6
+2023-07-14 23:31:24,059 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station BRANDVLEI and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,060 - eval_tcn - INFO - baselineEval : TCN evaluation started atBRANDVLEI for the horizon of 9
+2023-07-14 23:31:24,060 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station BRANDVLEI and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,061 - eval_tcn - INFO - baselineEval : TCN evaluation started atBRANDVLEI for the horizon of 12
+2023-07-14 23:31:24,061 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station BRANDVLEI and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,062 - eval_tcn - INFO - baselineEval : TCN evaluation started atBRANDVLEI for the horizon of 24
+2023-07-14 23:31:24,063 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station BRANDVLEI and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,063 - eval_tcn - INFO - baselineEval : TCN evaluation started atCALVINIA WO for the horizon of 3
+2023-07-14 23:31:24,073 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station CALVINIA WO and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,074 - eval_tcn - INFO - baselineEval : TCN evaluation started atCALVINIA WO for the horizon of 6
+2023-07-14 23:31:24,075 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station CALVINIA WO and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,075 - eval_tcn - INFO - baselineEval : TCN evaluation started atCALVINIA WO for the horizon of 9
+2023-07-14 23:31:24,076 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station CALVINIA WO and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,077 - eval_tcn - INFO - baselineEval : TCN evaluation started atCALVINIA WO for the horizon of 12
+2023-07-14 23:31:24,077 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station CALVINIA WO and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,078 - eval_tcn - INFO - baselineEval : TCN evaluation started atCALVINIA WO for the horizon of 24
+2023-07-14 23:31:24,079 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station CALVINIA WO and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,080 - eval_tcn - INFO - baselineEval : TCN evaluation started atCAPE TOWN WO for the horizon of 3
+2023-07-14 23:31:24,088 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station CAPE TOWN WO and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,089 - eval_tcn - INFO - baselineEval : TCN evaluation started atCAPE TOWN WO for the horizon of 6
+2023-07-14 23:31:24,090 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station CAPE TOWN WO and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,091 - eval_tcn - INFO - baselineEval : TCN evaluation started atCAPE TOWN WO for the horizon of 9
+2023-07-14 23:31:24,092 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station CAPE TOWN WO and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,092 - eval_tcn - INFO - baselineEval : TCN evaluation started atCAPE TOWN WO for the horizon of 12
+2023-07-14 23:31:24,093 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station CAPE TOWN WO and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,094 - eval_tcn - INFO - baselineEval : TCN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-07-14 23:31:24,094 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station CAPE TOWN WO and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,095 - eval_tcn - INFO - baselineEval : TCN evaluation started atDE AAR WO for the horizon of 3
+2023-07-14 23:31:24,105 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station DE AAR WO and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,106 - eval_tcn - INFO - baselineEval : TCN evaluation started atDE AAR WO for the horizon of 6
+2023-07-14 23:31:24,107 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station DE AAR WO and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,108 - eval_tcn - INFO - baselineEval : TCN evaluation started atDE AAR WO for the horizon of 9
+2023-07-14 23:31:24,109 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station DE AAR WO and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,110 - eval_tcn - INFO - baselineEval : TCN evaluation started atDE AAR WO for the horizon of 12
+2023-07-14 23:31:24,111 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station DE AAR WO and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,112 - eval_tcn - INFO - baselineEval : TCN evaluation started atDE AAR WO for the horizon of 24
+2023-07-14 23:31:24,113 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station DE AAR WO and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,114 - eval_tcn - INFO - baselineEval : TCN evaluation started atDOHNE - AGR for the horizon of 3
+2023-07-14 23:31:24,122 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,123 - eval_tcn - INFO - baselineEval : TCN evaluation started atDOHNE - AGR for the horizon of 6
+2023-07-14 23:31:24,124 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,125 - eval_tcn - INFO - baselineEval : TCN evaluation started atDOHNE - AGR for the horizon of 9
+2023-07-14 23:31:24,126 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,127 - eval_tcn - INFO - baselineEval : TCN evaluation started atDOHNE - AGR for the horizon of 12
+2023-07-14 23:31:24,128 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,128 - eval_tcn - INFO - baselineEval : TCN evaluation started atDOHNE - AGR for the horizon of 24
+2023-07-14 23:31:24,129 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,130 - eval_tcn - INFO - baselineEval : TCN evaluation started atEAST LONDON WO for the horizon of 3
+2023-07-14 23:31:24,139 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,140 - eval_tcn - INFO - baselineEval : TCN evaluation started atEAST LONDON WO for the horizon of 6
+2023-07-14 23:31:24,141 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,142 - eval_tcn - INFO - baselineEval : TCN evaluation started atEAST LONDON WO for the horizon of 9
+2023-07-14 23:31:24,143 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,144 - eval_tcn - INFO - baselineEval : TCN evaluation started atEAST LONDON WO for the horizon of 12
+2023-07-14 23:31:24,145 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,146 - eval_tcn - INFO - baselineEval : TCN evaluation started atEAST LONDON WO for the horizon of 24
+2023-07-14 23:31:24,147 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,148 - eval_tcn - INFO - baselineEval : TCN evaluation started atEXCELSIOR CERES for the horizon of 3
+2023-07-14 23:31:24,157 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station EXCELSIOR CERES and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,158 - eval_tcn - INFO - baselineEval : TCN evaluation started atEXCELSIOR CERES for the horizon of 6
+2023-07-14 23:31:24,159 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station EXCELSIOR CERES and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,160 - eval_tcn - INFO - baselineEval : TCN evaluation started atEXCELSIOR CERES for the horizon of 9
+2023-07-14 23:31:24,161 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station EXCELSIOR CERES and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,162 - eval_tcn - INFO - baselineEval : TCN evaluation started atEXCELSIOR CERES for the horizon of 12
+2023-07-14 23:31:24,163 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station EXCELSIOR CERES and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,164 - eval_tcn - INFO - baselineEval : TCN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-07-14 23:31:24,165 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station EXCELSIOR CERES and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,166 - eval_tcn - INFO - baselineEval : TCN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-07-14 23:31:24,175 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,176 - eval_tcn - INFO - baselineEval : TCN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-07-14 23:31:24,177 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,178 - eval_tcn - INFO - baselineEval : TCN evaluation started atFORT BEAUFORT for the horizon of 9
+2023-07-14 23:31:24,179 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,180 - eval_tcn - INFO - baselineEval : TCN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-07-14 23:31:24,181 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,182 - eval_tcn - INFO - baselineEval : TCN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-07-14 23:31:24,183 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,185 - eval_tcn - INFO - baselineEval : TCN evaluation started atFRASERBURG for the horizon of 3
+2023-07-14 23:31:24,194 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station FRASERBURG and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,196 - eval_tcn - INFO - baselineEval : TCN evaluation started atFRASERBURG for the horizon of 6
+2023-07-14 23:31:24,197 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station FRASERBURG and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,198 - eval_tcn - INFO - baselineEval : TCN evaluation started atFRASERBURG for the horizon of 9
+2023-07-14 23:31:24,199 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station FRASERBURG and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,200 - eval_tcn - INFO - baselineEval : TCN evaluation started atFRASERBURG for the horizon of 12
+2023-07-14 23:31:24,200 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station FRASERBURG and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,202 - eval_tcn - INFO - baselineEval : TCN evaluation started atFRASERBURG for the horizon of 24
+2023-07-14 23:31:24,203 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station FRASERBURG and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,205 - eval_tcn - INFO - baselineEval : TCN evaluation started atGEORGE WITFONTEIN for the horizon of 3
+2023-07-14 23:31:24,213 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,214 - eval_tcn - INFO - baselineEval : TCN evaluation started atGEORGE WITFONTEIN for the horizon of 6
+2023-07-14 23:31:24,215 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,216 - eval_tcn - INFO - baselineEval : TCN evaluation started atGEORGE WITFONTEIN for the horizon of 9
+2023-07-14 23:31:24,217 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,218 - eval_tcn - INFO - baselineEval : TCN evaluation started atGEORGE WITFONTEIN for the horizon of 12
+2023-07-14 23:31:24,219 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,222 - eval_tcn - INFO - baselineEval : TCN evaluation started atGEORGE WITFONTEIN for the horizon of 24
+2023-07-14 23:31:24,223 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,225 - eval_tcn - INFO - baselineEval : TCN evaluation started atGEORGE WO for the horizon of 3
+2023-07-14 23:31:24,234 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GEORGE WO and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,235 - eval_tcn - INFO - baselineEval : TCN evaluation started atGEORGE WO for the horizon of 6
+2023-07-14 23:31:24,237 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GEORGE WO and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,238 - eval_tcn - INFO - baselineEval : TCN evaluation started atGEORGE WO for the horizon of 9
+2023-07-14 23:31:24,240 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GEORGE WO and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,241 - eval_tcn - INFO - baselineEval : TCN evaluation started atGEORGE WO for the horizon of 12
+2023-07-14 23:31:24,242 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GEORGE WO and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,244 - eval_tcn - INFO - baselineEval : TCN evaluation started atGEORGE WO for the horizon of 24
+2023-07-14 23:31:24,245 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GEORGE WO and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,246 - eval_tcn - INFO - baselineEval : TCN evaluation started atGRAAFF - REINET for the horizon of 3
+2023-07-14 23:31:24,257 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GRAAFF - REINET and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,258 - eval_tcn - INFO - baselineEval : TCN evaluation started atGRAAFF - REINET for the horizon of 6
+2023-07-14 23:31:24,259 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GRAAFF - REINET and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,260 - eval_tcn - INFO - baselineEval : TCN evaluation started atGRAAFF - REINET for the horizon of 9
+2023-07-14 23:31:24,261 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GRAAFF - REINET and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,263 - eval_tcn - INFO - baselineEval : TCN evaluation started atGRAAFF - REINET for the horizon of 12
+2023-07-14 23:31:24,264 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GRAAFF - REINET and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,265 - eval_tcn - INFO - baselineEval : TCN evaluation started atGRAAFF - REINET for the horizon of 24
+2023-07-14 23:31:24,266 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GRAAFF - REINET and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,267 - eval_tcn - INFO - baselineEval : TCN evaluation started atGRAHAMSTOWN for the horizon of 3
+2023-07-14 23:31:24,276 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GRAHAMSTOWN and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,278 - eval_tcn - INFO - baselineEval : TCN evaluation started atGRAHAMSTOWN for the horizon of 6
+2023-07-14 23:31:24,279 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GRAHAMSTOWN and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,280 - eval_tcn - INFO - baselineEval : TCN evaluation started atGRAHAMSTOWN for the horizon of 9
+2023-07-14 23:31:24,281 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GRAHAMSTOWN and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,283 - eval_tcn - INFO - baselineEval : TCN evaluation started atGRAHAMSTOWN for the horizon of 12
+2023-07-14 23:31:24,284 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GRAHAMSTOWN and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,285 - eval_tcn - INFO - baselineEval : TCN evaluation started atGRAHAMSTOWN for the horizon of 24
+2023-07-14 23:31:24,287 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station GRAHAMSTOWN and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,289 - eval_tcn - INFO - baselineEval : TCN evaluation started atKOINGNAAS for the horizon of 3
+2023-07-14 23:31:24,298 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,300 - eval_tcn - INFO - baselineEval : TCN evaluation started atKOINGNAAS for the horizon of 6
+2023-07-14 23:31:24,301 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,302 - eval_tcn - INFO - baselineEval : TCN evaluation started atKOINGNAAS for the horizon of 9
+2023-07-14 23:31:24,304 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,306 - eval_tcn - INFO - baselineEval : TCN evaluation started atKOINGNAAS for the horizon of 12
+2023-07-14 23:31:24,308 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,309 - eval_tcn - INFO - baselineEval : TCN evaluation started atKOINGNAAS for the horizon of 24
+2023-07-14 23:31:24,311 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,312 - eval_tcn - INFO - baselineEval : TCN evaluation started atLADISMITH for the horizon of 3
+2023-07-14 23:31:24,320 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,323 - eval_tcn - INFO - baselineEval : TCN evaluation started atLADISMITH for the horizon of 6
+2023-07-14 23:31:24,324 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,325 - eval_tcn - INFO - baselineEval : TCN evaluation started atLADISMITH for the horizon of 9
+2023-07-14 23:31:24,327 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,328 - eval_tcn - INFO - baselineEval : TCN evaluation started atLADISMITH for the horizon of 12
+2023-07-14 23:31:24,330 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,331 - eval_tcn - INFO - baselineEval : TCN evaluation started atLADISMITH for the horizon of 24
+2023-07-14 23:31:24,332 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,334 - eval_tcn - INFO - baselineEval : TCN evaluation started atLAINGSBURG for the horizon of 3
+2023-07-14 23:31:24,342 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LAINGSBURG and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,343 - eval_tcn - INFO - baselineEval : TCN evaluation started atLAINGSBURG for the horizon of 6
+2023-07-14 23:31:24,345 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LAINGSBURG and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,347 - eval_tcn - INFO - baselineEval : TCN evaluation started atLAINGSBURG for the horizon of 9
+2023-07-14 23:31:24,349 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LAINGSBURG and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,350 - eval_tcn - INFO - baselineEval : TCN evaluation started atLAINGSBURG for the horizon of 12
+2023-07-14 23:31:24,351 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LAINGSBURG and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,353 - eval_tcn - INFO - baselineEval : TCN evaluation started atLAINGSBURG for the horizon of 24
+2023-07-14 23:31:24,355 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LAINGSBURG and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,357 - eval_tcn - INFO - baselineEval : TCN evaluation started atLANGGEWENS for the horizon of 3
+2023-07-14 23:31:24,365 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,367 - eval_tcn - INFO - baselineEval : TCN evaluation started atLANGGEWENS for the horizon of 6
+2023-07-14 23:31:24,368 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,370 - eval_tcn - INFO - baselineEval : TCN evaluation started atLANGGEWENS for the horizon of 9
+2023-07-14 23:31:24,372 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,374 - eval_tcn - INFO - baselineEval : TCN evaluation started atLANGGEWENS for the horizon of 12
+2023-07-14 23:31:24,375 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,377 - eval_tcn - INFO - baselineEval : TCN evaluation started atLANGGEWENS for the horizon of 24
+2023-07-14 23:31:24,379 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,381 - eval_tcn - INFO - baselineEval : TCN evaluation started atMALMESBURY for the horizon of 3
+2023-07-14 23:31:24,382 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station MALMESBURY and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,384 - eval_tcn - INFO - baselineEval : TCN evaluation started atMALMESBURY for the horizon of 6
+2023-07-14 23:31:24,385 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station MALMESBURY and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,388 - eval_tcn - INFO - baselineEval : TCN evaluation started atMALMESBURY for the horizon of 9
+2023-07-14 23:31:24,390 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station MALMESBURY and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,391 - eval_tcn - INFO - baselineEval : TCN evaluation started atMALMESBURY for the horizon of 12
+2023-07-14 23:31:24,393 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station MALMESBURY and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,394 - eval_tcn - INFO - baselineEval : TCN evaluation started atMALMESBURY for the horizon of 24
+2023-07-14 23:31:24,396 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station MALMESBURY and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,397 - eval_tcn - INFO - baselineEval : TCN evaluation started atMOLTENO RESERVOIR for the horizon of 3
+2023-07-14 23:31:24,399 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station MOLTENO RESERVOIR and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,400 - eval_tcn - INFO - baselineEval : TCN evaluation started atMOLTENO RESERVOIR for the horizon of 6
+2023-07-14 23:31:24,402 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station MOLTENO RESERVOIR and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,404 - eval_tcn - INFO - baselineEval : TCN evaluation started atMOLTENO RESERVOIR for the horizon of 9
+2023-07-14 23:31:24,406 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station MOLTENO RESERVOIR and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,408 - eval_tcn - INFO - baselineEval : TCN evaluation started atMOLTENO RESERVOIR for the horizon of 12
+2023-07-14 23:31:24,409 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station MOLTENO RESERVOIR and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,411 - eval_tcn - INFO - baselineEval : TCN evaluation started atMOLTENO RESERVOIR for the horizon of 24
+2023-07-14 23:31:24,413 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station MOLTENO RESERVOIR and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,415 - eval_tcn - INFO - baselineEval : TCN evaluation started atNOUPOORT for the horizon of 3
+2023-07-14 23:31:24,416 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station NOUPOORT and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,418 - eval_tcn - INFO - baselineEval : TCN evaluation started atNOUPOORT for the horizon of 6
+2023-07-14 23:31:24,420 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station NOUPOORT and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,422 - eval_tcn - INFO - baselineEval : TCN evaluation started atNOUPOORT for the horizon of 9
+2023-07-14 23:31:24,424 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station NOUPOORT and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,425 - eval_tcn - INFO - baselineEval : TCN evaluation started atNOUPOORT for the horizon of 12
+2023-07-14 23:31:24,427 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station NOUPOORT and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,429 - eval_tcn - INFO - baselineEval : TCN evaluation started atNOUPOORT for the horizon of 24
+2023-07-14 23:31:24,431 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station NOUPOORT and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,432 - eval_tcn - INFO - baselineEval : TCN evaluation started atOUDTSHOORN for the horizon of 3
+2023-07-14 23:31:24,434 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station OUDTSHOORN and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,435 - eval_tcn - INFO - baselineEval : TCN evaluation started atOUDTSHOORN for the horizon of 6
+2023-07-14 23:31:24,437 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station OUDTSHOORN and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,440 - eval_tcn - INFO - baselineEval : TCN evaluation started atOUDTSHOORN for the horizon of 9
+2023-07-14 23:31:24,441 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station OUDTSHOORN and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,443 - eval_tcn - INFO - baselineEval : TCN evaluation started atOUDTSHOORN for the horizon of 12
+2023-07-14 23:31:24,445 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station OUDTSHOORN and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,447 - eval_tcn - INFO - baselineEval : TCN evaluation started atOUDTSHOORN for the horizon of 24
+2023-07-14 23:31:24,448 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station OUDTSHOORN and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,450 - eval_tcn - INFO - baselineEval : TCN evaluation started atPATENSIE for the horizon of 3
+2023-07-14 23:31:24,452 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,454 - eval_tcn - INFO - baselineEval : TCN evaluation started atPATENSIE for the horizon of 6
+2023-07-14 23:31:24,456 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,458 - eval_tcn - INFO - baselineEval : TCN evaluation started atPATENSIE for the horizon of 9
+2023-07-14 23:31:24,460 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,461 - eval_tcn - INFO - baselineEval : TCN evaluation started atPATENSIE for the horizon of 12
+2023-07-14 23:31:24,463 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,465 - eval_tcn - INFO - baselineEval : TCN evaluation started atPATENSIE for the horizon of 24
+2023-07-14 23:31:24,466 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,468 - eval_tcn - INFO - baselineEval : TCN evaluation started atPOFADDER for the horizon of 3
+2023-07-14 23:31:24,470 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station POFADDER and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,473 - eval_tcn - INFO - baselineEval : TCN evaluation started atPOFADDER for the horizon of 6
+2023-07-14 23:31:24,475 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station POFADDER and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,477 - eval_tcn - INFO - baselineEval : TCN evaluation started atPOFADDER for the horizon of 9
+2023-07-14 23:31:24,479 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station POFADDER and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,481 - eval_tcn - INFO - baselineEval : TCN evaluation started atPOFADDER for the horizon of 12
+2023-07-14 23:31:24,482 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station POFADDER and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,485 - eval_tcn - INFO - baselineEval : TCN evaluation started atPOFADDER for the horizon of 24
+2023-07-14 23:31:24,486 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station POFADDER and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,489 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ALFRED - AIRPORT for the horizon of 3
+2023-07-14 23:31:24,491 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ALFRED - AIRPORT and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,493 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ALFRED - AIRPORT for the horizon of 6
+2023-07-14 23:31:24,495 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ALFRED - AIRPORT and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,496 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ALFRED - AIRPORT for the horizon of 9
+2023-07-14 23:31:24,498 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ALFRED - AIRPORT and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,500 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ALFRED - AIRPORT for the horizon of 12
+2023-07-14 23:31:24,502 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ALFRED - AIRPORT and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,505 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ALFRED - AIRPORT for the horizon of 24
+2023-07-14 23:31:24,507 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ALFRED - AIRPORT and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,509 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 3
+2023-07-14 23:31:24,511 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWOS and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,513 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 6
+2023-07-14 23:31:24,514 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWOS and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,516 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 9
+2023-07-14 23:31:24,518 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWOS and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,521 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 12
+2023-07-14 23:31:24,524 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWOS and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,526 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-07-14 23:31:24,527 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWOS and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,529 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ELIZABETH AWS for the horizon of 3
+2023-07-14 23:31:24,532 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWS and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,534 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ELIZABETH AWS for the horizon of 6
+2023-07-14 23:31:24,535 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWS and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,538 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ELIZABETH AWS for the horizon of 9
+2023-07-14 23:31:24,540 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWS and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,543 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ELIZABETH AWS for the horizon of 12
+2023-07-14 23:31:24,544 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWS and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,546 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT ELIZABETH AWS for the horizon of 24
+2023-07-14 23:31:24,549 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWS and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,550 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT NOLLOTH for the horizon of 3
+2023-07-14 23:31:24,552 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT NOLLOTH and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,556 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT NOLLOTH for the horizon of 6
+2023-07-14 23:31:24,558 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT NOLLOTH and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,560 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT NOLLOTH for the horizon of 9
+2023-07-14 23:31:24,562 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT NOLLOTH and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,564 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT NOLLOTH for the horizon of 12
+2023-07-14 23:31:24,566 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT NOLLOTH and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,569 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-07-14 23:31:24,571 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORT NOLLOTH and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,574 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORTERVILLE for the horizon of 3
+2023-07-14 23:31:24,576 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,578 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORTERVILLE for the horizon of 6
+2023-07-14 23:31:24,580 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,582 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORTERVILLE for the horizon of 9
+2023-07-14 23:31:24,584 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,586 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORTERVILLE for the horizon of 12
+2023-07-14 23:31:24,589 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,591 - eval_tcn - INFO - baselineEval : TCN evaluation started atPORTERVILLE for the horizon of 24
+2023-07-14 23:31:24,593 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,595 - eval_tcn - INFO - baselineEval : TCN evaluation started atPRIESKA for the horizon of 3
+2023-07-14 23:31:24,597 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,599 - eval_tcn - INFO - baselineEval : TCN evaluation started atPRIESKA for the horizon of 6
+2023-07-14 23:31:24,601 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,604 - eval_tcn - INFO - baselineEval : TCN evaluation started atPRIESKA for the horizon of 9
+2023-07-14 23:31:24,607 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,609 - eval_tcn - INFO - baselineEval : TCN evaluation started atPRIESKA for the horizon of 12
+2023-07-14 23:31:24,611 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,613 - eval_tcn - INFO - baselineEval : TCN evaluation started atPRIESKA for the horizon of 24
+2023-07-14 23:31:24,615 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,618 - eval_tcn - INFO - baselineEval : TCN evaluation started atREDELINGSHUYS-AWS for the horizon of 3
+2023-07-14 23:31:24,620 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station REDELINGSHUYS-AWS and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,623 - eval_tcn - INFO - baselineEval : TCN evaluation started atREDELINGSHUYS-AWS for the horizon of 6
+2023-07-14 23:31:24,625 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station REDELINGSHUYS-AWS and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,628 - eval_tcn - INFO - baselineEval : TCN evaluation started atREDELINGSHUYS-AWS for the horizon of 9
+2023-07-14 23:31:24,714 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station REDELINGSHUYS-AWS and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,719 - eval_tcn - INFO - baselineEval : TCN evaluation started atREDELINGSHUYS-AWS for the horizon of 12
+2023-07-14 23:31:24,722 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station REDELINGSHUYS-AWS and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,724 - eval_tcn - INFO - baselineEval : TCN evaluation started atREDELINGSHUYS-AWS for the horizon of 24
+2023-07-14 23:31:24,726 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station REDELINGSHUYS-AWS and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,729 - eval_tcn - INFO - baselineEval : TCN evaluation started atRIVERSDALE for the horizon of 3
+2023-07-14 23:31:24,731 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station RIVERSDALE and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,733 - eval_tcn - INFO - baselineEval : TCN evaluation started atRIVERSDALE for the horizon of 6
+2023-07-14 23:31:24,735 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station RIVERSDALE and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,739 - eval_tcn - INFO - baselineEval : TCN evaluation started atRIVERSDALE for the horizon of 9
+2023-07-14 23:31:24,741 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station RIVERSDALE and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,743 - eval_tcn - INFO - baselineEval : TCN evaluation started atRIVERSDALE for the horizon of 12
+2023-07-14 23:31:24,745 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station RIVERSDALE and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,747 - eval_tcn - INFO - baselineEval : TCN evaluation started atRIVERSDALE for the horizon of 24
+2023-07-14 23:31:24,749 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station RIVERSDALE and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,751 - eval_tcn - INFO - baselineEval : TCN evaluation started atSOMERSET EAST for the horizon of 3
+2023-07-14 23:31:24,755 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,758 - eval_tcn - INFO - baselineEval : TCN evaluation started atSOMERSET EAST for the horizon of 6
+2023-07-14 23:31:24,760 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,762 - eval_tcn - INFO - baselineEval : TCN evaluation started atSOMERSET EAST for the horizon of 9
+2023-07-14 23:31:24,765 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,767 - eval_tcn - INFO - baselineEval : TCN evaluation started atSOMERSET EAST for the horizon of 12
+2023-07-14 23:31:24,770 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,773 - eval_tcn - INFO - baselineEval : TCN evaluation started atSOMERSET EAST for the horizon of 24
+2023-07-14 23:31:24,776 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,778 - eval_tcn - INFO - baselineEval : TCN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-07-14 23:31:24,780 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,783 - eval_tcn - INFO - baselineEval : TCN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-07-14 23:31:24,785 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,788 - eval_tcn - INFO - baselineEval : TCN evaluation started atSPRINGBOK WO for the horizon of 9
+2023-07-14 23:31:24,791 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,793 - eval_tcn - INFO - baselineEval : TCN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-07-14 23:31:24,796 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,799 - eval_tcn - INFO - baselineEval : TCN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-07-14 23:31:24,801 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,806 - eval_tcn - INFO - baselineEval : TCN evaluation started atTWEE RIVIEREN for the horizon of 3
+2023-07-14 23:31:24,808 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station TWEE RIVIEREN and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,811 - eval_tcn - INFO - baselineEval : TCN evaluation started atTWEE RIVIEREN for the horizon of 6
+2023-07-14 23:31:24,815 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station TWEE RIVIEREN and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,818 - eval_tcn - INFO - baselineEval : TCN evaluation started atTWEE RIVIEREN for the horizon of 9
+2023-07-14 23:31:24,821 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station TWEE RIVIEREN and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,824 - eval_tcn - INFO - baselineEval : TCN evaluation started atTWEE RIVIEREN for the horizon of 12
+2023-07-14 23:31:24,826 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station TWEE RIVIEREN and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,828 - eval_tcn - INFO - baselineEval : TCN evaluation started atTWEE RIVIEREN for the horizon of 24
+2023-07-14 23:31:24,831 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station TWEE RIVIEREN and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,833 - eval_tcn - INFO - baselineEval : TCN evaluation started atUITENHAGE for the horizon of 3
+2023-07-14 23:31:24,836 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,840 - eval_tcn - INFO - baselineEval : TCN evaluation started atUITENHAGE for the horizon of 6
+2023-07-14 23:31:24,842 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,844 - eval_tcn - INFO - baselineEval : TCN evaluation started atUITENHAGE for the horizon of 9
+2023-07-14 23:31:24,847 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,849 - eval_tcn - INFO - baselineEval : TCN evaluation started atUITENHAGE for the horizon of 12
+2023-07-14 23:31:24,852 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,856 - eval_tcn - INFO - baselineEval : TCN evaluation started atUITENHAGE for the horizon of 24
+2023-07-14 23:31:24,858 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,861 - eval_tcn - INFO - baselineEval : TCN evaluation started atUPINGTON WO for the horizon of 3
+2023-07-14 23:31:24,863 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station UPINGTON WO and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,865 - eval_tcn - INFO - baselineEval : TCN evaluation started atUPINGTON WO for the horizon of 6
+2023-07-14 23:31:24,868 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station UPINGTON WO and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,872 - eval_tcn - INFO - baselineEval : TCN evaluation started atUPINGTON WO for the horizon of 9
+2023-07-14 23:31:24,874 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station UPINGTON WO and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,876 - eval_tcn - INFO - baselineEval : TCN evaluation started atUPINGTON WO for the horizon of 12
+2023-07-14 23:31:24,879 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station UPINGTON WO and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,882 - eval_tcn - INFO - baselineEval : TCN evaluation started atUPINGTON WO for the horizon of 24
+2023-07-14 23:31:24,884 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station UPINGTON WO and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,888 - eval_tcn - INFO - baselineEval : TCN evaluation started atVANWYKSVLEI for the horizon of 3
+2023-07-14 23:31:24,890 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VANWYKSVLEI and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,894 - eval_tcn - INFO - baselineEval : TCN evaluation started atVANWYKSVLEI for the horizon of 6
+2023-07-14 23:31:24,896 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VANWYKSVLEI and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,899 - eval_tcn - INFO - baselineEval : TCN evaluation started atVANWYKSVLEI for the horizon of 9
+2023-07-14 23:31:24,901 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VANWYKSVLEI and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,905 - eval_tcn - INFO - baselineEval : TCN evaluation started atVANWYKSVLEI for the horizon of 12
+2023-07-14 23:31:24,908 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VANWYKSVLEI and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,910 - eval_tcn - INFO - baselineEval : TCN evaluation started atVANWYKSVLEI for the horizon of 24
+2023-07-14 23:31:24,913 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VANWYKSVLEI and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,915 - eval_tcn - INFO - baselineEval : TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 3
+2023-07-14 23:31:24,918 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VIOOLSDRIF - AWS and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,922 - eval_tcn - INFO - baselineEval : TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 6
+2023-07-14 23:31:24,924 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VIOOLSDRIF - AWS and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,927 - eval_tcn - INFO - baselineEval : TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 9
+2023-07-14 23:31:24,929 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VIOOLSDRIF - AWS and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,932 - eval_tcn - INFO - baselineEval : TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 12
+2023-07-14 23:31:24,934 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VIOOLSDRIF - AWS and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,938 - eval_tcn - INFO - baselineEval : TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 24
+2023-07-14 23:31:24,941 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VIOOLSDRIF - AWS and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,944 - eval_tcn - INFO - baselineEval : TCN evaluation started atVREDENDAL for the horizon of 3
+2023-07-14 23:31:24,946 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,949 - eval_tcn - INFO - baselineEval : TCN evaluation started atVREDENDAL for the horizon of 6
+2023-07-14 23:31:24,951 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,955 - eval_tcn - INFO - baselineEval : TCN evaluation started atVREDENDAL for the horizon of 9
+2023-07-14 23:31:24,957 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,960 - eval_tcn - INFO - baselineEval : TCN evaluation started atVREDENDAL for the horizon of 12
+2023-07-14 23:31:24,963 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,966 - eval_tcn - INFO - baselineEval : TCN evaluation started atVREDENDAL for the horizon of 24
+2023-07-14 23:31:24,969 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,973 - eval_tcn - INFO - baselineEval : TCN evaluation started atWILLOWMORE for the horizon of 3
+2023-07-14 23:31:24,976 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,978 - eval_tcn - INFO - baselineEval : TCN evaluation started atWILLOWMORE for the horizon of 6
+2023-07-14 23:31:24,981 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,984 - eval_tcn - INFO - baselineEval : TCN evaluation started atWILLOWMORE for the horizon of 9
+2023-07-14 23:31:24,988 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,991 - eval_tcn - INFO - baselineEval : TCN evaluation started atWILLOWMORE for the horizon of 12
+2023-07-14 23:31:24,994 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:24,997 - eval_tcn - INFO - baselineEval : TCN evaluation started atWILLOWMORE for the horizon of 24
+2023-07-14 23:31:25,000 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:25,004 - eval_tcn - INFO - baselineEval : TCN evaluation started atWORCESTER-AWS for the horizon of 3
+2023-07-14 23:31:25,007 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station WORCESTER-AWS and horizon length 3. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:25,010 - eval_tcn - INFO - baselineEval : TCN evaluation started atWORCESTER-AWS for the horizon of 6
+2023-07-14 23:31:25,013 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station WORCESTER-AWS and horizon length 6. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:25,015 - eval_tcn - INFO - baselineEval : TCN evaluation started atWORCESTER-AWS for the horizon of 9
+2023-07-14 23:31:25,018 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station WORCESTER-AWS and horizon length 9. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:25,023 - eval_tcn - INFO - baselineEval : TCN evaluation started atWORCESTER-AWS for the horizon of 12
+2023-07-14 23:31:25,025 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station WORCESTER-AWS and horizon length 12. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:25,028 - eval_tcn - INFO - baselineEval : TCN evaluation started atWORCESTER-AWS for the horizon of 24
+2023-07-14 23:31:25,031 - eval_tcn - ERROR - Error! : Unable to read data or write metrics for station WORCESTER-AWS and horizon length 24. Please review the data or code for the metrics for errors.
+2023-07-14 23:31:25,034 - eval_tcn - INFO - baselineEval : Finished evaluation of TCN error metrics for all stations.

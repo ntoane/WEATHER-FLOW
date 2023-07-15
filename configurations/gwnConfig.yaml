@@ -95,4 +95,3 @@ optimizer:
   type: string
   default: 'Adam'     #Only accepts Adam, SGD, RMSprop.
   help: type of optimizers used for model (to add another method look at User Guide), default type set to Adam
-

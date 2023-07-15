@@ -4,9 +4,10 @@ import HPO.tcnHPO as tcnHPO
 import HPO.gwnHPO as gwnHPO
 import Execute.tcnExecute as tcnExecute
 import Execute.gwnExecute as gwnExecute
-import Logs.baselineEval as baselineEval
 import Plots.plotter as plotter
 import Visualisations.visualise as visualise
+# import Logs.Evaluation as Evaluation
+from Logs.Evaluation import Evaluation
 
 # Parse the command-line arguments
 parser = argparse.ArgumentParser()
@@ -52,13 +53,15 @@ def main():
     # Record metrics for final TCN models
     if sharedConfig['eval_tcn']['default']:
         tcnConfig = getSpecificConfig('tcn')
-        baselineEval.TcnEval('TCN', sharedConfig, tcnConfig)
+        eval = Evaluation(sharedConfig)
+        eval.TcnEval(tcnConfig)
         plotter.create('TCN',sharedConfig)
 
     # Record metrics for final GWN models
     if sharedConfig['eval_gwn']['default']:
         gwnConfig = getSpecificConfig('gwn')
-        baselineEval.GwnEval(sharedConfig, gwnConfig)
+        eval = Evaluation(sharedConfig)
+        eval.GwnEval(gwnConfig)
         plotter.create('GWN', sharedConfig)
 
 # ############ Visualisations #############

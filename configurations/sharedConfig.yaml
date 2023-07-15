@@ -1,5 +1,3 @@
-# Configuration pyyaml file with configuration settings required (as args) for main.py
-
 ############################ Train baselines (GWN & TCN) ############################
 train_tcn:
   type: bool
