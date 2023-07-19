@@ -1,5 +1,12 @@
 import numpy as np
+import os
 
+def create_file_if_not_exists(file_path):
+    directory = os.path.dirname(file_path)
+    if not os.path.exists(directory):
+        os.makedirs(directory)
+    if not os.path.isfile(file_path):
+        open(file_path, 'w').close()  
 
 def sliding_window(df, lag, forecast, split, set, n_stations):
     """

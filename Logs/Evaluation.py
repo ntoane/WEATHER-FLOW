@@ -4,6 +4,7 @@ import pandas as pd
 import Utils.metrics as metrics
 import Utils.gwnUtils as utils
 import Utils.metrics as metrics
+import Utils.sharedUtils as sharedUtils
 from Logs.modelLogger import modelLogger
 
 class Evaluation:
@@ -13,7 +14,7 @@ class Evaluation:
         self.horizons = sharedConfig['horizons']['default']
 
     def TcnEval(self, tcnConfig):
-        tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Evaluation/'+'tcn_all_stations.txt', log_enabled=False)
+        tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Evaluation/tcn_all_stations.txt', log_enabled=False)
         tcn_logger.info('baselineEval : TCN evaluation started at all stations set for evaluation :)')
         for station in self.stations:
             for horizon in self.horizons:
@@ -24,9 +25,18 @@ class Evaluation:
                     yhat_path = f'Results/TCN/{horizon} Hour Forecast/{station}/Predictions/result.csv'
                     target_path = f'Results/TCN/{horizon}Hour Forecast/{station}/Targets/target.csv'
                     metric_file = f'Results/TCN/{horizon}_Hour_Forecast/Metrics/{station}/metrics.txt'
+                    actual_vs_predicted_file = f'Results/TCN/{horizon} Hour Forecast/{station}/Metrics/actual_vs_predicted.txt'
+                    sharedUtils.create_file_if_not_exists(yhat_path)
+                    sharedUtils.create_file_if_not_exists(target_path)
+                    sharedUtils.create_file_if_not_exists(metric_file)
+                    sharedUtils.create_file_if_not_exists(actual_vs_predicted_file)
                     # Read the predictions and targets from the CSV files
                     preds = pd.read_csv(yhat_path).drop(['Unnamed: 0'], axis=1)
                     targets = pd.read_csv(target_path).drop(['Unnamed: 0'], axis=1)
+                    # Create a DataFrame of actual vs predicted values
+                    actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
+                    # Save to a text file
+                    actual_vs_predicted.to_csv(actual_vs_predicted_file, index=False)
                     # Calculate the metrics
                     mse = metrics.mse(targets.values, preds.values)
                     rmse = metrics.rmse(targets.values, preds.values)
@@ -72,12 +82,21 @@ class Evaluation:
                     for split in range(num_splits):
                         results_file = f'Results/GWN/{horizon} Hour Forecast/Predictions/outputs_{split}.pkl'
                         targets_file = f'Results/GWN/{horizon} Hour Forecast/Targets/targets_{split}.pkl'
-
                         metric_file_directory = f'Results/GWN/{horizon}_Hour_Forecast/Metrics/{station}/'
                         metric_filename = 'metrics.txt'
-                        if not os.path.exists(metric_file_directory):
-                            os.makedirs(metric_file_directory)
+                        actual_vs_predicted_file = f'Results/GWN/{horizon} Hour Forecast/{station}/Metrics/actual_vs_predicted.txt'
+                        sharedUtils.create_file_if_not_exists(results_file)
+                        sharedUtils.create_file_if_not_exists(targets_file)
+                        sharedUtils.create_file_if_not_exists(metric_file_directory)
+                        sharedUtils.create_file_if_not_exists(actual_vs_predicted_file)
                         metric_file = os.path.join(metric_file_directory, metric_filename)
+                        # Read the predictions and targets from the CSV files
+                        preds = pd.read_csv(results_file).drop(['Unnamed: 0'], axis=1)
+                        targets = pd.read_csv(targets_file).drop(['Unnamed: 0'], axis=1)
+                        # Create a DataFrame of actual vs predicted values
+                        actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
+                        # Save to a text file
+                        actual_vs_predicted.to_csv(actual_vs_predicted_file, index=False)
                         
                         gwn_logger = modelLogger('gwn', str(station), 'Logs/GWN/gwn_.txt', log_enabled=False)
                         yhat = utils.load_pickle(results_file)

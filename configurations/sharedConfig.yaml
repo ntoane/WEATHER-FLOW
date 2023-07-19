@@ -29,7 +29,7 @@ eval_tcn:
   help: whether to report final TCN metrics
 eval_gwn:
   type: bool
-  default: false
+  default: true
   help: whether to report final GWN metrics
 
 ############################ General data configurations ############################
