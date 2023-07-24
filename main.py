@@ -6,7 +6,8 @@ from HPO.gwnHPO import GWNHPO
 # import HPO.gwnHPO as gwnHPO
 # from Execute.tcnExecute import TcnTrainer
 import Execute.tcnExecute as tcnExecute
-import Execute.gwnExecute as gwnExecute
+# import Execute.gwnExecute as gwnExecute
+from Execute.gwnExecute import GwnTrainer
 import Plots.plotter as plotter
 import Visualisations.visualise as visualise
 # import Logs.Evaluation as Evaluation
@@ -41,7 +42,9 @@ def main():
 # Train final GWN models using the config settings specified
     if sharedConfig['train_gwn']['default']:
         gwnConfig = getSpecificConfig('gwn')
-        gwnExecute.train(sharedConfig, gwnConfig)
+        # gwnExecute.train(sharedConfig, gwnConfig)
+        gwn_trainer = GwnTrainer(sharedConfig, gwnConfig)
+        gwn_trainer.train()
   
 ######### Random Search ##############
     # Random search TCN
