@@ -5,7 +5,7 @@ device:
   help: device to place model on
 data:
   type: str
-  default: 'DataNew/Graph Neural Network Data/Graph Station Data/Graph.csv' #DataNew
+  default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv' #DataNew
   help: data path
 adjdata:
   type: str

@@ -7,7 +7,7 @@ from tcn import TCN
 import tensorflow as tf
 import os
 from Logs.modelLogger import modelLogger
-from modelExecute import modelExecute
+from Execute.modelExecute import modelExecute
 
 class TcnExecute(modelExecute):
     
@@ -22,22 +22,22 @@ class TcnExecute(modelExecute):
         increment = self.sharedConfig['increment']['default']
         stations = self.sharedConfig['stations']['default']
         forecasting_horizons = self.sharedConfig['horizons']['default']
-        # self.tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Train/'+'tcn_all_stations.txt', log_enabled=False)  
-        self.tcn_logger.info('tcnTrain : TCN training started at all stations set for training :)') 
+        # self.model_logger = modelLogger('tcn', 'all','Logs/TCN/Train/'+'tcn_all_stations.txt', log_enabled=False)  
+        self.model_logger.info('tcnTrain : TCN training started at all stations set for training :)') 
 
         for forecast_len in forecasting_horizons:
             configFile = open("Execute/Best Configurations/tcn_params.txt", "r")
-            # self.tcn_logger = modelLogger('tcn', 'all','Evaluation/Logs/TCN/tcn_logs.txt')
+            # self.model_logger = modelLogger('tcn', 'all','Evaluation/Logs/TCN/tcn_logs.txt')
         
             for station in stations:
                 # printing out which station we are forecasting
-                # self.tcn_logger = modelLogger('tcn', '{1}', 'TCN training started on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                # self.model_logger = modelLogger('tcn', '{1}', 'TCN training started on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                 #                                                                                          forecast_len))
                 
-                self.tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt' , log_enabled=False)
+                self.model_logger = modelLogger('tcn', str(station),'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt' , log_enabled=False)
                 print('Forecasting at station ', station)
                 #print('Evaluation/Logs/TCN/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
-                self.tcn_logger.info('tcnTrain : TCN model training started at ' + station)
+                self.model_logger.info('tcnTrain : TCN model training started at ' + station)
                 print('tcnTrain : TCN model training started at ' + station)
 
                 # pulling in weather station data
@@ -89,7 +89,7 @@ class TcnExecute(modelExecute):
                 for k in range(num_splits):
                     print('TCN training started on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                         forecast_len, num_splits))
-                    self.tcn_logger.info('tcnTrain :TCN Model on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                    self.model_logger.info('tcnTrain :TCN Model on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                         forecast_len))
 
                     # lossFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
@@ -119,16 +119,16 @@ class TcnExecute(modelExecute):
                     # Get the X feature set for training
                     X_test, Y_test = utils.create_X_Y(test, lag_length, n_ahead_length)
 
-                    if (self.tcnConfig['use_optimizer']['default']):
-                        opt = self.tcnConfig['optimizer']['default']
+                    if (self.modelConfig['use_optimizer']['default']):
+                        opt = self.modelCongmodelConfig['optimizer']['default']
                     else:
                         opt = self.sharedConfig['optimizer']['default']
                         
                     
                     lossF = ['MSE', 'MAE', 'sparse_categorical_crossentropy', 'categorical_crossentropy']
-                    if (self.tcnConfig['use_loss_function']['default']):
-                        if (self.tcnConfig['loss_function']['default'] in lossF):
-                            loss_function = self.tcnConfig['loss_function']['default']
+                    if (self.modelConfig['use_loss_function']['default']):
+                        if (self.modelConfig['loss_function']['default'] in lossF):
+                            loss_function = self.modelConfig['loss_function']['default']
                         else: loss_function = 'MSE'
                     else:    
                         if (self.sharedConfig['loss_function']['default'] in lossF):
@@ -139,13 +139,13 @@ class TcnExecute(modelExecute):
                     if layers == 1:
                         tcn_model = tcn_one.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                     n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-                                                    epochs=self.tcnConfig['epochs']['default'], batch_size=self.tcnConfig['batch_size']['default'], 
+                                                    epochs=self.modelCogmodelConfig['epochs']['default'], batch_size=self.modelConfgmodelConfig['batch_size']['default'], 
                                                     act_func=activation, loss=loss_function,
-                                                    learning_rate=self.tcnConfig['lr']['default'], batch_norm=self.tcnConfig['batch_norm']['default'], 
-                                                    layer_norm=self.tcnConfig['layer_norm']['default'],
-                                                    weight_norm=self.tcnConfig['weight_norm']['default'], kernel=self.tcnConfig['kernels']['default'], filters=filters,
-                                                    dilations=self.tcnConfig['dilations']['default'], padding=self.tcnConfig['padding']['default'], dropout=dropout,
-                                                    patience=self.tcnConfig['patience']['default'], save=saveFile, optimizer=opt)
+                                                    learning_rate=self.modelCongmodelConfig['lr']['default'], batch_norm=self.modelConfig['batch_norm']['default'], 
+                                                    layer_norm=self.modelCogmodelConfig['layer_norm']['default'],
+                                                    weight_norm=self.modelConfig['weight_norm']['default'], kernel=self.modelCogmodelConfig['kernels']['default'], filters=filters,
+                                                    dilations=self.modelCongmodelConfig['dilations']['default'], padding=self.modelConfig['padding']['default'], dropout=dropout,
+                                                    patience=self.modelConfgmodelConfig['patience']['default'], save=saveFile, optimizer=opt)
 
                         # Training the model
                         model, history = tcn_model.temperature_model()
@@ -163,13 +163,13 @@ class TcnExecute(modelExecute):
                     else:
                         tcn_model = tcn_two.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                     n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-                                                    epochs=self.tcnConfig['epochs']['default'], batch_size=self.tcnConfig['batch_size']['default'], 
+                                                    epochs=self.modelCogmodelConfig['epochs']['default'], batch_size=self.modelConfgmodelConfig['batch_size']['default'], 
                                                     act_func=activation, loss=loss_function,
-                                                    learning_rate=self.tcnConfig['lr']['default'], batch_norm=self.tcnConfig['batch_norm']['default'], 
-                                                    layer_norm=self.tcnConfig['layer_norm']['default'],
-                                                    weight_norm=self.tcnConfig['weight_norm']['default'], kernel=self.tcnConfig['kernels']['default'], filters=filters,
-                                                    dilations=self.tcnConfig['dilations']['default'], padding=self.tcnConfig['padding']['default'], dropout=dropout,
-                                                    patience=self.tcnConfig['patience']['default'], save=saveFile, optimizer=self.sharedConfig['optimizer']['default'])
+                                                    learning_rate=self.modelCongmodelConfig['lr']['default'], batch_norm=self.modelConfig['batch_norm']['default'], 
+                                                    layer_norm=self.modelCogmodelConfig['layer_norm']['default'],
+                                                    weight_norm=self.modelConfig['weight_norm']['default'], kernel=self.modelCogmodelConfig['kernels']['default'], filters=filters,
+                                                    dilations=self.modelCongmodelConfig['dilations']['default'], padding=self.modelConfig['padding']['default'], dropout=dropout,
+                                                    patience=self.modelConfgmodelConfig['patience']['default'], save=saveFile, optimizer=self.sharedConfig['optimizer']['default'])
 
                         # Training the model
                         model, history = tcn_model.temperature_model()
@@ -184,12 +184,12 @@ class TcnExecute(modelExecute):
                         # predictions to dataframe
                         resultsDF = pd.concat([resultsDF, pd.Series(yhat.reshape(-1, ))])
 
-                    self.tcn_logger.info('tcnTrain : TCN training done on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                    self.model_logger.info('tcnTrain : TCN training done on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                         forecast_len))
                     # Targets to dataframe
                     targetDF = pd.concat([targetDF, pd.Series(Y_test.reshape(-1, ))])
                 
-                self.tcn_logger.info('tcnTrain : TCN training finished at ' + station)  
+                self.model_logger.info('tcnTrain : TCN training finished at ' + station)  
                     
                 resultsDF.to_csv(resultsFile)
                 lossDF.to_csv(lossFile)
@@ -197,7 +197,7 @@ class TcnExecute(modelExecute):
         
             configFile.close()
         
-        self.tcn_logger.info('tcnTrain : TCN training finished at all stations set for training :)')
+        self.model_logger.info('tcnTrain : TCN training finished at all stations set for training :)')
         
 
     def read_config():
@@ -217,7 +217,7 @@ class TcnExecute(modelExecute):
     
     
     
-# def train(self.sharedConfig,self.tcnConfig):
+# def train(self.sharedConfig,self.modelCongmodelConfig):
     
 #     # physical_devices = tf.config.list_physical_devices('CPU') #CPU
 #     # tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
@@ -225,22 +225,22 @@ class TcnExecute(modelExecute):
 #     increment = self.sharedConfig['increment']['default']
 #     stations = self.sharedConfig['stations']['default']
 #     forecasting_horizons = self.sharedConfig['horizons']['default']
-#     self.tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Train/'+'tcn_all_stations.txt', log_enabled=False)  
-#     self.tcn_logger.info('tcnTrain : TCN training started at all stations set for training :)') 
+#     self.model_logger = modelLogger('tcn', 'all','Logs/TCN/Train/'+'tcn_all_stations.txt', log_enabled=False)  
+#     self.model_logger.info('tcnTrain : TCN training started at all stations set for training :)') 
 
 #     for forecast_len in forecasting_horizons:
 #         configFile = open("Execute/Best Configurations/tcn_params.txt", "r")
-#         # self.tcn_logger = modelLogger('tcn', 'all','Evaluation/Logs/TCN/tcn_logs.txt')
+#         # self.model_logger = modelLogger('tcn', 'all','Evaluation/Logs/TCN/tcn_logs.txt')
     
 #         for station in stations:
 #             # printing out which station we are forecasting
-#             # self.tcn_logger = modelLogger('tcn', '{1}', 'TCN training started on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+#             # self.model_logger = modelLogger('tcn', '{1}', 'TCN training started on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
 #             #                                                                                          forecast_len))
             
-#             self.tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt' , log_enabled=False)
+#             self.model_logger = modelLogger('tcn', str(station),'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt' , log_enabled=False)
 #             print('Forecasting at station ', station)
 #             #print('Evaluation/Logs/TCN/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
-#             self.tcn_logger.info('tcnTrain : TCN model training started at ' + station)
+#             self.model_logger.info('tcnTrain : TCN model training started at ' + station)
 #             print('tcnTrain : TCN model training started at ' + station)
 
 #             # pulling in weather station data
@@ -290,7 +290,7 @@ class TcnExecute(modelExecute):
 #             for k in range(num_splits):
 #                 print('TCN training started on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
 #                                                                                                      forecast_len, num_splits))
-#                 self.tcn_logger.info('tcnTrain :TCN Model on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+#                 self.model_logger.info('tcnTrain :TCN Model on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
 #                                                                                                      forecast_len))
 
 #                 # lossFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
@@ -320,16 +320,16 @@ class TcnExecute(modelExecute):
 #                 # Get the X feature set for training
 #                 X_test, Y_test = utils.create_X_Y(test, lag_length, n_ahead_length)
 
-#                 if (self.tcnConfig['use_optimizer']['default']):
-#                     opt = self.tcnConfig['optimizer']['default']
+#                 if (self.modelCongmodelConfig['use_optimizer']['default']):
+#                     opt = self.modelConfig['optimizer']['default']
 #                 else:
 #                     opt = self.sharedConfig['optimizer']['default']
                     
                 
 #                 lossF = ['MSE', 'MAE', 'sparse_categorical_crossentropy', 'categorical_crossentropy']
-#                 if (self.tcnConfig['use_loss_function']['default']):
-#                     if (self.tcnConfig['loss_function']['default'] in lossF):
-#                         loss_function = self.tcnConfig['loss_function']['default']
+#                 if (self.modelCongmodelConfig['use_loss_function']['default']):
+#                     if (self.modelCongmodelConfig['loss_function']['default'] in lossF):
+#                         loss_function = self.modelCongmodelConfig['loss_function']['default']
 #                     else: loss_function = 'MSE'
 #                 else:    
 #                     if (self.sharedConfig['loss_function']['default'] in lossF):
@@ -340,13 +340,13 @@ class TcnExecute(modelExecute):
 #                 if layers == 1:
 #                     tcn_model = tcn_one.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
 #                                                    n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-#                                                    epochs=self.tcnConfig['epochs']['default'], batch_size=self.tcnConfig['batch_size']['default'], 
+#                                                    epochs=self.modelConfig['epochs']['default'], batch_size=self.modelCongmodelConfig['batch_size']['default'], 
 #                                                    act_func=activation, loss=loss_function,
-#                                                    learning_rate=self.tcnConfig['lr']['default'], batch_norm=self.tcnConfig['batch_norm']['default'], 
-#                                                    layer_norm=self.tcnConfig['layer_norm']['default'],
-#                                                    weight_norm=self.tcnConfig['weight_norm']['default'], kernel=self.tcnConfig['kernels']['default'], filters=filters,
-#                                                    dilations=self.tcnConfig['dilations']['default'], padding=self.tcnConfig['padding']['default'], dropout=dropout,
-#                                                    patience=self.tcnConfig['patience']['default'], save=saveFile, optimizer=opt)
+#                                                    learning_rate=self.modelCogmodelConfig['lr']['default'], batch_norm=self.modelConfgmodelConfig['batch_norm']['default'], 
+#                                                    layer_norm=self.modelConfig['layer_norm']['default'],
+#                                                    weight_norm=self.modelConfgmodelConfig['weight_norm']['default'], kernel=self.modelConfig['kernels']['default'], filters=filters,
+#                                                    dilations=self.modelCogmodelConfig['dilations']['default'], padding=self.modelConfgmodelConfig['padding']['default'], dropout=dropout,
+#                                                    patience=self.modelCongmodelConfig['patience']['default'], save=saveFile, optimizer=opt)
 
 #                     # Training the model
 #                     model, history = tcn_model.temperature_model()
@@ -364,13 +364,13 @@ class TcnExecute(modelExecute):
 #                 else:
 #                     tcn_model = tcn_two.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
 #                                                    n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-#                                                    epochs=self.tcnConfig['epochs']['default'], batch_size=self.tcnConfig['batch_size']['default'], 
+#                                                    epochs=self.modelConfig['epochs']['default'], batch_size=self.modelCongmodelConfig['batch_size']['default'], 
 #                                                    act_func=activation, loss=loss_function,
-#                                                    learning_rate=self.tcnConfig['lr']['default'], batch_norm=self.tcnConfig['batch_norm']['default'], 
-#                                                    layer_norm=self.tcnConfig['layer_norm']['default'],
-#                                                    weight_norm=self.tcnConfig['weight_norm']['default'], kernel=self.tcnConfig['kernels']['default'], filters=filters,
-#                                                    dilations=self.tcnConfig['dilations']['default'], padding=self.tcnConfig['padding']['default'], dropout=dropout,
-#                                                    patience=self.tcnConfig['patience']['default'], save=saveFile, optimizer=self.sharedConfig['optimizer']['default'])
+#                                                    learning_rate=self.modelCogmodelConfig['lr']['default'], batch_norm=self.modelConfgmodelConfig['batch_norm']['default'], 
+#                                                    layer_norm=self.modelConfig['layer_norm']['default'],
+#                                                    weight_norm=self.modelConfgmodelConfig['weight_norm']['default'], kernel=self.modelConfig['kernels']['default'], filters=filters,
+#                                                    dilations=self.modelCogmodelConfig['dilations']['default'], padding=self.modelConfgmodelConfig['padding']['default'], dropout=dropout,
+#                                                    patience=self.modelCongmodelConfig['patience']['default'], save=saveFile, optimizer=self.sharedConfig['optimizer']['default'])
 
 #                     # Training the model
 #                     model, history = tcn_model.temperature_model()
@@ -385,12 +385,12 @@ class TcnExecute(modelExecute):
 #                     # predictions to dataframe
 #                     resultsDF = pd.concat([resultsDF, pd.Series(yhat.reshape(-1, ))])
 
-#                 self.tcn_logger.info('tcnTrain : TCN training done on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+#                 self.model_logger.info('tcnTrain : TCN training done on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
 #                                                                                                      forecast_len))
 #                 # Targets to dataframe
 #                 targetDF = pd.concat([targetDF, pd.Series(Y_test.reshape(-1, ))])
               
-#             self.tcn_logger.info('tcnTrain : TCN training finished at ' + station)  
+#             self.model_logger.info('tcnTrain : TCN training finished at ' + station)  
                 
 #             resultsDF.to_csv(resultsFile)
 #             lossDF.to_csv(lossFile)
@@ -398,4 +398,4 @@ class TcnExecute(modelExecute):
     
 #         configFile.close()
      
-#     self.tcn_logger.info('tcnTrain : TCN training finished at all stations set for training :)')
+#     self.model_logger.info('tcnTrain : TCN training finished at all stations set for training :)')
