@@ -7,14 +7,13 @@ from Models.GWN.gwnEngine import trainer
 import numpy as np
 import pickle
 from Logs.modelLogger import modelLogger
+from modelExecute import modelExecute
 
-class GwnTrainer:
+class GwnExecute(modelExecute):
     def __init__(self, sharedConfig, gwnConfig):
-        self.sharedConfig = sharedConfig
-        self.gwnConfig = gwnConfig
-        self.gwn_logger = modelLogger('gwn', 'all', 'Logs/GWN/Train/gwn_all_stations.txt', log_enabled=False) 
+       super().__init__('gwn', sharedConfig, gwnConfig)
     
-    def train(self):
+    def execute(self):
         increment = self.sharedConfig['increment']['default']
         data = self.prepare_data()
         forecast_horizons = self.sharedConfig['horizons']['default']

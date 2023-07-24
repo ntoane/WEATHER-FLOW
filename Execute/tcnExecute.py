@@ -7,15 +7,14 @@ from tcn import TCN
 import tensorflow as tf
 import os
 from Logs.modelLogger import modelLogger
+from modelExecute import modelExecute
 
-class TcnExecute:
+class TcnExecute(modelExecute):
     
     def __init__(self, sharedConfig, tcnConfig):
-        self.self.sharedConfig = sharedConfig
-        self.self.tcnConfig = tcnConfig
-        self.tcn_logger = modelLogger('tcn', 'all', 'Logs/TCN/Train/tcn_all_stations.txt', log_enabled=False) 
+        super().__init__('tcn', sharedConfig, tcnConfig)
 
-    def train(self):
+    def execute(self):
         
         # physical_devices = tf.config.list_physical_devices('CPU') #CPU
         # tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
