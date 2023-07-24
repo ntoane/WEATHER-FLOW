@@ -6,13 +6,11 @@ import Models.TCN.tcnone as tcn_one
 import Models.TCN.tcntwo as tcn_two
 from keras.models import load_model
 from Logs.modelLogger import modelLogger
+from HPO.modelHPO import modelHPO
 
-class TCNHPO:
+class TCNHPO(modelHPO):
     def __init__(self, sharedConfig, tcnConfig):
-        self.sharedConfig = sharedConfig
-        self.tcnConfig = tcnConfig
-        self.best_mse = 999999
-        self.best_cfg = []
+        super().__init__('tcn', sharedConfig, tcnConfig)
 
     def train_model(self, X_train, Y_train, X_val, Y_val, cfg, saveFile,n_ft):
         if cfg['Layers'] == 1:
@@ -66,9 +64,9 @@ class TCNHPO:
         stations = self.sharedConfig['stations']['default']
         num_splits = 2
         for station in stations:
-            tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/HPO/' + str(station) +'/'+'tcn_' + str(station) + '.txt', log_enabled=False)
+            # self.model_logger = modelLogger('tcn', str(station),'Logs/TCN/HPO/' + str(station) +'/'+'tcn_' + str(station) + '.txt', log_enabled=False)
             print('Performing TCN random search HPO at station: ', station)
-            tcn_logger.info('tcnHPO : TCN HPO training started at ' + station)
+            self.model_logger.info('tcnHPO : TCN HPO training started at ' + station)
             weatherData = 'DataNew/Weather Station Data/' + station + '.csv'
             ts = utils.create_dataset(weatherData)
             textFile = 'HPO/Best Parameters/TCN/' + station + '_configurations.txt'
@@ -80,7 +78,7 @@ class TCNHPO:
                 if mse < self.best_mse:
                     self.best_mse = mse
                     self.best_cfg = cfg
-            tcn_logger.info('tcnHPO : Best parameters found at station ' + station + ': ' + str(self.best_cfg) + ' with MSE =' + str(self.best_mse) + '\n')
+            self.model_logger.info('tcnHPO : Best parameters found at station ' + station + ': ' + str(self.best_cfg) + ' with MSE =' + str(self.best_mse) + '\n')
             f.write('Best parameters found at station ' + station + ': ' + str(self.best_cfg) + ' with MSE =' + str(self.best_mse) + '\n')
             f.close()
 
@@ -109,9 +107,9 @@ class TCNHPO:
 
 #     for station in stations:
 #         # printing out which station we are forecasting
-#         tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/HPO/' + str(station) +'/'+'tcn_' + str(station) + '.txt', log_enabled=False)
+#         self.model_logger = modelLogger('tcn', str(station),'Logs/TCN/HPO/' + str(station) +'/'+'tcn_' + str(station) + '.txt', log_enabled=False)
 #         print('Performing TCN random search HPO at station: ', station)
-#         tcn_logger.info('tcnHPO : TCN HPO training started at ' + station)
+#         self.model_logger.info('tcnHPO : TCN HPO training started at ' + station)
         
 #         # pulling in weather station data
 #         weatherData = 'DataNew/Weather Station Data/' + station + '.csv'
@@ -203,7 +201,7 @@ class TCNHPO:
 #             if ave_mse < best_mse:
 #                 best_mse = ave_mse
 #                 best_cfg = cfg
-#         tcn_logger.info('tcnHPO : Best parameters found at station ' + station + ': ' + str(best_cfg) + ' with MSE =' + str(best_mse) +
+#         self.model_logger.info('tcnHPO : Best parameters found at station ' + station + ': ' + str(best_cfg) + ' with MSE =' + str(best_mse) +
 #                 '\n')
 #         f.write('Best parameters found at station ' + station + ': ' + str(best_cfg) + ' with MSE =' + str(best_mse) +
 #                 '\n')

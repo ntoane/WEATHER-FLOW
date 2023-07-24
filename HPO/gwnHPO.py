@@ -9,13 +9,11 @@ import Utils.metrics as metrics
 import warnings
 warnings.filterwarnings("error")
 from Logs.modelLogger import modelLogger
+from HPO.modelHPO import modelHPO
 
-class GWNHPO:
+class GWNHPO(modelHPO):
     def __init__(self, sharedConfig, gwnConfig):
-        self.sharedConfig = sharedConfig
-        self.gwnConfig = gwnConfig
-        self.logger = modelLogger('gwn', 'all','Logs/GWN/HPO/gwn_all_stations.txt', log_enabled=False)
-
+        super().__init__('gwn', sharedConfig, gwnConfig)
 
     def hpo(self):
         increment = self.sharedConfig['increment']['default']
@@ -23,8 +21,7 @@ class GWNHPO:
         textFile = 'HPO/Best Parameters/GWN/configurations.txt'
         f = open(textFile, 'w')
 
-        best_mse = np.inf
-        best_cfg = []
+        # best_mse = np.inf
 
         num_splits = 2
         for i in range(self.sharedConfig['num_configs']['default']):
@@ -79,8 +76,8 @@ class GWNHPO:
 
         f.write('This is the best configuration ' + str(best_cfg) + ' with an MSE of ' + str(best_mse))
         f.close()
-        self.logger.info('gwnHPO : GWN best configuration found = ' +str(best_cfg) + ' with an MSE of ' + str(best_mse))
-        self.logger.info('tcnHPO : TCN HPO finished at all stations :)')
+        self.model_logger.info('gwnHPO : GWN best configuration found = ' +str(best_cfg) + ' with an MSE of ' + str(best_mse))
+        self.model_logger.info('gwnHPO : GWN HPO finished at all stations :)')
         
     def prepare_data(self):
         data = pd.read_csv(self.gwnConfig['data']['default'])
