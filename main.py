@@ -2,7 +2,8 @@ import argparse
 import yaml
 # import HPO.tcnHPO as tcnHPO
 from HPO.tcnHPO import TCNHPO
-import HPO.gwnHPO as gwnHPO
+from HPO.gwnHPO import GWNHPO
+# import HPO.gwnHPO as gwnHPO
 # from Execute.tcnExecute import TcnTrainer
 import Execute.tcnExecute as tcnExecute
 import Execute.gwnExecute as gwnExecute
@@ -53,7 +54,9 @@ def main():
 # Random search GWN
     if sharedConfig['tune_gwn']['default']:
         gwnConfig = getSpecificConfig('gwn')
-        gwnHPO.hpo(sharedConfig, gwnConfig)
+        # gwnHPO.hpo(sharedConfig, gwnConfig)
+        gwnHPO = GWNHPO(sharedConfig, gwnConfig)
+        gwnHPO.hpo()
 
 ############ Recordings ##############
     # Record metrics for final TCN models

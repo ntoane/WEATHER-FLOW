@@ -1,7 +1,7 @@
 ############################ Train baselines (GWN & TCN) ############################
 train_tcn:
   type: bool
-  default: true
+  default: false
   help: whether to train final TCN models
 train_gwn:
   type: bool
@@ -15,7 +15,7 @@ tune_tcn:
   help: whether to perform random search HPO on TCN models
 tune_gwn:
   type: bool
-  default: false
+  default: true
   help: whether to perform random search HPO on GWN model
 num_configs:
   type: int
