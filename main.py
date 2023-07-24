@@ -1,7 +1,9 @@
 import argparse
 import yaml
-import HPO.tcnHPO as tcnHPO
+# import HPO.tcnHPO as tcnHPO
+from HPO.tcnHPO import TCNHPO
 import HPO.gwnHPO as gwnHPO
+# from Execute.tcnExecute import TcnTrainer
 import Execute.tcnExecute as tcnExecute
 import Execute.gwnExecute as gwnExecute
 import Plots.plotter as plotter
@@ -32,6 +34,8 @@ def main():
     if sharedConfig['train_tcn']['default']:
         tcnConfig = getSpecificConfig('tcn')
         tcnExecute.train(sharedConfig, tcnConfig)
+        # tcn_trainer = TcnTrainer(sharedConfig, tcnConfig)
+        # tcn_trainer.train()
     
 # Train final GWN models using the config settings specified
     if sharedConfig['train_gwn']['default']:
@@ -42,7 +46,9 @@ def main():
     # Random search TCN
     if sharedConfig['tune_tcn']['default']:
         tcnConfig = getSpecificConfig('tcn')
-        tcnHPO.hpo(sharedConfig, tcnConfig)
+        # tcnHPO.hpo(sharedConfig, tcnConfig)
+        tcnHPO = TCNHPO(sharedConfig, tcnConfig)
+        tcnHPO.hpo()
 
 # Random search GWN
     if sharedConfig['tune_gwn']['default']:

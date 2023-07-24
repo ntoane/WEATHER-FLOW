@@ -4,14 +4,10 @@ from keras.layers import Dense
 from tcn import TCN
 from tensorflow import keras
 from keras.callbacks import ModelCheckpoint, EarlyStopping
-
-
 physical_devices = tf.config.experimental.list_physical_devices('GPU')
 #config = tf.config.experimental.set_memory_growth(physical_devices[0], True)
 
-
 class temporalcn:
-
     def __init__(self, x_train, y_train, x_val, y_val, n_lag, n_features, n_ahead, epochs, batch_size,
                  act_func, loss, learning_rate, batch_norm, layer_norm, weight_norm, kernel,
                  filters, dilations, padding, dropout, patience, save, optimizer):
