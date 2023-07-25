@@ -25,7 +25,7 @@ num_configs:
 ############################ Perform evaluations calculating metrics of final models' results (GWN & TCN) ############################
 eval_tcn:
   type: bool
-  default: false
+  default: true
   help: whether to report final TCN metrics
 eval_gwn:
   type: bool
