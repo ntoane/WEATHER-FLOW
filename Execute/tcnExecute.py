@@ -9,7 +9,7 @@ import os
 from Logs.modelLogger import modelLogger
 from Execute.modelExecute import modelExecute
 
-class TcnExecute(modelExecute):
+class tcnExecute(modelExecute):
     
     def __init__(self, sharedConfig, tcnConfig):
         super().__init__('tcn', sharedConfig, tcnConfig)
@@ -120,7 +120,7 @@ class TcnExecute(modelExecute):
                     X_test, Y_test = utils.create_X_Y(test, lag_length, n_ahead_length)
 
                     if (self.modelConfig['use_optimizer']['default']):
-                        opt = self.modelCongmodelConfig['optimizer']['default']
+                        opt = self.modelConfig['optimizer']['default']
                     else:
                         opt = self.sharedConfig['optimizer']['default']
                         
@@ -139,13 +139,13 @@ class TcnExecute(modelExecute):
                     if layers == 1:
                         tcn_model = tcn_one.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                     n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-                                                    epochs=self.modelCogmodelConfig['epochs']['default'], batch_size=self.modelConfgmodelConfig['batch_size']['default'], 
+                                                    epochs=self.modelConfig['epochs']['default'], batch_size=self.modelConfig['batch_size']['default'], 
                                                     act_func=activation, loss=loss_function,
-                                                    learning_rate=self.modelCongmodelConfig['lr']['default'], batch_norm=self.modelConfig['batch_norm']['default'], 
-                                                    layer_norm=self.modelCogmodelConfig['layer_norm']['default'],
-                                                    weight_norm=self.modelConfig['weight_norm']['default'], kernel=self.modelCogmodelConfig['kernels']['default'], filters=filters,
-                                                    dilations=self.modelCongmodelConfig['dilations']['default'], padding=self.modelConfig['padding']['default'], dropout=dropout,
-                                                    patience=self.modelConfgmodelConfig['patience']['default'], save=saveFile, optimizer=opt)
+                                                    learning_rate=self.modelConfig['lr']['default'], batch_norm=self.modelConfig['batch_norm']['default'], 
+                                                    layer_norm=self.modelConfig['layer_norm']['default'],
+                                                    weight_norm=self.modelConfig['weight_norm']['default'], kernel=self.modelConfig['kernels']['default'], filters=filters,
+                                                    dilations=self.modelConfig['dilations']['default'], padding=self.modelConfig['padding']['default'], dropout=dropout,
+                                                    patience=self.modelConfig['patience']['default'], save=saveFile, optimizer=opt)
 
                         # Training the model
                         model, history = tcn_model.temperature_model()
@@ -163,11 +163,11 @@ class TcnExecute(modelExecute):
                     else:
                         tcn_model = tcn_two.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                     n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-                                                    epochs=self.modelCogmodelConfig['epochs']['default'], batch_size=self.modelConfgmodelConfig['batch_size']['default'], 
+                                                    epochs=self.modelConfig['epochs']['default'], batch_size=self.modelConfgmodelConfig['batch_size']['default'], 
                                                     act_func=activation, loss=loss_function,
                                                     learning_rate=self.modelCongmodelConfig['lr']['default'], batch_norm=self.modelConfig['batch_norm']['default'], 
-                                                    layer_norm=self.modelCogmodelConfig['layer_norm']['default'],
-                                                    weight_norm=self.modelConfig['weight_norm']['default'], kernel=self.modelCogmodelConfig['kernels']['default'], filters=filters,
+                                                    layer_norm=self.modelConfig['layer_norm']['default'],
+                                                    weight_norm=self.modelConfig['weight_norm']['default'], kernel=self.modelConfig['kernels']['default'], filters=filters,
                                                     dilations=self.modelCongmodelConfig['dilations']['default'], padding=self.modelConfig['padding']['default'], dropout=dropout,
                                                     patience=self.modelConfgmodelConfig['patience']['default'], save=saveFile, optimizer=self.sharedConfig['optimizer']['default'])
 
@@ -342,10 +342,10 @@ class TcnExecute(modelExecute):
 #                                                    n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
 #                                                    epochs=self.modelConfig['epochs']['default'], batch_size=self.modelCongmodelConfig['batch_size']['default'], 
 #                                                    act_func=activation, loss=loss_function,
-#                                                    learning_rate=self.modelCogmodelConfig['lr']['default'], batch_norm=self.modelConfgmodelConfig['batch_norm']['default'], 
+#                                                    learning_rate=self.modelConfig['lr']['default'], batch_norm=self.modelConfgmodelConfig['batch_norm']['default'], 
 #                                                    layer_norm=self.modelConfig['layer_norm']['default'],
 #                                                    weight_norm=self.modelConfgmodelConfig['weight_norm']['default'], kernel=self.modelConfig['kernels']['default'], filters=filters,
-#                                                    dilations=self.modelCogmodelConfig['dilations']['default'], padding=self.modelConfgmodelConfig['padding']['default'], dropout=dropout,
+#                                                    dilations=self.modelConfig['dilations']['default'], padding=self.modelConfgmodelConfig['padding']['default'], dropout=dropout,
 #                                                    patience=self.modelCongmodelConfig['patience']['default'], save=saveFile, optimizer=opt)
 
 #                     # Training the model
@@ -366,10 +366,10 @@ class TcnExecute(modelExecute):
 #                                                    n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
 #                                                    epochs=self.modelConfig['epochs']['default'], batch_size=self.modelCongmodelConfig['batch_size']['default'], 
 #                                                    act_func=activation, loss=loss_function,
-#                                                    learning_rate=self.modelCogmodelConfig['lr']['default'], batch_norm=self.modelConfgmodelConfig['batch_norm']['default'], 
+#                                                    learning_rate=self.modelConfig['lr']['default'], batch_norm=self.modelConfgmodelConfig['batch_norm']['default'], 
 #                                                    layer_norm=self.modelConfig['layer_norm']['default'],
 #                                                    weight_norm=self.modelConfgmodelConfig['weight_norm']['default'], kernel=self.modelConfig['kernels']['default'], filters=filters,
-#                                                    dilations=self.modelCogmodelConfig['dilations']['default'], padding=self.modelConfgmodelConfig['padding']['default'], dropout=dropout,
+#                                                    dilations=self.modelConfig['dilations']['default'], padding=self.modelConfgmodelConfig['padding']['default'], dropout=dropout,
 #                                                    patience=self.modelCongmodelConfig['patience']['default'], save=saveFile, optimizer=self.sharedConfig['optimizer']['default'])
 
 #                     # Training the model

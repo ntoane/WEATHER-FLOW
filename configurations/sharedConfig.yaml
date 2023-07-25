@@ -5,7 +5,7 @@ train_tcn:
   help: whether to train final TCN models
 train_gwn:
   type: bool
-  default: true
+  default: false
   help: whether to train final GWN model
 
 ############################ Random Search HPO arguments (GWN & TCN) ############################ 

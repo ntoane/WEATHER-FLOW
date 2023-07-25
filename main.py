@@ -1,16 +1,11 @@
 import argparse
 import yaml
-# import HPO.tcnHPO as tcnHPO
 from HPO.tcnHPO import TCNHPO
 from HPO.gwnHPO import GWNHPO
-# import HPO.gwnHPO as gwnHPO
-# from Execute.tcnExecute import TcnTrainer
-import Execute.tcnExecute as tcnExecute
-# import Execute.gwnExecute as gwnExecute
+from Execute.tcnExecute import tcnExecute
 from Execute.gwnExecute import gwnExecute
 import Plots.plotter as plotter
-# import Visualisations.visualise as visualise
-# import Logs.Evaluation as Evaluation
+import Visualisations.visualise as visualise
 from Logs.Evaluation import Evaluation
 
 # Parse the command-line arguments
@@ -29,15 +24,15 @@ def main():
     global complete
 
     print("............................................................")
-    print("Experimental Platform running")
+    print("Experimental Platform running") 
 
 ############ Training ###############
     # Train final TCN models using config settings specified
     if sharedConfig['train_tcn']['default']:
         tcnConfig = getSpecificConfig('tcn')
-        tcnExecute.execute(sharedConfig, tcnConfig)
-        # tcn_trainer = TcnTrainer(sharedConfig, tcnConfig)
-        # tcn_trainer.train()
+        # tcnExecute.execute(sharedConfig, tcnConfig)
+        tcn_trainer = tcnExecute(sharedConfig, tcnConfig)
+        tcn_trainer.execute()
     
 # Train final GWN models using the config settings specified
     if sharedConfig['train_gwn']['default']:
