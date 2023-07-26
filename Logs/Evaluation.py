@@ -52,7 +52,7 @@ class Evaluation:
                     print('RMSE: {0} at the {1} station forecasting {2} hours ahead.'.format(rmse, station, horizon))
                     print('')
                 except Exception as e:
-                    print('Error! : Unable to read data or write metrics for station {} and horizon length {}'.format(station, horizon), e)
+                    print('Error! : Unable to read data or write metrics for station {} and horizon length {}'.format(station, horizon))
                     tcn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
 
         tcn_logger.info('baselineEval : Finished evaluation of TCN error metrics for all stations.')
