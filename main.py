@@ -6,12 +6,11 @@ from Execute.tcnExecute import tcnExecute
 from Execute.gwnExecute import gwnExecute
 import Plots.plotter as plotter
 # import Visualisations.visualise as visualise
-from Logs.Evaluation import Evaluation
+# from Logs.Evaluation import Evaluation
+import Logs.Evaluation as Evaluation
 
 # Parse the command-line arguments
 parser = argparse.ArgumentParser()
-# parser.add_argument('--config', type=str, help='path to YAML config file')
-# # args = parser.parse_args()
 parser = argparse.ArgumentParser()
 parser.add_argument('--mode', type=str, help='path to YAML config file')
 args = parser.parse_args()
@@ -33,14 +32,12 @@ def main():
     # Train final TCN models using config settings specified
     if sharedConfig['train_tcn']['default'] or args.mode == configOptions[0]:
         tcnConfig = getSpecificConfig('tcn')
-        # tcnExecute.execute(sharedConfig, tcnConfig)
         tcn_trainer = tcnExecute(sharedConfig, tcnConfig)
         tcn_trainer.execute()
     
 # Train final GWN models using the config settings specified
     if sharedConfig['train_gwn']['default'] or args.mode == configOptions[1]:
         gwnConfig = getSpecificConfig('gwn')
-        # gwnExecute.train(sharedConfig, gwnConfig)
         gwn_trainer = gwnExecute(sharedConfig, gwnConfig)
         gwn_trainer.execute()
   
@@ -48,14 +45,12 @@ def main():
     # Random search TCN
     if sharedConfig['tune_tcn']['default'] or args.mode == configOptions[2]:
         tcnConfig = getSpecificConfig('tcn')
-        # tcnHPO.hpo(sharedConfig, tcnConfig)
         tcnHPO = TCNHPO(sharedConfig, tcnConfig)
         tcnHPO.hpo()
 
 # Random search GWN
     if sharedConfig['tune_gwn']['default'] or args.mode == configOptions[3]:
         gwnConfig = getSpecificConfig('gwn')
-        # gwnHPO.hpo(sharedConfig, gwnConfig)
         gwnHPO = GWNHPO(sharedConfig, gwnConfig)
         gwnHPO.hpo()
 
@@ -63,15 +58,17 @@ def main():
     # Record metrics for final TCN models
     if sharedConfig['eval_tcn']['default'] or args.mode == configOptions[4]:
         tcnConfig = getSpecificConfig('tcn')
-        eval = Evaluation(sharedConfig)
-        eval.TcnEval(tcnConfig)
+        Evaluation.TcnEval(tcnConfig, sharedConfig)
+        # eval = Evaluation(sharedConfig)
+        # eval.TcnEval(tcnConfig)
         plotter.create('TCN',sharedConfig)
 
     # Record metrics for final GWN models
     if sharedConfig['eval_gwn']['default'] or args.mode == configOptions[5]:
         gwnConfig = getSpecificConfig('gwn')
-        eval = Evaluation(sharedConfig)
-        eval.GwnEval(gwnConfig)
+        Evaluation.GwnEval(gwnConfig, sharedConfig)
+        # eval = Evaluation(sharedConfig)
+        # eval.GwnEval(gwnConfig)
         plotter.create('GWN', sharedConfig)
 
 # ############ Visualisations #############
