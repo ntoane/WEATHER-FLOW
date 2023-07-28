@@ -121,9 +121,11 @@ Brief explanation of the experimental pipeline used for, GWN, and TCN as baselin
 
 ## Customization & Extension
 
-Guidelines for customizing the experimental platform in terms of Training, Prediction & Evaluation, Logging information, Visualization
+Guidelines for customizing the experimental platform in terms of Training, Prediction & Evaluation, Logging, Visualization
 
 * Adding new models or modifying existing ones
+
+  * Follow New Model Integration step by step instructions.
 * Incorporating additional data sources or features
 * Training custimizations:
 
@@ -140,9 +142,10 @@ Guidelines for customizing the experimental platform in terms of Training, Predi
   * Instructions for making predictions on new data
   * Evaluation metrics and performance analysis (MSE, RMSE, MAE, etc.)
   * Comparing the results of GWN and TCN baselines
-* Logging information:
+* Logging module:
 
-  * Logs...
+  * The **modelLogger** class is essentially a wrapper around Python's built-in logging  library. It provides a way to easily log different levels of information (i.e., info, debug, warning, error and critical) from a specific model running on a specific station to a log file. It also allows enabling or disabling logging through the log_enabled parameter.
+  * The **Evaluation class**
 * Visualization
 
 ## Troubleshooting & FAQs

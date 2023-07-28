@@ -10,8 +10,13 @@ class modelLogger:
 
         Args:
             model_name (str): Name of the model.
+            station (str): Name of the station.
             log_file (str): Path to the log file.
         """
+        # Could create a logger once, name becomes both model_name & station  
+        # self.logger = logging.getLogger(f"{model_name}-{station}")
+        # self.logger.setLevel(logging.DEBUG)
+        
         self.logger = logging.getLogger(model_name)
         self.logger.setLevel(logging.DEBUG)
         
@@ -65,6 +70,14 @@ class modelLogger:
         """
         self.logger.error(message)
     
+    def critical(self, message):
+        """
+        Logs a critical-level message.
+
+        Args:
+            message (str): Log message.
+        """
+        self.logger.critical(message)
     def close(self):
         """
         Closes the log file handlers.

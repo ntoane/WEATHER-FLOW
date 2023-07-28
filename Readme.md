@@ -42,7 +42,7 @@ See `requirements_all.txt`
 
 *Only use the following command for all training, HPO and evaluation experiments with the models. Change the default configuration in the config.yaml file for the intended option of either training or performing HPO or evaluating the models to true.*
 
-python3 main.py --config config.yaml
+python3 main.py --mode config.yaml
 
 ### More details on Training, performing HPO and evaluating Models
 
@@ -72,6 +72,6 @@ GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon on each of the 21 weat
 
 ## Generate visualisation
 
-In config yalm set:  vis default value to true 
+In config yalm set:  vis default value to true
 Then run:
-python3 main.py --config config.yaml
+python3 main.py --mode config.yaml

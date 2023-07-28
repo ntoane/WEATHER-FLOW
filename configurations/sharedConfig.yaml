@@ -5,7 +5,7 @@ train_tcn:
   help: whether to train final TCN models
 train_gwn:
   type: bool
-  default: true
+  default: false
   help: whether to train final GWN model
 
 ############################ Random Search HPO arguments (GWN & TCN) ############################ 
@@ -25,7 +25,7 @@ num_configs:
 ############################ Perform evaluations calculating metrics of final models' results (GWN & TCN) ############################
 eval_tcn:
   type: bool
-  default: false
+  default: true
   help: whether to report final TCN metrics
 eval_gwn:
   type: bool

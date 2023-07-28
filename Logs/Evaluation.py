@@ -11,7 +11,7 @@ from Logs.modelLogger import modelLogger
 def TcnEval(tcnConfig, sharedConfig):
     stations = sharedConfig['stations']['default']
     horizons = sharedConfig['horizons']['default']
-
+    
     tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Evaluation/tcn_all_stations.txt', log_enabled=False)
     tcn_logger.info('baselineEval : TCN evaluation started at all stations set for evaluation :)')
     for station in stations:
@@ -133,7 +133,6 @@ def get_tcn_file_paths(station, horizon, model='TCN'):
             "actual_vs_predicted_file" : f'Results/TCN/{horizon}_Hour_Forecast/{station}/Metrics/actual_vs_predicted.txt'
         }
        
-
 
 def get_gwn_file_paths(station, horizon, split,model='GWN'):
     return{        
