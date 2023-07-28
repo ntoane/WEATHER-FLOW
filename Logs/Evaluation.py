@@ -6,12 +6,11 @@ import Utils.gwnUtils as utils
 import Utils.metrics as metrics
 import Utils.sharedUtils as sharedUtils
 from Logs.modelLogger import modelLogger
+import pickle
      
-       
 def TcnEval(tcnConfig, sharedConfig):
     stations = sharedConfig['stations']['default']
     horizons = sharedConfig['horizons']['default']
-    
     tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Evaluation/tcn_all_stations.txt', log_enabled=False)
     tcn_logger.info('baselineEval : TCN evaluation started at all stations set for evaluation :)')
     for station in stations:
@@ -24,37 +23,46 @@ def TcnEval(tcnConfig, sharedConfig):
                 # Set the file paths for predictions, targets, and metrics
                 for path in paths.values():
                     sharedUtils.create_file_if_not_exists(path)
-                # Read the predictions and targets from the CSV files
-                preds = pd.read_csv(paths['yhat_path']).drop(['Unnamed: 0'], axis=1)
-                targets = pd.read_csv(paths['target_path']).drop(['Unnamed: 0'], axis=1)
-                # Create a DataFrame of actual vs predicted values
-                actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
-                # Save to a text file
+                # Calculate actual vs predicted and metrics using the calculate_tcn_metrics function & save it
+                actual_vs_predicted, metrics = calculate_tcn_metrics(paths)
                 actual_vs_predicted.to_csv(paths['actual_vs_predicted_file'], index=False)
-                # Calculate the metrics
-                mse = metrics.mse(targets.values, preds.values)
-                rmse = metrics.rmse(targets.values, preds.values)
-                mae = metrics.mae(targets.values, preds.values)
-                smape = metrics.smape(targets.values, preds.values)
                 # Write the metrics to the metric file
                 with open(paths['metrics'], 'w') as metric_file:
                     for name, value in metrics.items():
                         metric_file.write(f'This is the {name}: {value}\n')
-                tcn_logger.info('baselineEval : TCN evaluation done at' + station+' for the horizon of ' +str(horizon))
                 tcn_logger.info('baselineEval : TCN evaluation of ' + station+' for the horizon of ' +str(horizon) +' was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt') 
-                # Print the metrics for the current station and horizon length
-                print('SMAPE: {0} at the {1} station forecasting {2} hours ahead.'.format(smape, station, horizon))
-                print('MSE: {0} at the {1} station forecasting {2} hours ahead.'.format(mse, station, horizon))
-                print('MAE: {0} at the {1} station forecasting {2} hours ahead.'.format(mae, station, horizon))
-                print('RMSE: {0} at the {1} station forecasting {2} hours ahead.'.format(rmse, station, horizon))
-                print('')
+                print_metrics(metrics, station, horizon)
             except Exception as e:
                 print('Error! : Unable to read data or write metrics for station {} and horizon length {}'.format(station, horizon), e)
                 tcn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
+    tcn_logger.info('baselineEval : Finished evaluation of TCN error metrics for all stations.') 
 
-    tcn_logger.info('baselineEval : Finished evaluation of TCN error metrics for all stations.')   
-        
-        
+
+def calculate_tcn_metrics(paths):
+    # Read the predictions and targets from the CSV files, pkl type files
+    preds = pd.read_csv(paths['yhat_path']).drop(['Unnamed: 0'], axis=1)
+    targets = pd.read_csv(paths['target_path']).drop(['Unnamed: 0'], axis=1)
+
+    # Create a DataFrame of actual vs predicted values
+    actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
+    
+    # Calculate the metrics
+    mse = metrics.mse(targets.values, preds.values)
+    rmse = metrics.rmse(targets.values, preds.values)
+    mae = metrics.mae(targets.values, preds.values)
+    smape = metrics.smape(targets.values, preds.values)
+    
+    # Compile metrics into a dictionary
+    calculated_metrics = {
+        "mse": mse,
+        "rmse": rmse,
+        "mae": mae,
+        "smape": smape
+    }
+    
+    return actual_vs_predicted, calculated_metrics
+
+
 def GwnEval(gwnConfig, sharedConfig):
     stations = sharedConfig['stations']['default']
     horizons = sharedConfig['horizons']['default']
@@ -79,10 +87,10 @@ def GwnEval(gwnConfig, sharedConfig):
                     # Set the file paths for predictions, targets, and metrics
                     for path in paths.values():
                         sharedUtils.create_file_if_not_exists(path)
-                    metric_file = os.path.join(paths['metric_file_directory'], paths['metric_filename'])
+                    metric_file = paths['metric_file']
                     # Read the predictions and targets from the CSV files
-                    preds = pd.read_csv(paths['results_file']).drop(['Unnamed: 0'], axis=1)
-                    targets = pd.read_csv(paths['targets_file']).drop(['Unnamed: 0'], axis=1)
+                    preds = pd.read_pickle(paths['results_file'])
+                    targets = pd.read_pickle(paths['targets_file'])
                     # Create a DataFrame of actual vs predicted values
                     actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
                     # Save to a text file
@@ -110,11 +118,7 @@ def GwnEval(gwnConfig, sharedConfig):
                         abs_val = metrics.mae(real_values, preds)
                         ape = metrics.smape(real_values, preds)
                         # Print and write metrics
-                        print('RMSE: {0} for station {1} forecasting {2} hours ahead'.format(root, station, horizon))
-                        print('MSE: {0} for station {1} forecasting {2} hours ahead'.format(square, station, horizon))
-                        print('MAE: {0} for station {1} forecasting {2} hours ahead'.format(abs_val, station, horizon))
-                        print('SMAPE: {0} for station {1} forecasting {2} hours ahead'.format(ape, station, horizon))
-                        print('')
+                        print_metrics( metrics, station, horizon)
                         # Write the metrics to the metric file
                         for name, value in metrics.items():
                             file.write(f'This is the {name}: {value}\n')
@@ -124,7 +128,17 @@ def GwnEval(gwnConfig, sharedConfig):
                 gwn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
     gwn_logger.info('baselineEval : Finished evaluation of GWN error metrics for all stations.') 
            
-        
+       
+def print_metrics(metrics, station, horizon):
+    """
+    Print evaluation metrics.
+    """
+    print(f'SMAPE: {metrics["smape"]} at the {station} station forecasting {horizon} hours ahead.')
+    print(f'MSE: {metrics["mse"]} at the {station} station forecasting {horizon} hours ahead.')
+    print(f'MAE: {metrics["mae"]} at the {station} station forecasting {horizon} hours ahead.')
+    print(f'RMSE: {metrics["rmse"]} at the {station} station forecasting {horizon} hours ahead.')
+    print('')
+     
 def get_tcn_file_paths(station, horizon, model='TCN'):
     return {
             "yhat_path" : f'Results/TCN/{horizon}_Hour_Forecast/{station}/Predictions/result.csv',
@@ -138,8 +152,9 @@ def get_gwn_file_paths(station, horizon, split,model='GWN'):
     return{        
             "results_file" : f'Results/GWN/{horizon} Hour Forecast/Predictions/outputs_{split}.pkl',
             "targets_file" : f'Results/GWN/{horizon} Hour Forecast/Targets/targets_{split}.pkl',
-            "metric_file_directory" : f'Results/GWN/{horizon}_Hour_Forecast/Metrics/{station}/',
-            "metric_filename" : 'metrics.txt',
+            # "metric_file_directory" : f'Results/GWN/{horizon}_Hour_Forecast/Metrics/{station}/',
+            "metric_file" : f'Results/GWN/{horizon}_Hour_Forecast/Metrics/{station}/metrics_{split}.txt',
+            # "metric_filename" : 'metrics.txt',
             "actual_vs_predicted_file" : f'Results/GWN/{horizon} Hour Forecast/{station}/Metrics/actual_vs_predicted.txt'
         }
         
