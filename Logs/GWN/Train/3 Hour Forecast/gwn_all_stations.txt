@@ -1,0 +1,20 @@
+2023-08-04 23:34:41,729 - all_stations - INFO - Training GWN models through walk-forward validation on a forecasting horizon of: 3
+2023-08-04 23:34:48,430 - all_stations - INFO - Epoch  1 | Train Time: 4.64s | Train Loss: 0.1280 | Validation Time: 1.8124 | Validation Loss: 0.0263 
+2023-08-04 23:34:50,064 - all_stations - INFO - Saving the actual vs predicted comparison to a CSV file.
+2023-08-04 23:34:50,064 - all_stations - INFO - Saving the actual vs predicted comparison to a CSV file.
+2023-08-04 23:34:53,907 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 0 - Actual: 0.2225130945444107, Predicted: 0.3553188741207123
+2023-08-04 23:34:57,804 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 1 - Actual: 0.20942407846450806, Predicted: 0.3676994740962982
+2023-08-04 23:35:01,394 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 2 - Actual: 0.2565445005893707, Predicted: 0.38600027561187744
+2023-08-04 23:35:05,449 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 3 - Actual: 0.31675392389297485, Predicted: 0.3733232915401459
+2023-08-04 23:35:08,981 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 4 - Actual: 0.3141361176967621, Predicted: 0.37585580348968506
+2023-08-04 23:35:13,087 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 5 - Actual: 0.3115183115005493, Predicted: 0.40693745017051697
+2023-08-04 23:35:16,702 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 6 - Actual: 0.2565445005893707, Predicted: 0.3424729108810425
+2023-08-04 23:35:20,165 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 7 - Actual: 0.21989528834819794, Predicted: 0.33305302262306213
+2023-08-04 23:35:23,492 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 8 - Actual: 0.22513088583946228, Predicted: 0.3611237704753876
+2023-08-04 23:35:26,843 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 9 - Actual: 0.18324607610702515, Predicted: 0.3389413058757782
+2023-08-04 23:35:30,282 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 10 - Actual: 0.1518324613571167, Predicted: 0.3339075744152069
+2023-08-04 23:35:33,956 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 11 - Actual: 0.18062826991081238, Predicted: 0.3635052740573883
+2023-08-04 23:35:37,922 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 12 - Actual: 0.4476439654827118, Predicted: 0.3867291510105133
+2023-08-04 23:35:41,567 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 13 - Actual: 0.43455496430397034, Predicted: 0.3559415340423584
+2023-08-04 23:35:45,521 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 14 - Actual: 0.40575915575027466, Predicted: 0.3993279039859772
+2023-08-04 23:35:49,094 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 15 - Actual: 0.3115183115005493, Predicted: 0.3703776001930237

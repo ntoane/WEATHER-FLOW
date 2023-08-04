@@ -24,12 +24,11 @@ class gwnExecute(modelExecute):
             self.modelConfig['seq_length']['default'] = forecast_len
             print('Training GWN models through walk-forward validation on a forecasting horizon of: ', self.modelConfig['seq_length']['default'])
             # Making sure folder is created if doesnt exist
-            log_path = 'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'
+            log_path = 'Logs/GWN/Train/' + str(forecast_len) + ' Hour Forecast/'
             os.makedirs(log_path, exist_ok=True)
-            log_file = log_path + 'gwn_' + str(forecast_len) + '.txt'
-            self.model_logger = modelLogger('gwn', 'all_stations', log_file, log_enabled=True)
-                
-            self.model_logger.info('gwnTrain : Training GWN models through walk-forward validation on a forecasting horizon of: '+ str(self.modelConfig['seq_length']['default']))
+            log_file = log_path + 'gwn_all_stations.txt'
+            self.model_logger = modelLogger('tcn', 'all_stations', log_file, log_enabled=True)
+            self.model_logger.info('Training GWN models through walk-forward validation on a forecasting horizon of: '+ str(self.modelConfig['seq_length']['default']))
             
             for k in range(self.sharedConfig['n_split']['default']):
                 fileDictionary = self.prepare_file_dictionary(forecast_len, k)
@@ -37,8 +36,7 @@ class gwnExecute(modelExecute):
                 data_sets = self.split_data(data, split)
                 supports, adjinit = self.prepare_supports_and_adjinit()
                 torch.manual_seed(0)
-                self.model_logger.info('gwnTrain : GWN model initialised.')
-
+               
                 train_data = data_sets[0]
                 validate_data = data_sets[1]
                 test_data = data_sets[2]
@@ -47,7 +45,7 @@ class gwnExecute(modelExecute):
 
                 trainLossArray, validationLossArray = self.train_and_validate(engine, trainLoader, validationLoader, fileDictionary)
                 test_loss, predictions, targets = self.test_model(engine, testLoader)
-                self.save_results(fileDictionary, predictions, targets, trainLossArray, validationLossArray, engine)
+                self.save_results(fileDictionary, predictions, targets, trainLossArray, validationLossArray,engine, forecast_len)
 
                 self.model_logger.info('gwnTrain : GWN model training done.')
 
@@ -88,6 +86,8 @@ class gwnExecute(modelExecute):
 
             print('Epoch {:2d} | Train Time: {:4.2f}s | Train Loss: {:5.4f} | Validation Time: {:5.4f} | Validation Loss: {:5.4f} '.format(
                 epoch + 1, trainTime, train_loss, validationTime, validation_loss))
+            self.model_logger.info('Epoch {:2d} | Train Time: {:4.2f}s | Train Loss: {:5.4f} | Validation Time: {:5.4f} | Validation Loss: {:5.4f} '.format(
+                epoch + 1, trainTime, train_loss, validationTime, validation_loss))
 
             if min_val_loss > validation_loss:
                 min_val_loss = validation_loss
@@ -111,7 +111,7 @@ class gwnExecute(modelExecute):
 
         return test_loss, predictions, targets
 
-    def save_results(self, dictionary, predictions, targets, trainLossArray, validationLossArray, engine):
+    def save_results(self, dictionary, predictions, targets, trainLossArray, validationLossArray ,engine, forecast_len):
         output = open(dictionary['predFile'], 'wb')
         pickle.dump(predictions, output)
         output.close()
@@ -126,7 +126,47 @@ class gwnExecute(modelExecute):
         validationLossFrame.to_csv(dictionary['validationLossFile'])
         adjDataFrame = util.get_adj_matrix(engine.model)
         adjDataFrame.to_csv(dictionary['matrixFile'])
+        
+        # Now save the actual vs predicted results
+        self.save_actual_vs_predicted(targets, predictions, 'all_stations', forecast_len)
+        
+    def save_actual_vs_predicted(self, Y_test, yhat, station,forecast_len):
+        self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file.')
+        # Convert the lists to NumPy arrays if they are not already
+        Y_test_array = np.array(Y_test)
+        yhat_array = np.array(yhat)
 
+        self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file.')
+        actual_vs_predicted_data = pd.DataFrame({
+            'Actual': Y_test_array.flatten(),
+            'Predicted': yhat_array.flatten()
+        })
+        def get_timestamp_at_index(csv_file_path, index_to_find):
+            # Read only the 'DateT' column
+            df = pd.read_csv(csv_file_path, usecols=['DateT'])#, error_bad_lines=False)
+
+            # Retrieve the DateT value at the specified index
+            timestamp = df.loc[index_to_find, 'DateT']
+            return timestamp
+        
+        actual_vs_predicted_file = f'Results/GWN/{forecast_len} Hour Forecast/Predictions/actual_vs_predicted.csv'
+        actual_vs_predicted_file_path = f'Results/GWN/{forecast_len} Hour Forecast/Predictions/'
+        os.makedirs(actual_vs_predicted_file_path, exist_ok=True)
+        actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=False)
+        
+        # Log all actual vs predicted values
+        previous_year = None
+        for index, row in actual_vs_predicted_data.iterrows():
+            file_path = 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv'
+            # print("File path is " + file_path)
+            date = get_timestamp_at_index(file_path, index)
+            current_year = date.split('-')[0]
+            # Prints to screen when years are changing to show progress
+            if previous_year and current_year != previous_year:
+                print(f"The year changed from {previous_year} to {current_year} for performing the logging")
+            previous_year = current_year
+            self.model_logger.info(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
+        
     def prepare_file_dictionary(self, forecast_len, k):
         fileDictionary = {
             'predFile': 'Results/GWN/' + str(forecast_len) + ' Hour Forecast/Predictions/outputs_' + str(k) + '.pkl',

@@ -5,11 +5,11 @@ device:
   help: device to place model on
 data:
   type: str
-  default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv' #DataNew
+  default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv' 
   help: data path
 adjdata:
   type: str
-  default: 'DataNew/Graph Neural Network Data/Adjacency Matrix/adj_mx.pkl'  #DataNew
+  default: 'DataNew/Graph Neural Network Data/Adjacency Matrix/adj_mx.pkl'  
   help: adj data path
 adjtype:
   type: str
@@ -81,7 +81,7 @@ weight_decay:
   help: weight decay rate
 epochs:
   type: int
-  default: 3
+  default: 1
   help: ''
 save:
   type: str
