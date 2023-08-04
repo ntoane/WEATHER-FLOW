@@ -5,6 +5,7 @@ import torch
 import time
 from Models.GWN.gwnEngine import trainer
 import numpy as np
+import os
 import pickle
 from Logs.modelLogger import modelLogger
 from Execute.modelExecute import modelExecute
@@ -12,6 +13,7 @@ from Execute.modelExecute import modelExecute
 class gwnExecute(modelExecute):
     def __init__(self, sharedConfig, gwnConfig):
        super().__init__('gwn', sharedConfig, gwnConfig)
+       self.model_logger=None
     
     def execute(self):
         increment = self.sharedConfig['increment']['default']
@@ -21,6 +23,12 @@ class gwnExecute(modelExecute):
         for forecast_len in forecast_horizons:
             self.modelConfig['seq_length']['default'] = forecast_len
             print('Training GWN models through walk-forward validation on a forecasting horizon of: ', self.modelConfig['seq_length']['default'])
+            # Making sure folder is created if doesnt exist
+            log_path = 'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'
+            os.makedirs(log_path, exist_ok=True)
+            log_file = log_path + 'gwn_' + str(forecast_len) + '.txt'
+            self.model_logger = modelLogger('gwn', 'all_stations', log_file, log_enabled=True)
+                
             self.model_logger.info('gwnTrain : Training GWN models through walk-forward validation on a forecasting horizon of: '+ str(self.modelConfig['seq_length']['default']))
             
             for k in range(self.sharedConfig['n_split']['default']):

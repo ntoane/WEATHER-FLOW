@@ -88,37 +88,16 @@ def GwnEval(gwnConfig, sharedConfig):
                     for path in paths.values():
                         sharedUtils.create_file_if_not_exists(path)
                     metric_file = paths['metric_file']
-                    # Read the predictions and targets from the CSV files
-                    preds = pd.read_pickle(paths['results_file'])
-                    targets = pd.read_pickle(paths['targets_file'])
-                    # Create a DataFrame of actual vs predicted values
-                    actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
+                    
+                    # Calculate actual vs predicted and metrics using the calculate_gwn_metrics function
+                    actual_vs_predicted, metrics = calculate_gwn_metrics(paths, sharedConfig, gwnConfig, s)
                     # Save to a text file
                     actual_vs_predicted.to_csv(paths['actual_vs_predicted_file'], index=False)
-                        
-                    gwn_logger = modelLogger('gwn', str(station), 'Logs/GWN/gwn_.txt', log_enabled=False)
-                    yhat = utils.load_pickle(paths['results_file'])
-                    target = utils.load_pickle(paths['targets_file'])
-                    pred = np.append(pred, np.array(yhat).flatten())
-                    real = np.append(real, np.array(target).flatten()) 
-                    # Reshape pred and real arrays
-                    pred = np.array(pred).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * gwnConfig['seq_length']['default'])), 
-                                                    sharedConfig['n_stations']['default'],
-                                                    gwnConfig['seq_length']['default']))
-                    real = np.array(real).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * gwnConfig['seq_length']['default'])), 
-                                                    sharedConfig['n_stations']['default'],
-                                                    gwnConfig['seq_length']['default']))
+                    
                     # Open metric_file for writing
                     with open(metric_file, 'w') as file:
-                        preds = pred[:, s, :]
-                        real_values = real[:, s, :]
-                        # Calculate metrics
-                        root = metrics.rmse(real_values, preds)
-                        square = metrics.mse(real_values, preds)
-                        abs_val = metrics.mae(real_values, preds)
-                        ape = metrics.smape(real_values, preds)
                         # Print and write metrics
-                        print_metrics( metrics, station, horizon)
+                        print_metrics(metrics, station, horizon)
                         # Write the metrics to the metric file
                         for name, value in metrics.items():
                             file.write(f'This is the {name}: {value}\n')
@@ -126,9 +105,37 @@ def GwnEval(gwnConfig, sharedConfig):
             except Exception as e:
                 print('Error! : Unable to read data or write metrics for station {} and forecast length {}.'.format(station, horizon),e)
                 gwn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
-    gwn_logger.info('baselineEval : Finished evaluation of GWN error metrics for all stations.') 
-           
-       
+    gwn_logger.info('baselineEval : Finished evaluation of GWN error metrics for all stations.')
+
+
+def calculate_gwn_metrics(paths, sharedConfig, gwnConfig, s):
+    # Read the predictions and targets from the CSV files
+    preds = pd.read_pickle(paths['results_file'])
+    targets = pd.read_pickle(paths['targets_file'])
+    # Create a DataFrame of actual vs predicted values
+    actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
+    
+    yhat = utils.load_pickle(paths['results_file'])
+    target = utils.load_pickle(paths['targets_file'])
+    pred = np.append(pred, np.array(yhat).flatten())
+    real = np.append(real, np.array(target).flatten()) 
+    # Reshape pred and real arrays
+    pred = np.array(pred).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * gwnConfig['seq_length']['default'])), 
+                                    sharedConfig['n_stations']['default'],
+                                    gwnConfig['seq_length']['default']))
+    real = np.array(real).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * gwnConfig['seq_length']['default'])), 
+                                    sharedConfig['n_stations']['default'],
+                                    gwnConfig['seq_length']['default']))
+    # Calculate metrics
+    metrics = {}
+    metrics['root'] = metrics.rmse(real[:, s, :], pred[:, s, :])
+    metrics['square'] = metrics.mse(real[:, s, :], pred[:, s, :])
+    metrics['abs_val'] = metrics.mae(real[:, s, :], pred[:, s, :])
+    metrics['ape'] = metrics.smape(real[:, s, :], pred[:, s, :])
+    
+    return actual_vs_predicted, metrics
+
+    
 def print_metrics(metrics, station, horizon):
     """
     Print evaluation metrics.

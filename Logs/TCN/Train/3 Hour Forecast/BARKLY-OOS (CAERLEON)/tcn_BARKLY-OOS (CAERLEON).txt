@@ -1,0 +1,14 @@
+2023-08-04 21:37:52,177 - BARKLY-OOS (CAERLEON) - INFO - TCN model training started at BARKLY-OOS (CAERLEON)
+2023-08-04 21:37:52,431 - BARKLY-OOS (CAERLEON) - INFO - tcnTrain :TCN Model on split 1/47 at BARKLY-OOS (CAERLEON) station forecasting 3 hours ahead.
+2023-08-04 21:56:23,906 - BARKLY-OOS (CAERLEON) - INFO - TCN model training started at BARKLY-OOS (CAERLEON)
+2023-08-04 21:56:24,101 - BARKLY-OOS (CAERLEON) - INFO - tcnTrain :TCN Model on split 1/1 at BARKLY-OOS (CAERLEON) station forecasting 3 hours ahead.
+2023-08-04 21:56:33,273 - BARKLY-OOS (CAERLEON) - INFO - tcnTrain : TCN training done on split 1/47 at BARKLY-OOS (CAERLEON) station forecasting 3 hours ahead.
+2023-08-04 21:56:33,274 - BARKLY-OOS (CAERLEON) - INFO - tcnTrain : TCN training finished at BARKLY-OOS (CAERLEON)
+2023-08-04 22:09:04,621 - BARKLY-OOS (CAERLEON) - INFO - TCN model training started at BARKLY-OOS (CAERLEON)
+2023-08-04 22:09:04,811 - BARKLY-OOS (CAERLEON) - INFO - tcnTrain :TCN Model on split 1/1 at BARKLY-OOS (CAERLEON) station forecasting 3 hours ahead.
+2023-08-04 22:09:13,694 - BARKLY-OOS (CAERLEON) - INFO - tcnTrain : TCN training done on split 1/1 at BARKLY-OOS (CAERLEON) station forecasting 3 hours ahead.
+2023-08-04 22:09:13,696 - BARKLY-OOS (CAERLEON) - INFO - tcnTrain : TCN training finished at BARKLY-OOS (CAERLEON)
+2023-08-04 22:19:53,165 - BARKLY-OOS (CAERLEON) - INFO - TCN model training started at BARKLY-OOS (CAERLEON)
+2023-08-04 22:19:53,425 - BARKLY-OOS (CAERLEON) - INFO - tcnTrain :TCN Model on split 1/1 at BARKLY-OOS (CAERLEON) station forecasting 3 hours ahead.
+2023-08-04 22:20:03,057 - BARKLY-OOS (CAERLEON) - INFO - tcnTrain : TCN training done on split 1/1 at BARKLY-OOS (CAERLEON) station forecasting 3 hours ahead.
+2023-08-04 22:20:03,060 - BARKLY-OOS (CAERLEON) - INFO - tcnTrain : TCN training finished at BARKLY-OOS (CAERLEON)

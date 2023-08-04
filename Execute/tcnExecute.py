@@ -13,6 +13,7 @@ class tcnExecute(modelExecute):
     
     def __init__(self, sharedConfig, tcnConfig):
         super().__init__('tcn', sharedConfig, tcnConfig)
+        self.model_logger = None
 
     def execute(self):
         
@@ -22,32 +23,26 @@ class tcnExecute(modelExecute):
         increment = self.sharedConfig['increment']['default']
         stations = self.sharedConfig['stations']['default']
         forecasting_horizons = self.sharedConfig['horizons']['default']
-        # self.model_logger = modelLogger('tcn', 'all','Logs/TCN/Train/'+'tcn_all_stations.txt', log_enabled=False)  
-        self.model_logger.info('tcnTrain : TCN training started at all stations set for training :)') 
 
         for forecast_len in forecasting_horizons:
             configFile = open("Execute/Best Configurations/tcn_params.txt", "r")
-            # self.model_logger = modelLogger('tcn', 'all','Evaluation/Logs/TCN/tcn_logs.txt')
-        
             for station in stations:
-                # printing out which station we are forecasting
-                # self.model_logger = modelLogger('tcn', '{1}', 'TCN training started on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
-                #                                                                                          forecast_len))
-                
-                self.model_logger = modelLogger('tcn', str(station),'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt' , log_enabled=False)
+                # Making sure folder is created if doesnt exist
+                log_path = 'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/' + str(station) + '/'
+                os.makedirs(log_path, exist_ok=True)
+                log_file = log_path + 'tcn_' + str(station) + '.txt'
+                self.model_logger = modelLogger('tcn', str(station), log_file, log_enabled=True)
+                # self.model_logger = modelLogger('tcn', str(station),'Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt' , log_enabled=True)
+                print('PATH for logger Logs/TCN/Train/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt' )
                 print('Forecasting at station ', station)
-                #print('Evaluation/Logs/TCN/' + str(forecast_len) + ' Hour Forecast/'+str(station) +'/'+'tcn_' + str(station) + '.txt')
-                self.model_logger.info('tcnTrain : TCN model training started at ' + station)
+                self.model_logger.info('TCN model training started at ' + station)
                 print('tcnTrain : TCN model training started at ' + station)
-
                 # pulling in weather station data
                 weatherData = 'DataNew/Weather Station Data/' + station + '.csv'
                 ts = utils.create_dataset(weatherData)
-
                 # reading in the parameters from the text file
                 params = configFile.readline()
                 cfg = utils.stringtoCfgTCN(params)
-
                 # dynamically set hpo settings set for tcn model
                 layers = int(cfg[0])
                 filters = int(cfg[1])
@@ -55,14 +50,11 @@ class tcnExecute(modelExecute):
                 batch = int(cfg[3])
                 dropout = float(cfg[4])
                 activation = cfg[5]
-                
-                # layers, filters, lag_length,batch, dropout, activation = read_config()
-                
+               
                 # default settings from config file for tcn model are set when the model is initialized
-                
                 # This setting changes for each of the forecast_len in the above list for the horizon, thus not in config file
                 n_ahead_length = forecast_len
-                
+            
                 lossDF = pd.DataFrame()
                 resultsDF = pd.DataFrame()
                 targetDF = pd.DataFrame()
@@ -83,19 +75,23 @@ class tcnExecute(modelExecute):
                 loss_path = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/'
                 # Create the directory if it doesn't exist
                 os.makedirs(loss_path, exist_ok=True)
+                
+                # actuals_vs_predicted = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
+                #         'actuals_vs_predicted.csv'
+                # actuals_vs_predicted_path = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/'
+                # # Create the directory if it doesn't exist
+                # os.makedirs(actuals_vs_predicted_path, exist_ok=True)
 
-                num_splits = self.sharedConfig['n_split']['default']# was 27
+                num_splits = self.sharedConfig['n_split']['default']
 
                 for k in range(num_splits):
                     print('TCN training started on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                         forecast_len, num_splits))
-                    self.model_logger.info('tcnTrain :TCN Model on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
-                                                                                                        forecast_len))
+                    self.model_logger.info('tcnTrain :TCN Model on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                                                                                                        forecast_len,num_splits))
 
-                    # lossFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
-                    #        'loss.csv'
-                    
-                    
+                    lossFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
+                           'loss.csv'
                     saveFile = 'Garage/Final Models/TCN/' + station + '/' + str(forecast_len) + ' Hour Models/Best_Model_' \
                             + str(n_ahead_length) + '_walk_' + str(k) + '.h5'
 
@@ -146,51 +142,51 @@ class tcnExecute(modelExecute):
                                                     weight_norm=self.modelConfig['weight_norm']['default'], kernel=self.modelConfig['kernels']['default'], filters=filters,
                                                     dilations=self.modelConfig['dilations']['default'], padding=self.modelConfig['padding']['default'], dropout=dropout,
                                                     patience=self.modelConfig['patience']['default'], save=saveFile, optimizer=opt)
-
                         # Training the model
                         model, history = tcn_model.temperature_model()
-
                         # validation and train loss to dataframe
                         lossDF = lossDF.append([[history.history['loss'], history.history['val_loss']]])
-
                         # load best model
                         model = load_model(saveFile, custom_objects={'TCN': TCN})
                         # Test the model and write to file
                         yhat = model.predict(X_test)
                         # predictions to dataframe
                         resultsDF = pd.concat([resultsDF, pd.Series(yhat.reshape(-1, ))])
+                        
+                        self.save_actual_vs_predicted(Y_test, yhat, station,forecast_len)
 
                     else:
                         tcn_model = tcn_two.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
                                                     n_lag=lag_length, n_features=n_ft, n_ahead=n_ahead_length,
-                                                    epochs=self.modelConfig['epochs']['default'], batch_size=self.modelConfgmodelConfig['batch_size']['default'], 
+                                                    epochs=self.modelConfig['epochs']['default'], batch_size=self.modelConfig['batch_size']['default'], 
                                                     act_func=activation, loss=loss_function,
-                                                    learning_rate=self.modelCongmodelConfig['lr']['default'], batch_norm=self.modelConfig['batch_norm']['default'], 
+                                                    learning_rate=self.modelConfig['lr']['default'], batch_norm=self.modelConfig['batch_norm']['default'], 
                                                     layer_norm=self.modelConfig['layer_norm']['default'],
                                                     weight_norm=self.modelConfig['weight_norm']['default'], kernel=self.modelConfig['kernels']['default'], filters=filters,
-                                                    dilations=self.modelCongmodelConfig['dilations']['default'], padding=self.modelConfig['padding']['default'], dropout=dropout,
-                                                    patience=self.modelConfgmodelConfig['patience']['default'], save=saveFile, optimizer=self.sharedConfig['optimizer']['default'])
+                                                    dilations=self.modelConfig['dilations']['default'], padding=self.modelConfig['padding']['default'], dropout=dropout,
+                                                    patience=self.modelConfig['patience']['default'], save=saveFile, optimizer=self.sharedConfig['optimizer']['default'])
 
                         # Training the model
                         model, history = tcn_model.temperature_model()
-
                         # validation and train loss to dataframe
                         lossDF = lossDF.append([[history.history['loss'], history.history['val_loss']]])
-
                         # load best model
                         model = load_model(saveFile, custom_objects={'TCN': TCN})
                         # Test the model and write to file
                         yhat = model.predict(X_test)
                         # predictions to dataframe
                         resultsDF = pd.concat([resultsDF, pd.Series(yhat.reshape(-1, ))])
+                        
+                        self.save_actual_vs_predicted(Y_test, yhat, station,forecast_len)
 
-                    self.model_logger.info('tcnTrain : TCN training done on split {0}/47 at {1} station forecasting {2} hours ahead.'.format(k+1, station,
-                                                                                                        forecast_len))
+                    self.model_logger.info('tcnTrain : TCN training done on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                                                                                                        forecast_len,num_splits))
                     # Targets to dataframe
                     targetDF = pd.concat([targetDF, pd.Series(Y_test.reshape(-1, ))])
                 
                 self.model_logger.info('tcnTrain : TCN training finished at ' + station)  
-                    
+                
+                # act_vs_predDF.to_csv(actuals_vs_predicted)
                 resultsDF.to_csv(resultsFile)
                 lossDF.to_csv(lossFile)
                 targetDF.to_csv(targetFile)
@@ -199,21 +195,42 @@ class tcnExecute(modelExecute):
         
         self.model_logger.info('tcnTrain : TCN training finished at all stations set for training :)')
         
+        
+    def save_actual_vs_predicted(self, Y_test, yhat, station,forecast_len):
+        self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file.')
+        actual_vs_predicted_data = pd.DataFrame({
+            'Actual': Y_test.flatten(),
+            'Predicted': yhat.flatten()
+        })
 
-    def read_config():
-            cfg = open("Execute/Best Configurations/tcn_params.txt", "r")
-            params = cfg.readline()
-            cfg.close()
-            utils.stringtoCfgTCN(params)
-            # dynamically set hpo settings set for tcn model
-            layers = int(cfg[0])
-            filters = int(cfg[1])
-            lag_length = int(cfg[2])
-            batch = int(cfg[3])
-            dropout = float(cfg[4])
-            activation = cfg[5]
-            return layers, filters, lag_length, batch, dropout, activation
-    
+        def get_timestamp_at_index(csv_file_path, index_to_find):
+            # Read only the 'DateT' column
+            df = pd.read_csv(csv_file_path, usecols=['DateT'])#, error_bad_lines=False)
+
+            # Retrieve the DateT value at the specified index
+            timestamp = df.loc[index_to_find, 'DateT']
+            return timestamp
+        
+        actual_vs_predicted_file = f'Results/TCN/{forecast_len} Hour Forecast/{station}/Predictions/actual_vs_predicted.csv'
+        actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=False)
+        
+        # Log all actual vs predicted values
+        previous_year = None
+        for index, row in actual_vs_predicted_data.iterrows():
+            file_path = 'DataNew/Weather Station Data/' + str(station) + '.csv'
+            # print("File path is " + file_path)
+            date = get_timestamp_at_index(file_path, index)
+            current_year = date.split('-')[0]
+            # Prints to screen when years are changing to show progress
+            if previous_year and current_year != previous_year:
+                print(f"The year changed from {previous_year} to {current_year} for performing the logging")
+            previous_year = current_year
+            self.model_logger.info(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
+        
+        
+        
+        
+
     
     
     

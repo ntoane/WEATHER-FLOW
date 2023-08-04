@@ -5,7 +5,7 @@ from HPO.gwnHPO import GWNHPO
 from Execute.tcnExecute import tcnExecute
 from Execute.gwnExecute import gwnExecute
 import Plots.plotter as plotter
-# import Visualisations.visualise as visualise
+import Visualisations.visualise as visualise
 # from Logs.Evaluation import Evaluation
 import Logs.Evaluation as Evaluation
 
@@ -72,8 +72,8 @@ def main():
         plotter.create('GWN', sharedConfig)
 
 # ############ Visualisations #############
-    # if sharedConfig['vis']['default'] or args.mode == configOptions[6]:
-    #     visualise.plot(sharedConfig)
+    if sharedConfig['vis']['default'] or args.mode == configOptions[6]:
+        visualise.plot(sharedConfig)
      
 ############ Else condition #############   
     else :

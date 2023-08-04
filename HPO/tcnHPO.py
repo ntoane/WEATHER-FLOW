@@ -107,10 +107,8 @@ class TCNHPO(modelHPO):
 
 #     for station in stations:
 #         # printing out which station we are forecasting
-#         self.model_logger = modelLogger('tcn', str(station),'Logs/TCN/HPO/' + str(station) +'/'+'tcn_' + str(station) + '.txt', log_enabled=False)
 #         print('Performing TCN random search HPO at station: ', station)
-#         self.model_logger.info('tcnHPO : TCN HPO training started at ' + station)
-        
+
 #         # pulling in weather station data
 #         weatherData = 'DataNew/Weather Station Data/' + station + '.csv'
 #         ts = utils.create_dataset(weatherData)
