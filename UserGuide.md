@@ -145,6 +145,10 @@ Guidelines for customizing the experimental platform in terms of Training, Predi
 * Logging module:
 
   * The **modelLogger** class is essentially a wrapper around Python's built-in logging  library. It provides a way to easily log different levels of information (i.e., info, debug, warning, error and critical) from a specific model running on a specific station to a log file. It also allows enabling or disabling logging through the log_enabled parameter.
+    * In Logs module, under each model,  the logs will be stored for the various stages of experimentation.
+    * For example for training, the logs will be in the Train folder under the relevant horizons.
+    * Actuals vs Predicted results are captured here - alongside the time indices of when they occurred in the data for analysis purposes. As if one of the models has seemingly unexplainable bad accuracy for some predictions, we can check against the logs and see if it was all around the same time and we can have a better idea of what happened.
+    * Other admin logging content is also captured here at the various logging levels described in the modelLogger class.
   * The **Evaluation class**
 * Visualization
 

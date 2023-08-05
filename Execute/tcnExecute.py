@@ -10,13 +10,11 @@ from Logs.modelLogger import modelLogger
 from Execute.modelExecute import modelExecute
 
 class tcnExecute(modelExecute):
-    
     def __init__(self, sharedConfig, tcnConfig):
         super().__init__('tcn', sharedConfig, tcnConfig)
         self.model_logger = None
 
     def execute(self):
-        
         # physical_devices = tf.config.list_physical_devices('CPU') #CPU
         # tf.config.experimental.set_memory_growth(physical_devices[0], enable=True)
 
@@ -54,35 +52,9 @@ class tcnExecute(modelExecute):
                 # default settings from config file for tcn model are set when the model is initialized
                 # This setting changes for each of the forecast_len in the above list for the horizon, thus not in config file
                 n_ahead_length = forecast_len
-            
-                lossDF = pd.DataFrame()
-                resultsDF = pd.DataFrame()
-                targetDF = pd.DataFrame()
-
-                targetFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Targets/' + \
-                            'target.csv'
-                # Specify the directory path
-                target_path = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Targets/' 
-                # Create the directory if it doesn't exist
-                os.makedirs(target_path, exist_ok=True)
-                resultsFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
-                            'result.csv'
-                result_path = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/'
-                # Create the directory if it doesn't exist
-                os.makedirs(result_path, exist_ok=True)
-                lossFile = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
-                        'loss.csv'
-                loss_path = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/'
-                # Create the directory if it doesn't exist
-                os.makedirs(loss_path, exist_ok=True)
-                
-                # actuals_vs_predicted = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/' + \
-                #         'actuals_vs_predicted.csv'
-                # actuals_vs_predicted_path = 'Results/TCN/' + str(forecast_len) + ' Hour Forecast/' + station + '/Predictions/'
-                # # Create the directory if it doesn't exist
-                # os.makedirs(actuals_vs_predicted_path, exist_ok=True)
-
                 num_splits = self.sharedConfig['n_split']['default']
+            
+                lossDF, resultsDF, targetDF, targetFile, resultsFile, lossFile = self.create_dataframes_and_dirs(forecast_len, station)
 
                 for k in range(num_splits):
                     print('TCN training started on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
@@ -197,7 +169,7 @@ class tcnExecute(modelExecute):
         
         
     def save_actual_vs_predicted(self, Y_test, yhat, station,forecast_len):
-        self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file.')
+        
         actual_vs_predicted_data = pd.DataFrame({
             'Actual': Y_test.flatten(),
             'Predicted': yhat.flatten()
@@ -206,15 +178,16 @@ class tcnExecute(modelExecute):
         def get_timestamp_at_index(csv_file_path, index_to_find):
             # Read only the 'DateT' column
             df = pd.read_csv(csv_file_path, usecols=['DateT'])#, error_bad_lines=False)
-
             # Retrieve the DateT value at the specified index
             timestamp = df.loc[index_to_find, 'DateT']
             return timestamp
         
+        # Don't need to have actuals vs predicted in results folder, when they are in Logs folder as seen below
         actual_vs_predicted_file = f'Results/TCN/{forecast_len} Hour Forecast/{station}/Predictions/actual_vs_predicted.csv'
-        actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=False)
+        actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=True)
         
         # Log all actual vs predicted values
+        self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file - file path DataNew/Weather Station Data/' + str(station) + '.csv')
         previous_year = None
         for index, row in actual_vs_predicted_data.iterrows():
             file_path = 'DataNew/Weather Station Data/' + str(station) + '.csv'
@@ -228,7 +201,26 @@ class tcnExecute(modelExecute):
             self.model_logger.info(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
         
         
-        
+    def create_dataframes_and_dirs(self, forecast_len, station):
+        lossDF = pd.DataFrame()
+        resultsDF = pd.DataFrame()
+        targetDF = pd.DataFrame()
+
+        base_path = f'Results/TCN/{forecast_len} Hour Forecast/{station}'
+
+        target_path = f'{base_path}/Targets/'
+        os.makedirs(target_path, exist_ok=True)
+        targetFile = f'{target_path}target.csv'
+
+        result_path = f'{base_path}/Predictions/'
+        os.makedirs(result_path, exist_ok=True)
+        resultsFile = f'{result_path}result.csv'
+
+        loss_path = f'{base_path}/Predictions/'
+        os.makedirs(loss_path, exist_ok=True)
+        lossFile = f'{loss_path}loss.csv'
+
+        return lossDF, resultsDF, targetDF, targetFile, resultsFile, lossFile
         
 
     

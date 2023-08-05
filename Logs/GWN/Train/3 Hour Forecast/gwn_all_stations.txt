@@ -18,3 +18,4 @@
 2023-08-04 23:35:41,567 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 13 - Actual: 0.43455496430397034, Predicted: 0.3559415340423584
 2023-08-04 23:35:45,521 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 14 - Actual: 0.40575915575027466, Predicted: 0.3993279039859772
 2023-08-04 23:35:49,094 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 15 - Actual: 0.3115183115005493, Predicted: 0.3703776001930237
+2023-08-05 11:01:17,001 - all_stations - INFO - Training GWN models through walk-forward validation on a forecasting horizon of: 3

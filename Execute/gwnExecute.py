@@ -27,9 +27,9 @@ class gwnExecute(modelExecute):
             log_path = 'Logs/GWN/Train/' + str(forecast_len) + ' Hour Forecast/'
             os.makedirs(log_path, exist_ok=True)
             log_file = log_path + 'gwn_all_stations.txt'
-            self.model_logger = modelLogger('tcn', 'all_stations', log_file, log_enabled=True)
+            self.model_logger = modelLogger('gwn', 'all_stations', log_file, log_enabled=True)
             self.model_logger.info('Training GWN models through walk-forward validation on a forecasting horizon of: '+ str(self.modelConfig['seq_length']['default']))
-            
+            self.model_logger.info('Remember that this ST-GNN model GWN trains all weather stations for each horizon, thus it will be 45 rows of data for each hour')
             for k in range(self.sharedConfig['n_split']['default']):
                 fileDictionary = self.prepare_file_dictionary(forecast_len, k)
                 split = self.prepare_data_split(increment, k)
@@ -152,7 +152,7 @@ class gwnExecute(modelExecute):
         actual_vs_predicted_file = f'Results/GWN/{forecast_len} Hour Forecast/Predictions/actual_vs_predicted.csv'
         actual_vs_predicted_file_path = f'Results/GWN/{forecast_len} Hour Forecast/Predictions/'
         os.makedirs(actual_vs_predicted_file_path, exist_ok=True)
-        actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=False)
+        actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=True)
         
         # Log all actual vs predicted values
         previous_year = None

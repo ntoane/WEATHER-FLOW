@@ -11,8 +11,7 @@ import pickle
 def TcnEval(tcnConfig, sharedConfig):
     stations = sharedConfig['stations']['default']
     horizons = sharedConfig['horizons']['default']
-    tcn_logger = modelLogger('tcn', 'all','Logs/TCN/Evaluation/tcn_all_stations.txt', log_enabled=False)
-    tcn_logger.info('baselineEval : TCN evaluation started at all stations set for evaluation :)')
+    
     for station in stations:
         for horizon in horizons: 
             try:
@@ -25,33 +24,32 @@ def TcnEval(tcnConfig, sharedConfig):
                     sharedUtils.create_file_if_not_exists(path)
                 # Calculate actual vs predicted and metrics using the calculate_tcn_metrics function & save it
                 actual_vs_predicted, metrics = calculate_tcn_metrics(paths)
+                tcn_logger.info('actual vs prediced is :' + str(actual_vs_predicted))
+                tcn_logger.info('saved to file :' +str(paths['actual_vs_predicted_file']) )
                 actual_vs_predicted.to_csv(paths['actual_vs_predicted_file'], index=False)
                 # Write the metrics to the metric file
                 with open(paths['metrics'], 'w') as metric_file:
                     for name, value in metrics.items():
                         metric_file.write(f'This is the {name}: {value}\n')
-                tcn_logger.info('baselineEval : TCN evaluation of ' + station+' for the horizon of ' +str(horizon) +' was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt') 
+                tcn_logger.info('TCN evaluation of ' + station+' for the horizon of ' +str(horizon) +' was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt') 
                 print_metrics(metrics, station, horizon)
             except Exception as e:
                 print('Error! : Unable to read data or write metrics for station {} and horizon length {}'.format(station, horizon), e)
                 tcn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
-    tcn_logger.info('baselineEval : Finished evaluation of TCN error metrics for all stations.') 
+    tcn_logger.info('Finished evaluation of TCN error metrics for all stations.') 
 
 
 def calculate_tcn_metrics(paths):
     # Read the predictions and targets from the CSV files, pkl type files
     preds = pd.read_csv(paths['yhat_path']).drop(['Unnamed: 0'], axis=1)
     targets = pd.read_csv(paths['target_path']).drop(['Unnamed: 0'], axis=1)
-
     # Create a DataFrame of actual vs predicted values
     actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
-    
     # Calculate the metrics
     mse = metrics.mse(targets.values, preds.values)
     rmse = metrics.rmse(targets.values, preds.values)
     mae = metrics.mae(targets.values, preds.values)
     smape = metrics.smape(targets.values, preds.values)
-    
     # Compile metrics into a dictionary
     calculated_metrics = {
         "mse": mse,
@@ -59,7 +57,6 @@ def calculate_tcn_metrics(paths):
         "mae": mae,
         "smape": smape
     }
-    
     return actual_vs_predicted, calculated_metrics
 
 
@@ -67,8 +64,6 @@ def GwnEval(gwnConfig, sharedConfig):
     stations = sharedConfig['stations']['default']
     horizons = sharedConfig['horizons']['default']
     num_splits = sharedConfig['n_split']['default']
-    gwn_logger = modelLogger('gwn','all','Logs/GWN/gwn_all_stations.txt', log_enabled=False)
-    gwn_logger.info('baselineEval : Starting to compute evaluation error metrics for all stations.')
     s = -1
     # Iterate over each station
     for station in stations:
@@ -79,7 +74,7 @@ def GwnEval(gwnConfig, sharedConfig):
                 pred = []
                 real = []
                 gwn_logger = modelLogger('gwn', station,'Logs/GWN/Evaluation/'+'gwn_' + station +'.txt', log_enabled=False)  
-                gwn_logger.info('baselineEval : GWN evaluation started at' + station+' for the horizon of ' +str(horizon) ) 
+                gwn_logger.info('GWN evaluation started at' + station+' for the horizon of ' +str(horizon) ) 
                 # Read predictions and targets for each split and append them to pred and real lists
                 for split in range(num_splits):
                     print(f'GWN evaluation started at {station} for the horizon of {horizon}')
