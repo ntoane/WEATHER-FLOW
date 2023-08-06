@@ -1,0 +1,2 @@
+2023-08-05 13:45:57,325 - FORT BEAUFORT - INFO - TCN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-08-05 13:45:57,326 - FORT BEAUFORT - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 24.

@@ -21,7 +21,7 @@ def create(model, sharedConfig):
         # Iterate over each forecasting horizon
         for horizon in horizons:
             try:
-                metric_file = f'Results/{model}/{horizon}_Hour_Forecast/Metrics/{station}/metrics.txt'
+                metric_file = f'Results/{model}/{horizon} Hour Forecast/Metrics/{station}/metrics.txt'
                 # metric_file = f'../Results/Metrics/{station}/metrics_{horizon}'
 
                 # metric_file = f'../Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt'

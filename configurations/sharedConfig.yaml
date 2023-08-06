@@ -7,7 +7,6 @@ train_gwn:
   type: bool
   default: true
   help: whether to train final GWN model
-
 ############################ Random Search HPO arguments (GWN & TCN) ############################ 
 tune_tcn:
   type: bool
@@ -21,17 +20,16 @@ num_configs:
   type: int
   default: 30
   help: number of random configurations to search through
-
 ############################ Perform evaluations calculating metrics of final models' results (GWN & TCN) ############################
 eval_tcn:
   type: bool
-  default: true
+  default: false
   help: whether to report final TCN metrics
 eval_gwn:
   type: bool
   default: false
-  help: whether to report final GWN metrics
 
+  help: whether to report final GWN metrics
 ############################ General data configurations ############################
 increment: 
   type: int[]
@@ -76,7 +74,6 @@ n_split:
   help: number of splits in walk-forward validation
 
 ################################# Loss and Optimizer  ###############################
-
 loss_function:
   type: string
   default: 'MSE'     #Only accepts MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
@@ -92,18 +89,22 @@ vis:
   type: bool
   default: false
   help: whether to create visualisations
+
 modelVis:
   type: str
-  default: GWN
+  default: TCN
   help: the model to visualise
+
 horizonVis:
   type: str
   default: "3"
   help: the horizon to visualise
+
 splitVis:
   type: str
   default: 2
   help: the split number up to which visualisations should be generated for
+
 locations_path:
   type: str
   default: 'DataNew/Locations/Locations.csv'

@@ -59,17 +59,13 @@ def main():
     if sharedConfig['eval_tcn']['default'] or args.mode == configOptions[4]:
         tcnConfig = getSpecificConfig('tcn')
         Evaluation.TcnEval(tcnConfig, sharedConfig)
-        # eval = Evaluation(sharedConfig)
-        # eval.TcnEval(tcnConfig)
-        plotter.create('TCN',sharedConfig)
+        # plotter.create('TCN',sharedConfig)
 
     # Record metrics for final GWN models
     if sharedConfig['eval_gwn']['default'] or args.mode == configOptions[5]:
         gwnConfig = getSpecificConfig('gwn')
         Evaluation.GwnEval(gwnConfig, sharedConfig)
-        # eval = Evaluation(sharedConfig)
-        # eval.GwnEval(gwnConfig)
-        plotter.create('GWN', sharedConfig)
+        # plotter.create('GWN', sharedConfig)
 
 # ############ Visualisations #############
     if sharedConfig['vis']['default'] or args.mode == configOptions[6]:

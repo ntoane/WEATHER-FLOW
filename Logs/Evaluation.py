@@ -1,4 +1,3 @@
-import os
 import numpy as np
 import pandas as pd
 import Utils.metrics as metrics
@@ -6,7 +5,6 @@ import Utils.gwnUtils as utils
 import Utils.metrics as metrics
 import Utils.sharedUtils as sharedUtils
 from Logs.modelLogger import modelLogger
-import pickle
      
 def TcnEval(tcnConfig, sharedConfig):
     stations = sharedConfig['stations']['default']
@@ -17,8 +15,8 @@ def TcnEval(tcnConfig, sharedConfig):
             try:
                 print(f'TCN evaluation started at {station} for the horizon of {horizon}')
                 paths = get_tcn_file_paths(station, horizon)
-                tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Evaluation/'+'tcn_' + str(station) +'.txt', log_enabled=False)
-                tcn_logger.info('baselineEval : TCN evaluation started at' + str(station)+' for the horizon of ' +str(horizon))
+                tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Evaluation/' + str(horizon) + ' Hour Forecast/'+'tcn_' + str(station) +'.txt', log_enabled=True)
+                tcn_logger.info('TCN evaluation started at' + str(station)+' for the horizon of ' +str(horizon))
                 # Set the file paths for predictions, targets, and metrics
                 for path in paths.values():
                     sharedUtils.create_file_if_not_exists(path)
@@ -31,6 +29,7 @@ def TcnEval(tcnConfig, sharedConfig):
                 with open(paths['metrics'], 'w') as metric_file:
                     for name, value in metrics.items():
                         metric_file.write(f'This is the {name}: {value}\n')
+                        tcn_logger.info(f'This is the {name}: {value}\n')
                 tcn_logger.info('TCN evaluation of ' + station+' for the horizon of ' +str(horizon) +' was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt') 
                 print_metrics(metrics, station, horizon)
             except Exception as e:
@@ -38,6 +37,18 @@ def TcnEval(tcnConfig, sharedConfig):
                 tcn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
     tcn_logger.info('Finished evaluation of TCN error metrics for all stations.') 
 
+
+def smape_std(actual, predicted):
+        """
+        Calculates the standard deviation of SMAPE values
+        Parameters:
+            actual - target values
+            predicted - output values predicted by model
+        Returns:
+            std - returns the standard deviation of SMAPE values
+        """
+        smapes = abs(predicted - actual) / ((abs(predicted) + abs(actual)) / 2) * 100
+        return np.std(smapes)
 
 def calculate_tcn_metrics(paths):
     # Read the predictions and targets from the CSV files, pkl type files
@@ -50,12 +61,14 @@ def calculate_tcn_metrics(paths):
     rmse = metrics.rmse(targets.values, preds.values)
     mae = metrics.mae(targets.values, preds.values)
     smape = metrics.smape(targets.values, preds.values)
+    smape_std_dev = smape_std(targets.values, preds.values)
     # Compile metrics into a dictionary
     calculated_metrics = {
         "mse": mse,
         "rmse": rmse,
         "mae": mae,
-        "smape": smape
+        "smape": smape,
+        "smape_std_dev": smape_std_dev
     }
     return actual_vs_predicted, calculated_metrics
 
@@ -73,7 +86,7 @@ def GwnEval(gwnConfig, sharedConfig):
             try:
                 pred = []
                 real = []
-                gwn_logger = modelLogger('gwn', station,'Logs/GWN/Evaluation/'+'gwn_' + station +'.txt', log_enabled=False)  
+                gwn_logger = modelLogger('gwn', station,'Logs/GWN/Evaluation/'+'gwn_' + station +'.txt', log_enabled=True)  
                 gwn_logger.info('GWN evaluation started at' + station+' for the horizon of ' +str(horizon) ) 
                 # Read predictions and targets for each split and append them to pred and real lists
                 for split in range(num_splits):
@@ -96,11 +109,11 @@ def GwnEval(gwnConfig, sharedConfig):
                         # Write the metrics to the metric file
                         for name, value in metrics.items():
                             file.write(f'This is the {name}: {value}\n')
-                        gwn_logger.info('baselineEval : Finished computing evaluation error metrics.')
+                        gwn_logger.info('Finished computing evaluation error metrics.')
             except Exception as e:
                 print('Error! : Unable to read data or write metrics for station {} and forecast length {}.'.format(station, horizon),e)
                 gwn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
-    gwn_logger.info('baselineEval : Finished evaluation of GWN error metrics for all stations.')
+    gwn_logger.info('Finished evaluation of GWN error metrics for all stations.')
 
 
 def calculate_gwn_metrics(paths, sharedConfig, gwnConfig, s):
@@ -143,22 +156,22 @@ def print_metrics(metrics, station, horizon):
      
 def get_tcn_file_paths(station, horizon, model='TCN'):
     return {
-            "yhat_path" : f'Results/TCN/{horizon}_Hour_Forecast/{station}/Predictions/result.csv',
-            "target_path" : f'Results/TCN/{horizon}_Hour_Forecast/{station}/Targets/target.csv',
-            "metric_file" : f'Results/TCN/{horizon}_Hour_Forecast/Metrics/{station}/metrics.txt',
-            "actual_vs_predicted_file" : f'Results/TCN/{horizon}_Hour_Forecast/{station}/Metrics/actual_vs_predicted.txt'
+            "yhat_path" : f'Results/TCN/{horizon} Hour Forecast/{station}/Predictions/result.csv',
+            "target_path" : f'Results/TCN/{horizon} Hour Forecast/{station}/Targets/target.csv',
+            "metric_file" : f'Results/TCN/{horizon} Hour Forecast/Metrics/{station}/metrics.txt',
+            "actual_vs_predicted_file" : f'Results/TCN/{horizon} Hour Forecast/{station}/Metrics/actual_vs_predicted.txt'
         }
        
 
 def get_gwn_file_paths(station, horizon, split,model='GWN'):
-    return{        
-            "results_file" : f'Results/GWN/{horizon} Hour Forecast/Predictions/outputs_{split}.pkl',
-            "targets_file" : f'Results/GWN/{horizon} Hour Forecast/Targets/targets_{split}.pkl',
-            # "metric_file_directory" : f'Results/GWN/{horizon}_Hour_Forecast/Metrics/{station}/',
-            "metric_file" : f'Results/GWN/{horizon}_Hour_Forecast/Metrics/{station}/metrics_{split}.txt',
-            # "metric_filename" : 'metrics.txt',
-            "actual_vs_predicted_file" : f'Results/GWN/{horizon} Hour Forecast/{station}/Metrics/actual_vs_predicted.txt'
-        }
+    folder_name = f'{horizon} Hour Forecast'
+    station_with_spaces = station.replace('_', ' ')
+    return {        
+        "results_file" : f'Results/{model}/{folder_name}/Predictions/outputs_{split}.pkl',
+        "targets_file" : f'Results/{model}/{folder_name}/Targets/targets_{split}.pkl',
+        "metric_file" : f'Results/{model}/{folder_name}/Metrics/{station_with_spaces}/metrics_{split}.txt',
+        "actual_vs_predicted_file" : f'Results/{model}/{folder_name}/{station_with_spaces}/Metrics/actual_vs_predicted.txt'
+    }
         
         
         
@@ -243,6 +256,6 @@ def get_gwn_file_paths(station, horizon, split,model='GWN'):
         #         except IOError:
         #             #metric_file = f'Results/GWN/Metrics/{stations[station]}/metrics_{horizon}'
         #             #print(f'Error: Unable to write metrics to {metric_file}')
-        #             print('Error! : Unable to read data or write metrics for station {} and forecast length {}. Please review the data or code for the metrics for errors.'.format(station, horizon))
+        #             print('  Error! : Unable to read data or write metrics for station {} and forecast length {}. Please review the data or code for the metrics for errors.'.format(station, horizon))
         #             gwn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}. Please review the data or code for the metrics for errors.'.format(station, horizon))
         # gwn_logger.info('baselineEval : Finished evaluation of GWN error metrics for all stations.')                       

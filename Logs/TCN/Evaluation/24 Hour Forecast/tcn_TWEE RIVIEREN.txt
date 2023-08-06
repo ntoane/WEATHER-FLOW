@@ -1,0 +1,2 @@
+2023-08-05 13:45:57,498 - TWEE RIVIEREN - INFO - TCN evaluation started atTWEE RIVIEREN for the horizon of 24
+2023-08-05 13:45:57,499 - TWEE RIVIEREN - ERROR - Error! : Unable to read data or write metrics for station TWEE RIVIEREN and horizon length 24.

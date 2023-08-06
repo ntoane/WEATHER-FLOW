@@ -119,24 +119,29 @@ class gwnExecute(modelExecute):
         target = open(dictionary['targetFile'], 'wb')
         pickle.dump(targets, target)
         target.close()
-
+        
+         # Ensure the directory exists before saving
         trainLossFrame = pd.DataFrame(trainLossArray)
+        os.makedirs(os.path.dirname(dictionary['trainLossFile']), exist_ok=True)
         trainLossFrame.to_csv(dictionary['trainLossFile'])
         validationLossFrame = pd.DataFrame(validationLossArray)
+        os.makedirs(os.path.dirname(dictionary['validationLossFile']), exist_ok=True)
         validationLossFrame.to_csv(dictionary['validationLossFile'])
+        os.makedirs(os.path.dirname(dictionary['matrixFile']), exist_ok=True)
         adjDataFrame = util.get_adj_matrix(engine.model)
         adjDataFrame.to_csv(dictionary['matrixFile'])
+        
+        self.model_logger.info("trainLossFrame " + str(trainLossFrame))
+        self.model_logger.info("validationLossFrame " + str(validationLossFrame))
         
         # Now save the actual vs predicted results
         self.save_actual_vs_predicted(targets, predictions, 'all_stations', forecast_len)
         
     def save_actual_vs_predicted(self, Y_test, yhat, station,forecast_len):
-        self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file.')
         # Convert the lists to NumPy arrays if they are not already
         Y_test_array = np.array(Y_test)
         yhat_array = np.array(yhat)
 
-        self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file.')
         actual_vs_predicted_data = pd.DataFrame({
             'Actual': Y_test_array.flatten(),
             'Predicted': yhat_array.flatten()
@@ -152,6 +157,7 @@ class gwnExecute(modelExecute):
         actual_vs_predicted_file = f'Results/GWN/{forecast_len} Hour Forecast/Predictions/actual_vs_predicted.csv'
         actual_vs_predicted_file_path = f'Results/GWN/{forecast_len} Hour Forecast/Predictions/'
         os.makedirs(actual_vs_predicted_file_path, exist_ok=True)
+        self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file. : ' +actual_vs_predicted_file )
         actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=True)
         
         # Log all actual vs predicted values
@@ -176,6 +182,11 @@ class gwnExecute(modelExecute):
             'modelFile': 'Garage/Final Models/GWN/' + str(forecast_len) + ' Hour Models/model_split_' + str(k),
             'matrixFile': 'Results/GWN/' + str(forecast_len) + ' Hour Forecast/Matrices/adjacency_matrix_' + str(k) + '.csv'
         }
+        # Create the directories for each file
+        for key, file_path in fileDictionary.items():
+            dir_path = os.path.dirname(file_path)
+            os.makedirs(dir_path, exist_ok=True)
+
         return fileDictionary
 
     def prepare_data_split(self, increment, k):
