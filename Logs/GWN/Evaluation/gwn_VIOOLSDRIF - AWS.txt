@@ -4,3 +4,21 @@
 2023-08-12 23:52:47,314 - VIOOLSDRIF - AWS - INFO - GWN evaluation started atVIOOLSDRIF - AWS for the horizon of 6
 2023-08-12 23:52:47,316 - VIOOLSDRIF - AWS - ERROR - Error! : Unable to read data or write metrics for station VIOOLSDRIF - AWS and horizon length 6.
 2023-08-12 23:52:47,316 - VIOOLSDRIF - AWS - ERROR - Error! : Unable to read data or write metrics for station VIOOLSDRIF - AWS and horizon length 6.
+2023-08-13 00:44:40,848 - VIOOLSDRIF - AWS - INFO - GWN evaluation started atVIOOLSDRIF - AWS for the horizon of 3
+2023-08-13 00:44:40,848 - VIOOLSDRIF - AWS - ERROR - Error! : Unable to read data or write metrics for station VIOOLSDRIF - AWS and horizon length 3.
+2023-08-13 01:02:48,542 - VIOOLSDRIF - AWS - INFO - GWN evaluation started atVIOOLSDRIF - AWS for the horizon of 3
+2023-08-13 01:02:48,546 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,731 - VIOOLSDRIF - AWS - INFO - GWN evaluation started atVIOOLSDRIF - AWS for the horizon of 3
+2023-08-13 01:07:12,734 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,469 - VIOOLSDRIF - AWS - INFO - GWN evaluation started atVIOOLSDRIF - AWS for the horizon of 3
+2023-08-13 01:10:08,472 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,476 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,479 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,479 - VIOOLSDRIF - AWS - INFO - GWN evaluation started atVIOOLSDRIF - AWS for the horizon of 6
+2023-08-13 01:10:08,479 - VIOOLSDRIF - AWS - INFO - GWN evaluation started atVIOOLSDRIF - AWS for the horizon of 6
+2023-08-13 01:10:08,485 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,485 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,488 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,488 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,492 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,492 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.

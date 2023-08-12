@@ -4,3 +4,21 @@
 2023-08-12 23:52:47,331 - WILLOWMORE - INFO - GWN evaluation started atWILLOWMORE for the horizon of 6
 2023-08-12 23:52:47,334 - WILLOWMORE - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 6.
 2023-08-12 23:52:47,334 - WILLOWMORE - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 6.
+2023-08-13 00:44:40,850 - WILLOWMORE - INFO - GWN evaluation started atWILLOWMORE for the horizon of 3
+2023-08-13 00:44:40,851 - WILLOWMORE - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 3.
+2023-08-13 01:02:48,550 - WILLOWMORE - INFO - GWN evaluation started atWILLOWMORE for the horizon of 3
+2023-08-13 01:02:48,554 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,740 - WILLOWMORE - INFO - GWN evaluation started atWILLOWMORE for the horizon of 3
+2023-08-13 01:07:12,744 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,530 - WILLOWMORE - INFO - GWN evaluation started atWILLOWMORE for the horizon of 3
+2023-08-13 01:10:08,537 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,541 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,544 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,545 - WILLOWMORE - INFO - GWN evaluation started atWILLOWMORE for the horizon of 6
+2023-08-13 01:10:08,545 - WILLOWMORE - INFO - GWN evaluation started atWILLOWMORE for the horizon of 6
+2023-08-13 01:10:08,549 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,549 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,554 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,554 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,556 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,556 - WILLOWMORE - INFO - Finished computing evaluation error metrics.

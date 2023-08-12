@@ -4,3 +4,21 @@
 2023-08-12 23:52:47,250 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 6
 2023-08-12 23:52:47,254 - RIVERSDALE - ERROR - Error! : Unable to read data or write metrics for station RIVERSDALE and horizon length 6.
 2023-08-12 23:52:47,254 - RIVERSDALE - ERROR - Error! : Unable to read data or write metrics for station RIVERSDALE and horizon length 6.
+2023-08-13 00:44:40,832 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 3
+2023-08-13 00:44:40,833 - RIVERSDALE - ERROR - Error! : Unable to read data or write metrics for station RIVERSDALE and horizon length 3.
+2023-08-13 01:02:48,513 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 3
+2023-08-13 01:02:48,517 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,703 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 3
+2023-08-13 01:07:12,707 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,097 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 3
+2023-08-13 01:10:08,100 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,103 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,106 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,106 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 6
+2023-08-13 01:10:08,106 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 6
+2023-08-13 01:10:08,111 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,111 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,113 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,113 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,117 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,117 - RIVERSDALE - INFO - Finished computing evaluation error metrics.

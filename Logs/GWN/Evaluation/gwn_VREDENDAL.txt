@@ -4,3 +4,21 @@
 2023-08-12 23:52:47,324 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
 2023-08-12 23:52:47,326 - VREDENDAL - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 6.
 2023-08-12 23:52:47,326 - VREDENDAL - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 6.
+2023-08-13 00:44:40,849 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 00:44:40,850 - VREDENDAL - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 3.
+2023-08-13 01:02:48,546 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 01:02:48,549 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,735 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 01:07:12,739 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,494 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 01:10:08,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,503 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,506 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,507 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-13 01:10:08,507 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-13 01:10:08,514 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,514 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,522 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,522 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,529 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,529 - VREDENDAL - INFO - Finished computing evaluation error metrics.

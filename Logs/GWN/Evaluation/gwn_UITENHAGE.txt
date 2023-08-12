@@ -4,3 +4,21 @@
 2023-08-12 23:52:47,285 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
 2023-08-12 23:52:47,292 - UITENHAGE - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 6.
 2023-08-12 23:52:47,292 - UITENHAGE - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 6.
+2023-08-13 00:44:40,842 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-13 00:44:40,843 - UITENHAGE - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 3.
+2023-08-13 01:02:48,531 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-13 01:02:48,535 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,718 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-13 01:07:12,722 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,181 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-13 01:10:08,186 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,189 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,194 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,194 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-08-13 01:10:08,194 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-08-13 01:10:08,205 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,205 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,209 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,209 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,215 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,215 - UITENHAGE - INFO - Finished computing evaluation error metrics.

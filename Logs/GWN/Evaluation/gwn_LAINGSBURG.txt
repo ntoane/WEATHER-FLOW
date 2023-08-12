@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,937 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 6
 2023-08-12 23:52:46,941 - LAINGSBURG - ERROR - Error! : Unable to read data or write metrics for station LAINGSBURG and horizon length 6.
 2023-08-12 23:52:46,941 - LAINGSBURG - ERROR - Error! : Unable to read data or write metrics for station LAINGSBURG and horizon length 6.
+2023-08-13 00:44:40,799 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 3
+2023-08-13 00:44:40,801 - LAINGSBURG - ERROR - Error! : Unable to read data or write metrics for station LAINGSBURG and horizon length 3.
+2023-08-13 01:02:48,444 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 3
+2023-08-13 01:02:48,450 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,631 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 3
+2023-08-13 01:07:12,635 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,606 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 3
+2023-08-13 01:10:07,610 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,614 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,618 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,620 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 6
+2023-08-13 01:10:07,620 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 6
+2023-08-13 01:10:07,627 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,627 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,635 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,635 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,639 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,639 - LAINGSBURG - INFO - Finished computing evaluation error metrics.

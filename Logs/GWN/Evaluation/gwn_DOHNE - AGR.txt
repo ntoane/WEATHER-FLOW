@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,871 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 6
 2023-08-12 23:52:46,874 - DOHNE - AGR - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 6.
 2023-08-12 23:52:46,874 - DOHNE - AGR - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 6.
+2023-08-13 00:44:40,777 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 3
+2023-08-13 00:44:40,778 - DOHNE - AGR - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 3.
+2023-08-13 01:02:48,396 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 3
+2023-08-13 01:02:48,399 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,579 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 3
+2023-08-13 01:07:12,582 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,013 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 3
+2023-08-13 01:10:07,016 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,018 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,024 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,025 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 6
+2023-08-13 01:10:07,025 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 6
+2023-08-13 01:10:07,030 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,030 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,036 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,036 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,067 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,067 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.

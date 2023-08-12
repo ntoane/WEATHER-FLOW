@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,876 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 6
 2023-08-12 23:52:46,877 - EAST LONDON WO - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 6.
 2023-08-12 23:52:46,877 - EAST LONDON WO - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 6.
+2023-08-13 00:44:40,779 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 3
+2023-08-13 00:44:40,780 - EAST LONDON WO - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 3.
+2023-08-13 01:02:48,400 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 3
+2023-08-13 01:02:48,404 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,583 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 3
+2023-08-13 01:07:12,588 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,069 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 3
+2023-08-13 01:10:07,073 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,075 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,078 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,079 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 6
+2023-08-13 01:10:07,079 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 6
+2023-08-13 01:10:07,084 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,084 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,086 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,086 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,089 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,089 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.

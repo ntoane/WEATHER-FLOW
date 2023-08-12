@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,840 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 6
 2023-08-12 23:52:46,841 - BARKLY-OOS (CAERLEON) - ERROR - Error! : Unable to read data or write metrics for station BARKLY-OOS (CAERLEON) and horizon length 6.
 2023-08-12 23:52:46,841 - BARKLY-OOS (CAERLEON) - ERROR - Error! : Unable to read data or write metrics for station BARKLY-OOS (CAERLEON) and horizon length 6.
+2023-08-13 00:44:40,763 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 3
+2023-08-13 00:44:40,764 - BARKLY-OOS (CAERLEON) - ERROR - Error! : Unable to read data or write metrics for station BARKLY-OOS (CAERLEON) and horizon length 3.
+2023-08-13 01:02:48,376 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 3
+2023-08-13 01:02:48,378 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,561 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 3
+2023-08-13 01:07:12,563 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,518 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 3
+2023-08-13 01:10:06,523 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,526 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,530 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,531 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 6
+2023-08-13 01:10:06,531 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 6
+2023-08-13 01:10:06,538 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,538 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,542 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,542 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,548 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,548 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.

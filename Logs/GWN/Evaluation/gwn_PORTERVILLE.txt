@@ -4,3 +4,21 @@
 2023-08-12 23:52:47,185 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
 2023-08-12 23:52:47,196 - PORTERVILLE - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 6.
 2023-08-12 23:52:47,196 - PORTERVILLE - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 6.
+2023-08-13 00:44:40,827 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-13 00:44:40,829 - PORTERVILLE - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 3.
+2023-08-13 01:02:48,502 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-13 01:02:48,505 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,691 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-13 01:07:12,696 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,015 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-13 01:10:08,023 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,030 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,038 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,039 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-08-13 01:10:08,039 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-08-13 01:10:08,042 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,042 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,045 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,045 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,053 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,053 - PORTERVILLE - INFO - Finished computing evaluation error metrics.

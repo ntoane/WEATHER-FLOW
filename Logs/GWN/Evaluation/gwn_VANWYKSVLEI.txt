@@ -4,3 +4,21 @@
 2023-08-12 23:52:47,307 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 6
 2023-08-12 23:52:47,310 - VANWYKSVLEI - ERROR - Error! : Unable to read data or write metrics for station VANWYKSVLEI and horizon length 6.
 2023-08-12 23:52:47,310 - VANWYKSVLEI - ERROR - Error! : Unable to read data or write metrics for station VANWYKSVLEI and horizon length 6.
+2023-08-13 00:44:40,846 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 3
+2023-08-13 00:44:40,847 - VANWYKSVLEI - ERROR - Error! : Unable to read data or write metrics for station VANWYKSVLEI and horizon length 3.
+2023-08-13 01:02:48,539 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 3
+2023-08-13 01:02:48,542 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,727 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 3
+2023-08-13 01:07:12,730 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,246 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 3
+2023-08-13 01:10:08,370 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,373 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,376 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,377 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 6
+2023-08-13 01:10:08,377 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 6
+2023-08-13 01:10:08,411 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,411 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,458 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,458 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,468 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,468 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.

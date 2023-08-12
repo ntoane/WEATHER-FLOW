@@ -4,3 +4,27 @@
 2023-08-12 23:52:46,825 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 6
 2023-08-12 23:52:46,826 - ADDO ELEPHANT PARK - ERROR - Error! : Unable to read data or write metrics for station ADDO ELEPHANT PARK and horizon length 6.
 2023-08-12 23:52:46,826 - ADDO ELEPHANT PARK - ERROR - Error! : Unable to read data or write metrics for station ADDO ELEPHANT PARK and horizon length 6.
+2023-08-13 00:44:40,756 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 3
+2023-08-13 00:44:40,759 - ADDO ELEPHANT PARK - ERROR - Error! : Unable to read data or write metrics for station ADDO ELEPHANT PARK and horizon length 3.
+2023-08-13 00:45:34,163 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 3
+2023-08-13 00:46:32,775 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 3
+2023-08-13 00:51:24,061 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 3
+2023-08-13 00:55:53,994 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 3
+2023-08-13 01:00:02,381 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 3
+2023-08-13 01:02:03,823 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 3
+2023-08-13 01:02:48,364 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 3
+2023-08-13 01:02:48,367 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,549 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 3
+2023-08-13 01:07:12,552 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,445 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 3
+2023-08-13 01:10:06,449 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,452 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,457 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,457 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 6
+2023-08-13 01:10:06,457 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 6
+2023-08-13 01:10:06,462 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,462 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,467 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,467 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,470 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,470 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.

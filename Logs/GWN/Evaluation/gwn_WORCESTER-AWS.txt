@@ -6,3 +6,26 @@
 2023-08-12 23:52:47,347 - WORCESTER-AWS - ERROR - Error! : Unable to read data or write metrics for station WORCESTER-AWS and horizon length 6.
 2023-08-12 23:52:47,347 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
 2023-08-12 23:52:47,347 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
+2023-08-13 00:44:40,853 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 3
+2023-08-13 00:44:40,856 - WORCESTER-AWS - ERROR - Error! : Unable to read data or write metrics for station WORCESTER-AWS and horizon length 3.
+2023-08-13 00:44:40,857 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
+2023-08-13 01:02:48,554 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 3
+2023-08-13 01:02:48,557 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:02:48,557 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
+2023-08-13 01:07:12,745 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 3
+2023-08-13 01:07:12,747 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,748 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
+2023-08-13 01:10:08,557 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 3
+2023-08-13 01:10:08,560 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,565 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,569 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,570 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 6
+2023-08-13 01:10:08,570 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 6
+2023-08-13 01:10:08,573 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,573 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,577 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,577 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,583 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,583 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,585 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
+2023-08-13 01:10:08,585 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.

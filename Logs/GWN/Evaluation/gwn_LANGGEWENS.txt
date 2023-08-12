@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,944 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
 2023-08-12 23:52:46,946 - LANGGEWENS - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 6.
 2023-08-12 23:52:46,946 - LANGGEWENS - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 6.
+2023-08-13 00:44:40,801 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 00:44:40,804 - LANGGEWENS - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 3.
+2023-08-13 01:02:48,451 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 01:02:48,455 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,635 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 01:07:12,639 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,640 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 01:10:07,644 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,648 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,653 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,654 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-08-13 01:10:07,654 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-08-13 01:10:07,659 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,659 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,663 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,663 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,669 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,669 - LANGGEWENS - INFO - Finished computing evaluation error metrics.

@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,924 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 6
 2023-08-12 23:52:46,927 - KOINGNAAS - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 6.
 2023-08-12 23:52:46,927 - KOINGNAAS - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 6.
+2023-08-13 00:44:40,797 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 3
+2023-08-13 00:44:40,797 - KOINGNAAS - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 3.
+2023-08-13 01:02:48,437 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 3
+2023-08-13 01:02:48,439 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,623 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 3
+2023-08-13 01:07:12,627 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,543 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 3
+2023-08-13 01:10:07,549 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,553 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,556 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,558 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 6
+2023-08-13 01:10:07,558 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 6
+2023-08-13 01:10:07,565 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,565 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,568 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,568 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,572 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,572 - KOINGNAAS - INFO - Finished computing evaluation error metrics.

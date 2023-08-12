@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,929 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 6
 2023-08-12 23:52:46,931 - LADISMITH - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 6.
 2023-08-12 23:52:46,931 - LADISMITH - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 6.
+2023-08-13 00:44:40,798 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 3
+2023-08-13 00:44:40,799 - LADISMITH - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 3.
+2023-08-13 01:02:48,440 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 3
+2023-08-13 01:02:48,443 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,628 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 3
+2023-08-13 01:07:12,630 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,573 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 3
+2023-08-13 01:10:07,577 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,582 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,586 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,586 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 6
+2023-08-13 01:10:07,586 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 6
+2023-08-13 01:10:07,596 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,596 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,600 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,600 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,604 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,604 - LADISMITH - INFO - Finished computing evaluation error metrics.

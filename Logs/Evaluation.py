@@ -86,7 +86,7 @@ def GwnEval(gwnConfig, sharedConfig):
         # Iterate over each forecasting horizon
         s = s + 1
         for horizon in horizons:
-            try:
+            # try:
                 pred = []
                 real = []
                 gwn_logger = modelLogger('gwn', station,'Logs/GWN/Evaluation/'+'gwn_' + station +'.txt', log_enabled=True)  
@@ -101,9 +101,9 @@ def GwnEval(gwnConfig, sharedConfig):
                     metric_file = paths['metric_file']
                     
                     # Calculate actual vs predicted and metrics using the calculate_gwn_metrics function
-                    actual_vs_predicted, metrics = calculate_gwn_metrics(paths, sharedConfig, gwnConfig, s)
+                    metrics = calculate_gwn_metrics(pred, real, paths, sharedConfig, gwnConfig, s)
                     # Save to a text file
-                    actual_vs_predicted.to_csv(paths['actual_vs_predicted_file'], index=False)
+                    # actual_vs_predicted.to_csv(paths['actual_vs_predicted_file'], index=False)
                     
                     # Open metric_file for writing
                     with open(metric_file, 'w') as file:
@@ -113,18 +113,18 @@ def GwnEval(gwnConfig, sharedConfig):
                         for name, value in metrics.items():
                             file.write(f'This is the {name}: {value}\n')
                         gwn_logger.info('Finished computing evaluation error metrics.')
-            except Exception as e:
-                print('Error! : Unable to read data or write metrics for station {} and forecast length {}.'.format(station, horizon),e)
-                gwn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
+            # except Exception as e:
+            #     print('Error! : Unable to read data or write metrics for station {} and forecast length {}.'.format(station, horizon),e)
+            #     gwn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
     gwn_logger.info('Finished evaluation of GWN error metrics for all stations.')
 
 
-def calculate_gwn_metrics(paths, sharedConfig, gwnConfig, s):
+def calculate_gwn_metrics(pred, real, paths, sharedConfig, gwnConfig, s):
     # Read the predictions and targets from the CSV files
     preds = pd.read_pickle(paths['results_file'])
     targets = pd.read_pickle(paths['targets_file'])
     # Create a DataFrame of actual vs predicted values
-    actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
+    # actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
     
     yhat = utils.load_pickle(paths['results_file'])
     target = utils.load_pickle(paths['targets_file'])
@@ -138,13 +138,13 @@ def calculate_gwn_metrics(paths, sharedConfig, gwnConfig, s):
                                     sharedConfig['n_stations']['default'],
                                     gwnConfig['seq_length']['default']))
     # Calculate metrics
-    metrics = {}
-    metrics['root'] = metrics.rmse(real[:, s, :], pred[:, s, :])
-    metrics['square'] = metrics.mse(real[:, s, :], pred[:, s, :])
-    metrics['abs_val'] = metrics.mae(real[:, s, :], pred[:, s, :])
-    metrics['ape'] = metrics.smape(real[:, s, :], pred[:, s, :])
+    metricsDict = {}
+    metricsDict['rmse'] =  metrics.rmse(real[:, s, :], pred[:, s, :])
+    metricsDict['mse'] = metrics.mse(real[:, s, :], pred[:, s, :])
+    metricsDict['mae'] = metrics.mae(real[:, s, :], pred[:, s, :])
+    metricsDict['smape'] = metrics.smape(real[:, s, :], pred[:, s, :])
     
-    return actual_vs_predicted, metrics
+    return metricsDict
 
     
 def print_metrics(metrics, station, horizon):
@@ -172,7 +172,7 @@ def get_gwn_file_paths(station, horizon, split,model='GWN'):
     return {        
         "results_file" : f'Results/{model}/{folder_name}/Predictions/outputs_{split}.pkl',
         "targets_file" : f'Results/{model}/{folder_name}/Targets/targets_{split}.pkl',
-        "metric_file" : f'Results/{model}/{folder_name}/Metrics/{station_with_spaces}/metrics_{split}.txt',
+        "metric_file" : f'Results/{model}/{folder_name}/{station_with_spaces}/metrics/metrics_{split}.txt',
         "actual_vs_predicted_file" : f'Results/{model}/{folder_name}/{station_with_spaces}/Metrics/actual_vs_predicted.txt'
     }
         

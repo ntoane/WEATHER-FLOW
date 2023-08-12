@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,846 - BRANDVLEI - INFO - GWN evaluation started atBRANDVLEI for the horizon of 6
 2023-08-12 23:52:46,850 - BRANDVLEI - ERROR - Error! : Unable to read data or write metrics for station BRANDVLEI and horizon length 6.
 2023-08-12 23:52:46,850 - BRANDVLEI - ERROR - Error! : Unable to read data or write metrics for station BRANDVLEI and horizon length 6.
+2023-08-13 00:44:40,764 - BRANDVLEI - INFO - GWN evaluation started atBRANDVLEI for the horizon of 3
+2023-08-13 00:44:40,768 - BRANDVLEI - ERROR - Error! : Unable to read data or write metrics for station BRANDVLEI and horizon length 3.
+2023-08-13 01:02:48,379 - BRANDVLEI - INFO - GWN evaluation started atBRANDVLEI for the horizon of 3
+2023-08-13 01:02:48,382 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,564 - BRANDVLEI - INFO - GWN evaluation started atBRANDVLEI for the horizon of 3
+2023-08-13 01:07:12,566 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,548 - BRANDVLEI - INFO - GWN evaluation started atBRANDVLEI for the horizon of 3
+2023-08-13 01:10:06,552 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,556 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,559 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,559 - BRANDVLEI - INFO - GWN evaluation started atBRANDVLEI for the horizon of 6
+2023-08-13 01:10:06,559 - BRANDVLEI - INFO - GWN evaluation started atBRANDVLEI for the horizon of 6
+2023-08-13 01:10:06,583 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,583 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,623 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,623 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,646 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,646 - BRANDVLEI - INFO - Finished computing evaluation error metrics.

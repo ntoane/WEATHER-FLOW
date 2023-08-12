@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,835 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 6
 2023-08-12 23:52:46,837 - ALIWAL-NORTH PLAATKOP - ERROR - Error! : Unable to read data or write metrics for station ALIWAL-NORTH PLAATKOP and horizon length 6.
 2023-08-12 23:52:46,837 - ALIWAL-NORTH PLAATKOP - ERROR - Error! : Unable to read data or write metrics for station ALIWAL-NORTH PLAATKOP and horizon length 6.
+2023-08-13 00:44:40,761 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 3
+2023-08-13 00:44:40,762 - ALIWAL-NORTH PLAATKOP - ERROR - Error! : Unable to read data or write metrics for station ALIWAL-NORTH PLAATKOP and horizon length 3.
+2023-08-13 01:02:48,372 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 3
+2023-08-13 01:02:48,375 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,557 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 3
+2023-08-13 01:07:12,560 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,493 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 3
+2023-08-13 01:10:06,496 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,500 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,503 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,504 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 6
+2023-08-13 01:10:06,504 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 6
+2023-08-13 01:10:06,510 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,510 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,513 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,513 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,517 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,517 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.

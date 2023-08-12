@@ -4,3 +4,21 @@
 2023-08-12 23:52:47,261 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
 2023-08-12 23:52:47,263 - SOMERSET EAST - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 6.
 2023-08-12 23:52:47,263 - SOMERSET EAST - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 6.
+2023-08-13 00:44:40,833 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-08-13 00:44:40,835 - SOMERSET EAST - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 3.
+2023-08-13 01:02:48,518 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-08-13 01:02:48,521 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,708 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-08-13 01:07:12,711 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,118 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-08-13 01:10:08,121 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,125 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,128 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,128 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-08-13 01:10:08,128 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-08-13 01:10:08,132 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,132 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,135 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,135 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,138 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,138 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.

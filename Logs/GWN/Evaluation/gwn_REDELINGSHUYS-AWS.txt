@@ -4,3 +4,21 @@
 2023-08-12 23:52:47,227 - REDELINGSHUYS-AWS - INFO - GWN evaluation started atREDELINGSHUYS-AWS for the horizon of 6
 2023-08-12 23:52:47,245 - REDELINGSHUYS-AWS - ERROR - Error! : Unable to read data or write metrics for station REDELINGSHUYS-AWS and horizon length 6.
 2023-08-12 23:52:47,245 - REDELINGSHUYS-AWS - ERROR - Error! : Unable to read data or write metrics for station REDELINGSHUYS-AWS and horizon length 6.
+2023-08-13 00:44:40,830 - REDELINGSHUYS-AWS - INFO - GWN evaluation started atREDELINGSHUYS-AWS for the horizon of 3
+2023-08-13 00:44:40,831 - REDELINGSHUYS-AWS - ERROR - Error! : Unable to read data or write metrics for station REDELINGSHUYS-AWS and horizon length 3.
+2023-08-13 01:02:48,508 - REDELINGSHUYS-AWS - INFO - GWN evaluation started atREDELINGSHUYS-AWS for the horizon of 3
+2023-08-13 01:02:48,513 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,699 - REDELINGSHUYS-AWS - INFO - GWN evaluation started atREDELINGSHUYS-AWS for the horizon of 3
+2023-08-13 01:07:12,702 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,076 - REDELINGSHUYS-AWS - INFO - GWN evaluation started atREDELINGSHUYS-AWS for the horizon of 3
+2023-08-13 01:10:08,078 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,082 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,085 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,086 - REDELINGSHUYS-AWS - INFO - GWN evaluation started atREDELINGSHUYS-AWS for the horizon of 6
+2023-08-13 01:10:08,086 - REDELINGSHUYS-AWS - INFO - GWN evaluation started atREDELINGSHUYS-AWS for the horizon of 6
+2023-08-13 01:10:08,089 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,089 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,091 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,091 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,096 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,096 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.

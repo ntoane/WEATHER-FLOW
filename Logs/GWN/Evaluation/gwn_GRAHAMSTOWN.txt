@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,919 - GRAHAMSTOWN - INFO - GWN evaluation started atGRAHAMSTOWN for the horizon of 6
 2023-08-12 23:52:46,921 - GRAHAMSTOWN - ERROR - Error! : Unable to read data or write metrics for station GRAHAMSTOWN and horizon length 6.
 2023-08-12 23:52:46,921 - GRAHAMSTOWN - ERROR - Error! : Unable to read data or write metrics for station GRAHAMSTOWN and horizon length 6.
+2023-08-13 00:44:40,795 - GRAHAMSTOWN - INFO - GWN evaluation started atGRAHAMSTOWN for the horizon of 3
+2023-08-13 00:44:40,796 - GRAHAMSTOWN - ERROR - Error! : Unable to read data or write metrics for station GRAHAMSTOWN and horizon length 3.
+2023-08-13 01:02:48,432 - GRAHAMSTOWN - INFO - GWN evaluation started atGRAHAMSTOWN for the horizon of 3
+2023-08-13 01:02:48,437 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,618 - GRAHAMSTOWN - INFO - GWN evaluation started atGRAHAMSTOWN for the horizon of 3
+2023-08-13 01:07:12,622 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,504 - GRAHAMSTOWN - INFO - GWN evaluation started atGRAHAMSTOWN for the horizon of 3
+2023-08-13 01:10:07,513 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,521 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,525 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,526 - GRAHAMSTOWN - INFO - GWN evaluation started atGRAHAMSTOWN for the horizon of 6
+2023-08-13 01:10:07,526 - GRAHAMSTOWN - INFO - GWN evaluation started atGRAHAMSTOWN for the horizon of 6
+2023-08-13 01:10:07,531 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,531 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,535 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,535 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,539 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,539 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.

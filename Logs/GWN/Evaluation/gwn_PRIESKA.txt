@@ -4,3 +4,21 @@
 2023-08-12 23:52:47,215 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
 2023-08-12 23:52:47,224 - PRIESKA - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 6.
 2023-08-12 23:52:47,224 - PRIESKA - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 6.
+2023-08-13 00:44:40,829 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 00:44:40,830 - PRIESKA - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 3.
+2023-08-13 01:02:48,505 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 01:02:48,507 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,696 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 01:07:12,698 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,054 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 01:10:08,057 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,060 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,063 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,064 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-08-13 01:10:08,064 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-08-13 01:10:08,069 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,069 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,073 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,073 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,076 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,076 - PRIESKA - INFO - Finished computing evaluation error metrics.

@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,906 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 6
 2023-08-12 23:52:46,907 - GEORGE WO - ERROR - Error! : Unable to read data or write metrics for station GEORGE WO and horizon length 6.
 2023-08-12 23:52:46,907 - GEORGE WO - ERROR - Error! : Unable to read data or write metrics for station GEORGE WO and horizon length 6.
+2023-08-13 00:44:40,791 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 3
+2023-08-13 00:44:40,792 - GEORGE WO - ERROR - Error! : Unable to read data or write metrics for station GEORGE WO and horizon length 3.
+2023-08-13 01:02:48,423 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 3
+2023-08-13 01:02:48,427 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,609 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 3
+2023-08-13 01:07:12,613 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,349 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 3
+2023-08-13 01:10:07,352 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,355 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,360 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,362 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 6
+2023-08-13 01:10:07,362 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 6
+2023-08-13 01:10:07,372 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,372 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,425 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,425 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,442 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,442 - GEORGE WO - INFO - Finished computing evaluation error metrics.

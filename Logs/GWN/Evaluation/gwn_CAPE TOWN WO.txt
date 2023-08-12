@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,860 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 6
 2023-08-12 23:52:46,862 - CAPE TOWN WO - ERROR - Error! : Unable to read data or write metrics for station CAPE TOWN WO and horizon length 6.
 2023-08-12 23:52:46,862 - CAPE TOWN WO - ERROR - Error! : Unable to read data or write metrics for station CAPE TOWN WO and horizon length 6.
+2023-08-13 00:44:40,771 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 3
+2023-08-13 00:44:40,772 - CAPE TOWN WO - ERROR - Error! : Unable to read data or write metrics for station CAPE TOWN WO and horizon length 3.
+2023-08-13 01:02:48,387 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 3
+2023-08-13 01:02:48,390 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,571 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 3
+2023-08-13 01:07:12,575 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,678 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 3
+2023-08-13 01:10:06,683 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,704 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,801 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,805 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 6
+2023-08-13 01:10:06,805 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 6
+2023-08-13 01:10:06,975 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,975 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,981 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,981 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,985 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,985 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.

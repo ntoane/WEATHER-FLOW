@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,992 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
 2023-08-12 23:52:46,995 - PATENSIE - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 6.
 2023-08-12 23:52:46,995 - PATENSIE - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 6.
+2023-08-13 00:44:40,813 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 00:44:40,814 - PATENSIE - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 3.
+2023-08-13 01:02:48,474 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 01:02:48,477 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,662 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 01:07:12,665 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,801 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 01:10:07,805 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,808 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,811 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,812 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-08-13 01:10:07,812 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-08-13 01:10:07,825 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,825 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,827 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,827 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,830 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,830 - PATENSIE - INFO - Finished computing evaluation error metrics.

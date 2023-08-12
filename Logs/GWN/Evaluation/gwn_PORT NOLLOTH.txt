@@ -4,3 +4,21 @@
 2023-08-12 23:52:47,151 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 6
 2023-08-12 23:52:47,158 - PORT NOLLOTH - ERROR - Error! : Unable to read data or write metrics for station PORT NOLLOTH and horizon length 6.
 2023-08-12 23:52:47,158 - PORT NOLLOTH - ERROR - Error! : Unable to read data or write metrics for station PORT NOLLOTH and horizon length 6.
+2023-08-13 00:44:40,825 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 3
+2023-08-13 00:44:40,827 - PORT NOLLOTH - ERROR - Error! : Unable to read data or write metrics for station PORT NOLLOTH and horizon length 3.
+2023-08-13 01:02:48,497 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 3
+2023-08-13 01:02:48,500 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,687 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 3
+2023-08-13 01:07:12,690 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,975 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 3
+2023-08-13 01:10:07,980 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,992 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,996 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,998 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 6
+2023-08-13 01:10:07,998 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 6
+2023-08-13 01:10:08,005 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,005 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,010 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,010 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,014 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,014 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.

@@ -4,3 +4,21 @@
 2023-08-12 23:52:46,899 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 6
 2023-08-12 23:52:46,900 - GEORGE WITFONTEIN - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 6.
 2023-08-12 23:52:46,900 - GEORGE WITFONTEIN - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 6.
+2023-08-13 00:44:40,788 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 3
+2023-08-13 00:44:40,790 - GEORGE WITFONTEIN - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 3.
+2023-08-13 01:02:48,419 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 3
+2023-08-13 01:02:48,423 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,603 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 3
+2023-08-13 01:07:12,607 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,189 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 3
+2023-08-13 01:10:07,327 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,332 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,334 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,337 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 6
+2023-08-13 01:10:07,337 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 6
+2023-08-13 01:10:07,342 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,342 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,344 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,344 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,347 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,347 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
