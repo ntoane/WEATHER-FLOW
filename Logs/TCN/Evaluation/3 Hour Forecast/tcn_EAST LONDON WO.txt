@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,173 - EAST LONDON WO - INFO - TCN evaluation started atEAST LONDON WO for the horizon of 3
+2023-08-13 00:19:40,197 - EAST LONDON WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.547009   2.183685
+1    0.470085  -6.047023
+2    0.410256  -2.576085
+3    0.247863   2.422546
+4    0.282051  -6.398709
+..        ...        ...
+142  0.290598  -6.213296
+143  0.376068  -2.231669
+144  0.256410   1.760517
+145  0.222222  -6.153947
+146  0.222222  -2.324626
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,197 - EAST LONDON WO - INFO - saved to file :Results/TCN/3 Hour Forecast/EAST LONDON WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,198 - EAST LONDON WO - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 3.
+2023-08-13 00:23:06,551 - EAST LONDON WO - INFO - TCN evaluation started atEAST LONDON WO for the horizon of 3
+2023-08-13 00:23:06,568 - EAST LONDON WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.547009   2.183685
+1    0.470085  -6.047023
+2    0.410256  -2.576085
+3    0.247863   2.422546
+4    0.282051  -6.398709
+..        ...        ...
+142  0.290598  -6.213296
+143  0.376068  -2.231669
+144  0.256410   1.760517
+145  0.222222  -6.153947
+146  0.222222  -2.324626
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,568 - EAST LONDON WO - INFO - saved to file :Results/TCN/3 Hour Forecast/EAST LONDON WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,570 - EAST LONDON WO - INFO - This is the mse: 18.2353520017354
+
+2023-08-13 00:23:06,570 - EAST LONDON WO - INFO - This is the rmse: 4.270287109988671
+
+2023-08-13 00:23:06,570 - EAST LONDON WO - INFO - This is the mae: 3.6185279265300316
+
+2023-08-13 00:23:06,570 - EAST LONDON WO - INFO - This is the smape: 182.77834436047647
+
+2023-08-13 00:23:06,570 - EAST LONDON WO - INFO - This is the smape_std_dev: 26.76285345640986
+
+2023-08-13 00:23:06,570 - EAST LONDON WO - INFO - TCN evaluation of EAST LONDON WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,014 - EAST LONDON WO - INFO - TCN evaluation started atEAST LONDON WO for the horizon of 3
+2023-08-13 00:34:27,037 - EAST LONDON WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.547009   2.183685
+1    0.470085  -6.047023
+2    0.410256  -2.576085
+3    0.247863   2.422546
+4    0.282051  -6.398709
+..        ...        ...
+142  0.290598  -6.213296
+143  0.376068  -2.231669
+144  0.256410   1.760517
+145  0.222222  -6.153947
+146  0.222222  -2.324626
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,037 - EAST LONDON WO - INFO - saved to file :Results/TCN/3 Hour Forecast/EAST LONDON WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,038 - EAST LONDON WO - INFO - This is the mse: 18.2353520017354
+
+2023-08-13 00:34:27,038 - EAST LONDON WO - INFO - This is the rmse: 4.270287109988671
+
+2023-08-13 00:34:27,039 - EAST LONDON WO - INFO - This is the mae: 3.6185279265300316
+
+2023-08-13 00:34:27,039 - EAST LONDON WO - INFO - This is the smape: 182.77834436047647
+
+2023-08-13 00:34:27,039 - EAST LONDON WO - INFO - This is the smape_std_dev: 26.76285345640986
+
+2023-08-13 00:34:27,039 - EAST LONDON WO - INFO - TCN evaluation of EAST LONDON WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:40:59,826 - EAST LONDON WO - INFO - TCN evaluation started atEAST LONDON WO for the horizon of 3
+2023-08-13 00:40:59,845 - EAST LONDON WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.547009   2.183685
+1    0.470085  -6.047023
+2    0.410256  -2.576085
+3    0.247863   2.422546
+4    0.282051  -6.398709
+..        ...        ...
+142  0.290598  -6.213296
+143  0.376068  -2.231669
+144  0.256410   1.760517
+145  0.222222  -6.153947
+146  0.222222  -2.324626
+
+[147 rows x 2 columns]
+2023-08-13 00:40:59,845 - EAST LONDON WO - INFO - saved to file :Results/TCN/3 Hour Forecast/EAST LONDON WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:40:59,847 - EAST LONDON WO - INFO - This is the mse: 18.2353520017354
+
+2023-08-13 00:40:59,847 - EAST LONDON WO - INFO - This is the rmse: 4.270287109988671
+
+2023-08-13 00:40:59,847 - EAST LONDON WO - INFO - This is the mae: 3.6185279265300316
+
+2023-08-13 00:40:59,848 - EAST LONDON WO - INFO - This is the smape: 182.77834436047647
+
+2023-08-13 00:40:59,848 - EAST LONDON WO - INFO - This is the smape_std_dev: 26.76285345640986
+
+2023-08-13 00:40:59,848 - EAST LONDON WO - INFO - TCN evaluation of EAST LONDON WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

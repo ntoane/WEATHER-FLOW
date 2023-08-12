@@ -1,0 +1,6 @@
+2023-08-12 23:52:46,868 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 3
+2023-08-12 23:52:46,871 - DOHNE - AGR - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 3.
+2023-08-12 23:52:46,871 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 6
+2023-08-12 23:52:46,871 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 6
+2023-08-12 23:52:46,874 - DOHNE - AGR - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 6.
+2023-08-12 23:52:46,874 - DOHNE - AGR - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 6.

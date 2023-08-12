@@ -135,7 +135,7 @@ class gwnExecute(modelExecute):
         self.model_logger.info("validationLossFrame " + str(validationLossFrame))
         
         # Now save the actual vs predicted results
-        self.save_actual_vs_predicted(targets, predictions, 'all_stations', forecast_len)
+        # self.save_actual_vs_predicted(targets, predictions, 'all_stations', forecast_len)
         
     def save_actual_vs_predicted(self, Y_test, yhat, station,forecast_len):
         # Convert the lists to NumPy arrays if they are not already

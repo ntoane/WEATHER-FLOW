@@ -1,0 +1,6 @@
+2023-08-12 23:52:46,883 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-08-12 23:52:46,886 - FORT BEAUFORT - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 3.
+2023-08-12 23:52:46,887 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-08-12 23:52:46,887 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-08-12 23:52:46,890 - FORT BEAUFORT - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 6.
+2023-08-12 23:52:46,890 - FORT BEAUFORT - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 6.

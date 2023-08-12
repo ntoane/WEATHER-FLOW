@@ -1,0 +1,98 @@
+2023-08-13 00:19:39,848 - BRANDVLEI - INFO - TCN evaluation started atBRANDVLEI for the horizon of 3
+2023-08-13 00:19:39,866 - BRANDVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    1.056410   3.310223
+1    1.061538   5.038653
+2    1.000000   3.196513
+3    0.723077   2.683926
+4    0.815385   5.412861
+..        ...        ...
+142  0.487179   6.279405
+143  0.605128   3.398386
+144  0.312821   3.483131
+145  0.261538   6.213344
+146  0.261538   3.453443
+
+[147 rows x 2 columns]
+2023-08-13 00:19:39,867 - BRANDVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/BRANDVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:39,869 - BRANDVLEI - ERROR - Error! : Unable to read data or write metrics for station BRANDVLEI and horizon length 3.
+2023-08-13 00:23:06,359 - BRANDVLEI - INFO - TCN evaluation started atBRANDVLEI for the horizon of 3
+2023-08-13 00:23:06,374 - BRANDVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    1.056410   3.310223
+1    1.061538   5.038653
+2    1.000000   3.196513
+3    0.723077   2.683926
+4    0.815385   5.412861
+..        ...        ...
+142  0.487179   6.279405
+143  0.605128   3.398386
+144  0.312821   3.483131
+145  0.261538   6.213344
+146  0.261538   3.453443
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,374 - BRANDVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/BRANDVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,376 - BRANDVLEI - INFO - This is the mse: 12.59535287824003
+
+2023-08-13 00:23:06,376 - BRANDVLEI - INFO - This is the rmse: 3.5489932203711
+
+2023-08-13 00:23:06,376 - BRANDVLEI - INFO - This is the mae: 3.3294515918018495
+
+2023-08-13 00:23:06,376 - BRANDVLEI - INFO - This is the smape: 141.9284758724549
+
+2023-08-13 00:23:06,376 - BRANDVLEI - INFO - This is the smape_std_dev: 23.295305307304137
+
+2023-08-13 00:23:06,376 - BRANDVLEI - INFO - TCN evaluation of BRANDVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:26,727 - BRANDVLEI - INFO - TCN evaluation started atBRANDVLEI for the horizon of 3
+2023-08-13 00:34:26,742 - BRANDVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    1.056410   3.310223
+1    1.061538   5.038653
+2    1.000000   3.196513
+3    0.723077   2.683926
+4    0.815385   5.412861
+..        ...        ...
+142  0.487179   6.279405
+143  0.605128   3.398386
+144  0.312821   3.483131
+145  0.261538   6.213344
+146  0.261538   3.453443
+
+[147 rows x 2 columns]
+2023-08-13 00:34:26,742 - BRANDVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/BRANDVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:26,744 - BRANDVLEI - INFO - This is the mse: 12.59535287824003
+
+2023-08-13 00:34:26,744 - BRANDVLEI - INFO - This is the rmse: 3.5489932203711
+
+2023-08-13 00:34:26,744 - BRANDVLEI - INFO - This is the mae: 3.3294515918018495
+
+2023-08-13 00:34:26,744 - BRANDVLEI - INFO - This is the smape: 141.9284758724549
+
+2023-08-13 00:34:26,745 - BRANDVLEI - INFO - This is the smape_std_dev: 23.295305307304137
+
+2023-08-13 00:34:26,745 - BRANDVLEI - INFO - TCN evaluation of BRANDVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:40:59,625 - BRANDVLEI - INFO - TCN evaluation started atBRANDVLEI for the horizon of 3
+2023-08-13 00:40:59,638 - BRANDVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    1.056410   3.310223
+1    1.061538   5.038653
+2    1.000000   3.196513
+3    0.723077   2.683926
+4    0.815385   5.412861
+..        ...        ...
+142  0.487179   6.279405
+143  0.605128   3.398386
+144  0.312821   3.483131
+145  0.261538   6.213344
+146  0.261538   3.453443
+
+[147 rows x 2 columns]
+2023-08-13 00:40:59,638 - BRANDVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/BRANDVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 00:40:59,640 - BRANDVLEI - INFO - This is the mse: 12.59535287824003
+
+2023-08-13 00:40:59,640 - BRANDVLEI - INFO - This is the rmse: 3.5489932203711
+
+2023-08-13 00:40:59,640 - BRANDVLEI - INFO - This is the mae: 3.3294515918018495
+
+2023-08-13 00:40:59,641 - BRANDVLEI - INFO - This is the smape: 141.9284758724549
+
+2023-08-13 00:40:59,641 - BRANDVLEI - INFO - This is the smape_std_dev: 23.295305307304137
+
+2023-08-13 00:40:59,642 - BRANDVLEI - INFO - TCN evaluation of BRANDVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

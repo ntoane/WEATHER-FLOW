@@ -1,0 +1,98 @@
+2023-08-13 00:19:39,893 - CAPE TOWN WO - INFO - TCN evaluation started atCAPE TOWN WO for the horizon of 3
+2023-08-13 00:19:39,916 - CAPE TOWN WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.677632   5.082209
+1    0.697368 -12.103186
+2    0.664474   3.233361
+3    0.493421   5.061248
+4    0.519737 -12.082909
+..        ...        ...
+142  0.500000 -12.104593
+143  0.710526   3.242480
+144  0.276316   5.067620
+145  0.276316 -12.093508
+146  0.256579   3.246006
+
+[147 rows x 2 columns]
+2023-08-13 00:19:39,916 - CAPE TOWN WO - INFO - saved to file :Results/TCN/3 Hour Forecast/CAPE TOWN WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:39,919 - CAPE TOWN WO - ERROR - Error! : Unable to read data or write metrics for station CAPE TOWN WO and horizon length 3.
+2023-08-13 00:23:06,401 - CAPE TOWN WO - INFO - TCN evaluation started atCAPE TOWN WO for the horizon of 3
+2023-08-13 00:23:06,416 - CAPE TOWN WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.677632   5.082209
+1    0.697368 -12.103186
+2    0.664474   3.233361
+3    0.493421   5.061248
+4    0.519737 -12.082909
+..        ...        ...
+142  0.500000 -12.104593
+143  0.710526   3.242480
+144  0.276316   5.067620
+145  0.276316 -12.093508
+146  0.256579   3.246006
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,416 - CAPE TOWN WO - INFO - saved to file :Results/TCN/3 Hour Forecast/CAPE TOWN WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,418 - CAPE TOWN WO - INFO - This is the mse: 62.19421880157312
+
+2023-08-13 00:23:06,418 - CAPE TOWN WO - INFO - This is the rmse: 7.886331136946579
+
+2023-08-13 00:23:06,418 - CAPE TOWN WO - INFO - This is the mae: 6.662714636161833
+
+2023-08-13 00:23:06,418 - CAPE TOWN WO - INFO - This is the smape: 173.89350980956527
+
+2023-08-13 00:23:06,418 - CAPE TOWN WO - INFO - This is the smape_std_dev: 21.96033508076118
+
+2023-08-13 00:23:06,418 - CAPE TOWN WO - INFO - TCN evaluation of CAPE TOWN WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:26,760 - CAPE TOWN WO - INFO - TCN evaluation started atCAPE TOWN WO for the horizon of 3
+2023-08-13 00:34:26,797 - CAPE TOWN WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.677632   5.082209
+1    0.697368 -12.103186
+2    0.664474   3.233361
+3    0.493421   5.061248
+4    0.519737 -12.082909
+..        ...        ...
+142  0.500000 -12.104593
+143  0.710526   3.242480
+144  0.276316   5.067620
+145  0.276316 -12.093508
+146  0.256579   3.246006
+
+[147 rows x 2 columns]
+2023-08-13 00:34:26,799 - CAPE TOWN WO - INFO - saved to file :Results/TCN/3 Hour Forecast/CAPE TOWN WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:26,801 - CAPE TOWN WO - INFO - This is the mse: 62.19421880157312
+
+2023-08-13 00:34:26,801 - CAPE TOWN WO - INFO - This is the rmse: 7.886331136946579
+
+2023-08-13 00:34:26,801 - CAPE TOWN WO - INFO - This is the mae: 6.662714636161833
+
+2023-08-13 00:34:26,801 - CAPE TOWN WO - INFO - This is the smape: 173.89350980956527
+
+2023-08-13 00:34:26,802 - CAPE TOWN WO - INFO - This is the smape_std_dev: 21.96033508076118
+
+2023-08-13 00:34:26,802 - CAPE TOWN WO - INFO - TCN evaluation of CAPE TOWN WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:40:59,660 - CAPE TOWN WO - INFO - TCN evaluation started atCAPE TOWN WO for the horizon of 3
+2023-08-13 00:40:59,673 - CAPE TOWN WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.677632   5.082209
+1    0.697368 -12.103186
+2    0.664474   3.233361
+3    0.493421   5.061248
+4    0.519737 -12.082909
+..        ...        ...
+142  0.500000 -12.104593
+143  0.710526   3.242480
+144  0.276316   5.067620
+145  0.276316 -12.093508
+146  0.256579   3.246006
+
+[147 rows x 2 columns]
+2023-08-13 00:40:59,673 - CAPE TOWN WO - INFO - saved to file :Results/TCN/3 Hour Forecast/CAPE TOWN WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:40:59,675 - CAPE TOWN WO - INFO - This is the mse: 62.19421880157312
+
+2023-08-13 00:40:59,675 - CAPE TOWN WO - INFO - This is the rmse: 7.886331136946579
+
+2023-08-13 00:40:59,675 - CAPE TOWN WO - INFO - This is the mae: 6.662714636161833
+
+2023-08-13 00:40:59,675 - CAPE TOWN WO - INFO - This is the smape: 173.89350980956527
+
+2023-08-13 00:40:59,675 - CAPE TOWN WO - INFO - This is the smape_std_dev: 21.96033508076118
+
+2023-08-13 00:40:59,676 - CAPE TOWN WO - INFO - TCN evaluation of CAPE TOWN WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

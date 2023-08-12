@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,332 - GRAHAMSTOWN - INFO - TCN evaluation started atGRAHAMSTOWN for the horizon of 3
+2023-08-13 00:19:40,348 - GRAHAMSTOWN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.523585   2.005394
+1    0.457547  -2.179930
+2    0.429245  -7.930150
+3    0.231132   2.192542
+4    0.240566  -1.941683
+..        ...        ...
+142  0.155660  -2.204927
+143  0.202830  -7.564008
+144  0.146226   1.959088
+145  0.127358  -2.065731
+146  0.122642  -7.674389
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,348 - GRAHAMSTOWN - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAHAMSTOWN/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,349 - GRAHAMSTOWN - ERROR - Error! : Unable to read data or write metrics for station GRAHAMSTOWN and horizon length 3.
+2023-08-13 00:23:06,775 - GRAHAMSTOWN - INFO - TCN evaluation started atGRAHAMSTOWN for the horizon of 3
+2023-08-13 00:23:06,798 - GRAHAMSTOWN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.523585   2.005394
+1    0.457547  -2.179930
+2    0.429245  -7.930150
+3    0.231132   2.192542
+4    0.240566  -1.941683
+..        ...        ...
+142  0.155660  -2.204927
+143  0.202830  -7.564008
+144  0.146226   1.959088
+145  0.127358  -2.065731
+146  0.122642  -7.674389
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,798 - GRAHAMSTOWN - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAHAMSTOWN/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,801 - GRAHAMSTOWN - INFO - This is the mse: 24.40108236476134
+
+2023-08-13 00:23:06,801 - GRAHAMSTOWN - INFO - This is the rmse: 4.939745172046969
+
+2023-08-13 00:23:06,801 - GRAHAMSTOWN - INFO - This is the mae: 4.0114742395969705
+
+2023-08-13 00:23:06,802 - GRAHAMSTOWN - INFO - This is the smape: 185.63919161289888
+
+2023-08-13 00:23:06,802 - GRAHAMSTOWN - INFO - This is the smape_std_dev: 22.508940043154155
+
+2023-08-13 00:23:06,802 - GRAHAMSTOWN - INFO - TCN evaluation of GRAHAMSTOWN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,234 - GRAHAMSTOWN - INFO - TCN evaluation started atGRAHAMSTOWN for the horizon of 3
+2023-08-13 00:34:27,253 - GRAHAMSTOWN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.523585   2.005394
+1    0.457547  -2.179930
+2    0.429245  -7.930150
+3    0.231132   2.192542
+4    0.240566  -1.941683
+..        ...        ...
+142  0.155660  -2.204927
+143  0.202830  -7.564008
+144  0.146226   1.959088
+145  0.127358  -2.065731
+146  0.122642  -7.674389
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,253 - GRAHAMSTOWN - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAHAMSTOWN/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,256 - GRAHAMSTOWN - INFO - This is the mse: 24.40108236476134
+
+2023-08-13 00:34:27,256 - GRAHAMSTOWN - INFO - This is the rmse: 4.939745172046969
+
+2023-08-13 00:34:27,256 - GRAHAMSTOWN - INFO - This is the mae: 4.0114742395969705
+
+2023-08-13 00:34:27,256 - GRAHAMSTOWN - INFO - This is the smape: 185.63919161289888
+
+2023-08-13 00:34:27,256 - GRAHAMSTOWN - INFO - This is the smape_std_dev: 22.508940043154155
+
+2023-08-13 00:34:27,256 - GRAHAMSTOWN - INFO - TCN evaluation of GRAHAMSTOWN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,020 - GRAHAMSTOWN - INFO - TCN evaluation started atGRAHAMSTOWN for the horizon of 3
+2023-08-13 00:41:00,046 - GRAHAMSTOWN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.523585   2.005394
+1    0.457547  -2.179930
+2    0.429245  -7.930150
+3    0.231132   2.192542
+4    0.240566  -1.941683
+..        ...        ...
+142  0.155660  -2.204927
+143  0.202830  -7.564008
+144  0.146226   1.959088
+145  0.127358  -2.065731
+146  0.122642  -7.674389
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,046 - GRAHAMSTOWN - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAHAMSTOWN/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,048 - GRAHAMSTOWN - INFO - This is the mse: 24.40108236476134
+
+2023-08-13 00:41:00,048 - GRAHAMSTOWN - INFO - This is the rmse: 4.939745172046969
+
+2023-08-13 00:41:00,048 - GRAHAMSTOWN - INFO - This is the mae: 4.0114742395969705
+
+2023-08-13 00:41:00,048 - GRAHAMSTOWN - INFO - This is the smape: 185.63919161289888
+
+2023-08-13 00:41:00,048 - GRAHAMSTOWN - INFO - This is the smape_std_dev: 22.508940043154155
+
+2023-08-13 00:41:00,049 - GRAHAMSTOWN - INFO - TCN evaluation of GRAHAMSTOWN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

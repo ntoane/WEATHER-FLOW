@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,200 - EXCELSIOR CERES - INFO - TCN evaluation started atEXCELSIOR CERES for the horizon of 3
+2023-08-13 00:19:40,215 - EXCELSIOR CERES - INFO - actual vs prediced is :       Actual  Predicted
+0    0.951923   3.854719
+1    0.951923   5.532503
+2    0.966346   7.156324
+3    0.769231   3.963494
+4    0.788462   5.151988
+..        ...        ...
+142  0.682692   5.215407
+143  0.793269   6.928386
+144  0.490385   3.569960
+145  0.389423   5.091251
+146  0.326923   7.030736
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,215 - EXCELSIOR CERES - INFO - saved to file :Results/TCN/3 Hour Forecast/EXCELSIOR CERES/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,217 - EXCELSIOR CERES - ERROR - Error! : Unable to read data or write metrics for station EXCELSIOR CERES and horizon length 3.
+2023-08-13 00:23:06,571 - EXCELSIOR CERES - INFO - TCN evaluation started atEXCELSIOR CERES for the horizon of 3
+2023-08-13 00:23:06,584 - EXCELSIOR CERES - INFO - actual vs prediced is :       Actual  Predicted
+0    0.951923   3.854719
+1    0.951923   5.532503
+2    0.966346   7.156324
+3    0.769231   3.963494
+4    0.788462   5.151988
+..        ...        ...
+142  0.682692   5.215407
+143  0.793269   6.928386
+144  0.490385   3.569960
+145  0.389423   5.091251
+146  0.326923   7.030736
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,584 - EXCELSIOR CERES - INFO - saved to file :Results/TCN/3 Hour Forecast/EXCELSIOR CERES/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,586 - EXCELSIOR CERES - INFO - This is the mse: 24.474842067624397
+
+2023-08-13 00:23:06,586 - EXCELSIOR CERES - INFO - This is the rmse: 4.947205480634941
+
+2023-08-13 00:23:06,587 - EXCELSIOR CERES - INFO - This is the mae: 4.757378368131869
+
+2023-08-13 00:23:06,587 - EXCELSIOR CERES - INFO - This is the smape: 157.218764437813
+
+2023-08-13 00:23:06,587 - EXCELSIOR CERES - INFO - This is the smape_std_dev: 17.467837858539536
+
+2023-08-13 00:23:06,587 - EXCELSIOR CERES - INFO - TCN evaluation of EXCELSIOR CERES for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,041 - EXCELSIOR CERES - INFO - TCN evaluation started atEXCELSIOR CERES for the horizon of 3
+2023-08-13 00:34:27,070 - EXCELSIOR CERES - INFO - actual vs prediced is :       Actual  Predicted
+0    0.951923   3.854719
+1    0.951923   5.532503
+2    0.966346   7.156324
+3    0.769231   3.963494
+4    0.788462   5.151988
+..        ...        ...
+142  0.682692   5.215407
+143  0.793269   6.928386
+144  0.490385   3.569960
+145  0.389423   5.091251
+146  0.326923   7.030736
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,072 - EXCELSIOR CERES - INFO - saved to file :Results/TCN/3 Hour Forecast/EXCELSIOR CERES/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,075 - EXCELSIOR CERES - INFO - This is the mse: 24.474842067624397
+
+2023-08-13 00:34:27,075 - EXCELSIOR CERES - INFO - This is the rmse: 4.947205480634941
+
+2023-08-13 00:34:27,075 - EXCELSIOR CERES - INFO - This is the mae: 4.757378368131869
+
+2023-08-13 00:34:27,075 - EXCELSIOR CERES - INFO - This is the smape: 157.218764437813
+
+2023-08-13 00:34:27,075 - EXCELSIOR CERES - INFO - This is the smape_std_dev: 17.467837858539536
+
+2023-08-13 00:34:27,076 - EXCELSIOR CERES - INFO - TCN evaluation of EXCELSIOR CERES for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:40:59,849 - EXCELSIOR CERES - INFO - TCN evaluation started atEXCELSIOR CERES for the horizon of 3
+2023-08-13 00:40:59,868 - EXCELSIOR CERES - INFO - actual vs prediced is :       Actual  Predicted
+0    0.951923   3.854719
+1    0.951923   5.532503
+2    0.966346   7.156324
+3    0.769231   3.963494
+4    0.788462   5.151988
+..        ...        ...
+142  0.682692   5.215407
+143  0.793269   6.928386
+144  0.490385   3.569960
+145  0.389423   5.091251
+146  0.326923   7.030736
+
+[147 rows x 2 columns]
+2023-08-13 00:40:59,868 - EXCELSIOR CERES - INFO - saved to file :Results/TCN/3 Hour Forecast/EXCELSIOR CERES/Metrics/actual_vs_predicted.txt
+2023-08-13 00:40:59,871 - EXCELSIOR CERES - INFO - This is the mse: 24.474842067624397
+
+2023-08-13 00:40:59,871 - EXCELSIOR CERES - INFO - This is the rmse: 4.947205480634941
+
+2023-08-13 00:40:59,871 - EXCELSIOR CERES - INFO - This is the mae: 4.757378368131869
+
+2023-08-13 00:40:59,871 - EXCELSIOR CERES - INFO - This is the smape: 157.218764437813
+
+2023-08-13 00:40:59,871 - EXCELSIOR CERES - INFO - This is the smape_std_dev: 17.467837858539536
+
+2023-08-13 00:40:59,871 - EXCELSIOR CERES - INFO - TCN evaluation of EXCELSIOR CERES for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

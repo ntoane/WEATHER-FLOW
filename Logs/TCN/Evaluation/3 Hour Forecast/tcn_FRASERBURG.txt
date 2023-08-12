@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,246 - FRASERBURG - INFO - TCN evaluation started atFRASERBURG for the horizon of 3
+2023-08-13 00:19:40,259 - FRASERBURG - INFO - actual vs prediced is :       Actual  Predicted
+0    0.855140   3.444189
+1    0.705607   7.669962
+2    0.850467   7.327419
+3    0.677570   3.239279
+4    0.672897   7.594170
+..        ...        ...
+142  0.406542   7.307282
+143  0.509346   7.161000
+144  0.172897   3.709236
+145  0.144860   7.498277
+146  0.140187   7.229252
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,259 - FRASERBURG - INFO - saved to file :Results/TCN/3 Hour Forecast/FRASERBURG/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,262 - FRASERBURG - ERROR - Error! : Unable to read data or write metrics for station FRASERBURG and horizon length 3.
+2023-08-13 00:23:06,608 - FRASERBURG - INFO - TCN evaluation started atFRASERBURG for the horizon of 3
+2023-08-13 00:23:06,625 - FRASERBURG - INFO - actual vs prediced is :       Actual  Predicted
+0    0.855140   3.444189
+1    0.705607   7.669962
+2    0.850467   7.327419
+3    0.677570   3.239279
+4    0.672897   7.594170
+..        ...        ...
+142  0.406542   7.307282
+143  0.509346   7.161000
+144  0.172897   3.709236
+145  0.144860   7.498277
+146  0.140187   7.229252
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,625 - FRASERBURG - INFO - saved to file :Results/TCN/3 Hour Forecast/FRASERBURG/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,628 - FRASERBURG - INFO - This is the mse: 35.453786200641055
+
+2023-08-13 00:23:06,628 - FRASERBURG - INFO - This is the rmse: 5.954308205042888
+
+2023-08-13 00:23:06,628 - FRASERBURG - INFO - This is the mae: 5.64615822703287
+
+2023-08-13 00:23:06,628 - FRASERBURG - INFO - This is the smape: 169.3504845998876
+
+2023-08-13 00:23:06,628 - FRASERBURG - INFO - This is the smape_std_dev: 18.40239493698863
+
+2023-08-13 00:23:06,628 - FRASERBURG - INFO - TCN evaluation of FRASERBURG for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,126 - FRASERBURG - INFO - TCN evaluation started atFRASERBURG for the horizon of 3
+2023-08-13 00:34:27,152 - FRASERBURG - INFO - actual vs prediced is :       Actual  Predicted
+0    0.855140   3.444189
+1    0.705607   7.669962
+2    0.850467   7.327419
+3    0.677570   3.239279
+4    0.672897   7.594170
+..        ...        ...
+142  0.406542   7.307282
+143  0.509346   7.161000
+144  0.172897   3.709236
+145  0.144860   7.498277
+146  0.140187   7.229252
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,152 - FRASERBURG - INFO - saved to file :Results/TCN/3 Hour Forecast/FRASERBURG/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,154 - FRASERBURG - INFO - This is the mse: 35.453786200641055
+
+2023-08-13 00:34:27,155 - FRASERBURG - INFO - This is the rmse: 5.954308205042888
+
+2023-08-13 00:34:27,155 - FRASERBURG - INFO - This is the mae: 5.64615822703287
+
+2023-08-13 00:34:27,155 - FRASERBURG - INFO - This is the smape: 169.3504845998876
+
+2023-08-13 00:34:27,155 - FRASERBURG - INFO - This is the smape_std_dev: 18.40239493698863
+
+2023-08-13 00:34:27,155 - FRASERBURG - INFO - TCN evaluation of FRASERBURG for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:40:59,898 - FRASERBURG - INFO - TCN evaluation started atFRASERBURG for the horizon of 3
+2023-08-13 00:40:59,913 - FRASERBURG - INFO - actual vs prediced is :       Actual  Predicted
+0    0.855140   3.444189
+1    0.705607   7.669962
+2    0.850467   7.327419
+3    0.677570   3.239279
+4    0.672897   7.594170
+..        ...        ...
+142  0.406542   7.307282
+143  0.509346   7.161000
+144  0.172897   3.709236
+145  0.144860   7.498277
+146  0.140187   7.229252
+
+[147 rows x 2 columns]
+2023-08-13 00:40:59,914 - FRASERBURG - INFO - saved to file :Results/TCN/3 Hour Forecast/FRASERBURG/Metrics/actual_vs_predicted.txt
+2023-08-13 00:40:59,916 - FRASERBURG - INFO - This is the mse: 35.453786200641055
+
+2023-08-13 00:40:59,916 - FRASERBURG - INFO - This is the rmse: 5.954308205042888
+
+2023-08-13 00:40:59,916 - FRASERBURG - INFO - This is the mae: 5.64615822703287
+
+2023-08-13 00:40:59,916 - FRASERBURG - INFO - This is the smape: 169.3504845998876
+
+2023-08-13 00:40:59,916 - FRASERBURG - INFO - This is the smape_std_dev: 18.40239493698863
+
+2023-08-13 00:40:59,917 - FRASERBURG - INFO - TCN evaluation of FRASERBURG for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

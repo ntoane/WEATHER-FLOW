@@ -1,0 +1,6 @@
+2023-08-13 00:17:03,014 - PRIESKA - INFO - TCN model training started at PRIESKA
+2023-08-13 00:17:03,175 - PRIESKA - INFO - TCN Model on split 1/1 at PRIESKA station forecasting 3 hours ahead.
+2023-08-13 00:17:09,152 - PRIESKA - INFO - Loss: [14.167450904846191, 38.62476348876953]
+2023-08-13 00:17:09,152 - PRIESKA - INFO - Val Loss: [65.9036636352539, 5.2697319984436035]
+2023-08-13 00:17:10,686 - PRIESKA - INFO - TCN training done on split 1/1 at PRIESKA station forecasting 3 hours ahead.
+2023-08-13 00:17:10,687 - PRIESKA - INFO - TCN training finished at PRIESKA

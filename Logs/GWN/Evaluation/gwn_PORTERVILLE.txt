@@ -1,0 +1,6 @@
+2023-08-12 23:52:47,163 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-12 23:52:47,180 - PORTERVILLE - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 3.
+2023-08-12 23:52:47,185 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-08-12 23:52:47,185 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-08-12 23:52:47,196 - PORTERVILLE - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 6.
+2023-08-12 23:52:47,196 - PORTERVILLE - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 6.

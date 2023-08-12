@@ -1,0 +1,6 @@
+2023-08-12 23:52:47,082 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 3
+2023-08-12 23:52:47,126 - PORT ELIZABETH AWS - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWS and horizon length 3.
+2023-08-12 23:52:47,132 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 6
+2023-08-12 23:52:47,132 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 6
+2023-08-12 23:52:47,133 - PORT ELIZABETH AWS - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWS and horizon length 6.
+2023-08-12 23:52:47,133 - PORT ELIZABETH AWS - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWS and horizon length 6.

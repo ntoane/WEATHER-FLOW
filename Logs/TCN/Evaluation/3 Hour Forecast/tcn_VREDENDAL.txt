@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,875 - VREDENDAL - INFO - TCN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 00:19:40,899 - VREDENDAL - INFO - actual vs prediced is :       Actual  Predicted
+0    0.922414   2.207761
+1    0.896552  -5.773725
+2    0.948276   4.256505
+3    0.672414   1.965455
+4    0.844828  -6.004789
+..        ...        ...
+142  0.521552  -5.154149
+143  0.913793   4.155733
+144  0.185345   2.185362
+145  0.176724  -6.418571
+146  0.193966   5.025597
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,899 - VREDENDAL - INFO - saved to file :Results/TCN/3 Hour Forecast/VREDENDAL/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,901 - VREDENDAL - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 3.
+2023-08-13 00:23:07,326 - VREDENDAL - INFO - TCN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 00:23:07,352 - VREDENDAL - INFO - actual vs prediced is :       Actual  Predicted
+0    0.922414   2.207761
+1    0.896552  -5.773725
+2    0.948276   4.256505
+3    0.672414   1.965455
+4    0.844828  -6.004789
+..        ...        ...
+142  0.521552  -5.154149
+143  0.913793   4.155733
+144  0.185345   2.185362
+145  0.176724  -6.418571
+146  0.193966   5.025597
+
+[147 rows x 2 columns]
+2023-08-13 00:23:07,352 - VREDENDAL - INFO - saved to file :Results/TCN/3 Hour Forecast/VREDENDAL/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:07,353 - VREDENDAL - INFO - This is the mse: 21.16825246064859
+
+2023-08-13 00:23:07,354 - VREDENDAL - INFO - This is the rmse: 4.600896919150503
+
+2023-08-13 00:23:07,354 - VREDENDAL - INFO - This is the mae: 4.108690566783955
+
+2023-08-13 00:23:07,354 - VREDENDAL - INFO - This is the smape: 162.89810954635655
+
+2023-08-13 00:23:07,354 - VREDENDAL - INFO - This is the smape_std_dev: 39.233867481659146
+
+2023-08-13 00:23:07,354 - VREDENDAL - INFO - TCN evaluation of VREDENDAL for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,699 - VREDENDAL - INFO - TCN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 00:34:27,716 - VREDENDAL - INFO - actual vs prediced is :       Actual  Predicted
+0    0.922414   2.207761
+1    0.896552  -5.773725
+2    0.948276   4.256505
+3    0.672414   1.965455
+4    0.844828  -6.004789
+..        ...        ...
+142  0.521552  -5.154149
+143  0.913793   4.155733
+144  0.185345   2.185362
+145  0.176724  -6.418571
+146  0.193966   5.025597
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,716 - VREDENDAL - INFO - saved to file :Results/TCN/3 Hour Forecast/VREDENDAL/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,719 - VREDENDAL - INFO - This is the mse: 21.16825246064859
+
+2023-08-13 00:34:27,719 - VREDENDAL - INFO - This is the rmse: 4.600896919150503
+
+2023-08-13 00:34:27,719 - VREDENDAL - INFO - This is the mae: 4.108690566783955
+
+2023-08-13 00:34:27,719 - VREDENDAL - INFO - This is the smape: 162.89810954635655
+
+2023-08-13 00:34:27,719 - VREDENDAL - INFO - This is the smape_std_dev: 39.233867481659146
+
+2023-08-13 00:34:27,719 - VREDENDAL - INFO - TCN evaluation of VREDENDAL for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,912 - VREDENDAL - INFO - TCN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 00:41:00,935 - VREDENDAL - INFO - actual vs prediced is :       Actual  Predicted
+0    0.922414   2.207761
+1    0.896552  -5.773725
+2    0.948276   4.256505
+3    0.672414   1.965455
+4    0.844828  -6.004789
+..        ...        ...
+142  0.521552  -5.154149
+143  0.913793   4.155733
+144  0.185345   2.185362
+145  0.176724  -6.418571
+146  0.193966   5.025597
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,935 - VREDENDAL - INFO - saved to file :Results/TCN/3 Hour Forecast/VREDENDAL/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,938 - VREDENDAL - INFO - This is the mse: 21.16825246064859
+
+2023-08-13 00:41:00,938 - VREDENDAL - INFO - This is the rmse: 4.600896919150503
+
+2023-08-13 00:41:00,938 - VREDENDAL - INFO - This is the mae: 4.108690566783955
+
+2023-08-13 00:41:00,938 - VREDENDAL - INFO - This is the smape: 162.89810954635655
+
+2023-08-13 00:41:00,938 - VREDENDAL - INFO - This is the smape_std_dev: 39.233867481659146
+
+2023-08-13 00:41:00,938 - VREDENDAL - INFO - TCN evaluation of VREDENDAL for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

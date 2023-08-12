@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,596 - PORT ELIZABETH AWOS - INFO - TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 3
+2023-08-13 00:19:40,612 - PORT ELIZABETH AWOS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.752294   9.074173
+1    0.614679   5.047073
+2    0.614679  -8.676981
+3    0.733945   9.110042
+4    0.697248   4.992365
+..        ...        ...
+142  0.366972   5.002202
+143  0.532110  -8.653214
+144  0.220183   9.070476
+145  0.201835   5.004108
+146  0.238532  -8.659380
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,613 - PORT ELIZABETH AWOS - INFO - saved to file :Results/TCN/3 Hour Forecast/PORT ELIZABETH AWOS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,615 - PORT ELIZABETH AWOS - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWOS and horizon length 3.
+2023-08-13 00:23:07,059 - PORT ELIZABETH AWOS - INFO - TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 3
+2023-08-13 00:23:07,075 - PORT ELIZABETH AWOS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.752294   9.074173
+1    0.614679   5.047073
+2    0.614679  -8.676981
+3    0.733945   9.110042
+4    0.697248   4.992365
+..        ...        ...
+142  0.366972   5.002202
+143  0.532110  -8.653214
+144  0.220183   9.070476
+145  0.201835   5.004108
+146  0.238532  -8.659380
+
+[147 rows x 2 columns]
+2023-08-13 00:23:07,075 - PORT ELIZABETH AWOS - INFO - saved to file :Results/TCN/3 Hour Forecast/PORT ELIZABETH AWOS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:07,076 - PORT ELIZABETH AWOS - INFO - This is the mse: 59.65539182214061
+
+2023-08-13 00:23:07,076 - PORT ELIZABETH AWOS - INFO - This is the rmse: 7.723690298176164
+
+2023-08-13 00:23:07,076 - PORT ELIZABETH AWOS - INFO - This is the mae: 7.4542251398364865
+
+2023-08-13 00:23:07,076 - PORT ELIZABETH AWOS - INFO - This is the smape: 185.42025876417142
+
+2023-08-13 00:23:07,076 - PORT ELIZABETH AWOS - INFO - This is the smape_std_dev: 15.183327962359138
+
+2023-08-13 00:23:07,076 - PORT ELIZABETH AWOS - INFO - TCN evaluation of PORT ELIZABETH AWOS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,442 - PORT ELIZABETH AWOS - INFO - TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 3
+2023-08-13 00:34:27,456 - PORT ELIZABETH AWOS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.752294   9.074173
+1    0.614679   5.047073
+2    0.614679  -8.676981
+3    0.733945   9.110042
+4    0.697248   4.992365
+..        ...        ...
+142  0.366972   5.002202
+143  0.532110  -8.653214
+144  0.220183   9.070476
+145  0.201835   5.004108
+146  0.238532  -8.659380
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,456 - PORT ELIZABETH AWOS - INFO - saved to file :Results/TCN/3 Hour Forecast/PORT ELIZABETH AWOS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,457 - PORT ELIZABETH AWOS - INFO - This is the mse: 59.65539182214061
+
+2023-08-13 00:34:27,457 - PORT ELIZABETH AWOS - INFO - This is the rmse: 7.723690298176164
+
+2023-08-13 00:34:27,457 - PORT ELIZABETH AWOS - INFO - This is the mae: 7.4542251398364865
+
+2023-08-13 00:34:27,457 - PORT ELIZABETH AWOS - INFO - This is the smape: 185.42025876417142
+
+2023-08-13 00:34:27,457 - PORT ELIZABETH AWOS - INFO - This is the smape_std_dev: 15.183327962359138
+
+2023-08-13 00:34:27,458 - PORT ELIZABETH AWOS - INFO - TCN evaluation of PORT ELIZABETH AWOS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,539 - PORT ELIZABETH AWOS - INFO - TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 3
+2023-08-13 00:41:00,564 - PORT ELIZABETH AWOS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.752294   9.074173
+1    0.614679   5.047073
+2    0.614679  -8.676981
+3    0.733945   9.110042
+4    0.697248   4.992365
+..        ...        ...
+142  0.366972   5.002202
+143  0.532110  -8.653214
+144  0.220183   9.070476
+145  0.201835   5.004108
+146  0.238532  -8.659380
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,564 - PORT ELIZABETH AWOS - INFO - saved to file :Results/TCN/3 Hour Forecast/PORT ELIZABETH AWOS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,566 - PORT ELIZABETH AWOS - INFO - This is the mse: 59.65539182214061
+
+2023-08-13 00:41:00,567 - PORT ELIZABETH AWOS - INFO - This is the rmse: 7.723690298176164
+
+2023-08-13 00:41:00,567 - PORT ELIZABETH AWOS - INFO - This is the mae: 7.4542251398364865
+
+2023-08-13 00:41:00,567 - PORT ELIZABETH AWOS - INFO - This is the smape: 185.42025876417142
+
+2023-08-13 00:41:00,567 - PORT ELIZABETH AWOS - INFO - This is the smape_std_dev: 15.183327962359138
+
+2023-08-13 00:41:00,567 - PORT ELIZABETH AWOS - INFO - TCN evaluation of PORT ELIZABETH AWOS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

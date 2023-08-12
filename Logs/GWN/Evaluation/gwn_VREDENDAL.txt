@@ -1,0 +1,6 @@
+2023-08-12 23:52:47,319 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-12 23:52:47,323 - VREDENDAL - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 3.
+2023-08-12 23:52:47,324 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-12 23:52:47,324 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-12 23:52:47,326 - VREDENDAL - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 6.
+2023-08-12 23:52:47,326 - VREDENDAL - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 6.

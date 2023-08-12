@@ -1,0 +1,6 @@
+2023-08-12 23:52:47,031 - PORT ALFRED - AIRPORT - INFO - GWN evaluation started atPORT ALFRED - AIRPORT for the horizon of 3
+2023-08-12 23:52:47,040 - PORT ALFRED - AIRPORT - ERROR - Error! : Unable to read data or write metrics for station PORT ALFRED - AIRPORT and horizon length 3.
+2023-08-12 23:52:47,042 - PORT ALFRED - AIRPORT - INFO - GWN evaluation started atPORT ALFRED - AIRPORT for the horizon of 6
+2023-08-12 23:52:47,042 - PORT ALFRED - AIRPORT - INFO - GWN evaluation started atPORT ALFRED - AIRPORT for the horizon of 6
+2023-08-12 23:52:47,074 - PORT ALFRED - AIRPORT - ERROR - Error! : Unable to read data or write metrics for station PORT ALFRED - AIRPORT and horizon length 6.
+2023-08-12 23:52:47,074 - PORT ALFRED - AIRPORT - ERROR - Error! : Unable to read data or write metrics for station PORT ALFRED - AIRPORT and horizon length 6.

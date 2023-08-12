@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,481 - NOUPOORT - INFO - TCN evaluation started atNOUPOORT for the horizon of 3
+2023-08-13 00:19:40,500 - NOUPOORT - INFO - actual vs prediced is :       Actual  Predicted
+0    0.829016  -5.118722
+1    0.865285  -0.295806
+2    0.891192   7.212606
+3    0.487047  -5.108896
+4    0.580311  -0.352894
+..        ...        ...
+142  0.476684  -0.089740
+143  0.585492   6.121926
+144  0.150259  -5.601679
+145  0.170984  -0.003889
+146  0.310881   5.924284
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,500 - NOUPOORT - INFO - saved to file :Results/TCN/3 Hour Forecast/NOUPOORT/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,502 - NOUPOORT - ERROR - Error! : Unable to read data or write metrics for station NOUPOORT and horizon length 3.
+2023-08-13 00:23:06,967 - NOUPOORT - INFO - TCN evaluation started atNOUPOORT for the horizon of 3
+2023-08-13 00:23:06,980 - NOUPOORT - INFO - actual vs prediced is :       Actual  Predicted
+0    0.829016  -5.118722
+1    0.865285  -0.295806
+2    0.891192   7.212606
+3    0.487047  -5.108896
+4    0.580311  -0.352894
+..        ...        ...
+142  0.476684  -0.089740
+143  0.585492   6.121926
+144  0.150259  -5.601679
+145  0.170984  -0.003889
+146  0.310881   5.924284
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,980 - NOUPOORT - INFO - saved to file :Results/TCN/3 Hour Forecast/NOUPOORT/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,984 - NOUPOORT - INFO - This is the mse: 22.39531421177316
+
+2023-08-13 00:23:06,984 - NOUPOORT - INFO - This is the rmse: 4.732368773856615
+
+2023-08-13 00:23:06,984 - NOUPOORT - INFO - This is the mae: 4.083481920665098
+
+2023-08-13 00:23:06,985 - NOUPOORT - INFO - This is the smape: 183.7204804340333
+
+2023-08-13 00:23:06,985 - NOUPOORT - INFO - This is the smape_std_dev: 34.263608259125036
+
+2023-08-13 00:23:06,985 - NOUPOORT - INFO - TCN evaluation of NOUPOORT for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,359 - NOUPOORT - INFO - TCN evaluation started atNOUPOORT for the horizon of 3
+2023-08-13 00:34:27,374 - NOUPOORT - INFO - actual vs prediced is :       Actual  Predicted
+0    0.829016  -5.118722
+1    0.865285  -0.295806
+2    0.891192   7.212606
+3    0.487047  -5.108896
+4    0.580311  -0.352894
+..        ...        ...
+142  0.476684  -0.089740
+143  0.585492   6.121926
+144  0.150259  -5.601679
+145  0.170984  -0.003889
+146  0.310881   5.924284
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,374 - NOUPOORT - INFO - saved to file :Results/TCN/3 Hour Forecast/NOUPOORT/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,375 - NOUPOORT - INFO - This is the mse: 22.39531421177316
+
+2023-08-13 00:34:27,375 - NOUPOORT - INFO - This is the rmse: 4.732368773856615
+
+2023-08-13 00:34:27,375 - NOUPOORT - INFO - This is the mae: 4.083481920665098
+
+2023-08-13 00:34:27,375 - NOUPOORT - INFO - This is the smape: 183.7204804340333
+
+2023-08-13 00:34:27,375 - NOUPOORT - INFO - This is the smape_std_dev: 34.263608259125036
+
+2023-08-13 00:34:27,375 - NOUPOORT - INFO - TCN evaluation of NOUPOORT for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,353 - NOUPOORT - INFO - TCN evaluation started atNOUPOORT for the horizon of 3
+2023-08-13 00:41:00,380 - NOUPOORT - INFO - actual vs prediced is :       Actual  Predicted
+0    0.829016  -5.118722
+1    0.865285  -0.295806
+2    0.891192   7.212606
+3    0.487047  -5.108896
+4    0.580311  -0.352894
+..        ...        ...
+142  0.476684  -0.089740
+143  0.585492   6.121926
+144  0.150259  -5.601679
+145  0.170984  -0.003889
+146  0.310881   5.924284
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,380 - NOUPOORT - INFO - saved to file :Results/TCN/3 Hour Forecast/NOUPOORT/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,382 - NOUPOORT - INFO - This is the mse: 22.39531421177316
+
+2023-08-13 00:41:00,383 - NOUPOORT - INFO - This is the rmse: 4.732368773856615
+
+2023-08-13 00:41:00,383 - NOUPOORT - INFO - This is the mae: 4.083481920665098
+
+2023-08-13 00:41:00,383 - NOUPOORT - INFO - This is the smape: 183.7204804340333
+
+2023-08-13 00:41:00,383 - NOUPOORT - INFO - This is the smape_std_dev: 34.263608259125036
+
+2023-08-13 00:41:00,383 - NOUPOORT - INFO - TCN evaluation of NOUPOORT for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

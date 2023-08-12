@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,503 - OUDTSHOORN - INFO - TCN evaluation started atOUDTSHOORN for the horizon of 3
+2023-08-13 00:19:40,522 - OUDTSHOORN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.691244  -1.307988
+1    0.751152   0.316649
+2    0.764977   9.348171
+3    0.382488  -1.413533
+4    0.419355   0.000955
+..        ...        ...
+142  0.414747   0.102516
+143  0.534562   9.778400
+144  0.152074  -0.828303
+145  0.147465   0.018375
+146  0.170507   9.465447
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,522 - OUDTSHOORN - INFO - saved to file :Results/TCN/3 Hour Forecast/OUDTSHOORN/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,529 - OUDTSHOORN - ERROR - Error! : Unable to read data or write metrics for station OUDTSHOORN and horizon length 3.
+2023-08-13 00:23:06,986 - OUDTSHOORN - INFO - TCN evaluation started atOUDTSHOORN for the horizon of 3
+2023-08-13 00:23:07,000 - OUDTSHOORN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.691244  -1.307988
+1    0.751152   0.316649
+2    0.764977   9.348171
+3    0.382488  -1.413533
+4    0.419355   0.000955
+..        ...        ...
+142  0.414747   0.102516
+143  0.534562   9.778400
+144  0.152074  -0.828303
+145  0.147465   0.018375
+146  0.170507   9.465447
+
+[147 rows x 2 columns]
+2023-08-13 00:23:07,001 - OUDTSHOORN - INFO - saved to file :Results/TCN/3 Hour Forecast/OUDTSHOORN/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:07,003 - OUDTSHOORN - INFO - This is the mse: 30.16712313915842
+
+2023-08-13 00:23:07,003 - OUDTSHOORN - INFO - This is the rmse: 5.492460572380872
+
+2023-08-13 00:23:07,003 - OUDTSHOORN - INFO - This is the mae: 3.825668344170875
+
+2023-08-13 00:23:07,003 - OUDTSHOORN - INFO - This is the smape: 184.55651201913534
+
+2023-08-13 00:23:07,003 - OUDTSHOORN - INFO - This is the smape_std_dev: 36.969129983596794
+
+2023-08-13 00:23:07,003 - OUDTSHOORN - INFO - TCN evaluation of OUDTSHOORN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,376 - OUDTSHOORN - INFO - TCN evaluation started atOUDTSHOORN for the horizon of 3
+2023-08-13 00:34:27,390 - OUDTSHOORN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.691244  -1.307988
+1    0.751152   0.316649
+2    0.764977   9.348171
+3    0.382488  -1.413533
+4    0.419355   0.000955
+..        ...        ...
+142  0.414747   0.102516
+143  0.534562   9.778400
+144  0.152074  -0.828303
+145  0.147465   0.018375
+146  0.170507   9.465447
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,390 - OUDTSHOORN - INFO - saved to file :Results/TCN/3 Hour Forecast/OUDTSHOORN/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,392 - OUDTSHOORN - INFO - This is the mse: 30.16712313915842
+
+2023-08-13 00:34:27,392 - OUDTSHOORN - INFO - This is the rmse: 5.492460572380872
+
+2023-08-13 00:34:27,392 - OUDTSHOORN - INFO - This is the mae: 3.825668344170875
+
+2023-08-13 00:34:27,392 - OUDTSHOORN - INFO - This is the smape: 184.55651201913534
+
+2023-08-13 00:34:27,392 - OUDTSHOORN - INFO - This is the smape_std_dev: 36.969129983596794
+
+2023-08-13 00:34:27,392 - OUDTSHOORN - INFO - TCN evaluation of OUDTSHOORN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,387 - OUDTSHOORN - INFO - TCN evaluation started atOUDTSHOORN for the horizon of 3
+2023-08-13 00:41:00,432 - OUDTSHOORN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.691244  -1.307988
+1    0.751152   0.316649
+2    0.764977   9.348171
+3    0.382488  -1.413533
+4    0.419355   0.000955
+..        ...        ...
+142  0.414747   0.102516
+143  0.534562   9.778400
+144  0.152074  -0.828303
+145  0.147465   0.018375
+146  0.170507   9.465447
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,433 - OUDTSHOORN - INFO - saved to file :Results/TCN/3 Hour Forecast/OUDTSHOORN/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,435 - OUDTSHOORN - INFO - This is the mse: 30.16712313915842
+
+2023-08-13 00:41:00,436 - OUDTSHOORN - INFO - This is the rmse: 5.492460572380872
+
+2023-08-13 00:41:00,436 - OUDTSHOORN - INFO - This is the mae: 3.825668344170875
+
+2023-08-13 00:41:00,436 - OUDTSHOORN - INFO - This is the smape: 184.55651201913534
+
+2023-08-13 00:41:00,436 - OUDTSHOORN - INFO - This is the smape_std_dev: 36.969129983596794
+
+2023-08-13 00:41:00,437 - OUDTSHOORN - INFO - TCN evaluation of OUDTSHOORN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

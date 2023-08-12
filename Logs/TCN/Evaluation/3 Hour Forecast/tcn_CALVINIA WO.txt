@@ -1,0 +1,98 @@
+2023-08-13 00:19:39,870 - CALVINIA WO - INFO - TCN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-13 00:19:39,890 - CALVINIA WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.966387   6.481511
+1    0.966387   3.201328
+2    1.029412  -5.249195
+3    0.794118   6.539950
+4    0.785714   2.777834
+..        ...        ...
+142  0.642857   2.470242
+143  0.794118  -4.612495
+144  0.504202   7.001805
+145  0.491597   2.254888
+146  0.500000  -4.665433
+
+[147 rows x 2 columns]
+2023-08-13 00:19:39,891 - CALVINIA WO - INFO - saved to file :Results/TCN/3 Hour Forecast/CALVINIA WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:39,892 - CALVINIA WO - ERROR - Error! : Unable to read data or write metrics for station CALVINIA WO and horizon length 3.
+2023-08-13 00:23:06,378 - CALVINIA WO - INFO - TCN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-13 00:23:06,394 - CALVINIA WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.966387   6.481511
+1    0.966387   3.201328
+2    1.029412  -5.249195
+3    0.794118   6.539950
+4    0.785714   2.777834
+..        ...        ...
+142  0.642857   2.470242
+143  0.794118  -4.612495
+144  0.504202   7.001805
+145  0.491597   2.254888
+146  0.500000  -4.665433
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,395 - CALVINIA WO - INFO - saved to file :Results/TCN/3 Hour Forecast/CALVINIA WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,398 - CALVINIA WO - INFO - This is the mse: 23.611779949973
+
+2023-08-13 00:23:06,398 - CALVINIA WO - INFO - This is the rmse: 4.8591954015014664
+
+2023-08-13 00:23:06,398 - CALVINIA WO - INFO - This is the mae: 4.494159827971188
+
+2023-08-13 00:23:06,399 - CALVINIA WO - INFO - This is the smape: 160.5449236389376
+
+2023-08-13 00:23:06,399 - CALVINIA WO - INFO - This is the smape_std_dev: 35.27700361934245
+
+2023-08-13 00:23:06,399 - CALVINIA WO - INFO - TCN evaluation of CALVINIA WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:26,745 - CALVINIA WO - INFO - TCN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-13 00:34:26,757 - CALVINIA WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.966387   6.481511
+1    0.966387   3.201328
+2    1.029412  -5.249195
+3    0.794118   6.539950
+4    0.785714   2.777834
+..        ...        ...
+142  0.642857   2.470242
+143  0.794118  -4.612495
+144  0.504202   7.001805
+145  0.491597   2.254888
+146  0.500000  -4.665433
+
+[147 rows x 2 columns]
+2023-08-13 00:34:26,758 - CALVINIA WO - INFO - saved to file :Results/TCN/3 Hour Forecast/CALVINIA WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:26,759 - CALVINIA WO - INFO - This is the mse: 23.611779949973
+
+2023-08-13 00:34:26,759 - CALVINIA WO - INFO - This is the rmse: 4.8591954015014664
+
+2023-08-13 00:34:26,759 - CALVINIA WO - INFO - This is the mae: 4.494159827971188
+
+2023-08-13 00:34:26,759 - CALVINIA WO - INFO - This is the smape: 160.5449236389376
+
+2023-08-13 00:34:26,759 - CALVINIA WO - INFO - This is the smape_std_dev: 35.27700361934245
+
+2023-08-13 00:34:26,760 - CALVINIA WO - INFO - TCN evaluation of CALVINIA WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:40:59,642 - CALVINIA WO - INFO - TCN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-13 00:40:59,657 - CALVINIA WO - INFO - actual vs prediced is :       Actual  Predicted
+0    0.966387   6.481511
+1    0.966387   3.201328
+2    1.029412  -5.249195
+3    0.794118   6.539950
+4    0.785714   2.777834
+..        ...        ...
+142  0.642857   2.470242
+143  0.794118  -4.612495
+144  0.504202   7.001805
+145  0.491597   2.254888
+146  0.500000  -4.665433
+
+[147 rows x 2 columns]
+2023-08-13 00:40:59,657 - CALVINIA WO - INFO - saved to file :Results/TCN/3 Hour Forecast/CALVINIA WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:40:59,659 - CALVINIA WO - INFO - This is the mse: 23.611779949973
+
+2023-08-13 00:40:59,659 - CALVINIA WO - INFO - This is the rmse: 4.8591954015014664
+
+2023-08-13 00:40:59,659 - CALVINIA WO - INFO - This is the mae: 4.494159827971188
+
+2023-08-13 00:40:59,659 - CALVINIA WO - INFO - This is the smape: 160.5449236389376
+
+2023-08-13 00:40:59,659 - CALVINIA WO - INFO - This is the smape_std_dev: 35.27700361934245
+
+2023-08-13 00:40:59,660 - CALVINIA WO - INFO - TCN evaluation of CALVINIA WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

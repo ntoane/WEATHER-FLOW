@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,386 - LAINGSBURG - INFO - TCN evaluation started atLAINGSBURG for the horizon of 3
+2023-08-13 00:19:40,401 - LAINGSBURG - INFO - actual vs prediced is :       Actual  Predicted
+0    0.789474  14.614680
+1    0.836842   4.150297
+2    0.863158  -4.357213
+3    0.568421  14.663219
+4    0.626316   4.042243
+..        ...        ...
+142  0.442105   4.132109
+143  0.531579  -4.288607
+144  0.357895  14.469986
+145  0.331579   3.882348
+146  0.326316  -4.243726
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,401 - LAINGSBURG - INFO - saved to file :Results/TCN/3 Hour Forecast/LAINGSBURG/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,402 - LAINGSBURG - ERROR - Error! : Unable to read data or write metrics for station LAINGSBURG and horizon length 3.
+2023-08-13 00:23:06,870 - LAINGSBURG - INFO - TCN evaluation started atLAINGSBURG for the horizon of 3
+2023-08-13 00:23:06,890 - LAINGSBURG - INFO - actual vs prediced is :       Actual  Predicted
+0    0.789474  14.614680
+1    0.836842   4.150297
+2    0.863158  -4.357213
+3    0.568421  14.663219
+4    0.626316   4.042243
+..        ...        ...
+142  0.442105   4.132109
+143  0.531579  -4.288607
+144  0.357895  14.469986
+145  0.331579   3.882348
+146  0.326316  -4.243726
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,890 - LAINGSBURG - INFO - saved to file :Results/TCN/3 Hour Forecast/LAINGSBURG/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,892 - LAINGSBURG - INFO - This is the mse: 78.50929261201316
+
+2023-08-13 00:23:06,893 - LAINGSBURG - INFO - This is the rmse: 8.860546970250379
+
+2023-08-13 00:23:06,893 - LAINGSBURG - INFO - This is the mae: 7.494495645076978
+
+2023-08-13 00:23:06,893 - LAINGSBURG - INFO - This is the smape: 180.9415897558234
+
+2023-08-13 00:23:06,893 - LAINGSBURG - INFO - This is the smape_std_dev: 19.982914611401153
+
+2023-08-13 00:23:06,893 - LAINGSBURG - INFO - TCN evaluation of LAINGSBURG for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,292 - LAINGSBURG - INFO - TCN evaluation started atLAINGSBURG for the horizon of 3
+2023-08-13 00:34:27,306 - LAINGSBURG - INFO - actual vs prediced is :       Actual  Predicted
+0    0.789474  14.614680
+1    0.836842   4.150297
+2    0.863158  -4.357213
+3    0.568421  14.663219
+4    0.626316   4.042243
+..        ...        ...
+142  0.442105   4.132109
+143  0.531579  -4.288607
+144  0.357895  14.469986
+145  0.331579   3.882348
+146  0.326316  -4.243726
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,306 - LAINGSBURG - INFO - saved to file :Results/TCN/3 Hour Forecast/LAINGSBURG/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,308 - LAINGSBURG - INFO - This is the mse: 78.50929261201316
+
+2023-08-13 00:34:27,308 - LAINGSBURG - INFO - This is the rmse: 8.860546970250379
+
+2023-08-13 00:34:27,308 - LAINGSBURG - INFO - This is the mae: 7.494495645076978
+
+2023-08-13 00:34:27,308 - LAINGSBURG - INFO - This is the smape: 180.9415897558234
+
+2023-08-13 00:34:27,308 - LAINGSBURG - INFO - This is the smape_std_dev: 19.982914611401153
+
+2023-08-13 00:34:27,308 - LAINGSBURG - INFO - TCN evaluation of LAINGSBURG for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,210 - LAINGSBURG - INFO - TCN evaluation started atLAINGSBURG for the horizon of 3
+2023-08-13 00:41:00,233 - LAINGSBURG - INFO - actual vs prediced is :       Actual  Predicted
+0    0.789474  14.614680
+1    0.836842   4.150297
+2    0.863158  -4.357213
+3    0.568421  14.663219
+4    0.626316   4.042243
+..        ...        ...
+142  0.442105   4.132109
+143  0.531579  -4.288607
+144  0.357895  14.469986
+145  0.331579   3.882348
+146  0.326316  -4.243726
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,233 - LAINGSBURG - INFO - saved to file :Results/TCN/3 Hour Forecast/LAINGSBURG/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,237 - LAINGSBURG - INFO - This is the mse: 78.50929261201316
+
+2023-08-13 00:41:00,237 - LAINGSBURG - INFO - This is the rmse: 8.860546970250379
+
+2023-08-13 00:41:00,237 - LAINGSBURG - INFO - This is the mae: 7.494495645076978
+
+2023-08-13 00:41:00,237 - LAINGSBURG - INFO - This is the smape: 180.9415897558234
+
+2023-08-13 00:41:00,237 - LAINGSBURG - INFO - This is the smape_std_dev: 19.982914611401153
+
+2023-08-13 00:41:00,238 - LAINGSBURG - INFO - TCN evaluation of LAINGSBURG for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

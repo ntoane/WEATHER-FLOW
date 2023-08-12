@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,718 - RIVERSDALE - INFO - TCN evaluation started atRIVERSDALE for the horizon of 3
+2023-08-13 00:19:40,736 - RIVERSDALE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.746667   6.549753
+1    0.806667   0.520804
+2    0.766667   6.956021
+3    0.626667   6.952685
+4    0.693333   0.751655
+..        ...        ...
+142  0.393333   1.099158
+143  0.480000   7.471572
+144  0.213333   6.203867
+145  0.206667   1.060491
+146  0.206667   7.408256
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,736 - RIVERSDALE - INFO - saved to file :Results/TCN/3 Hour Forecast/RIVERSDALE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,738 - RIVERSDALE - ERROR - Error! : Unable to read data or write metrics for station RIVERSDALE and horizon length 3.
+2023-08-13 00:23:07,168 - RIVERSDALE - INFO - TCN evaluation started atRIVERSDALE for the horizon of 3
+2023-08-13 00:23:07,180 - RIVERSDALE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.746667   6.549753
+1    0.806667   0.520804
+2    0.766667   6.956021
+3    0.626667   6.952685
+4    0.693333   0.751655
+..        ...        ...
+142  0.393333   1.099158
+143  0.480000   7.471572
+144  0.213333   6.203867
+145  0.206667   1.060491
+146  0.206667   7.408256
+
+[147 rows x 2 columns]
+2023-08-13 00:23:07,180 - RIVERSDALE - INFO - saved to file :Results/TCN/3 Hour Forecast/RIVERSDALE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:07,182 - RIVERSDALE - INFO - This is the mse: 27.852055560036767
+
+2023-08-13 00:23:07,182 - RIVERSDALE - INFO - This is the rmse: 5.27750467172098
+
+2023-08-13 00:23:07,182 - RIVERSDALE - INFO - This is the mae: 4.4463211141972785
+
+2023-08-13 00:23:07,182 - RIVERSDALE - INFO - This is the smape: 152.6303133775608
+
+2023-08-13 00:23:07,182 - RIVERSDALE - INFO - This is the smape_std_dev: 54.09582217525013
+
+2023-08-13 00:23:07,182 - RIVERSDALE - INFO - TCN evaluation of RIVERSDALE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,542 - RIVERSDALE - INFO - TCN evaluation started atRIVERSDALE for the horizon of 3
+2023-08-13 00:34:27,557 - RIVERSDALE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.746667   6.549753
+1    0.806667   0.520804
+2    0.766667   6.956021
+3    0.626667   6.952685
+4    0.693333   0.751655
+..        ...        ...
+142  0.393333   1.099158
+143  0.480000   7.471572
+144  0.213333   6.203867
+145  0.206667   1.060491
+146  0.206667   7.408256
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,557 - RIVERSDALE - INFO - saved to file :Results/TCN/3 Hour Forecast/RIVERSDALE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,559 - RIVERSDALE - INFO - This is the mse: 27.852055560036767
+
+2023-08-13 00:34:27,559 - RIVERSDALE - INFO - This is the rmse: 5.27750467172098
+
+2023-08-13 00:34:27,559 - RIVERSDALE - INFO - This is the mae: 4.4463211141972785
+
+2023-08-13 00:34:27,559 - RIVERSDALE - INFO - This is the smape: 152.6303133775608
+
+2023-08-13 00:34:27,559 - RIVERSDALE - INFO - This is the smape_std_dev: 54.09582217525013
+
+2023-08-13 00:34:27,559 - RIVERSDALE - INFO - TCN evaluation of RIVERSDALE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,683 - RIVERSDALE - INFO - TCN evaluation started atRIVERSDALE for the horizon of 3
+2023-08-13 00:41:00,698 - RIVERSDALE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.746667   6.549753
+1    0.806667   0.520804
+2    0.766667   6.956021
+3    0.626667   6.952685
+4    0.693333   0.751655
+..        ...        ...
+142  0.393333   1.099158
+143  0.480000   7.471572
+144  0.213333   6.203867
+145  0.206667   1.060491
+146  0.206667   7.408256
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,698 - RIVERSDALE - INFO - saved to file :Results/TCN/3 Hour Forecast/RIVERSDALE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,713 - RIVERSDALE - INFO - This is the mse: 27.852055560036767
+
+2023-08-13 00:41:00,713 - RIVERSDALE - INFO - This is the rmse: 5.27750467172098
+
+2023-08-13 00:41:00,713 - RIVERSDALE - INFO - This is the mae: 4.4463211141972785
+
+2023-08-13 00:41:00,713 - RIVERSDALE - INFO - This is the smape: 152.6303133775608
+
+2023-08-13 00:41:00,713 - RIVERSDALE - INFO - This is the smape_std_dev: 54.09582217525013
+
+2023-08-13 00:41:00,713 - RIVERSDALE - INFO - TCN evaluation of RIVERSDALE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

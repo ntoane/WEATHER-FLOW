@@ -1,0 +1,6 @@
+2023-08-12 23:52:47,264 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-08-12 23:52:47,266 - SPRINGBOK WO - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 3.
+2023-08-12 23:52:47,271 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-08-12 23:52:47,271 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-08-12 23:52:47,274 - SPRINGBOK WO - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 6.
+2023-08-12 23:52:47,274 - SPRINGBOK WO - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 6.

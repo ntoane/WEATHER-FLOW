@@ -1,0 +1,6 @@
+2023-08-12 23:52:46,928 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 3
+2023-08-12 23:52:46,929 - LADISMITH - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 3.
+2023-08-12 23:52:46,929 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 6
+2023-08-12 23:52:46,929 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 6
+2023-08-12 23:52:46,931 - LADISMITH - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 6.
+2023-08-12 23:52:46,931 - LADISMITH - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 6.

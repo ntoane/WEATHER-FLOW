@@ -1,0 +1,98 @@
+2023-08-13 00:19:39,920 - DE AAR WO - INFO - TCN evaluation started atDE AAR WO for the horizon of 3
+2023-08-13 00:19:39,938 - DE AAR WO - INFO - actual vs prediced is :       Actual  Predicted
+0    1.025157  -2.618853
+1    0.987421  -9.921120
+2    1.106918  -9.694640
+3    0.540881  -2.638563
+4    0.616352  -9.899160
+..        ...        ...
+142  0.415094  -9.888241
+143  0.522013  -9.721923
+144  0.119497  -2.605835
+145  0.081761  -9.931163
+146  0.100629  -9.699286
+
+[147 rows x 2 columns]
+2023-08-13 00:19:39,940 - DE AAR WO - INFO - saved to file :Results/TCN/3 Hour Forecast/DE AAR WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:39,942 - DE AAR WO - ERROR - Error! : Unable to read data or write metrics for station DE AAR WO and horizon length 3.
+2023-08-13 00:23:06,420 - DE AAR WO - INFO - TCN evaluation started atDE AAR WO for the horizon of 3
+2023-08-13 00:23:06,435 - DE AAR WO - INFO - actual vs prediced is :       Actual  Predicted
+0    1.025157  -2.618853
+1    0.987421  -9.921120
+2    1.106918  -9.694640
+3    0.540881  -2.638563
+4    0.616352  -9.899160
+..        ...        ...
+142  0.415094  -9.888241
+143  0.522013  -9.721923
+144  0.119497  -2.605835
+145  0.081761  -9.931163
+146  0.100629  -9.699286
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,436 - DE AAR WO - INFO - saved to file :Results/TCN/3 Hour Forecast/DE AAR WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,437 - DE AAR WO - INFO - This is the mse: 74.24433373307419
+
+2023-08-13 00:23:06,437 - DE AAR WO - INFO - This is the rmse: 8.616515173379211
+
+2023-08-13 00:23:06,437 - DE AAR WO - INFO - This is the mae: 7.915560186129294
+
+2023-08-13 00:23:06,437 - DE AAR WO - INFO - This is the smape: 200.0
+
+2023-08-13 00:23:06,437 - DE AAR WO - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 00:23:06,437 - DE AAR WO - INFO - TCN evaluation of DE AAR WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:26,802 - DE AAR WO - INFO - TCN evaluation started atDE AAR WO for the horizon of 3
+2023-08-13 00:34:26,827 - DE AAR WO - INFO - actual vs prediced is :       Actual  Predicted
+0    1.025157  -2.618853
+1    0.987421  -9.921120
+2    1.106918  -9.694640
+3    0.540881  -2.638563
+4    0.616352  -9.899160
+..        ...        ...
+142  0.415094  -9.888241
+143  0.522013  -9.721923
+144  0.119497  -2.605835
+145  0.081761  -9.931163
+146  0.100629  -9.699286
+
+[147 rows x 2 columns]
+2023-08-13 00:34:26,828 - DE AAR WO - INFO - saved to file :Results/TCN/3 Hour Forecast/DE AAR WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:26,829 - DE AAR WO - INFO - This is the mse: 74.24433373307419
+
+2023-08-13 00:34:26,829 - DE AAR WO - INFO - This is the rmse: 8.616515173379211
+
+2023-08-13 00:34:26,829 - DE AAR WO - INFO - This is the mae: 7.915560186129294
+
+2023-08-13 00:34:26,829 - DE AAR WO - INFO - This is the smape: 200.0
+
+2023-08-13 00:34:26,829 - DE AAR WO - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 00:34:26,829 - DE AAR WO - INFO - TCN evaluation of DE AAR WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:40:59,677 - DE AAR WO - INFO - TCN evaluation started atDE AAR WO for the horizon of 3
+2023-08-13 00:40:59,690 - DE AAR WO - INFO - actual vs prediced is :       Actual  Predicted
+0    1.025157  -2.618853
+1    0.987421  -9.921120
+2    1.106918  -9.694640
+3    0.540881  -2.638563
+4    0.616352  -9.899160
+..        ...        ...
+142  0.415094  -9.888241
+143  0.522013  -9.721923
+144  0.119497  -2.605835
+145  0.081761  -9.931163
+146  0.100629  -9.699286
+
+[147 rows x 2 columns]
+2023-08-13 00:40:59,690 - DE AAR WO - INFO - saved to file :Results/TCN/3 Hour Forecast/DE AAR WO/Metrics/actual_vs_predicted.txt
+2023-08-13 00:40:59,692 - DE AAR WO - INFO - This is the mse: 74.24433373307419
+
+2023-08-13 00:40:59,692 - DE AAR WO - INFO - This is the rmse: 8.616515173379211
+
+2023-08-13 00:40:59,692 - DE AAR WO - INFO - This is the mae: 7.915560186129294
+
+2023-08-13 00:40:59,692 - DE AAR WO - INFO - This is the smape: 200.0
+
+2023-08-13 00:40:59,693 - DE AAR WO - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 00:40:59,693 - DE AAR WO - INFO - TCN evaluation of DE AAR WO for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

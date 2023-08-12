@@ -1,0 +1,7 @@
+2023-08-13 00:18:40,827 - WORCESTER-AWS - INFO - TCN model training started at WORCESTER-AWS
+2023-08-13 00:18:40,993 - WORCESTER-AWS - INFO - TCN Model on split 1/1 at WORCESTER-AWS station forecasting 3 hours ahead.
+2023-08-13 00:18:46,926 - WORCESTER-AWS - INFO - Loss: [20.547321319580078, 61.979644775390625]
+2023-08-13 00:18:46,926 - WORCESTER-AWS - INFO - Val Loss: [82.54422760009766, 29.8419246673584]
+2023-08-13 00:18:48,418 - WORCESTER-AWS - INFO - TCN training done on split 1/1 at WORCESTER-AWS station forecasting 3 hours ahead.
+2023-08-13 00:18:48,419 - WORCESTER-AWS - INFO - TCN training finished at WORCESTER-AWS
+2023-08-13 00:18:48,423 - WORCESTER-AWS - INFO - TCN training finished at all stations set for training :)

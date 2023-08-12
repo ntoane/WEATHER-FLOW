@@ -117,7 +117,7 @@ class tcnExecute(modelExecute):
                         # predictions to dataframe
                         resultsDF = pd.concat([resultsDF, pd.Series(yhat.reshape(-1, ))])
                         
-                        self.save_actual_vs_predicted(Y_test, yhat, station,forecast_len)
+                        # self.save_actual_vs_predicted(Y_test, yhat, station,forecast_len)
 
                     else:
                         tcn_model = tcn_two.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
@@ -154,6 +154,7 @@ class tcnExecute(modelExecute):
                 self.model_logger.info('TCN training finished at ' + station)  
                 
                 # act_vs_predDF.to_csv(actuals_vs_predicted)
+                print("reach2")
                 resultsDF.to_csv(resultsFile)
                 lossDF.to_csv(lossFile)
                 targetDF.to_csv(targetFile)

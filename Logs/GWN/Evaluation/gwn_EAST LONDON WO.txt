@@ -1,0 +1,6 @@
+2023-08-12 23:52:46,874 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 3
+2023-08-12 23:52:46,875 - EAST LONDON WO - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 3.
+2023-08-12 23:52:46,876 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 6
+2023-08-12 23:52:46,876 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 6
+2023-08-12 23:52:46,877 - EAST LONDON WO - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 6.
+2023-08-12 23:52:46,877 - EAST LONDON WO - ERROR - Error! : Unable to read data or write metrics for station EAST LONDON WO and horizon length 6.

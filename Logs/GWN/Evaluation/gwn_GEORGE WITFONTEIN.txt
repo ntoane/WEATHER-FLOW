@@ -1,0 +1,6 @@
+2023-08-12 23:52:46,895 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 3
+2023-08-12 23:52:46,898 - GEORGE WITFONTEIN - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 3.
+2023-08-12 23:52:46,899 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 6
+2023-08-12 23:52:46,899 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 6
+2023-08-12 23:52:46,900 - GEORGE WITFONTEIN - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 6.
+2023-08-12 23:52:46,900 - GEORGE WITFONTEIN - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 6.

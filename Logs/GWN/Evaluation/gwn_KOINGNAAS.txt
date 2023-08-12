@@ -1,0 +1,6 @@
+2023-08-12 23:52:46,922 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 3
+2023-08-12 23:52:46,923 - KOINGNAAS - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 3.
+2023-08-12 23:52:46,924 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 6
+2023-08-12 23:52:46,924 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 6
+2023-08-12 23:52:46,927 - KOINGNAAS - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 6.
+2023-08-12 23:52:46,927 - KOINGNAAS - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 6.

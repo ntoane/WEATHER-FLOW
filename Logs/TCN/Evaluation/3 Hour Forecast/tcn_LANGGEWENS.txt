@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,402 - LANGGEWENS - INFO - TCN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 00:19:40,422 - LANGGEWENS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.872727  -1.920417
+1    0.895455  -2.056122
+2    0.913636  -8.020658
+3    0.618182  -2.216620
+4    0.759091  -2.473717
+..        ...        ...
+142  0.559091  -2.116914
+143  0.690909  -8.171871
+144  0.481818  -1.418965
+145  0.400000  -1.837709
+146  0.372727  -8.231756
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,422 - LANGGEWENS - INFO - saved to file :Results/TCN/3 Hour Forecast/LANGGEWENS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,423 - LANGGEWENS - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 3.
+2023-08-13 00:23:06,894 - LANGGEWENS - INFO - TCN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 00:23:06,912 - LANGGEWENS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.872727  -1.920417
+1    0.895455  -2.056122
+2    0.913636  -8.020658
+3    0.618182  -2.216620
+4    0.759091  -2.473717
+..        ...        ...
+142  0.559091  -2.116914
+143  0.690909  -8.171871
+144  0.481818  -1.418965
+145  0.400000  -1.837709
+146  0.372727  -8.231756
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,913 - LANGGEWENS - INFO - saved to file :Results/TCN/3 Hour Forecast/LANGGEWENS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,915 - LANGGEWENS - INFO - This is the mse: 29.729734531037128
+
+2023-08-13 00:23:06,915 - LANGGEWENS - INFO - This is the rmse: 5.4524980083478365
+
+2023-08-13 00:23:06,915 - LANGGEWENS - INFO - This is the mae: 4.438789032343847
+
+2023-08-13 00:23:06,915 - LANGGEWENS - INFO - This is the smape: 200.0
+
+2023-08-13 00:23:06,915 - LANGGEWENS - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 00:23:06,916 - LANGGEWENS - INFO - TCN evaluation of LANGGEWENS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,309 - LANGGEWENS - INFO - TCN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 00:34:27,323 - LANGGEWENS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.872727  -1.920417
+1    0.895455  -2.056122
+2    0.913636  -8.020658
+3    0.618182  -2.216620
+4    0.759091  -2.473717
+..        ...        ...
+142  0.559091  -2.116914
+143  0.690909  -8.171871
+144  0.481818  -1.418965
+145  0.400000  -1.837709
+146  0.372727  -8.231756
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,324 - LANGGEWENS - INFO - saved to file :Results/TCN/3 Hour Forecast/LANGGEWENS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,325 - LANGGEWENS - INFO - This is the mse: 29.729734531037128
+
+2023-08-13 00:34:27,325 - LANGGEWENS - INFO - This is the rmse: 5.4524980083478365
+
+2023-08-13 00:34:27,325 - LANGGEWENS - INFO - This is the mae: 4.438789032343847
+
+2023-08-13 00:34:27,325 - LANGGEWENS - INFO - This is the smape: 200.0
+
+2023-08-13 00:34:27,325 - LANGGEWENS - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 00:34:27,325 - LANGGEWENS - INFO - TCN evaluation of LANGGEWENS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,240 - LANGGEWENS - INFO - TCN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 00:41:00,261 - LANGGEWENS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.872727  -1.920417
+1    0.895455  -2.056122
+2    0.913636  -8.020658
+3    0.618182  -2.216620
+4    0.759091  -2.473717
+..        ...        ...
+142  0.559091  -2.116914
+143  0.690909  -8.171871
+144  0.481818  -1.418965
+145  0.400000  -1.837709
+146  0.372727  -8.231756
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,261 - LANGGEWENS - INFO - saved to file :Results/TCN/3 Hour Forecast/LANGGEWENS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,263 - LANGGEWENS - INFO - This is the mse: 29.729734531037128
+
+2023-08-13 00:41:00,263 - LANGGEWENS - INFO - This is the rmse: 5.4524980083478365
+
+2023-08-13 00:41:00,263 - LANGGEWENS - INFO - This is the mae: 4.438789032343847
+
+2023-08-13 00:41:00,263 - LANGGEWENS - INFO - This is the smape: 200.0
+
+2023-08-13 00:41:00,263 - LANGGEWENS - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 00:41:00,264 - LANGGEWENS - INFO - TCN evaluation of LANGGEWENS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

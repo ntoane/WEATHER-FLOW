@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,555 - POFADDER - INFO - TCN evaluation started atPOFADDER for the horizon of 3
+2023-08-13 00:19:40,573 - POFADDER - INFO - actual vs prediced is :       Actual  Predicted
+0    0.971014   8.002302
+1    1.004831   4.929038
+2    1.057971  -1.739116
+3    0.792271   7.733584
+4    0.864734   5.393958
+..        ...        ...
+142  0.555556   5.880618
+143  0.637681  -1.469828
+144  0.458937   7.711408
+145  0.434783   6.478307
+146  0.429952  -1.756855
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,573 - POFADDER - INFO - saved to file :Results/TCN/3 Hour Forecast/POFADDER/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,575 - POFADDER - ERROR - Error! : Unable to read data or write metrics for station POFADDER and horizon length 3.
+2023-08-13 00:23:07,023 - POFADDER - INFO - TCN evaluation started atPOFADDER for the horizon of 3
+2023-08-13 00:23:07,038 - POFADDER - INFO - actual vs prediced is :       Actual  Predicted
+0    0.971014   8.002302
+1    1.004831   4.929038
+2    1.057971  -1.739116
+3    0.792271   7.733584
+4    0.864734   5.393958
+..        ...        ...
+142  0.555556   5.880618
+143  0.637681  -1.469828
+144  0.458937   7.711408
+145  0.434783   6.478307
+146  0.429952  -1.756855
+
+[147 rows x 2 columns]
+2023-08-13 00:23:07,038 - POFADDER - INFO - saved to file :Results/TCN/3 Hour Forecast/POFADDER/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:07,039 - POFADDER - INFO - This is the mse: 25.69967371045371
+
+2023-08-13 00:23:07,039 - POFADDER - INFO - This is the rmse: 5.069484560628793
+
+2023-08-13 00:23:07,040 - POFADDER - INFO - This is the mae: 4.6662214503309345
+
+2023-08-13 00:23:07,040 - POFADDER - INFO - This is the smape: 174.66640153635146
+
+2023-08-13 00:23:07,040 - POFADDER - INFO - This is the smape_std_dev: 20.77157468604478
+
+2023-08-13 00:23:07,040 - POFADDER - INFO - TCN evaluation of POFADDER for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,410 - POFADDER - INFO - TCN evaluation started atPOFADDER for the horizon of 3
+2023-08-13 00:34:27,423 - POFADDER - INFO - actual vs prediced is :       Actual  Predicted
+0    0.971014   8.002302
+1    1.004831   4.929038
+2    1.057971  -1.739116
+3    0.792271   7.733584
+4    0.864734   5.393958
+..        ...        ...
+142  0.555556   5.880618
+143  0.637681  -1.469828
+144  0.458937   7.711408
+145  0.434783   6.478307
+146  0.429952  -1.756855
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,423 - POFADDER - INFO - saved to file :Results/TCN/3 Hour Forecast/POFADDER/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,424 - POFADDER - INFO - This is the mse: 25.69967371045371
+
+2023-08-13 00:34:27,425 - POFADDER - INFO - This is the rmse: 5.069484560628793
+
+2023-08-13 00:34:27,425 - POFADDER - INFO - This is the mae: 4.6662214503309345
+
+2023-08-13 00:34:27,425 - POFADDER - INFO - This is the smape: 174.66640153635146
+
+2023-08-13 00:34:27,425 - POFADDER - INFO - This is the smape_std_dev: 20.77157468604478
+
+2023-08-13 00:34:27,425 - POFADDER - INFO - TCN evaluation of POFADDER for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,469 - POFADDER - INFO - TCN evaluation started atPOFADDER for the horizon of 3
+2023-08-13 00:41:00,490 - POFADDER - INFO - actual vs prediced is :       Actual  Predicted
+0    0.971014   8.002302
+1    1.004831   4.929038
+2    1.057971  -1.739116
+3    0.792271   7.733584
+4    0.864734   5.393958
+..        ...        ...
+142  0.555556   5.880618
+143  0.637681  -1.469828
+144  0.458937   7.711408
+145  0.434783   6.478307
+146  0.429952  -1.756855
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,490 - POFADDER - INFO - saved to file :Results/TCN/3 Hour Forecast/POFADDER/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,494 - POFADDER - INFO - This is the mse: 25.69967371045371
+
+2023-08-13 00:41:00,495 - POFADDER - INFO - This is the rmse: 5.069484560628793
+
+2023-08-13 00:41:00,495 - POFADDER - INFO - This is the mae: 4.6662214503309345
+
+2023-08-13 00:41:00,495 - POFADDER - INFO - This is the smape: 174.66640153635146
+
+2023-08-13 00:41:00,495 - POFADDER - INFO - This is the smape_std_dev: 20.77157468604478
+
+2023-08-13 00:41:00,495 - POFADDER - INFO - TCN evaluation of POFADDER for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

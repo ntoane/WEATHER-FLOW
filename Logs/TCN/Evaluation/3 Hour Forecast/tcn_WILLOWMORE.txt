@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,902 - WILLOWMORE - INFO - TCN evaluation started atWILLOWMORE for the horizon of 3
+2023-08-13 00:19:40,915 - WILLOWMORE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.716346   1.525178
+1    0.798077  15.190668
+2    0.822115  -5.370196
+3    0.442308   1.401073
+4    0.466346  15.323853
+..        ...        ...
+142  0.206731  15.571556
+143  0.245192  -5.850987
+144  0.192308   1.636228
+145  0.192308  15.483305
+146  0.177885  -5.989150
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,915 - WILLOWMORE - INFO - saved to file :Results/TCN/3 Hour Forecast/WILLOWMORE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,917 - WILLOWMORE - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 3.
+2023-08-13 00:23:07,355 - WILLOWMORE - INFO - TCN evaluation started atWILLOWMORE for the horizon of 3
+2023-08-13 00:23:07,369 - WILLOWMORE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.716346   1.525178
+1    0.798077  15.190668
+2    0.822115  -5.370196
+3    0.442308   1.401073
+4    0.466346  15.323853
+..        ...        ...
+142  0.206731  15.571556
+143  0.245192  -5.850987
+144  0.192308   1.636228
+145  0.192308  15.483305
+146  0.177885  -5.989150
+
+[147 rows x 2 columns]
+2023-08-13 00:23:07,369 - WILLOWMORE - INFO - saved to file :Results/TCN/3 Hour Forecast/WILLOWMORE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:07,371 - WILLOWMORE - INFO - This is the mse: 88.58313432158
+
+2023-08-13 00:23:07,371 - WILLOWMORE - INFO - This is the rmse: 9.411861363278787
+
+2023-08-13 00:23:07,371 - WILLOWMORE - INFO - This is the mae: 7.4724734996337
+
+2023-08-13 00:23:07,371 - WILLOWMORE - INFO - This is the smape: 172.92586182112802
+
+2023-08-13 00:23:07,371 - WILLOWMORE - INFO - This is the smape_std_dev: 37.35040394976753
+
+2023-08-13 00:23:07,371 - WILLOWMORE - INFO - TCN evaluation of WILLOWMORE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,720 - WILLOWMORE - INFO - TCN evaluation started atWILLOWMORE for the horizon of 3
+2023-08-13 00:34:27,756 - WILLOWMORE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.716346   1.525178
+1    0.798077  15.190668
+2    0.822115  -5.370196
+3    0.442308   1.401073
+4    0.466346  15.323853
+..        ...        ...
+142  0.206731  15.571556
+143  0.245192  -5.850987
+144  0.192308   1.636228
+145  0.192308  15.483305
+146  0.177885  -5.989150
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,756 - WILLOWMORE - INFO - saved to file :Results/TCN/3 Hour Forecast/WILLOWMORE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,758 - WILLOWMORE - INFO - This is the mse: 88.58313432158
+
+2023-08-13 00:34:27,758 - WILLOWMORE - INFO - This is the rmse: 9.411861363278787
+
+2023-08-13 00:34:27,758 - WILLOWMORE - INFO - This is the mae: 7.4724734996337
+
+2023-08-13 00:34:27,758 - WILLOWMORE - INFO - This is the smape: 172.92586182112802
+
+2023-08-13 00:34:27,758 - WILLOWMORE - INFO - This is the smape_std_dev: 37.35040394976753
+
+2023-08-13 00:34:27,759 - WILLOWMORE - INFO - TCN evaluation of WILLOWMORE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,942 - WILLOWMORE - INFO - TCN evaluation started atWILLOWMORE for the horizon of 3
+2023-08-13 00:41:00,963 - WILLOWMORE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.716346   1.525178
+1    0.798077  15.190668
+2    0.822115  -5.370196
+3    0.442308   1.401073
+4    0.466346  15.323853
+..        ...        ...
+142  0.206731  15.571556
+143  0.245192  -5.850987
+144  0.192308   1.636228
+145  0.192308  15.483305
+146  0.177885  -5.989150
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,964 - WILLOWMORE - INFO - saved to file :Results/TCN/3 Hour Forecast/WILLOWMORE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,966 - WILLOWMORE - INFO - This is the mse: 88.58313432158
+
+2023-08-13 00:41:00,966 - WILLOWMORE - INFO - This is the rmse: 9.411861363278787
+
+2023-08-13 00:41:00,966 - WILLOWMORE - INFO - This is the mae: 7.4724734996337
+
+2023-08-13 00:41:00,966 - WILLOWMORE - INFO - This is the smape: 172.92586182112802
+
+2023-08-13 00:41:00,966 - WILLOWMORE - INFO - This is the smape_std_dev: 37.35040394976753
+
+2023-08-13 00:41:00,967 - WILLOWMORE - INFO - TCN evaluation of WILLOWMORE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

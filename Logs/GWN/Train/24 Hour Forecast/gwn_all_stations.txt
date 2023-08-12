@@ -1,0 +1,16 @@
+2023-08-12 23:22:37,611 - all_stations - INFO - Training GWN models through walk-forward validation on a forecasting horizon of: 24
+2023-08-12 23:22:37,611 - all_stations - INFO - Remember that this ST-GNN model GWN trains all weather stations for each horizon, thus it will be 45 rows of data for each hour
+2023-08-12 23:22:41,809 - all_stations - INFO - Epoch  1 | Train Time: 3.10s | Train Loss: 0.1863 | Validation Time: 0.8461 | Validation Loss: 0.1224 
+2023-08-12 23:22:42,747 - all_stations - INFO - trainLossFrame           0
+0  0.186257
+2023-08-12 23:22:42,749 - all_stations - INFO - validationLossFrame           0
+0  0.122426
+2023-08-12 23:22:42,752 - all_stations - INFO - Saving the actual vs predicted comparison to a CSV file. : Results/GWN/24 Hour Forecast/Predictions/actual_vs_predicted.csv
+2023-08-12 23:22:45,905 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 0 - Actual: 0.5166162848472595, Predicted: 0.13711296021938324
+2023-08-12 23:22:49,128 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 1 - Actual: 0.4864048361778259, Predicted: 0.13135556876659393
+2023-08-12 23:22:52,098 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 2 - Actual: 0.4592145085334778, Predicted: 0.09384798258543015
+2023-08-12 23:22:55,536 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 3 - Actual: 0.44108760356903076, Predicted: 0.19672301411628723
+2023-08-12 23:22:58,750 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 4 - Actual: 0.395770400762558, Predicted: 0.1320110261440277
+2023-08-12 23:23:02,129 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 5 - Actual: 0.3806646466255188, Predicted: 0.09227914363145828
+2023-08-12 23:23:05,286 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 6 - Actual: 0.3806646466255188, Predicted: 0.16934344172477722
+2023-08-12 23:23:08,033 - all_stations - INFO - Date 2010-01-01 00:00:00 Index 7 - Actual: 0.365558922290802, Predicted: 0.1978420913219452

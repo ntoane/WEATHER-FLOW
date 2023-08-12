@@ -1,0 +1,6 @@
+2023-08-12 23:52:46,827 - ALEXANDERBAAI - INFO - GWN evaluation started atALEXANDERBAAI for the horizon of 3
+2023-08-12 23:52:46,828 - ALEXANDERBAAI - ERROR - Error! : Unable to read data or write metrics for station ALEXANDERBAAI and horizon length 3.
+2023-08-12 23:52:46,829 - ALEXANDERBAAI - INFO - GWN evaluation started atALEXANDERBAAI for the horizon of 6
+2023-08-12 23:52:46,829 - ALEXANDERBAAI - INFO - GWN evaluation started atALEXANDERBAAI for the horizon of 6
+2023-08-12 23:52:46,831 - ALEXANDERBAAI - ERROR - Error! : Unable to read data or write metrics for station ALEXANDERBAAI and horizon length 6.
+2023-08-12 23:52:46,831 - ALEXANDERBAAI - ERROR - Error! : Unable to read data or write metrics for station ALEXANDERBAAI and horizon length 6.

@@ -12,7 +12,7 @@ def TcnEval(tcnConfig, sharedConfig):
     
     for station in stations:
         for horizon in horizons: 
-            try:
+            # try:
                 print(f'TCN evaluation started at {station} for the horizon of {horizon}')
                 paths = get_tcn_file_paths(station, horizon)
                 tcn_logger = modelLogger('tcn', str(station),'Logs/TCN/Evaluation/' + str(horizon) + ' Hour Forecast/'+'tcn_' + str(station) +'.txt', log_enabled=True)
@@ -26,15 +26,15 @@ def TcnEval(tcnConfig, sharedConfig):
                 tcn_logger.info('saved to file :' +str(paths['actual_vs_predicted_file']) )
                 actual_vs_predicted.to_csv(paths['actual_vs_predicted_file'], index=False)
                 # Write the metrics to the metric file
-                with open(paths['metrics'], 'w') as metric_file:
+                with open(paths['metric_file'], 'w') as metric_file:
                     for name, value in metrics.items():
                         metric_file.write(f'This is the {name}: {value}\n')
                         tcn_logger.info(f'This is the {name}: {value}\n')
                 tcn_logger.info('TCN evaluation of ' + station+' for the horizon of ' +str(horizon) +' was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt') 
                 print_metrics(metrics, station, horizon)
-            except Exception as e:
-                print('Error! : Unable to read data or write metrics for station {} and horizon length {}'.format(station, horizon), e)
-                tcn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
+            # except Exception as e:
+            #     print('Error! : Unable to read data or write metrics for station {} and horizon length {}'.format(station, horizon), e)
+            #     tcn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
     tcn_logger.info('Finished evaluation of TCN error metrics for all stations.') 
 
 
@@ -71,6 +71,9 @@ def calculate_tcn_metrics(paths):
         "smape_std_dev": smape_std_dev
     }
     return actual_vs_predicted, calculated_metrics
+
+
+
 
 
 def GwnEval(gwnConfig, sharedConfig):
@@ -158,7 +161,7 @@ def get_tcn_file_paths(station, horizon, model='TCN'):
     return {
             "yhat_path" : f'Results/TCN/{horizon} Hour Forecast/{station}/Predictions/result.csv',
             "target_path" : f'Results/TCN/{horizon} Hour Forecast/{station}/Targets/target.csv',
-            "metric_file" : f'Results/TCN/{horizon} Hour Forecast/Metrics/{station}/metrics.txt',
+            "metric_file" : f'Results/TCN/{horizon} Hour Forecast/{station}/Metrics/metrics.txt',
             "actual_vs_predicted_file" : f'Results/TCN/{horizon} Hour Forecast/{station}/Metrics/actual_vs_predicted.txt'
         }
        

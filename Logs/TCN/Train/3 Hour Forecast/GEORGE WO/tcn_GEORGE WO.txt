@@ -1,0 +1,6 @@
+2023-08-13 00:13:51,159 - GEORGE WO - INFO - TCN model training started at GEORGE WO
+2023-08-13 00:13:51,324 - GEORGE WO - INFO - TCN Model on split 1/1 at GEORGE WO station forecasting 3 hours ahead.
+2023-08-13 00:13:58,023 - GEORGE WO - INFO - Loss: [18.839780807495117, 9.61445140838623]
+2023-08-13 00:13:58,023 - GEORGE WO - INFO - Val Loss: [15.320466041564941, 10.590287208557129]
+2023-08-13 00:13:59,457 - GEORGE WO - INFO - TCN training done on split 1/1 at GEORGE WO station forecasting 3 hours ahead.
+2023-08-13 00:13:59,457 - GEORGE WO - INFO - TCN training finished at GEORGE WO

@@ -1,0 +1,6 @@
+2023-08-12 23:52:47,328 - WILLOWMORE - INFO - GWN evaluation started atWILLOWMORE for the horizon of 3
+2023-08-12 23:52:47,330 - WILLOWMORE - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 3.
+2023-08-12 23:52:47,331 - WILLOWMORE - INFO - GWN evaluation started atWILLOWMORE for the horizon of 6
+2023-08-12 23:52:47,331 - WILLOWMORE - INFO - GWN evaluation started atWILLOWMORE for the horizon of 6
+2023-08-12 23:52:47,334 - WILLOWMORE - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 6.
+2023-08-12 23:52:47,334 - WILLOWMORE - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 6.

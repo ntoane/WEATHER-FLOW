@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,679 - PRIESKA - INFO - TCN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 00:19:40,697 - PRIESKA - INFO - actual vs prediced is :       Actual  Predicted
+0    1.006536   4.788286
+1    1.124183   1.876399
+2    1.032680   0.662001
+3    0.614379   5.899430
+4    0.718954   2.558847
+..        ...        ...
+142  0.372549   2.408671
+143  0.516340   0.683694
+144  0.117647   5.295941
+145  0.111111   2.329917
+146  0.130719   0.563186
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,698 - PRIESKA - INFO - saved to file :Results/TCN/3 Hour Forecast/PRIESKA/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,700 - PRIESKA - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 3.
+2023-08-13 00:23:07,136 - PRIESKA - INFO - TCN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 00:23:07,147 - PRIESKA - INFO - actual vs prediced is :       Actual  Predicted
+0    1.006536   4.788286
+1    1.124183   1.876399
+2    1.032680   0.662001
+3    0.614379   5.899430
+4    0.718954   2.558847
+..        ...        ...
+142  0.372549   2.408671
+143  0.516340   0.683694
+144  0.117647   5.295941
+145  0.111111   2.329917
+146  0.130719   0.563186
+
+[147 rows x 2 columns]
+2023-08-13 00:23:07,148 - PRIESKA - INFO - saved to file :Results/TCN/3 Hour Forecast/PRIESKA/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:07,149 - PRIESKA - INFO - This is the mse: 6.928915939765693
+
+2023-08-13 00:23:07,149 - PRIESKA - INFO - This is the rmse: 2.632283407949397
+
+2023-08-13 00:23:07,150 - PRIESKA - INFO - This is the mae: 2.0485810420030233
+
+2023-08-13 00:23:07,150 - PRIESKA - INFO - This is the smape: 116.96778829161241
+
+2023-08-13 00:23:07,150 - PRIESKA - INFO - This is the smape_std_dev: 54.551244465669036
+
+2023-08-13 00:23:07,150 - PRIESKA - INFO - TCN evaluation of PRIESKA for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,508 - PRIESKA - INFO - TCN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 00:34:27,522 - PRIESKA - INFO - actual vs prediced is :       Actual  Predicted
+0    1.006536   4.788286
+1    1.124183   1.876399
+2    1.032680   0.662001
+3    0.614379   5.899430
+4    0.718954   2.558847
+..        ...        ...
+142  0.372549   2.408671
+143  0.516340   0.683694
+144  0.117647   5.295941
+145  0.111111   2.329917
+146  0.130719   0.563186
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,523 - PRIESKA - INFO - saved to file :Results/TCN/3 Hour Forecast/PRIESKA/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,524 - PRIESKA - INFO - This is the mse: 6.928915939765693
+
+2023-08-13 00:34:27,524 - PRIESKA - INFO - This is the rmse: 2.632283407949397
+
+2023-08-13 00:34:27,524 - PRIESKA - INFO - This is the mae: 2.0485810420030233
+
+2023-08-13 00:34:27,524 - PRIESKA - INFO - This is the smape: 116.96778829161241
+
+2023-08-13 00:34:27,524 - PRIESKA - INFO - This is the smape_std_dev: 54.551244465669036
+
+2023-08-13 00:34:27,524 - PRIESKA - INFO - TCN evaluation of PRIESKA for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,639 - PRIESKA - INFO - TCN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 00:41:00,656 - PRIESKA - INFO - actual vs prediced is :       Actual  Predicted
+0    1.006536   4.788286
+1    1.124183   1.876399
+2    1.032680   0.662001
+3    0.614379   5.899430
+4    0.718954   2.558847
+..        ...        ...
+142  0.372549   2.408671
+143  0.516340   0.683694
+144  0.117647   5.295941
+145  0.111111   2.329917
+146  0.130719   0.563186
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,656 - PRIESKA - INFO - saved to file :Results/TCN/3 Hour Forecast/PRIESKA/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,657 - PRIESKA - INFO - This is the mse: 6.928915939765693
+
+2023-08-13 00:41:00,658 - PRIESKA - INFO - This is the rmse: 2.632283407949397
+
+2023-08-13 00:41:00,658 - PRIESKA - INFO - This is the mae: 2.0485810420030233
+
+2023-08-13 00:41:00,658 - PRIESKA - INFO - This is the smape: 116.96778829161241
+
+2023-08-13 00:41:00,658 - PRIESKA - INFO - This is the smape_std_dev: 54.551244465669036
+
+2023-08-13 00:41:00,658 - PRIESKA - INFO - TCN evaluation of PRIESKA for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

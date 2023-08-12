@@ -1,0 +1,98 @@
+2023-08-13 00:19:40,615 - PORT ELIZABETH AWS - INFO - TCN evaluation started atPORT ELIZABETH AWS for the horizon of 3
+2023-08-13 00:19:40,635 - PORT ELIZABETH AWS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.683333  -0.112237
+1    0.616667  -0.461788
+2    0.650000   5.772496
+3    0.600000  -0.096202
+4    0.683333  -1.167460
+..        ...        ...
+142  0.358333  -0.705279
+143  0.508333   5.672336
+144  0.216667  -0.264765
+145  0.216667  -0.849695
+146  0.258333   5.622969
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,635 - PORT ELIZABETH AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/PORT ELIZABETH AWS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,637 - PORT ELIZABETH AWS - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWS and horizon length 3.
+2023-08-13 00:23:07,077 - PORT ELIZABETH AWS - INFO - TCN evaluation started atPORT ELIZABETH AWS for the horizon of 3
+2023-08-13 00:23:07,094 - PORT ELIZABETH AWS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.683333  -0.112237
+1    0.616667  -0.461788
+2    0.650000   5.772496
+3    0.600000  -0.096202
+4    0.683333  -1.167460
+..        ...        ...
+142  0.358333  -0.705279
+143  0.508333   5.672336
+144  0.216667  -0.264765
+145  0.216667  -0.849695
+146  0.258333   5.622969
+
+[147 rows x 2 columns]
+2023-08-13 00:23:07,094 - PORT ELIZABETH AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/PORT ELIZABETH AWS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:07,095 - PORT ELIZABETH AWS - INFO - This is the mse: 9.561019844454185
+
+2023-08-13 00:23:07,095 - PORT ELIZABETH AWS - INFO - This is the rmse: 3.0920898829843524
+
+2023-08-13 00:23:07,095 - PORT ELIZABETH AWS - INFO - This is the mae: 2.3197714062426305
+
+2023-08-13 00:23:07,095 - PORT ELIZABETH AWS - INFO - This is the smape: 180.5326356505935
+
+2023-08-13 00:23:07,095 - PORT ELIZABETH AWS - INFO - This is the smape_std_dev: 38.27986554915789
+
+2023-08-13 00:23:07,096 - PORT ELIZABETH AWS - INFO - TCN evaluation of PORT ELIZABETH AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,458 - PORT ELIZABETH AWS - INFO - TCN evaluation started atPORT ELIZABETH AWS for the horizon of 3
+2023-08-13 00:34:27,472 - PORT ELIZABETH AWS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.683333  -0.112237
+1    0.616667  -0.461788
+2    0.650000   5.772496
+3    0.600000  -0.096202
+4    0.683333  -1.167460
+..        ...        ...
+142  0.358333  -0.705279
+143  0.508333   5.672336
+144  0.216667  -0.264765
+145  0.216667  -0.849695
+146  0.258333   5.622969
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,472 - PORT ELIZABETH AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/PORT ELIZABETH AWS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,474 - PORT ELIZABETH AWS - INFO - This is the mse: 9.561019844454185
+
+2023-08-13 00:34:27,474 - PORT ELIZABETH AWS - INFO - This is the rmse: 3.0920898829843524
+
+2023-08-13 00:34:27,474 - PORT ELIZABETH AWS - INFO - This is the mae: 2.3197714062426305
+
+2023-08-13 00:34:27,474 - PORT ELIZABETH AWS - INFO - This is the smape: 180.5326356505935
+
+2023-08-13 00:34:27,474 - PORT ELIZABETH AWS - INFO - This is the smape_std_dev: 38.27986554915789
+
+2023-08-13 00:34:27,474 - PORT ELIZABETH AWS - INFO - TCN evaluation of PORT ELIZABETH AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,569 - PORT ELIZABETH AWS - INFO - TCN evaluation started atPORT ELIZABETH AWS for the horizon of 3
+2023-08-13 00:41:00,592 - PORT ELIZABETH AWS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.683333  -0.112237
+1    0.616667  -0.461788
+2    0.650000   5.772496
+3    0.600000  -0.096202
+4    0.683333  -1.167460
+..        ...        ...
+142  0.358333  -0.705279
+143  0.508333   5.672336
+144  0.216667  -0.264765
+145  0.216667  -0.849695
+146  0.258333   5.622969
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,592 - PORT ELIZABETH AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/PORT ELIZABETH AWS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,594 - PORT ELIZABETH AWS - INFO - This is the mse: 9.561019844454185
+
+2023-08-13 00:41:00,594 - PORT ELIZABETH AWS - INFO - This is the rmse: 3.0920898829843524
+
+2023-08-13 00:41:00,594 - PORT ELIZABETH AWS - INFO - This is the mae: 2.3197714062426305
+
+2023-08-13 00:41:00,594 - PORT ELIZABETH AWS - INFO - This is the smape: 180.5326356505935
+
+2023-08-13 00:41:00,594 - PORT ELIZABETH AWS - INFO - This is the smape_std_dev: 38.27986554915789
+
+2023-08-13 00:41:00,594 - PORT ELIZABETH AWS - INFO - TCN evaluation of PORT ELIZABETH AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
