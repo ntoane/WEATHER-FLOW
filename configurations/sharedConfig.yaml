@@ -60,7 +60,7 @@ stations:
 horizons:
   type: int[]
   # default: [3, 6, 9, 12, 24]
-  default: [3, 6]
+  default: [3]
   help: forecast horizons
 
 n_stations:
@@ -70,7 +70,7 @@ n_stations:
 
 n_split:
   type: int
-  default: 3
+  default: 2
   help: number of splits in walk-forward validation
 
 ################################# Loss and Optimizer  ###############################

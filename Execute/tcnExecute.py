@@ -108,8 +108,8 @@ class tcnExecute(modelExecute):
                         model, history = tcn_model.temperature_model()
                         # validation and train loss to dataframe
                         lossDF = lossDF.append([[history.history['loss'], history.history['val_loss']]])
-                        self.model_logger.info("Loss: " + str(history.history['loss']) )
-                        self.model_logger.info("Val Loss: " + str(history.history['val_loss']) )
+                        # self.model_logger.info("Loss: " + str(history.history['loss']) )
+                        # self.model_logger.info("Val Loss: " + str(history.history['val_loss']) )
                         
                         # load best model
                         model = load_model(saveFile, custom_objects={'TCN': TCN})
@@ -135,8 +135,8 @@ class tcnExecute(modelExecute):
                         model, history = tcn_model.temperature_model()
                         # validation and train loss to dataframe
                         lossDF = lossDF.append([[history.history['loss'], history.history['val_loss']]])
-                        self.model_logger.info("Loss: " + str(history.history['loss']) )
-                        self.model_logger.info("Val Loss: " + str(history.history['val_loss']) )
+                        # self.model_logger.info("Loss: " + str(history.history['loss']) )
+                        # self.model_logger.info("Val Loss: " + str(history.history['val_loss']) )
                         
                         # load best model
                         model = load_model(saveFile, custom_objects={'TCN': TCN})
@@ -147,8 +147,8 @@ class tcnExecute(modelExecute):
                         
                         # self.save_actual_vs_predicted(Y_test, yhat, station,forecast_len)
 
-                    self.model_logger.info('TCN training done on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
-                                                                                                        forecast_len,num_splits))
+                    # self.model_logger.info('TCN training done on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+                    #                                                                                     forecast_len,num_splits))
                     # Targets to dataframe
                     targetDF = pd.concat([targetDF, pd.Series(Y_test.reshape(-1, ))])
                     
@@ -156,13 +156,13 @@ class tcnExecute(modelExecute):
                     lossDF.to_csv(lossFile)
                     targetDF.to_csv(targetFile)
                 
-                self.model_logger.info('TCN training finished at ' + station)  
+                # self.model_logger.info('TCN training finished at ' + station)  
                 
                 # act_vs_predDF.to_csv(actuals_vs_predicted)
             
          
             configFile.close()
-        self.model_logger.info('TCN training finished at all stations set for training :)')
+        # self.model_logger.info('TCN training finished at all stations set for training :)')
         
     def save_actual_vs_predicted(self, Y_test, yhat, station,forecast_len):
         actual_vs_predicted_data = pd.DataFrame({
@@ -181,7 +181,7 @@ class tcnExecute(modelExecute):
         actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=True)
         
         # Log all actual vs predicted values
-        self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file - file path DataNew/Weather Station Data/' + str(station) + '.csv')
+        # self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file - file path DataNew/Weather Station Data/' + str(station) + '.csv')
         previous_year = None
         for index, row in actual_vs_predicted_data.iterrows():
             file_path = 'DataNew/Weather Station Data/' + str(station) + '.csv'
@@ -191,7 +191,7 @@ class tcnExecute(modelExecute):
             if previous_year and current_year != previous_year:
                 print(f"The year changed from {previous_year} to {current_year} for performing the logging")
             previous_year = current_year
-            self.model_logger.info(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
+            # self.model_logger.info(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
         
     def create_dataframes_and_dirs(self, forecast_len, station, k):
         lossDF = pd.DataFrame()
