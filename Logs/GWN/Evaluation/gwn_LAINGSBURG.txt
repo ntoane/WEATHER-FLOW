@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,635 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,639 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,639 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,760 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 3
+2023-08-13 12:35:14,805 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,812 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,826 - LAINGSBURG - INFO - Finished computing evaluation error metrics.

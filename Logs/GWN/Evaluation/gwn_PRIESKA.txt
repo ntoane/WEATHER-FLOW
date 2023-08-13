@@ -22,3 +22,7 @@
 2023-08-13 01:10:08,073 - PRIESKA - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,076 - PRIESKA - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,076 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,102 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 12:35:15,107 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,110 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,114 - PRIESKA - INFO - Finished computing evaluation error metrics.

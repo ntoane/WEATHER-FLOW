@@ -22,3 +22,7 @@
 2023-08-13 01:10:06,673 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:06,677 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:06,677 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,369 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-13 12:35:14,373 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,377 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,381 - CALVINIA WO - INFO - Finished computing evaluation error metrics.

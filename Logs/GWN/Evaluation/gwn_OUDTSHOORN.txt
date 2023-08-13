@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,794 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,797 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,797 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,988 - OUDTSHOORN - INFO - GWN evaluation started atOUDTSHOORN for the horizon of 3
+2023-08-13 12:35:14,992 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,998 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,004 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.

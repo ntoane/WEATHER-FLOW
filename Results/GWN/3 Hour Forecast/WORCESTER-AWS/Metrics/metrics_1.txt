@@ -1,4 +1,0 @@
-This is the rmse: 0.2740196742191157
-This is the mse: 0.07508678185915031
-This is the mae: 0.22297365511379516
-This is the smape: 41.41336164834408

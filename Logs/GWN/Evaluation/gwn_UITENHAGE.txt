@@ -22,3 +22,7 @@
 2023-08-13 01:10:08,209 - UITENHAGE - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,215 - UITENHAGE - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,215 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,275 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-13 12:35:15,279 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,289 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,293 - UITENHAGE - INFO - Finished computing evaluation error metrics.

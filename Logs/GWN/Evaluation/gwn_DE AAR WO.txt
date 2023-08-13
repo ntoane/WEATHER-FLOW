@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,007 - DE AAR WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,012 - DE AAR WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,012 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,393 - DE AAR WO - INFO - GWN evaluation started atDE AAR WO for the horizon of 3
+2023-08-13 12:35:14,398 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,403 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,407 - DE AAR WO - INFO - Finished computing evaluation error metrics.

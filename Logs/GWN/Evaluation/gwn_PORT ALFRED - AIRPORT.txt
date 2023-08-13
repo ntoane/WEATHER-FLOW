@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,888 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,893 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,893 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,037 - PORT ALFRED - AIRPORT - INFO - GWN evaluation started atPORT ALFRED - AIRPORT for the horizon of 3
+2023-08-13 12:35:15,039 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,042 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,046 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.

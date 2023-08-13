@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,855 - POFADDER - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,860 - POFADDER - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,860 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,026 - POFADDER - INFO - GWN evaluation started atPOFADDER for the horizon of 3
+2023-08-13 12:35:15,029 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,031 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,036 - POFADDER - INFO - Finished computing evaluation error metrics.

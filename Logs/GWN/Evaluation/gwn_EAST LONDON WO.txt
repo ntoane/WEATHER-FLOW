@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,086 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,089 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,089 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,421 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 3
+2023-08-13 12:35:14,426 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,428 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,432 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.

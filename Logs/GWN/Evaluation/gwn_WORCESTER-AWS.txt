@@ -29,3 +29,8 @@
 2023-08-13 01:10:08,583 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,585 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
 2023-08-13 01:10:08,585 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
+2023-08-13 12:35:15,382 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 3
+2023-08-13 12:35:15,388 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,391 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,396 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,396 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.

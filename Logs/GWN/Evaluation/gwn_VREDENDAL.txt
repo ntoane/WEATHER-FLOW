@@ -22,3 +22,7 @@
 2023-08-13 01:10:08,522 - VREDENDAL - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,529 - VREDENDAL - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,529 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,353 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 12:35:15,357 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,361 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,367 - VREDENDAL - INFO - Finished computing evaluation error metrics.

@@ -22,3 +22,7 @@
 2023-08-13 01:10:08,240 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,244 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,244 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,295 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 3
+2023-08-13 12:35:15,300 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,311 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,315 - UPINGTON WO - INFO - Finished computing evaluation error metrics.

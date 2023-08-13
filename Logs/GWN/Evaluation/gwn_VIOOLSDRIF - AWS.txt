@@ -22,3 +22,7 @@
 2023-08-13 01:10:08,488 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,492 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,492 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,338 - VIOOLSDRIF - AWS - INFO - GWN evaluation started atVIOOLSDRIF - AWS for the horizon of 3
+2023-08-13 12:35:15,343 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,347 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,352 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.

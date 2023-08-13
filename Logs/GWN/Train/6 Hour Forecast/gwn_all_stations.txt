@@ -38,3 +38,23 @@
 2023-08-13 01:09:03,600 - all_stations - INFO - validationLossFrame           0
 0  0.032339
 2023-08-13 01:09:03,600 - all_stations - INFO - gwnTrain : GWN model training done.
+2023-08-13 12:38:59,024 - all_stations - INFO - Training GWN models through walk-forward validation on a forecasting horizon of: 6
+2023-08-13 12:38:59,024 - all_stations - INFO - Remember that this ST-GNN model GWN trains all weather stations for each horizon, thus it will be 45 rows of data for each hour
+2023-08-13 12:39:03,755 - all_stations - INFO - Epoch  1 | Train Time: 3.80s | Train Loss: 0.1579 | Validation Time: 0.8749 | Validation Loss: 0.0710 
+2023-08-13 12:39:04,621 - all_stations - INFO - trainLossFrame           0
+0  0.157852
+2023-08-13 12:39:04,624 - all_stations - INFO - validationLossFrame           0
+0  0.070998
+2023-08-13 12:39:04,625 - all_stations - INFO - gwnTrain : GWN model training done.
+2023-08-13 12:39:09,111 - all_stations - INFO - Epoch  1 | Train Time: 3.65s | Train Loss: 0.1342 | Validation Time: 0.7892 | Validation Loss: 0.0407 
+2023-08-13 12:39:09,958 - all_stations - INFO - trainLossFrame           0
+0  0.134224
+2023-08-13 12:39:09,960 - all_stations - INFO - validationLossFrame           0
+0  0.040682
+2023-08-13 12:39:09,960 - all_stations - INFO - gwnTrain : GWN model training done.
+2023-08-13 12:39:18,000 - all_stations - INFO - Epoch  1 | Train Time: 6.95s | Train Loss: 0.1002 | Validation Time: 1.0561 | Validation Loss: 0.0325 
+2023-08-13 12:39:18,905 - all_stations - INFO - trainLossFrame           0
+0  0.100231
+2023-08-13 12:39:18,908 - all_stations - INFO - validationLossFrame           0
+0  0.032486
+2023-08-13 12:39:18,908 - all_stations - INFO - gwnTrain : GWN model training done.

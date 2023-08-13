@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,695 - MALMESBURY - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,699 - MALMESBURY - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,699 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,843 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 3
+2023-08-13 12:35:14,847 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,854 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,859 - MALMESBURY - INFO - Finished computing evaluation error metrics.

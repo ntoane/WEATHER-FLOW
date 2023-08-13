@@ -22,3 +22,7 @@
 2023-08-13 01:10:08,177 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,181 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,181 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,258 - TWEE RIVIEREN - INFO - GWN evaluation started atTWEE RIVIEREN for the horizon of 3
+2023-08-13 12:35:15,262 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,269 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,274 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.

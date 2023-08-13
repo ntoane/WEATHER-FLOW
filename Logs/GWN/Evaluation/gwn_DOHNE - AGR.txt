@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,036 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,067 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,067 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,408 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 3
+2023-08-13 12:35:14,413 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,418 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,420 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.

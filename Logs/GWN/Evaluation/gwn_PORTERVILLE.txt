@@ -22,3 +22,7 @@
 2023-08-13 01:10:08,045 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,053 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:08,053 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,090 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-13 12:35:15,095 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,098 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,101 - PORTERVILLE - INFO - Finished computing evaluation error metrics.

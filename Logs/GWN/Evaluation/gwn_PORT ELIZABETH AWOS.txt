@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,924 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,930 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,930 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,047 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 3
+2023-08-13 12:35:15,055 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,058 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,060 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.

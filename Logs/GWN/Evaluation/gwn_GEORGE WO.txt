@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,425 - GEORGE WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,442 - GEORGE WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,442 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,482 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 3
+2023-08-13 12:35:14,486 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,490 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,509 - GEORGE WO - INFO - Finished computing evaluation error metrics.

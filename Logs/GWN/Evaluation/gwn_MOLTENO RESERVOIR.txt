@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,728 - MOLTENO RESERVOIR - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,736 - MOLTENO RESERVOIR - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,736 - MOLTENO RESERVOIR - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,860 - MOLTENO RESERVOIR - INFO - GWN evaluation started atMOLTENO RESERVOIR for the horizon of 3
+2023-08-13 12:35:14,866 - MOLTENO RESERVOIR - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,871 - MOLTENO RESERVOIR - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,876 - MOLTENO RESERVOIR - INFO - Finished computing evaluation error metrics.

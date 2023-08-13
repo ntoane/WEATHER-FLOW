@@ -22,3 +22,7 @@
 2023-08-13 01:10:07,827 - PATENSIE - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,830 - PATENSIE - INFO - Finished computing evaluation error metrics.
 2023-08-13 01:10:07,830 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,007 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 12:35:15,012 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,021 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,025 - PATENSIE - INFO - Finished computing evaluation error metrics.
