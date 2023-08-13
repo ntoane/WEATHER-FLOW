@@ -26,3 +26,15 @@
 2023-08-13 12:35:15,039 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,042 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,046 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,539 - PORT ALFRED - AIRPORT - INFO - GWN evaluation started atPORT ALFRED - AIRPORT for the horizon of 3
+2023-08-13 12:44:40,566 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,570 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,573 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,574 - PORT ALFRED - AIRPORT - INFO - GWN evaluation started atPORT ALFRED - AIRPORT for the horizon of 6
+2023-08-13 12:44:40,574 - PORT ALFRED - AIRPORT - INFO - GWN evaluation started atPORT ALFRED - AIRPORT for the horizon of 6
+2023-08-13 12:44:40,578 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,578 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,581 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,581 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,587 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,587 - PORT ALFRED - AIRPORT - INFO - Finished computing evaluation error metrics.

@@ -26,3 +26,15 @@
 2023-08-13 12:35:15,118 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,147 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,153 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,933 - REDELINGSHUYS-AWS - INFO - GWN evaluation started atREDELINGSHUYS-AWS for the horizon of 3
+2023-08-13 12:44:40,937 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,945 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,949 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,950 - REDELINGSHUYS-AWS - INFO - GWN evaluation started atREDELINGSHUYS-AWS for the horizon of 6
+2023-08-13 12:44:40,950 - REDELINGSHUYS-AWS - INFO - GWN evaluation started atREDELINGSHUYS-AWS for the horizon of 6
+2023-08-13 12:44:40,955 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,955 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,965 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,965 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,973 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,973 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.

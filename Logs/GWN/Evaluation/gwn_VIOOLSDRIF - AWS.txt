@@ -26,3 +26,15 @@
 2023-08-13 12:35:15,343 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,347 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,352 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,500 - VIOOLSDRIF - AWS - INFO - GWN evaluation started atVIOOLSDRIF - AWS for the horizon of 3
+2023-08-13 12:44:41,505 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,517 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,523 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,532 - VIOOLSDRIF - AWS - INFO - GWN evaluation started atVIOOLSDRIF - AWS for the horizon of 6
+2023-08-13 12:44:41,532 - VIOOLSDRIF - AWS - INFO - GWN evaluation started atVIOOLSDRIF - AWS for the horizon of 6
+2023-08-13 12:44:41,537 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,537 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,541 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,541 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,548 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,548 - VIOOLSDRIF - AWS - INFO - Finished computing evaluation error metrics.

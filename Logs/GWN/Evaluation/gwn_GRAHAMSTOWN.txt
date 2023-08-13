@@ -26,3 +26,15 @@
 2023-08-13 12:35:14,630 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,660 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,679 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,112 - GRAHAMSTOWN - INFO - GWN evaluation started atGRAHAMSTOWN for the horizon of 3
+2023-08-13 12:44:40,116 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,119 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,121 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,122 - GRAHAMSTOWN - INFO - GWN evaluation started atGRAHAMSTOWN for the horizon of 6
+2023-08-13 12:44:40,122 - GRAHAMSTOWN - INFO - GWN evaluation started atGRAHAMSTOWN for the horizon of 6
+2023-08-13 12:44:40,125 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,125 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,128 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,128 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,130 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,130 - GRAHAMSTOWN - INFO - Finished computing evaluation error metrics.

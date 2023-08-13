@@ -26,3 +26,15 @@
 2023-08-13 12:35:14,351 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,354 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,356 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,719 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 3
+2023-08-13 12:44:39,722 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,725 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,728 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,729 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 6
+2023-08-13 12:44:39,729 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 6
+2023-08-13 12:44:39,735 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,735 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,740 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,740 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,745 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,745 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.

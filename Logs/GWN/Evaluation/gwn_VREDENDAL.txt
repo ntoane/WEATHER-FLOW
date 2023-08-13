@@ -26,3 +26,15 @@
 2023-08-13 12:35:15,357 - VREDENDAL - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,361 - VREDENDAL - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,367 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,550 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 12:44:41,554 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,563 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,568 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,569 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-13 12:44:41,569 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-13 12:44:41,573 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,573 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,582 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,582 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,587 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,587 - VREDENDAL - INFO - Finished computing evaluation error metrics.

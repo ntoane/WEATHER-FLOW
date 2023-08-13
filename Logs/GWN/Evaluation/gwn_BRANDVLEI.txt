@@ -26,3 +26,15 @@
 2023-08-13 12:35:14,362 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,366 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,369 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,746 - BRANDVLEI - INFO - GWN evaluation started atBRANDVLEI for the horizon of 3
+2023-08-13 12:44:39,750 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,755 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,758 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,759 - BRANDVLEI - INFO - GWN evaluation started atBRANDVLEI for the horizon of 6
+2023-08-13 12:44:39,759 - BRANDVLEI - INFO - GWN evaluation started atBRANDVLEI for the horizon of 6
+2023-08-13 12:44:39,762 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,762 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,766 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,766 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,771 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,771 - BRANDVLEI - INFO - Finished computing evaluation error metrics.

@@ -26,3 +26,15 @@
 2023-08-13 12:35:14,591 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,607 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,621 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,091 - GRAAFF - REINET - INFO - GWN evaluation started atGRAAFF - REINET for the horizon of 3
+2023-08-13 12:44:40,095 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,098 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,102 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,102 - GRAAFF - REINET - INFO - GWN evaluation started atGRAAFF - REINET for the horizon of 6
+2023-08-13 12:44:40,102 - GRAAFF - REINET - INFO - GWN evaluation started atGRAAFF - REINET for the horizon of 6
+2023-08-13 12:44:40,105 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,105 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,108 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,108 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,111 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,111 - GRAAFF - REINET - INFO - Finished computing evaluation error metrics.

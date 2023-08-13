@@ -26,3 +26,15 @@
 2023-08-13 12:35:14,398 - DE AAR WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,403 - DE AAR WO - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,407 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,839 - DE AAR WO - INFO - GWN evaluation started atDE AAR WO for the horizon of 3
+2023-08-13 12:44:39,854 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,863 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,867 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,868 - DE AAR WO - INFO - GWN evaluation started atDE AAR WO for the horizon of 6
+2023-08-13 12:44:39,868 - DE AAR WO - INFO - GWN evaluation started atDE AAR WO for the horizon of 6
+2023-08-13 12:44:39,872 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,872 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,880 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,880 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,885 - DE AAR WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,885 - DE AAR WO - INFO - Finished computing evaluation error metrics.

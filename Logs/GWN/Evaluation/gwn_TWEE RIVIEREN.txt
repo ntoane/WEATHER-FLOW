@@ -26,3 +26,15 @@
 2023-08-13 12:35:15,262 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,269 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,274 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,330 - TWEE RIVIEREN - INFO - GWN evaluation started atTWEE RIVIEREN for the horizon of 3
+2023-08-13 12:44:41,333 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,336 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,341 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,342 - TWEE RIVIEREN - INFO - GWN evaluation started atTWEE RIVIEREN for the horizon of 6
+2023-08-13 12:44:41,342 - TWEE RIVIEREN - INFO - GWN evaluation started atTWEE RIVIEREN for the horizon of 6
+2023-08-13 12:44:41,347 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,347 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,353 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,353 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,371 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,371 - TWEE RIVIEREN - INFO - Finished computing evaluation error metrics.

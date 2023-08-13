@@ -26,3 +26,15 @@
 2023-08-13 12:35:15,029 - POFADDER - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,031 - POFADDER - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,036 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,477 - POFADDER - INFO - GWN evaluation started atPOFADDER for the horizon of 3
+2023-08-13 12:44:40,483 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,492 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,497 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,498 - POFADDER - INFO - GWN evaluation started atPOFADDER for the horizon of 6
+2023-08-13 12:44:40,498 - POFADDER - INFO - GWN evaluation started atPOFADDER for the horizon of 6
+2023-08-13 12:44:40,501 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,501 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,534 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,534 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,538 - POFADDER - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,538 - POFADDER - INFO - Finished computing evaluation error metrics.

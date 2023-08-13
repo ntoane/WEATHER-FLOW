@@ -26,3 +26,15 @@
 2023-08-13 12:35:14,472 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,475 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,481 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,053 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 3
+2023-08-13 12:44:40,055 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,058 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,061 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,061 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 6
+2023-08-13 12:44:40,061 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 6
+2023-08-13 12:44:40,064 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,064 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,068 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,068 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,070 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,070 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.

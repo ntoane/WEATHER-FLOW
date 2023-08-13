@@ -26,3 +26,15 @@
 2023-08-13 12:35:14,992 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,998 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:15,004 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,300 - OUDTSHOORN - INFO - GWN evaluation started atOUDTSHOORN for the horizon of 3
+2023-08-13 12:44:40,303 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,306 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,312 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,313 - OUDTSHOORN - INFO - GWN evaluation started atOUDTSHOORN for the horizon of 6
+2023-08-13 12:44:40,313 - OUDTSHOORN - INFO - GWN evaluation started atOUDTSHOORN for the horizon of 6
+2023-08-13 12:44:40,317 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,317 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,320 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,320 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,323 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,323 - OUDTSHOORN - INFO - Finished computing evaluation error metrics.

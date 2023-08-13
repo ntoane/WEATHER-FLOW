@@ -26,3 +26,15 @@
 2023-08-13 12:35:14,331 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,333 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:35:14,335 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,664 - ALEXANDERBAAI - INFO - GWN evaluation started atALEXANDERBAAI for the horizon of 3
+2023-08-13 12:44:39,669 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,671 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,673 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,674 - ALEXANDERBAAI - INFO - GWN evaluation started atALEXANDERBAAI for the horizon of 6
+2023-08-13 12:44:39,674 - ALEXANDERBAAI - INFO - GWN evaluation started atALEXANDERBAAI for the horizon of 6
+2023-08-13 12:44:39,679 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,679 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,682 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,682 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,687 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,687 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
