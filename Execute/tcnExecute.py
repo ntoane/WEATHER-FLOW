@@ -52,9 +52,10 @@ class tcnExecute(modelExecute):
                 n_ahead_length = forecast_len
                 num_splits = self.sharedConfig['n_split']['default']
             
-                lossDF, resultsDF, targetDF, targetFile, resultsFile, lossFile = self.create_dataframes_and_dirs(forecast_len, station)
+                
 
                 for k in range(num_splits):
+                    lossDF, resultsDF, targetDF, targetFile, resultsFile, lossFile = self.create_dataframes_and_dirs(forecast_len, station, k)
                     print('TCN training started on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                         forecast_len, num_splits))
                     self.model_logger.info('TCN Model on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
@@ -144,20 +145,22 @@ class tcnExecute(modelExecute):
                         # predictions to dataframe
                         resultsDF = pd.concat([resultsDF, pd.Series(yhat.reshape(-1, ))])
                         
-                        self.save_actual_vs_predicted(Y_test, yhat, station,forecast_len)
+                        # self.save_actual_vs_predicted(Y_test, yhat, station,forecast_len)
 
                     self.model_logger.info('TCN training done on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                         forecast_len,num_splits))
                     # Targets to dataframe
                     targetDF = pd.concat([targetDF, pd.Series(Y_test.reshape(-1, ))])
+                    
+                    resultsDF.to_csv(resultsFile)
+                    lossDF.to_csv(lossFile)
+                    targetDF.to_csv(targetFile)
                 
                 self.model_logger.info('TCN training finished at ' + station)  
                 
                 # act_vs_predDF.to_csv(actuals_vs_predicted)
-                print("reach2")
-                resultsDF.to_csv(resultsFile)
-                lossDF.to_csv(lossFile)
-                targetDF.to_csv(targetFile)
+            
+         
             configFile.close()
         self.model_logger.info('TCN training finished at all stations set for training :)')
         
@@ -190,7 +193,7 @@ class tcnExecute(modelExecute):
             previous_year = current_year
             self.model_logger.info(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
         
-    def create_dataframes_and_dirs(self, forecast_len, station):
+    def create_dataframes_and_dirs(self, forecast_len, station, k):
         lossDF = pd.DataFrame()
         resultsDF = pd.DataFrame()
         targetDF = pd.DataFrame()
@@ -199,15 +202,15 @@ class tcnExecute(modelExecute):
 
         target_path = f'{base_path}/Targets/'
         os.makedirs(target_path, exist_ok=True)
-        targetFile = f'{target_path}target.csv'
+        targetFile = f'{target_path}target_'+ str(k) +'.csv'
 
         result_path = f'{base_path}/Predictions/'
         os.makedirs(result_path, exist_ok=True)
-        resultsFile = f'{result_path}result.csv'
+        resultsFile = f'{result_path}result_'+ str(k)  +'.csv'
 
         loss_path = f'{base_path}/Predictions/'
         os.makedirs(loss_path, exist_ok=True)
-        lossFile = f'{loss_path}loss.csv'
+        lossFile = f'{loss_path}loss_'+ str(k)  +'.csv'
 
         return lossDF, resultsDF, targetDF, targetFile, resultsFile, lossFile
         
