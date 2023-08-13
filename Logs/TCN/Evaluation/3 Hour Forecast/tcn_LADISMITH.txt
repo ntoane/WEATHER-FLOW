@@ -96,3 +96,86 @@
 2023-08-13 00:41:00,207 - LADISMITH - INFO - This is the smape_std_dev: 63.41887745985142
 
 2023-08-13 00:41:00,208 - LADISMITH - INFO - TCN evaluation of LADISMITH for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,523 - LADISMITH - INFO - TCN evaluation started atLADISMITH for the horizon of 3 for split 0
+2023-08-13 13:10:42,557 - LADISMITH - INFO - actual vs prediced is :       Actual  Predicted
+0    0.717949   3.877805
+1    0.758974   2.668857
+2    0.774359   4.764793
+3    0.179487   4.290782
+4    0.307692   2.654511
+..        ...        ...
+142  0.271795   2.659865
+143  0.430769   5.113545
+144  0.138462   3.872500
+145  0.143590   2.594999
+146  0.143590   5.570927
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,557 - LADISMITH - INFO - saved to file :Results/TCN/3 Hour Forecast/LADISMITH/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,559 - LADISMITH - INFO - This is the mse: 14.258876708729234
+
+2023-08-13 13:10:42,559 - LADISMITH - INFO - This is the rmse: 3.776092783384597
+
+2023-08-13 13:10:42,559 - LADISMITH - INFO - This is the mae: 3.584234431990232
+
+2023-08-13 13:10:42,559 - LADISMITH - INFO - This is the smape: 167.11490000860027
+
+2023-08-13 13:10:42,559 - LADISMITH - INFO - This is the smape_std_dev: 23.847520385111327
+
+2023-08-13 13:10:42,560 - LADISMITH - INFO - TCN evaluation of LADISMITH for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,561 - LADISMITH - INFO - TCN evaluation started atLADISMITH for the horizon of 3 for split 1
+2023-08-13 13:10:42,561 - LADISMITH - INFO - TCN evaluation started atLADISMITH for the horizon of 3 for split 1
+2023-08-13 13:10:42,585 - LADISMITH - INFO - actual vs prediced is :       Actual  Predicted
+0    0.622951  -0.151018
+1    0.565574   0.666814
+2    0.471311  -2.527784
+3    0.352459  -0.144327
+4    0.336066   0.452732
+..        ...        ...
+142  0.581967   0.362855
+143  0.684426  -3.114351
+144  0.131148   0.303395
+145  0.258197   0.320078
+146  0.377049  -3.059116
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,585 - LADISMITH - INFO - actual vs prediced is :       Actual  Predicted
+0    0.622951  -0.151018
+1    0.565574   0.666814
+2    0.471311  -2.527784
+3    0.352459  -0.144327
+4    0.336066   0.452732
+..        ...        ...
+142  0.581967   0.362855
+143  0.684426  -3.114351
+144  0.131148   0.303395
+145  0.258197   0.320078
+146  0.377049  -3.059116
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,585 - LADISMITH - INFO - saved to file :Results/TCN/3 Hour Forecast/LADISMITH/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,585 - LADISMITH - INFO - saved to file :Results/TCN/3 Hour Forecast/LADISMITH/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,587 - LADISMITH - INFO - This is the mse: 3.3118046243327526
+
+2023-08-13 13:10:42,587 - LADISMITH - INFO - This is the mse: 3.3118046243327526
+
+2023-08-13 13:10:42,587 - LADISMITH - INFO - This is the rmse: 1.819836427905748
+
+2023-08-13 13:10:42,587 - LADISMITH - INFO - This is the rmse: 1.819836427905748
+
+2023-08-13 13:10:42,587 - LADISMITH - INFO - This is the mae: 1.2311318633560833
+
+2023-08-13 13:10:42,587 - LADISMITH - INFO - This is the mae: 1.2311318633560833
+
+2023-08-13 13:10:42,587 - LADISMITH - INFO - This is the smape: 150.93850399953743
+
+2023-08-13 13:10:42,587 - LADISMITH - INFO - This is the smape: 150.93850399953743
+
+2023-08-13 13:10:42,587 - LADISMITH - INFO - This is the smape_std_dev: 69.47549517228565
+
+2023-08-13 13:10:42,587 - LADISMITH - INFO - This is the smape_std_dev: 69.47549517228565
+
+2023-08-13 13:10:42,587 - LADISMITH - INFO - TCN evaluation of LADISMITH for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,587 - LADISMITH - INFO - TCN evaluation of LADISMITH for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,587 - LADISMITH - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:42,587 - LADISMITH - INFO - Finished evaluation of TCN error metrics for all stations.

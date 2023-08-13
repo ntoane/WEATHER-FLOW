@@ -96,3 +96,86 @@
 2023-08-13 00:41:00,495 - POFADDER - INFO - This is the smape_std_dev: 20.77157468604478
 
 2023-08-13 00:41:00,495 - POFADDER - INFO - TCN evaluation of POFADDER for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,878 - POFADDER - INFO - TCN evaluation started atPOFADDER for the horizon of 3 for split 0
+2023-08-13 13:10:42,895 - POFADDER - INFO - actual vs prediced is :       Actual  Predicted
+0    0.971014   7.517739
+1    1.004831   2.567242
+2    1.057971   5.267455
+3    0.792271   7.443117
+4    0.864734   2.487024
+..        ...        ...
+142  0.555556   2.558028
+143  0.637681   5.438035
+144  0.458937   7.104141
+145  0.434783   2.230008
+146  0.429952   5.217811
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,895 - POFADDER - INFO - saved to file :Results/TCN/3 Hour Forecast/POFADDER/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,896 - POFADDER - INFO - This is the mse: 24.076272441907715
+
+2023-08-13 13:10:42,896 - POFADDER - INFO - This is the rmse: 4.90675783403947
+
+2023-08-13 13:10:42,896 - POFADDER - INFO - This is the mae: 4.416244841624766
+
+2023-08-13 13:10:42,896 - POFADDER - INFO - This is the smape: 145.664030253538
+
+2023-08-13 13:10:42,896 - POFADDER - INFO - This is the smape_std_dev: 27.56460494608301
+
+2023-08-13 13:10:42,897 - POFADDER - INFO - TCN evaluation of POFADDER for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,898 - POFADDER - INFO - TCN evaluation started atPOFADDER for the horizon of 3 for split 1
+2023-08-13 13:10:42,898 - POFADDER - INFO - TCN evaluation started atPOFADDER for the horizon of 3 for split 1
+2023-08-13 13:10:42,913 - POFADDER - INFO - actual vs prediced is :       Actual  Predicted
+0    0.822581   0.969190
+1    0.810484   0.986005
+2    0.794355   0.804180
+3    0.661290   0.766812
+4    0.657258   1.147065
+..        ...        ...
+142  0.814516   1.357534
+143  0.846774   0.659020
+144  0.504032   0.905006
+145  0.604839   0.975064
+146  0.689516   0.467945
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,913 - POFADDER - INFO - actual vs prediced is :       Actual  Predicted
+0    0.822581   0.969190
+1    0.810484   0.986005
+2    0.794355   0.804180
+3    0.661290   0.766812
+4    0.657258   1.147065
+..        ...        ...
+142  0.814516   1.357534
+143  0.846774   0.659020
+144  0.504032   0.905006
+145  0.604839   0.975064
+146  0.689516   0.467945
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,914 - POFADDER - INFO - saved to file :Results/TCN/3 Hour Forecast/POFADDER/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,914 - POFADDER - INFO - saved to file :Results/TCN/3 Hour Forecast/POFADDER/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,917 - POFADDER - INFO - This is the mse: 0.1911069354449289
+
+2023-08-13 13:10:42,917 - POFADDER - INFO - This is the mse: 0.1911069354449289
+
+2023-08-13 13:10:42,917 - POFADDER - INFO - This is the rmse: 0.43715779238728997
+
+2023-08-13 13:10:42,917 - POFADDER - INFO - This is the rmse: 0.43715779238728997
+
+2023-08-13 13:10:42,918 - POFADDER - INFO - This is the mae: 0.3521187796357253
+
+2023-08-13 13:10:42,918 - POFADDER - INFO - This is the mae: 0.3521187796357253
+
+2023-08-13 13:10:42,918 - POFADDER - INFO - This is the smape: 59.81411953949031
+
+2023-08-13 13:10:42,918 - POFADDER - INFO - This is the smape: 59.81411953949031
+
+2023-08-13 13:10:42,918 - POFADDER - INFO - This is the smape_std_dev: 47.92625587141668
+
+2023-08-13 13:10:42,918 - POFADDER - INFO - This is the smape_std_dev: 47.92625587141668
+
+2023-08-13 13:10:42,918 - POFADDER - INFO - TCN evaluation of POFADDER for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,918 - POFADDER - INFO - TCN evaluation of POFADDER for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,918 - POFADDER - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:42,918 - POFADDER - INFO - Finished evaluation of TCN error metrics for all stations.

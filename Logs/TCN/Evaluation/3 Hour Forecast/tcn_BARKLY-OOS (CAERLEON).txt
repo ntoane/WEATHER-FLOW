@@ -96,3 +96,86 @@
 2023-08-13 00:40:59,624 - BARKLY-OOS (CAERLEON) - INFO - This is the smape_std_dev: 49.57004784464635
 
 2023-08-13 00:40:59,625 - BARKLY-OOS (CAERLEON) - INFO - TCN evaluation of BARKLY-OOS (CAERLEON) for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,586 - BARKLY-OOS (CAERLEON) - INFO - TCN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 3 for split 0
+2023-08-13 13:10:41,602 - BARKLY-OOS (CAERLEON) - INFO - actual vs prediced is :       Actual  Predicted
+0    0.962963   2.023826
+1    0.952381   7.439485
+2    0.851852   0.215736
+3    0.349206   2.070174
+4    0.597884   7.123959
+..        ...        ...
+142  0.603175   7.124274
+143  0.756614   0.257305
+144  0.243386   2.291993
+145  0.259259   7.018464
+146  0.306878  -0.007515
+
+[147 rows x 2 columns]
+2023-08-13 13:10:41,602 - BARKLY-OOS (CAERLEON) - INFO - saved to file :Results/TCN/3 Hour Forecast/BARKLY-OOS (CAERLEON)/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:41,604 - BARKLY-OOS (CAERLEON) - INFO - This is the mse: 17.043231668529845
+
+2023-08-13 13:10:41,604 - BARKLY-OOS (CAERLEON) - INFO - This is the rmse: 4.128344906682319
+
+2023-08-13 13:10:41,604 - BARKLY-OOS (CAERLEON) - INFO - This is the mae: 3.022423959954083
+
+2023-08-13 13:10:41,604 - BARKLY-OOS (CAERLEON) - INFO - This is the smape: 154.11314695836566
+
+2023-08-13 13:10:41,604 - BARKLY-OOS (CAERLEON) - INFO - This is the smape_std_dev: 45.47005815379269
+
+2023-08-13 13:10:41,604 - BARKLY-OOS (CAERLEON) - INFO - TCN evaluation of BARKLY-OOS (CAERLEON) for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,605 - BARKLY-OOS (CAERLEON) - INFO - TCN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 3 for split 1
+2023-08-13 13:10:41,605 - BARKLY-OOS (CAERLEON) - INFO - TCN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 3 for split 1
+2023-08-13 13:10:41,620 - BARKLY-OOS (CAERLEON) - INFO - actual vs prediced is :       Actual  Predicted
+0    0.721519   3.846948
+1    0.611814   1.960298
+2    0.455696   3.975485
+3    0.839662   4.134080
+4    0.679325   1.791875
+..        ...        ...
+142  0.932489   1.762416
+143  0.957806   3.608980
+144  0.459916   3.096260
+145  0.632911   1.521070
+146  0.767932   3.137154
+
+[147 rows x 2 columns]
+2023-08-13 13:10:41,620 - BARKLY-OOS (CAERLEON) - INFO - actual vs prediced is :       Actual  Predicted
+0    0.721519   3.846948
+1    0.611814   1.960298
+2    0.455696   3.975485
+3    0.839662   4.134080
+4    0.679325   1.791875
+..        ...        ...
+142  0.932489   1.762416
+143  0.957806   3.608980
+144  0.459916   3.096260
+145  0.632911   1.521070
+146  0.767932   3.137154
+
+[147 rows x 2 columns]
+2023-08-13 13:10:41,620 - BARKLY-OOS (CAERLEON) - INFO - saved to file :Results/TCN/3 Hour Forecast/BARKLY-OOS (CAERLEON)/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:41,620 - BARKLY-OOS (CAERLEON) - INFO - saved to file :Results/TCN/3 Hour Forecast/BARKLY-OOS (CAERLEON)/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:41,622 - BARKLY-OOS (CAERLEON) - INFO - This is the mse: 6.335460156930667
+
+2023-08-13 13:10:41,622 - BARKLY-OOS (CAERLEON) - INFO - This is the mse: 6.335460156930667
+
+2023-08-13 13:10:41,623 - BARKLY-OOS (CAERLEON) - INFO - This is the rmse: 2.5170339999552382
+
+2023-08-13 13:10:41,623 - BARKLY-OOS (CAERLEON) - INFO - This is the rmse: 2.5170339999552382
+
+2023-08-13 13:10:41,623 - BARKLY-OOS (CAERLEON) - INFO - This is the mae: 2.363860273340222
+
+2023-08-13 13:10:41,623 - BARKLY-OOS (CAERLEON) - INFO - This is the mae: 2.363860273340222
+
+2023-08-13 13:10:41,623 - BARKLY-OOS (CAERLEON) - INFO - This is the smape: 141.69505536440096
+
+2023-08-13 13:10:41,623 - BARKLY-OOS (CAERLEON) - INFO - This is the smape: 141.69505536440096
+
+2023-08-13 13:10:41,623 - BARKLY-OOS (CAERLEON) - INFO - This is the smape_std_dev: 32.732585943410974
+
+2023-08-13 13:10:41,623 - BARKLY-OOS (CAERLEON) - INFO - This is the smape_std_dev: 32.732585943410974
+
+2023-08-13 13:10:41,624 - BARKLY-OOS (CAERLEON) - INFO - TCN evaluation of BARKLY-OOS (CAERLEON) for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,624 - BARKLY-OOS (CAERLEON) - INFO - TCN evaluation of BARKLY-OOS (CAERLEON) for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,624 - BARKLY-OOS (CAERLEON) - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:41,624 - BARKLY-OOS (CAERLEON) - INFO - Finished evaluation of TCN error metrics for all stations.

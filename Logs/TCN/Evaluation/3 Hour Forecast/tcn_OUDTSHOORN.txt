@@ -96,3 +96,86 @@
 2023-08-13 00:41:00,436 - OUDTSHOORN - INFO - This is the smape_std_dev: 36.969129983596794
 
 2023-08-13 00:41:00,437 - OUDTSHOORN - INFO - TCN evaluation of OUDTSHOORN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,809 - OUDTSHOORN - INFO - TCN evaluation started atOUDTSHOORN for the horizon of 3 for split 0
+2023-08-13 13:10:42,824 - OUDTSHOORN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.691244  -4.468935
+1    0.751152  -3.897498
+2    0.764977  -0.577726
+3    0.382488  -3.937774
+4    0.419355  -3.832298
+..        ...        ...
+142  0.414747  -3.954662
+143  0.534562  -0.990324
+144  0.152074  -4.379888
+145  0.147465  -4.213787
+146  0.170507  -0.841405
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,824 - OUDTSHOORN - INFO - saved to file :Results/TCN/3 Hour Forecast/OUDTSHOORN/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,826 - OUDTSHOORN - INFO - This is the mse: 12.954266013621178
+
+2023-08-13 13:10:42,826 - OUDTSHOORN - INFO - This is the rmse: 3.599203524895637
+
+2023-08-13 13:10:42,826 - OUDTSHOORN - INFO - This is the mae: 3.251515970155177
+
+2023-08-13 13:10:42,826 - OUDTSHOORN - INFO - This is the smape: 200.0
+
+2023-08-13 13:10:42,826 - OUDTSHOORN - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 13:10:42,826 - OUDTSHOORN - INFO - TCN evaluation of OUDTSHOORN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,827 - OUDTSHOORN - INFO - TCN evaluation started atOUDTSHOORN for the horizon of 3 for split 1
+2023-08-13 13:10:42,827 - OUDTSHOORN - INFO - TCN evaluation started atOUDTSHOORN for the horizon of 3 for split 1
+2023-08-13 13:10:42,842 - OUDTSHOORN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.631579  -0.681602
+1    0.503759  -0.985819
+2    0.428571   4.737461
+3    0.251880  -0.768123
+4    0.240602  -0.824331
+..        ...        ...
+142  0.620301  -0.809175
+143  0.740602   4.558701
+144  0.233083  -0.681438
+145  0.349624  -0.339117
+146  0.443609   4.413562
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,842 - OUDTSHOORN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.631579  -0.681602
+1    0.503759  -0.985819
+2    0.428571   4.737461
+3    0.251880  -0.768123
+4    0.240602  -0.824331
+..        ...        ...
+142  0.620301  -0.809175
+143  0.740602   4.558701
+144  0.233083  -0.681438
+145  0.349624  -0.339117
+146  0.443609   4.413562
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,843 - OUDTSHOORN - INFO - saved to file :Results/TCN/3 Hour Forecast/OUDTSHOORN/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,843 - OUDTSHOORN - INFO - saved to file :Results/TCN/3 Hour Forecast/OUDTSHOORN/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - This is the mse: 7.092223083780991
+
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - This is the mse: 7.092223083780991
+
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - This is the rmse: 2.6631228067404233
+
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - This is the rmse: 2.6631228067404233
+
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - This is the mae: 2.173672059320239
+
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - This is the mae: 2.173672059320239
+
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - This is the smape: 192.71631211742357
+
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - This is the smape: 192.71631211742357
+
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - This is the smape_std_dev: 13.694707126653586
+
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - This is the smape_std_dev: 13.694707126653586
+
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - TCN evaluation of OUDTSHOORN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - TCN evaluation of OUDTSHOORN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:42,844 - OUDTSHOORN - INFO - Finished evaluation of TCN error metrics for all stations.

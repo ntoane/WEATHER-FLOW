@@ -96,3 +96,86 @@
 2023-08-13 00:40:59,897 - FORT BEAUFORT - INFO - This is the smape_std_dev: 48.99894211094492
 
 2023-08-13 00:40:59,897 - FORT BEAUFORT - INFO - TCN evaluation of FORT BEAUFORT for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,055 - FORT BEAUFORT - INFO - TCN evaluation started atFORT BEAUFORT for the horizon of 3 for split 0
+2023-08-13 13:10:42,132 - FORT BEAUFORT - INFO - actual vs prediced is :       Actual  Predicted
+0    0.653153   1.877040
+1    0.617117   2.891578
+2    0.572072  -9.803978
+3    0.220721   2.261600
+4    0.229730   3.695553
+..        ...        ...
+142  0.225225   3.481277
+143  0.378378  -9.353405
+144  0.198198   2.102818
+145  0.189189   3.437923
+146  0.189189  -9.497502
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,132 - FORT BEAUFORT - INFO - saved to file :Results/TCN/3 Hour Forecast/FORT BEAUFORT/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,136 - FORT BEAUFORT - INFO - This is the mse: 35.00141687262988
+
+2023-08-13 13:10:42,136 - FORT BEAUFORT - INFO - This is the rmse: 5.916199529480888
+
+2023-08-13 13:10:42,136 - FORT BEAUFORT - INFO - This is the mae: 4.762433825556169
+
+2023-08-13 13:10:42,136 - FORT BEAUFORT - INFO - This is the smape: 175.01430319178172
+
+2023-08-13 13:10:42,136 - FORT BEAUFORT - INFO - This is the smape_std_dev: 22.701120061127437
+
+2023-08-13 13:10:42,137 - FORT BEAUFORT - INFO - TCN evaluation of FORT BEAUFORT for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,139 - FORT BEAUFORT - INFO - TCN evaluation started atFORT BEAUFORT for the horizon of 3 for split 1
+2023-08-13 13:10:42,139 - FORT BEAUFORT - INFO - TCN evaluation started atFORT BEAUFORT for the horizon of 3 for split 1
+2023-08-13 13:10:42,175 - FORT BEAUFORT - INFO - actual vs prediced is :       Actual  Predicted
+0    0.397887  -2.366668
+1    0.330986  -1.995632
+2    0.264085   0.448162
+3    0.158451  -1.952442
+4    0.158451  -2.335720
+..        ...        ...
+142  0.496479  -2.654499
+143  0.563380   0.797243
+144  0.154930  -1.923457
+145  0.267606  -2.209362
+146  0.352113   0.581546
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,175 - FORT BEAUFORT - INFO - actual vs prediced is :       Actual  Predicted
+0    0.397887  -2.366668
+1    0.330986  -1.995632
+2    0.264085   0.448162
+3    0.158451  -1.952442
+4    0.158451  -2.335720
+..        ...        ...
+142  0.496479  -2.654499
+143  0.563380   0.797243
+144  0.154930  -1.923457
+145  0.267606  -2.209362
+146  0.352113   0.581546
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,175 - FORT BEAUFORT - INFO - saved to file :Results/TCN/3 Hour Forecast/FORT BEAUFORT/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,175 - FORT BEAUFORT - INFO - saved to file :Results/TCN/3 Hour Forecast/FORT BEAUFORT/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,177 - FORT BEAUFORT - INFO - This is the mse: 3.91965440923514
+
+2023-08-13 13:10:42,177 - FORT BEAUFORT - INFO - This is the mse: 3.91965440923514
+
+2023-08-13 13:10:42,177 - FORT BEAUFORT - INFO - This is the rmse: 1.9798117105510664
+
+2023-08-13 13:10:42,177 - FORT BEAUFORT - INFO - This is the rmse: 1.9798117105510664
+
+2023-08-13 13:10:42,178 - FORT BEAUFORT - INFO - This is the mae: 1.7370791545616555
+
+2023-08-13 13:10:42,178 - FORT BEAUFORT - INFO - This is the mae: 1.7370791545616555
+
+2023-08-13 13:10:42,178 - FORT BEAUFORT - INFO - This is the smape: 171.29736533676092
+
+2023-08-13 13:10:42,178 - FORT BEAUFORT - INFO - This is the smape: 171.29736533676092
+
+2023-08-13 13:10:42,178 - FORT BEAUFORT - INFO - This is the smape_std_dev: 50.63643827843835
+
+2023-08-13 13:10:42,178 - FORT BEAUFORT - INFO - This is the smape_std_dev: 50.63643827843835
+
+2023-08-13 13:10:42,178 - FORT BEAUFORT - INFO - TCN evaluation of FORT BEAUFORT for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,178 - FORT BEAUFORT - INFO - TCN evaluation of FORT BEAUFORT for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,178 - FORT BEAUFORT - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:42,178 - FORT BEAUFORT - INFO - Finished evaluation of TCN error metrics for all stations.

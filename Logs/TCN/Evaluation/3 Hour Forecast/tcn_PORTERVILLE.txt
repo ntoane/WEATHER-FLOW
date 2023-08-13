@@ -96,3 +96,86 @@
 2023-08-13 00:41:00,638 - PORTERVILLE - INFO - This is the smape_std_dev: 50.97215243427715
 
 2023-08-13 00:41:00,638 - PORTERVILLE - INFO - TCN evaluation of PORTERVILLE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,081 - PORTERVILLE - INFO - TCN evaluation started atPORTERVILLE for the horizon of 3 for split 0
+2023-08-13 13:10:43,100 - PORTERVILLE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.866935   0.324795
+1    0.903226  -4.137853
+2    0.923387  -0.071349
+3    0.645161  -0.110594
+4    0.737903  -3.966668
+..        ...        ...
+142  0.592742  -4.216705
+143  0.709677  -0.365461
+144  0.391129   0.139851
+145  0.366935  -4.679332
+146  0.310484  -0.480883
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,100 - PORTERVILLE - INFO - saved to file :Results/TCN/3 Hour Forecast/PORTERVILLE/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,102 - PORTERVILLE - INFO - This is the mse: 7.496535030950345
+
+2023-08-13 13:10:43,102 - PORTERVILLE - INFO - This is the rmse: 2.73798010053951
+
+2023-08-13 13:10:43,102 - PORTERVILLE - INFO - This is the mae: 1.9614591838131445
+
+2023-08-13 13:10:43,103 - PORTERVILLE - INFO - This is the smape: 156.0315915827128
+
+2023-08-13 13:10:43,103 - PORTERVILLE - INFO - This is the smape_std_dev: 72.61717951952544
+
+2023-08-13 13:10:43,103 - PORTERVILLE - INFO - TCN evaluation of PORTERVILLE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,103 - PORTERVILLE - INFO - TCN evaluation started atPORTERVILLE for the horizon of 3 for split 1
+2023-08-13 13:10:43,103 - PORTERVILLE - INFO - TCN evaluation started atPORTERVILLE for the horizon of 3 for split 1
+2023-08-13 13:10:43,118 - PORTERVILLE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.697917  -2.104217
+1    0.649306   3.297542
+2    0.517361   1.249270
+3    0.520833  -2.237178
+4    0.493056   3.109608
+..        ...        ...
+142  0.687500   3.063454
+143  0.756944   1.083789
+144  0.277778  -2.746757
+145  0.399306   2.904097
+146  0.513889   0.661533
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,118 - PORTERVILLE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.697917  -2.104217
+1    0.649306   3.297542
+2    0.517361   1.249270
+3    0.520833  -2.237178
+4    0.493056   3.109608
+..        ...        ...
+142  0.687500   3.063454
+143  0.756944   1.083789
+144  0.277778  -2.746757
+145  0.399306   2.904097
+146  0.513889   0.661533
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,118 - PORTERVILLE - INFO - saved to file :Results/TCN/3 Hour Forecast/PORTERVILLE/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,118 - PORTERVILLE - INFO - saved to file :Results/TCN/3 Hour Forecast/PORTERVILLE/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,120 - PORTERVILLE - INFO - This is the mse: 5.205136236055935
+
+2023-08-13 13:10:43,120 - PORTERVILLE - INFO - This is the mse: 5.205136236055935
+
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - This is the rmse: 2.2814767664948805
+
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - This is the rmse: 2.2814767664948805
+
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - This is the mae: 2.058024019266818
+
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - This is the mae: 2.058024019266818
+
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - This is the smape: 157.7613351057638
+
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - This is the smape: 157.7613351057638
+
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - This is the smape_std_dev: 47.51757735131681
+
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - This is the smape_std_dev: 47.51757735131681
+
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - TCN evaluation of PORTERVILLE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - TCN evaluation of PORTERVILLE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:43,121 - PORTERVILLE - INFO - Finished evaluation of TCN error metrics for all stations.

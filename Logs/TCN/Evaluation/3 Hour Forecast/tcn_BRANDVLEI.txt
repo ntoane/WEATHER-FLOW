@@ -96,3 +96,86 @@
 2023-08-13 00:40:59,641 - BRANDVLEI - INFO - This is the smape_std_dev: 23.295305307304137
 
 2023-08-13 00:40:59,642 - BRANDVLEI - INFO - TCN evaluation of BRANDVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,625 - BRANDVLEI - INFO - TCN evaluation started atBRANDVLEI for the horizon of 3 for split 0
+2023-08-13 13:10:41,643 - BRANDVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    1.056410   9.171224
+1    1.061538   3.300893
+2    1.000000  -1.635308
+3    0.723077   9.128502
+4    0.815385   2.932954
+..        ...        ...
+142  0.487179   3.407942
+143  0.605128  -2.476552
+144  0.312821   9.106639
+145  0.261538   3.661386
+146  0.261538  -2.450615
+
+[147 rows x 2 columns]
+2023-08-13 13:10:41,643 - BRANDVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/BRANDVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:41,645 - BRANDVLEI - INFO - This is the mse: 28.759186913849554
+
+2023-08-13 13:10:41,645 - BRANDVLEI - INFO - This is the rmse: 5.3627592630892496
+
+2023-08-13 13:10:41,645 - BRANDVLEI - INFO - This is the mae: 4.622532038688295
+
+2023-08-13 13:10:41,645 - BRANDVLEI - INFO - This is the smape: 171.52215081551248
+
+2023-08-13 13:10:41,645 - BRANDVLEI - INFO - This is the smape_std_dev: 27.70773695183553
+
+2023-08-13 13:10:41,645 - BRANDVLEI - INFO - TCN evaluation of BRANDVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,646 - BRANDVLEI - INFO - TCN evaluation started atBRANDVLEI for the horizon of 3 for split 1
+2023-08-13 13:10:41,646 - BRANDVLEI - INFO - TCN evaluation started atBRANDVLEI for the horizon of 3 for split 1
+2023-08-13 13:10:41,753 - BRANDVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    0.822222  -1.243738
+1    0.822222  -0.713752
+2    0.786667   0.367241
+3    0.635556  -1.553120
+4    0.600000  -0.954635
+..        ...        ...
+142  0.835556  -0.962265
+143  0.897778  -0.336134
+144  0.471111  -1.295245
+145  0.568889  -1.200436
+146  0.662222  -0.271379
+
+[147 rows x 2 columns]
+2023-08-13 13:10:41,753 - BRANDVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    0.822222  -1.243738
+1    0.822222  -0.713752
+2    0.786667   0.367241
+3    0.635556  -1.553120
+4    0.600000  -0.954635
+..        ...        ...
+142  0.835556  -0.962265
+143  0.897778  -0.336134
+144  0.471111  -1.295245
+145  0.568889  -1.200436
+146  0.662222  -0.271379
+
+[147 rows x 2 columns]
+2023-08-13 13:10:41,754 - BRANDVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/BRANDVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:41,754 - BRANDVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/BRANDVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:41,755 - BRANDVLEI - INFO - This is the mse: 2.0800915520584757
+
+2023-08-13 13:10:41,755 - BRANDVLEI - INFO - This is the mse: 2.0800915520584757
+
+2023-08-13 13:10:41,755 - BRANDVLEI - INFO - This is the rmse: 1.4422522498018424
+
+2023-08-13 13:10:41,755 - BRANDVLEI - INFO - This is the rmse: 1.4422522498018424
+
+2023-08-13 13:10:41,756 - BRANDVLEI - INFO - This is the mae: 1.2608866736955404
+
+2023-08-13 13:10:41,756 - BRANDVLEI - INFO - This is the mae: 1.2608866736955404
+
+2023-08-13 13:10:41,756 - BRANDVLEI - INFO - This is the smape: 176.52062168011483
+
+2023-08-13 13:10:41,756 - BRANDVLEI - INFO - This is the smape: 176.52062168011483
+
+2023-08-13 13:10:41,756 - BRANDVLEI - INFO - This is the smape_std_dev: 51.023858390245024
+
+2023-08-13 13:10:41,756 - BRANDVLEI - INFO - This is the smape_std_dev: 51.023858390245024
+
+2023-08-13 13:10:41,756 - BRANDVLEI - INFO - TCN evaluation of BRANDVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,756 - BRANDVLEI - INFO - TCN evaluation of BRANDVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,756 - BRANDVLEI - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:41,756 - BRANDVLEI - INFO - Finished evaluation of TCN error metrics for all stations.

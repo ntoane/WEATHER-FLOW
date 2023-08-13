@@ -96,3 +96,86 @@
 2023-08-13 00:41:00,798 - TWEE RIVIEREN - INFO - This is the smape_std_dev: 53.98026634614381
 
 2023-08-13 00:41:00,798 - TWEE RIVIEREN - INFO - TCN evaluation of TWEE RIVIEREN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,311 - TWEE RIVIEREN - INFO - TCN evaluation started atTWEE RIVIEREN for the horizon of 3 for split 0
+2023-08-13 13:10:43,335 - TWEE RIVIEREN - INFO - actual vs prediced is :       Actual  Predicted
+0    1.038889   0.025892
+1    0.994444  -0.356623
+2    0.950000  -9.658334
+3    0.811111  -0.005293
+4    0.911111  -0.537851
+..        ...        ...
+142  0.472222  -0.545344
+143  0.700000  -9.242447
+144  0.272222  -0.108382
+145  0.250000  -0.476488
+146  0.261111  -9.751360
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,336 - TWEE RIVIEREN - INFO - saved to file :Results/TCN/3 Hour Forecast/TWEE RIVIEREN/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,337 - TWEE RIVIEREN - INFO - This is the mse: 36.97080640440901
+
+2023-08-13 13:10:43,337 - TWEE RIVIEREN - INFO - This is the rmse: 6.080362357985666
+
+2023-08-13 13:10:43,337 - TWEE RIVIEREN - INFO - This is the mae: 3.9503713856229026
+
+2023-08-13 13:10:43,337 - TWEE RIVIEREN - INFO - This is the smape: 154.62305394381445
+
+2023-08-13 13:10:43,337 - TWEE RIVIEREN - INFO - This is the smape_std_dev: 69.17945909228165
+
+2023-08-13 13:10:43,338 - TWEE RIVIEREN - INFO - TCN evaluation of TWEE RIVIEREN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,339 - TWEE RIVIEREN - INFO - TCN evaluation started atTWEE RIVIEREN for the horizon of 3 for split 1
+2023-08-13 13:10:43,339 - TWEE RIVIEREN - INFO - TCN evaluation started atTWEE RIVIEREN for the horizon of 3 for split 1
+2023-08-13 13:10:43,354 - TWEE RIVIEREN - INFO - actual vs prediced is :     Actual  Predicted
+0     1.070  -3.009980
+1     0.985   1.618544
+2     0.845   2.001405
+3     0.880  -3.368438
+4     0.890   1.795730
+..      ...        ...
+142   1.070   1.771923
+143   1.135   2.127846
+144   0.665  -3.801454
+145   0.855   1.903860
+146   0.965   2.002630
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,354 - TWEE RIVIEREN - INFO - actual vs prediced is :     Actual  Predicted
+0     1.070  -3.009980
+1     0.985   1.618544
+2     0.845   2.001405
+3     0.880  -3.368438
+4     0.890   1.795730
+..      ...        ...
+142   1.070   1.771923
+143   1.135   2.127846
+144   0.665  -3.801454
+145   0.855   1.903860
+146   0.965   2.002630
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,354 - TWEE RIVIEREN - INFO - saved to file :Results/TCN/3 Hour Forecast/TWEE RIVIEREN/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,354 - TWEE RIVIEREN - INFO - saved to file :Results/TCN/3 Hour Forecast/TWEE RIVIEREN/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - This is the mse: 7.336374509453283
+
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - This is the mse: 7.336374509453283
+
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - This is the rmse: 2.7085742576959717
+
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - This is the rmse: 2.7085742576959717
+
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - This is the mae: 2.3274196829931975
+
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - This is the mae: 2.3274196829931975
+
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - This is the smape: 143.23719390359554
+
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - This is the smape: 143.23719390359554
+
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - This is the smape_std_dev: 54.92549056186427
+
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - This is the smape_std_dev: 54.92549056186427
+
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - TCN evaluation of TWEE RIVIEREN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,357 - TWEE RIVIEREN - INFO - TCN evaluation of TWEE RIVIEREN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,358 - TWEE RIVIEREN - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:43,358 - TWEE RIVIEREN - INFO - Finished evaluation of TCN error metrics for all stations.

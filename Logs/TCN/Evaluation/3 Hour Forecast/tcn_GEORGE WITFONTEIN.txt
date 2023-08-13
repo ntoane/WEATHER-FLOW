@@ -96,3 +96,86 @@
 2023-08-13 00:40:59,940 - GEORGE WITFONTEIN - INFO - This is the smape_std_dev: 34.354543463447925
 
 2023-08-13 00:40:59,941 - GEORGE WITFONTEIN - INFO - TCN evaluation of GEORGE WITFONTEIN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,234 - GEORGE WITFONTEIN - INFO - TCN evaluation started atGEORGE WITFONTEIN for the horizon of 3 for split 0
+2023-08-13 13:10:42,247 - GEORGE WITFONTEIN - INFO - actual vs prediced is :       Actual  Predicted
+0    0.743421   4.920064
+1    0.717105   6.462769
+2    0.697368  -6.161208
+3    0.743421   5.371949
+4    0.789474   6.309399
+..        ...        ...
+142  0.401316   6.035859
+143  0.657895  -5.722787
+144  0.388158   4.794826
+145  0.355263   6.033541
+146  0.355263  -5.521304
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,248 - GEORGE WITFONTEIN - INFO - saved to file :Results/TCN/3 Hour Forecast/GEORGE WITFONTEIN/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,249 - GEORGE WITFONTEIN - INFO - This is the mse: 30.476789126830084
+
+2023-08-13 13:10:42,249 - GEORGE WITFONTEIN - INFO - This is the rmse: 5.520578694922307
+
+2023-08-13 13:10:42,249 - GEORGE WITFONTEIN - INFO - This is the mae: 5.464744554314358
+
+2023-08-13 13:10:42,249 - GEORGE WITFONTEIN - INFO - This is the smape: 178.85510629816307
+
+2023-08-13 13:10:42,250 - GEORGE WITFONTEIN - INFO - This is the smape_std_dev: 17.724812620082652
+
+2023-08-13 13:10:42,250 - GEORGE WITFONTEIN - INFO - TCN evaluation of GEORGE WITFONTEIN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,251 - GEORGE WITFONTEIN - INFO - TCN evaluation started atGEORGE WITFONTEIN for the horizon of 3 for split 1
+2023-08-13 13:10:42,251 - GEORGE WITFONTEIN - INFO - TCN evaluation started atGEORGE WITFONTEIN for the horizon of 3 for split 1
+2023-08-13 13:10:42,264 - GEORGE WITFONTEIN - INFO - actual vs prediced is :     Actual  Predicted
+0     0.520   1.822885
+1     0.460   1.531785
+2     0.390  -0.984538
+3     0.275   1.916939
+4     0.295   1.372402
+..      ...        ...
+142   0.715   0.970608
+143   0.775  -0.291368
+144   0.405   2.030428
+145   0.530   1.261014
+146   0.615   0.093021
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,264 - GEORGE WITFONTEIN - INFO - actual vs prediced is :     Actual  Predicted
+0     0.520   1.822885
+1     0.460   1.531785
+2     0.390  -0.984538
+3     0.275   1.916939
+4     0.295   1.372402
+..      ...        ...
+142   0.715   0.970608
+143   0.775  -0.291368
+144   0.405   2.030428
+145   0.530   1.261014
+146   0.615   0.093021
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,264 - GEORGE WITFONTEIN - INFO - saved to file :Results/TCN/3 Hour Forecast/GEORGE WITFONTEIN/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,264 - GEORGE WITFONTEIN - INFO - saved to file :Results/TCN/3 Hour Forecast/GEORGE WITFONTEIN/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,267 - GEORGE WITFONTEIN - INFO - This is the mse: 1.5234228043714215
+
+2023-08-13 13:10:42,267 - GEORGE WITFONTEIN - INFO - This is the mse: 1.5234228043714215
+
+2023-08-13 13:10:42,267 - GEORGE WITFONTEIN - INFO - This is the rmse: 1.234270150482228
+
+2023-08-13 13:10:42,267 - GEORGE WITFONTEIN - INFO - This is the rmse: 1.234270150482228
+
+2023-08-13 13:10:42,267 - GEORGE WITFONTEIN - INFO - This is the mae: 1.0930002320544219
+
+2023-08-13 13:10:42,267 - GEORGE WITFONTEIN - INFO - This is the mae: 1.0930002320544219
+
+2023-08-13 13:10:42,268 - GEORGE WITFONTEIN - INFO - This is the smape: 156.59234603868475
+
+2023-08-13 13:10:42,268 - GEORGE WITFONTEIN - INFO - This is the smape: 156.59234603868475
+
+2023-08-13 13:10:42,268 - GEORGE WITFONTEIN - INFO - This is the smape_std_dev: 49.35991781556201
+
+2023-08-13 13:10:42,268 - GEORGE WITFONTEIN - INFO - This is the smape_std_dev: 49.35991781556201
+
+2023-08-13 13:10:42,268 - GEORGE WITFONTEIN - INFO - TCN evaluation of GEORGE WITFONTEIN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,268 - GEORGE WITFONTEIN - INFO - TCN evaluation of GEORGE WITFONTEIN for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,268 - GEORGE WITFONTEIN - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:42,268 - GEORGE WITFONTEIN - INFO - Finished evaluation of TCN error metrics for all stations.
