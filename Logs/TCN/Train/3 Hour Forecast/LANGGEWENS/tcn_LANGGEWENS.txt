@@ -4,3 +4,6 @@
 2023-08-13 00:14:48,093 - LANGGEWENS - INFO - Val Loss: [152.40945434570312, 28.72622299194336]
 2023-08-13 00:14:49,512 - LANGGEWENS - INFO - TCN training done on split 1/1 at LANGGEWENS station forecasting 3 hours ahead.
 2023-08-13 00:14:49,514 - LANGGEWENS - INFO - TCN training finished at LANGGEWENS
+2023-08-13 12:59:32,775 - LANGGEWENS - INFO - TCN model training started at LANGGEWENS
+2023-08-13 12:59:32,940 - LANGGEWENS - INFO - TCN Model on split 1/2 at LANGGEWENS station forecasting 3 hours ahead.
+2023-08-13 12:59:40,550 - LANGGEWENS - INFO - TCN Model on split 2/2 at LANGGEWENS station forecasting 3 hours ahead.

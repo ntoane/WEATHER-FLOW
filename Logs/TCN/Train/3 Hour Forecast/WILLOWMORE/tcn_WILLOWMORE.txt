@@ -4,3 +4,6 @@
 2023-08-13 00:18:38,804 - WILLOWMORE - INFO - Val Loss: [600.7214965820312, 87.92760467529297]
 2023-08-13 00:18:40,821 - WILLOWMORE - INFO - TCN training done on split 1/1 at WILLOWMORE station forecasting 3 hours ahead.
 2023-08-13 00:18:40,822 - WILLOWMORE - INFO - TCN training finished at WILLOWMORE
+2023-08-13 13:06:06,554 - WILLOWMORE - INFO - TCN model training started at WILLOWMORE
+2023-08-13 13:06:06,724 - WILLOWMORE - INFO - TCN Model on split 1/2 at WILLOWMORE station forecasting 3 hours ahead.
+2023-08-13 13:06:14,714 - WILLOWMORE - INFO - TCN Model on split 2/2 at WILLOWMORE station forecasting 3 hours ahead.

@@ -152,3 +152,6 @@
 2023-08-13 00:16:07,783 - PORT ALFRED - AIRPORT - INFO - Date 2010-01-07 02:00:00 Index 146 - Actual: 0.26060606060606073, Predicted: -11.43982219696045
 2023-08-13 00:16:07,783 - PORT ALFRED - AIRPORT - INFO - TCN training done on split 1/1 at PORT ALFRED - AIRPORT station forecasting 3 hours ahead.
 2023-08-13 00:16:07,784 - PORT ALFRED - AIRPORT - INFO - TCN training finished at PORT ALFRED - AIRPORT
+2023-08-13 13:01:26,308 - PORT ALFRED - AIRPORT - INFO - TCN model training started at PORT ALFRED - AIRPORT
+2023-08-13 13:01:26,482 - PORT ALFRED - AIRPORT - INFO - TCN Model on split 1/2 at PORT ALFRED - AIRPORT station forecasting 3 hours ahead.
+2023-08-13 13:01:41,162 - PORT ALFRED - AIRPORT - INFO - TCN Model on split 2/2 at PORT ALFRED - AIRPORT station forecasting 3 hours ahead.

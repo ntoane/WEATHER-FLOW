@@ -4,3 +4,6 @@
 2023-08-13 00:14:22,676 - KOINGNAAS - INFO - Val Loss: [122.24127960205078, 20.492084503173828]
 2023-08-13 00:14:24,637 - KOINGNAAS - INFO - TCN training done on split 1/1 at KOINGNAAS station forecasting 3 hours ahead.
 2023-08-13 00:14:24,639 - KOINGNAAS - INFO - TCN training finished at KOINGNAAS
+2023-08-13 12:58:44,540 - KOINGNAAS - INFO - TCN model training started at KOINGNAAS
+2023-08-13 12:58:44,701 - KOINGNAAS - INFO - TCN Model on split 1/2 at KOINGNAAS station forecasting 3 hours ahead.
+2023-08-13 12:58:52,101 - KOINGNAAS - INFO - TCN Model on split 2/2 at KOINGNAAS station forecasting 3 hours ahead.

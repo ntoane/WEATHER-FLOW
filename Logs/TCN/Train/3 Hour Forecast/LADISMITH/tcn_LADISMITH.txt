@@ -4,3 +4,6 @@
 2023-08-13 00:14:32,386 - LADISMITH - INFO - Val Loss: [110.38252258300781, 23.793716430664062]
 2023-08-13 00:14:33,791 - LADISMITH - INFO - TCN training done on split 1/1 at LADISMITH station forecasting 3 hours ahead.
 2023-08-13 00:14:33,792 - LADISMITH - INFO - TCN training finished at LADISMITH
+2023-08-13 12:58:59,771 - LADISMITH - INFO - TCN model training started at LADISMITH
+2023-08-13 12:58:59,934 - LADISMITH - INFO - TCN Model on split 1/2 at LADISMITH station forecasting 3 hours ahead.
+2023-08-13 12:59:07,288 - LADISMITH - INFO - TCN Model on split 2/2 at LADISMITH station forecasting 3 hours ahead.

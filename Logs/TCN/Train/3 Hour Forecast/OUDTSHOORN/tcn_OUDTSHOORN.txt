@@ -4,3 +4,6 @@
 2023-08-13 00:15:19,286 - OUDTSHOORN - INFO - Val Loss: [123.1167984008789, 32.12412643432617]
 2023-08-13 00:15:20,751 - OUDTSHOORN - INFO - TCN training done on split 1/1 at OUDTSHOORN station forecasting 3 hours ahead.
 2023-08-13 00:15:20,752 - OUDTSHOORN - INFO - TCN training finished at OUDTSHOORN
+2023-08-13 13:00:37,100 - OUDTSHOORN - INFO - TCN model training started at OUDTSHOORN
+2023-08-13 13:00:37,260 - OUDTSHOORN - INFO - TCN Model on split 1/2 at OUDTSHOORN station forecasting 3 hours ahead.
+2023-08-13 13:00:45,290 - OUDTSHOORN - INFO - TCN Model on split 2/2 at OUDTSHOORN station forecasting 3 hours ahead.

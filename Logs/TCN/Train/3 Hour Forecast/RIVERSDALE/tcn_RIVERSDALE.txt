@@ -4,3 +4,6 @@
 2023-08-13 00:17:26,190 - RIVERSDALE - INFO - Val Loss: [148.16525268554688, 28.850812911987305]
 2023-08-13 00:17:27,828 - RIVERSDALE - INFO - TCN training done on split 1/1 at RIVERSDALE station forecasting 3 hours ahead.
 2023-08-13 00:17:27,829 - RIVERSDALE - INFO - TCN training finished at RIVERSDALE
+2023-08-13 13:03:48,083 - RIVERSDALE - INFO - TCN model training started at RIVERSDALE
+2023-08-13 13:03:48,248 - RIVERSDALE - INFO - TCN Model on split 1/2 at RIVERSDALE station forecasting 3 hours ahead.
+2023-08-13 13:03:55,450 - RIVERSDALE - INFO - TCN Model on split 2/2 at RIVERSDALE station forecasting 3 hours ahead.

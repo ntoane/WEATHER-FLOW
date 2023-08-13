@@ -4,3 +4,6 @@
 2023-08-13 00:15:11,654 - NOUPOORT - INFO - Val Loss: [116.03922271728516, 23.622581481933594]
 2023-08-13 00:15:13,049 - NOUPOORT - INFO - TCN training done on split 1/1 at NOUPOORT station forecasting 3 hours ahead.
 2023-08-13 00:15:13,050 - NOUPOORT - INFO - TCN training finished at NOUPOORT
+2023-08-13 13:00:21,914 - NOUPOORT - INFO - TCN model training started at NOUPOORT
+2023-08-13 13:00:22,086 - NOUPOORT - INFO - TCN Model on split 1/2 at NOUPOORT station forecasting 3 hours ahead.
+2023-08-13 13:00:29,356 - NOUPOORT - INFO - TCN Model on split 2/2 at NOUPOORT station forecasting 3 hours ahead.
