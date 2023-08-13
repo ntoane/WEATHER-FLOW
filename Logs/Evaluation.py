@@ -1,10 +1,12 @@
 import numpy as np
+import os
 import pandas as pd
 import Utils.metrics as metrics
 import Utils.gwnUtils as utils
 import Utils.metrics as metrics
 import Utils.sharedUtils as sharedUtils
 from Logs.modelLogger import modelLogger
+import Utils.agcrnUtils as agcrnUtil
      
 def TcnEval(tcnConfig, sharedConfig):
     stations = sharedConfig['stations']['default']
@@ -175,6 +177,45 @@ def get_gwn_file_paths(station, horizon, split,model='GWN'):
         "metric_file" : f'Results/{model}/{folder_name}/Metrics/{station_with_spaces}/metrics_{split}.txt',
         # "actual_vs_predicted_file" : f'Results/{model}/{folder_name}/Metrics/{station_with_spaces}/actual_vs_predicted.txt'
     }
+        
+
+def AgcrnEval(modelConfig,sharedConfig):
+        
+        stations = sharedConfig['stations']['default'] 
+        for horizon in sharedConfig['horizons']['default']:
+            for k in range(4):
+                fileDictionary = {
+                    'predFile': './Results/AGCRN/' + str(horizon) + ' Hour Forecast/Predictions/outputs_' + str(k),
+                    'targetFile': 'Results/AGCRN/' + str(horizon) + ' Hour Forecast/Targets/targets_' + str(k),
+                    'trainLossFile': 'Results/AGCRN/' + str(horizon) + ' Hour Forecast/Matrices/adjacency_matrix_' + str(k) + '.csv',
+                    'validationLossFile': 'Results/AGCRN/' + str(horizon) + ' Hour Forecast/Matrices/adjacency_matrix_' + str(k) + '.csv',
+                    'modelFile': 'Garage/Final Models/AGCRN/' + str(horizon) + ' Hour Models/model_split_' + str(k) + ".pth",
+                    'matrixFile': 'Results/AGCRN/' + str(horizon) + ' Hour Forecast/Matrices/adjacency_matrix_' + str(k) + '.csv',
+                    'metricFile0': './Results/AGCRN/'+  str(horizon)+ ' Hour Forecast/Metrics/',
+                    
+                    'metricFile1': '/split_' + str(k) + '_metrics.txt'
+                }
+                
+            
+                y_pred=np.load(fileDictionary["predFile"] + ".npy")
+                y_true=np.load(fileDictionary["targetFile"] + ".npy")
+                
+                for i in range(45):
+                    station_pred = y_pred[:, :, i, 0]
+                    station_true = y_true[:, :, i, 0]
+                    mae, rmse, mape, _, _ = agcrnUtil.All_Metrics(station_pred, station_true, modelConfig['mae_thresh']['default'], modelConfig['mape_thresh']['default'])
+
+                    filePath =fileDictionary['metricFile0'] +str(stations[i])
+                    if not os.path.exists(filePath):
+                        os.makedirs(filePath)
+
+                    with open(filePath + fileDictionary['metricFile1'], 'w') as file:
+                
+                
+                        file.write('This is the MAE ' + str(mae) + '\n')
+                        file.write('This is the RMSE ' + str(rmse) + '\n')
+                        file.write('This is the MAPE ' + str(mape) + '\n')
+        
         
         
         

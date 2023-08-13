@@ -1,0 +1,16 @@
+2023-08-13 16:21: Experiment log path in: /Users/adeebgaibie/Documents/GitHub/WEATHER-FLOW/Execute/experiments
+2023-08-13 16:21: Train Epoch 1: 0/46 Loss: 20.717493
+2023-08-13 16:21: Train Epoch 1: 20/46 Loss: 14.286366
+2023-08-13 16:21: Train Epoch 1: 40/46 Loss: 9.558660
+2023-08-13 16:21: **********Train Epoch 1: averaged Loss: 14.368322, tf_ratio: 1.000000
+2023-08-13 16:21: **********Val Epoch 1: average Loss: 4.951877
+2023-08-13 16:21: *********************************Current best model saved!
+2023-08-13 16:21: Train Epoch 2: 0/46 Loss: 9.452652
+2023-08-13 16:22: Train Epoch 2: 20/46 Loss: 5.899189
+2023-08-13 16:22: Train Epoch 2: 40/46 Loss: 5.647218
+2023-08-13 16:22: **********Train Epoch 2: averaged Loss: 6.285039, tf_ratio: 1.000000
+2023-08-13 16:22: **********Val Epoch 2: average Loss: 6.875232
+2023-08-13 16:22: Total training time: 1.4285min, best loss: 4.951877
+2023-08-13 16:22: Saving current best model to /Users/adeebgaibie/Documents/GitHub/WEATHER-FLOW/Garage/Final Models/AGCRN/3 Hour Models/model_split_0.pth
+2023-08-13 16:22: Train Epoch 1: 0/56 Loss: 20.193874
+2023-08-13 16:23: Train Epoch 1: 20/56 Loss: 13.968906
