@@ -5,7 +5,7 @@ from HPO.gwnHPO import GWNHPO
 from Execute.tcnExecute import tcnExecute
 from Execute.gwnExecute import gwnExecute
 import Plots.plotter as plotter
-import Visualisations.visualise as visualise
+# import Visualisations.visualise as visualise
 # from Logs.Evaluation import Evaluation
 import Logs.Evaluation as Evaluation
 
@@ -34,43 +34,50 @@ def main():
         tcnConfig = getSpecificConfig('tcn')
         tcn_trainer = tcnExecute(sharedConfig, tcnConfig)
         tcn_trainer.execute()
+        complete = True
     
 # Train final GWN models using the config settings specified
     if sharedConfig['train_gwn']['default'] or args.mode == configOptions[1]:
         gwnConfig = getSpecificConfig('gwn')
         gwn_trainer = gwnExecute(sharedConfig, gwnConfig)
         gwn_trainer.execute()
-  
+        complete = True
+
 ######### Random Search ##############
     # Random search TCN
     if sharedConfig['tune_tcn']['default'] or args.mode == configOptions[2]:
         tcnConfig = getSpecificConfig('tcn')
         tcnHPO = TCNHPO(sharedConfig, tcnConfig)
         tcnHPO.hpo()
+        complete = True
+
 
 # Random search GWN
     if sharedConfig['tune_gwn']['default'] or args.mode == configOptions[3]:
         gwnConfig = getSpecificConfig('gwn')
         gwnHPO = GWNHPO(sharedConfig, gwnConfig)
         gwnHPO.hpo()
+        complete = True
 
 ############ Recordings ##############
     # Record metrics for final TCN models
     if sharedConfig['eval_tcn']['default'] or args.mode == configOptions[4]:
         tcnConfig = getSpecificConfig('tcn')
         Evaluation.TcnEval(tcnConfig, sharedConfig)
+        complete = True
         # plotter.create('TCN',sharedConfig)
 
     # Record metrics for final GWN models
     if sharedConfig['eval_gwn']['default'] or args.mode == configOptions[5]:
         gwnConfig = getSpecificConfig('gwn')
         Evaluation.GwnEval(gwnConfig, sharedConfig)
+        complete = True
         # plotter.create('GWN', sharedConfig)
 
 # ############ Visualisations #############
-    if sharedConfig['vis']['default'] or args.mode == configOptions[6]:
-        visualise.plot(sharedConfig)
-     
+    # if sharedConfig['vis']['default'] or args.mode == configOptions[6]:
+        # visualise.plot(sharedConfig)
+
 ############ Else condition #############   
     else :
         if not complete:   

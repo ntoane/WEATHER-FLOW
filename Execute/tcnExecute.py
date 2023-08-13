@@ -8,6 +8,7 @@ import tensorflow as tf
 import os
 from Logs.modelLogger import modelLogger
 from Execute.modelExecute import modelExecute
+from datetime import datetime,timedelta
 
 class tcnExecute(modelExecute):
     def __init__(self, sharedConfig, tcnConfig):
@@ -52,10 +53,9 @@ class tcnExecute(modelExecute):
                 n_ahead_length = forecast_len
                 num_splits = self.sharedConfig['n_split']['default']
             
-                
+                lossDF, resultsDF, targetDF, targetFile, resultsFile, lossFile = self.create_dataframes_and_dirs(forecast_len, station)
 
                 for k in range(num_splits):
-                    lossDF, resultsDF, targetDF, targetFile, resultsFile, lossFile = self.create_dataframes_and_dirs(forecast_len, station, k)
                     print('TCN training started on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                         forecast_len, num_splits))
                     self.model_logger.info('TCN Model on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
@@ -118,7 +118,7 @@ class tcnExecute(modelExecute):
                         # predictions to dataframe
                         resultsDF = pd.concat([resultsDF, pd.Series(yhat.reshape(-1, ))])
                         
-                        # self.save_actual_vs_predicted(Y_test, yhat, station,forecast_len)
+                        self.save_actual_vs_predicted(Y_test, yhat, station,forecast_len)
 
                     else:
                         tcn_model = tcn_two.temporalcn(x_train=X_train, y_train=Y_train, x_val=X_val, y_val=Y_val,
@@ -145,22 +145,19 @@ class tcnExecute(modelExecute):
                         # predictions to dataframe
                         resultsDF = pd.concat([resultsDF, pd.Series(yhat.reshape(-1, ))])
                         
-                        # self.save_actual_vs_predicted(Y_test, yhat, station,forecast_len)
+                        self.save_actual_vs_predicted(Y_test, yhat, station,forecast_len)
 
                     self.model_logger.info('TCN training done on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
                                                                                                         forecast_len,num_splits))
                     # Targets to dataframe
                     targetDF = pd.concat([targetDF, pd.Series(Y_test.reshape(-1, ))])
-                    
-                    resultsDF.to_csv(resultsFile)
-                    lossDF.to_csv(lossFile)
-                    targetDF.to_csv(targetFile)
                 
                 self.model_logger.info('TCN training finished at ' + station)  
                 
                 # act_vs_predDF.to_csv(actuals_vs_predicted)
-            
-         
+                resultsDF.to_csv(resultsFile)
+                lossDF.to_csv(lossFile)
+                targetDF.to_csv(targetFile)
             configFile.close()
         self.model_logger.info('TCN training finished at all stations set for training :)')
         
@@ -170,12 +167,26 @@ class tcnExecute(modelExecute):
             'Predicted': yhat.flatten()
         })
 
-        def get_timestamp_at_index(csv_file_path, index_to_find):
-            # Read only the 'DateT' column
-            df = pd.read_csv(csv_file_path, usecols=['DateT'])#, error_bad_lines=False)
-            # Retrieve the DateT value at the specified index
-            timestamp = df.loc[index_to_find, 'DateT']
-            return timestamp
+        # def get_timestamp_at_index(csv_file_path, index_to_find):
+        #     # Read only the 'DateT' column
+        #     df = pd.read_csv(csv_file_path, usecols=['DateT'])#, error_bad_lines=False)
+        #     # Retrieve the DateT value at the specified index
+        #     timestamp = df.loc[index_to_find, 'DateT']
+        #     return timestamp
+
+        def get_timestamp_at_index(hours):
+            # Create a datetime object
+            date_string = "2010-01-01 00:00:00"
+            formatted_date = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
+            # Number of hours to add
+            hours_to_add = hours
+
+            # Create a timedelta representing the number of hours to add
+            time_delta = timedelta(hours=hours_to_add)
+
+            # Add the timedelta to the original date
+            new_date = formatted_date + time_delta
+            return new_date
         
         actual_vs_predicted_file = f'Results/TCN/{forecast_len} Hour Forecast/{station}/Predictions/actual_vs_predicted.csv'
         actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=True)
@@ -185,15 +196,16 @@ class tcnExecute(modelExecute):
         previous_year = None
         for index, row in actual_vs_predicted_data.iterrows():
             file_path = 'DataNew/Weather Station Data/' + str(station) + '.csv'
-            date = get_timestamp_at_index(file_path, index)
-            current_year = date.split('-')[0]
+            date = get_timestamp_at_index(index)
+            current_year = date.year
+            # print(date)
             # Prints to screen when years are changing to show progress
             if previous_year and current_year != previous_year:
                 print(f"The year changed from {previous_year} to {current_year} for performing the logging")
             previous_year = current_year
             self.model_logger.info(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
         
-    def create_dataframes_and_dirs(self, forecast_len, station, k):
+    def create_dataframes_and_dirs(self, forecast_len, station):
         lossDF = pd.DataFrame()
         resultsDF = pd.DataFrame()
         targetDF = pd.DataFrame()
@@ -202,15 +214,15 @@ class tcnExecute(modelExecute):
 
         target_path = f'{base_path}/Targets/'
         os.makedirs(target_path, exist_ok=True)
-        targetFile = f'{target_path}target_'+ str(k) +'.csv'
+        targetFile = f'{target_path}target.csv'
 
         result_path = f'{base_path}/Predictions/'
         os.makedirs(result_path, exist_ok=True)
-        resultsFile = f'{result_path}result_'+ str(k)  +'.csv'
+        resultsFile = f'{result_path}result.csv'
 
         loss_path = f'{base_path}/Predictions/'
         os.makedirs(loss_path, exist_ok=True)
-        lossFile = f'{loss_path}loss_'+ str(k)  +'.csv'
+        lossFile = f'{loss_path}loss.csv'
 
         return lossDF, resultsDF, targetDF, targetFile, resultsFile, lossFile
         
