@@ -2,6 +2,7 @@ import argparse
 import yaml
 from HPO.tcnHPO import TCNHPO
 from HPO.gwnHPO import GWNHPO
+from Execute.agcrnExecute import agcrnExecute
 from Execute.tcnExecute import tcnExecute
 from Execute.gwnExecute import gwnExecute
 import Plots.plotter as plotter
@@ -21,7 +22,7 @@ with open('configurations/sharedConfig.yaml', 'r') as file:
 
 complete = False
 def main():
-    configOptions = ['train_tcn', 'train_gwn','tune_tcn','tune_gwn','eval_tcn','eval_gwn','vis']
+    configOptions = ['train_tcn', 'train_gwn','tune_tcn','tune_gwn','eval_tcn','eval_gwn','train_agcrn', 'eval_agcrn','vis']
     loop = True
     global complete
 
@@ -29,6 +30,14 @@ def main():
     print("Experimental Platform running") 
 
 ############ Training ###############
+    # Train final AGCRN models using config settings specified
+    if sharedConfig['train_agcrn']['default'] or args.mode == configOptions[6]:
+        agcrnConfig = getSpecificConfig('agcrn')
+        agcrn_trainer = agcrnExecute(sharedConfig, agcrnConfig)
+        agcrn_trainer.execute()
+        complete = True
+
+
     # Train final TCN models using config settings specified
     if sharedConfig['train_tcn']['default'] or args.mode == configOptions[0]:
         tcnConfig = getSpecificConfig('tcn')
@@ -36,7 +45,7 @@ def main():
         tcn_trainer.execute()
         complete = True
     
-# Train final GWN models using the config settings specified
+    # Train final GWN models using the config settings specified
     if sharedConfig['train_gwn']['default'] or args.mode == configOptions[1]:
         gwnConfig = getSpecificConfig('gwn')
         gwn_trainer = gwnExecute(sharedConfig, gwnConfig)
@@ -74,8 +83,19 @@ def main():
         complete = True
         # plotter.create('GWN', sharedConfig)
 
+    # Record metrics for final AGCRN models
+    if sharedConfig['eval_agcrn']['default'] or args.mode == configOptions[7]:
+        agcrnConfig = getSpecificConfig('agcrn')
+        Evaluation.AgcrnEval(agcrnConfig, sharedConfig)
+        complete = True
+        # plotter.create('AGCRN', sharedConfig)
+
+
+
+
+
 # ############ Visualisations #############
-    # if sharedConfig['vis']['default'] or args.mode == configOptions[6]:
+    # if sharedConfig['vis']['default'] or args.mode == configOptions[8]:
         # visualise.plot(sharedConfig)
 
 ############ Else condition #############   

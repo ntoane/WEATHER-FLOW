@@ -183,7 +183,7 @@ def AgcrnEval(modelConfig,sharedConfig):
         
         stations = sharedConfig['stations']['default'] 
         for horizon in sharedConfig['horizons']['default']:
-            for k in range(4):
+            for k in range(sharedConfig['n_split']['default']):
                 fileDictionary = {
                     'predFile': './Results/AGCRN/' + str(horizon) + ' Hour Forecast/Predictions/outputs_' + str(k),
                     'targetFile': 'Results/AGCRN/' + str(horizon) + ' Hour Forecast/Targets/targets_' + str(k),
@@ -203,6 +203,9 @@ def AgcrnEval(modelConfig,sharedConfig):
                 for i in range(45):
                     station_pred = y_pred[:, :, i, 0]
                     station_true = y_true[:, :, i, 0]
+                    print("stations_pred")
+                    print(station_pred)
+
                     mae, rmse, mape, _, _ = agcrnUtil.All_Metrics(station_pred, station_true, modelConfig['mae_thresh']['default'], modelConfig['mape_thresh']['default'])
 
                     filePath =fileDictionary['metricFile0'] +str(stations[i])

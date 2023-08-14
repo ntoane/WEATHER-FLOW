@@ -7,6 +7,10 @@ train_gwn:
   type: bool
   default: false
   help: whether to train final GWN model
+train_agcrn:
+  type: bool
+  default: false
+  help: whether to train final AGCRN model
 ############################ Random Search HPO arguments (GWN & TCN) ############################ 
 tune_tcn:
   type: bool
@@ -28,8 +32,11 @@ eval_tcn:
 eval_gwn:
   type: bool
   default: false
-
   help: whether to report final GWN metrics
+eval_agcrn:
+  type: bool
+  default: false
+  help: whether to report final AGCRN metrics
 ############################ General data configurations ############################
 increment: 
   type: int[]
@@ -60,7 +67,7 @@ stations:
 horizons:
   type: int[]
   # default: [3, 6, 9, 12, 24]
-  default: [3,6,9]
+  default: [3,6]
   help: forecast horizons
 
 n_stations:
@@ -70,7 +77,7 @@ n_stations:
 
 n_split:
   type: int
-  default: 4
+  default: 2
   help: number of splits in walk-forward validation
 
 ################################# Loss and Optimizer  ###############################

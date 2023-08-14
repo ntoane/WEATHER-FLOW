@@ -382,7 +382,8 @@ def MAPE_np(pred, true, mask_value=None):
         mask = np.where(true > (mask_value), True, False)
         true = true[mask]
         pred = pred[mask]
-    return np.mean(np.absolute(np.divide((true - pred), true)))
+    epsilon = 1e-10
+    return np.mean(np.absolute(np.divide((true - pred), true+epsilon)))
 
 def PNBI_np(pred, true, mask_value=None):
     #if PNBI=0, all pred are smaller than true
