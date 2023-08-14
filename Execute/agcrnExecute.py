@@ -279,9 +279,10 @@ class agcrnExecute(modelExecute):
      
         
 
-    def prep_split_data(self, split):
-        splitValue=self.sharedConfig['increment']['default'][split]
-        train_loader, val_loader, test_loader, scaler = agcrnUtil.get_dataloader(splitValue, self.modelConfig,
+    def prep_split_data(self, horizon, k):
+        increments = self.sharedConfig['increment']['default']
+        print("reachAAS")
+        train_loader, val_loader, test_loader, scaler = agcrnUtil.get_dataloader(horizon, k, increments, self.modelConfig,
                                                                     normalizer=self.modelConfig['normalizer']['default'],
                                                                     tod=self.modelConfig['tod']['default'], dow=False,
                                                                     weather=False, single=False)
@@ -308,7 +309,7 @@ class agcrnExecute(modelExecute):
                 print("Training AGCRN for horizons:"+ str(forecast_len) + "   split:"+str(split))
                 #data prep according to horizon and split and lag
                 self.prepare_file_dictionary(forecast_len, split)
-                self.prep_split_data(split)
+                self.prep_split_data(forecast_len, split)
                 self.initialise_model()
                 self.dictionaryFile=self.prepare_file_dictionary
                 self.execute_split(self.fileDictionary) #send data with relative split/horizon info

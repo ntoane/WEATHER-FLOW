@@ -140,21 +140,28 @@ def data_loader(X, Y, batch_size, shuffle=True, drop_last=True):
     return dataloader
 
 
-def get_dataloader(split, agcrnConfig, normalizer = 'std', tod=False, dow=False, weather=False, single=True):
+def get_dataloader(horizon, k, increment ,agcrnConfig, normalizer = 'std', tod=False, dow=False, weather=False, single=True):
     #load raw st dataset
     data = load_st_dataset()        # B, N, D                #gets the data (19992, 307)
     #normalize st data
-    data = data[:split]
     data, scaler = normalize_dataset(data, normalizer, agcrnConfig['column_wise']['default'])
+    
+    split = [increment[k], increment[k + 1], increment[k + 2] ]
+    data_train = data[:split[0]]
+    data_val = data[split[0]:split[1]]
+    data_test = data[split[1]:split[2]]
+
+    print(data_test.shape)
     #spilit dataset by days or by ratio
-    if agcrnConfig['test_ratio']['default'] > 1:
-        data_train, data_val, data_test = split_data_by_days(data, agcrnConfig['val_ratio']['default'], agcrnConfig['test_ratio']['default'])
-    else:
-        data_train, data_val, data_test = split_data_by_ratio(data, agcrnConfig['val_ratio']['default'], agcrnConfig['test_ratio']['default'])
+    # if agcrnConfig['test_ratio']['default'] > 1:
+    #     data_train, data_val, data_test = split_data_by_days(data, agcrnConfig['val_ratio']['default'], agcrnConfig['test_ratio']['default'])
+    # else:
+    #     data_train, data_val, data_test = split_data_by_ratio(data, agcrnConfig['val_ratio']['default'], agcrnConfig['test_ratio']['default'])
+    
     #add time window
-    x_tra, y_tra = Add_Window_Horizon(data_train, agcrnConfig['lag']['default'], agcrnConfig['horizon']['default'], single)  
-    x_val, y_val = Add_Window_Horizon(data_val, agcrnConfig['lag']['default'], agcrnConfig['horizon']['default'], single)
-    x_test, y_test = Add_Window_Horizon(data_test, agcrnConfig['lag']['default'], agcrnConfig['horizon']['default'], single)
+    x_tra, y_tra = Add_Window_Horizon(data_train, agcrnConfig['lag']['default'], horizon, single)  
+    x_val, y_val = Add_Window_Horizon(data_val, agcrnConfig['lag']['default'], horizon, single)
+    x_test, y_test = Add_Window_Horizon(data_test, agcrnConfig['lag']['default'], horizon, single)
     print('Train: ', x_tra.shape, y_tra.shape)
     print('Val: ', x_val.shape, y_val.shape)
     print('Test: ', x_test.shape, y_test.shape)
