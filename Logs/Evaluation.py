@@ -7,6 +7,7 @@ import Utils.metrics as metrics
 import Utils.sharedUtils as sharedUtils
 from Logs.modelLogger import modelLogger
 import Utils.agcrnUtils as agcrnUtil
+import Utils.astgcnUtils as astgcnUtils
      
 def TcnEval(tcnConfig, sharedConfig):
     stations = sharedConfig['stations']['default']
@@ -76,10 +77,6 @@ def calculate_tcn_metrics(paths):
     }
     return actual_vs_predicted, calculated_metrics
 
-
-
-
-
 def GwnEval(gwnConfig, sharedConfig):
     stations = sharedConfig['stations']['default']
     horizons = sharedConfig['horizons']['default']
@@ -148,7 +145,6 @@ def calculate_gwn_metrics(pred, real, paths, sharedConfig, gwnConfig, s, horizon
     
     return metricsDict
 
-    
 def print_metrics(metrics, station, horizon):
     """
     Print evaluation metrics.
@@ -166,8 +162,6 @@ def get_tcn_file_paths(station, horizon, split, model='TCN'):
             "metric_file" : f'Results/TCN/{horizon} Hour Forecast/{station}/Metrics/metrics_{split}.txt',
             "actual_vs_predicted_file" : f'Results/TCN/{horizon} Hour Forecast/{station}/Metrics/actual_vs_predicted.txt'
         }
-       
-
 def get_gwn_file_paths(station, horizon, split,model='GWN'):
     folder_name = f'{horizon} Hour Forecast'
     station_with_spaces = station.replace('_', ' ')
@@ -178,9 +172,7 @@ def get_gwn_file_paths(station, horizon, split,model='GWN'):
         # "actual_vs_predicted_file" : f'Results/{model}/{folder_name}/Metrics/{station_with_spaces}/actual_vs_predicted.txt'
     }
         
-
 def AgcrnEval(modelConfig,sharedConfig):
-        
         stations = sharedConfig['stations']['default'] 
         for horizon in sharedConfig['horizons']['default']:
             for k in range(sharedConfig['n_split']['default']):
@@ -195,7 +187,6 @@ def AgcrnEval(modelConfig,sharedConfig):
                     
                     'metricFile1': '/split_' + str(k) + '_metrics.txt'
                 }
-                
             
                 y_pred=np.load(fileDictionary["predFile"] + ".npy")
                 y_true=np.load(fileDictionary["targetFile"] + ".npy")
@@ -214,12 +205,50 @@ def AgcrnEval(modelConfig,sharedConfig):
 
                     with open(filePath + fileDictionary['metricFile1'], 'w') as file:
                 
-                
                         file.write('This is the MAE ' + str(mae) + '\n')
                         file.write('This is the RMSE ' + str(rmse) + '\n')
                         file.write('This is the MAPE ' + str(mape) + '\n')
         
-        
+def evalASTGCN(config, sharedConfig):
+    for station in sharedConfig['stations']['default'] :
+        for horizon in sharedConfig['horizons']['default']:
+    # for station in stations:
+    #     for horizon in horizons:
+            print(f'ASTGCN evaluation started at {station} for the horizon of {horizon}')
+            logger = modelLogger('ASTGCN', str(station),'Logs/ASTGCN/Eval/' + str(horizon) + ' Hour Forecast/'+str(station) +'/'+'astgcn_' + str(station) + '.txt' , log_enabled=False)
+            logger.info("ASTGCN evaluation for single time-step started at {station} for the horizon of {horizon}")
+            paths = astgcnUtils.get_file_paths(station, horizon)
+            try:
+                for path in paths.values():
+                    astgcnUtils.create_file_if_not_exists(path)
+                # Read the predictions, targets & actual vs predicted from the CSV files
+                preds = pd.read_csv(paths['yhat']).drop(['Unnamed: 0'], axis=1)
+                targets = pd.read_csv(paths['target']).drop(['Unnamed: 0'], axis=1)
+                actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
+                actual_vs_predicted.to_csv(paths['actual_vs_predicted'], index=False)
+                # Calculate the metrics &  Write the metrics to the files
+                metrics = {
+                    'MSE': astgcnUtils.MSE(targets.values, preds.values),
+                    'RMSE': astgcnUtils.RMSE(targets.values, preds.values),
+                    'MAE': astgcnUtils.MAE(targets.values, preds.values),
+                    'SMAPE': astgcnUtils.SMAPE(targets.values, preds.values) ,
+                    'std_dev_smape': astgcnUtils.smape_std(targets.values, preds.values) 
+                }
+                with open(paths['metrics'], 'w') as metric_file:
+                    for name, value in metrics.items():
+                        metric_file.write(f'This is the {name}: {value}\n')
+                print(f'ASTGCN evaluation done at {station} for the horizon of {horizon}')
+                print(f'And was saved to {paths["metrics"]}')
+                logger.info('ASTGCN evaluation done at {station} for the horizon of {horizon}')
+                logger.info('And was saved to {paths["metrics"]}')
+                for name, value in metrics.items():
+                    print(f'{name}: {value} at the {station} station forecasting {horizon} hours ahead.')
+                    logger.info('{name}: {value} at the {station} station forecasting {horizon} hours ahead.')
+            except Exception as e:
+                print(f'Error! Unable to read data or write metrics: {str(e)}')
+                logger.error('Error! Unable to read data or write metrics: {str(e)}')
+    print('Finished evaluation of ASTGCN error metrics for all stations.')
+    logger.info('Finished evaluation of ASTGCN error metrics for all stations')
         
         
         
