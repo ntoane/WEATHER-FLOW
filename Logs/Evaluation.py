@@ -203,8 +203,8 @@ def AgcrnEval(modelConfig,sharedConfig):
                 for i in range(45):
                     station_pred = y_pred[:, :, i, 0]
                     station_true = y_true[:, :, i, 0]
-                    print("stations_pred")
-                    print(station_pred)
+                    print("Evaluating horizon:"+ str(horizon) + " split:" + str(k) + " for station:" + stations[i])
+                    # print(station_pred)
 
                     mae, rmse, mape, _, _ = agcrnUtil.All_Metrics(station_pred, station_true, modelConfig['mae_thresh']['default'], modelConfig['mape_thresh']['default'])
 

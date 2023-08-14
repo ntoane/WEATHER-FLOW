@@ -218,8 +218,8 @@ class agcrnExecute(modelExecute):
                 nn.init.xavier_uniform_(p)
             else:
                 nn.init.uniform_(p)
-        agcrnUtil.print_model_parameters(model, only_num=False)
-        print("reachA")
+        # agcrnUtil.print_model_parameters(model, only_num=False)
+        # print("reachA")
         #load dataset
        
         #init loss function, optimizer
@@ -305,10 +305,9 @@ class agcrnExecute(modelExecute):
         for forecast_len in forecast_horizons:
             self.modelConfig['horizon']['default']=forecast_len
             for split in range(self.sharedConfig['n_split']['default']):
-                print("training for horizons:"+ str(forecast_len) + " split:"+str(split))
+                print("Training AGCRN for horizons:"+ str(forecast_len) + "   split:"+str(split))
                 #data prep according to horizon and split and lag
                 self.prepare_file_dictionary(forecast_len, split)
-
                 self.prep_split_data(split)
                 self.initialise_model()
                 self.dictionaryFile=self.prepare_file_dictionary
@@ -403,7 +402,6 @@ class agcrnExecute(modelExecute):
             y_pred = scaler.inverse_transform(torch.cat(y_pred, dim=0))
         # np.save('./weatherData_true.npy', y_true)
         # np.save('./weatherData_pred.npy', y_pred)
-        print("reachZ")
 
 
         sharedUtil.create_file_if_not_exists(self.fileDictionary["targetFile"])

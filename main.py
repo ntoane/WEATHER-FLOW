@@ -108,7 +108,7 @@ def main():
             if userInput == 'a':
                 print(" ")
                 while loop:
-                    print('Enter which of the following settings to change or c to continue : train_tcn,train_gwn,tune_tcn,tune_gwn,eval_tcn,eval_gwn,vis')
+                    print('Enter which of the following settings to change or c to continue : train_tcn,train_gwn,tune_tcn,tune_gwn,eval_tcn,eval_gwn,train_agcrn,eval_agcrn,vis')
                     userInput = input()
                     if userInput in configOptions:
                         sharedConfig[userInput]['default'] = not sharedConfig[userInput]['default']

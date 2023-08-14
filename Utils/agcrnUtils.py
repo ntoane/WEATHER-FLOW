@@ -153,11 +153,6 @@ def get_dataloader(split, agcrnConfig, normalizer = 'std', tod=False, dow=False,
         data_train, data_val, data_test = split_data_by_ratio(data, agcrnConfig['val_ratio']['default'], agcrnConfig['test_ratio']['default'])
     #add time window
     x_tra, y_tra = Add_Window_Horizon(data_train, agcrnConfig['lag']['default'], agcrnConfig['horizon']['default'], single)  
-
-    print("reach2")
-    # print(x_tra)
-    print("reach 3")
-    # print(y_tra)
     x_val, y_val = Add_Window_Horizon(data_val, agcrnConfig['lag']['default'], agcrnConfig['horizon']['default'], single)
     x_test, y_test = Add_Window_Horizon(data_test, agcrnConfig['lag']['default'], agcrnConfig['horizon']['default'], single)
     print('Train: ', x_tra.shape, y_tra.shape)
@@ -189,15 +184,15 @@ def load_st_dataset():
     data = pd.read_csv('DataNew/Graph Neural Network Data/Graph Station Data/graph.csv')
     data = data.drop(['StasName', 'DateT', 'Latitude', 'Longitude'], axis=1)  #added latitude and longitude
     data = np.array(data)
-    print(data.shape)
+    # print(data.shape)
 
     data = np.reshape(data, (113929, 45, 6))
     
-    print("stations data shape:")
-    print(data.shape)
-    print("stations data snippet:")
+    # print("stations data shape:")
+    # print(data.shape)
+    # print("stations data snippet:")
     # np.set_printoptions(threshold=np.inf)
-    print(data[:500])
+    # print(data[:500])
     
         
 
