@@ -74,7 +74,7 @@ def normalize_dataset(data, normalizer, column_wise=False):
             maximum = data.max()
         scaler = MinMax01Scaler(minimum, maximum)
         data = scaler.transform(data)
-        print('Normalize the dataset by MinMax01 Normalization')
+        # print('Normalize the dataset by MinMax01 Normalization')
     elif normalizer == 'max11':
         if column_wise:
             minimum = data.min(axis=0, keepdims=True)
@@ -94,7 +94,7 @@ def normalize_dataset(data, normalizer, column_wise=False):
             std = data.std()
         scaler = StandardScaler(mean, std)
         data = scaler.transform(data)
-        print('Normalize the dataset by Standard Normalization')
+        # print('Normalize the dataset by Standard Normalization')
     elif normalizer == 'None':
         scaler = NScaler()
         data = scaler.transform(data)
@@ -151,7 +151,7 @@ def get_dataloader(horizon, k, increment ,agcrnConfig, normalizer = 'std', tod=F
     data_val = data[split[0]:split[1]]
     data_test = data[split[1]:split[2]]
 
-    print(data_test.shape)
+    # print(data_test.shape)
     #spilit dataset by days or by ratio
     # if agcrnConfig['test_ratio']['default'] > 1:
     #     data_train, data_val, data_test = split_data_by_days(data, agcrnConfig['val_ratio']['default'], agcrnConfig['test_ratio']['default'])

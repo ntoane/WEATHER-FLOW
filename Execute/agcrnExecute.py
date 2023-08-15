@@ -5,49 +5,38 @@ import time
 import copy
 import numpy as np
 import pandas as pd
-
-##
 from Models.AGCRN.AGCRN import AGCRN as Network
 import torch.nn as nn
-##
 import os
 import sys
 file_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-print(file_dir)
 sys.path.append(file_dir)
-
 import torch
 import numpy as np
 import torch.nn as nn
 from Models.AGCRN.AGCRN import AGCRN as Network
-####
 import Utils.agcrnUtils as agcrnUtil
 import Utils.sharedUtils as sharedUtil
 from Execute.modelExecute import modelExecute
-###
+from Logs.modelLogger import modelLogger 
 
 class agcrnExecute(modelExecute):
     
     def __init__(self, sharedConfig, modelConfig):
         super().__init__('agcrn', sharedConfig, modelConfig)
-        
+        # current_dir = os.path.dirname(os.path.realpath(__file__))
+        # self.log_dir = os.path.join(current_dir,'experiments')
+        # self.best_path = os.path.join(self.log_dir, 'best_model.pth')
+        # self.loss_figure_path = os.path.join(self.log_dir, 'loss.png')
+        # if os.path.isdir(self.log_dir) == False and not self.modelConfig['debug']['default']:
+        #     os.makedirs(self.log_dir, exist_ok=True)
+ 
 
-        #
-        current_dir = os.path.dirname(os.path.realpath(__file__))
-        self.log_dir = os.path.join(current_dir,'experiments')
-        
 
 
-        self.best_path = os.path.join(self.log_dir, 'best_model.pth')
-        
-        self.loss_figure_path = os.path.join(self.log_dir, 'loss.png')
-
-        if os.path.isdir(self.log_dir) == False and not self.modelConfig['debug']['default']:
-            os.makedirs(self.log_dir, exist_ok=True)
-        self.logger = agcrnUtil.get_logger(self.log_dir, name=self.modelConfig['model']['default'], debug=self.modelConfig['debug']['default'])
-        self.logger.info('Experiment log path in: {}'.format(self.log_dir))
+        # self.logger = agcrnUtil.get_logger(self.log_dir, name=self.modelConfig['model']['default'], debug=self.modelConfig['debug']['default'])
+        # self.logger.info('Experiment log path in: {}'.format(self.log_dir))
        
-
 
 
     def val_epoch(self, epoch, val_dataloader):
@@ -67,17 +56,14 @@ class agcrnExecute(modelExecute):
                 if not torch.isnan(loss):
                     total_val_loss += loss.item()
         val_loss = total_val_loss / len(val_dataloader)
-        self.logger.info('**********Val Epoch {}: average Loss: {:.6f}'.format(epoch, val_loss))
+
+        self.model_logger.info('**********Val Epoch {}: average Loss: {:.6f}'.format(epoch, val_loss))
+        print('**********Val Epoch {}: average Loss: {:.6f}'.format(epoch, val_loss))
         return val_loss
 
 
-
-
-
     def train_epoch(self, epoch):
-
         self.model.train()
-
         total_loss = 0
         for batch_idx, (data, target) in enumerate(self.train_loader):
             data = data[..., :self.modelConfig['input_dim']['default']]  #input data
@@ -111,11 +97,14 @@ class agcrnExecute(modelExecute):
             #log information
             if batch_idx % self.modelConfig['log_step']['default'] == 0:
                 # print("reach A2")
-                self.logger.info('Train Epoch {}: {}/{} Loss: {:.6f}'.format(
+                self.model_logger.info('Train Epoch {}: {}/{} Loss: {:.6f}'.format(
+                    epoch, batch_idx, self.train_per_epoch, loss.item()))
+                print('Train Epoch {}: {}/{} Loss: {:.6f}'.format(
                     epoch, batch_idx, self.train_per_epoch, loss.item()))
    
         train_epoch_loss = total_loss/self.train_per_epoch
-        self.logger.info('**********Train Epoch {}: averaged Loss: {:.6f}, tf_ratio: {:.6f}'.format(epoch, train_epoch_loss, teacher_forcing_ratio))
+        self.model_logger.info('**********Train Epoch {}: averaged Loss: {:.6f}, tf_ratio: {:.6f}'.format(epoch, train_epoch_loss, teacher_forcing_ratio))
+        print('**********Train Epoch {}: averaged Loss: {:.6f}, tf_ratio: {:.6f}'.format(epoch, train_epoch_loss, teacher_forcing_ratio))
 
         #learning rate decay
         if self.modelConfig['lr_decay']['default']:
@@ -146,7 +135,8 @@ class agcrnExecute(modelExecute):
             train_loss_list.append(train_epoch_loss)
             val_loss_list.append(val_epoch_loss)
             if train_epoch_loss > 1e6:
-                self.logger.warning('Gradient explosion detected. Ending...')
+                self.model_logger.warning('Gradient explosion detected. Ending...')
+                print('Gradient explosion detected. Ending...')
                 break
             #if self.val_loader == None:
             #val_epoch_loss = train_epoch_loss
@@ -160,17 +150,20 @@ class agcrnExecute(modelExecute):
             # early stop
             if self.modelConfig['early_stop']['default']:
                 if not_improved_count == self.modelConfig['early_stop_patience']['default']:
-                    self.logger.info("Validation performance didn\'t improve for {} epochs. "
+                    self.model_logger.info("Validation performance didn\'t improve for {} epochs. "
+                                    "Training stops.".format(self.modelConfig['early_stop_patience']['default']))
+                    print("Validation performance didn\'t improve for {} epochs. "
                                     "Training stops.".format(self.modelConfig['early_stop_patience']['default']))
                     break
             # save the best state
             if best_state == True:
-                self.logger.info('*********************************Current best model saved!')
+                self.model_logger.info('*********************************Current best model saved!')
+                print('*********************************Current best model saved!')
                 best_model = copy.deepcopy(self.model.state_dict())
 
         training_time = time.time() - start_time
-        self.logger.info("Total training time: {:.4f}min, best loss: {:.6f}".format((training_time / 60), best_loss))
-
+        self.model_logger.info("Total training time: {:.4f}min, best loss: {:.6f}".format((training_time / 60), best_loss))
+        print("Total training time: {:.4f}min, best loss: {:.6f}".format((training_time / 60), best_loss))
         #save the best model to file
         if not self.modelConfig['debug']['default']:
             current_dir = os.path.dirname(os.path.realpath(__file__))
@@ -182,12 +175,13 @@ class agcrnExecute(modelExecute):
             os.makedirs(os.path.dirname(path), exist_ok=True)
             torch.save(best_model, path)
             self.save_matrix(self.model.gateMatrix, fileDictionary)
-            self.logger.info("Saving current best model to " + path) #self.best_path
+            self.model_logger.info("Saving current best model to " + path) #self.best_path
+            print("Saving current best model to " + path) #self.best_path
 
         #test
         self.model.load_state_dict(best_model)
         #self.val_epoch(self.args.epochs, self.test_loader)
-        self.test(self.model, self.modelConfig, self.test_loader, self.scaler, self.logger)
+        self.test(self.model, self.modelConfig, self.test_loader, self.scaler,self.model_logger  )
 
 
     def initialise_model(self):
@@ -224,7 +218,7 @@ class agcrnExecute(modelExecute):
        
         #init loss function, optimizer
         if self.modelConfig['loss_func']['default'] == 'mask_mae':
-            loss = masked_mae_loss(scaler, mask_value=0.0)
+            loss = masked_mae_loss(self.scaler, mask_value=0.0)
         elif self.modelConfig['loss_func']['default'] == 'mae':
             loss = torch.nn.L1Loss().to(DEVICE)
         elif self.modelConfig['loss_func']['default'] == 'mse':
@@ -246,67 +240,40 @@ class agcrnExecute(modelExecute):
         self.model = model
         self.loss = loss
         self.optimizer = optimizer
-        # self.train_loader = train_loader
-        # self.val_loader = val_loader
-        # self.test_loader = test_loader
-        # self.scaler = scaler
-        
         self.lr_scheduler = lr_scheduler
-        # self.train_per_epoch = len(train_loader)
-        # if val_loader != None:
-        #     self.val_per_epoch = len(val_loader)
-        
-
-        # current_dir = os.path.dirname(os.path.realpath(__file__))
-        # self.log_dir = os.path.join(current_dir,'experiments')
-        
-
-        # self.best_path = os.path.join(self.log_dir, 'best_model.pth')
-        
-        # self.loss_figure_path = os.path.join(self.log_dir, 'loss.png')
-        #log
-        # if os.path.isdir(self.log_dir) == False and not self.modelConfig['debug']['default']:
-        #     os.makedirs(self.log_dir, exist_ok=True)
-        # self.logger = agcrnUtil.get_logger(self.log_dir, name=self.modelConfig['model']['default'], debug=self.modelConfig['debug']['default'])
-        # self.logger.info('Experiment log path in: {}'.format(self.log_dir))
-        #if not args.debug:
-        #self.logger.info("Argument: %r", args)
-        # for arg, value in sorted(vars(args).items()):
-        #     self.logger.info("Argument %s: %r", arg, value)
-
-
 
      
         
 
     def prep_split_data(self, horizon, k):
         increments = self.sharedConfig['increment']['default']
-        print("reachAAS")
-        train_loader, val_loader, test_loader, scaler = agcrnUtil.get_dataloader(horizon, k, increments, self.modelConfig,
+        self.train_loader, self.val_loader, self.test_loader, self.scaler = agcrnUtil.get_dataloader(horizon, k, increments, self.modelConfig,
                                                                     normalizer=self.modelConfig['normalizer']['default'],
                                                                     tod=self.modelConfig['tod']['default'], dow=False,
                                                                     weather=False, single=False)
 
-       
-        self.train_loader = train_loader
-        self.val_loader = val_loader
-        self.test_loader = test_loader
-        self.scaler = scaler
-
-        self.train_per_epoch = len(train_loader)
-        if val_loader != None:
-            self.val_per_epoch = len(val_loader)
+        self.train_per_epoch = len(self.train_loader)
+        if self.val_loader != None:
+            self.val_per_epoch = len(self.val_loader)
 
 
 
     def execute(self):
-        
         forecast_horizons = self.sharedConfig['horizons']['default']
-
         for forecast_len in forecast_horizons:
             self.modelConfig['horizon']['default']=forecast_len
             for split in range(self.sharedConfig['n_split']['default']):
+                
+
+
+                log_path = 'Logs/AGCRN/Train/' + str(forecast_len) + ' Hour Forecast/'
+                os.makedirs(log_path, exist_ok=True)
+                log_file = log_path + 'agcrn_all_stations.txt'
+                self.model_logger = modelLogger('agcrn', 'all_stations', log_file, log_enabled=True)
+                self.model_logger.info("Training AGCRN for horizons:"+ str(forecast_len) + "   split:"+str(split))
                 print("Training AGCRN for horizons:"+ str(forecast_len) + "   split:"+str(split))
+
+
                 #data prep according to horizon and split and lag
                 self.prepare_file_dictionary(forecast_len, split)
                 self.prep_split_data(forecast_len, split)
@@ -333,19 +300,6 @@ class agcrnExecute(modelExecute):
         }
     
 
-    # def save_matrix(self, supports, fileDictionary):
-      
-    #     supports_np = supports.detach().cpu().numpy()  # Convert the tensor to a numpy array
-    #     df = pd.DataFrame(supports_np)  # Convert the numpy array to a pandas DataFrame
-
-
-    #     current_dir = os.path.dirname(os.path.realpath(__file__))
-    #     parent_dir = os.path.dirname(current_dir)
-    #     path = os.path.join(parent_dir, fileDictionary['matrixFile'])
-    #     os.makedirs(os.path.dirname(path), exist_ok=True)
-
-    #     df.to_csv(fileDictionary['matrixFile'], index=False, header=False) 
-
     def save_matrix(self, supports, fileDictionary):
       
         supports_np = supports.detach().cpu().numpy()  # Convert the tensor to a numpy array
@@ -366,11 +320,10 @@ class agcrnExecute(modelExecute):
             'config': self.modelConfig
         }
         torch.save(state, self.best_path)
-        self.logger.info("Saving current best model to " + self.best_path)
+        self.model_logger.info("Saving current best model to " + self.best_path)
+        print("Saving current best model to " + self.best_path)
 
 
-
-    # @staticmethod
 
     def test(self, model, modelConfig, data_loader, scaler, logger, path=None):
         if path != None:
@@ -388,21 +341,12 @@ class agcrnExecute(modelExecute):
                 label = target[..., :modelConfig['output_dim']['default']]
                 output = model(data, target, teacher_forcing_ratio=0)
                 y_true.append(label)
-           
                 y_pred.append(output)
-
-                # print("this is actual" )
-                # print(y_true )
-                # print("this is predict" )
-                # print( y_pred )
-
         y_true = scaler.inverse_transform(torch.cat(y_true, dim=0))
         if modelConfig['real_value']['default']:
             y_pred = torch.cat(y_pred, dim=0)
         else:
             y_pred = scaler.inverse_transform(torch.cat(y_pred, dim=0))
-        # np.save('./weatherData_true.npy', y_true)
-        # np.save('./weatherData_pred.npy', y_pred)
 
 
         sharedUtil.create_file_if_not_exists(self.fileDictionary["targetFile"])
@@ -410,40 +354,6 @@ class agcrnExecute(modelExecute):
 
         np.save(self.fileDictionary["targetFile"], y_true)
         np.save(self.fileDictionary["predFile"], y_pred)
-
-        
-        # y_pred=np.load(self.fileDictionary["predFile"] + ".npy")
-        # y_true=np.load(self.fileDictionary["targetFile"] + ".npy")
-        
-       
-        # totMAE=0
-        # totMAPE=0
-        # totRMSE=0
-        # for i in range(45):
-        #     station_pred = y_pred[:, :, i, 0]
-        #     station_true = y_true[:, :, i, 0]
-        #     # print("this is predss")
-            
-        #     mae, rmse, mape, _, _ = agcrnUtil.All_Metrics(station_pred, station_true, modelConfig['mae_thresh']['default'], modelConfig['mape_thresh']['default'])
-        #     totMAE=totMAE+mae
-        #     # print(mape)
-        #     totMAPE=totMAPE+mape*100
-        #     totRMSE=totRMSE+rmse
-
-        #     # logger.info("Average Horizon, MAE: {:.2f}, RMSE: {:.2f}, MAPE: {:.4f}%".format(
-        #     #             mae, rmse, mape*100))
-        #     filePath =self.fileDictionary['metricFile0'] +str(i)
-        #     if not os.path.exists(filePath):
-        #         os.makedirs(filePath)
-
-        #     with open(filePath + self.fileDictionary['metricFile1'], 'w') as file:
-        
-         
-        #         file.write('This is the MAE ' + str(mae) + '\n')
-        #         file.write('This is the RMSE ' + str(rmse) + '\n')
-        #         file.write('This is the MAPE ' + str(mape) + '\n')
-
-
 
     @staticmethod
     def _compute_sampling_threshold(global_step, k):
@@ -455,9 +365,3 @@ class agcrnExecute(modelExecute):
         """
         return k / (k + math.exp(global_step / k))
     
-
-
-
-
-
-
