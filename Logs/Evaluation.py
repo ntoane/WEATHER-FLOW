@@ -197,7 +197,14 @@ def AgcrnEval(modelConfig,sharedConfig):
                     print("Evaluating horizon:"+ str(horizon) + " split:" + str(k) + " for station:" + stations[i])
                     # print(station_pred)
 
-                    mae, rmse, mape, _, _ = agcrnUtil.All_Metrics(station_pred, station_true, modelConfig['mae_thresh']['default'], modelConfig['mape_thresh']['default'])
+                    # mae, rmse, mape, _, _ = agcrnUtil.All_Metrics(station_pred, station_true, modelConfig['mae_thresh']['default'], modelConfig['mape_thresh']['default'])
+
+                    rmse =  metrics.rmse(station_true, station_pred)
+                    mse = metrics.mse(station_true, station_pred)
+                    mae = metrics.mae(station_true, station_pred)
+                    smape = metrics.smape(station_true, station_pred)
+
+
 
                     filePath =fileDictionary['metricFile0'] +str(stations[i])
                     if not os.path.exists(filePath):
@@ -205,9 +212,15 @@ def AgcrnEval(modelConfig,sharedConfig):
 
                     with open(filePath + fileDictionary['metricFile1'], 'w') as file:
                 
-                        file.write('This is the MAE ' + str(mae) + '\n')
+                        # file.write('This is the MAE ' + str(mae) + '\n')
+                        # file.write('This is the RMSE ' + str(rmse) + '\n')
+                        # file.write('This is the MAPE ' + str(mape) + '\n')
                         file.write('This is the RMSE ' + str(rmse) + '\n')
-                        file.write('This is the MAPE ' + str(mape) + '\n')
+                        file.write('This is the MSE ' + str(mse) + '\n')
+                        file.write('This is the MAE ' + str(mae) + '\n')
+                        file.write('This is the SMAPE ' + str(smape) + '\n')
+
+
         
 def evalASTGCN(config, sharedConfig):
     for station in sharedConfig['stations']['default'] :
