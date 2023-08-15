@@ -6,6 +6,9 @@ import Utils.astgcnUtils as utils
 import Utils.astgcn_Data_PreProcess.data_preprocess as data_preprocess
 from Logs.modelLogger import modelLogger 
 from contextlib import redirect_stdout
+import warnings
+# Filter out specific runtime warnings
+warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 class astgcnExecute:
     def __init__(self, config):
