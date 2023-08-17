@@ -2,6 +2,8 @@
 import yaml
 import Logs.Evaluation as Evaluation
 from Execute.agcrnExecute import agcrnExecute
+from HPO.agcrnHPO import agcrnHPO
+
 ###########################################################
 
 with open('configurations/agcrnConfig.yaml', 'r') as file:
@@ -12,8 +14,11 @@ with open('configurations/sharedConfig.yaml', 'r') as file:
 
 
 # train(agcrnConfig, agcrnConfig)
-agcrn_trainer = agcrnExecute(sharedConfig, agcrnConfig)
-agcrn_trainer.execute() 
+# agcrn_trainer = agcrnExecute(sharedConfig, agcrnConfig)
+# agcrn_trainer.execute() 
+
+agcrn_hpo = agcrnHPO(sharedConfig, agcrnConfig)
+agcrn_hpo.hpo() 
 
 Evaluation.AgcrnEval(agcrnConfig, sharedConfig)
     

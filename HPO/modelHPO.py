@@ -6,6 +6,7 @@ class modelHPO(ABC):
     def __init__(self,model_name, sharedConfig, modelConfig):
         self.sharedConfig = sharedConfig
         self.gwnConfig = modelConfig
+        self.modelConfig = modelConfig
         self.best_cfg = []
         log_file = f'Logs/{model_name}/HPO/{model_name}_all_stations.txt'
         self.model_logger = modelLogger(model_name, 'all', log_file, log_enabled=False)

@@ -661,3 +661,49 @@ def get_memory_usage(device):
     cached_memory = torch.cuda.memory_cached(device) / (1024*1024.)
     return allocated_memory, cached_memory
     #print('Allocated Memory: {:.2f} MB, Cached Memory: {:.2f} MB'.format(allocated_memory, cached_memory))
+
+
+def generateRandomParameters(config):
+    """
+    Generates a random configuration of hyper-parameters from the pre-defined search space.
+
+    Parameters:
+        config -  Conguration file of initial parameters.
+
+    Returns:
+        config - list of HPO parameters
+    """
+
+
+
+
+
+
+
+    batch_size = [32, 64]
+    rnn_units = [32, 64] #new
+    #hidden_units = [22, 32, 42]
+    lag = [12, 24]
+    #dropout = [0.1, 0.2, 0.3]
+    num_layers = [2, 3, 4]
+    epochs = [30, 40, 50, 60]
+
+    batch = batch_size[random.randint(0, len(batch_size)-1)]
+    # units = hidden_units[random.randint(len(hidden_units))]
+    lag = lag[random.randint(0, len(lag)-1)]
+    # dropout = dropout[random.randint(len(dropout))]
+    num_layers = num_layers[random.randint(0, len(num_layers)-1)]
+    epoch = epochs[random.randint(0, len(epochs)-1)]
+    rnn_units = rnn_units[random.randint(0, len(rnn_units)-1)]
+
+
+    config['batch_size']['default'] = batch
+    # config['dropout']['default'] = dropout
+    # config['nhid']['default'] = units
+    config['lag']['default'] = lag
+    config['num_layers']['default'] = num_layers
+    config['epochs']['default'] = epoch
+    config['rnn_units']['default'] = rnn_units
+
+
+    return config
