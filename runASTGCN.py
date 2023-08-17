@@ -23,7 +23,7 @@ def main():
     ##############################  Training  ##################################
     if config['train_ast_gcn']['default']:
         print("************* Starting training process for the AST-GCN Model ************* ")
-        trainer = astgcnExecute(config)
+        trainer = astgcnExecute(sharedConfig,config)
         trainer.train()
         print("*************  Finished training process for the AST-GCN Model ************* ")
     

@@ -1,6 +1,7 @@
 import io
 import numpy as np
 import pandas as pd
+import os
 from Models.ASTGCN.astgcn import AstGcn
 import Utils.astgcnUtils as utils
 import Utils.astgcn_Data_PreProcess.data_preprocess as data_preprocess
@@ -11,12 +12,12 @@ import warnings
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 class astgcnExecute:
-    def __init__(self, config):
+    def __init__(self, sharedConfig, config):
         """Initializes an ASTGCNTrainer with a given configuration."""
         self.config = config
         self.station = None
         self.forecast_len = None
-        self.increment = config['increment']['default']
+        self.increment = sharedConfig['increment']['default']
         self.stations = config['stations']['default']
         self.forecasting_horizons = config['forecasting_horizons']['default']
         self.num_splits =config['num_splits']['default']
@@ -32,7 +33,13 @@ class astgcnExecute:
         print("Forecasting horizons currently set to " + str(self.forecasting_horizons));
         for self.forecast_len in self.forecasting_horizons:
             for self.station in self.stations:
-                self.logger = modelLogger('ASTGCN', str(self.station),'Logs/astgcn/Train/' + str(self.forecast_len) + ' Hour Forecast/'+ str(self.station) +'/astgcn_' + str(self.station) + '.txt' , log_enabled=True)
+                # self.logger = modelLogger('ASTGCN', str(self.station),'Logs/ASTGCN/Train/' + str(self.forecast_len) + ' Hour Forecast/'+ str(self.station) + '.txt' , log_enabled=True)
+                log_dir = 'Logs/ASTGCN/Train/' + str(self.forecast_len) + ' Hour Forecast/'
+                # Ensure the directory exists
+                if not os.path.exists(log_dir):
+                    os.makedirs(log_dir)
+                log_path = os.path.join(log_dir, str(self.station) + '.txt')
+                self.logger = modelLogger('ASTGCN', str(self.station), log_path, log_enabled=True)
                 self.train_single_station()
         
     def train_single_station(self):
