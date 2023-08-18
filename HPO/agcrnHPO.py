@@ -152,21 +152,6 @@ class agcrnHPO(modelHPO):
         training_time = time.time() - start_time
         self.model_logger.info("Total training time: {:.4f}min, best loss: {:.6f}".format((training_time / 60), best_loss))
         print("Total training time: {:.4f}min, best loss: {:.6f}".format((training_time / 60), best_loss))
-        #save the best model to file
-        # if not self.modelConfig['debug']['default']:
-        #     current_dir = os.path.dirname(os.path.realpath(__file__))
-        #     parent_dir = os.path.dirname(current_dir)
-        #     path = os.path.join(parent_dir, fileDictionary['modelFile'])
-        #     # self.best_path = os.path.join(self.log_dir, 'best_model.pth')    
-
-        #     # path="../savedModels/best_model.pth"
-        #     os.makedirs(os.path.dirname(path), exist_ok=True)
-        #     torch.save(best_model, path)
-
-            # self.model_logger.info("Saving current best model to " + path) #self.best_path
-            # print("Saving current best model to " + path) #self.best_path
-
-
         return best_loss
 
 
@@ -228,7 +213,6 @@ class agcrnHPO(modelHPO):
         self.optimizer = optimizer
         self.lr_scheduler = lr_scheduler
 
-     
         
 
     def prep_split_data(self, horizon, k):
@@ -249,14 +233,13 @@ class agcrnHPO(modelHPO):
         if not os.path.exists(param_path):
                         os.makedirs(param_path)
         f = open(param_path + "configurations.txt", 'w')
-
         log_path = 'Logs/AGCRN/HPO/'
         os.makedirs(log_path, exist_ok=True)
         log_file = log_path + 'agcrn_all_stations.txt'
-
         self.model_logger = modelLogger('agcrn', 'all_stations', log_file, log_enabled=True)
         forecast_len = 24
-        for config in range(3):
+        for config in range(2):
+            totLoss=0
 
             self.model_logger.info("Generating random parameters for AGCRN")
             print("Generating random parameters for AGCRN")
@@ -270,50 +253,18 @@ class agcrnHPO(modelHPO):
                           'Epochs - ', self.modelConfig['epochs']['default'])
 
 
-            for split in range(3):
-                
-    
+            for split in range(2):
                 print("Training AGCRN for horizons:"+ str(forecast_len) + "   split:"+str(split))
-
-
-                #data prep according to horizon and split and lag
-                # self.prepare_file_dictionary(forecast_len, split)
                 self.prep_split_data(forecast_len, split)
                 self.initialise_model()
-                # self.dictionaryFile=self.prepare_file_dictionary
-                loss = self.execute_split() #send data with relative split/horizon info
-
-                
-                f.write('Loss of ' + loss + 'with the following configs:' '\n',
-                          'Lag_length - ', self.modelConfig['lag_length']['default'], '\n',
-                          'Rnn Units - ', self.modelConfig['rnn_units']['default'], '\n',
-                          'Layers - ', self.modelConfig['num_layers']['default'], '\n',
-                          'Batch Size - ', self.modelConfig['batch_size']['default'], '\n',
-                          'Epochs - ', self.modelConfig['epochs']['default'])
+                totLoss = totLoss + self.execute_split() 
+            f.write(    'Lag - ' + str(self.modelConfig['lag']['default']) + '\n' +
+                        'Rnn Units - ' + str(self.modelConfig['rnn_units']['default']) + '\n' +
+                        'Layers - '+ str(self.modelConfig['num_layers']['default'])+ '\n'+
+                        'Batch Size - '+ str(self.modelConfig['batch_size']['default']) + '\n'+
+                        'Epochs - '+ str(self.modelConfig['epochs']['default']) + '\n' +
+                        'Total Loss: ' + str(totLoss) + '\n\n')
         f.close()
-
-                
-    
-    
-
-
-
-    # def prepare_file_dictionary(self, forecast_len, k):
-    #     self.fileDictionary = {
-    #         'predFile': './Results/AGCRN/' + str(forecast_len) + ' Hour Forecast/Predictions/outputs_' + str(k),
-    #         'targetFile': 'Results/AGCRN/' + str(forecast_len) + ' Hour Forecast/Targets/targets_' + str(k),
-    #         'trainLossFile': 'Results/AGCRN/' + str(forecast_len) + ' Hour Forecast/Matrices/adjacency_matrix_' + str(k) + '.csv',
-    #         'validationLossFile': 'Results/AGCRN/' + str(forecast_len) + ' Hour Forecast/Matrices/adjacency_matrix_' + str(k) + '.csv',
-    #         'modelFile': 'Garage/Final Models/AGCRN/' + str(forecast_len) + ' Hour Models/model_split_' + str(k) + ".pth",
-    #         'matrixFile': 'Results/AGCRN/' + str(forecast_len) + ' Hour Forecast/Matrices/adjacency_matrix_' + str(k) + '.csv',
-    #         'metricFile0': './Results/AGCRN/'+  str(forecast_len)+ ' Hour Forecast/Metrics/Station_',
-            
-    #         'metricFile1': '/split_' + str(k) + '_metrics.txt'
-
-    #     }
- 
-
-
 
 
     @staticmethod

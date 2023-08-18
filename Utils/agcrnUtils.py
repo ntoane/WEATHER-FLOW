@@ -673,20 +673,26 @@ def generateRandomParameters(config):
     Returns:
         config - list of HPO parameters
     """
-
-
-
-
-
-
-
-    batch_size = [32, 64]
-    rnn_units = [32, 64] #new
+    batch_size = [32]
+    rnn_units = [32] #new
     #hidden_units = [22, 32, 42]
-    lag = [12, 24]
+    lag = [12]
     #dropout = [0.1, 0.2, 0.3]
-    num_layers = [2, 3, 4]
-    epochs = [30, 40, 50, 60]
+    num_layers = [2, 3]
+    epochs = [5, 6, 2] #[30, 40, 50, 60]
+
+
+
+
+
+
+    # batch_size = [32, 64]
+    # rnn_units = [32, 64] #new
+    # #hidden_units = [22, 32, 42]
+    # lag = [12, 24]
+    # #dropout = [0.1, 0.2, 0.3]
+    # num_layers = [2, 3, 4]
+    # epochs = [5, 10, 15] #[30, 40, 50, 60]
 
     batch = batch_size[random.randint(0, len(batch_size)-1)]
     # units = hidden_units[random.randint(len(hidden_units))]
