@@ -282,6 +282,8 @@ class agcrnHPO(modelHPO):
                 self.initialise_model()
                 # self.dictionaryFile=self.prepare_file_dictionary
                 loss = self.execute_split() #send data with relative split/horizon info
+
+                
                 f.write('Loss of ' + loss + 'with the following configs:' '\n',
                           'Lag_length - ', self.modelConfig['lag_length']['default'], '\n',
                           'Rnn Units - ', self.modelConfig['rnn_units']['default'], '\n',

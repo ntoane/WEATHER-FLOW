@@ -46,7 +46,7 @@ increment:
                 #  67920, 70128, 72288, 74472, 76680, 78888, 81048, 83232, 85440,
                 #  87648, 89832, 92016, 94224, 96432, 98592, 100776, 102984, 105192,
                 #  107352, 109536, 111744, 113929]
-  default: [5000,6000, 7000, 8000, 9000, 10000]
+  default: [100000,110000, 120000, 130000, 140000, 150000]
   help:  List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 
     8784 is one year's worth of data, the next step is 3 months of data, and the following step is also 3 months of 
     data, resulting in rolling walk-forward validation where the train size increases each increment, with the 
@@ -77,7 +77,7 @@ n_stations:
 
 n_split:
   type: int
-  default: 2
+  default: 1
   help: number of splits in walk-forward validation
 
 ################################# Loss and Optimizer  ###############################

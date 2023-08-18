@@ -51,7 +51,7 @@ class agcrnExecute(modelExecute):
                 output = self.model(data, target, teacher_forcing_ratio=0.)
                 if self.modelConfig['real_value']['default']:
                     label = self.scaler.inverse_transform(label)
-                loss = self.loss(output.cpu(), label) #changes from cuda
+                loss = self.loss(output.cuda(), label) #changes from cuda
                 #a whole batch of Metr_LA is filtered
                 if not torch.isnan(loss):
                     total_val_loss += loss.item()
@@ -85,7 +85,7 @@ class agcrnExecute(modelExecute):
             if self.modelConfig['real_value']['default']:
                 label = self.scaler.inverse_transform(label)
      
-            loss = self.loss(output.cpu(), label)
+            loss = self.loss(output.cuda(), label) #was cpu
             loss.backward()
 
             # add max grad clipping
@@ -302,7 +302,7 @@ class agcrnExecute(modelExecute):
 
     def save_matrix(self, supports, fileDictionary):
       
-        supports_np = supports.detach().cpu().numpy()  # Convert the tensor to a numpy array
+        supports_np = supports.detach().cuda().numpy()  # Convert the tensor to a numpy array
         df = pd.DataFrame(supports_np)  # Convert the numpy array to a pandas DataFrame
 
         current_dir = os.path.dirname(os.path.realpath(__file__))
