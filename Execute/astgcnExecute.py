@@ -141,13 +141,13 @@ class astgcnExecute:
         """Saves the results, loss, target data, and the actual vs predicted comparison to CSV files."""
         # Save Results, Loss, and Target
         self.logger.info(f'Saving the results of predictions to ' + str(self.resultsFile))
-        print(f'Saving the results of predictions to' + str(self.resultsFile) )
+        # print(f'Saving the results of predictions to' + str(self.resultsFile) )
         resultsDF = pd.DataFrame(np.concatenate(self.resultsData))
         self.logger.info(f'Saving the targets of actual values to ' + str(self.targetFile) )
-        print(f'Saving the targets of actual values to ' + str(self.targetFile) )
+        # print(f'Saving the targets of actual values to ' + str(self.targetFile) )
         targetDF = pd.DataFrame(np.concatenate(self.targetData))
         self.logger.info(f'Saving the loss to ' + str(self.lossFile) )
-        print(f'Saving the loss to ' + str(self.lossFile) )
+        # print(f'Saving the loss to ' + str(self.lossFile) )
         lossDF = pd.DataFrame(self.lossData)
         
         resultsDF.to_csv(self.resultsFile)
@@ -168,10 +168,9 @@ class astgcnExecute:
             # current_year = date.split('-')[0]
             current_year = date.year
             # Prints to screen when years are changing to show progress
-            if previous_year and current_year != previous_year:
-                print(f"The year changed from {previous_year} to {current_year} for performing the logging")
+            # if previous_year and current_year != previous_year:
+                # print(f"The year changed from {previous_year} to {current_year} for performing the logging")
             previous_year = current_year
             self.logger.info(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
         
         actual_vs_predicted_data.to_csv(self.actual_vs_predicted_file, index=False)  
-    
