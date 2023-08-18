@@ -9,6 +9,19 @@ import warnings
 # Filter out specific runtime warnings
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
+# Check for GPU availability and set up GPU configuration
+gpus = tf.config.experimental.list_physical_devices('GPU')
+if gpus:
+  try:
+    # Set memory growth for GPUs
+    for gpu in gpus:
+      tf.config.experimental.set_memory_growth(gpu, True)
+  except RuntimeError as e:
+    print(e)
+else:
+    print("No GPU detected. Running on CPU.")
+
+    
 class AstGcn:
     """
     This class handles the creation, compilation, and training 
@@ -125,7 +138,6 @@ class GcnCell(tf.keras.layers.Layer):
 
     def compute_output_shape(self, input_shape):
         return input_shape[:-1] + (self.units,)
-
     def get_config(self):
         config = super().get_config().copy()
         config.update({
