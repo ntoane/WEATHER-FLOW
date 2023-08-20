@@ -66,8 +66,8 @@ stations:
 
 horizons:
   type: int[]
-  # default: [3, 6, 9, 12, 24]
-  default: [3,6]
+  default: [3, 6, 9, 12, 24]
+  # default: [3,6]
   help: forecast horizons
 
 n_stations:

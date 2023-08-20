@@ -1,7 +1,7 @@
 import io
+import os
 import numpy as np
 import pandas as pd
-import os
 from Models.ASTGCN.astgcn import AstGcn
 import Utils.astgcnUtils as utils
 import Utils.astgcn_Data_PreProcess.data_preprocess as data_preprocess
@@ -18,9 +18,10 @@ class astgcnExecute:
         self.station = None
         self.forecast_len = None
         self.increment = sharedConfig['increment']['default']
-        self.stations = config['stations']['default']
-        self.forecasting_horizons = config['forecasting_horizons']['default']
-        self.num_splits =config['num_splits']['default']
+        self.stations = sharedConfig['stations']['default']
+        self.forecasting_horizons = sharedConfig['horizons']['default']
+        self.num_splits =sharedConfig['n_split']['default']
+        
         self.time_steps =config['time_steps']['default']
         self.batch_size = config['batch_size']['default']
         self.epochs = config['training_epoch']['default']
@@ -33,14 +34,15 @@ class astgcnExecute:
         print("Forecasting horizons currently set to " + str(self.forecasting_horizons));
         for self.forecast_len in self.forecasting_horizons:
             for self.station in self.stations:
-                # self.logger = modelLogger('ASTGCN', str(self.station),'Logs/ASTGCN/Train/' + str(self.forecast_len) + ' Hour Forecast/'+ str(self.station) + '.txt' , log_enabled=True)
-                log_dir = 'Logs/ASTGCN/Train/' + str(self.forecast_len) + ' Hour Forecast/'
-                # Ensure the directory exists
+                # Your directory path
+                log_dir = 'Logs/ASTGCN/Train/' + str(self.forecast_len) + ' Hour Forecast/' + str(self.station)
+                # Check if directory exists
                 if not os.path.exists(log_dir):
                     os.makedirs(log_dir)
-                log_path = os.path.join(log_dir, str(self.station) + '.txt')
-                self.logger = modelLogger('ASTGCN', str(self.station), log_path, log_enabled=True)
+                self.logger = modelLogger('ASTGCN', str(self.station), log_dir + str(self.station) + '.txt', log_enabled=True)
                 self.train_single_station()
+                # self.logger = modelLogger('ASTGCN', str(self.station),'Logs/ASTGCN/Train/' + str(self.forecast_len) + ' Hour Forecast/'+ str(self.station) +'/astgcn_' + str(self.station) + '.txt' , log_enabled=True)
+                # self.train_single_station()
         
     def train_single_station(self):
         """Trains the model for a single station."""     
@@ -90,10 +92,11 @@ class astgcnExecute:
         # Instantiate the AstGcn class
         astgcn = AstGcn(self.time_steps, num_nodes, adjacency_matrix, 
                                     attribute_data, save_File, self.forecast_len, 
-                                    X_train, Y_train, X_val, Y_val, split, self.batch_size, self.epochs)
+                                    X_train, Y_train, X_val, Y_val, split, self.batch_size, self.epochs, 
+                                    self.config['gru_units']['default'], self.config['lstm_neurons']['default'])
         # Train the model by calling the astgcnModel method
         model, history = astgcn.astgcnModel()
-        
+
         # Log the model summary
         with io.StringIO() as buf, redirect_stdout(buf):
             model.summary()
@@ -160,17 +163,110 @@ class astgcnExecute:
             'Actual': Y_test.flatten(),
             'Predicted': yhat.flatten()
         })
+        
         # Log all actual vs predicted values
-        previous_year = None
         for index, row in actual_vs_predicted_data.iterrows():
-            file_path = 'DataNew/Weather Station Data/'+ str(self.station) +'.csv'
+            file_path = 'data/Weather Station Data/'+ str(self.station) +'.csv'
             date = data_preprocess.get_timestamp_at_index(index)
-            # current_year = date.split('-')[0]
-            current_year = date.year
-            # Prints to screen when years are changing to show progress
-            # if previous_year and current_year != previous_year:
-                # print(f"The year changed from {previous_year} to {current_year} for performing the logging")
-            previous_year = current_year
             self.logger.info(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
         
         actual_vs_predicted_data.to_csv(self.actual_vs_predicted_file, index=False)  
+    
+        
+       
+
+
+
+
+
+
+######################## Old way was 1 big train method
+# def trainASTGCN(config):
+#     increment = config['increment']['default']
+#     stations = config['stations']['default']
+#     forecasting_horizons = config['forecasting_horizons']['default']
+#     num_splits =config['num_splits']['default']
+#     time_steps =config['time_steps']['default']
+    
+#     for forecast_len in forecasting_horizons:
+#         for station in stations:
+#             print('********** AST-GCN model training started at ' + station) 
+#             print('------------------  Attributed-Augemented logic included ---------------------')
+#             # Preprocessing the data specific to the AST-GCN model.
+#             processed_data, attribute_data, adjacency_matrix, num_nodes = data_preprocess_AST_GCN(station)
+#             # Initializing the loss, results and target data lists
+#             lossData = []
+#             resultsData = []
+#             targetData = []
+#             # Initializing the paths to relevant folders
+#             folder_path = f'Results/ASTGCN/{forecast_len} Hour Forecast/{station}'
+#             targetFile, resultsFile, lossFile, actual_vs_predicted_file = generate_execute_file_paths(folder_path)
+                
+#             # Applying a sliding window approach to the preprocessed data.
+#             input_data, target_data, scaler = sliding_window_AST_GCN(processed_data, time_steps, num_nodes)
+
+#             for k in range(num_splits):
+#                 print('ASTGCN training started on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+#                                                                                                             forecast_len, num_splits))
+                
+#                 save_File = 'Garage/Final Models/ASTGCN/' + station + '/' + str(forecast_len) + ' Hour Models/Best_Model_' \
+#                             + str(forecast_len) + '_walk_' + str(k) + '.h5'
+#                 create_file_if_not_exists(save_File)          
+#                 # splitting the processed train,val,test data in required splits
+#                 train, validation, test, split = split_data(input_data, increment,k)
+#                 # Creating the X and Y for forecasting (training), validation & testing
+#                 X_train, Y_train = create_X_Y(train, time_steps, num_nodes, forecast_len)
+#                 X_val, Y_val = create_X_Y(validation, time_steps, num_nodes, forecast_len)
+#                 X_test, Y_test = create_X_Y(test, time_steps, num_nodes, forecast_len)
+                
+#                 # Getting the model from astgcnModel method and training it.
+#                 model, history = astgcnModel(time_steps, num_nodes, adjacency_matrix, 
+#                                             attribute_data, save_File,forecast_len, 
+#                                             X_train, Y_train, X_val, Y_val, split)
+               
+#                 # validation and train loss to dataframe
+#                 lossData.append([history.history['loss']])
+                
+#                 # Use the trained model for predictions
+#                 new_data = pd.DataFrame({
+#                     'Pressure': [997.5] * time_steps,
+#                     'WindDir': [100.0] * time_steps,
+#                     'WindSpeed': [2.0] * time_steps,
+#                     'Humidity': [70.0] * time_steps,
+#                     'Rain': [0.0] * time_steps,
+#                     'Temperature': [25.5] * time_steps
+# #                 })
+#                 new_data = pd.concat([new_data]*10, axis=1)
+#                 new_data = new_data[sorted(new_data.columns)]
+#                 new_data = new_data.astype(float)
+#                 new_data = np.expand_dims(new_data, axis=0)  # Add batch dimension
+#                 new_data = np.expand_dims(new_data, axis=2)  # Add node dimension
+#                 new_data = new_data.reshape(-1, time_steps, 1, 40)
+                
+#                 # Making prediction and inverse transforming the predictions.
+#                 predictions = model.predict(new_data)
+#                 predictions = scaler.inverse_transform(predictions.reshape(-1, num_nodes * 4))
+                
+#                 yhat = model.predict(X_test)
+#                 Y_test = np.expand_dims(Y_test, axis=2)  
+#                 # Append results and target data 
+#                 resultsData.append(yhat.reshape(-1,))
+#                 targetData.append(Y_test.reshape(-1,))
+                
+#                 # After getting the predictions and actual values
+#                 actual_vs_predicted_data = pd.DataFrame({
+#                     'Actual': Y_test.flatten(),
+#                     'Predicted': yhat.flatten()
+#                 })
+#                 # Write to the file
+#                 actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=False)
+#             print('AST-GCN training finished on split {0}/{3} at {1} station forecasting {2} hours ahead.'.format(k+1, station,
+#                                                                                                             forecast_len, num_splits)) 
+#             # Create DataFrames from the lists and save the relevant results to the,
+#             resultsDF = pd.DataFrame(np.concatenate(resultsData))
+#             lossDF = pd.DataFrame(lossData)
+#             targetDF = pd.DataFrame(np.concatenate(targetData))
+#             resultsDF.to_csv(resultsFile)
+#             lossDF.to_csv(lossFile)
+#             targetDF.to_csv(targetFile)  
+#     print("AST-GCN training finished for all stations at all splits ! :)")

@@ -1,0 +1,20 @@
+Loading python/miniconda3-py38-usr-A
+  Loading requirement: compilers/gcc820 mpi/openmpi-4.0.1
+2023-08-20 13:56:16.646627: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/exp_soft/openmpi-4.0.1/lib:/opt/exp_soft/gcc-8.2.0/lib:/opt/exp_soft/gcc-8.2.0/lib64
+2023-08-20 13:56:16.647246: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Training AGCRN for horizons:3   split:0
+Train:  (99988, 10, 45, 6) (99988, 3, 45, 1)
+Val:  (9988, 10, 45, 6) (9988, 3, 45, 1)
+Test:  (3917, 10, 45, 6) (3917, 3, 45, 1)
+Traceback (most recent call last):
+  File "runAGCRN.py", line 18, in <module>
+    agcrn_trainer.execute() 
+  File "/home/hmmden001/WEATHER-FLOW/Execute/agcrnExecute.py", line 282, in execute
+    self.execute_split(self.fileDictionary) #send data with relative split/horizon info
+  File "/home/hmmden001/WEATHER-FLOW/Execute/agcrnExecute.py", line 125, in execute_split
+    train_epoch_loss = self.train_epoch(epoch)
+  File "/home/hmmden001/WEATHER-FLOW/Execute/agcrnExecute.py", line 88, in train_epoch
+    loss = self.loss(output.cuda(), label) #was cpu
+  File "/home/hmmden001/.local/lib/python3.8/site-packages/torch/cuda/__init__.py", line 214, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: Found no NVIDIA driver on your system. Please check that you have an NVIDIA GPU and installed a driver from http://www.nvidia.com/Download/index.aspx
