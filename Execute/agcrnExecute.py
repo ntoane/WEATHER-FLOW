@@ -187,6 +187,7 @@ class agcrnExecute(modelExecute):
     def initialise_model(self):
     
         DEVICE = 'cuda:0'
+        self.modelConfig['device']['default']=DEVICE
 
         def masked_mae_loss(scaler, mask_value):
             def loss(preds, labels):
@@ -200,7 +201,8 @@ class agcrnExecute(modelExecute):
         agcrnUtil.init_seed(self.modelConfig['seed']['default'])
 
         if torch.cuda.is_available():
-            torch.cuda.set_device(int(DEVICE))
+            # torch.cuda.set_device(int(DEVICE))
+            torch.cuda.set_device()
         else:
             DEVICE= 'cpu'
 
@@ -302,7 +304,7 @@ class agcrnExecute(modelExecute):
 
     def save_matrix(self, supports, fileDictionary):
       
-        supports_np = supports.detach().cuda().numpy()  # Convert the tensor to a numpy array
+        supports_np = supports.detach().cpu().numpy()  # Convert the tensor to a numpy array
         df = pd.DataFrame(supports_np)  # Convert the numpy array to a pandas DataFrame
 
         current_dir = os.path.dirname(os.path.realpath(__file__))
