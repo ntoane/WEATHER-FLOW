@@ -190,7 +190,7 @@ def generateRandomParameters(config):
     # pass
     batch_size = [32,64, 128]
     epochs = [20, 40, 60]
-    gru_units = [33,63,93]
+    gru_units = [33,63,93,123]
     lstm_units = [32,64,128]
 
     batch = batch_size[random.randint(0,len(batch_size)-1)]

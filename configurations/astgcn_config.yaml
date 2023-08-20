@@ -123,17 +123,17 @@ num_configs:
 
 batch_size :
   type :  int  
-  default : 196 
+  default : 32
   help :  batch size. 
 
 training_epoch:
   type: int
-  default : 1
+  default : 40
   help :  Number of epochs to train. 
 
 gru_units: 
   type : int  
-  default : 63 
+  default : 123
   help : hidden units of gru. 
 
 lstm_neurons:

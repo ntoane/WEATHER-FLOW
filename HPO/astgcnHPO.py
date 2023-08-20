@@ -30,24 +30,21 @@ class astgcnHPO:
        
         print('********** AST-GCN model HPO started at all stations') 
         
+        textFile = 'HPO/Best Parameters/AST-GCN/configurations.txt'
+        if not os.path.exists('HPO/Best Parameters/AST-GCN/'):
+            os.makedirs('HPO/Best Parameters/AST-GCN/')
+        print("File with best configs is in ", textFile)
+        f = open(textFile, 'w')
+        best_mse = np.inf
+            
         for station in stations:
             # processed_data, attribute_data, adjacency_matrix, num_nodes = data_preprocess_HPO_AST_GCN()
             processed_data, attribute_data, adjacency_matrix, num_nodes = data_preprocess_AST_GCN(str(station))
-            
             lossData, resultsData, targetData = [], [], []
                 
             folder_path = f'Results/ASTGCN/HPO/{horizon} Hour Forecast/all_stations'
             targetFile, resultsFile, lossFile, actual_vs_predicted_file = utils.generate_execute_file_paths(folder_path)
             input_data, target_data, scaler = sliding_window_AST_GCN(processed_data, time_steps, num_nodes)
-
-            textFile = 'HPO/Best Parameters/AST-GCN/configurations.txt'
-            
-            if not os.path.exists('HPO/Best Parameters/AST-GCN/'):
-                os.makedirs('HPO/Best Parameters/AST-GCN/')
-                    
-            print("File with best configs is in ", textFile)
-            f = open(textFile, 'w')
-            best_mse = np.inf
 
             num_splits = 1
             for i in range(self.config['num_configs']['default']):
@@ -79,12 +76,7 @@ class astgcnHPO:
                             'Hidden GRU units - ', self.config['gru_units']['default'], '\n'
                             'LSTM units - ', self.config['lstm_neurons']['default'], '\n'
                             ) 
-                        # self.model_logger.info('This is the HPO configuration: \n'
-                        #     'Batch Size - ' +self.config['batch_size']['default'] +'\n'+
-                        #     'Epochs - '+ self.config['training_epoch']['default'] +'\n'+
-                        #     'Hidden GRU units - ' +self.config['gru_units']['default']+ '\n'+
-                        #     'LSTM units - ' +self.config['lstm_neurons']['default'] '\n'
-                        #     ) 
+                       
                         # Instantiation and training
                         astgcn = AstGcn(time_steps, num_nodes, adjacency_matrix,
                                                     attribute_data, save_File, horizon,
