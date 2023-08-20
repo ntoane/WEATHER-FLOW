@@ -139,3 +139,8 @@ teacher_forcing:
   type: bool
   default: False
   help: teacher forcing
+
+device:
+  type: string
+  default: cuda:0
+  help: device
