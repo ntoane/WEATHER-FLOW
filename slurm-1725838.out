@@ -1,0 +1,17 @@
+perl: warning: Setting locale failed.
+perl: warning: Please check that your locale settings:
+	LANGUAGE = (unset),
+	LC_ALL = (unset),
+	LC_CTYPE = "UTF-8",
+	LANG = "en_ZA.utf-8"
+    are supported and installed on your system.
+perl: warning: Falling back to the standard locale ("C").
+Loading python/miniconda3-py38-usr-A
+  Loading requirement: compilers/gcc820 mpi/openmpi-4.0.1
+Fontconfig warning: ignoring UTF-8: not a valid region tag
+Traceback (most recent call last):
+  File "runASTGCN.py", line 7, in <module>
+    import Visualisations.visualise as visualise
+  File "/home/hmmden001/WEATHER-FLOW/Visualisations/visualise.py", line 5, in <module>
+    from mpl_toolkits.basemap import Basemap
+ModuleNotFoundError: No module named 'mpl_toolkits.basemap'

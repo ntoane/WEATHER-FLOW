@@ -4,8 +4,8 @@ import argparse
 from Execute.astgcnExecute import astgcnExecute
 from HPO.astgcnHPO import astgcnHPO as astgcnHPO
 from Logs.Evaluation import evalASTGCN as evalASTGCN
-import Visualisations.visualise as visualise
-import Plots.plotter as plotter
+#import Visualisations.visualise as visualise
+#import Plots.plotter as plotter
 
 def main():
     time_start = time.time()
@@ -39,13 +39,13 @@ def main():
         print("************* Starting eval process for the AST-GCN Model ************* ")
         evalASTGCN(config, sharedConfig)
         print("************* Plotting ************* ")
-        plotter.create('ASTGCN',config)
+        #plotter.create('ASTGCN',config)
         # plotter.create_boxplots_for_models(models_list, config)
         print("*************  Finished eval process for the AST-GCN Model ************* ")
         
     # ############ Visualisations #############
-    if config['vis']['default'] :
-        visualise.plot(config)
+    #if config['vis']['default'] :
+     #   visualise.plot(config)
         
     time_end = time.time()
     elapsed_time = time_end - time_start

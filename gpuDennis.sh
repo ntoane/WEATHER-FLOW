@@ -6,5 +6,5 @@
 #SBATCH --job-name="ASTGCNJob"
 CUDA_VISIBLE_DEVICES=$(ncvd)
 module load python/miniconda3-py38-usr-A
-source activate weatherEnv
+source activate stgnnEnv
 python3 runASTGCN.py
