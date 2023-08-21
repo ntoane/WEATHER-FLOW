@@ -170,7 +170,7 @@ class astgcnExecute:
             date = data_preprocess.get_timestamp_at_index(index)
             self.logger.info(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
         
-        actual_vs_predicted_data.to_csv(self.actual_vs_predicted_file, index=False)  
+        # actual_vs_predicted_data.to_csv(self.actual_vs_predicted_file, index=False)  
     
         
        

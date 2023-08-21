@@ -172,7 +172,7 @@ class gwnExecute(modelExecute):
         actual_vs_predicted_file_path = f'Results/GWN/{forecast_len} Hour Forecast/Predictions/'
         os.makedirs(actual_vs_predicted_file_path, exist_ok=True)
         self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file. : ' +actual_vs_predicted_file )
-        actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=True)
+        # actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=True)
         
         # Log all actual vs predicted values
         previous_year = None
