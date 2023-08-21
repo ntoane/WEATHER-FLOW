@@ -192,7 +192,7 @@ class tcnExecute(modelExecute):
             return new_date
         
         actual_vs_predicted_file = f'Results/TCN/{forecast_len} Hour Forecast/{station}/Predictions/actual_vs_predicted.csv'
-        actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=True)
+        # actual_vs_predicted_data.to_csv(actual_vs_predicted_file, index=True)
         
         # Log all actual vs predicted values
         self.model_logger.info(f'Saving the actual vs predicted comparison to a CSV file - file path DataNew/Weather Station Data/' + str(station) + '.csv')
