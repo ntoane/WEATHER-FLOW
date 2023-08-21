@@ -42,10 +42,10 @@ increment:
   type: int[]
 
   #all splits  (set num_split=6):
-  default: [8760, 17520, 26280, 35040, 43800, 52560, 61320, 70080] 
+  # default: [8760, 17520, 26280, 35040, 43800, 52560, 61320, 70080] 
 
   # just last split (set num_split=1)
-  # default: [52560, 61320, 70080]
+  default: [52560, 61320, 70080]
 
   help:  (from davidson) List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 
     8784 is one year's worth of data, the next step is 3 months of data, and the following step is also 3 months of 
@@ -76,7 +76,7 @@ n_stations:
 
 n_split:
   type: int
-  default: 6
+  default: 1
   help: number of splits in walk-forward validation
 
 ################################# Loss and Optimizer  ###############################
