@@ -4,7 +4,7 @@ num_nodes:
   help: number of nodes in the graph
 lag:
   type: int
-  default: 10
+  default: 12
   help: lag value for the model
 horizon:
   type: int
@@ -72,7 +72,7 @@ batch_size:
   help: size of batches for training
 epochs:
   type: int
-  default: 2
+  default: 40
   help: number of training epochs
 lr_init:
   type: float

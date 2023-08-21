@@ -37,8 +37,8 @@ locations_path:
 ############################ General data configurations ############################
 forecasting_horizons:
   type: int[]
-  default: [3]
-  # default: [3,6,9,12,24]
+  # default: [3]
+  default: [3,6,9,12,24]
   help: forecast horizons for time step forecasting
 
 stations:

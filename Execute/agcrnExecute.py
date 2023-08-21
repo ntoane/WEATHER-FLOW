@@ -19,6 +19,8 @@ import Utils.agcrnUtils as agcrnUtil
 import Utils.sharedUtils as sharedUtil
 from Execute.modelExecute import modelExecute
 from Logs.modelLogger import modelLogger 
+torch.set_num_threads(1)
+
 
 class agcrnExecute(modelExecute):
     
@@ -51,7 +53,7 @@ class agcrnExecute(modelExecute):
                 output = self.model(data, target, teacher_forcing_ratio=0.)
                 if self.modelConfig['real_value']['default']:
                     label = self.scaler.inverse_transform(label)
-                loss = self.loss(output.cuda(), label) #changes from cuda
+                loss = self.loss(output.cpu(), label) #changes from cuda
                 #a whole batch of Metr_LA is filtered
                 if not torch.isnan(loss):
                     total_val_loss += loss.item()
@@ -85,7 +87,7 @@ class agcrnExecute(modelExecute):
             if self.modelConfig['real_value']['default']:
                 label = self.scaler.inverse_transform(label)
      
-            loss = self.loss(output.cuda(), label) #was cpu
+            loss = self.loss(output.cpu(), label) #was cpu
             loss.backward()
 
             # add max grad clipping
