@@ -5,14 +5,8 @@ train_gwn:
 ############################ General data configurations ############################
 increment:
   type: int[]
-
-  #all splits  (set num_split=6):
-  # default: [8760, 17520, 26280, 35040, 43800, 52560, 61320, 70080]
-
-  # just last split (set num_split=1)
   default: [52560, 61320, 70080]
-
- help:  (from davidson) List of points to split data in train, validation, and test se$
+  help:  (from davidson) List of points to split data in train, validation, and test se$
     8784 is one year's worth of data, the next step is 3 months of data, and the follow$
     data, resulting in rolling walk-forward validation where the train size increases e$
     validation and test sets each being 3 months' worth of data.
