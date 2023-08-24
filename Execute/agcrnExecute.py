@@ -19,7 +19,7 @@ import Utils.agcrnUtils as agcrnUtil
 import Utils.sharedUtils as sharedUtil
 from Execute.modelExecute import modelExecute
 from Logs.modelLogger import modelLogger 
-torch.set_num_threads(1)
+torch.set_num_threads(24)
 
 
 class agcrnExecute(modelExecute):
@@ -86,7 +86,9 @@ class agcrnExecute(modelExecute):
      
             if self.modelConfig['real_value']['default']:
                 label = self.scaler.inverse_transform(label)
-     
+            
+            # print("this is scaler2")
+            # print(self.scaler.mean)
             loss = self.loss(output.cpu(), label) #was cpu
             loss.backward()
 
@@ -256,6 +258,9 @@ class agcrnExecute(modelExecute):
                                                                     tod=self.modelConfig['tod']['default'], dow=False,
                                                                     weather=False, single=False)
 
+
+        self.scaler.mean = self.scaler.mean[5]
+        self.scaler.std = self.scaler.std[5]
         self.train_per_epoch = len(self.train_loader)
         if self.val_loader != None:
             self.val_per_epoch = len(self.val_loader)

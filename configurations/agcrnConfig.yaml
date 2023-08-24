@@ -4,7 +4,7 @@ num_nodes:
   help: number of nodes in the graph
 lag:
   type: int
-  default: 12
+  default: 24
   help: lag value for the model
 horizon:
   type: int
@@ -28,7 +28,7 @@ normalizer:
   help: type of normalizer used
 column_wise:
   type: bool
-  default: false
+  default: true
   help: whether normalization is column-wise
 default_graph:
   type: bool
@@ -68,7 +68,7 @@ seed:
   help: random seed
 batch_size:
   type: int
-  default: 64
+  default: 32
   help: size of batches for training
 epochs:
   type: int
@@ -76,7 +76,7 @@ epochs:
   help: number of training epochs
 lr_init:
   type: float
-  default: 0.003
+  default: 0.003 #0.003
   help: initial learning rate
 lr_decay:
   type: bool

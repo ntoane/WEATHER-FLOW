@@ -20,5 +20,5 @@ agcrn_trainer.execute()
 # agcrn_hpo = agcrnHPO(sharedConfig, agcrnConfig)
 # agcrn_hpo.hpo() 
 
-Evaluation.AgcrnEval(agcrnConfig, sharedConfig)
+# Evaluation.AgcrnEval(agcrnConfig, sharedConfig)
     

@@ -9,6 +9,8 @@ import os
 from Logs.modelLogger import modelLogger
 from Execute.modelExecute import modelExecute
 from datetime import datetime,timedelta
+tf.config.threading.set_intra_op_parallelism_threads(24)
+tf.config.threading.set_inter_op_parallelism_threads(24)
 
 class tcnExecute(modelExecute):
     def __init__(self, sharedConfig, tcnConfig):

@@ -4,6 +4,7 @@ import numpy as np
 from sklearn.metrics import mean_squared_error
 from sklearn.metrics import mean_absolute_error
 import math
+from sklearn.preprocessing import MinMaxScaler
 
 
 def Add_Window_Horizon(data, window, horizon, single):
@@ -64,7 +65,14 @@ import torch.utils.data
 # from lib.load_dataset import load_st_dataset
 # from lib.normalization import NScaler, MinMax01Scaler, MinMax11Scaler, StandardScaler, ColumnMinMaxScaler
 
-def normalize_dataset(data, normalizer, column_wise=False):
+def min_max(data):
+    norm = MinMaxScaler().fit(data)
+    data = norm.transform(data)
+    return data
+
+def normalize_dataset(data, normalizer, column_wise):
+    print("old shape")
+    print(data.shape)
     if normalizer == 'max01':
         if column_wise:
             minimum = data.min(axis=0, keepdims=True)
@@ -87,9 +95,14 @@ def normalize_dataset(data, normalizer, column_wise=False):
         print('Normalize the dataset by MinMax11 Normalization')
     elif normalizer == 'std':
         if column_wise:
-            mean = data.mean(axis=0, keepdims=True)
-            std = data.std(axis=0, keepdims=True)
+
+            mean = np.mean(data, axis=(0, 1))
+            std = np.std(data, axis=(0, 1))
+            # mean = data.mean(axis=0, keepdims=True)
+            # std = data.std(axis=0, keepdims=True)
         else:
+
+
             mean = data.mean()
             std = data.std()
         scaler = StandardScaler(mean, std)
@@ -107,6 +120,8 @@ def normalize_dataset(data, normalizer, column_wise=False):
         print('Normalize the dataset by Column Min-Max Normalization')
     else:
         raise ValueError
+    print("new shape")
+    print(data.shape)
     return data, scaler
 
 def split_data_by_days(data, val_days, test_days, interval=60):
@@ -140,17 +155,41 @@ def data_loader(X, Y, batch_size, shuffle=True, drop_last=True):
     return dataloader
 
 
+def min_max(train, validation, test):
+    """
+    Performs MinMax scaling on the train, validation and test sets using the train data min and max.
+    Parameters:
+        train, validation, test - train, validation and test data sets
+    Returns:
+        train, validation, test - returns the scaled train, validation and test sets
+    """
+
+    norm = MinMaxScaler().fit(train)
+
+    train_data = norm.transform(train)
+    val_data = norm.transform(validation)
+    test_data = norm.transform(test)
+
+    return train_data, val_data, test_data
+
+
+
 def get_dataloader(horizon, k, increment ,agcrnConfig, normalizer = 'std', tod=False, dow=False, weather=False, single=True):
     #load raw st dataset
     data = load_st_dataset()        # B, N, D                #gets the data (19992, 307)
     #normalize st data
     data, scaler = normalize_dataset(data, normalizer, agcrnConfig['column_wise']['default'])
+   
     
     split = [increment[k], increment[k + 1], increment[k + 2] ]
     data_train = data[:split[0]]
     data_val = data[split[0]:split[1]]
     data_test = data[split[1]:split[2]]
+    # print("this t test")
+    # print(data_test)
 
+ 
+    # data_train, data_val, data_test= min_max(data_train, data_val, data_test)
     # print(data_test.shape)
     #spilit dataset by days or by ratio
     # if agcrnConfig['test_ratio']['default'] > 1:

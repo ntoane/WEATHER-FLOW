@@ -6,6 +6,8 @@ from tensorflow import keras
 from keras.callbacks import ModelCheckpoint, EarlyStopping
 physical_devices = tf.config.experimental.list_physical_devices('GPU')
 #config = tf.config.experimental.set_memory_growth(physical_devices[0], True)
+tf.config.threading.set_intra_op_parallelism_threads(24)
+tf.config.threading.set_inter_op_parallelism_threads(24)
 
 class temporalcn:
     def __init__(self, x_train, y_train, x_val, y_val, n_lag, n_features, n_ahead, epochs, batch_size,
