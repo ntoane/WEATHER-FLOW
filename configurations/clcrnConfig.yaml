@@ -1,0 +1,190 @@
+###################### CLCRN model args, default arguments are optimal hyper-parameters ######################
+device:
+  type: int
+  default: 0
+  help: device to place model on gpu used 1 or not 0 
+model_name : 
+  type: str
+  default: 'CLCRN'
+  help: name of model being used #wont need in future
+data:
+  type: str
+  default: 'data/sample/graph.csv'
+  # default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv' #DataNew
+  help: data path
+dataset_dir:
+  type: str
+  default: 'data/test'
+  # default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv' #DataNew
+  help: data path
+position_file:
+  type: str
+  default: 'data/test/position_info.pkl'
+  help: directory to position_info of weather stations 
+test_batch_size:
+  type: int
+  default: 128
+  help: length of output sequence
+cl_decay_steps:
+  type: int
+  default: 2
+  help: number of decay steps
+horizon:
+  type: int[]
+  default: [24]
+  help: prediction horizon
+steps:
+  type: int[]
+  default: [1]
+  help: prediction horizon
+input_dim:
+  type: int
+  default: 6
+  help: number of input dimensions in input data
+output_dim:
+  type: int
+  default: 1
+  help: number of output dimensions in input data
+l1_decay:
+  type: int
+  default: 0
+  help: first layer decay
+max_view: 
+  type: int
+  default: 1
+  help: max view of model
+n_stations:
+  type: int
+  default: 45
+  help: number of weather stations
+layer_num:  
+  type: int
+  default: 1
+  help: number of layers on model
+rnn_units:
+  type: int
+  default: 32
+  help: number of rnn units
+seq_len: 
+  type: int
+  default: 12
+  help: sequence length
+lag_length:
+  type: int
+  default: 12
+  help: length of input sequence
+use_curriculum_learning:
+  type: boolean
+  default: true
+  help: flag to use curriculum  learning or not
+embed_dim:
+  type: int
+  default: 6
+  help: number of embedded dimensions
+lck_structure: 
+  type: int[]
+  default: [10, 8, 6]
+  help: lock structure of model
+location_dim: 
+  type: int
+  default: 2
+  help: dimensions at location
+block_num: 
+  type: int
+  default: 2
+  help: dimensions at location
+hidden_units: 
+  type: int
+  default: 16
+  help: dimensions at location
+batch_size:
+  type: int
+  default: 32
+  help: batch size
+patience:
+  type: int
+  default: 50
+  help: patience
+base_lr:
+  type: float
+  default: 0.005
+  help: learning rate
+dropout:
+  type: float
+  default: 0
+  help: dropout rate
+use_loss_function:
+  type: boolean
+  default: false
+  help: should it model used independent loss metric or shared
+loss_metric:
+  type: str
+  default: 'MSE'  #Only accepts MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
+  help: independent loss metric to optimize
+epoch:
+  type: int
+  default: 0
+  help: epoch 
+epsilon:
+  type: float
+  default: 0.001
+  help: epsilon value
+log_dir: 
+  type: str
+  default: 'experiments/test'
+lr_decay_ratio: 
+  type: float
+  default: 0.05
+  help: ''
+max_grad_norm: 
+  type: int
+  default: 5
+  help: ''
+max_to_keep: 
+  type: int
+  default: 100
+  help : ''
+min_learning_rate: 
+  type: float
+  default: 1.0e-08
+  help: ''
+epochs:
+  type: int
+  default: 5
+  help: ''
+# save:
+#   type: str
+#   default: 'Garage/Final Models/GWN/'
+#   help: save path
+test_every_n_epochs: 
+  type: int
+  default: 1
+  help: ''
+use_optimizer:
+  type: boolean
+  default: false
+  help: should model used independent optimizer or shared
+optimizer:
+  type: str
+  default: adam     #Only accepts Adam, SGD, RMSprop.
+  help: type of optimizers used for model (to add another method look at User Guide), default type set to Adam
+experiment_name:
+  type: str
+  default: 'CLCRN_temperature'
+  help: ''
+model_state_dict:
+  type: str
+  default: None
+  help: ''
+shuffle:
+  type: boolean
+  default: False
+  help: ''
+increment:
+  type: int[]
+  default: [52560, 61320, 70080, 78840, 87600]
+  help: "splits for walk forward validation"
+load_dataset:
+  type: boolean
+  default: True
+  help: 'Should dataset be divided or not'
