@@ -17,8 +17,8 @@ parser.add_argument('--mode', type=str, help='path to YAML config file')
 args = parser.parse_args()
 
 # Load the YAML config file which contains all the required settings for platform
-with open('configurations/sharedConfig4.yaml', 'r') as file:
-    sharedConfig4 = yaml.safe_load(file)
+with open('configurations/sharedConfig_3h.yaml', 'r') as file:
+    sharedConfig2 = yaml.safe_load(file)
 
 complete = False
 def main():
@@ -33,9 +33,9 @@ def main():
    
     
     # Train final GWN models using the config settings specified
-    if sharedConfig4['train_gwn']['default'] or args.mode == configOptions[1]:
+    if sharedConfig2['train_gwn']['default'] or args.mode == configOptions[1]:
         gwnConfig = getSpecificConfig('gwn')
-        gwn_trainer = gwnExecute(sharedConfig4, gwnConfig)
+        gwn_trainer = gwnExecute(sharedConfig2, gwnConfig)
         gwn_trainer.execute()
         complete = True
 

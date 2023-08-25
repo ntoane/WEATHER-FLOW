@@ -17,7 +17,7 @@ parser.add_argument('--mode', type=str, help='path to YAML config file')
 args = parser.parse_args()
 
 # Load the YAML config file which contains all the required settings for platform
-with open('configurations/sharedConfig3.yaml', 'r') as file:
+with open('configurations/sharedConfig_12h.yaml', 'r') as file:
     sharedConfig3 = yaml.safe_load(file)
 
 complete = False
