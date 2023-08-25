@@ -16,7 +16,7 @@ def main():
     # Load the YAML config file which contains all the required settings for platform
     with open('configurations/astgcn_config.yaml', 'r') as file:
         config = yaml.safe_load(file)
-    with open('configurations/sharedConfig2.yaml', 'r') as file:
+    with open('configurations/sharedConfig_24h.yaml', 'r') as file:
         sharedConfig = yaml.safe_load(file)
     models_list = ['ASTGCN'] # list of models for plotter
 
