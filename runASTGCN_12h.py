@@ -27,12 +27,6 @@ def main():
         trainer.train()
         print("*************  Finished training process for the AST-GCN Model *********")
 
-##############################  HPO  ##################################
-    if config['hpo_ast_gcn']['default']:
-        print("************* Starting HPO process for the AST-GCN Model ************* ")
-        hpo = astgcnHPO(config)
-        hpo.hpo()
-        print("*************  Finished HPO process for the AST-GCN Model ************* ")
 
  
     time_end = time.time()

@@ -7,27 +7,25 @@ from datetime import datetime,timedelta
 
 ###############################  AST-GCN pre-process methods  ###############################
 
-def data_preprocess_HPO_AST_GCN():
-    # Load and preprocess the weather station data & attribute data 
-    print("Starting to read csv with all weather stations ...")
-    weather_data = pd.read_csv('DataNew/Graph Neural Network Data/Graph Station Data/graph.csv')
-    processed_data = weather_data[['Pressure', 'Humidity', 'Rain', 'Temperature']]
-    attribute_data = weather_data[['WindDir', 'WindSpeed']]  # Extract attribute data
-    processed_data = processed_data.astype(float)
-    # Adjust weather station nodes and adjacency matrix
-    weather_stations = weather_data['StasName'].unique()
-    num_nodes = len(weather_stations)
-    adjacency_matrix = random_adjacency_matrix(num_nodes)
-    return processed_data, attribute_data, adjacency_matrix, num_nodes
-
-
 def data_preprocess_AST_GCN(station):
     # Load and preprocess the weather station data & attribute data 
-    station_name = 'DataNew/Weather Station Data/' + station + '.csv'
-    weather_data = pd.read_csv(station_name)
-    processed_data = weather_data[['Pressure', 'Humidity', 'Rain', 'Temperature']]
+    # station_name = 'DataNew/Weather Station Data/' + station + '.csv'
+    weather_data = pd.read_csv('DataNew/Graph Neural Network Data/Graph Station Data/graph.csv')
+    # weather_data = pd.read_csv(station_name)
+    # processed_data = weather_data[['Pressure', 'Humidity', 'Rain', 'Temperature']]
+    processed_data = weather_data.drop(['StasName', 'DateT', 'Latitude', 'Longitude', 'WindDir', 'WindSpeed'], axis=1) 
+    processed_data = np.array(processed_data) 
+
+    # processed_data = processed_data.astype(float)
+    # print(f"Type of processed_data: {type(processed_data)}")
+    # print(f"Shape of processed_data: {processed_data.shape}")
+    processed_data_final = np.reshape(processed_data, (113929, 45, 4))
+    # print("Successfully preccessed input data")
+    
     attribute_data = weather_data[['WindDir', 'WindSpeed']]  # Extract attribute data
-    processed_data = processed_data.astype(float)
+    attribute_data = np.array(attribute_data) 
+    attribute_data_final = np.reshape(attribute_data, (113929, 45, 2))
+   
     # Adjust weather station nodes and adjacency matrix
     weather_stations = weather_data['StasName'].unique()
     num_nodes = len(weather_stations)
@@ -42,7 +40,7 @@ def data_preprocess_AST_GCN(station):
     # print("Stations Coordinates:\n", stations_coords)
     adjacency_matrix = random_adjacency_matrix(num_nodes)
     
-    return processed_data, attribute_data, adjacency_matrix, num_nodes
+    return processed_data_final, attribute_data_final, adjacency_matrix, num_nodes
 
 ### Using euclidean distances for adj mx
 def calculate_adjacency_matrix(stations_coords, threshold=None, decay_factor=0.01):
@@ -65,10 +63,9 @@ def calculate_adjacency_matrix(stations_coords, threshold=None, decay_factor=0.0
     mean_distance = np.mean(non_zero_entries)
     std_distance = np.std(non_zero_entries)
     adjacency_matrix[adjacency_matrix != 0] = (non_zero_entries - mean_distance) / std_distance
-
     return adjacency_matrix
 
-### Random initializing adj mx
+
 def random_adjacency_matrix(num_stations, threshold=0.5):
     # Generate random values between 0 and 1
     matrix = np.random.rand(num_stations, num_stations)
@@ -86,85 +83,24 @@ def sliding_window_AST_GCN(processed_data, time_steps, num_nodes):
     # It iterates over the processed data and creates a sliding window of length time_steps over the data.
     # For each window, it creates an input sequence (input_data) and the corresponding target value (target_data).
     for i in range(len(processed_data) - time_steps):
-        input_data.append(processed_data.iloc[i:i+time_steps].values)
-        target_data.append(processed_data.iloc[i+time_steps].values)
-    # Convert the input and target data to NumPy arrays
+        input_data.append(processed_data[i:i+time_steps])
+        target_data.append(processed_data[i+time_steps])
+
     input_data = np.array(input_data)
-    target_data = np.array(target_data)
-    ## Reshape the input data to match the desired shape of the model
-    input_data = input_data.transpose((0, 2, 1))  # Swap the time_steps and num_nodes dimensions
-    input_data = input_data.reshape(-1, num_nodes, time_steps * 4)  
-    # Normalize the input and target data if necessary, also reshape 
-    scaler = StandardScaler()
-    input_data = input_data.reshape(-1, num_nodes * 4)
-    input_data = scaler.fit_transform(input_data)
-    input_data = input_data.reshape(-1, time_steps, num_nodes, 4)
-    target_data = scaler.transform(target_data)
-    # Adjust the shape of the input and target data
-    input_data = np.transpose(input_data, (0, 2, 1, 3))  # Swap the time_steps and num_nodes dimensions
-    target_data = np.reshape(target_data, (target_data.shape[0], -1))
+    target_data = np.array(target_data)    
     
-    return input_data, target_data, scaler
-
-
-
-####  st-gcn version methods
-def data_preprocess_ST_GCN(station):
-    # Load and preprocess the weather station data
-    station_name = 'data/Weather Station Data/' + station + '.csv'
-    weather_data = pd.read_csv(station_name)
-    processed_data = weather_data[['Pressure', 'WindDir', 'WindSpeed', 'Humidity', 'Rain', 'Temperature']]
-    processed_data = processed_data.astype(float)
-    #Adjust weather station nodes and adjacency matrix
-    weather_stations = weather_data['StasName'].unique()
-    adjacency_matrix = pd.read_csv('data/Graph Neural Network Data/Adjacency Matrix/adj_mx.csv', index_col=0)
-    num_nodes = len(weather_stations)
-    adjacency_matrix = adjacency_matrix.iloc[:num_nodes, :num_nodes].values
-    return processed_data, adjacency_matrix, num_nodes
-
-
-def sliding_window_ST_GCN(processed_data, time_steps, num_nodes):
-    input_data = []
-    target_data = []
-    # Iterate over the processed data to create input-target pairs
-    # It iterates over the processed data and creates a sliding window of length time_steps over the data.
-    # For each window, it creates an input sequence (input_data) and the corresponding target value (target_data).
-    for i in range(len(processed_data) - time_steps):
-        input_data.append(processed_data.iloc[i:i+time_steps].values)
-        target_data.append(processed_data.iloc[i+time_steps].values)
-    # Convert the input and target data to NumPy arrays
-    input_data = np.array(input_data)
-    target_data = np.array(target_data)
-    ## Reshape the input data to match the desired shape of the model
-    input_data = input_data.transpose((0, 2, 1))  # Swap the time_steps and num_nodes dimensions
-    input_data = input_data.reshape(-1, num_nodes, time_steps * 6)  
-    # Normalize the input and target data if necessary, also reshape 
-    scaler = StandardScaler()
-    input_data = input_data.reshape(-1, num_nodes * 6)
-    input_data = scaler.fit_transform(input_data)
-    input_data = input_data.reshape(-1, time_steps, num_nodes, 6)
-    target_data = scaler.transform(target_data)
-    # Adjust the shape of the input and target data
-    input_data = np.transpose(input_data, (0, 2, 1, 3))  # Swap the time_steps and num_nodes dimensions
-    target_data = np.reshape(target_data, (target_data.shape[0], -1))
-    
-    return input_data, target_data, scaler
-
-# def get_timestamp_at_index(csv_file_path, index_to_find):
-#      # Read only the 'DateT' column
-#     df = pd.read_csv(csv_file_path, usecols=['DateT'], error_bad_lines=False)
-#     # Retrieve the DateT value at the specified index
-#     timestamp = df.loc[index_to_find, 'DateT']
-#     return timestamp
+    return input_data, target_data
 
 def get_timestamp_at_index(hours):
-    # Create a datetime object
-    date_string = "2010-01-01 00:00:00"
-    formatted_date = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
-    # Number of hours to add
-    hours_to_add = hours//45
-    # Create a timedelta representing the number of hours to add
-    time_delta = timedelta(hours=hours_to_add)
-    # Add the timedelta to the original date
-    new_date = formatted_date + time_delta
-    return new_date
+        # Create a datetime object
+        date_string = "2010-01-01 00:00:00"
+        formatted_date = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
+        # Number of hours to add
+        hours_to_add = hours//45
+
+        # Create a timedelta representing the number of hours to add
+        time_delta = timedelta(hours=hours_to_add)
+
+        # Add the timedelta to the original date
+        new_date = formatted_date + time_delta
+        return new_date

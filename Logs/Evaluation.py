@@ -220,50 +220,73 @@ def AgcrnEval(modelConfig,sharedConfig):
                         file.write('This is the MAE ' + str(mae) + '\n')
                         file.write('This is the SMAPE ' + str(smape) + '\n')
 
-
-        
 def evalASTGCN(config, sharedConfig):
-    for station in sharedConfig['stations']['default'] :
-        for horizon in sharedConfig['horizons']['default']:
-    # for station in stations:
-    #     for horizon in horizons:
-            print(f'ASTGCN evaluation started at {station} for the horizon of {horizon}')
-            logger = modelLogger('ASTGCN', str(station),'Logs/ASTGCN/Eval/' + str(horizon) + ' Hour Forecast/'+str(station) +'/'+'astgcn_' + str(station) + '.txt' , log_enabled=False)
-            logger.info("ASTGCN evaluation for single time-step started at {station} for the horizon of {horizon}")
-            paths = astgcnUtils.get_file_paths(station, horizon)
-            try:
-                for path in paths.values():
-                    astgcnUtils.create_file_if_not_exists(path)
-                # Read the predictions, targets & actual vs predicted from the CSV files
-                preds = pd.read_csv(paths['yhat']).drop(['Unnamed: 0'], axis=1)
-                targets = pd.read_csv(paths['target']).drop(['Unnamed: 0'], axis=1)
-                actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
-                actual_vs_predicted.to_csv(paths['actual_vs_predicted'], index=False)
-                # Calculate the metrics &  Write the metrics to the files
-                metrics = {
-                    'MSE': astgcnUtils.MSE(targets.values, preds.values),
-                    'RMSE': astgcnUtils.RMSE(targets.values, preds.values),
-                    'MAE': astgcnUtils.MAE(targets.values, preds.values),
-                    'SMAPE': astgcnUtils.SMAPE(targets.values, preds.values) ,
-                    'std_dev_smape': astgcnUtils.smape_std(targets.values, preds.values) 
+    stations = sharedConfig['stations']['default'] 
+    best_metrics = {}  # To store the best metrics for each station
+    for horizon in sharedConfig['horizons']['default']:
+        for k in range(sharedConfig['n_split']['default']):
+            # logger = modelLogger('ASTGCN', 'All stations','Logs/ASTGCN/Eval/' + str(horizon) + ' Hour Forecast/'+ str(station) + '.txt' , log_enabled=False)
+            # logger.info("ASTGCN evaluation for single time-step started at all stations for the horizon of {horizon}")
+            fileDictionary = {
+                "yhat": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Predictions/result.csv',
+                "target": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Targets/target.csv',
+                "metrics": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/',
+                'metricFile1': '/split_' + str(k) + '_metrics.txt', 
+                "actual_vs_predicted": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/actual_vs_predicted.txt'
                 }
-                with open(paths['metrics'], 'w') as metric_file:
-                    for name, value in metrics.items():
-                        metric_file.write(f'This is the {name}: {value}\n')
-                print(f'ASTGCN evaluation done at {station} for the horizon of {horizon}')
-                print(f'And was saved to {paths["metrics"]}')
-                logger.info('ASTGCN evaluation done at {station} for the horizon of {horizon}')
-                logger.info('And was saved to {paths["metrics"]}')
-                for name, value in metrics.items():
-                    print(f'{name}: {value} at the {station} station forecasting {horizon} hours ahead.')
-                    logger.info('{name}: {value} at the {station} station forecasting {horizon} hours ahead.')
-            except Exception as e:
-                print(f'Error! Unable to read data or write metrics: {str(e)}')
-                logger.error('Error! Unable to read data or write metrics: {str(e)}')
-    print('Finished evaluation of ASTGCN error metrics for all stations.')
-    logger.info('Finished evaluation of ASTGCN error metrics for all stations')
+            y_pred = pd.read_csv(fileDictionary["yhat"]).values
+            y_true = pd.read_csv(fileDictionary["target"]).values
+            
+            actual_vs_predicted = pd.DataFrame({'Actual': y_true.flatten(), 'Predicted': y_pred.flatten()})
+            actual_vs_predicted.to_csv(fileDictionary['actual_vs_predicted'], index=False)
         
+            for i in range(sharedConfig['n_stations']['default']):
+                station_pred = y_pred[i,1]
+                station_true = y_true[i,1]
+                
+                print("Evaluating horizon : "+ str(horizon) + "|  split : " + str(k) + "|  for station : " + stations[i])
+                print("Station_pred : ",station_pred)
+                print("station_true : ",station_true)
+                
+                mse = metrics.mse(np.array([station_true]), np.array([station_pred]))
+                rmse = metrics.rmse(np.array([station_true]), np.array([station_pred]))
+                mae = metrics.mae(np.array([station_true]), np.array([station_pred]))
+                # smape = metrics.smape(np.array([station_true]), np.array([station_pred]))
+                smape = metrics.ZeroAdjustedSMAPE(np.array([station_true]), np.array([station_pred]))
+  
+                filePath =fileDictionary['metrics'] +str(stations[i])
+                if not os.path.exists(filePath):
+                    os.makedirs(filePath)
+
+                print("This is the path : "+ filePath )
+                with open(filePath + fileDictionary['metricFile1'], 'w') as file:
+                    file.write('This is the RMSE ' + str(rmse) + '\n')
+                    file.write('This is the MSE ' + str(mse) + '\n')
+                    file.write('This is the MAE ' + str(mae) + '\n')
+                    file.write('This is the SMAPE ' + str(smape) + '\n')  
+                    # print('This is the SMAPE ' + str(smape) + '\n')   
+                
+                # Saving best metrics
+                if stations[i] not in best_metrics:
+                    best_metrics[stations[i]] = {'mse': mse, 'rmse': rmse, 'mae': mae, 'smape': smape}
+                else:
+                    if mse < best_metrics[stations[i]]['mse']:
+                        best_metrics[stations[i]]['mse'] = mse
+                    if rmse < best_metrics[stations[i]]['rmse']:
+                        best_metrics[stations[i]]['rmse'] = rmse
+                    if mae < best_metrics[stations[i]]['mae']:
+                        best_metrics[stations[i]]['mae'] = mae
+                    if smape < best_metrics[stations[i]]['smape']:
+                        best_metrics[stations[i]]['smape'] = smape
         
+        # Once all splits are done, write the best metrics to a new file
+        for station in stations:
+            best_metric_file_path = f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/best_metrics_{station}.txt'
+            with open(best_metric_file_path, 'w') as file:
+                file.write('Best RMSE: ' + str(best_metrics[station]['rmse']) + '\n')
+                file.write('Best MSE: ' + str(best_metrics[station]['mse']) + '\n')
+                file.write('Best MAE: ' + str(best_metrics[station]['mae']) + '\n')
+                file.write('Best SMAPE: ' + str(best_metrics[station]['smape']) + '\n')
         
         
         
