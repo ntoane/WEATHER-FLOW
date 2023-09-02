@@ -62,7 +62,7 @@ increment:
                 #  67920, 70128, 72288, 74472, 76680, 78888, 81048, 83232, 85440,
                 #  87648, 89832, 92016, 94224, 96432, 98592, 100776, 102984, 105192,
                 #  107352, 109536, 111744, 113929]
-  default: [1000, 2000, 3000]
+  default: [100, 200, 300]
   help:  List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 
     8784 is one year's worth of data, the next step is 3 months of data, and the following step is also 3 months of 
     data, resulting in rolling walk-forward validation where the train size increases each increment, with the 
@@ -70,7 +70,7 @@ increment:
 
 n_stations:
   type: int
-  default: 45
+  default: 5
   help: number of weather stations
 
 num_splits:
@@ -128,7 +128,7 @@ batch_size :
 
 training_epoch:
   type: int
-  default : 20
+  default : 1
   help :  Number of epochs to train. 
 
 gru_units: 

@@ -52,8 +52,9 @@ class astgcnExecute:
     def split_data(self,input_data, increment,k):
         """Splits the input data into training, validation, and test sets."""
         splits = [increment[k], increment[k + 1], increment[k + 2]]
-        pre_standardize_train, pre_standardize_validation, pre_standardize_test = utils.dataSplit(splits, input_data)
-        return utils.min_max(pre_standardize_train, pre_standardize_validation, pre_standardize_test, splits)
+        standardized_train, standardized_validation, standardized_test = utils.dataSplit(splits, input_data)
+        # return utils.min_max(pre_standardize_train, pre_standardize_validation, pre_standardize_test, splits)
+        return (standardized_train, standardized_validation, standardized_test, splits)
 
     def initialize_results(self):
         """Initializes the results, loss, and target data lists."""
@@ -81,17 +82,39 @@ class astgcnExecute:
         save_File = f'Garage/Final Models/ASTGCN/All Stations/{str(self.forecast_len)}Hour Models/Best_Model_\
                     {str(self.forecast_len)}_walk_{str(k)}.h5'
         utils.create_file_if_not_exists(save_File) 
-        train, validation, test, split = self.split_data(input_data, self.increment,k)
-        X_train, Y_train = utils.create_X_Y(train, self.time_steps, num_nodes, self.forecast_len)
-        # print("This is the train data: ", train)
-        # print("This is the X train data: ", train)
-        # print("This is the Y train data: ", train)
         
+        ### Normalize input data as a whole
+        def normalize_data(data):
+            min_val = np.min(data)
+            max_val = np.max(data)
+            normalized_data = (data - min_val) / (max_val - min_val)
+            return normalized_data
+        
+        # Normalizing splits of data
+        def normalize_splits(pre_standardize_train, pre_standardize_validation, pre_standardize_test, splits):
+            min_val = np.min(pre_standardize_train)
+            max_val = np.max(pre_standardize_train)
+            
+            # Normalizing the data
+            train_data = (pre_standardize_train - min_val) / (max_val - min_val)
+            val_data = (pre_standardize_validation - min_val) / (max_val - min_val)
+            test_data = (pre_standardize_test - min_val) / (max_val - min_val)
+            
+            return train_data, val_data, test_data, splits
+        
+        # Normalize the input data then split it into train,test,validate
+        input_data = normalize_data(input_data)
+        train, validation, test, split = self.split_data(input_data, self.increment,k)
+        
+        # standardized_train, standardized_validation, standardized_test, splits = self.split_data(input_data, self.increment,k)
+        # train, validation, test, split = normalize_splits(standardized_train, standardized_validation, standardized_test, splits )
+        
+        X_train, Y_train = utils.create_X_Y(train, self.time_steps, num_nodes, self.forecast_len)
         X_val, Y_val = utils.create_X_Y(validation, self.time_steps, num_nodes, self.forecast_len)
         X_test, Y_test = utils.create_X_Y(test, self.time_steps, num_nodes, self.forecast_len)
         
         ## normalize the attribute data too
-        attribute_data = utils.normalize_data(attribute_data)
+        attribute_data = normalize_data(attribute_data)
         
         # Instantiate the AstGcn class
         astgcn = AstGcn(self.time_steps, num_nodes, adjacency_matrix, 
@@ -102,16 +125,16 @@ class astgcnExecute:
         model, history = astgcn.astgcnModel()
 
         # Log the model summary
-        with io.StringIO() as buf, redirect_stdout(buf):
-            model.summary()
-            model_summary = buf.getvalue()
-        self.logger.info(f'Model Summary:\n{model_summary}')
+        # with io.StringIO() as buf, redirect_stdout(buf):
+        #     model.summary()
+        #     model_summary = buf.getvalue()
+        # self.logger.info(f'Model Summary:\n{model_summary}')
         
         self.lossData.append([history.history['loss']])
         # predictions = self.predict(model, num_nodes, scaler)
         yhat = model.predict(X_test)
 
-        print(f"Actual: {Y_test.flatten()}, Predicted: {yhat.flatten()}")
+        # print(f"Actual: {Y_test.flatten()}, Predicted: {yhat.flatten()}")
         
         # Y_test = np.expand_dims(Y_test, axis=2)  
         self.resultsData.append(yhat.reshape(-1,))
@@ -145,13 +168,10 @@ class astgcnExecute:
         """Saves the results, loss, target data, and the actual vs predicted comparison to CSV files."""
         # Save Results, Loss, and Target
         self.logger.info(f'Saving the results of predictions to ' + str(self.resultsFile))
-        # print(f'Saving the results of predictions to' + str(self.resultsFile) )
         resultsDF = pd.DataFrame(np.concatenate(self.resultsData))
         self.logger.info(f'Saving the targets of actual values to ' + str(self.targetFile) )
-        # print(f'Saving the targets of actual values to ' + str(self.targetFile) )
         targetDF = pd.DataFrame(np.concatenate(self.targetData))
         self.logger.info(f'Saving the loss to ' + str(self.lossFile) )
-        # print(f'Saving the loss to ' + str(self.lossFile) )
         lossDF = pd.DataFrame(self.lossData)
         
         resultsDF.to_csv(self.resultsFile)
@@ -159,7 +179,7 @@ class astgcnExecute:
         targetDF.to_csv(self.targetFile)
         
         # Save Actual vs Predicted
-        self.logger.info(f'Saving the actual vs predicted comparison to a CSV file.')
+        # self.logger.info(f'Saving the actual vs predicted comparison to a CSV file.')
         actual_vs_predicted_data = pd.DataFrame({
             'Actual': Y_test.flatten(),
             'Predicted': yhat.flatten()
@@ -169,4 +189,9 @@ class astgcnExecute:
             file_path = 'data/Weather Station Data/'+ str(self.station) +'.csv'
             date = data_preprocess.get_timestamp_at_index(index)
             self.logger.info(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
-        # actual_vs_predicted_data.to_csv(self.actual_vs_predicted_file, index=False)  
+            
+            
+            
+            
+            # print(f'Date {date} Index {index} - Actual: {row["Actual"]}, Predicted: {row["Predicted"]}')
+       

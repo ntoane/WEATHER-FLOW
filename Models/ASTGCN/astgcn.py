@@ -3,10 +3,10 @@ import tensorflow as tf
 from Utils.astgcnUtils import calculate_laplacian_astgcn, prepare_data_astgcn
 from tensorflow.keras.layers import Input, Dense, LSTM, Reshape
 from tensorflow.keras.models import Model
+from tensorflow.keras.layers import Reshape, Conv3D, Flatten
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
 tf.config.run_functions_eagerly(False)
 import warnings
-# Filter out specific runtime warnings
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 class AstGcn:
@@ -49,12 +49,15 @@ class AstGcn:
 
     def build_model(self, X_attribute_train, Y_attribute_train, adj_normalized, gru_units, lstm_units):
         """Build and return the initialized AST-GCN model."""
-        inputs = Input(shape=(self.time_steps, 1, self.X_train.shape[-1]))
-        x = GcnCell(gru_units, adj_normalized, X_attribute_train, Y_attribute_train)(inputs)
-        # x = Reshape((-1, self.time_steps * self.num_nodes))(x)
+
+        inputs = Input(shape=(10, 1, 10, 45, 4)) 
+
+        x = Conv3D(32, (1, 3, 3), activation='relu')(inputs)
+       
+        x = GcnCell(gru_units, adj_normalized, X_attribute_train, Y_attribute_train)(x)
+        
         x = LSTM(lstm_units, activation='relu', return_sequences=False)(x)
         outputs = Dense(1800, activation='linear')(x)
-        # outputs = Dense(40, activation='linear')(x)
         model = Model(inputs=inputs, outputs=outputs)
         return model
 
@@ -90,7 +93,6 @@ class AstGcn:
 class GcnCell(tf.keras.layers.Layer):
     """
     Custom layer for Graph Convolutional Network (GCN) operations.
-    
     This layer performs a graph convolution operation based on an adjacency matrix, followed by a GRU operation.
     It is designed to work with spatio-temporal data, where the graph convolution operation accounts 
     for spatial dependencies and the GRU for temporal dependencies.
@@ -120,17 +122,17 @@ class GcnCell(tf.keras.layers.Layer):
         Returns:
         - reshaped_output: Output tensor.
         """
-        inputs_with_attributes = self.dense(inputs)
-        inputs_with_attributes = tf.squeeze(inputs_with_attributes, axis=2)  
+        reshaped_inputs = tf.reshape(inputs, [-1, inputs.shape[1], np.prod(inputs.shape[2:])])
+        inputs_with_attributes = self.dense(reshaped_inputs)
+        
+        # inputs_with_attributes = self.dense(inputs) 
         adj_normalized_tiled = tf.expand_dims(self.adj, axis=0)
         adj_normalized_tiled = tf.tile(adj_normalized_tiled, [tf.shape(inputs)[0], 1, 1])
         output = self.layer(inputs_with_attributes)
         reshaped_output = tf.reshape(output, [-1, tf.shape(inputs)[1], self.units])
         return reshaped_output
-
     def compute_output_shape(self, input_shape):
         return input_shape[:-1] + (self.units,)
-
     def get_config(self):
         config = super().get_config().copy()
         config.update({
