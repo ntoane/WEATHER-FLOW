@@ -81,7 +81,7 @@ weight_decay:
   help: weight decay rate
 epochs:
   type: int
-  default: 1
+  default: 30
   help: ''
 save:
   type: str
