@@ -177,6 +177,15 @@ def min_max(train, validation, test):
 def get_dataloader(horizon, k, increment ,agcrnConfig, normalizer = 'std', tod=False, dow=False, weather=False, single=True):
     #load raw st dataset
     data = load_st_dataset()        # B, N, D                #gets the data (19992, 307)
+    
+
+    split = [increment[k], increment[k + 1], increment[k + 2] ]
+    data_train = data[:split[0]]
+    print("the new shape")
+    print(data_train.shape)
+    min_train = np.min(data_train[:, :, -1])
+    max_train = np.max(data_train[:, :, -1])
+
     #normalize st data
     data, scaler = normalize_dataset(data, normalizer, agcrnConfig['column_wise']['default'])
    
@@ -185,18 +194,9 @@ def get_dataloader(horizon, k, increment ,agcrnConfig, normalizer = 'std', tod=F
     data_train = data[:split[0]]
     data_val = data[split[0]:split[1]]
     data_test = data[split[1]:split[2]]
-    # print("this t test")
-    # print(data_test)
 
- 
-    # data_train, data_val, data_test= min_max(data_train, data_val, data_test)
-    # print(data_test.shape)
-    #spilit dataset by days or by ratio
-    # if agcrnConfig['test_ratio']['default'] > 1:
-    #     data_train, data_val, data_test = split_data_by_days(data, agcrnConfig['val_ratio']['default'], agcrnConfig['test_ratio']['default'])
-    # else:
-    #     data_train, data_val, data_test = split_data_by_ratio(data, agcrnConfig['val_ratio']['default'], agcrnConfig['test_ratio']['default'])
-    
+
+
     #add time window
     x_tra, y_tra = Add_Window_Horizon(data_train, agcrnConfig['lag']['default'], horizon, single)  
     x_val, y_val = Add_Window_Horizon(data_val, agcrnConfig['lag']['default'], horizon, single)
@@ -211,7 +211,7 @@ def get_dataloader(horizon, k, increment ,agcrnConfig, normalizer = 'std', tod=F
     else:
         val_dataloader = data_loader(x_val, y_val, agcrnConfig['batch_size']['default'], shuffle=False, drop_last=True)
     test_dataloader = data_loader(x_test, y_test, agcrnConfig['batch_size']['default'], shuffle=False, drop_last=False)
-    return train_dataloader, val_dataloader, test_dataloader, scaler
+    return train_dataloader, val_dataloader, test_dataloader, scaler, min_train, max_train
 
 
 

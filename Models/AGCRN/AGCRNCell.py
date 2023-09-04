@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 from Models.AGCRN.AGCN import AVWGCN
+torch.set_num_threads(4)
 
 class AGCRNCell(nn.Module):
     def __init__(self, node_num, dim_in, dim_out, cheb_k, embed_dim):
@@ -10,6 +11,7 @@ class AGCRNCell(nn.Module):
         self.gate = AVWGCN(dim_in+self.hidden_dim, 2*dim_out, cheb_k, embed_dim)
         self.update = AVWGCN(dim_in+self.hidden_dim, dim_out, cheb_k, embed_dim)
         self.gateMatrix=None
+        self.updateMatrix=None
 
     def forward(self, x, state, node_embeddings):
         #x: B, num_nodes, input_dim
@@ -26,6 +28,7 @@ class AGCRNCell(nn.Module):
         # print("this is z_r")
         # print(z_r.shape)
         self.gateMatrix = self.gate.adjacency_matrix
+        self.updateMatrix =self.update.adjacency_matrix
         return h
 
     def init_hidden_state(self, batch_size):

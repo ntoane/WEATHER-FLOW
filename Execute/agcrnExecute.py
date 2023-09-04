@@ -19,7 +19,8 @@ import Utils.agcrnUtils as agcrnUtil
 import Utils.sharedUtils as sharedUtil
 from Execute.modelExecute import modelExecute
 from Logs.modelLogger import modelLogger 
-torch.set_num_threads(24)
+import csv
+torch.set_num_threads(4)
 
 
 class agcrnExecute(modelExecute):
@@ -178,13 +179,16 @@ class agcrnExecute(modelExecute):
             # path="../savedModels/best_model.pth"
             os.makedirs(os.path.dirname(path), exist_ok=True)
             torch.save(best_model, path)
-            self.save_matrix(self.model.gateMatrix, fileDictionary)
+            self.save_gateMatrix(self.model.gateMatrix, fileDictionary)
+            self.save_updateMatrix(self.model.updateMatrix, fileDictionary)
+            
             self.model_logger.info("Saving current best model to " + path) #self.best_path
             print("Saving current best model to " + path) #self.best_path
 
         #test
         self.model.load_state_dict(best_model)
         #self.val_epoch(self.args.epochs, self.test_loader)
+        
         self.test(self.model, self.modelConfig, self.test_loader, self.scaler,self.model_logger  )
 
 
@@ -253,7 +257,8 @@ class agcrnExecute(modelExecute):
 
     def prep_split_data(self, horizon, k):
         increments = self.sharedConfig['increment']['default']
-        self.train_loader, self.val_loader, self.test_loader, self.scaler = agcrnUtil.get_dataloader(horizon, k, increments, self.modelConfig,
+        self.train_loader, self.val_loader, self.test_loader, self.scaler, min_train, max_train = agcrnUtil.get_dataloader(horizon, k, 
+                                                                    increments, self.modelConfig,
                                                                     normalizer=self.modelConfig['normalizer']['default'],
                                                                     tod=self.modelConfig['tod']['default'], dow=False,
                                                                     weather=False, single=False)
@@ -264,6 +269,17 @@ class agcrnExecute(modelExecute):
         self.train_per_epoch = len(self.train_loader)
         if self.val_loader != None:
             self.val_per_epoch = len(self.val_loader)
+
+        train_data_min = 'Results/AGCRN/' + str(horizon) + ' Hour Forecast/scaler/min_' + str(k) +".csv"
+        sharedUtil.create_file_if_not_exists(train_data_min)
+        train_data_max = 'Results/AGCRN/' + str(horizon) + ' Hour Forecast/scaler/max_' + str(k) +".csv"
+        sharedUtil.create_file_if_not_exists(train_data_max)
+
+        with open(train_data_min, 'w') as file:
+            file.write(str(min_train))
+        with open(train_data_max, 'w') as file:
+            file.write(str(max_train))
+
 
 
 
@@ -289,7 +305,11 @@ class agcrnExecute(modelExecute):
                 self.initialise_model()
                 self.dictionaryFile=self.prepare_file_dictionary
                 self.execute_split(self.fileDictionary) #send data with relative split/horizon info
-        
+
+
+   
+  
+     
         
 
 
@@ -301,7 +321,8 @@ class agcrnExecute(modelExecute):
             'trainLossFile': 'Results/AGCRN/' + str(forecast_len) + ' Hour Forecast/Matrices/adjacency_matrix_' + str(k) + '.csv',
             'validationLossFile': 'Results/AGCRN/' + str(forecast_len) + ' Hour Forecast/Matrices/adjacency_matrix_' + str(k) + '.csv',
             'modelFile': 'Garage/Final Models/AGCRN/' + str(forecast_len) + ' Hour Models/model_split_' + str(k) + ".pth",
-            'matrixFile': 'Results/AGCRN/' + str(forecast_len) + ' Hour Forecast/Matrices/adjacency_matrix_' + str(k) + '.csv',
+            'updateMatrixFile': 'Results/AGCRN/' + str(forecast_len) + ' Hour Forecast/Matrices_update/adjacency_matrix_' + str(k) + '.csv',
+            'gateMatrixFile': 'Results/AGCRN/' + str(forecast_len) + ' Hour Forecast/Matrices_gate/adjacency_matrix_' + str(k) + '.csv',
             'metricFile0': './Results/AGCRN/'+  str(forecast_len)+ ' Hour Forecast/Metrics/Station_',
             
             'metricFile1': '/split_' + str(k) + '_metrics.txt'
@@ -309,17 +330,29 @@ class agcrnExecute(modelExecute):
         }
     
 
-    def save_matrix(self, supports, fileDictionary):
+    def save_updateMatrix(self, supports, fileDictionary):
       
         supports_np = supports.detach().cpu().numpy()  # Convert the tensor to a numpy array
         df = pd.DataFrame(supports_np)  # Convert the numpy array to a pandas DataFrame
 
         current_dir = os.path.dirname(os.path.realpath(__file__))
         parent_dir = os.path.dirname(current_dir)
-        path = os.path.join(parent_dir, fileDictionary['matrixFile'])
+        path = os.path.join(parent_dir, fileDictionary['updateMatrixFile'])
         os.makedirs(os.path.dirname(path), exist_ok=True)
 
-        df.to_csv(fileDictionary['matrixFile'], index=True, header=True) 
+        df.to_csv(fileDictionary['updateMatrixFile'], index=True, header=True) 
+
+    def save_gateMatrix(self, supports, fileDictionary):
+      
+        supports_np = supports.detach().cpu().numpy()  # Convert the tensor to a numpy array
+        df = pd.DataFrame(supports_np)  # Convert the numpy array to a pandas DataFrame
+
+        current_dir = os.path.dirname(os.path.realpath(__file__))
+        parent_dir = os.path.dirname(current_dir)
+        path = os.path.join(parent_dir, fileDictionary['gateMatrixFile'])
+        os.makedirs(os.path.dirname(path), exist_ok=True)
+
+        df.to_csv(fileDictionary['gateMatrixFile'], index=True, header=True) 
 
 
     def save_checkpoint(self):

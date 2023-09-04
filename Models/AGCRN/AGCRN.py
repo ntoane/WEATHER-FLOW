@@ -1,6 +1,7 @@
 import torch
 import torch.nn as nn
 from Models.AGCRN.AGCRNCell import AGCRNCell
+torch.set_num_threads(4)
 
 class AVWDCRNN(nn.Module):
     def __init__(self, node_num, dim_in, dim_out, cheb_k, embed_dim, num_layers=1):
@@ -59,6 +60,7 @@ class AGCRN(nn.Module):
         #predictor
         self.end_conv = nn.Conv2d(1, agcrnConfig['horizon']['default'] * self.output_dim, kernel_size=(1, self.hidden_dim), bias=True)
         self.gateMatrix=None
+        self.updateMatrix=None
 
     def forward(self, source, targets, teacher_forcing_ratio=0.5):
         #source: B, T_1, N, D
@@ -75,4 +77,5 @@ class AGCRN(nn.Module):
         output = output.permute(0, 1, 3, 2)                             #B, T, N, C
 
         self.gateMatrix=self.encoder.dcrnn_cells[0].gateMatrix
+        self.updateMatrix=self.encoder.dcrnn_cells[0].updateMatrix
         return output

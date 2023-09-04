@@ -8,15 +8,25 @@ import Utils.sharedUtils as sharedUtils
 from Logs.modelLogger import modelLogger
 import Utils.agcrnUtils as agcrnUtil
 import Utils.astgcnUtils as astgcnUtils
+from collections import defaultdict
+
      
 def TcnEval(tcnConfig, sharedConfig):
     stations = sharedConfig['stations']['default']
     horizons = sharedConfig['horizons']['default']
     num_splits = sharedConfig['n_split']['default']
 
-    for station in stations:
-        for split in range(num_splits):
-            for horizon in horizons: 
+    for split in range(num_splits):
+        for horizon in horizons: 
+            accumulated_metrics = {
+                'smape': 0,
+                'mse': 0,
+                'mae': 0,
+                'rmse': 0,
+            }    
+            
+            for station in stations:
+            
                 # try:
                     print(f'TCN evaluation started at {station} for the horizon of {horizon} split {split}')
                     paths = get_tcn_file_paths(station, horizon, split)
@@ -29,14 +39,29 @@ def TcnEval(tcnConfig, sharedConfig):
                     actual_vs_predicted, metrics = calculate_tcn_metrics(paths)
                     tcn_logger.info('actual vs prediced is :' + str(actual_vs_predicted))
                     tcn_logger.info('saved to file :' +str(paths['actual_vs_predicted_file']) )
-                    actual_vs_predicted.to_csv(paths['actual_vs_predicted_file'], index=False)
+                    # actual_vs_predicted.to_csv(paths['actual_vs_predicted_file'], index=False)
                     # Write the metrics to the metric file
                     with open(paths['metric_file'], 'w') as metric_file:
                         for name, value in metrics.items():
                             metric_file.write(f'This is the {name}: {value}\n')
                             tcn_logger.info(f'This is the {name}: {value}\n')
+
+                            if name in accumulated_metrics:
+                                accumulated_metrics[name] += value
+
+
+                         
+                         
+                            
+        
                     tcn_logger.info('TCN evaluation of ' + station+' for the horizon of ' +str(horizon) +' was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt') 
                     print_metrics(metrics, station, horizon)
+
+            with open(paths['avr_metrics'], 'w') as metric_file:
+                for name, value in accumulated_metrics.items():
+                    metric_file.write(f'This is the accumulative {name}: {value/45}\n')
+
+
                 # except Exception as e:
                 #     print('Error! : Unable to read data or write metrics for station {} and horizon length {}'.format(station, horizon), e)
                 #     tcn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}.'.format(station, horizon))
@@ -160,7 +185,8 @@ def get_tcn_file_paths(station, horizon, split, model='TCN'):
             "yhat_path" : f'Results/TCN/{horizon} Hour Forecast/{station}/Predictions/result_{split}.csv',
             "target_path" : f'Results/TCN/{horizon} Hour Forecast/{station}/Targets/target_{split}.csv',
             "metric_file" : f'Results/TCN/{horizon} Hour Forecast/{station}/Metrics/metrics_{split}.txt',
-            "actual_vs_predicted_file" : f'Results/TCN/{horizon} Hour Forecast/{station}/Metrics/actual_vs_predicted.txt'
+            "actual_vs_predicted_file" : f'Results/TCN/{horizon} Hour Forecast/{station}/Metrics/actual_vs_predicted.txt',
+            "avr_metrics" :  f'Results/TCN/{horizon} Hour Forecast/average/avr_metrics_{split}.txt'
         }
 def get_gwn_file_paths(station, horizon, split,model='GWN'):
     folder_name = f'{horizon} Hour Forecast'
@@ -186,14 +212,36 @@ def AgcrnEval(modelConfig,sharedConfig):
                     'metricFile0': './Results/AGCRN/'+  str(horizon)+ ' Hour Forecast/Metrics/',
                     
                     'metricFile1': '/split_' + str(k) + '_metrics.txt'
+
                 }
-            
-                y_pred=np.load(fileDictionary["predFile"] + ".npy")
-                y_true=np.load(fileDictionary["targetFile"] + ".npy")
                 
+                def read_value_from_file(filename):
+                    with open(filename, 'r') as file:
+                        return float(file.read().strip())
+
+                # Usage:
+                train_data_min_file = './Results/AGCRN/' + str(horizon) + ' Hour Forecast/scaler/min_' + str(k) + ".csv"
+                train_data_max_file = './Results/AGCRN/' + str(horizon) + ' Hour Forecast/scaler/max_' + str(k) + ".csv"
+
+                min_scalar = read_value_from_file(train_data_min_file)
+                max_scalar = read_value_from_file(train_data_max_file)
+
+                y_predO=np.load(fileDictionary["predFile"] + ".npy")
+                y_trueO=np.load(fileDictionary["targetFile"] + ".npy")
+
+
+
+
+                # scaler = utils.NormScaler(y_trueO.min(), y_trueO.max())
+                scaler = utils.NormScaler(min_scalar, max_scalar)
+                y_true = scaler.transform(y_trueO)
+                y_pred = scaler.transform(y_predO)
+
+
                 for i in range(45):
                     station_pred = y_pred[:, :, i, 0]
                     station_true = y_true[:, :, i, 0]
+                    print(station_true)
                     print("Evaluating horizon:"+ str(horizon) + " split:" + str(k) + " for station:" + stations[i])
                     # print(station_pred)
 
@@ -202,7 +250,7 @@ def AgcrnEval(modelConfig,sharedConfig):
                     rmse =  metrics.rmse(station_true, station_pred)
                     mse = metrics.mse(station_true, station_pred)
                     mae = metrics.mae(station_true, station_pred)
-                    smape = metrics.smape(station_true, station_pred)
+                    smape = metrics.smape(station_true.flatten(), station_pred.flatten())
 
 
 
@@ -219,6 +267,32 @@ def AgcrnEval(modelConfig,sharedConfig):
                         file.write('This is the MSE ' + str(mse) + '\n')
                         file.write('This is the MAE ' + str(mae) + '\n')
                         file.write('This is the SMAPE ' + str(smape) + '\n')
+
+
+                y_true=y_true.flatten()
+                y_pred=y_pred.flatten()
+                rmse =  metrics.rmse(y_true, y_pred)
+                mse = metrics.mse(y_true, y_pred)
+                mae = metrics.mae(y_true, y_pred)
+                smape = metrics.smape(y_true, y_pred)
+
+
+
+                filePath =fileDictionary['metricFile0'] +"average"
+                if not os.path.exists(filePath):
+                    os.makedirs(filePath)
+
+                with open(filePath + fileDictionary['metricFile1'], 'w') as file:
+            
+                    # file.write('This is the MAE ' + str(mae) + '\n')
+                    # file.write('This is the RMSE ' + str(rmse) + '\n')
+                    # file.write('This is the MAPE ' + str(mape) + '\n')
+                    file.write('This is the RMSE ' + str(rmse) + '\n')
+                    file.write('This is the MSE ' + str(mse) + '\n')
+                    file.write('This is the MAE ' + str(mae) + '\n')
+                    file.write('This is the SMAPE ' + str(smape) + '\n')
+
+
 
 
         
