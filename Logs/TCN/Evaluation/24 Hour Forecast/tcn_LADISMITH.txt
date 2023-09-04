@@ -1,2 +1,29 @@
 2023-08-05 13:45:57,341 - LADISMITH - INFO - TCN evaluation started atLADISMITH for the horizon of 24
 2023-08-05 13:45:57,342 - LADISMITH - ERROR - Error! : Unable to read data or write metrics for station LADISMITH and horizon length 24.
+2023-09-04 11:30:54,424 - LADISMITH - INFO - TCN evaluation started atLADISMITH for the horizon of 24 for split 0
+2023-09-04 11:30:54,539 - LADISMITH - INFO - actual vs prediced is :          Actual  Predicted
+0       0.288732   0.269866
+1       0.284038   0.267353
+2       0.284038   0.261534
+3       0.276995   0.257499
+4       0.272300   0.248127
+...          ...        ...
+208507  0.678404   0.684379
+208508  0.704225   0.675819
+208509  0.706573   0.645268
+208510  0.596244   0.604999
+208511  0.549296   0.550510
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:54,539 - LADISMITH - INFO - saved to file :Results/TCN/24 Hour Forecast/LADISMITH/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:54,540 - LADISMITH - INFO - This is the mse: 0.004248547908945535
+
+2023-09-04 11:30:54,540 - LADISMITH - INFO - This is the rmse: 0.06518088607057697
+
+2023-09-04 11:30:54,540 - LADISMITH - INFO - This is the mae: 0.047413302919175365
+
+2023-09-04 11:30:54,540 - LADISMITH - INFO - This is the smape: 12.814477335353141
+
+2023-09-04 11:30:54,540 - LADISMITH - INFO - This is the smape_std_dev: 13.93696734011932
+
+2023-09-04 11:30:54,541 - LADISMITH - INFO - TCN evaluation of LADISMITH for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

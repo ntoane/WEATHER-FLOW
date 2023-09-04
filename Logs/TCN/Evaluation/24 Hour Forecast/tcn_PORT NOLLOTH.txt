@@ -1,2 +1,29 @@
 2023-08-05 13:45:57,449 - PORT NOLLOTH - INFO - TCN evaluation started atPORT NOLLOTH for the horizon of 24
 2023-08-05 13:45:57,471 - PORT NOLLOTH - ERROR - Error! : Unable to read data or write metrics for station PORT NOLLOTH and horizon length 24.
+2023-09-04 11:30:55,989 - PORT NOLLOTH - INFO - TCN evaluation started atPORT NOLLOTH for the horizon of 24 for split 0
+2023-09-04 11:30:56,160 - PORT NOLLOTH - INFO - actual vs prediced is :          Actual  Predicted
+0       0.245232   0.214666
+1       0.239782   0.209519
+2       0.237057   0.202455
+3       0.239782   0.194878
+4       0.226158   0.185251
+...          ...        ...
+208507  0.713896   0.603941
+208508  0.762943   0.590190
+208509  0.490463   0.571003
+208510  0.569482   0.552598
+208511  0.520436   0.529517
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:56,160 - PORT NOLLOTH - INFO - saved to file :Results/TCN/24 Hour Forecast/PORT NOLLOTH/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:56,161 - PORT NOLLOTH - INFO - This is the mse: 0.0038551488411723875
+
+2023-09-04 11:30:56,161 - PORT NOLLOTH - INFO - This is the rmse: 0.06208984491180814
+
+2023-09-04 11:30:56,161 - PORT NOLLOTH - INFO - This is the mae: 0.038192807130639245
+
+2023-09-04 11:30:56,161 - PORT NOLLOTH - INFO - This is the smape: 11.819022132730456
+
+2023-09-04 11:30:56,162 - PORT NOLLOTH - INFO - This is the smape_std_dev: 14.330766199082746
+
+2023-09-04 11:30:56,162 - PORT NOLLOTH - INFO - TCN evaluation of PORT NOLLOTH for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

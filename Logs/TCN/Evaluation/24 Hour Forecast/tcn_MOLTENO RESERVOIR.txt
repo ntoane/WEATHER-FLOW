@@ -1,2 +1,29 @@
 2023-08-05 13:45:57,352 - MOLTENO RESERVOIR - INFO - TCN evaluation started atMOLTENO RESERVOIR for the horizon of 24
 2023-08-05 13:45:57,353 - MOLTENO RESERVOIR - ERROR - Error! : Unable to read data or write metrics for station MOLTENO RESERVOIR and horizon length 24.
+2023-09-04 11:30:54,896 - MOLTENO RESERVOIR - INFO - TCN evaluation started atMOLTENO RESERVOIR for the horizon of 24 for split 0
+2023-09-04 11:30:55,011 - MOLTENO RESERVOIR - INFO - actual vs prediced is :          Actual  Predicted
+0       0.264706   0.249660
+1       0.258824   0.251570
+2       0.255882   0.254381
+3       0.264706   0.250393
+4       0.264706   0.238828
+...          ...        ...
+208507  0.800000   0.643728
+208508  0.744118   0.621368
+208509  0.738235   0.593052
+208510  0.682353   0.554254
+208511  0.623529   0.522721
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:55,011 - MOLTENO RESERVOIR - INFO - saved to file :Results/TCN/24 Hour Forecast/MOLTENO RESERVOIR/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:55,011 - MOLTENO RESERVOIR - INFO - This is the mse: 0.0043234761342117
+
+2023-09-04 11:30:55,012 - MOLTENO RESERVOIR - INFO - This is the rmse: 0.06575314543207572
+
+2023-09-04 11:30:55,012 - MOLTENO RESERVOIR - INFO - This is the mae: 0.04714164872114484
+
+2023-09-04 11:30:55,012 - MOLTENO RESERVOIR - INFO - This is the smape: 12.481007493144018
+
+2023-09-04 11:30:55,012 - MOLTENO RESERVOIR - INFO - This is the smape_std_dev: 10.886254947039589
+
+2023-09-04 11:30:55,012 - MOLTENO RESERVOIR - INFO - TCN evaluation of MOLTENO RESERVOIR for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

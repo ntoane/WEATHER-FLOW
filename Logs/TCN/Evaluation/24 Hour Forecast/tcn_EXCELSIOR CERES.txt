@@ -1,2 +1,29 @@
 2023-08-05 13:45:57,322 - EXCELSIOR CERES - INFO - TCN evaluation started atEXCELSIOR CERES for the horizon of 24
 2023-08-05 13:45:57,324 - EXCELSIOR CERES - ERROR - Error! : Unable to read data or write metrics for station EXCELSIOR CERES and horizon length 24.
+2023-09-04 11:30:53,356 - EXCELSIOR CERES - INFO - TCN evaluation started atEXCELSIOR CERES for the horizon of 24 for split 0
+2023-09-04 11:30:53,481 - EXCELSIOR CERES - INFO - actual vs prediced is :          Actual  Predicted
+0       0.248210   0.230025
+1       0.255370   0.210909
+2       0.202864   0.198714
+3       0.195704   0.192150
+4       0.186158   0.186782
+...          ...        ...
+208507  0.758950   0.736125
+208508  0.751790   0.717089
+208509  0.720764   0.675532
+208510  0.651551   0.610493
+208511  0.522673   0.543714
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:53,481 - EXCELSIOR CERES - INFO - saved to file :Results/TCN/24 Hour Forecast/EXCELSIOR CERES/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:53,481 - EXCELSIOR CERES - INFO - This is the mse: 0.0038941548025722833
+
+2023-09-04 11:30:53,481 - EXCELSIOR CERES - INFO - This is the rmse: 0.062403163401964515
+
+2023-09-04 11:30:53,481 - EXCELSIOR CERES - INFO - This is the mae: 0.04803171696317091
+
+2023-09-04 11:30:53,482 - EXCELSIOR CERES - INFO - This is the smape: 13.35813952643524
+
+2023-09-04 11:30:53,482 - EXCELSIOR CERES - INFO - This is the smape_std_dev: 14.891756425614927
+
+2023-09-04 11:30:53,482 - EXCELSIOR CERES - INFO - TCN evaluation of EXCELSIOR CERES for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

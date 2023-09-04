@@ -183,3 +183,139 @@
 2023-08-13 13:10:43,642 - WORCESTER-AWS - INFO - TCN evaluation of WORCESTER-AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
 2023-08-13 13:10:43,643 - WORCESTER-AWS - INFO - Finished evaluation of TCN error metrics for all stations.
 2023-08-13 13:10:43,643 - WORCESTER-AWS - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-09-04 11:30:44,844 - WORCESTER-AWS - INFO - TCN evaluation started atWORCESTER-AWS for the horizon of 3 for split 0
+2023-09-04 11:30:44,879 - WORCESTER-AWS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.215217   0.215140
+1      0.223913   0.212347
+2      0.219565   0.208598
+3      0.202174   0.199345
+4      0.226087   0.196344
+...         ...        ...
+26122  0.393478   0.416623
+26123  0.369565   0.404288
+26124  0.521739   0.517667
+26125  0.497826   0.478005
+26126  0.471739   0.450334
+
+[26127 rows x 2 columns]
+2023-09-04 11:30:44,879 - WORCESTER-AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/WORCESTER-AWS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:44,879 - WORCESTER-AWS - INFO - This is the mse: 0.0006914290898846115
+
+2023-09-04 11:30:44,879 - WORCESTER-AWS - INFO - This is the rmse: 0.026295039263796727
+
+2023-09-04 11:30:44,879 - WORCESTER-AWS - INFO - This is the mae: 0.018639582010811742
+
+2023-09-04 11:30:44,879 - WORCESTER-AWS - INFO - This is the smape: 4.6618632054025575
+
+2023-09-04 11:30:44,879 - WORCESTER-AWS - INFO - This is the smape_std_dev: 5.448424476606962
+
+2023-09-04 11:30:44,879 - WORCESTER-AWS - INFO - TCN evaluation of WORCESTER-AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:46,580 - WORCESTER-AWS - INFO - TCN evaluation started atWORCESTER-AWS for the horizon of 6 for split 0
+2023-09-04 11:30:46,618 - WORCESTER-AWS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.215217   0.225729
+1      0.223913   0.230041
+2      0.219565   0.239682
+3      0.215217   0.249224
+4      0.226087   0.258850
+...         ...        ...
+52231  0.497826   0.473085
+52232  0.471739   0.449662
+52233  0.423913   0.430565
+52234  0.384783   0.411053
+52235  0.363043   0.397321
+
+[52236 rows x 2 columns]
+2023-09-04 11:30:46,618 - WORCESTER-AWS - INFO - saved to file :Results/TCN/6 Hour Forecast/WORCESTER-AWS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:46,618 - WORCESTER-AWS - INFO - This is the mse: 0.0011348191629547365
+
+2023-09-04 11:30:46,619 - WORCESTER-AWS - INFO - This is the rmse: 0.03368707709129328
+
+2023-09-04 11:30:46,619 - WORCESTER-AWS - INFO - This is the mae: 0.023963353034329983
+
+2023-09-04 11:30:46,619 - WORCESTER-AWS - INFO - This is the smape: 5.923245101358128
+
+2023-09-04 11:30:46,619 - WORCESTER-AWS - INFO - This is the smape_std_dev: 6.732322282256665
+
+2023-09-04 11:30:46,619 - WORCESTER-AWS - INFO - TCN evaluation of WORCESTER-AWS for the horizon of 6 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:48,879 - WORCESTER-AWS - INFO - TCN evaluation started atWORCESTER-AWS for the horizon of 9 for split 0
+2023-09-04 11:30:48,932 - WORCESTER-AWS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.417391   0.379509
+1      0.491304   0.440399
+2      0.619565   0.504238
+3      0.639130   0.571774
+4      0.652174   0.630008
+...         ...        ...
+78322  0.384783   0.394800
+78323  0.363043   0.378395
+78324  0.356522   0.365122
+78325  0.339130   0.351526
+78326  0.319565   0.336070
+
+[78327 rows x 2 columns]
+2023-09-04 11:30:48,932 - WORCESTER-AWS - INFO - saved to file :Results/TCN/9 Hour Forecast/WORCESTER-AWS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:48,932 - WORCESTER-AWS - INFO - This is the mse: 0.0017553046286678381
+
+2023-09-04 11:30:48,932 - WORCESTER-AWS - INFO - This is the rmse: 0.04189635579221465
+
+2023-09-04 11:30:48,933 - WORCESTER-AWS - INFO - This is the mae: 0.030001086851086947
+
+2023-09-04 11:30:48,933 - WORCESTER-AWS - INFO - This is the smape: 7.310133637484399
+
+2023-09-04 11:30:48,933 - WORCESTER-AWS - INFO - This is the smape_std_dev: 7.9954363855704935
+
+2023-09-04 11:30:48,933 - WORCESTER-AWS - INFO - TCN evaluation of WORCESTER-AWS for the horizon of 9 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:51,931 - WORCESTER-AWS - INFO - TCN evaluation started atWORCESTER-AWS for the horizon of 12 for split 0
+2023-09-04 11:30:51,990 - WORCESTER-AWS - INFO - actual vs prediced is :          Actual  Predicted
+0       0.417391   0.412946
+1       0.491304   0.482655
+2       0.619565   0.550637
+3       0.639130   0.607612
+4       0.652174   0.661462
+...          ...        ...
+104395  0.339130   0.353335
+104396  0.319565   0.336907
+104397  0.310870   0.326161
+104398  0.300000   0.326439
+104399  0.310870   0.335335
+
+[104400 rows x 2 columns]
+2023-09-04 11:30:51,990 - WORCESTER-AWS - INFO - saved to file :Results/TCN/12 Hour Forecast/WORCESTER-AWS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:51,990 - WORCESTER-AWS - INFO - This is the mse: 0.001978353455565604
+
+2023-09-04 11:30:51,990 - WORCESTER-AWS - INFO - This is the rmse: 0.04447868540734544
+
+2023-09-04 11:30:51,990 - WORCESTER-AWS - INFO - This is the mae: 0.03189727711739422
+
+2023-09-04 11:30:51,991 - WORCESTER-AWS - INFO - This is the smape: 7.7838780534662355
+
+2023-09-04 11:30:51,991 - WORCESTER-AWS - INFO - This is the smape_std_dev: 8.462551351114518
+
+2023-09-04 11:30:51,991 - WORCESTER-AWS - INFO - TCN evaluation of WORCESTER-AWS for the horizon of 12 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:58,109 - WORCESTER-AWS - INFO - TCN evaluation started atWORCESTER-AWS for the horizon of 24 for split 0
+2023-09-04 11:30:58,238 - WORCESTER-AWS - INFO - actual vs prediced is :          Actual  Predicted
+0       0.367391   0.348782
+1       0.356522   0.328803
+2       0.339130   0.308913
+3       0.332609   0.293057
+4       0.326087   0.279690
+...          ...        ...
+208507  0.741304   0.707572
+208508  0.750000   0.721181
+208509  0.741304   0.706790
+208510  0.660870   0.668320
+208511  0.600000   0.614520
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:58,239 - WORCESTER-AWS - INFO - saved to file :Results/TCN/24 Hour Forecast/WORCESTER-AWS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:58,239 - WORCESTER-AWS - INFO - This is the mse: 0.0029366058047208777
+
+2023-09-04 11:30:58,239 - WORCESTER-AWS - INFO - This is the rmse: 0.05419045861331013
+
+2023-09-04 11:30:58,239 - WORCESTER-AWS - INFO - This is the mae: 0.0398542717776022
+
+2023-09-04 11:30:58,239 - WORCESTER-AWS - INFO - This is the smape: 9.780983042580191
+
+2023-09-04 11:30:58,240 - WORCESTER-AWS - INFO - This is the smape_std_dev: 10.381173023671407
+
+2023-09-04 11:30:58,240 - WORCESTER-AWS - INFO - TCN evaluation of WORCESTER-AWS for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:58,240 - WORCESTER-AWS - INFO - Finished evaluation of TCN error metrics for all stations.

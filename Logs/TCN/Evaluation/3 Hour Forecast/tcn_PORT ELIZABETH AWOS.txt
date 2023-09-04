@@ -179,3 +179,138 @@
 2023-08-13 13:10:43,006 - PORT ELIZABETH AWOS - INFO - TCN evaluation of PORT ELIZABETH AWOS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
 2023-08-13 13:10:43,006 - PORT ELIZABETH AWOS - INFO - Finished evaluation of TCN error metrics for all stations.
 2023-08-13 13:10:43,006 - PORT ELIZABETH AWOS - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-09-04 11:30:44,366 - PORT ELIZABETH AWOS - INFO - TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 3 for split 0
+2023-09-04 11:30:44,395 - PORT ELIZABETH AWOS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.290576   0.269029
+1      0.264398   0.243991
+2      0.277487   0.229251
+3      0.342932   0.329371
+4      0.340314   0.324916
+...         ...        ...
+26122  0.426702   0.276817
+26123  0.403141   0.288201
+26124  0.416230   0.401614
+26125  0.424084   0.398714
+26126  0.418848   0.405090
+
+[26127 rows x 2 columns]
+2023-09-04 11:30:44,395 - PORT ELIZABETH AWOS - INFO - saved to file :Results/TCN/3 Hour Forecast/PORT ELIZABETH AWOS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:44,395 - PORT ELIZABETH AWOS - INFO - This is the mse: 0.0012021274051873959
+
+2023-09-04 11:30:44,395 - PORT ELIZABETH AWOS - INFO - This is the rmse: 0.034671709002981034
+
+2023-09-04 11:30:44,395 - PORT ELIZABETH AWOS - INFO - This is the mae: 0.02361399206063175
+
+2023-09-04 11:30:44,395 - PORT ELIZABETH AWOS - INFO - This is the smape: 6.147270402979231
+
+2023-09-04 11:30:44,395 - PORT ELIZABETH AWOS - INFO - This is the smape_std_dev: 8.402118901883444
+
+2023-09-04 11:30:44,395 - PORT ELIZABETH AWOS - INFO - TCN evaluation of PORT ELIZABETH AWOS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:45,979 - PORT ELIZABETH AWOS - INFO - TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 6 for split 0
+2023-09-04 11:30:46,022 - PORT ELIZABETH AWOS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.290576   0.269912
+1      0.264398   0.248846
+2      0.277487   0.232276
+3      0.321990   0.210955
+4      0.282723   0.197673
+...         ...        ...
+52231  0.424084   0.394764
+52232  0.418848   0.391950
+52233  0.413613   0.390693
+52234  0.400524   0.388943
+52235  0.400524   0.387769
+
+[52236 rows x 2 columns]
+2023-09-04 11:30:46,022 - PORT ELIZABETH AWOS - INFO - saved to file :Results/TCN/6 Hour Forecast/PORT ELIZABETH AWOS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:46,022 - PORT ELIZABETH AWOS - INFO - This is the mse: 0.0017788940323389508
+
+2023-09-04 11:30:46,022 - PORT ELIZABETH AWOS - INFO - This is the rmse: 0.04217693720908325
+
+2023-09-04 11:30:46,023 - PORT ELIZABETH AWOS - INFO - This is the mae: 0.029008151816020046
+
+2023-09-04 11:30:46,023 - PORT ELIZABETH AWOS - INFO - This is the smape: 7.458763711222896
+
+2023-09-04 11:30:46,023 - PORT ELIZABETH AWOS - INFO - This is the smape_std_dev: 9.459851588525861
+
+2023-09-04 11:30:46,023 - PORT ELIZABETH AWOS - INFO - TCN evaluation of PORT ELIZABETH AWOS for the horizon of 6 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:48,050 - PORT ELIZABETH AWOS - INFO - TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 9 for split 0
+2023-09-04 11:30:48,096 - PORT ELIZABETH AWOS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.520942   0.530494
+1      0.596859   0.578770
+2      0.628272   0.614829
+3      0.664921   0.634857
+4      0.709424   0.641496
+...         ...        ...
+78322  0.400524   0.390478
+78323  0.400524   0.385888
+78324  0.395288   0.382006
+78325  0.387435   0.376744
+78326  0.400524   0.373250
+
+[78327 rows x 2 columns]
+2023-09-04 11:30:48,096 - PORT ELIZABETH AWOS - INFO - saved to file :Results/TCN/9 Hour Forecast/PORT ELIZABETH AWOS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:48,096 - PORT ELIZABETH AWOS - INFO - This is the mse: 0.002020768924439058
+
+2023-09-04 11:30:48,096 - PORT ELIZABETH AWOS - INFO - This is the rmse: 0.044952963466706596
+
+2023-09-04 11:30:48,097 - PORT ELIZABETH AWOS - INFO - This is the mae: 0.03140815672389433
+
+2023-09-04 11:30:48,097 - PORT ELIZABETH AWOS - INFO - This is the smape: 8.058906684406669
+
+2023-09-04 11:30:48,097 - PORT ELIZABETH AWOS - INFO - This is the smape_std_dev: 9.9700761595689
+
+2023-09-04 11:30:48,097 - PORT ELIZABETH AWOS - INFO - TCN evaluation of PORT ELIZABETH AWOS for the horizon of 9 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:50,957 - PORT ELIZABETH AWOS - INFO - TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 12 for split 0
+2023-09-04 11:30:51,015 - PORT ELIZABETH AWOS - INFO - actual vs prediced is :          Actual  Predicted
+0       0.520942   0.521011
+1       0.596859   0.573516
+2       0.628272   0.607746
+3       0.664921   0.627569
+4       0.709424   0.632587
+...          ...        ...
+104395  0.387435   0.355343
+104396  0.400524   0.348141
+104397  0.390052   0.350451
+104398  0.342932   0.359249
+104399  0.324607   0.378209
+
+[104400 rows x 2 columns]
+2023-09-04 11:30:51,015 - PORT ELIZABETH AWOS - INFO - saved to file :Results/TCN/12 Hour Forecast/PORT ELIZABETH AWOS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:51,015 - PORT ELIZABETH AWOS - INFO - This is the mse: 0.002266261920854277
+
+2023-09-04 11:30:51,015 - PORT ELIZABETH AWOS - INFO - This is the rmse: 0.047605271985929
+
+2023-09-04 11:30:51,015 - PORT ELIZABETH AWOS - INFO - This is the mae: 0.03326460636698918
+
+2023-09-04 11:30:51,016 - PORT ELIZABETH AWOS - INFO - This is the smape: 8.527484986860676
+
+2023-09-04 11:30:51,016 - PORT ELIZABETH AWOS - INFO - This is the smape_std_dev: 10.53312099050972
+
+2023-09-04 11:30:51,016 - PORT ELIZABETH AWOS - INFO - TCN evaluation of PORT ELIZABETH AWOS for the horizon of 12 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:55,589 - PORT ELIZABETH AWOS - INFO - TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 24 for split 0
+2023-09-04 11:30:55,729 - PORT ELIZABETH AWOS - INFO - actual vs prediced is :          Actual  Predicted
+0       0.361257   0.367360
+1       0.353403   0.354194
+2       0.348168   0.342053
+3       0.348168   0.329349
+4       0.335079   0.323194
+...          ...        ...
+208507  0.502618   0.534881
+208508  0.479058   0.513744
+208509  0.460733   0.489397
+208510  0.447644   0.468245
+208511  0.431937   0.446097
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:55,729 - PORT ELIZABETH AWOS - INFO - saved to file :Results/TCN/24 Hour Forecast/PORT ELIZABETH AWOS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:55,730 - PORT ELIZABETH AWOS - INFO - This is the mse: 0.0030359778150504265
+
+2023-09-04 11:30:55,730 - PORT ELIZABETH AWOS - INFO - This is the rmse: 0.05509970793979244
+
+2023-09-04 11:30:55,730 - PORT ELIZABETH AWOS - INFO - This is the mae: 0.03918233268049911
+
+2023-09-04 11:30:55,731 - PORT ELIZABETH AWOS - INFO - This is the smape: 9.970367921540175
+
+2023-09-04 11:30:55,731 - PORT ELIZABETH AWOS - INFO - This is the smape_std_dev: 11.590206145434351
+
+2023-09-04 11:30:55,732 - PORT ELIZABETH AWOS - INFO - TCN evaluation of PORT ELIZABETH AWOS for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

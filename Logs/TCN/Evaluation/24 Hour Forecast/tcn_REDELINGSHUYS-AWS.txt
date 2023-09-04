@@ -1,2 +1,29 @@
 2023-08-05 13:45:57,481 - REDELINGSHUYS-AWS - INFO - TCN evaluation started atREDELINGSHUYS-AWS for the horizon of 24
 2023-08-05 13:45:57,482 - REDELINGSHUYS-AWS - ERROR - Error! : Unable to read data or write metrics for station REDELINGSHUYS-AWS and horizon length 24.
+2023-09-04 11:30:56,504 - REDELINGSHUYS-AWS - INFO - TCN evaluation started atREDELINGSHUYS-AWS for the horizon of 24 for split 0
+2023-09-04 11:30:56,673 - REDELINGSHUYS-AWS - INFO - actual vs prediced is :          Actual  Predicted
+0       0.261134   0.275254
+1       0.251012   0.251344
+2       0.214575   0.235976
+3       0.180162   0.227105
+4       0.174089   0.211050
+...          ...        ...
+208507  0.791498   0.729268
+208508  0.813765   0.718070
+208509  0.759109   0.684799
+208510  0.702429   0.636258
+208511  0.663968   0.576940
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:56,673 - REDELINGSHUYS-AWS - INFO - saved to file :Results/TCN/24 Hour Forecast/REDELINGSHUYS-AWS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:56,673 - REDELINGSHUYS-AWS - INFO - This is the mse: 0.0037123216559733995
+
+2023-09-04 11:30:56,674 - REDELINGSHUYS-AWS - INFO - This is the rmse: 0.06092882450838354
+
+2023-09-04 11:30:56,674 - REDELINGSHUYS-AWS - INFO - This is the mae: 0.04567207587018246
+
+2023-09-04 11:30:56,674 - REDELINGSHUYS-AWS - INFO - This is the smape: 11.959422474135728
+
+2023-09-04 11:30:56,674 - REDELINGSHUYS-AWS - INFO - This is the smape_std_dev: 12.66382846712332
+
+2023-09-04 11:30:56,675 - REDELINGSHUYS-AWS - INFO - TCN evaluation of REDELINGSHUYS-AWS for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

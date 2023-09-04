@@ -179,3 +179,138 @@
 2023-08-13 13:10:43,080 - PORT NOLLOTH - INFO - TCN evaluation of PORT NOLLOTH for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
 2023-08-13 13:10:43,081 - PORT NOLLOTH - INFO - Finished evaluation of TCN error metrics for all stations.
 2023-08-13 13:10:43,081 - PORT NOLLOTH - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-09-04 11:30:44,426 - PORT NOLLOTH - INFO - TCN evaluation started atPORT NOLLOTH for the horizon of 3 for split 0
+2023-09-04 11:30:44,455 - PORT NOLLOTH - INFO - actual vs prediced is :         Actual  Predicted
+0      0.403270   0.348200
+1      0.351499   0.343862
+2      0.337875   0.345535
+3      0.288828   0.280995
+4      0.280654   0.285000
+...         ...        ...
+26122  0.272480   0.298938
+26123  0.277929   0.296936
+26124  0.547684   0.571148
+26125  0.583106   0.539370
+26126  0.504087   0.515285
+
+[26127 rows x 2 columns]
+2023-09-04 11:30:44,456 - PORT NOLLOTH - INFO - saved to file :Results/TCN/3 Hour Forecast/PORT NOLLOTH/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:44,456 - PORT NOLLOTH - INFO - This is the mse: 0.0014131828419804645
+
+2023-09-04 11:30:44,456 - PORT NOLLOTH - INFO - This is the rmse: 0.03759232424286193
+
+2023-09-04 11:30:44,456 - PORT NOLLOTH - INFO - This is the mae: 0.02265654882199401
+
+2023-09-04 11:30:44,456 - PORT NOLLOTH - INFO - This is the smape: 7.059990641502243
+
+2023-09-04 11:30:44,456 - PORT NOLLOTH - INFO - This is the smape_std_dev: 9.208349552185867
+
+2023-09-04 11:30:44,456 - PORT NOLLOTH - INFO - TCN evaluation of PORT NOLLOTH for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:46,063 - PORT NOLLOTH - INFO - TCN evaluation started atPORT NOLLOTH for the horizon of 6 for split 0
+2023-09-04 11:30:46,096 - PORT NOLLOTH - INFO - actual vs prediced is :         Actual  Predicted
+0      0.403270   0.343231
+1      0.351499   0.338898
+2      0.337875   0.331697
+3      0.346049   0.324671
+4      0.340599   0.320771
+...         ...        ...
+52231  0.583106   0.542342
+52232  0.504087   0.524399
+52233  0.433243   0.501811
+52234  0.435967   0.481291
+52235  0.430518   0.478100
+
+[52236 rows x 2 columns]
+2023-09-04 11:30:46,097 - PORT NOLLOTH - INFO - saved to file :Results/TCN/6 Hour Forecast/PORT NOLLOTH/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:46,097 - PORT NOLLOTH - INFO - This is the mse: 0.0020943349668224244
+
+2023-09-04 11:30:46,097 - PORT NOLLOTH - INFO - This is the rmse: 0.045763904628237574
+
+2023-09-04 11:30:46,097 - PORT NOLLOTH - INFO - This is the mae: 0.02786157424737348
+
+2023-09-04 11:30:46,097 - PORT NOLLOTH - INFO - This is the smape: 8.730288400513244
+
+2023-09-04 11:30:46,097 - PORT NOLLOTH - INFO - This is the smape_std_dev: 11.304541826401865
+
+2023-09-04 11:30:46,097 - PORT NOLLOTH - INFO - TCN evaluation of PORT NOLLOTH for the horizon of 6 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:48,146 - PORT NOLLOTH - INFO - TCN evaluation started atPORT NOLLOTH for the horizon of 9 for split 0
+2023-09-04 11:30:48,201 - PORT NOLLOTH - INFO - actual vs prediced is :         Actual  Predicted
+0      0.267030   0.312074
+1      0.264305   0.343436
+2      0.310627   0.369256
+3      0.359673   0.393468
+4      0.386921   0.408056
+...         ...        ...
+78322  0.435967   0.461588
+78323  0.430518   0.454378
+78324  0.435967   0.444179
+78325  0.427793   0.442190
+78326  0.438692   0.440453
+
+[78327 rows x 2 columns]
+2023-09-04 11:30:48,201 - PORT NOLLOTH - INFO - saved to file :Results/TCN/9 Hour Forecast/PORT NOLLOTH/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:48,201 - PORT NOLLOTH - INFO - This is the mse: 0.0025888884857966257
+
+2023-09-04 11:30:48,201 - PORT NOLLOTH - INFO - This is the rmse: 0.05088112111379451
+
+2023-09-04 11:30:48,201 - PORT NOLLOTH - INFO - This is the mae: 0.030910268821922927
+
+2023-09-04 11:30:48,201 - PORT NOLLOTH - INFO - This is the smape: 9.625951103730987
+
+2023-09-04 11:30:48,202 - PORT NOLLOTH - INFO - This is the smape_std_dev: 12.123019662631759
+
+2023-09-04 11:30:48,202 - PORT NOLLOTH - INFO - TCN evaluation of PORT NOLLOTH for the horizon of 9 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:51,076 - PORT NOLLOTH - INFO - TCN evaluation started atPORT NOLLOTH for the horizon of 12 for split 0
+2023-09-04 11:30:51,135 - PORT NOLLOTH - INFO - actual vs prediced is :          Actual  Predicted
+0       0.267030   0.308777
+1       0.264305   0.347116
+2       0.310627   0.377423
+3       0.359673   0.400240
+4       0.386921   0.414746
+...          ...        ...
+104395  0.427793   0.456397
+104396  0.438692   0.448717
+104397  0.542234   0.440458
+104398  0.591281   0.448034
+104399  0.501362   0.449619
+
+[104400 rows x 2 columns]
+2023-09-04 11:30:51,135 - PORT NOLLOTH - INFO - saved to file :Results/TCN/12 Hour Forecast/PORT NOLLOTH/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:51,135 - PORT NOLLOTH - INFO - This is the mse: 0.0030685341388574706
+
+2023-09-04 11:30:51,135 - PORT NOLLOTH - INFO - This is the rmse: 0.05539435114573932
+
+2023-09-04 11:30:51,135 - PORT NOLLOTH - INFO - This is the mae: 0.03386577116636895
+
+2023-09-04 11:30:51,136 - PORT NOLLOTH - INFO - This is the smape: 10.542973125996264
+
+2023-09-04 11:30:51,136 - PORT NOLLOTH - INFO - This is the smape_std_dev: 13.157870238160655
+
+2023-09-04 11:30:51,136 - PORT NOLLOTH - INFO - TCN evaluation of PORT NOLLOTH for the horizon of 12 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:55,989 - PORT NOLLOTH - INFO - TCN evaluation started atPORT NOLLOTH for the horizon of 24 for split 0
+2023-09-04 11:30:56,160 - PORT NOLLOTH - INFO - actual vs prediced is :          Actual  Predicted
+0       0.245232   0.214666
+1       0.239782   0.209519
+2       0.237057   0.202455
+3       0.239782   0.194878
+4       0.226158   0.185251
+...          ...        ...
+208507  0.713896   0.603941
+208508  0.762943   0.590190
+208509  0.490463   0.571003
+208510  0.569482   0.552598
+208511  0.520436   0.529517
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:56,160 - PORT NOLLOTH - INFO - saved to file :Results/TCN/24 Hour Forecast/PORT NOLLOTH/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:56,161 - PORT NOLLOTH - INFO - This is the mse: 0.0038551488411723875
+
+2023-09-04 11:30:56,161 - PORT NOLLOTH - INFO - This is the rmse: 0.06208984491180814
+
+2023-09-04 11:30:56,161 - PORT NOLLOTH - INFO - This is the mae: 0.038192807130639245
+
+2023-09-04 11:30:56,161 - PORT NOLLOTH - INFO - This is the smape: 11.819022132730456
+
+2023-09-04 11:30:56,162 - PORT NOLLOTH - INFO - This is the smape_std_dev: 14.330766199082746
+
+2023-09-04 11:30:56,162 - PORT NOLLOTH - INFO - TCN evaluation of PORT NOLLOTH for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

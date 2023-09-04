@@ -179,3 +179,138 @@
 2023-08-13 13:10:43,396 - UITENHAGE - INFO - TCN evaluation of UITENHAGE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
 2023-08-13 13:10:43,396 - UITENHAGE - INFO - Finished evaluation of TCN error metrics for all stations.
 2023-08-13 13:10:43,396 - UITENHAGE - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-09-04 11:30:44,667 - UITENHAGE - INFO - TCN evaluation started atUITENHAGE for the horizon of 3 for split 0
+2023-09-04 11:30:44,697 - UITENHAGE - INFO - actual vs prediced is :         Actual  Predicted
+0      0.212766   0.188812
+1      0.198582   0.178854
+2      0.330969   0.176243
+3      0.219858   0.256802
+4      0.198582   0.260296
+...         ...        ...
+26122  0.196217   0.245346
+26123  0.198582   0.247988
+26124  0.297872   0.311667
+26125  0.271868   0.296139
+26126  0.257683   0.286930
+
+[26127 rows x 2 columns]
+2023-09-04 11:30:44,698 - UITENHAGE - INFO - saved to file :Results/TCN/3 Hour Forecast/UITENHAGE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:44,698 - UITENHAGE - INFO - This is the mse: 0.0017680182426336858
+
+2023-09-04 11:30:44,698 - UITENHAGE - INFO - This is the rmse: 0.04204780901109695
+
+2023-09-04 11:30:44,698 - UITENHAGE - INFO - This is the mae: 0.028506319637629386
+
+2023-09-04 11:30:44,698 - UITENHAGE - INFO - This is the smape: 8.14619007234016
+
+2023-09-04 11:30:44,698 - UITENHAGE - INFO - This is the smape_std_dev: 11.52571137406848
+
+2023-09-04 11:30:44,698 - UITENHAGE - INFO - TCN evaluation of UITENHAGE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:46,360 - UITENHAGE - INFO - TCN evaluation started atUITENHAGE for the horizon of 6 for split 0
+2023-09-04 11:30:46,395 - UITENHAGE - INFO - actual vs prediced is :         Actual  Predicted
+0      0.212766   0.228416
+1      0.198582   0.228248
+2      0.330969   0.230576
+3      0.368794   0.233030
+4      0.397163   0.236327
+...         ...        ...
+52231  0.271868   0.287206
+52232  0.257683   0.274782
+52233  0.243499   0.265881
+52234  0.236407   0.260820
+52235  0.219858   0.260739
+
+[52236 rows x 2 columns]
+2023-09-04 11:30:46,395 - UITENHAGE - INFO - saved to file :Results/TCN/6 Hour Forecast/UITENHAGE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:46,395 - UITENHAGE - INFO - This is the mse: 0.0028035594603242125
+
+2023-09-04 11:30:46,395 - UITENHAGE - INFO - This is the rmse: 0.052948649277618144
+
+2023-09-04 11:30:46,395 - UITENHAGE - INFO - This is the mae: 0.036426341849391024
+
+2023-09-04 11:30:46,395 - UITENHAGE - INFO - This is the smape: 10.169159257169927
+
+2023-09-04 11:30:46,395 - UITENHAGE - INFO - This is the smape_std_dev: 13.078274601995904
+
+2023-09-04 11:30:46,396 - UITENHAGE - INFO - TCN evaluation of UITENHAGE for the horizon of 6 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:48,560 - UITENHAGE - INFO - TCN evaluation started atUITENHAGE for the horizon of 9 for split 0
+2023-09-04 11:30:48,609 - UITENHAGE - INFO - actual vs prediced is :         Actual  Predicted
+0      0.482270   0.513084
+1      0.553191   0.587372
+2      0.628842   0.652067
+3      0.739953   0.694312
+4      0.794326   0.710002
+...         ...        ...
+78322  0.236407   0.255688
+78323  0.219858   0.249705
+78324  0.205674   0.243296
+78325  0.198582   0.235851
+78326  0.189125   0.231271
+
+[78327 rows x 2 columns]
+2023-09-04 11:30:48,609 - UITENHAGE - INFO - saved to file :Results/TCN/9 Hour Forecast/UITENHAGE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:48,610 - UITENHAGE - INFO - This is the mse: 0.003379568445683856
+
+2023-09-04 11:30:48,610 - UITENHAGE - INFO - This is the rmse: 0.05813405581656811
+
+2023-09-04 11:30:48,610 - UITENHAGE - INFO - This is the mae: 0.0407255693091392
+
+2023-09-04 11:30:48,610 - UITENHAGE - INFO - This is the smape: 11.345024681129324
+
+2023-09-04 11:30:48,610 - UITENHAGE - INFO - This is the smape_std_dev: 13.86598769866816
+
+2023-09-04 11:30:48,610 - UITENHAGE - INFO - TCN evaluation of UITENHAGE for the horizon of 9 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:51,555 - UITENHAGE - INFO - TCN evaluation started atUITENHAGE for the horizon of 12 for split 0
+2023-09-04 11:30:51,611 - UITENHAGE - INFO - actual vs prediced is :          Actual  Predicted
+0       0.482270   0.509082
+1       0.553191   0.583001
+2       0.628842   0.647854
+3       0.739953   0.694076
+4       0.794326   0.720696
+...          ...        ...
+104395  0.198582   0.232567
+104396  0.189125   0.225380
+104397  0.186761   0.224324
+104398  0.172577   0.232806
+104399  0.165485   0.253907
+
+[104400 rows x 2 columns]
+2023-09-04 11:30:51,611 - UITENHAGE - INFO - saved to file :Results/TCN/12 Hour Forecast/UITENHAGE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:51,611 - UITENHAGE - INFO - This is the mse: 0.004053668172057401
+
+2023-09-04 11:30:51,611 - UITENHAGE - INFO - This is the rmse: 0.06366842366556126
+
+2023-09-04 11:30:51,611 - UITENHAGE - INFO - This is the mae: 0.04480515468530974
+
+2023-09-04 11:30:51,611 - UITENHAGE - INFO - This is the smape: 12.415675681349809
+
+2023-09-04 11:30:51,612 - UITENHAGE - INFO - This is the smape_std_dev: 14.978268084503465
+
+2023-09-04 11:30:51,612 - UITENHAGE - INFO - TCN evaluation of UITENHAGE for the horizon of 12 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:57,360 - UITENHAGE - INFO - TCN evaluation started atUITENHAGE for the horizon of 24 for split 0
+2023-09-04 11:30:57,502 - UITENHAGE - INFO - actual vs prediced is :          Actual  Predicted
+0       0.349882   0.345505
+1       0.342790   0.331122
+2       0.342790   0.318958
+3       0.312057   0.308032
+4       0.302600   0.297799
+...          ...        ...
+208507  0.543735   0.581557
+208508  0.520095   0.552542
+208509  0.486998   0.509360
+208510  0.444444   0.457680
+208511  0.408983   0.406398
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:57,502 - UITENHAGE - INFO - saved to file :Results/TCN/24 Hour Forecast/UITENHAGE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - This is the mse: 0.005459689876572297
+
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - This is the rmse: 0.07388971428130099
+
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - This is the mae: 0.053656431913443756
+
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - This is the smape: 14.74312334228855
+
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - This is the smape_std_dev: 16.67736360381011
+
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - TCN evaluation of UITENHAGE for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

@@ -1,2 +1,29 @@
 2023-08-05 13:45:57,346 - LANGGEWENS - INFO - TCN evaluation started atLANGGEWENS for the horizon of 24
 2023-08-05 13:45:57,347 - LANGGEWENS - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 24.
+2023-09-04 11:30:54,655 - LANGGEWENS - INFO - TCN evaluation started atLANGGEWENS for the horizon of 24 for split 0
+2023-09-04 11:30:54,770 - LANGGEWENS - INFO - actual vs prediced is :          Actual  Predicted
+0       0.175610   0.174709
+1       0.163415   0.174067
+2       0.153659   0.172289
+3       0.134146   0.168792
+4       0.129268   0.164485
+...          ...        ...
+208507  0.748780   0.703120
+208508  0.778049   0.700605
+208509  0.746341   0.672636
+208510  0.670732   0.618630
+208511  0.573171   0.559355
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:54,770 - LANGGEWENS - INFO - saved to file :Results/TCN/24 Hour Forecast/LANGGEWENS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:54,772 - LANGGEWENS - INFO - This is the mse: 0.003220126270946391
+
+2023-09-04 11:30:54,773 - LANGGEWENS - INFO - This is the rmse: 0.056746156442056855
+
+2023-09-04 11:30:54,773 - LANGGEWENS - INFO - This is the mae: 0.042412588899646185
+
+2023-09-04 11:30:54,774 - LANGGEWENS - INFO - This is the smape: 12.392594261327403
+
+2023-09-04 11:30:54,774 - LANGGEWENS - INFO - This is the smape_std_dev: 11.829751880212584
+
+2023-09-04 11:30:54,775 - LANGGEWENS - INFO - TCN evaluation of LANGGEWENS for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

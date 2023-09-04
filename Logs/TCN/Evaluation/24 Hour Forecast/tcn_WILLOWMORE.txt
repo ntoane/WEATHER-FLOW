@@ -1,2 +1,29 @@
 2023-08-05 13:45:57,518 - WILLOWMORE - INFO - TCN evaluation started atWILLOWMORE for the horizon of 24
 2023-08-05 13:45:57,520 - WILLOWMORE - ERROR - Error! : Unable to read data or write metrics for station WILLOWMORE and horizon length 24.
+2023-09-04 11:30:57,988 - WILLOWMORE - INFO - TCN evaluation started atWILLOWMORE for the horizon of 24 for split 0
+2023-09-04 11:30:58,107 - WILLOWMORE - INFO - actual vs prediced is :          Actual  Predicted
+0       0.309577   0.302719
+1       0.300668   0.289129
+2       0.278396   0.283138
+3       0.260579   0.279978
+4       0.309577   0.274452
+...          ...        ...
+208507  0.601336   0.591209
+208508  0.623608   0.587723
+208509  0.619154   0.565675
+208510  0.536748   0.529653
+208511  0.467706   0.491320
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:58,107 - WILLOWMORE - INFO - saved to file :Results/TCN/24 Hour Forecast/WILLOWMORE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:58,108 - WILLOWMORE - INFO - This is the mse: 0.004213177130012861
+
+2023-09-04 11:30:58,108 - WILLOWMORE - INFO - This is the rmse: 0.06490899113383955
+
+2023-09-04 11:30:58,108 - WILLOWMORE - INFO - This is the mae: 0.04801178947814984
+
+2023-09-04 11:30:58,108 - WILLOWMORE - INFO - This is the smape: 12.076953220169985
+
+2023-09-04 11:30:58,108 - WILLOWMORE - INFO - This is the smape_std_dev: 13.506737061581134
+
+2023-09-04 11:30:58,109 - WILLOWMORE - INFO - TCN evaluation of WILLOWMORE for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

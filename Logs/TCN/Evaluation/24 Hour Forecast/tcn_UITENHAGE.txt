@@ -1,2 +1,29 @@
 2023-08-05 13:45:57,501 - UITENHAGE - INFO - TCN evaluation started atUITENHAGE for the horizon of 24
 2023-08-05 13:45:57,502 - UITENHAGE - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 24.
+2023-09-04 11:30:57,360 - UITENHAGE - INFO - TCN evaluation started atUITENHAGE for the horizon of 24 for split 0
+2023-09-04 11:30:57,502 - UITENHAGE - INFO - actual vs prediced is :          Actual  Predicted
+0       0.349882   0.345505
+1       0.342790   0.331122
+2       0.342790   0.318958
+3       0.312057   0.308032
+4       0.302600   0.297799
+...          ...        ...
+208507  0.543735   0.581557
+208508  0.520095   0.552542
+208509  0.486998   0.509360
+208510  0.444444   0.457680
+208511  0.408983   0.406398
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:57,502 - UITENHAGE - INFO - saved to file :Results/TCN/24 Hour Forecast/UITENHAGE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - This is the mse: 0.005459689876572297
+
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - This is the rmse: 0.07388971428130099
+
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - This is the mae: 0.053656431913443756
+
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - This is the smape: 14.74312334228855
+
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - This is the smape_std_dev: 16.67736360381011
+
+2023-09-04 11:30:57,503 - UITENHAGE - INFO - TCN evaluation of UITENHAGE for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
