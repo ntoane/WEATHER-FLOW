@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from Models.ASTGCN.astgcn import AstGcn
 import Utils.astgcnUtils as utils
-from Utils.astgcn_Data_PreProcess.data_preprocess import data_preprocess_AST_GCN, data_preprocess_HPO_AST_GCN, sliding_window_AST_GCN
+from Utils.astgcn_Data_PreProcess.data_preprocess import data_preprocess_AST_GCN, sliding_window_AST_GCN
 from Logs.modelLogger import modelLogger 
 
 class astgcnHPO:

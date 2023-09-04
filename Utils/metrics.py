@@ -15,6 +15,22 @@ def smape(actual, predicted):
 
     return np.mean(abs(predicted - actual) / ((abs(predicted) + abs(actual)) / 2)) * 100
 
+def ZeroAdjustedSMAPE(y_true, y_pred, epsilon=1e-6):
+    """
+    Calculates the zero-adjusted SMAPE metric
+    Parameters:
+        y_true - target values
+        y_pred - output values predicted by model
+        epsilon - small constant to avoid division by zero
+    Returns:
+        smape - returns zero-adjusted SMAPE metric
+    """
+    
+    denominator = (np.abs(y_true) + np.abs(y_pred) + epsilon) / 2
+    smape = np.mean(np.abs(y_pred - y_true) / denominator) * 100
+    return smape
+              
+
 def mse(target, pred):
     """
     Calculates the MSE metric

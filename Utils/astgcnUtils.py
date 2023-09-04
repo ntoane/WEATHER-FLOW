@@ -18,12 +18,12 @@ def generate_execute_file_paths(base_path):#, forecast_len, station):
         create_file_if_not_exists(path)
     return target_path, result_path, loss_path, actual_vs_predicted_path
 
-def get_file_paths(station, horizon, model='ASTGCN'):
+def get_file_paths(horizon):
     return {
-        "yhat": f'Results/{model}/{horizon} Hour Forecast/{station}/Predictions/result.csv',
-        "target": f'Results/{model}/{horizon} Hour Forecast/{station}/Targets/target.csv',
-        "metrics": f'Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt',
-        "actual_vs_predicted": f'Results/{model}/{horizon} Hour Forecast/{station}/Metrics/actual_vs_predicted.txt'
+        "yhat": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Predictions/result.csv',
+        "target": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Targets/target.csv',
+        "metrics": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/metrics.txt',
+        "actual_vs_predicted": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/actual_vs_predicted.txt'
     }
 
 def create_file_if_not_exists(file_path):
@@ -42,12 +42,21 @@ def dataSplit(split, series):
     test = series[split[1]:split[2]]
     return train, validation, test
 
-def min_max(train, validation, test, splits):
-    norm = MinMaxScaler().fit(train.reshape(train.shape[0], -1))
-    train_data = norm.transform(train.reshape(train.shape[0], -1))
-    val_data = norm.transform(validation.reshape(validation.shape[0], -1))
-    test_data = norm.transform(test.reshape(test.shape[0], -1))
-    return train_data, val_data, test_data, splits
+## Old incorrect normalizing methods
+# def min_max(train, validation, test, splits):
+#     norm = MinMaxScaler().fit(train.reshape(train.shape[0], -1))
+#     train_data = norm.transform(train.reshape(train.shape[0], -1))
+#     val_data = norm.transform(validation.reshape(validation.shape[0], -1))
+#     test_data = norm.transform(test.reshape(test.shape[0], -1))
+#     return train_data, val_data, test_data, splits
+
+# def normalize_data(attr_data):
+#     # Reshape the data if needed and fit the MinMaxScaler
+#     norm = MinMaxScaler().fit(attr_data.reshape(attr_data.shape[0], -1))
+#     # Transform the data
+#     normalized_data = norm.transform(attr_data.reshape(attr_data.shape[0], -1))
+#     # Reshape the data back to its original shape if needed
+#     return normalized_data.reshape(attr_data.shape)
 
 def create_X_Y(ts: np.array, lag=1, num_nodes=1, n_ahead=1, target_index=0):
     X, Y = [], []
@@ -75,14 +84,11 @@ def calculate_laplacian(adj):
     return adj_normalized
 
 def prepare_data_astgcn(split,attribute_data, time_steps, num_nodes, forecast_len):
-    """
-    Split and normalize the attribute data and return the train, validation and test data.
-    """
-    train_attribute, val_attribute, test_attribute = dataSplit(split, attribute_data)
-    train_Attribute, val_Attribute, test_Attribute, split = min_max(train_attribute.values, val_attribute.values, test_attribute.values, split) 
+    train_Attribute, val_attribute, test_attribute = dataSplit(split, attribute_data)
+    # train_Attribute, val_Attribute, test_Attribute, split = min_max(train_attribute, val_attribute, test_attribute, split) 
     X_attribute_train, Y_attribute_train = create_X_Y(train_Attribute, time_steps, num_nodes, forecast_len)
-    X_val, Y_val = create_X_Y(val_Attribute, time_steps, num_nodes, forecast_len)
-    X_test, Y_test = create_X_Y(test_Attribute, time_steps, num_nodes, forecast_len)
+    # X_val, Y_val = create_X_Y(val_Attribute, time_steps, num_nodes, forecast_len)
+    # X_test, Y_test = create_X_Y(test_Attribute, time_steps, num_nodes, forecast_len)
     return X_attribute_train, Y_attribute_train
 
 def calculate_laplacian_astgcn(adj, num_nodes):
@@ -162,28 +168,7 @@ def MSE(target, pred):
     """
     return mean_squared_error(target, pred, squared=True)
 
-def RMSE(target, pred):
-    """
-    Calculates the RMSE metric
-    Parameters:
-        actual - target values
-        predicted - output values predicted by model
-    Returns:
-        root - returns RMSE metric
-    """
-    root = math.sqrt(mean_squared_error(target, pred))
-    return root
 
-def MAE(target, pred):
-    """
-    Calculates the MAE metric
-    Parameters:
-        actual - target values
-        predicted - output values predicted by model
-    Returns:
-        mae - returns MAE metric
-    """
-    return mean_absolute_error(target, pred)
 
 
 def generateRandomParameters(config):

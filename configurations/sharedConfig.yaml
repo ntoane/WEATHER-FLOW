@@ -47,6 +47,8 @@ increment:
   # just last split (set num_split=1)
   default: [52560, 61320, 70080]
 
+  # default: [1000, 1500, 3000]
+
   help:  (from davidson) List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 
     8784 is one year's worth of data, the next step is 3 months of data, and the following step is also 3 months of 
     data, resulting in rolling walk-forward validation where the train size increases each increment, with the 
@@ -54,6 +56,8 @@ increment:
 
 stations:
   type: str[]
+  # default: ['ADDO ELEPHANT PARK', 'ALEXANDERBAAI', 'ALIWAL-NORTH PLAATKOP', 'BARKLY-OOS (CAERLEON)',
+  #                'BRANDVLEI']
   default: ['ADDO ELEPHANT PARK', 'ALEXANDERBAAI', 'ALIWAL-NORTH PLAATKOP', 'BARKLY-OOS (CAERLEON)',
                 'BRANDVLEI', 'CALVINIA WO', 'CAPE TOWN WO', 'DE AAR WO', 'DOHNE - AGR', 'EAST LONDON WO',
                 'EXCELSIOR CERES', 'FORT BEAUFORT', 'FRASERBURG', 'GEORGE WITFONTEIN', 'GEORGE WO', 
@@ -66,8 +70,8 @@ stations:
 
 horizons:
   type: int[]
-  # default: [3, 6, 9, 12, 24]
-  default: [3, 6]
+  default: [3, 6, 9, 12, 24]
+  # default: [3, 6]
   # default: [9, 12]
   # default: [24]
   help: forecast horizons
