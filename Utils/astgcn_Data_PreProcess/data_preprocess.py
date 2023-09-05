@@ -7,12 +7,8 @@ from datetime import datetime,timedelta
 
 ###############################  AST-GCN pre-process methods  ###############################
 
-def data_preprocess_AST_GCN(station):
-    # Load and preprocess the weather station data & attribute data 
-    # station_name = 'DataNew/Weather Station Data/' + station + '.csv'
+def data_preprocess_AST_GCN():
     weather_data = pd.read_csv('DataNew/Graph Neural Network Data/Graph Station Data/graph.csv')
-    # weather_data = pd.read_csv(station_name)
-    # processed_data = weather_data[['Pressure', 'Humidity', 'Rain', 'Temperature']]
     processed_data = weather_data.drop(['StasName', 'DateT', 'Latitude', 'Longitude', 'WindDir', 'WindSpeed'], axis=1) 
     processed_data = np.array(processed_data) 
 
@@ -97,10 +93,8 @@ def get_timestamp_at_index(hours):
         formatted_date = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
         # Number of hours to add
         hours_to_add = hours//45
-
         # Create a timedelta representing the number of hours to add
         time_delta = timedelta(hours=hours_to_add)
-
         # Add the timedelta to the original date
         new_date = formatted_date + time_delta
         return new_date
