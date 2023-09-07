@@ -271,73 +271,84 @@ def AgcrnEval(modelConfig,sharedConfig):
 
         
 def evalASTGCN(config, sharedConfig):
-    stations = sharedConfig['stations']['default'] 
-    best_metrics = {}  # To store the best metrics for each station
+    stations = sharedConfig['stations']['default']
+    n_splits = sharedConfig['n_split']['default']
+    all_metrics = {}  # To store all metrics for each station
+    avg_metrics = {}
+    
     for horizon in sharedConfig['horizons']['default']:
-        for k in range(sharedConfig['n_split']['default']):
-            # logger = modelLogger('ASTGCN', 'All stations','Logs/ASTGCN/Eval/' + str(horizon) + ' Hour Forecast/'+ str(station) + '.txt' , log_enabled=False)
-            # logger.info("ASTGCN evaluation for single time-step started at all stations for the horizon of {horizon}")
+        for k in range(n_splits):
             fileDictionary = {
                 "yhat": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Predictions/result.csv',
                 "target": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Targets/target.csv',
-                "metrics": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/',
-                'metricFile1': '/split_' + str(k) + '_metrics.txt', 
-                "actual_vs_predicted": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/actual_vs_predicted.txt'
-                }
-            y_pred = pd.read_csv(fileDictionary["yhat"]).values
-            y_true = pd.read_csv(fileDictionary["target"]).values
+                 "metrics": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/',
+                 'metricFile1': '/split_' + str(k) + '_metrics.txt', 
+                 "actual_vs_predicted": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/actual_vs_predicted.txt'                 
+            }
             
-            actual_vs_predicted = pd.DataFrame({'Actual': y_true.flatten(), 'Predicted': y_pred.flatten()})
-            actual_vs_predicted.to_csv(fileDictionary['actual_vs_predicted'], index=False)
-        
-            for i in range(sharedConfig['n_stations']['default']):
-                station_pred = y_pred[i,1]
-                station_true = y_true[i,1]
-                
-                print("Evaluating horizon : "+ str(horizon) + "|  split : " + str(k) + "|  for station : " + stations[i])
-                print("Station_pred : ",station_pred)
-                print("station_true : ",station_true)
+            y_pred = pd.read_csv(fileDictionary["yhat"])['0'].values
+            y_true = pd.read_csv(fileDictionary["target"])['0'].values   
+            y_pred_reshaped = y_pred.reshape(-1, 45)
+            y_true_reshaped = y_true.reshape(-1, 45)
+            
+            for i in range(45):
+                station_pred = y_pred_reshaped[:, i]
+                station_true = y_true_reshaped[:, i]
                 
                 mse = metrics.mse(np.array([station_true]), np.array([station_pred]))
                 rmse = metrics.rmse(np.array([station_true]), np.array([station_pred]))
                 mae = metrics.mae(np.array([station_true]), np.array([station_pred]))
-                # smape = metrics.smape(np.array([station_true]), np.array([station_pred]))
-                smape = metrics.ZeroAdjustedSMAPE(np.array([station_true]), np.array([station_pred]))
-  
+                smape = metrics.smape(np.array([station_true]), np.array([station_pred]))
+
+                if stations[i] not in all_metrics:
+                    all_metrics[stations[i]] = {'mse': [], 'rmse': [], 'mae': [], 'smape': []}
+                
+                # Save all metrics
+                all_metrics[stations[i]]['mse'].append(mse)
+                all_metrics[stations[i]]['rmse'].append(rmse)
+                all_metrics[stations[i]]['mae'].append(mae)
+                all_metrics[stations[i]]['smape'].append(smape)
+
                 filePath =fileDictionary['metrics'] +str(stations[i])
                 if not os.path.exists(filePath):
                     os.makedirs(filePath)
-
-                print("This is the path : "+ filePath )
+                
                 with open(filePath + fileDictionary['metricFile1'], 'w') as file:
                     file.write('This is the RMSE ' + str(rmse) + '\n')
                     file.write('This is the MSE ' + str(mse) + '\n')
                     file.write('This is the MAE ' + str(mae) + '\n')
-                    file.write('This is the SMAPE ' + str(smape) + '\n')  
-                    # print('This is the SMAPE ' + str(smape) + '\n')   
-                
-                # Saving best metrics
-                if stations[i] not in best_metrics:
-                    best_metrics[stations[i]] = {'mse': mse, 'rmse': rmse, 'mae': mae, 'smape': smape}
-                else:
-                    if mse < best_metrics[stations[i]]['mse']:
-                        best_metrics[stations[i]]['mse'] = mse
-                    if rmse < best_metrics[stations[i]]['rmse']:
-                        best_metrics[stations[i]]['rmse'] = rmse
-                    if mae < best_metrics[stations[i]]['mae']:
-                        best_metrics[stations[i]]['mae'] = mae
-                    if smape < best_metrics[stations[i]]['smape']:
-                        best_metrics[stations[i]]['smape'] = smape
-        
-        # Once all splits are done, write the best metrics to a new file
-        for station in stations:
-            best_metric_file_path = f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/best_metrics_{station}.txt'
-            with open(best_metric_file_path, 'w') as file:
-                file.write('Best RMSE: ' + str(best_metrics[station]['rmse']) + '\n')
-                file.write('Best MSE: ' + str(best_metrics[station]['mse']) + '\n')
-                file.write('Best MAE: ' + str(best_metrics[station]['mae']) + '\n')
-                file.write('Best SMAPE: ' + str(best_metrics[station]['smape']) + '\n')
-        
+                    file.write('This is the SMAPE ' + str(smape) + '\n')   
+
+    # Loop through each station to calculate and save average metrics
+    for station in stations:
+        # Initialize an empty dictionary for the station in avg_metrics
+        avg_metrics[station] = {}
+        for metric in ['mse', 'rmse', 'mae', 'smape']:
+            # Calculate the average for the metric
+            avg_value = np.mean(all_metrics[station][metric])
+            # Store the average in avg_metrics
+            avg_metrics[station][metric] = avg_value
+            # Write the average metric to a file
+            best_metric_file_path = f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/average_metrics_{station}.txt'
+            with open(best_metric_file_path, 'a') as file:  # Using 'a' to append if the file already exists
+                file.write(f'Average {metric.upper()}: {avg_value}\n')
+    
+    # Find and save top 5 and bottom 5 stations for each metric
+    summary_file_path = f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/top_bottom_summary.txt'
+    with open(summary_file_path, 'w') as file:
+        for metric in ['smape']:
+            sorted_stations = sorted(stations, key=lambda x: avg_metrics[x][metric])
+            top_5_stations = sorted_stations[:5]
+            bottom_5_stations = sorted_stations[-5:]
+            
+            file.write(f'Top 5 stations for {metric.upper()}:\n')
+            for station in top_5_stations:
+                file.write(f'{station}: {avg_metrics[station][metric]}\n')
+            
+            file.write(f'\nBottom 5 stations for {metric.upper()}:\n')
+            for station in bottom_5_stations:
+                file.write(f'{station}: {avg_metrics[station][metric]}\n')
+            file.write('\n')
         
         
         

@@ -42,22 +42,6 @@ def dataSplit(split, series):
     test = series[split[1]:split[2]]
     return train, validation, test
 
-## Old incorrect normalizing methods
-# def min_max(train, validation, test, splits):
-#     norm = MinMaxScaler().fit(train.reshape(train.shape[0], -1))
-#     train_data = norm.transform(train.reshape(train.shape[0], -1))
-#     val_data = norm.transform(validation.reshape(validation.shape[0], -1))
-#     test_data = norm.transform(test.reshape(test.shape[0], -1))
-#     return train_data, val_data, test_data, splits
-
-# def normalize_data(attr_data):
-#     # Reshape the data if needed and fit the MinMaxScaler
-#     norm = MinMaxScaler().fit(attr_data.reshape(attr_data.shape[0], -1))
-#     # Transform the data
-#     normalized_data = norm.transform(attr_data.reshape(attr_data.shape[0], -1))
-#     # Reshape the data back to its original shape if needed
-#     return normalized_data.reshape(attr_data.shape)
-
 def create_X_Y(ts: np.array, lag=1, num_nodes=1, n_ahead=1, target_index=0):
     X, Y = [], []
     if len(ts) - lag - n_ahead + 1 <= 0:
@@ -85,10 +69,7 @@ def calculate_laplacian(adj):
 
 def prepare_data_astgcn(split,attribute_data, time_steps, num_nodes, forecast_len):
     train_Attribute, val_attribute, test_attribute = dataSplit(split, attribute_data)
-    # train_Attribute, val_Attribute, test_Attribute, split = min_max(train_attribute, val_attribute, test_attribute, split) 
     X_attribute_train, Y_attribute_train = create_X_Y(train_Attribute, time_steps, num_nodes, forecast_len)
-    # X_val, Y_val = create_X_Y(val_Attribute, time_steps, num_nodes, forecast_len)
-    # X_test, Y_test = create_X_Y(test_Attribute, time_steps, num_nodes, forecast_len)
     return X_attribute_train, Y_attribute_train
 
 def calculate_laplacian_astgcn(adj, num_nodes):
@@ -134,16 +115,25 @@ def weight_variable_glorot(input_dim, output_dim, name=""):
     # Return the weight variable
     return tf.Variable(initial,name=name)  
 
+# def SMAPE(actual, predicted):
+#     """
+#     Calculates the SMAPE metric
+#     Parameters:
+#         actual - target values
+#         predicted - output values predicted by model
+#     Returns:
+#         smape - returns smape metric
+#     """
+#     return (np.mean(abs(predicted - actual)  / ((abs(predicted) + abs(actual)) / 2)) * 100) 
+
 def SMAPE(actual, predicted):
-    """
-    Calculates the SMAPE metric
-    Parameters:
-        actual - target values
-        predicted - output values predicted by model
-    Returns:
-        smape - returns smape metric
-    """
-    return (np.mean(abs(predicted - actual)  / ((abs(predicted) + abs(actual)) / 2)) * 100) 
+    denominator = (np.abs(actual) + np.abs(predicted)) / 2.0
+    diff = np.abs(predicted - actual)
+    # Adding a small constant to avoid division by zero
+    denominator = np.where(denominator==0, 1e-7, denominator)
+    smape = np.mean((diff / denominator) * 100)
+    return smape
+
 
 def smape_std(actual, predicted):
         """
@@ -168,26 +158,21 @@ def MSE(target, pred):
     """
     return mean_squared_error(target, pred, squared=True)
 
-
-
-
-def generateRandomParameters(config):
-    # pass
-    batch_size = [32,64, 128]
-    epochs = [20, 40, 60]
+def generateRandomParameters(config):    
+    batch_size = [8,16,32,64,128,256]
+    epochs = [10,20, 30,40]
     gru_units = [33,63,93,123]
-    lstm_units = [32,64,128]
+    lstm_units = [16,32,64,128,256]
 
     batch = batch_size[random.randint(0,len(batch_size)-1)]
     epoch = epochs[random.randint(0,len(epochs)-1)]
-    gru_unit =gru_units[random.randint(0,len(epochs)-1)]
-    lstm_unit =lstm_units[random.randint(0,len(epochs)-1)]
+    gru_unit =gru_units[random.randint(0,len(gru_units)-1)]
+    lstm_unit =lstm_units[random.randint(0,len(lstm_units)-1)]
 
     config['batch_size']['default'] = batch
     config['training_epoch']['default'] = epoch
     config['gru_units']['default'] = gru_unit
     config['lstm_neurons']['default'] = lstm_unit
-
 
     return [batch, epoch, gru_unit, lstm_unit]
 

@@ -45,7 +45,7 @@ increment:
   # default: [8760, 17520, 26280, 35040, 43800, 52560, 61320, 70080] 
 
   # just last split (set num_split=1)
-  default: [52560, 61320, 70080]
+  default: [78840, 96830, 113928]
   # default: [8760, 17520, 26280]
 
   help:  (from davidson) List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 

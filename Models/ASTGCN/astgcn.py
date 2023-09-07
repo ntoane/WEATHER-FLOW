@@ -83,7 +83,6 @@ class AstGcn:
                                                                    self.time_steps, self.num_nodes, 
                                                                    self.forecast_len)
         adj_normalized = calculate_laplacian_astgcn(self.adjacency_matrix, self.num_nodes)
-        # adj_normalized = calculate_laplacian_astgcn((self.create_adjacency_matrix(self.num_nodes)), self.num_nodes)
         model = self.build_model(X_attribute_train, Y_attribute_train, adj_normalized, self.gru_units, self.lstm_units)
         #model.summary()
         history = self.compile_and_train_model(model)
@@ -125,7 +124,6 @@ class GcnCell(tf.keras.layers.Layer):
         reshaped_inputs = tf.reshape(inputs, [-1, inputs.shape[1], np.prod(inputs.shape[2:])])
         inputs_with_attributes = self.dense(reshaped_inputs)
         
-        # inputs_with_attributes = self.dense(inputs) 
         adj_normalized_tiled = tf.expand_dims(self.adj, axis=0)
         adj_normalized_tiled = tf.tile(adj_normalized_tiled, [tf.shape(inputs)[0], 1, 1])
         output = self.layer(inputs_with_attributes)

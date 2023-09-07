@@ -1,8 +1,8 @@
 #!/bin/sh
 #SBATCH --account compsci
 #SBATCH --partition=ada
-#SBATCH --time=20:00:00
-#SBATCH --nodes=1 --ntasks=8
+#SBATCH --time=24:00:00
+#SBATCH --nodes=1 --ntasks=12
 #SBATCH --job-name="9h_ASTGCN_Job"
 #SBATCH --mail-user=hmmden001@uct.ac.za
 #SBATCH --mail-type=ALL
