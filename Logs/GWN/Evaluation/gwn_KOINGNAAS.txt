@@ -38,3 +38,33 @@
 2023-08-13 12:44:40,150 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:44:40,152 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:44:40,152 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:44,501 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 3
+2023-09-07 14:50:45,067 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:45,069 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 6
+2023-09-07 14:50:45,069 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 6
+2023-09-07 14:50:46,034 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:46,034 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:46,035 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 9
+2023-09-07 14:50:46,035 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 9
+2023-09-07 14:50:46,035 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 9
+2023-09-07 14:50:47,327 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:47,327 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:47,327 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:47,327 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 12
+2023-09-07 14:50:47,327 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 12
+2023-09-07 14:50:47,327 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 12
+2023-09-07 14:50:47,327 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 12
+2023-09-07 14:50:48,620 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:48,620 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:48,620 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:48,620 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:48,621 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 24
+2023-09-07 14:50:48,621 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 24
+2023-09-07 14:50:48,621 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 24
+2023-09-07 14:50:48,621 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 24
+2023-09-07 14:50:48,621 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 24
+2023-09-07 14:50:50,237 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:50,237 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:50,237 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:50,237 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:50,237 - KOINGNAAS - INFO - Finished computing evaluation error metrics.

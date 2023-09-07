@@ -38,3 +38,33 @@
 2023-08-13 12:44:41,494 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:44:41,498 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:44:41,498 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:58,145 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 3
+2023-09-07 14:52:58,673 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:58,674 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 6
+2023-09-07 14:52:58,674 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 6
+2023-09-07 14:52:59,769 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:59,769 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:59,769 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 9
+2023-09-07 14:52:59,769 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 9
+2023-09-07 14:52:59,769 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 9
+2023-09-07 14:53:00,893 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:00,893 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:00,893 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:00,893 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 12
+2023-09-07 14:53:00,893 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 12
+2023-09-07 14:53:00,893 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 12
+2023-09-07 14:53:00,893 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 12
+2023-09-07 14:53:02,413 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:02,413 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:02,413 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:02,413 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:02,414 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 24
+2023-09-07 14:53:02,414 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 24
+2023-09-07 14:53:02,414 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 24
+2023-09-07 14:53:02,414 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 24
+2023-09-07 14:53:02,414 - VANWYKSVLEI - INFO - GWN evaluation started atVANWYKSVLEI for the horizon of 24
+2023-09-07 14:53:04,023 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:04,023 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:04,023 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:04,023 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:04,023 - VANWYKSVLEI - INFO - Finished computing evaluation error metrics.

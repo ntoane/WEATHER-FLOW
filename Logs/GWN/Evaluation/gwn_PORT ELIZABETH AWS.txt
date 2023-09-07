@@ -38,3 +38,33 @@
 2023-08-13 12:44:40,780 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:44:40,784 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:44:40,784 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:55,281 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 3
+2023-09-07 14:51:55,795 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:55,796 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 6
+2023-09-07 14:51:55,796 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 6
+2023-09-07 14:51:56,854 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:56,854 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:56,855 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 9
+2023-09-07 14:51:56,855 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 9
+2023-09-07 14:51:56,855 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 9
+2023-09-07 14:51:57,858 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:57,858 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:57,858 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:57,858 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 12
+2023-09-07 14:51:57,858 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 12
+2023-09-07 14:51:57,858 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 12
+2023-09-07 14:51:57,858 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 12
+2023-09-07 14:51:59,109 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:59,109 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:59,109 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:59,109 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:59,110 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 24
+2023-09-07 14:51:59,110 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 24
+2023-09-07 14:51:59,110 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 24
+2023-09-07 14:51:59,110 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 24
+2023-09-07 14:51:59,110 - PORT ELIZABETH AWS - INFO - GWN evaluation started atPORT ELIZABETH AWS for the horizon of 24
+2023-09-07 14:52:00,746 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:00,746 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:00,746 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:00,746 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:00,746 - PORT ELIZABETH AWS - INFO - Finished computing evaluation error metrics.

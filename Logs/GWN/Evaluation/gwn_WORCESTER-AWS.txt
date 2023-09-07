@@ -48,3 +48,38 @@
 2023-08-13 12:44:41,656 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
 2023-08-13 12:44:41,657 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
 2023-08-13 12:44:41,657 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
+2023-09-07 14:53:21,366 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 3
+2023-09-07 14:53:21,896 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:21,896 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 6
+2023-09-07 14:53:21,896 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 6
+2023-09-07 14:53:22,985 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:22,985 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:22,985 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 9
+2023-09-07 14:53:22,985 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 9
+2023-09-07 14:53:22,985 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 9
+2023-09-07 14:53:24,322 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:24,322 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:24,322 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:24,323 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 12
+2023-09-07 14:53:24,323 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 12
+2023-09-07 14:53:24,323 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 12
+2023-09-07 14:53:24,323 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 12
+2023-09-07 14:53:25,601 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:25,601 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:25,601 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:25,601 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:25,602 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 24
+2023-09-07 14:53:25,602 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 24
+2023-09-07 14:53:25,602 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 24
+2023-09-07 14:53:25,602 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 24
+2023-09-07 14:53:25,602 - WORCESTER-AWS - INFO - GWN evaluation started atWORCESTER-AWS for the horizon of 24
+2023-09-07 14:53:27,114 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:27,114 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:27,114 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:27,114 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:27,114 - WORCESTER-AWS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:27,115 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
+2023-09-07 14:53:27,115 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
+2023-09-07 14:53:27,115 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
+2023-09-07 14:53:27,115 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
+2023-09-07 14:53:27,115 - WORCESTER-AWS - INFO - Finished evaluation of GWN error metrics for all stations.
