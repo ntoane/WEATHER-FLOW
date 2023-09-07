@@ -154,6 +154,7 @@ def calculate_gwn_metrics(pred, real, paths, sharedConfig, gwnConfig, s, horizon
     
     yhat = utils.load_pickle(paths['results_file'])
     target = utils.load_pickle(paths['targets_file'])
+    print(target)
     pred = np.append(pred, np.array(yhat).flatten())
     real = np.append(real, np.array(target).flatten()) 
     # Reshape pred and real arrays
@@ -229,9 +230,10 @@ def AgcrnEval(modelConfig,sharedConfig):
                 y_predO=np.load(fileDictionary["predFile"] + ".npy")
                 y_trueO=np.load(fileDictionary["targetFile"] + ".npy")
 
+                print(y_trueO)
 
 
-
+                # scaler = utils.NormScaler(0, 43)
                 # scaler = utils.NormScaler(y_trueO.min(), y_trueO.max())
                 scaler = utils.NormScaler(min_scalar, max_scalar)
                 y_true = scaler.transform(y_trueO)
@@ -241,7 +243,7 @@ def AgcrnEval(modelConfig,sharedConfig):
                 for i in range(45):
                     station_pred = y_pred[:, :, i, 0]
                     station_true = y_true[:, :, i, 0]
-                    print(station_true)
+                    # print(station_true)
                     print("Evaluating horizon:"+ str(horizon) + " split:" + str(k) + " for station:" + stations[i])
                     # print(station_pred)
 
@@ -267,6 +269,31 @@ def AgcrnEval(modelConfig,sharedConfig):
                         file.write('This is the MSE ' + str(mse) + '\n')
                         file.write('This is the MAE ' + str(mae) + '\n')
                         file.write('This is the SMAPE ' + str(smape) + '\n')
+
+
+                y_true=y_true.flatten()
+                y_pred=y_pred.flatten()
+                rmse =  metrics.rmse(y_true, y_pred)
+                mse = metrics.mse(y_true, y_pred)
+                mae = metrics.mae(y_true, y_pred)
+                smape = metrics.smape(y_true, y_pred)
+
+
+
+                filePath =fileDictionary['metricFile0'] +"average"
+                if not os.path.exists(filePath):
+                    os.makedirs(filePath)
+
+                with open(filePath + fileDictionary['metricFile1'], 'w') as file:
+            
+                    # file.write('This is the MAE ' + str(mae) + '\n')
+                    # file.write('This is the RMSE ' + str(rmse) + '\n')
+                    # file.write('This is the MAPE ' + str(mape) + '\n')
+                    file.write('This is the RMSE ' + str(rmse) + '\n')
+                    file.write('This is the MSE ' + str(mse) + '\n')
+                    file.write('This is the MAE ' + str(mae) + '\n')
+                    file.write('This is the SMAPE ' + str(smape) + '\n')
+
 
 
         
