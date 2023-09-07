@@ -5,7 +5,7 @@ train_tcn:
   help: whether to train final TCN models
 train_gwn:
   type: bool
-  default: true
+  default: false
   help: whether to train final GWN model
 train_agcrn:
   type: bool
@@ -45,9 +45,9 @@ increment:
   # default: [8760, 17520, 26280, 35040, 43800, 52560, 61320, 70080] 
 
   # just last split (set num_split=1)
-  default: [52560, 61320, 70080]
+  default: [79750, 96839, 113929]
 
-  # default: [1000, 1500, 3000]
+  # default: [1000, 1100, 1200]
 
   help:  (from davidson) List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 
     8784 is one year's worth of data, the next step is 3 months of data, and the following step is also 3 months of 
@@ -70,10 +70,10 @@ stations:
 
 horizons:
   type: int[]
-  default: [3, 6, 9, 12, 24]
+  default: [3,6,9,12,24]
   # default: [3, 6]
   # default: [9, 12]
-  # default: [24]
+  # default: [10]
   help: forecast horizons
 
 n_stations:
@@ -101,7 +101,7 @@ optimizer:
 vis:
   type: bool
   default: false
-  help: whether to create visualisations
+  help: whether to visualise adjacency matrix or not
 
 modelVis:
   type: str
@@ -110,15 +110,26 @@ modelVis:
 
 horizonVis:
   type: str
-  default: "3"
+  default: "6"
   help: the horizon to visualise
 
 splitVis:
   type: str
-  default: 2
-  help: the split number up to which visualisations should be generated for
+  default: "0"
+  help: the split which should be visualised
+
+thresholdVis:
+  type: float
+  default: 0.1
+  help: the value an edge weight should be above in order to be considered influencial
+
+numberNodesDisplay:
+  type: int
+  default: 20
+  help: the number of nodes that should be displayed in the visualisation (reduce if too much overlapping)
+
 
 locations_path:
   type: str
-  default: 'DataNew/Locations/Locations.csv'
+  default: DataNew/Locations/Locations.csv
   help: path to csv containg station coordinates

@@ -38,6 +38,8 @@ class tcnExecute(modelExecute):
                 print('TCN model training started at ' + station)
                 # pulling in weather station data
                 weatherData = 'DataNew/Weather Station Data/' + station + '.csv'
+                
+
                 ts = utils.create_dataset(weatherData)
                 # reading in the parameters from the text file
                 params = configFile.readline()
@@ -72,9 +74,12 @@ class tcnExecute(modelExecute):
                     pre_standardize_train, pre_standardize_validation, pre_standardize_test = utils.dataSplit(split, ts)
 
                     # Scaling the data
+                    allDataPath= 'DataNew/Graph Neural Network Data/Graph Station Data/Graph.csv'
+                    allData = utils.create_dataset(allDataPath)
+                    allDataTrain= allData[0: increment[k + 1]*len(stations)]
                     train, validation, test = utils.min_max(pre_standardize_train,
                                                             pre_standardize_validation,
-                                                            pre_standardize_test)
+                                                            pre_standardize_test, allDataTrain)
                     # Defining input shape
                     n_ft = train.shape[1]
                     # Creating the X and Y for forecasting, validation set and training
@@ -204,6 +209,7 @@ class tcnExecute(modelExecute):
             date = get_timestamp_at_index(index)
             current_year = date.year
             # print(date)
+            
             # Prints to screen when years are changing to show progress
             if previous_year and current_year != previous_year:
                 print(f"The year changed from {previous_year} to {current_year} for performing the logging")
