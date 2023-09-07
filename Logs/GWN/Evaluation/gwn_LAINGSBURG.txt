@@ -68,3 +68,93 @@
 2023-09-07 14:51:01,496 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:51:01,496 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:51:01,496 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,679 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 3
+2023-09-07 15:21:03,977 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,978 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,978 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 6
+2023-09-07 15:21:03,978 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 6
+2023-09-07 15:21:04,350 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:04,350 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:04,350 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:04,350 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:04,351 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 9
+2023-09-07 15:21:04,351 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 9
+2023-09-07 15:21:04,351 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 9
+2023-09-07 15:21:04,863 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:04,863 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:04,863 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:04,863 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:04,863 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:04,863 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:04,864 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 12
+2023-09-07 15:21:04,864 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 12
+2023-09-07 15:21:04,864 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 12
+2023-09-07 15:21:04,864 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 12
+2023-09-07 15:21:05,557 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:05,557 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:05,557 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:05,557 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:05,558 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:05,558 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:05,558 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:05,558 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:05,558 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 24
+2023-09-07 15:21:05,558 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 24
+2023-09-07 15:21:05,558 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 24
+2023-09-07 15:21:05,558 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 24
+2023-09-07 15:21:05,558 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 24
+2023-09-07 15:21:07,291 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,291 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,291 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,291 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,291 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,292 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,292 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,292 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,292 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,292 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,751 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 3
+2023-09-07 15:24:40,926 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,926 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,926 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 6
+2023-09-07 15:24:40,926 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 6
+2023-09-07 15:24:41,429 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:41,429 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:41,430 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:41,430 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:41,431 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 9
+2023-09-07 15:24:41,431 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 9
+2023-09-07 15:24:41,431 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 9
+2023-09-07 15:24:41,964 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:41,964 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:41,964 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:41,964 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:41,964 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:41,964 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:41,965 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 12
+2023-09-07 15:24:41,965 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 12
+2023-09-07 15:24:41,965 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 12
+2023-09-07 15:24:41,965 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 12
+2023-09-07 15:24:42,634 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:42,634 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:42,634 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:42,634 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:42,634 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:42,634 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:42,634 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:42,634 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:42,635 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 24
+2023-09-07 15:24:42,635 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 24
+2023-09-07 15:24:42,635 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 24
+2023-09-07 15:24:42,635 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 24
+2023-09-07 15:24:42,635 - LAINGSBURG - INFO - GWN evaluation started atLAINGSBURG for the horizon of 24
+2023-09-07 15:24:44,289 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,289 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,289 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,289 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,289 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,290 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,290 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,290 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,290 - LAINGSBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,290 - LAINGSBURG - INFO - Finished computing evaluation error metrics.

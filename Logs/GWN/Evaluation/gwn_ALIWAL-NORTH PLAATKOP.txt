@@ -68,3 +68,93 @@
 2023-09-07 14:49:23,763 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:49:23,763 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:49:23,763 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:02,835 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 3
+2023-09-07 15:20:03,028 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:03,028 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:03,029 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 6
+2023-09-07 15:20:03,029 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 6
+2023-09-07 15:20:03,629 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:03,629 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:03,630 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:03,630 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:03,630 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 9
+2023-09-07 15:20:03,630 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 9
+2023-09-07 15:20:03,630 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 9
+2023-09-07 15:20:04,158 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,158 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,158 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,158 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,158 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,158 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,158 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 12
+2023-09-07 15:20:04,158 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 12
+2023-09-07 15:20:04,158 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 12
+2023-09-07 15:20:04,158 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 12
+2023-09-07 15:20:04,858 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,858 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,858 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,858 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,858 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,858 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,858 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,858 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:04,859 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 24
+2023-09-07 15:20:04,859 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 24
+2023-09-07 15:20:04,859 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 24
+2023-09-07 15:20:04,859 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 24
+2023-09-07 15:20:04,859 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 24
+2023-09-07 15:20:07,046 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,046 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,046 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,046 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,046 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,046 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,046 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,046 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,046 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,046 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:35,001 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 3
+2023-09-07 15:23:35,296 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:35,302 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:35,304 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 6
+2023-09-07 15:23:35,304 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 6
+2023-09-07 15:23:35,679 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:35,679 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:35,679 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:35,679 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:35,680 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 9
+2023-09-07 15:23:35,680 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 9
+2023-09-07 15:23:35,680 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 9
+2023-09-07 15:23:36,417 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:36,417 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:36,417 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:36,418 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:36,418 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:36,418 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:36,420 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 12
+2023-09-07 15:23:36,420 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 12
+2023-09-07 15:23:36,420 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 12
+2023-09-07 15:23:36,420 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 12
+2023-09-07 15:23:37,142 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:37,142 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:37,142 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:37,142 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:37,142 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:37,142 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:37,142 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:37,142 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:37,143 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 24
+2023-09-07 15:23:37,143 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 24
+2023-09-07 15:23:37,143 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 24
+2023-09-07 15:23:37,143 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 24
+2023-09-07 15:23:37,143 - ALIWAL-NORTH PLAATKOP - INFO - GWN evaluation started atALIWAL-NORTH PLAATKOP for the horizon of 24
+2023-09-07 15:23:38,948 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:38,948 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:38,948 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:38,948 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:38,948 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:38,948 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:38,948 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:38,948 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:38,948 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:38,948 - ALIWAL-NORTH PLAATKOP - INFO - Finished computing evaluation error metrics.

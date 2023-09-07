@@ -68,3 +68,93 @@
 2023-09-07 14:49:46,755 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:49:46,755 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:49:46,755 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,240 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 3
+2023-09-07 15:20:18,419 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,419 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,420 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 6
+2023-09-07 15:20:18,420 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 6
+2023-09-07 15:20:18,764 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,764 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,764 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,764 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,765 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 9
+2023-09-07 15:20:18,765 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 9
+2023-09-07 15:20:18,765 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 9
+2023-09-07 15:20:19,306 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:19,306 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:19,306 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:19,307 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:19,307 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:19,307 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:19,308 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 12
+2023-09-07 15:20:19,308 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 12
+2023-09-07 15:20:19,308 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 12
+2023-09-07 15:20:19,308 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 12
+2023-09-07 15:20:20,120 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:20,120 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:20,120 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:20,120 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:20,121 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:20,121 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:20,121 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:20,121 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:20,121 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-09-07 15:20:20,121 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-09-07 15:20:20,121 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-09-07 15:20:20,121 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-09-07 15:20:20,121 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-09-07 15:20:21,860 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:21,860 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:21,860 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:21,860 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:21,860 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:21,861 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:21,861 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:21,861 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:21,861 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:21,861 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,427 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 3
+2023-09-07 15:23:50,638 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,639 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,639 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 6
+2023-09-07 15:23:50,639 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 6
+2023-09-07 15:23:51,159 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:51,159 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:51,159 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:51,159 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:51,160 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 9
+2023-09-07 15:23:51,160 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 9
+2023-09-07 15:23:51,160 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 9
+2023-09-07 15:23:51,732 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:51,732 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:51,732 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:51,732 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:51,732 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:51,732 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:51,733 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 12
+2023-09-07 15:23:51,733 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 12
+2023-09-07 15:23:51,733 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 12
+2023-09-07 15:23:51,733 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 12
+2023-09-07 15:23:52,679 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:52,679 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:52,679 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:52,679 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:52,680 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:52,680 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:52,680 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:52,680 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:52,680 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-09-07 15:23:52,680 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-09-07 15:23:52,680 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-09-07 15:23:52,680 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-09-07 15:23:52,680 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-09-07 15:23:54,471 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:54,471 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:54,471 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:54,471 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:54,471 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:54,472 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:54,472 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:54,472 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:54,472 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:54,472 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.

@@ -125,11 +125,13 @@ def GwnEval(gwnConfig, sharedConfig):
                     for path in paths.values():
                         sharedUtils.create_file_if_not_exists(path)
                     metric_file = paths['metric_file']
+                    metricAvr_file =  paths['metricAvr_file']
                     
                     # Calculate actual vs predicted and metrics using the calculate_gwn_metrics function
-                    metrics = calculate_gwn_metrics(pred, real, paths, sharedConfig, gwnConfig, s, horizon)
+                    metrics, metricsAvr = calculate_gwn_metrics(pred, real, paths, sharedConfig, gwnConfig, s, horizon)
                     # Save to a text file
                     # actual_vs_predicted.to_csv(paths['actual_vs_predicted_file'], index=False)
+
                     
                     # Open metric_file for writing
                     with open(metric_file, 'w') as file:
@@ -137,6 +139,14 @@ def GwnEval(gwnConfig, sharedConfig):
                         print_metrics(metrics, station, horizon)
                         # Write the metrics to the metric file
                         for name, value in metrics.items():
+                            file.write(f'This is the {name}: {value}\n')
+                        gwn_logger.info('Finished computing evaluation error metrics.')
+
+                    with open(metricAvr_file, 'w') as file:
+                        # Print and write metrics
+                        print_metrics(metricsAvr, station, horizon)
+                        # Write the metrics to the metric file
+                        for name, value in metricsAvr.items():
                             file.write(f'This is the {name}: {value}\n')
                         gwn_logger.info('Finished computing evaluation error metrics.')
             # except Exception as e:
@@ -154,22 +164,36 @@ def calculate_gwn_metrics(pred, real, paths, sharedConfig, gwnConfig, s, horizon
     
     yhat = utils.load_pickle(paths['results_file'])
     target = utils.load_pickle(paths['targets_file'])
-    print(target)
+
+
+
     pred = np.append(pred, np.array(yhat).flatten())
     real = np.append(real, np.array(target).flatten()) 
+
+
+    metricsDictAvr = {}
+    metricsDictAvr['rmse'] =  metrics.rmse(real, pred)
+    metricsDictAvr['mse'] = metrics.mse(real, pred)
+    metricsDictAvr['mae'] = metrics.mae(real, pred)
+    metricsDictAvr['smape'] = metrics.smape(real, pred)
+
+
     # Reshape pred and real arrays
     pred = np.array(pred).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * horizon)), 
                                     sharedConfig['n_stations']['default'], horizon))
     real = np.array(real).reshape((int(len(real) / (sharedConfig['n_stations']['default'] * horizon)), 
                                     sharedConfig['n_stations']['default'], horizon))
+    
+    
     # Calculate metrics
     metricsDict = {}
     metricsDict['rmse'] =  metrics.rmse(real[:, s, :], pred[:, s, :])
     metricsDict['mse'] = metrics.mse(real[:, s, :], pred[:, s, :])
     metricsDict['mae'] = metrics.mae(real[:, s, :], pred[:, s, :])
     metricsDict['smape'] = metrics.smape(real[:, s, :], pred[:, s, :])
+
     
-    return metricsDict
+    return metricsDict, metricsDictAvr
 
 def print_metrics(metrics, station, horizon):
     """
@@ -196,6 +220,7 @@ def get_gwn_file_paths(station, horizon, split,model='GWN'):
         "results_file" : f'Results/{model}/{folder_name}/Predictions/outputs_{split}.pkl',
         "targets_file" : f'Results/{model}/{folder_name}/Targets/targets_{split}.pkl',
         "metric_file" : f'Results/{model}/{folder_name}/Metrics/{station_with_spaces}/metrics_{split}.txt',
+        "metricAvr_file" : f'Results/{model}/{folder_name}/Metrics/average/metrics_{split}.txt',
         # "actual_vs_predicted_file" : f'Results/{model}/{folder_name}/Metrics/{station_with_spaces}/actual_vs_predicted.txt'
     }
         

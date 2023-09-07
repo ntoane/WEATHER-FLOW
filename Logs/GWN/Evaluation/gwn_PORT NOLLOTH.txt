@@ -68,3 +68,93 @@
 2023-09-07 14:52:07,553 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:52:07,553 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:52:07,553 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:45,099 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 3
+2023-09-07 15:21:45,300 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:45,301 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:45,301 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 6
+2023-09-07 15:21:45,301 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 6
+2023-09-07 15:21:45,695 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:45,695 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:45,696 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:45,696 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:45,696 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 9
+2023-09-07 15:21:45,696 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 9
+2023-09-07 15:21:45,696 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 9
+2023-09-07 15:21:46,200 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,200 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,200 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,201 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,201 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,201 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,201 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 12
+2023-09-07 15:21:46,201 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 12
+2023-09-07 15:21:46,201 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 12
+2023-09-07 15:21:46,201 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 12
+2023-09-07 15:21:46,877 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,877 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,877 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,877 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,878 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,878 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,878 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,878 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:46,879 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-09-07 15:21:46,879 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-09-07 15:21:46,879 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-09-07 15:21:46,879 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-09-07 15:21:46,879 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-09-07 15:21:48,672 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,672 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,672 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,672 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,672 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,672 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,672 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,672 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,672 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,672 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:19,686 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 3
+2023-09-07 15:25:19,856 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:19,857 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:19,857 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 6
+2023-09-07 15:25:19,857 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 6
+2023-09-07 15:25:20,179 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:20,179 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:20,179 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:20,179 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:20,180 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 9
+2023-09-07 15:25:20,180 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 9
+2023-09-07 15:25:20,180 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 9
+2023-09-07 15:25:20,777 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:20,777 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:20,777 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:20,779 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:20,779 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:20,779 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:20,780 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 12
+2023-09-07 15:25:20,780 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 12
+2023-09-07 15:25:20,780 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 12
+2023-09-07 15:25:20,780 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 12
+2023-09-07 15:25:21,455 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:21,455 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:21,455 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:21,455 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:21,456 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:21,456 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:21,456 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:21,456 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:21,457 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-09-07 15:25:21,457 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-09-07 15:25:21,457 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-09-07 15:25:21,457 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-09-07 15:25:21,457 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-09-07 15:25:23,127 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,127 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,127 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,127 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,127 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,128 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,128 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,128 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,128 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,128 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.

@@ -68,3 +68,93 @@
 2023-09-07 14:50:03,605 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:50:03,605 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:50:03,605 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:28,977 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 3
+2023-09-07 15:20:29,151 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:29,151 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:29,152 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 6
+2023-09-07 15:20:29,152 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 6
+2023-09-07 15:20:29,704 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:29,704 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:29,704 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:29,704 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:29,705 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 9
+2023-09-07 15:20:29,705 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 9
+2023-09-07 15:20:29,705 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 9
+2023-09-07 15:20:30,206 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,206 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,206 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,206 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,206 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,206 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,207 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 12
+2023-09-07 15:20:30,207 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 12
+2023-09-07 15:20:30,207 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 12
+2023-09-07 15:20:30,207 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 12
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 24
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 24
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 24
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 24
+2023-09-07 15:20:30,875 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 24
+2023-09-07 15:20:32,491 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,491 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,491 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,491 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,491 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,492 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,492 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,492 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,492 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,492 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,781 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 3
+2023-09-07 15:24:02,952 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,953 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,953 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 6
+2023-09-07 15:24:02,953 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 6
+2023-09-07 15:24:03,382 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:03,382 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:03,382 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:03,382 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:03,383 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 9
+2023-09-07 15:24:03,383 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 9
+2023-09-07 15:24:03,383 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 9
+2023-09-07 15:24:03,958 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:03,958 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:03,958 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:03,958 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:03,958 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:03,958 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:03,959 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 12
+2023-09-07 15:24:03,959 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 12
+2023-09-07 15:24:03,959 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 12
+2023-09-07 15:24:03,959 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 12
+2023-09-07 15:24:04,708 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:04,708 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:04,708 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:04,708 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:04,709 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:04,709 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:04,709 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:04,709 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:04,709 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 24
+2023-09-07 15:24:04,709 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 24
+2023-09-07 15:24:04,709 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 24
+2023-09-07 15:24:04,709 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 24
+2023-09-07 15:24:04,709 - EAST LONDON WO - INFO - GWN evaluation started atEAST LONDON WO for the horizon of 24
+2023-09-07 15:24:06,792 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:06,792 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:06,792 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:06,792 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:06,792 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:06,793 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:06,793 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:06,793 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:06,793 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:06,793 - EAST LONDON WO - INFO - Finished computing evaluation error metrics.

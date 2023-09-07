@@ -68,3 +68,93 @@
 2023-09-07 14:51:26,319 - NOUPOORT - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:51:26,319 - NOUPOORT - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:51:26,319 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:18,231 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 3
+2023-09-07 15:21:18,420 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:18,420 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:18,421 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 6
+2023-09-07 15:21:18,421 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 6
+2023-09-07 15:21:18,817 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:18,817 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:18,818 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:18,818 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:18,818 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 9
+2023-09-07 15:21:18,818 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 9
+2023-09-07 15:21:18,818 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 9
+2023-09-07 15:21:19,395 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:19,395 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:19,395 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:19,396 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:19,396 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:19,396 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:19,396 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 12
+2023-09-07 15:21:19,396 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 12
+2023-09-07 15:21:19,396 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 12
+2023-09-07 15:21:19,396 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 12
+2023-09-07 15:21:20,147 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:20,147 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:20,147 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:20,147 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:20,148 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:20,148 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:20,148 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:20,148 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:20,149 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 24
+2023-09-07 15:21:20,149 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 24
+2023-09-07 15:21:20,149 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 24
+2023-09-07 15:21:20,149 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 24
+2023-09-07 15:21:20,149 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 24
+2023-09-07 15:21:22,081 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:22,081 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:22,081 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:22,081 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:22,081 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:22,082 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:22,082 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:22,082 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:22,082 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:22,082 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:55,369 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 3
+2023-09-07 15:24:55,547 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:55,549 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:55,550 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 6
+2023-09-07 15:24:55,550 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 6
+2023-09-07 15:24:55,886 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:55,886 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:55,886 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:55,886 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:55,887 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 9
+2023-09-07 15:24:55,887 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 9
+2023-09-07 15:24:55,887 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 9
+2023-09-07 15:24:56,383 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:56,383 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:56,383 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:56,384 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:56,384 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:56,384 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:56,384 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 12
+2023-09-07 15:24:56,384 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 12
+2023-09-07 15:24:56,384 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 12
+2023-09-07 15:24:56,384 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 12
+2023-09-07 15:24:57,079 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:57,079 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:57,079 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:57,079 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:57,079 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:57,079 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:57,079 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:57,079 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:57,080 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 24
+2023-09-07 15:24:57,080 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 24
+2023-09-07 15:24:57,080 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 24
+2023-09-07 15:24:57,080 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 24
+2023-09-07 15:24:57,080 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 24
+2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.

@@ -68,3 +68,93 @@
 2023-09-07 14:50:32,839 - GEORGE WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:50:32,839 - GEORGE WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:50:32,839 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:46,398 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 3
+2023-09-07 15:20:46,575 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:46,576 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:46,576 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 6
+2023-09-07 15:20:46,576 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 6
+2023-09-07 15:20:46,920 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:46,920 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:46,921 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:46,921 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:46,921 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 9
+2023-09-07 15:20:46,921 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 9
+2023-09-07 15:20:46,921 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 9
+2023-09-07 15:20:47,438 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:47,438 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:47,438 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:47,439 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:47,439 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:47,439 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:47,439 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 12
+2023-09-07 15:20:47,439 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 12
+2023-09-07 15:20:47,439 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 12
+2023-09-07 15:20:47,439 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 12
+2023-09-07 15:20:48,217 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:48,217 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:48,217 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:48,217 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:48,217 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:48,217 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:48,217 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:48,217 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:48,218 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 24
+2023-09-07 15:20:48,218 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 24
+2023-09-07 15:20:48,218 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 24
+2023-09-07 15:20:48,218 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 24
+2023-09-07 15:20:48,218 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 24
+2023-09-07 15:20:49,875 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:49,875 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:49,875 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:49,875 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:49,875 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:49,876 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:49,876 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:49,876 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:49,876 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:49,876 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:21,305 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 3
+2023-09-07 15:24:21,626 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:21,626 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:21,626 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 6
+2023-09-07 15:24:21,626 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 6
+2023-09-07 15:24:21,991 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:21,991 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:21,991 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:21,991 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:21,992 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 9
+2023-09-07 15:24:21,992 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 9
+2023-09-07 15:24:21,992 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 9
+2023-09-07 15:24:22,528 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:22,528 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:22,528 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:22,529 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:22,529 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:22,529 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:22,529 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 12
+2023-09-07 15:24:22,529 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 12
+2023-09-07 15:24:22,529 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 12
+2023-09-07 15:24:22,529 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 12
+2023-09-07 15:24:23,183 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:23,183 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:23,183 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:23,183 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:23,183 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:23,183 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:23,183 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:23,183 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:23,184 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 24
+2023-09-07 15:24:23,184 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 24
+2023-09-07 15:24:23,184 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 24
+2023-09-07 15:24:23,184 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 24
+2023-09-07 15:24:23,184 - GEORGE WO - INFO - GWN evaluation started atGEORGE WO for the horizon of 24
+2023-09-07 15:24:24,777 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:24,777 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:24,777 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:24,777 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:24,777 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:24,777 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:24,777 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:24,777 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:24,777 - GEORGE WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:24,777 - GEORGE WO - INFO - Finished computing evaluation error metrics.

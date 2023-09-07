@@ -68,3 +68,93 @@
 2023-09-07 14:49:57,871 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:49:57,871 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:49:57,871 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:25,683 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 3
+2023-09-07 15:20:25,862 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:25,862 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:25,862 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 6
+2023-09-07 15:20:25,862 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 6
+2023-09-07 15:20:26,198 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:26,198 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:26,199 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:26,199 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:26,199 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 9
+2023-09-07 15:20:26,199 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 9
+2023-09-07 15:20:26,199 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 9
+2023-09-07 15:20:26,704 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:26,704 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:26,704 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:26,704 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:26,704 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:26,704 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:26,705 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 12
+2023-09-07 15:20:26,705 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 12
+2023-09-07 15:20:26,705 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 12
+2023-09-07 15:20:26,705 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 12
+2023-09-07 15:20:27,370 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:27,370 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:27,370 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:27,370 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:27,370 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:27,370 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:27,370 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:27,370 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:27,371 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 24
+2023-09-07 15:20:27,371 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 24
+2023-09-07 15:20:27,371 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 24
+2023-09-07 15:20:27,371 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 24
+2023-09-07 15:20:27,371 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 24
+2023-09-07 15:20:28,976 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:28,976 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:28,976 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:28,976 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:28,976 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:28,977 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:28,977 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:28,977 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:28,977 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:28,977 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:58,225 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 3
+2023-09-07 15:23:58,410 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:58,410 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:58,411 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 6
+2023-09-07 15:23:58,411 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 6
+2023-09-07 15:23:58,917 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:58,917 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:58,917 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:58,917 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:58,918 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 9
+2023-09-07 15:23:58,918 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 9
+2023-09-07 15:23:58,918 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 9
+2023-09-07 15:23:59,510 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:59,510 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:59,510 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:59,510 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:59,510 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:59,510 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:59,511 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 12
+2023-09-07 15:23:59,511 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 12
+2023-09-07 15:23:59,511 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 12
+2023-09-07 15:23:59,511 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 12
+2023-09-07 15:24:00,661 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:00,661 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:00,661 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:00,661 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:00,661 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:00,661 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:00,661 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:00,661 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:00,662 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 24
+2023-09-07 15:24:00,662 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 24
+2023-09-07 15:24:00,662 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 24
+2023-09-07 15:24:00,662 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 24
+2023-09-07 15:24:00,662 - DOHNE - AGR - INFO - GWN evaluation started atDOHNE - AGR for the horizon of 24
+2023-09-07 15:24:02,780 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,780 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,780 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,780 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,780 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,780 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,780 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,780 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,780 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:02,780 - DOHNE - AGR - INFO - Finished computing evaluation error metrics.

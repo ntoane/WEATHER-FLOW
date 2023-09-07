@@ -68,3 +68,93 @@
 2023-09-07 14:50:09,245 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:50:09,245 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:50:09,245 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,492 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 3
+2023-09-07 15:20:32,673 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,673 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:32,674 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 6
+2023-09-07 15:20:32,674 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 6
+2023-09-07 15:20:33,008 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:33,008 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:33,008 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:33,008 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:33,009 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 9
+2023-09-07 15:20:33,009 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 9
+2023-09-07 15:20:33,009 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 9
+2023-09-07 15:20:33,511 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:33,511 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:33,511 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:33,511 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:33,511 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:33,511 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:33,512 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 12
+2023-09-07 15:20:33,512 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 12
+2023-09-07 15:20:33,512 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 12
+2023-09-07 15:20:33,512 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 12
+2023-09-07 15:20:34,299 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:34,299 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:34,299 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:34,299 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:34,299 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:34,299 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:34,299 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:34,299 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:34,300 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-09-07 15:20:34,300 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-09-07 15:20:34,300 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-09-07 15:20:34,300 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-09-07 15:20:34,300 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-09-07 15:20:36,018 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,018 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,018 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,018 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,018 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,019 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,019 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,019 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,019 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,019 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:06,793 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 3
+2023-09-07 15:24:07,121 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:07,122 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:07,122 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 6
+2023-09-07 15:24:07,122 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 6
+2023-09-07 15:24:07,577 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:07,577 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:07,578 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:07,578 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:07,578 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 9
+2023-09-07 15:24:07,578 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 9
+2023-09-07 15:24:07,578 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 9
+2023-09-07 15:24:08,333 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:08,333 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:08,333 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:08,334 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:08,334 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:08,334 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:08,335 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 12
+2023-09-07 15:24:08,335 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 12
+2023-09-07 15:24:08,335 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 12
+2023-09-07 15:24:08,335 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 12
+2023-09-07 15:24:09,037 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:09,037 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:09,037 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:09,037 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:09,038 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:09,038 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:09,038 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:09,038 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:09,038 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-09-07 15:24:09,038 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-09-07 15:24:09,038 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-09-07 15:24:09,038 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-09-07 15:24:09,038 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-09-07 15:24:10,830 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:10,830 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:10,830 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:10,830 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:10,830 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:10,831 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:10,831 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:10,831 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:10,831 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:10,831 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.

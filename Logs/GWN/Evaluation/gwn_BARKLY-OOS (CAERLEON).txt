@@ -68,3 +68,93 @@
 2023-09-07 14:49:29,993 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:49:29,993 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:49:29,993 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,047 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 3
+2023-09-07 15:20:07,233 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,234 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,235 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 6
+2023-09-07 15:20:07,235 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 6
+2023-09-07 15:20:07,774 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,774 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,775 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,775 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:07,779 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 9
+2023-09-07 15:20:07,779 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 9
+2023-09-07 15:20:07,779 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 9
+2023-09-07 15:20:08,327 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:08,327 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:08,327 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:08,328 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:08,328 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:08,328 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:08,328 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 12
+2023-09-07 15:20:08,328 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 12
+2023-09-07 15:20:08,328 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 12
+2023-09-07 15:20:08,328 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 12
+2023-09-07 15:20:09,313 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:09,313 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:09,313 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:09,313 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:09,314 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:09,314 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:09,314 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:09,314 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:09,314 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 24
+2023-09-07 15:20:09,314 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 24
+2023-09-07 15:20:09,314 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 24
+2023-09-07 15:20:09,314 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 24
+2023-09-07 15:20:09,314 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 24
+2023-09-07 15:20:10,956 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:10,956 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:10,956 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:10,956 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:10,956 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:10,957 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:10,957 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:10,957 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:10,957 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:10,957 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:38,949 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 3
+2023-09-07 15:23:39,143 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:39,143 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:39,143 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 6
+2023-09-07 15:23:39,143 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 6
+2023-09-07 15:23:39,547 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:39,547 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:39,548 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:39,548 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:39,548 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 9
+2023-09-07 15:23:39,548 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 9
+2023-09-07 15:23:39,548 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 9
+2023-09-07 15:23:40,103 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,103 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,103 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,104 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,104 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,104 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,105 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 12
+2023-09-07 15:23:40,105 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 12
+2023-09-07 15:23:40,105 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 12
+2023-09-07 15:23:40,105 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 12
+2023-09-07 15:23:40,907 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,907 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,907 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,907 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,908 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,908 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,908 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,908 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:40,909 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 24
+2023-09-07 15:23:40,909 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 24
+2023-09-07 15:23:40,909 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 24
+2023-09-07 15:23:40,909 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 24
+2023-09-07 15:23:40,909 - BARKLY-OOS (CAERLEON) - INFO - GWN evaluation started atBARKLY-OOS (CAERLEON) for the horizon of 24
+2023-09-07 15:23:42,882 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:42,882 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:42,882 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:42,882 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:42,882 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:42,882 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:42,882 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:42,882 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:42,882 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:42,882 - BARKLY-OOS (CAERLEON) - INFO - Finished computing evaluation error metrics.

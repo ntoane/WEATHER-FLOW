@@ -68,3 +68,93 @@
 2023-09-07 14:52:58,145 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:52:58,145 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:52:58,145 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,621 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 3
+2023-09-07 15:22:17,803 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,804 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,804 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 6
+2023-09-07 15:22:17,804 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 6
+2023-09-07 15:22:18,177 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:18,177 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:18,178 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:18,178 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:18,178 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 9
+2023-09-07 15:22:18,178 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 9
+2023-09-07 15:22:18,178 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 9
+2023-09-07 15:22:18,700 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:18,700 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:18,700 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:18,701 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:18,701 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:18,701 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:18,701 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 12
+2023-09-07 15:22:18,701 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 12
+2023-09-07 15:22:18,701 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 12
+2023-09-07 15:22:18,701 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 12
+2023-09-07 15:22:19,359 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:19,359 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:19,359 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:19,359 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:19,359 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:19,359 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:19,359 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:19,359 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:19,360 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 24
+2023-09-07 15:22:19,360 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 24
+2023-09-07 15:22:19,360 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 24
+2023-09-07 15:22:19,360 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 24
+2023-09-07 15:22:19,360 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 24
+2023-09-07 15:22:21,000 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:21,000 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:21,000 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:21,000 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:21,000 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:21,000 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:21,000 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:21,000 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:21,000 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:21,000 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,380 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 3
+2023-09-07 15:25:51,608 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,608 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,609 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 6
+2023-09-07 15:25:51,609 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 6
+2023-09-07 15:25:52,006 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:52,006 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:52,007 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:52,007 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:52,008 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 9
+2023-09-07 15:25:52,008 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 9
+2023-09-07 15:25:52,008 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 9
+2023-09-07 15:25:52,707 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:52,707 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:52,707 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:52,707 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:52,707 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:52,707 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:52,708 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 12
+2023-09-07 15:25:52,708 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 12
+2023-09-07 15:25:52,708 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 12
+2023-09-07 15:25:52,708 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 12
+2023-09-07 15:25:53,441 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:53,441 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:53,441 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:53,441 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:53,441 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:53,441 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:53,441 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:53,441 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:53,442 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 24
+2023-09-07 15:25:53,442 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 24
+2023-09-07 15:25:53,442 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 24
+2023-09-07 15:25:53,442 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 24
+2023-09-07 15:25:53,442 - UPINGTON WO - INFO - GWN evaluation started atUPINGTON WO for the horizon of 24
+2023-09-07 15:25:55,154 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:55,154 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:55,154 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:55,154 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:55,154 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:55,156 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:55,156 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:55,156 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:55,156 - UPINGTON WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:55,156 - UPINGTON WO - INFO - Finished computing evaluation error metrics.

@@ -68,3 +68,93 @@
 2023-09-07 14:51:55,280 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:51:55,280 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:51:55,280 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:37,365 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 3
+2023-09-07 15:21:37,563 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:37,564 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:37,564 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 6
+2023-09-07 15:21:37,564 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 6
+2023-09-07 15:21:38,005 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:38,005 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:38,006 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:38,006 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:38,006 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 9
+2023-09-07 15:21:38,006 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 9
+2023-09-07 15:21:38,006 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 9
+2023-09-07 15:21:38,526 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:38,526 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:38,526 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:38,526 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:38,526 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:38,526 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:38,527 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 12
+2023-09-07 15:21:38,527 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 12
+2023-09-07 15:21:38,527 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 12
+2023-09-07 15:21:38,527 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 12
+2023-09-07 15:21:39,291 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:39,291 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:39,291 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:39,291 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:39,291 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:39,291 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:39,291 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:39,291 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:39,292 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-09-07 15:21:39,292 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-09-07 15:21:39,292 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-09-07 15:21:39,292 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-09-07 15:21:39,292 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-09-07 15:21:41,331 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:41,331 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:41,331 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:41,331 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:41,331 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:41,331 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:41,331 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:41,331 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:41,331 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:41,331 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:12,919 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 3
+2023-09-07 15:25:13,090 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,090 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,091 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 6
+2023-09-07 15:25:13,091 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 6
+2023-09-07 15:25:13,417 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,417 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,418 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,418 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,418 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 9
+2023-09-07 15:25:13,418 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 9
+2023-09-07 15:25:13,418 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 9
+2023-09-07 15:25:13,914 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,914 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,914 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,914 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,914 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,914 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:13,915 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 12
+2023-09-07 15:25:13,915 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 12
+2023-09-07 15:25:13,915 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 12
+2023-09-07 15:25:13,915 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 12
+2023-09-07 15:25:14,763 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:14,763 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:14,763 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:14,763 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:14,764 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:14,764 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:14,764 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:14,764 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:14,764 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-09-07 15:25:14,764 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-09-07 15:25:14,764 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-09-07 15:25:14,764 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-09-07 15:25:14,764 - PORT ELIZABETH AWOS - INFO - GWN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-09-07 15:25:16,361 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:16,361 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:16,361 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:16,361 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:16,361 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:16,362 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:16,362 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:16,362 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:16,362 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:16,362 - PORT ELIZABETH AWOS - INFO - Finished computing evaluation error metrics.

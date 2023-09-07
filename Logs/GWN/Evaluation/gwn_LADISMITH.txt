@@ -68,3 +68,93 @@
 2023-09-07 14:50:55,926 - LADISMITH - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:50:55,926 - LADISMITH - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:50:55,926 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:00,268 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 3
+2023-09-07 15:21:00,481 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:00,481 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:00,482 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 6
+2023-09-07 15:21:00,482 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 6
+2023-09-07 15:21:00,842 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:00,842 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:00,842 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:00,842 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:00,842 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 9
+2023-09-07 15:21:00,842 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 9
+2023-09-07 15:21:00,842 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 9
+2023-09-07 15:21:01,358 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:01,358 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:01,358 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:01,360 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:01,360 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:01,360 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:01,361 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 12
+2023-09-07 15:21:01,361 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 12
+2023-09-07 15:21:01,361 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 12
+2023-09-07 15:21:01,361 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 12
+2023-09-07 15:21:02,022 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:02,022 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:02,022 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:02,022 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:02,022 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:02,022 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:02,022 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:02,022 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:02,023 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 24
+2023-09-07 15:21:02,023 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 24
+2023-09-07 15:21:02,023 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 24
+2023-09-07 15:21:02,023 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 24
+2023-09-07 15:21:02,023 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 24
+2023-09-07 15:21:03,678 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,678 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,678 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,678 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,678 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,678 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,678 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,678 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,678 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:03,678 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:37,468 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 3
+2023-09-07 15:24:37,637 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:37,637 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:37,638 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 6
+2023-09-07 15:24:37,638 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 6
+2023-09-07 15:24:37,999 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:37,999 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:37,999 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:37,999 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:38,000 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 9
+2023-09-07 15:24:38,000 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 9
+2023-09-07 15:24:38,000 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 9
+2023-09-07 15:24:38,497 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:38,497 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:38,497 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:38,498 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:38,498 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:38,498 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:38,498 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 12
+2023-09-07 15:24:38,498 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 12
+2023-09-07 15:24:38,498 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 12
+2023-09-07 15:24:38,498 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 12
+2023-09-07 15:24:39,144 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:39,144 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:39,144 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:39,144 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:39,145 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:39,145 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:39,145 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:39,145 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:39,145 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 24
+2023-09-07 15:24:39,145 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 24
+2023-09-07 15:24:39,145 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 24
+2023-09-07 15:24:39,145 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 24
+2023-09-07 15:24:39,145 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 24
+2023-09-07 15:24:40,749 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,749 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,749 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,749 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,749 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,750 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,750 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,750 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,750 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:40,750 - LADISMITH - INFO - Finished computing evaluation error metrics.

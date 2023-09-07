@@ -68,3 +68,93 @@
 2023-09-07 14:52:30,109 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:52:30,109 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:52:30,109 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:59,597 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 3
+2023-09-07 15:21:59,806 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:59,807 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:59,807 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 6
+2023-09-07 15:21:59,807 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 6
+2023-09-07 15:22:00,205 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:00,205 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:00,205 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:00,205 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:00,206 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 9
+2023-09-07 15:22:00,206 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 9
+2023-09-07 15:22:00,206 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 9
+2023-09-07 15:22:00,731 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:00,731 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:00,731 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:00,732 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:00,732 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:00,732 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:00,733 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 12
+2023-09-07 15:22:00,733 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 12
+2023-09-07 15:22:00,733 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 12
+2023-09-07 15:22:00,733 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 12
+2023-09-07 15:22:01,446 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:01,446 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:01,446 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:01,446 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:01,447 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:01,447 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:01,447 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:01,447 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:01,448 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 24
+2023-09-07 15:22:01,448 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 24
+2023-09-07 15:22:01,448 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 24
+2023-09-07 15:22:01,448 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 24
+2023-09-07 15:22:01,448 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 24
+2023-09-07 15:22:03,234 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,234 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,234 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,234 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,234 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,234 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,234 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,234 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,234 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,234 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:33,234 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 3
+2023-09-07 15:25:33,416 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:33,416 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:33,417 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 6
+2023-09-07 15:25:33,417 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 6
+2023-09-07 15:25:33,884 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:33,884 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:33,885 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:33,885 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:33,885 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 9
+2023-09-07 15:25:33,885 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 9
+2023-09-07 15:25:33,885 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 9
+2023-09-07 15:25:34,385 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:34,385 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:34,385 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:34,385 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:34,385 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:34,385 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:34,386 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 12
+2023-09-07 15:25:34,386 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 12
+2023-09-07 15:25:34,386 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 12
+2023-09-07 15:25:34,386 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 12
+2023-09-07 15:25:35,084 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:35,084 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:35,084 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:35,084 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:35,085 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:35,085 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:35,085 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:35,085 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:35,085 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 24
+2023-09-07 15:25:35,085 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 24
+2023-09-07 15:25:35,085 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 24
+2023-09-07 15:25:35,085 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 24
+2023-09-07 15:25:35,085 - RIVERSDALE - INFO - GWN evaluation started atRIVERSDALE for the horizon of 24
+2023-09-07 15:25:36,909 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:36,909 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:36,909 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:36,909 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:36,909 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:36,909 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:36,909 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:36,909 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:36,909 - RIVERSDALE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:36,909 - RIVERSDALE - INFO - Finished computing evaluation error metrics.

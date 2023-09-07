@@ -68,3 +68,93 @@
 2023-09-07 14:50:21,189 - FRASERBURG - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:50:21,189 - FRASERBURG - INFO - Finished computing evaluation error metrics.
 2023-09-07 14:50:21,189 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,329 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 3
+2023-09-07 15:20:39,511 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,512 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,512 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 6
+2023-09-07 15:20:39,512 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 6
+2023-09-07 15:20:40,026 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:40,026 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:40,026 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:40,026 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:40,027 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 9
+2023-09-07 15:20:40,027 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 9
+2023-09-07 15:20:40,027 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 9
+2023-09-07 15:20:40,545 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:40,545 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:40,545 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:40,545 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:40,545 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:40,545 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:40,546 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 12
+2023-09-07 15:20:40,546 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 12
+2023-09-07 15:20:40,546 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 12
+2023-09-07 15:20:40,546 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 12
+2023-09-07 15:20:41,221 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:41,221 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:41,221 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:41,221 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:41,221 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:41,221 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:41,221 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:41,221 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:41,222 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 24
+2023-09-07 15:20:41,222 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 24
+2023-09-07 15:20:41,222 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 24
+2023-09-07 15:20:41,222 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 24
+2023-09-07 15:20:41,222 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 24
+2023-09-07 15:20:42,845 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:42,845 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:42,845 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:42,845 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:42,845 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:42,845 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:42,845 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:42,845 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:42,845 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:42,845 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,139 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 3
+2023-09-07 15:24:14,630 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,630 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,630 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 6
+2023-09-07 15:24:14,630 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 6
+2023-09-07 15:24:14,976 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,976 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,977 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,977 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,977 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 9
+2023-09-07 15:24:14,977 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 9
+2023-09-07 15:24:14,977 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 9
+2023-09-07 15:24:15,586 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:15,586 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:15,586 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:15,587 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:15,587 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:15,587 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:15,587 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 12
+2023-09-07 15:24:15,587 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 12
+2023-09-07 15:24:15,587 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 12
+2023-09-07 15:24:15,587 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 12
+2023-09-07 15:24:16,235 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:16,235 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:16,235 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:16,235 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:16,236 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:16,236 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:16,236 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:16,236 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:16,237 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 24
+2023-09-07 15:24:16,237 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 24
+2023-09-07 15:24:16,237 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 24
+2023-09-07 15:24:16,237 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 24
+2023-09-07 15:24:16,237 - FRASERBURG - INFO - GWN evaluation started atFRASERBURG for the horizon of 24
+2023-09-07 15:24:17,892 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:17,892 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:17,892 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:17,892 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:17,892 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:17,893 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:17,893 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:17,893 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:17,893 - FRASERBURG - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:17,893 - FRASERBURG - INFO - Finished computing evaluation error metrics.
