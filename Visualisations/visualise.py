@@ -22,7 +22,8 @@ def create_graph(adj_matrix, config):
             number, station_name, lat, lon, province = row
             G.add_node(number, pos=(float(lon), float(lat)), province=province)
 
-    # adj_matrix=adj_matrix.T
+    if config['x_influences_y']['default']==False:
+        adj_matrix=adj_matrix.T
 
     for i in range(adj_matrix.shape[1]):  # Iterate over the columns instead of rows
         strongest_influence_indices = np.argsort(adj_matrix[i, :])[-2:]
@@ -59,6 +60,13 @@ def plot_map(adj_matrix, config):
     m.drawcountries()
     m.drawcoastlines()
 
+    parallels = np.arange(int(min(lats) - 0.1 * height), int(max(lats) + 0.1 * height), 1)
+    meridians = np.arange(int(min(lons) - 0.1 * width), int(max(lons) + 0.1 * width), 1)
+    m.drawparallels(parallels, labels=[True, False, False, False], fontsize=8, color='none')
+    m.drawmeridians(meridians, labels=[False, False, False, True], fontsize=8, color='none')
+
+
+
     # Drawing nodes, edges, and labels
     node_degrees = list(G.out_degree())
     numberNodesDisplay = config['numberNodesDisplay']['default']
@@ -77,8 +85,8 @@ def plot_map(adj_matrix, config):
 
 
 
-    
-    colormap = plt.cm.viridis
+
+    colormap = plt.cm.viridis_r
     edge_colors = [colormap(w) for w in normalized_weights]
     drawn_edges = [edge for edge in edge_weights.keys() if edge[0] in drawn_nodes]
     
@@ -93,7 +101,7 @@ def plot_map(adj_matrix, config):
     cbar = plt.colorbar(sm, orientation='horizontal', ax=ax)
     cbar.set_label('Edge Weight')
 
-    ax.set_title("Strongest Dependencies")
+    # ax.set_title("Strongest Dependencies")
     
     # Save the plot
     directory = f"Visualisations/{config['modelVis']['default']}/horizon_{config['horizonVis']['default']}/geographicVis/"
@@ -109,7 +117,7 @@ def plot_map(adj_matrix, config):
 def plot_heatmap(adj_matrix, config):
     fig_heatmap, ax_heatmap = plt.subplots()
     sns.heatmap(adj_matrix, cmap='YlGnBu', ax=ax_heatmap)
-    ax_heatmap.set_title("Adjacency Matrix Heatmap")
+    # ax_heatmap.set_title("Adjacency Matrix Heatmap")
 
     split = config['splitVis']['default']
     directory = 'Visualisations/' + config['modelVis']['default']+ '/horizon_' + config['horizonVis']['default'] + '/' + 'heatmap/'
@@ -120,7 +128,7 @@ def plot_heatmap(adj_matrix, config):
         os.makedirs(directory)
 
     filepath = os.path.join(directory, filename)
-    fig_heatmap.savefig(filepath)
+    fig_heatmap.savefig(filepath, dpi=600)
 
 
 
@@ -163,7 +171,7 @@ def plot_strong_chains(adj_matrix, config):
     for path in strong_paths:
         strong_nodes.update(path)
     
-    fig, ax = plt.subplots(figsize=(10, 6), dpi=600)
+    fig, ax = plt.subplots(figsize=(8, 8), dpi=600)
 
     node_positions = nx.get_node_attributes(G, 'pos')
     min_lon = min(pos[0] for pos in node_positions.values())
@@ -183,6 +191,15 @@ def plot_strong_chains(adj_matrix, config):
     m.drawmapboundary(fill_color='lightblue')
     m.fillcontinents(color='white', lake_color='lightblue')
 
+
+
+    parallels = np.arange(int(min_lat - 0.1 * height), int(max_lat + 0.1 * height), 1)
+    meridians = np.arange(int(min_lon - 0.1 * width), int(max_lon + 0.1 * width), 1)
+    m.drawparallels(parallels, labels=[True, False, False, False], fontsize=8, color='none')
+    m.drawmeridians(meridians, labels=[False, False, False, True], fontsize=8, color='none')
+
+
+
     # Convert latitude and longitude to x, y for the basemap
     pos = {node: m(G.nodes[node]['pos'][0], G.nodes[node]['pos'][1]) for node in G.nodes()}
 
@@ -193,7 +210,7 @@ def plot_strong_chains(adj_matrix, config):
     # Getting edge weights and normalizing them for color mapping
     edge_weights = nx.get_edge_attributes(G, "weight")
 
-    colormap = plt.cm.viridis
+    colormap = plt.cm.viridis_r
     norm = Normalize(vmin=min(edge_weights.values()), vmax=max(edge_weights.values()))
 
     # Draw the paths with colors based on edge weights

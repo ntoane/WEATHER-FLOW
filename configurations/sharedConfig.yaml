@@ -100,17 +100,17 @@ optimizer:
 ############################ Visualise Adjacency Matrix ############################
 vis:
   type: bool
-  default: false
+  default: true
   help: whether to visualise adjacency matrix or not
 
 modelVis:
   type: str
-  default: GWN
+  default: AGCRN
   help: the model to visualise
 
 horizonVis:
   type: str
-  default: "6"
+  default: "9"
   help: the horizon to visualise
 
 splitVis:
@@ -125,8 +125,13 @@ thresholdVis:
 
 numberNodesDisplay:
   type: int
-  default: 20
+  default: 45
   help: the number of nodes that should be displayed in the visualisation (reduce if too much overlapping)
+
+x_influences_y:
+  type: bool
+  default: True
+  help: If we represent a matrix entry as (x, y). Select "True" if the influence of node x is on node y.
 
 
 locations_path:
