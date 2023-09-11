@@ -45,7 +45,7 @@ increment:
   # default: [8760, 17520, 26280, 35040, 43800, 52560, 61320, 70080] 
 
   # just last split (set num_split=1)
-  default: [52560, 61320, 70080]
+  default: [79750, 96839, 113929]
 
   # default: [1000, 1100, 1200]
 
@@ -100,12 +100,12 @@ optimizer:
 ############################ Visualise Adjacency Matrix ############################
 vis:
   type: bool
-  default: true
+  default: false
   help: whether to visualise adjacency matrix or not
 
 modelVis:
   type: str
-  default: AGCRN
+  default: GWN
   help: the model to visualise
 
 horizonVis:
