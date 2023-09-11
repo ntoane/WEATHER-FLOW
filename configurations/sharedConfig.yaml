@@ -18,7 +18,7 @@ tune_tcn:
   help: whether to perform random search HPO on TCN models
 tune_gwn:
   type: bool
-  default: false
+  default: true
   help: whether to perform random search HPO on GWN model
 num_configs:
   type: int
@@ -47,7 +47,6 @@ increment:
   # just last split (set num_split=1)
   default: [79750, 96839, 113929]
 
-  # default: [1000, 1100, 1200]
 
   help:  (from davidson) List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 
     8784 is one year's worth of data, the next step is 3 months of data, and the following step is also 3 months of 

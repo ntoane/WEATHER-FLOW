@@ -33,7 +33,7 @@ class GWNHPO(modelHPO):
             for k in range(num_splits):
                 modelFile = 'Garage/HPO Models/GWN/model_split_' + str(k)
                 n_stations= int(self.sharedConfig['n_stations']['default'])
-                data_sets, split = self.split_data(data, increment, num_splits, n_stations)
+                data_sets, split = self.split_data(data, increment, k, n_stations)
                 # split = [increment[k] * n_stations, increment[k + 1] * n_stations, increment[k + 2] * n_stations]
                 # data_sets = [data[:split[0]], data[split[0]:split[1]], data[split[1]:split[2]]]
                 
@@ -84,10 +84,9 @@ class GWNHPO(modelHPO):
         data = data.drop(['StasName', 'DateT','Latitude', 'Longitude'], axis=1)  #added latitude and longitude
         return data
 
-    def split_data(self, data, increment, num_splits, n_stations):
-        for k in range(num_splits):
-            split = [increment[k] * n_stations, increment[k + 1] * n_stations, increment[k + 2] * n_stations]
-            data_sets = [data[:split[0]], data[split[0]:split[1]], data[split[1]:split[2]]]
+    def split_data(self, data, increment, k, n_stations):
+        split = [increment[k] * n_stations, increment[k + 1] * n_stations, increment[k + 2] * n_stations]
+        data_sets = [data[:split[0]], data[split[0]:split[1]], data[split[1]:split[2]]]
         return data_sets, split
 
     def train_model(self,sharedConfig, gwnConfig,  data, split, supports, adj_init, model_file):

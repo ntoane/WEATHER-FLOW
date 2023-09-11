@@ -59,7 +59,8 @@ def z_score_normalize(train, validation, test):
     return train, validation, test, train_mean, train_std
 
 
-def min_max(train, validation, test, allDataTrain):
+# def min_max(train, validation, test, allDataTrain):
+def min_max(train, validation, test):
     """
     Performs MinMax scaling on the train, validation and test sets using the train data min and max.
     Parameters:
@@ -68,7 +69,8 @@ def min_max(train, validation, test, allDataTrain):
         train, validation, test - returns the scaled train, validation and test sets
     """
 
-    norm = MinMaxScaler().fit(allDataTrain)
+    norm = MinMaxScaler().fit(train)
+    # norm = MinMaxScaler().fit(allDataTrain)
 
 
     train_data = norm.transform(train)
