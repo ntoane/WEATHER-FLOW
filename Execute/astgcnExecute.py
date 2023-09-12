@@ -117,13 +117,13 @@ class astgcnExecute:
         
         self.lossData.append([history.history['loss']])
         # predictions = self.predict(model, num_nodes, scaler)
-        yhat = model.predict(X_train)
+        yhat = model.predict(X_test)
 
         self.resultsData.append(yhat.reshape(-1,))
         # self.targetData.append(Y_test.reshape(-1,))
         # self.save_data(Y_test, yhat)
-        self.targetData.append(Y_train.reshape(-1,))
-        self.save_data(Y_train, yhat)
+        self.targetData.append(Y_test.reshape(-1,))
+        self.save_data(Y_test, yhat)
 
     def save_data(self, Y_train, yhat):
         """Saves the results, loss, target data, and the actual vs predicted comparison to CSV files."""
