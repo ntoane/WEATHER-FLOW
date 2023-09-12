@@ -5,6 +5,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.metrics import mean_absolute_error
 import math
 from sklearn.preprocessing import MinMaxScaler
+import Utils.gwnUtils as gwnUtils
 
 
 def Add_Window_Horizon(data, window, horizon, single):
@@ -46,10 +47,7 @@ def Add_Window_Horizon(data, window, horizon, single):
     else:
         while index < end_index:
             X.append(data[index:index+window])
-            # Y.append(data[index+window:index+window+horizon])
             Y.append( data[index+window:index+window+horizon, :, -1:] )
-           
-            # print("new print:" + str(data[index+window:index+window+horizon, :, -1:] .shape))
             index = index + 1
 
     X = np.array(X)
@@ -71,8 +69,6 @@ def min_max(data):
     return data
 
 def normalize_dataset(data, normalizer, column_wise):
-    print("old shape")
-    print(data.shape)
     if normalizer == 'max01':
         if column_wise:
             minimum = data.min(axis=0, keepdims=True)
@@ -176,25 +172,25 @@ def min_max(train, validation, test):
 
 def get_dataloader(horizon, k, increment ,agcrnConfig, normalizer = 'std', tod=False, dow=False, weather=False, single=True):
     #load raw st dataset
-    data = load_st_dataset()        # B, N, D                #gets the data (19992, 307)
+    data = load_st_dataset()        # B, N, D     
     
-
+    #train data prenormalised
     split = [increment[k], increment[k + 1], increment[k + 2] ]
     data_train = data[:split[0]]
-    print("the new shape")
-    print(data_train.shape)
-    min_train = np.min(data_train[:, :, -1])
-    max_train = np.max(data_train[:, :, -1])
-
-    #normalize st data
-    data, scaler = normalize_dataset(data, normalizer, agcrnConfig['column_wise']['default'])
-   
     
+    #min/max of training set
+    min_train = np.min(data_train, axis=(0,1))
+    max_train = np.max(data_train, axis=(0,1))
+
+    #normalise all data
+    scaler = gwnUtils.NormScaler(min_train, max_train)
+    data = scaler.transform(data)
+    
+    #split data
     split = [increment[k], increment[k + 1], increment[k + 2] ]
     data_train = data[:split[0]]
     data_val = data[split[0]:split[1]]
     data_test = data[split[1]:split[2]]
-
 
 
     #add time window
@@ -211,7 +207,7 @@ def get_dataloader(horizon, k, increment ,agcrnConfig, normalizer = 'std', tod=F
     else:
         val_dataloader = data_loader(x_val, y_val, agcrnConfig['batch_size']['default'], shuffle=False, drop_last=True)
     test_dataloader = data_loader(x_test, y_test, agcrnConfig['batch_size']['default'], shuffle=False, drop_last=False)
-    return train_dataloader, val_dataloader, test_dataloader, scaler, min_train, max_train
+    return train_dataloader, val_dataloader, test_dataloader, scaler #, min_train, max_train
 
 
 
@@ -226,27 +222,16 @@ import pandas as pd
 def load_st_dataset():
     #output B, N, D
  
-
     data = pd.read_csv('DataNew/Graph Neural Network Data/Graph Station Data/graph.csv')
     data = data.drop(['StasName', 'DateT', 'Latitude', 'Longitude'], axis=1)  #added latitude and longitude
     data = np.array(data)
-    # print(data.shape)
 
     data = np.reshape(data, (113929, 45, 6))
-    
-    # print("stations data shape:")
-    # print(data.shape)
-    # print("stations data snippet:")
-    # np.set_printoptions(threshold=np.inf)
-    # print(data[:500])
-    
-        
 
     if len(data.shape) == 2:
         data = np.expand_dims(data, axis=-1)
 
     return data
-
 
 
 #logger

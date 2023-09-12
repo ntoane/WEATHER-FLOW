@@ -26,6 +26,49 @@ class agcrnHPO(modelHPO):
     def __init__(self, sharedConfig, modelConfig):
         super().__init__('agcrn', sharedConfig, modelConfig)
 
+    def hpo(self):
+        #setup file to save parameters to
+        param_path = 'HPO/Best Parameters/AGCRN/'
+        if not os.path.exists(param_path):
+                        os.makedirs(param_path)
+        f = open(param_path + "configurations.txt", 'w')
+
+        #setup HPO logs
+        log_path = 'Logs/AGCRN/HPO/'
+        os.makedirs(log_path, exist_ok=True)
+        log_file = log_path + 'agcrn_all_stations.txt'
+        self.model_logger = modelLogger('agcrn', 'all_stations', log_file, log_enabled=True)
+        
+        #run HPO for 24 hour horizon only
+        forecast_len = 24
+        for config in range(2):
+            #generate and print random parameters
+            self.model_logger.info("Generating random parameters for AGCRN")
+            print("Generating random parameters for AGCRN")
+            self.modelConfig = agcrnUtil.generateRandomParameters(self.modelConfig)
+            print('This is the HPO configuration: \n',
+                          'Lag_length - ', self.modelConfig['lag']['default'], '\n',
+                          'Rnn Units - ', self.modelConfig['rnn_units']['default'], '\n',
+                          'Layers - ', self.modelConfig['num_layers']['default'], '\n',
+                          'Batch Size - ', self.modelConfig['batch_size']['default'], '\n',
+                          'Epochs - ', self.modelConfig['epochs']['default'])
+            
+            #perform model and data prep and train model with configurations
+            split=0
+            print("Training AGCRN for horizons:"+ str(forecast_len) + "   split:"+str(split))
+            self.prep_split_data(forecast_len, split)
+            self.initialise_model()
+            totLoss = self.execute_split() 
+
+            #save configurations and loss to file
+            f.write(    'Lag - ' + str(self.modelConfig['lag']['default']) + '\n' +
+                        'Rnn Units - ' + str(self.modelConfig['rnn_units']['default']) + '\n' +
+                        'Layers - '+ str(self.modelConfig['num_layers']['default'])+ '\n'+
+                        'Batch Size - '+ str(self.modelConfig['batch_size']['default']) + '\n'+
+                        'Epochs - '+ str(self.modelConfig['epochs']['default']) + '\n' +
+                        'Total Loss: ' + str(totLoss) + '\n\n')
+        f.close()
+
 
     def val_epoch(self, epoch, val_dataloader):
         self.model.eval()
@@ -37,8 +80,6 @@ class agcrnHPO(modelHPO):
                 data = data[..., :self.modelConfig['input_dim']['default']]  #need to make 6 (inputs)
                 label = target[..., :self.modelConfig['output_dim']['default']]   #need to make 1 (output supposed to predict)
                 output = self.model(data, target, teacher_forcing_ratio=0.)
-                if self.modelConfig['real_value']['default']:
-                    label = self.scaler.inverse_transform(label)
                 loss = self.loss(output.cpu(), label) #changes from cuda
                 #a whole batch of Metr_LA is filtered
                 if not torch.isnan(loss):
@@ -58,9 +99,6 @@ class agcrnHPO(modelHPO):
             label = target[..., :self.modelConfig['output_dim']['default']]  # (..., 1)
 
             self.optimizer.zero_grad()
-
-            #teacher_forcing for RNN encoder-decoder model
-            #if teacher_forcing_ratio = 1: use label as input in the decoder for all steps
             if self.modelConfig['teacher_forcing']['default']:
                 global_step = (epoch - 1) * self.train_per_epoch + batch_idx
                 teacher_forcing_ratio = self._compute_sampling_threshold(global_step, self.modelConfig['tf_decay_steps']['default'])
@@ -69,10 +107,7 @@ class agcrnHPO(modelHPO):
             #data and target shape: B, T, N, F; output shape: B, T, N, F
 
             output = self.model(data, target, teacher_forcing_ratio=teacher_forcing_ratio)
-     
-            if self.modelConfig['real_value']['default']:
-                label = self.scaler.inverse_transform(label)
-     
+
             loss = self.loss(output.cpu(), label)
             loss.backward()
 
@@ -109,25 +144,20 @@ class agcrnHPO(modelHPO):
         start_time = time.time()
 
         for epoch in range(1, self.modelConfig['epochs']['default'] + 1):
-            #epoch_time = time.time()
             train_epoch_loss = self.train_epoch(epoch)
-            #print(time.time()-epoch_time)
-            #exit()
+
             if self.val_loader == None:
                 val_dataloader = self.test_loader
             else:
                 val_dataloader = self.val_loader
             val_epoch_loss = self.val_epoch(epoch, val_dataloader)
 
-            #print('LR:', self.optimizer.param_groups[0]['lr'])
             train_loss_list.append(train_epoch_loss)
             val_loss_list.append(val_epoch_loss)
             if train_epoch_loss > 1e6:
                 self.model_logger.warning('Gradient explosion detected. Ending...')
                 print('Gradient explosion detected. Ending...')
                 break
-            #if self.val_loader == None:
-            #val_epoch_loss = train_epoch_loss
             if val_epoch_loss < best_loss:
                 best_loss = val_epoch_loss
                 not_improved_count = 0
@@ -135,14 +165,7 @@ class agcrnHPO(modelHPO):
             else:
                 not_improved_count += 1
                 best_state = False
-            # early stop
-            if self.modelConfig['early_stop']['default']:
-                if not_improved_count == self.modelConfig['early_stop_patience']['default']:
-                    self.model_logger.info("Validation performance didn\'t improve for {} epochs. "
-                                    "Training stops.".format(self.modelConfig['early_stop_patience']['default']))
-                    print("Validation performance didn\'t improve for {} epochs. "
-                                    "Training stops.".format(self.modelConfig['early_stop_patience']['default']))
-                    break
+
             # save the best state
             if best_state == True:
                 self.model_logger.info('*********************************Current best model saved!')
@@ -156,18 +179,7 @@ class agcrnHPO(modelHPO):
 
 
     def initialise_model(self):
-    
         DEVICE = 'cuda:0'
-
-        def masked_mae_loss(scaler, mask_value):
-            def loss(preds, labels):
-                if scaler:
-                    preds = scaler.inverse_transform(preds)
-                    labels = scaler.inverse_transform(labels)
-                mae = agcrnUtil.MAE_torch(pred=preds, true=labels, mask_value=mask_value)
-                return mae
-            return loss
-
         agcrnUtil.init_seed(self.modelConfig['seed']['default'])
 
         if torch.cuda.is_available():
@@ -183,14 +195,8 @@ class agcrnHPO(modelHPO):
                 nn.init.xavier_uniform_(p)
             else:
                 nn.init.uniform_(p)
-        # agcrnUtil.print_model_parameters(model, only_num=False)
-        # print("reachA")
-        #load dataset
-       
-        #init loss function, optimizer
-        if self.modelConfig['loss_func']['default'] == 'mask_mae':
-            loss = masked_mae_loss(self.scaler, mask_value=0.0)
-        elif self.modelConfig['loss_func']['default'] == 'mae':
+
+        if self.modelConfig['loss_func']['default'] == 'mae':
             loss = torch.nn.L1Loss().to(DEVICE)
         elif self.modelConfig['loss_func']['default'] == 'mse':
             loss = torch.nn.MSELoss().to(DEVICE)
@@ -225,46 +231,6 @@ class agcrnHPO(modelHPO):
         self.train_per_epoch = len(self.train_loader)
         if self.val_loader != None:
             self.val_per_epoch = len(self.val_loader)
-
-
-
-    def hpo(self):
-        param_path = 'HPO/Best Parameters/AGCRN/'
-        if not os.path.exists(param_path):
-                        os.makedirs(param_path)
-        f = open(param_path + "configurations.txt", 'w')
-        log_path = 'Logs/AGCRN/HPO/'
-        os.makedirs(log_path, exist_ok=True)
-        log_file = log_path + 'agcrn_all_stations.txt'
-        self.model_logger = modelLogger('agcrn', 'all_stations', log_file, log_enabled=True)
-        forecast_len = 24
-        for config in range(2):
-            totLoss=0
-
-            self.model_logger.info("Generating random parameters for AGCRN")
-            print("Generating random parameters for AGCRN")
-            self.modelConfig = agcrnUtil.generateRandomParameters(self.modelConfig)
-
-            print('This is the HPO configuration: \n',
-                          'Lag_length - ', self.modelConfig['lag']['default'], '\n',
-                          'Rnn Units - ', self.modelConfig['rnn_units']['default'], '\n',
-                          'Layers - ', self.modelConfig['num_layers']['default'], '\n',
-                          'Batch Size - ', self.modelConfig['batch_size']['default'], '\n',
-                          'Epochs - ', self.modelConfig['epochs']['default'])
-
-
-            for split in range(2):
-                print("Training AGCRN for horizons:"+ str(forecast_len) + "   split:"+str(split))
-                self.prep_split_data(forecast_len, split)
-                self.initialise_model()
-                totLoss = totLoss + self.execute_split() 
-            f.write(    'Lag - ' + str(self.modelConfig['lag']['default']) + '\n' +
-                        'Rnn Units - ' + str(self.modelConfig['rnn_units']['default']) + '\n' +
-                        'Layers - '+ str(self.modelConfig['num_layers']['default'])+ '\n'+
-                        'Batch Size - '+ str(self.modelConfig['batch_size']['default']) + '\n'+
-                        'Epochs - '+ str(self.modelConfig['epochs']['default']) + '\n' +
-                        'Total Loss: ' + str(totLoss) + '\n\n')
-        f.close()
 
 
     @staticmethod

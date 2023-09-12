@@ -108,7 +108,7 @@ max_grad_norm:
   help: maximum gradient norm
 real_value:
   type: bool
-  default: true
+  default: false
   help: whether to use real values
 mae_thresh:
   type: str

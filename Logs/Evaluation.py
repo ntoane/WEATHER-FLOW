@@ -252,17 +252,17 @@ def AgcrnEval(modelConfig,sharedConfig):
                 min_scalar = read_value_from_file(train_data_min_file)
                 max_scalar = read_value_from_file(train_data_max_file)
 
-                y_predO=np.load(fileDictionary["predFile"] + ".npy")
-                y_trueO=np.load(fileDictionary["targetFile"] + ".npy")
+                y_pred=np.load(fileDictionary["predFile"] + ".npy")
+                y_true=np.load(fileDictionary["targetFile"] + ".npy")
 
-                print(y_trueO)
+                print(y_true)
 
 
-                # scaler = utils.NormScaler(0, 43)
-                # scaler = utils.NormScaler(y_trueO.min(), y_trueO.max())
-                scaler = utils.NormScaler(min_scalar, max_scalar)
-                y_true = scaler.transform(y_trueO)
-                y_pred = scaler.transform(y_predO)
+                # # scaler = utils.NormScaler(0, 43)
+                # # scaler = utils.NormScaler(y_trueO.min(), y_trueO.max())
+                # scaler = utils.NormScaler(min_scalar, max_scalar)
+                # y_true = scaler.transform(y_trueO)
+                # y_pred = scaler.transform(y_predO)
 
 
                 for i in range(45):
