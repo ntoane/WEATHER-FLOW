@@ -1,3 +1,4 @@
+import os
 import numpy as np
 import tensorflow as tf
 from Utils.astgcnUtils import calculate_laplacian_astgcn, prepare_data_astgcn
@@ -5,8 +6,15 @@ from tensorflow.keras.layers import Input, Dense, LSTM, Reshape
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Reshape, Conv3D, Flatten
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping
-tf.config.run_functions_eagerly(False)
 import warnings
+
+# Seeds and deterministic ops settings
+np.random.seed(42)
+tf.random.set_seed(42)
+os.environ['TF_DETERMINISTIC_OPS'] = '1'  
+
+# Configuration
+tf.config.run_functions_eagerly(False)
 warnings.filterwarnings("ignore", category=RuntimeWarning)
 
 class AstGcn:
