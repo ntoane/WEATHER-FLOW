@@ -211,7 +211,7 @@ def plot_strong_chains(adj_matrix, config):
     edge_weights = nx.get_edge_attributes(G, "weight")
 
     colormap = plt.cm.viridis_r
-    norm = Normalize(vmin=min(edge_weights.values()), vmax=max(edge_weights.values()))
+    norm = Normalize(0, 1)
 
     # Draw the paths with colors based on edge weights
     for path in strong_paths:
