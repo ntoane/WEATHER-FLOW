@@ -7,7 +7,6 @@ from Execute.tcnExecute import tcnExecute
 from Execute.gwnExecute import gwnExecute
 from Execute.astgcnExecute import astgcnExecute
 from HPO.astgcnHPO import astgcnHPO as astgcnHPO
-from Logs.Evaluation import evalASTGCN as evalASTGCN
 import Plots.plotter as plotter
 import Visualisations.visualise as visualise
 import Logs.Evaluation as Evaluation

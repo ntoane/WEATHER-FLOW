@@ -13,7 +13,7 @@ train_agcrn:
   help: whether to train final AGCRN model
 train_ast_gcn:
   type: bool
-  default: false
+  default: true
   help: whether to train final ASTGCN model
 ############################ Random Search HPO arguments (GWN & TCN) ############################ 
 tune_tcn:
@@ -22,7 +22,7 @@ tune_tcn:
   help: whether to perform random search HPO on TCN models
 tune_gwn:
   type: bool
-  default: true
+  default: false
   help: whether to perform random search HPO on GWN model
 num_configs:
   type: int
@@ -43,7 +43,7 @@ eval_agcrn:
   help: whether to report final AGCRN metrics
 eval_ast_gcn:
   type: bool
-  default: false
+  default: true
   help: whether to report final ASTGCN metrics
 ############################ General data configurations ############################
 increment: 
@@ -72,7 +72,8 @@ stations:
 
 horizons:
   type: int[]
-  default: [3,6,9,12,24]
+  # default: [3,6,9,12,24]
+  default: [3]
   help: forecast horizons
 
 n_stations:
