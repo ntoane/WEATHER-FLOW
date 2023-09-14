@@ -5,9 +5,11 @@ from HPO.gwnHPO import GWNHPO
 from Execute.agcrnExecute import agcrnExecute
 from Execute.tcnExecute import tcnExecute
 from Execute.gwnExecute import gwnExecute
+from Execute.astgcnExecute import astgcnExecute
+from HPO.astgcnHPO import astgcnHPO as astgcnHPO
+from Logs.Evaluation import evalASTGCN as evalASTGCN
 import Plots.plotter as plotter
-# import Visualisations.visualise as visualise
-# from Logs.Evaluation import Evaluation
+import Visualisations.visualise as visualise
 import Logs.Evaluation as Evaluation
 
 # Parse the command-line arguments
@@ -22,7 +24,9 @@ with open('configurations/sharedConfig.yaml', 'r') as file:
 
 complete = False
 def main():
-    configOptions = ['train_tcn', 'train_gwn','tune_tcn','tune_gwn','eval_tcn','eval_gwn','train_agcrn', 'eval_agcrn','vis']
+    configOptions = ['train_tcn', 'train_gwn','tune_tcn','tune_gwn','eval_tcn',
+                     'eval_gwn','train_agcrn', 'eval_agcrn',
+                     'vis','train_astgcn', 'eval_astgcn']
     loop = True
     global complete
 
@@ -36,7 +40,14 @@ def main():
         agcrn_trainer = agcrnExecute(sharedConfig, agcrnConfig)
         agcrn_trainer.execute()
         complete = True
-
+        
+    # Train final TCN models using config settings specified
+    if sharedConfig['train_ast_gcn']['default'] or args.mode == configOptions[8]:
+        astgcnConfig = getSpecificConfig('astgcn')
+        trainer = astgcnExecute(sharedConfig,astgcnConfig)
+        trainer.train()
+        print("*************  Finished training process for the AST-GCN Model ************* ")
+    
 
     # Train final TCN models using config settings specified
     if sharedConfig['train_tcn']['default'] or args.mode == configOptions[0]:
@@ -61,7 +72,7 @@ def main():
         complete = True
 
 
-# Random search GWN
+    # Random search GWN
     if sharedConfig['tune_gwn']['default'] or args.mode == configOptions[3]:
         gwnConfig = getSpecificConfig('gwn')
         gwnHPO = GWNHPO(sharedConfig, gwnConfig)
@@ -89,14 +100,18 @@ def main():
         Evaluation.AgcrnEval(agcrnConfig, sharedConfig)
         complete = True
         # plotter.create('AGCRN', sharedConfig)
-
-
-
-
+    
+    # Record metrics for final ASTGCN models  
+    if sharedConfig['eval_ast_gcn']['default'] or args.mode == configOptions[8]:
+        astgcnConfig = getSpecificConfig('astgcn')
+        Evaluation.AstgcnEval(astgcnConfig, sharedConfig)
+        complete = True
+        #plotter.create('ASTGCN',config)
+    
 
 # ############ Visualisations #############
-    # if sharedConfig['vis']['default'] or args.mode == configOptions[8]:
-        # visualise.plot(sharedConfig)
+    if sharedConfig['vis']['default'] or args.mode == configOptions[8]:
+        visualise.plot(sharedConfig)
 
 ############ Else condition #############   
     else :

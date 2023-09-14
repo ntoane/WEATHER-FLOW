@@ -321,7 +321,7 @@ def AgcrnEval(modelConfig,sharedConfig):
 
 
 
-def evalASTGCN(config, sharedConfig):
+def AstgcnEval(config, sharedConfig):
     stations = sharedConfig['stations']['default']
     n_splits = sharedConfig['n_split']['default']
     all_metrics = {}  # To store all metrics for each station
