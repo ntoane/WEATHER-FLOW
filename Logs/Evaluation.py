@@ -321,28 +321,29 @@ def AgcrnEval(modelConfig,sharedConfig):
 
 
 
-        
 def evalASTGCN(config, sharedConfig):
     stations = sharedConfig['stations']['default']
     n_splits = sharedConfig['n_split']['default']
     all_metrics = {}  # To store all metrics for each station
     avg_metrics = {}
-    
+    all_smape_values = []  # List to collect all SMAPE values
+
     for horizon in sharedConfig['horizons']['default']:
+        print("Evaluating horizon : ",horizon)
         for k in range(n_splits):
             fileDictionary = {
                 "yhat": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Predictions/result.csv',
                 "target": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Targets/target.csv',
-                 "metrics": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/',
-                 'metricFile1': '/split_' + str(k) + '_metrics.txt', 
-                 "actual_vs_predicted": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/actual_vs_predicted.txt'                 
+                "metrics": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/',
+                'metricFile1': '/split_' + str(k) + '_metrics.txt', 
+                "actual_vs_predicted": f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/actual_vs_predicted.txt'
             }
-            
+
             y_pred = pd.read_csv(fileDictionary["yhat"])['0'].values
             y_true = pd.read_csv(fileDictionary["target"])['0'].values   
             y_pred_reshaped = y_pred.reshape(-1, 45)
             y_true_reshaped = y_true.reshape(-1, 45)
-            
+
             for i in range(45):
                 station_pred = y_pred_reshaped[:, i]
                 station_true = y_true_reshaped[:, i]
@@ -351,48 +352,47 @@ def evalASTGCN(config, sharedConfig):
                 rmse = metrics.rmse(np.array([station_true]), np.array([station_pred]))
                 mae = metrics.mae(np.array([station_true]), np.array([station_pred]))
                 smape = metrics.smape(np.array([station_true]), np.array([station_pred]))
+                print(f"SMAPE for station {stations[i]}: {smape}")
+
 
                 if stations[i] not in all_metrics:
                     all_metrics[stations[i]] = {'mse': [], 'rmse': [], 'mae': [], 'smape': []}
                 
-                # Save all metrics
                 all_metrics[stations[i]]['mse'].append(mse)
                 all_metrics[stations[i]]['rmse'].append(rmse)
                 all_metrics[stations[i]]['mae'].append(mae)
                 all_metrics[stations[i]]['smape'].append(smape)
 
-                filePath =fileDictionary['metrics'] +str(stations[i])
+                filePath = fileDictionary['metrics'] + str(stations[i])
                 if not os.path.exists(filePath):
                     os.makedirs(filePath)
-                
+
                 with open(filePath + fileDictionary['metricFile1'], 'w') as file:
                     file.write('This is the RMSE ' + str(rmse) + '\n')
                     file.write('This is the MSE ' + str(mse) + '\n')
                     file.write('This is the MAE ' + str(mae) + '\n')
-                    file.write('This is the SMAPE ' + str(smape) + '\n')   
+                    file.write('This is the SMAPE ' + str(smape) + '\n')
 
-    # Loop through each station to calculate and save average metrics
     for station in stations:
-        # Initialize an empty dictionary for the station in avg_metrics
         avg_metrics[station] = {}
         for metric in ['mse', 'rmse', 'mae', 'smape']:
-            # Calculate the average for the metric
             avg_value = np.mean(all_metrics[station][metric])
-            # Store the average in avg_metrics
             avg_metrics[station][metric] = avg_value
-            # Write the average metric to a file
+
+            if metric == 'smape':
+                all_smape_values.append(avg_value)
+
             best_metric_file_path = f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/average_metrics_{station}.txt'
-            with open(best_metric_file_path, 'a') as file:  # Using 'a' to append if the file already exists
+            with open(best_metric_file_path, 'a') as file:
                 file.write(f'Average {metric.upper()}: {avg_value}\n')
-    
-    # Find and save top 5 and bottom 5 stations for each metric
+
     summary_file_path = f'Results/ASTGCN/{horizon} Hour Forecast/All Stations/Metrics/top_bottom_summary.txt'
     with open(summary_file_path, 'w') as file:
         for metric in ['smape']:
             sorted_stations = sorted(stations, key=lambda x: avg_metrics[x][metric])
             top_5_stations = sorted_stations[:5]
             bottom_5_stations = sorted_stations[-5:]
-            
+
             file.write(f'Top 5 stations for {metric.upper()}:\n')
             for station in top_5_stations:
                 file.write(f'{station}: {avg_metrics[station][metric]}\n')
@@ -401,8 +401,12 @@ def evalASTGCN(config, sharedConfig):
             for station in bottom_5_stations:
                 file.write(f'{station}: {avg_metrics[station][metric]}\n')
             file.write('\n')
-        
-        
+
+    global_avg_smape = np.mean(all_smape_values)
+    print(f"Global Average SMAPE across all stations: {global_avg_smape}")
+
+    with open(summary_file_path, 'a') as file:
+        file.write(f'\nGlobal Average SMAPE across all stations: {global_avg_smape}\n')
         
         
         
