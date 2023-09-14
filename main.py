@@ -71,7 +71,6 @@ def main():
         tcnHPO.hpo()
         complete = True
 
-
     # Random search GWN
     if sharedConfig['tune_gwn']['default'] or args.mode == configOptions[3]:
         gwnConfig = getSpecificConfig('gwn')

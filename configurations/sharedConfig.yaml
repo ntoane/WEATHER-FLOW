@@ -11,6 +11,10 @@ train_agcrn:
   type: bool
   default: false
   help: whether to train final AGCRN model
+train_ast_gcn:
+  type: bool
+  default: false
+  help: whether to train final ASTGCN model
 ############################ Random Search HPO arguments (GWN & TCN) ############################ 
 tune_tcn:
   type: bool
@@ -37,14 +41,15 @@ eval_agcrn:
   type: bool
   default: false
   help: whether to report final AGCRN metrics
+eval_ast_gcn:
+  type: bool
+  default: false
+  help: whether to report final ASTGCN metrics
 ############################ General data configurations ############################
 increment: 
   type: int[]
-
   #all splits  (set num_split=6):
   # default: [8760, 17520, 26280, 35040, 43800, 52560, 61320, 70080] 
-
-  # just last split (set num_split=1)
   default: [79750, 96839, 113929]
 
 
@@ -55,8 +60,6 @@ increment:
 
 stations:
   type: str[]
-  # default: ['ADDO ELEPHANT PARK', 'ALEXANDERBAAI', 'ALIWAL-NORTH PLAATKOP', 'BARKLY-OOS (CAERLEON)',
-  #                'BRANDVLEI']
   default: ['ADDO ELEPHANT PARK', 'ALEXANDERBAAI', 'ALIWAL-NORTH PLAATKOP', 'BARKLY-OOS (CAERLEON)',
                 'BRANDVLEI', 'CALVINIA WO', 'CAPE TOWN WO', 'DE AAR WO', 'DOHNE - AGR', 'EAST LONDON WO',
                 'EXCELSIOR CERES', 'FORT BEAUFORT', 'FRASERBURG', 'GEORGE WITFONTEIN', 'GEORGE WO', 
@@ -70,9 +73,6 @@ stations:
 horizons:
   type: int[]
   default: [3,6,9,12,24]
-  # default: [3, 6]
-  # default: [9, 12]
-  # default: [10]
   help: forecast horizons
 
 n_stations:
@@ -131,7 +131,6 @@ x_influences_y:
   type: bool
   default: True
   help: If we represent a matrix entry as (x, y). Select "True" if the influence of node x is on node y.
-
 
 locations_path:
   type: str
