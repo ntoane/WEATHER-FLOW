@@ -50,7 +50,7 @@ python3 main.py --mode config.yaml
 ***Training Models Using Optimal Hyper-Parameters***
 
 For TCN:
-Baseline training across 21 weather stations on [3, 6, 9, 12, 24] hour forecasting horizon.
+Baseline training across 45 weather stations on [3, 6, 9, 12, 24] hour forecasting horizon.
 
 For GWN:
 GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon.
@@ -58,7 +58,7 @@ GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon.
 ***Performing Random-Search Hyper-Parameter Optimisation(HPO)***
 
 For TCN:
-Baseline HPO across 21 weather stations on 24 hour forecasting horizon.
+Baseline HPO across 45 weather stations on 24 hour forecasting horizon.
 
 For GWN:
 GWN GNN HPO on 24 hour forecasting horizon.

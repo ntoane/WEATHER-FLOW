@@ -10,6 +10,7 @@ from HPO.astgcnHPO import astgcnHPO as astgcnHPO
 import Plots.plotter as plotter
 import Visualisations.visualise as visualise
 import Logs.Evaluation as Evaluation
+from HPO.agcrnHPO import agcrnHPO
 
 # Parse the command-line arguments
 parser = argparse.ArgumentParser()
@@ -25,7 +26,7 @@ complete = False
 def main():
     configOptions = ['train_tcn', 'train_gwn','tune_tcn','tune_gwn','eval_tcn',
                      'eval_gwn','train_agcrn', 'eval_agcrn',
-                     'vis','train_astgcn', 'eval_astgcn']
+                     'vis','train_astgcn', 'eval_astgcn','tune_agcrn']
     loop = True
     global complete
 
@@ -77,6 +78,13 @@ def main():
         gwnHPO.hpo()
         complete = True
 
+    # Random search AGCRN
+    if sharedConfig['tune_agcrn']['default'] or args.mode == configOptions[11]:
+        agcrnConfig = getSpecificConfig('agcrn')
+        agcrn_hpo = agcrnHPO(sharedConfig, agcrnConfig)
+        agcrn_hpo.hpo() 
+        complete = True
+
 ############ Recordings ##############
     # Record metrics for final TCN models
     if sharedConfig['eval_tcn']['default'] or args.mode == configOptions[4]:
@@ -97,7 +105,6 @@ def main():
         agcrnConfig = getSpecificConfig('agcrn')
         Evaluation.AgcrnEval(agcrnConfig, sharedConfig)
         complete = True
-        # plotter.create('AGCRN', sharedConfig)
     
     # Record metrics for final ASTGCN models  
     if sharedConfig['eval_ast_gcn']['default'] or args.mode == configOptions[8]:
