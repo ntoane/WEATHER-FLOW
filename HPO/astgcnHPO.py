@@ -7,7 +7,7 @@ from Utils.astgcn_Data_PreProcess.data_preprocess import data_preprocess_AST_GCN
 from Logs.modelLogger import modelLogger 
 
 class astgcnHPO:
-    def __init__(self, config):
+    def __init__(self, config, sharedConfig):
         self.config = config
 
     def hpo(self):

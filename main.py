@@ -88,7 +88,7 @@ def main():
      # Random search ASTGCN
     if sharedConfig['tune_astgcn']['default'] or args.mode == configOptions[12]:
         astgcnConfig = getSpecificConfig('astgcn')
-        astgcn_hpo = astgcnHPO(sharedConfig, astgcnConfig)
+        astgcn_hpo = astgcnHPO(astgcnConfig, sharedConfig)
         astgcn_hpo.hpo() 
         complete = True
 
