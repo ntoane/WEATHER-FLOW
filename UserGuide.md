@@ -89,6 +89,7 @@ This subsection describes the methodology of the configurations/ module that set
   * If desired method/settings for above is not in options then it needs to be set in Model and Train code of the model in question.
 
 ## Visualisations
+
 * Visualisations on the adjacency matrix can be generated using this platform.
 * There are 3 visualisations:
   * Heatmap
@@ -99,8 +100,6 @@ This subsection describes the methodology of the configurations/ module that set
   * Change the parameter setting for visualisations to true and proceed to running the platform with the standard command "python3 main.py --mode config.yaml"
   * Further adjust the parameters to the specific matrix needed to be visualised.
   * Next adjust other parameters to fine tune the visualisations.
-
-
 
 ## Data Preprocessing
 
@@ -140,22 +139,19 @@ Guidelines for customizing the experimental platform in terms of Training, Predi
 * Adding new models or modifying existing ones
 
   * Follow New Model Integration step by step instructions.
-* Incorporating additional data sources or features
 * Training custimizations:
 
-  * Trains ...
-  * Setting up the training process
-  * Defining loss functions, optimizers, and learning rates
-  * Training procedures and hyperparameter tuning
-  * Monitoring and logging training progress
-* Prediction & evaluations customizations:
+  * This includes the process of setting up the training process of a specific model
 
-  * Pred ...
-  * 
+    * This varies according to your model structure and needs to be defined within the Execute module in a python file.
+  * For setting loss functions, optimizers, and learning rates
+
+    * This can be done by navigating to the config files and altering the relevant option
+* Prediction & evaluations:
+
   * Using the trained models for weather prediction
-  * Instructions for making predictions on new data
-  * Evaluation metrics and performance analysis (MSE, RMSE, MAE, etc.)
-  * Comparing the results of GWN and TCN baselines
+  * Evaluation metrics such as MSE, RMSE, MAE and SMAPE are already included within the platform and can be easily used for an analysis on your model.
+  * The baseline models of TCN and GWN are readily functioning on the repo and can be used as a baseline for comparing your model against.
 * Logging module:
 
   * The **modelLogger** class is essentially a wrapper around Python's built-in logging  library. It provides a way to easily log different levels of information (i.e., info, debug, warning, error and critical) from a specific model running on a specific station to a log file. It also allows enabling or disabling logging through the log_enabled parameter.
@@ -164,7 +160,7 @@ Guidelines for customizing the experimental platform in terms of Training, Predi
     * Actuals vs Predicted results are captured here - alongside the time indices of when they occurred in the data for analysis purposes. As if one of the models has seemingly unexplainable bad accuracy for some predictions, we can check against the logs and see if it was all around the same time and we can have a better idea of what happened.
     * Other admin logging content is also captured here at the various logging levels described in the modelLogger class.
   * The **Evaluation class**
-* Visualization
+    * This is a Python class that holds multiple methods that pertain to the evaluation process of each specific model. This includes the calculations of the specified metrics with the actual and predicted values obtained (normalized ones) and the writing and logging to files thereof.
 
 ## Troubleshooting & FAQs
 
@@ -216,9 +212,3 @@ Guidelines for customizing the experimental platform in terms of Training, Predi
   * [NumPy](https://numpy.org/doc/stable/)
   * [Pandas](https://pandas.pydata.org/docs/user_guide/index.html)
   * [Yaml Configuration Files](https://elib.psu.by/handle/123456789/36942)
-
-## Appendix
-
-* Sample code snippets and examples
-* Data format specifications
-* Additional technical details or supplementary information
