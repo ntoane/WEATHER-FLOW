@@ -46,7 +46,7 @@ def main():
         complete = True
         
     # Train final TCN models using config settings specified
-    if sharedConfig['train_ast_gcn']['default'] or args.mode == configOptions[8]:
+    if sharedConfig['train_ast_gcn']['default'] or args.mode == configOptions[9]:
         astgcnConfig = getSpecificConfig('astgcn')
         trainer = astgcnExecute(sharedConfig,astgcnConfig)
         trainer.train()

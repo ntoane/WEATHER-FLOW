@@ -9,85 +9,83 @@ from Utils.CLCRN_Utils.loss import masked_mae_loss, masked_mse_loss, masked_mape
 from tqdm import tqdm
 from pathlib import Path
 from Execute.modelExecute import modelExecute
+from Logs import Evaluation
 import pickle
-torch.set_num_threads(4)
+from Logs.modelLogger import modelLogger
+from HPO.modelHPO import modelHPO
+import pandas as pd
+import Utils.gwnUtils as util
+import Utils.sharedUtils as sharedUtil
 
-def exists(val):
-    return val is not None
-
-class clcrnExecute(modelExecute):
-    
-    def __init__(self,sharedConfig,clcrnConfig):
+class CLCRNHPO(modelHPO):
+    def __init__(self, sharedConfig, clcrnConfig):
         super().__init__('clcrn', sharedConfig, clcrnConfig)
-        # self._device = torch.device("cuda:{}".format(self.modelConfig['gpu']['default']) if torch.cuda.is_available() else "cpu") 
-        # self.modelConfig['device']['default']) if torch.cuda.is_available() else "cpu") 
-        self._device = torch.device("cpu")
-        self.horizon = self.sharedConfig['horizons']['default']
-        self.max_grad_norm = self.modelConfig['max_grad_norm']['default']
 
-        # logging.
-        self._experiment_name = self.modelConfig['experiment_name']['default']
-        self._log_dir = self._get_log_dir(self)
+    def hpo(self):
+        increment = self.sharedConfig['increment']['default']
+        data = self.prepare_data() 
+        textFile = 'HPO/Best Parameters/clcrn/configurations.txt'
+        f = open(textFile, 'w')
 
-        self._model_name = self.modelConfig['model_name']['default']
+        # best_mse = np.inf
 
-        log_level = 'INFO'
-        self._logger = utils.get_logger(self._log_dir, __name__, 'info.log', level=log_level)
-        self.increments = self.sharedConfig['increment']['default']
+        num_splits = 2
+        for i in range(self.sharedConfig['num_configs']['default']):
+            config = util.generateRandomParameters(self.clcrnConfig)
+            valid_config = True
+            targets = []
+            preds = []
 
-        self.num_nodes = int(self.modelConfig['num_nodes']['default'])
-        self.input_dim = int(self.modelConfig['input_dim']['default'])
-        self.seq_len = int(self.modelConfig['seq_len']['default'])  # for the encoder
-        self.output_dim = int(self.modelConfig['output_dim']['default'])
-        self.use_curriculum_learning = bool(self.modelConfig['use_curriculum_learning']['default'])
-        
-        self.save_dir = self.modelConfig['save_dir']['default']
-        
-        self._epoch_num = self.modelConfig['epoch']['default']
-        
-    @staticmethod
-    def _get_log_dir(self):
-        log_dir = Path(self.modelConfig['log_dir']['default'])/'{} Hour Forecast'.format(self.horizon[0])
-        if not os.path.exists(log_dir):
-            os.makedirs(log_dir)
-        return log_dir
+            for k in range(num_splits):
+                modelFile = 'Garage/HPO Models/CLCRN/{} Hour Models/{}_epo1.tar'
+                n_stations= int(self.sharedConfig['n_stations']['default'])
+                data_sets, split = self.split_data(data, increment, k, n_stations)
+                # split = [increment[k] * n_stations, increment[k + 1] * n_stations, increment[k + 2] * n_stations]
+                # data_sets = [data[:split[0]], data[split[0]:split[1]], data[split[1]:split[2]]]
 
-    def save_model(self, epoch):
+                try:
+                    print('This is the HPO configuration: \n',
+                          'Dropout - ', self.clcrnConfig['dropout']['default'], '\n',
+                          'Lag_length - ', self.clcrnConfig['lag_length']['default'], '\n',
+                          'Hidden Units - ', self.clcrnConfig['nhid']['default'], '\n',
+                          'Layers - ', self.clcrnConfig['num_layers']['default'], '\n',
+                          'Batch Size - ', self.clcrnConfig['batch_size']['default'], '\n',
+                          'Epochs - ', self.clcrnConfig['epochs']['default'])
 
-        model_path = Path(self.save_dir)/'{} Hour Models'.format(self.horizon[0])
-        if not os.path.exists(model_path):
-            os.makedirs(model_path)
+                    self._train(h,self.modelConfig['base_lr']['default'], self.modelConfig['steps']['default'])
+            
+                except Warning:
+                    valid_config = False
+                    break
+                
+                # clcrn_trainer = clcrnExecute(sharedConfig, clcrnConfig)
+                self.execute()
+                self.get_time_prediction()
+                
 
-        defaults = {}
-        for key, value in self.modelConfig.items():
-            defaults[key] = value['default']
+                log_dir = Evaluation.get_log_dir(self.sharedConfig,self.modelConfig)
+                
+                true_file = '{}/actuals.pkl'.format(log_dir,h)
+                predict_file = '{}/predictions.pkl'.format(log_dir,h)
 
-        modelDict = dict(defaults)
-        modelDict['model_state_dict']= self.model.state_dict()
-        modelDict['epoch'] = epoch
-        torch.save(modelDict, model_path/('{}_epo{}.tar'.format(self.horizon[0],epoch)))
-        self._logger.info("Saved model at {}".format(epoch))
-        return '{}_epo{}.tar'.format(self.horizon[0],epoch)
+                with open(true_file, 'rb') as f:
+                # Load the content of the pickle file
+                    trueVals = pickle.load(f)
+                with open(predict_file, 'rb') as f:
+                # Load the content of the pickle file
+                    predVals = pickle.load(f)
 
-    def load_model(self, epoch_num):
+            if valid_config:
+                mse = masked_mse_loss(np.concatenate(np.array(targets, dtype=object)),
+                                  np.concatenate(np.array(preds, dtype=object)))
+                if mse < best_mse:
+                    best_cfg = config
+                    best_mse = mse
 
-        self._setup_graph()
-        model_path = Path(self.save_dir)/'{} Hour Models'.format(self.horizon[0])
-        assert os.path.exists(model_path/('{}_epo{}.tar'.format(self.horizon[0],epoch_num))), 'Weights at epoch %d not found' % epoch_num
-        checkpoint = torch.load(model_path/('{}_epo{}.tar'.format(self.horizon[0],epoch_num)), map_location='cpu')
-        self.model.load_state_dict(checkpoint['model_state_dict'])
-        self._logger.info("Loaded model at {}".format(epoch_num))
-
-    def _setup_graph(self):
-        with torch.no_grad():
-            self.model = self.model.eval()
-
-            val_iterator = self._data['val_loader']
-
-            for _, (x, y) in enumerate(val_iterator):
-                x, y = self._prepare_data(x, y)
-                output = self.model(x)
-                break
+        f.write('This is the best configuration ' + str(best_cfg) + ' with an MSE of ' + str(best_mse))
+        f.close()
+        self.model_logger.info('clcrnHPO : clcrn best configuration found = ' +str(best_cfg) + ' with an MSE of ' + str(best_mse))
+        self.model_logger.info('clcrnHPO : clcrn HPO finished at all stations :)')
 
     def execute(self):
         splitsLen = len(self.increments)
@@ -126,53 +124,7 @@ class clcrnExecute(modelExecute):
 
                 self._logger.info("Model created for horizon : " + str(h) + " split " + str(self.increments[s]))
                 self._train(h,self.modelConfig['base_lr']['default'], self.modelConfig['steps']['default'])
-            
-
-    def evaluate(self, dataset, batches_seen, epoch_num, load_model=False, steps=None):
-
-        if load_model == True:
-            self.load_model(epoch_num)
-
-        with torch.no_grad():
-            self.model = self.model.eval()
-
-            val_iterator = self._data['{}_loader'.format(dataset)]
-            losses = []
-            y_truths = []
-            y_preds = []
-
-            MAE_metric = masked_mae_loss
-            MSE_metric = masked_mse_loss
-            SMAPE_metric = masked_smape_loss
-            for _, (x, y) in enumerate(val_iterator):
-                x, y = self._prepare_data(x, y)
-                output = self.model(x)
-                loss, y_true, y_pred = self._compute_loss(y, output)
-                
-                losses.append(loss.item())
-                y_truths.append(y_true.cpu())
-                y_preds.append(y_pred.cpu())
-
-            mean_loss = np.mean(losses)
-            y_preds = torch.cat(y_preds, dim=1)
-            y_truths = torch.cat(y_truths, dim=1)
-
-            loss_mae = MAE_metric(y_preds, y_truths).item()
-            loss_mse = MSE_metric(y_preds, y_truths).item()
-            loss_mape = SMAPE_metric(y_preds, y_truths).item()
-            dict_out = {'prediction': y_preds, 'truth': y_truths}
-            dict_metrics = {}
-            if exists(steps):
-                for step in steps:
-                    assert(step <= y_preds.shape[0]), ('the largest step is should smaller than prediction horizon!!!')
-                    y_p = y_preds[:step, ...]
-                    y_t = y_truths[:step, ...]
-                    dict_metrics['mae_{}'.format(step)] = MAE_metric(y_p, y_t).item()
-                    dict_metrics['mse_{}'.format(step)] = MSE_metric(y_p, y_t).sqrt().item()
-                    dict_metrics['smape_{}'.format(step)] = SMAPE_metric(y_p, y_t).item()
-
-            return loss_mae, loss_mse, loss_mape, dict_out, dict_metrics
-
+    
     def _train(self, horizon,  base_lr,
                steps, patience=25, epochs=1, lr_decay_ratio=0.1, log_every=1, save_model=True,
                test_every_n_epochs=1, epsilon=1e-8):
@@ -268,63 +220,9 @@ class clcrnExecute(modelExecute):
                 wait += 1
                 if wait == patience:
                     self._logger.warning('Early stopping at epoch: %d' % epoch_num)
-                    break
+                    break        
 
-    def _prepare_data(self, x, y):
-        x, y = self._get_x_y(x, y)
-        return x.to(self._device), y.to(self._device)
-
-    def _get_x_y(self, x, y):
-        """
-        :param x: shape (batch_size, seq_len, num_sensor, input_dim)
-        :param y: shape (batch_size, horizon, num_sensor, input_dim)
-        :returns x shape (seq_len, batch_size, num_sensor, input_dim)
-                 y shape (horizon, batch_size, num_sensor, input_dim)
-        """
-        self._logger.debug("X: {}".format(x.size()))
-        self._logger.debug("y: {}".format(y.size()))
-        x = x.permute(1, 0, 2, 3).float()
-        y = y.permute(1, 0, 2, 3).float()
-        return x, y
-
-    def _compute_loss(self, y_true, y_predicted):
-        for out_dim in range(self.output_dim):
-            y_true[...,out_dim] = self.standard_scaler.inverse_transform(y_true[...,out_dim])
-            y_predicted[...,out_dim] = self.standard_scaler.inverse_transform(y_predicted[...,out_dim])
-
-        return masked_mae_loss(y_predicted, y_true), y_true, y_predicted
-
-    def _convert_scale(self, y_true, y_predicted):
-        for out_dim in range(self.output_dim):
-            y_true[...,out_dim] = self.standard_scaler.inverse_transform(y_true[...,out_dim])
-            y_predicted[...,out_dim] = self.standard_scaler.inverse_transform(y_predicted[...,out_dim])
-
-        return y_true, y_predicted
-        
-    def _prepare_x(self, x):
-        x = x.permute(1, 0, 2, 3).float()
-        return x.to(self._device)
-    
-    def _test_final_n_epoch(self, n=1, steps=[]):
-        model_path = Path(self.save_dir)/'{} Hour Models'.format(self.horizon[0])
-        model_list = os.listdir(model_path)
-        import re
-
-        epoch_list = []
-        for filename in model_list:
-            epoch_list.append(int(re.search(r'\d+', filename[4:]).group()))
-
-        epoch_list = np.sort(epoch_list)[-n:]
-        for i in range(n):
-            epoch_num = epoch_list[i]
-            mean_score, mean_loss_mse, mean_loss_mape, _, dict_metrics = self.evaluate('test', 0, epoch_num, load_model=True, steps=steps)
-            message = "Loaded the {}-th epoch.".format(epoch_num) + \
-                " MAE : {}".format(mean_score), "MSE : {}".format(np.sqrt(mean_loss_mse)), "SMAPE : {}".format(mean_loss_mape)
-            self._logger.info(message)
-            message = "Metrics in different steps: {}".format(dict_metrics)
-            self._logger.info(message)
-    
-    def _get_time_prediction(self):
+def _get_time_prediction(self):
         import copy
         
         h =  self.sharedConfig['horizons']['default']
@@ -364,24 +262,3 @@ class clcrnExecute(modelExecute):
                 smapeData = {'y_preds': y_preds}
                 pickle.dump(smapeData, f, protocol = 4)
         print("Storing actuals vs predicted complete")
-
-    def getLogger(self):
-        return self._logger
-
-      
-    def getMatrix(self,mode):
-       
-        kernel = self.model.get_kernel()
-        coor = kernel.getCoor()
-        matrix = kernel.conv_kernel(coor,True)
-        
-        matrix = matrix.tolist()
-
-        with open('{}/adjMatrix_{}.pkl'.format(self._log_dir,mode), "wb") as f:
-            smapeData = {'adj_matrix': matrix}
-            pickle.dump(smapeData, f, protocol = 4)
-
-        self._logger.info("Matrix saved in Logs")
-
-
-        
