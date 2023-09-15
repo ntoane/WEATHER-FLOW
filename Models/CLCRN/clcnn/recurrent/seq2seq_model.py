@@ -41,38 +41,6 @@ class CLCRNModel(nn.Module, Seq2SeqAttrs):
         self.use_curriculum_learning = modelConfig['use_curriculum_learning']['default']
         self._logger = logger
 
-    # def __init__(self, loc_info, sparse_idx, geodesic, modelConfig, angle_ratio, logger=None):
-    #     '''
-    #     Conditional Local Convolution Recurrent Network, implemented based on DCRNN,
-    #     Args:
-    #         loc_info (torch.Tensor): location infomation of each nodes, with the shape (node_num, location_dim). For sphercial signals, location_dim=2.
-    #         sparse_idx (torch.Tensor): sparse_idx with the shape (2, node_num * nbhd_num).
-    #         geodesic (torch.Tensor): geodesic distance between each point and its neighbors, with the shape (node_num * nbhd_num), corresponding to sparse_idx.
-    #         angle_ratio (torch.Tensor): the defined angle ratio contributing to orientation density, with the shape (node_num * nbhd_num), corresponding to sparse_idx.
-    # modelConfig (dict): Other model args see the config.yaml.
-        # '''
-        # super().__init__()
-        # Seq2SeqAttrs.__init__(self, sparse_idx, geodesic, angle_ratio, modelConfig)
-        # self.register_buffer('node_embeddings', nn.Parameter(torch.randn(self.node_num, self.embed_dim), requires_grad=True))
-        # self.feature_embedding = nn.Linear(self.input_dim, self.embed_dim)
-
-        # self.conv_ker = CLConv(
-        #     self.location_dim, 
-        #     self.sparse_idx,
-        #     self.node_num,
-        #     self.lck_structure, 
-        #     loc_info, 
-        #     self.angle_ratio, 
-        #     self.geodesic,
-        #     self.max_view
-        # )
-        # self.encoder_model = EncoderModel(sparse_idx, geodesic, angle_ratio, self.conv_ker, modelConfig)
-        # self.decoder_model = DecoderModel(sparse_idx, geodesic, angle_ratio, self.conv_ker, modelConfig)
-        # self.cl_decay_steps = modelConfig.get('cl_decay_steps', 1000))
-        # self.use_curriculum_learning = boomodelConfig.get('use_curriculum_learning', False))
-        # self._logger = logger
-
-
     def _compute_sampling_threshold(self, batches_seen):
         return self.cl_decay_steps / (
                 self.cl_decay_steps + np.exp(batches_seen / self.cl_decay_steps))
@@ -101,7 +69,6 @@ class CLCRNModel(nn.Module, Seq2SeqAttrs):
         decoder_input = go_symbol
 
         outputs = []
-        # print(self.horizon)
         for t in range(self.horizon):
             decoder_output, decoder_hidden_state = self.decoder_model(decoder_input,
                                                                     decoder_hidden_state)

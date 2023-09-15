@@ -1,4 +1,0 @@
-This is the RMSE 5.9001291034603645
-This is the MSE 34.811523
-This is the MAE 4.8003163
-This is the SMAPE 33.27097296714783

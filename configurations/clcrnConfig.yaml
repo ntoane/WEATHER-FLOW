@@ -9,12 +9,12 @@ model_name :
   help: name of model being used #wont need in future
 data:
   type: str
-  default: 'data/sample/graph.csv'
+  default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv'
   # default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv' #DataNew
   help: data path
 dataset_dir:
   type: str
-  default: 'data/test'
+  default: 'DataNew/CLCRN Train Data'
   # default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv' #DataNew
   help: data path
 position_file:
@@ -35,7 +35,7 @@ horizon:
   help: prediction horizon
 steps:
   type: int[]
-  default: [1]
+  default: [6]
   help: prediction horizon
 input_dim:
   type: int
@@ -53,7 +53,7 @@ max_view:
   type: int
   default: 1
   help: max view of model
-n_stations:
+num_nodes:
   type: int
   default: 45
   help: number of weather stations
@@ -131,7 +131,11 @@ epsilon:
   help: epsilon value
 log_dir: 
   type: str
-  default: 'experiments/test'
+  default: 'Logs/CLCRN'
+  help: Log file directory
+results_dir: 
+  type: str
+  default: 'Results/CLCRN'
 lr_decay_ratio: 
   type: float
   default: 0.05
@@ -150,7 +154,7 @@ min_learning_rate:
   help: ''
 epochs:
   type: int
-  default: 5
+  default: 1
   help: ''
 # save:
 #   type: str
@@ -170,7 +174,7 @@ optimizer:
   help: type of optimizers used for model (to add another method look at User Guide), default type set to Adam
 experiment_name:
   type: str
-  default: 'CLCRN_temperature'
+  default: ''
   help: ''
 model_state_dict:
   type: str
@@ -180,11 +184,20 @@ shuffle:
   type: boolean
   default: False
   help: ''
-increment:
+increments:
   type: int[]
-  default: [52560, 61320, 70080, 78840, 87600]
+  # default: [79750, 96839, 113929]
+  # default: [52560, 61320, 70080]
+  # default: [8760, 10920, 13106]
+  default: [50,100,150]     
   help: "splits for walk forward validation"
 load_dataset:
   type: boolean
   default: True
   help: 'Should dataset be divided or not'
+save_dir:
+  type: str
+  default: 'Garage/Final Models/CLCRN'
+  help: 'Should dataset be divided or not'
+
+

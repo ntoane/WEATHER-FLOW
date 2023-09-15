@@ -9,6 +9,11 @@ from Logs.modelLogger import modelLogger
 import Utils.agcrnUtils as agcrnUtil
 import Utils.astgcnUtils as astgcnUtils
 from collections import defaultdict
+import torch
+from Utils.CLCRN_Utils.loss import masked_mse_loss, masked_smape_loss
+from Utils.CLCRN_Utils import utils
+import pickle
+from pathlib import Path
 
      
 def TcnEval(tcnConfig, sharedConfig):
@@ -394,82 +399,62 @@ def AstgcnEval(config, sharedConfig):
         file.write(f'\nGlobal Average SMAPE across all stations: {global_avg_smape}\n')
         
         
+
+def ClcrnEval(sharedConfig,modelConfig):
+       
+        print("Evaluating model per station")
+        # print()
+
+        h =  sharedConfig['horizons']['default']
+
+        log_dir = get_log_dir(sharedConfig,modelConfig)
         
+        true_file = '{}/actuals.pkl'.format(log_dir,h)
+        predict_file = '{}/predictions.pkl'.format(log_dir,h)
+        # Open the pickle file for reading (rb mode)
+        with open(true_file, 'rb') as f:
+            # Load the content of the pickle file
+            trueVals = pickle.load(f)
+        with open(predict_file, 'rb') as f:
+            # Load the content of the pickle file
+            predVals = pickle.load(f)
+
+        print("Average smape value for horizon {}".format(h[0]))
+        print(masked_smape_loss(torch.tensor(predVals['y_preds']),torch.tensor(trueVals['y_trues'])))
+
+        trues = torch.tensor(trueVals['y_trues'])
+        preds = torch.tensor(predVals['y_preds'])
+        smape = 0
+        mse = 0
         
-        # Old versions
-        # def GwnEval(self,gwnConfig):
-        # num_splits = self.sharedConfig['n_split']['default']
-        # gwn_logger = modelLogger('gwn','all','Logs/GWN/gwn_all_stations.txt', log_enabled=False)
-        # gwn_logger.info('baselineEval : Starting to compute evaluation error metrics for all stations.')
-        # s = -1
-        # # Iterate over each station
-        # for station in self.stations:
-        #     # Iterate over each forecasting horizon
-        #     s = s + 1
-        #     for horizon in self.horizons:
-        #         try:
-        #             pred = []
-        #             real = []
-        #             gwn_logger = modelLogger('gwn', station,'Logs/GWN/Evaluation/'+'gwn_' + station +'.txt', log_enabled=False)  
-        #             gwn_logger.info('baselineEval : GWN evaluation started at' + station+' for the horizon of ' +str(horizon) ) 
-        #             # Read predictions and targets for each split and append them to pred and real lists
-        #             for split in range(num_splits):
-        #                 results_file = f'Results/GWN/{horizon} Hour Forecast/Predictions/outputs_{split}.pkl'
-        #                 targets_file = f'Results/GWN/{horizon} Hour Forecast/Targets/targets_{split}.pkl'
-        #                 metric_file_directory = f'Results/GWN/{horizon}_Hour_Forecast/Metrics/{station}/'
-        #                 metric_filename = 'metrics.txt'
-        #                 actual_vs_predicted_file = f'Results/GWN/{horizon} Hour Forecast/{station}/Metrics/actual_vs_predicted.txt'
-        #                 sharedUtils.create_file_if_not_exists(results_file)
-        #                 sharedUtils.create_file_if_not_exists(targets_file)
-        #                 sharedUtils.create_file_if_not_exists(metric_file_directory)
-        #                 sharedUtils.create_file_if_not_exists(actual_vs_predicted_file)
-        #                 metric_file = os.path.join(metric_file_directory, metric_filename)
-        #                 # Read the predictions and targets from the CSV files
-        #                 preds = pd.read_csv(results_file).drop(['Unnamed: 0'], axis=1)
-        #                 targets = pd.read_csv(targets_file).drop(['Unnamed: 0'], axis=1)
-        #                 # Create a DataFrame of actual vs predicted values
-        #                 actual_vs_predicted = pd.DataFrame({'Actual': targets.values.flatten(), 'Predicted': preds.values.flatten()})
-        #                 # Save to a text file
-        #                 actual_vs_predicted.to_csv(actual_vs_predicted_file, index=False)
-                        
-        #                 gwn_logger = modelLogger('gwn', str(station), 'Logs/GWN/gwn_.txt', log_enabled=False)
-        #                 yhat = utils.load_pickle(results_file)
-        #                 target = utils.load_pickle(targets_file)
-        #                 # pred.extend(np.array(yhat).flatten())
-        #                 # real.extend(np.array(target).flatten())
-        #                 pred = np.append(pred, np.array(yhat).flatten())
-        #                 real = np.append(real, np.array(target).flatten())
-                        
-        #                 # Reshape pred and real arrays
-        #                 pred = np.array(pred).reshape((int(len(real) / (self.sharedConfig['n_stations']['default'] * gwnConfig['seq_length']['default'])), 
-        #                                             self.sharedConfig['n_stations']['default'],
-        #                                             gwnConfig['seq_length']['default']))
-        #                 real = np.array(real).reshape((int(len(real) / (self.sharedConfig['n_stations']['default'] * gwnConfig['seq_length']['default'])), 
-        #                                             self.sharedConfig['n_stations']['default'],
-        #                                             gwnConfig['seq_length']['default']))
-        #                 # Open metric_file for writing
-        #                 with open(metric_file, 'w') as file:
-        #                     preds = pred[:, s, :]
-        #                     real_values = real[:, s, :]
-        #                     # Calculate metrics
-        #                     root = metrics.rmse(real_values, preds)
-        #                     square = metrics.mse(real_values, preds)
-        #                     abs_val = metrics.mae(real_values, preds)
-        #                     ape = metrics.smape(real_values, preds)
-        #                     # Print and write metrics
-        #                     print('RMSE: {0} for station {1} forecasting {2} hours ahead'.format(root, station, horizon))
-        #                     print('MSE: {0} for station {1} forecasting {2} hours ahead'.format(square, station, horizon))
-        #                     print('MAE: {0} for station {1} forecasting {2} hours ahead'.format(abs_val, station, horizon))
-        #                     print('SMAPE: {0} for station {1} forecasting {2} hours ahead'.format(ape, station, horizon))
-        #                     print('')
-        #                     file.write('This is the MSE ' + str(square) + '\n')
-        #                     file.write('This is the MAE ' + str(abs_val) + '\n')
-        #                     file.write('This is the RMSE ' + str(root) + '\n')
-        #                     file.write('This is the SMAPE ' + str(ape) + '\n')
-        #                     gwn_logger.info('baselineEval : Finished computing evaluation error metrics.')
-        #         except IOError:
-        #             #metric_file = f'Results/GWN/Metrics/{stations[station]}/metrics_{horizon}'
-        #             #print(f'Error: Unable to write metrics to {metric_file}')
-        #             print('  Error! : Unable to read data or write metrics for station {} and forecast length {}. Please review the data or code for the metrics for errors.'.format(station, horizon))
-        #             gwn_logger.error('Error! : Unable to read data or write metrics for station {} and horizon length {}. Please review the data or code for the metrics for errors.'.format(station, horizon))
-        # gwn_logger.info('baselineEval : Finished evaluation of GWN error metrics for all stations.')                       
+        fpath = '{}/stationScore_{}.txt'.format(modelConfig['results_dir']['default'],h[0])
+        with open(fpath, "w") as f:
+            f.write("Metrics scores at each station  \n")
+            for i in range(modelConfig['num_nodes']['default']):
+                t = trues[:,:,:i+1,:]
+                p = preds[:,:,:i+1,:]
+                score = masked_smape_loss(p,t)
+                mscore = masked_mse_loss(p,t)
+                smape = smape + score
+                mse = mse + mscore
+
+                
+                smapeData = 'SMAPE score at station {} : {} \n'.format(i+1,score.item())
+                mseData = 'MSE score at station {} : {} \n'.format(i+1,mscore.item())
+               
+                f.write(smapeData)
+                f.write(mseData)
+
+                print(smapeData)
+
+            f.write("Average SMAPE maually calculated: {} \n".format(smape/45))
+            f.write("Average MSE maually calculated: {}".format(mse/45))
+
+        print("Average SMAPE maually calculated: {}".format(smape/45))
+        print("Average MSE maually calculated: {}".format(mse/45))        
+
+def get_log_dir(sharedConfig,modelConfig):
+        log_dir = Path(modelConfig['log_dir']['default'])/'{} Hour Forecast'.format(sharedConfig['horizons']['default'][0])
+        if not os.path.exists(log_dir):
+            os.makedirs(log_dir)
+        return log_dir            

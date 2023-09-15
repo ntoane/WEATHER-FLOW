@@ -2,6 +2,8 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
+# from Utils.CLCRN_Utils import utils
+from Utils.CLCRN_Utils import createData
 class ConvAttrs:
     def __init__(self, 
         location_dim, 
@@ -58,18 +60,26 @@ class CLConv(nn.Module, ConvAttrs):
         self.lcker = LocalConditionalKer(location_dim, lck_structure)
         self.weight_att = Attention(location_dim)
 
-    def conv_kernel(self, coor):
+    def conv_kernel(self, coor, getMatrix = False):
         lcker = self.lcker(coor)
         lcker = torch.sparse.FloatTensor(self.sparse_idx, lcker.flatten(), (self.node_num, self.node_num)).to_dense()
         sphere_coor = coor[:,:self.location_dim] + coor[:,self.location_dim:]
         sphere_coor = sphere_coor.reshape(self.node_num, -1, self.location_dim)
         center_points = sphere_coor[:,[0],:]
         neighbor_points = sphere_coor
-        alpha = self.weight_att(center_points, neighbor_points).abs()
-        alpha = torch.sparse.FloatTensor(self.sparse_idx, alpha.flatten(), (self.node_num, self.node_num)).to_dense()
+        a = self.weight_att(center_points, neighbor_points).abs()
+        alpha = torch.sparse.FloatTensor(self.sparse_idx, a.flatten(), (self.node_num, self.node_num)).to_dense()
         distance_decay = (- alpha * self.geodesic).exp()
         angle_ratio = self.angle_ratio
-        
+
+        if getMatrix:
+            m = alpha
+            min_val = torch.min(m)
+            max_val = torch.max(m)
+            scaler = createData.NormScaler(min_val,max_val)
+            matrix = scaler.transform(m)
+            return matrix
+
         return lcker * distance_decay * angle_ratio
         # return lcker * distance_decay
         # return lcker * angle_ratio
@@ -100,6 +110,10 @@ class CLConv(nn.Module, ConvAttrs):
             ker_patterns.append(lcker * distance_decay * angle_ratio)
         return torch.stack(ker_patterns, dim=0)
 
+    
+    def getCoor(self):
+        return self.local_graph_coor
+    
 class LocalConditionalKer(nn.Module):
     def __init__(self, location_dim, structure, activation='tanh'):
         super(LocalConditionalKer, self).__init__()

@@ -2,15 +2,14 @@ import os
 import time
 import numpy as np
 import torch
-from Utils import utils
-from Utils import dataloader
+from Utils.CLCRN_Utils import dataloader ,createData, utils
 import yaml
-from Models.clcnn import CLCRNModel
-from Models.loss import masked_mae_loss, masked_mse_loss, masked_mape_loss
+from Models.CLCRN.clcnn import CLCRNModel
+from Utils.CLCRN_Utils.loss import masked_mae_loss, masked_mse_loss, masked_mape_loss, masked_smape_loss
 from tqdm import tqdm
 from pathlib import Path
 from Execute.modelExecute import modelExecute
-from Utils import createData
+import pickle
 torch.set_num_threads(4)
 
 def exists(val):
@@ -19,21 +18,11 @@ def exists(val):
 class clcrnExecute(modelExecute):
     
     def __init__(self,sharedConfig,clcrnConfig):
-        # self.sharedConfig = sharedConfig
         super().__init__('clcrn', sharedConfig, clcrnConfig)
-        # self.modelConfig = clcrnConfig
-        # # Load the YAML config file which contains all the required settings for platform
-        # with open(self.config, 'r') as file:
-        #     modelConfig = yaml.safe_load(file)
-        # log_file = f'Logs/{model_name}/Train/{model_name}_all_stations.txt'
-        # self.model_logger = modelLogger(model_name, 'all', log_file, log_enabled=False) 
-
-        # self._kwargs = kwargs
-        # self._data = self.modelConfig['data']['default']
-        # self._model_kwargs = kwargs.get('model')
-        # self._train_kwargs = kwargs.get('train')
-        self._device = torch.device("cuda:{}".format(self.modelConfig['gpu']['default']) if torch.cuda.is_available() else "cpu") 
-
+        # self._device = torch.device("cuda:{}".format(self.modelConfig['gpu']['default']) if torch.cuda.is_available() else "cpu") 
+        # self.modelConfig['device']['default']) if torch.cuda.is_available() else "cpu") 
+        self._device = torch.device("cpu")
+        self.horizon = self.sharedConfig['horizons']['default']
         self.max_grad_norm = self.modelConfig['max_grad_norm']['default']
 
         # logging.
@@ -45,116 +34,27 @@ class clcrnExecute(modelExecute):
         log_level = 'INFO'
         self._logger = utils.get_logger(self._log_dir, __name__, 'info.log', level=log_level)
         self.increments = self.sharedConfig['increment']['default']
-        # self._data = dataloader.load_dataset(self.modelConfig['dataset_dir']['default'],self.modelConfig['batch_size']['default'],self.modelConfig['position_file']['default'])
-        # # self._
-        # self.standard_scaler = self._data['scaler']
-        # self.sparse_idx = torch.from_numpy(self._data['kernel_info']['sparse_idx']).long().to(self._device)
-        # self.location_info = torch.from_numpy(self._data['kernel_info']['MLP_inputs']).float().to(self._device)
-        # self.geodesic = torch.from_numpy(self._data['kernel_info']['geodesic']).float().to(self._device)
-        # self.angle_ratio = torch.from_numpy(self._data['kernel_info']['angle_ratio']).float().to(self._device)
 
-        self.num_nodes = int(self.sharedConfig['n_stations']['default'])
+        self.num_nodes = int(self.modelConfig['num_nodes']['default'])
         self.input_dim = int(self.modelConfig['input_dim']['default'])
         self.seq_len = int(self.modelConfig['seq_len']['default'])  # for the encoder
         self.output_dim = int(self.modelConfig['output_dim']['default'])
         self.use_curriculum_learning = bool(self.modelConfig['use_curriculum_learning']['default'])
-        # setup model
-        # if self._model_name == 'CLCRN':
-        #     model = CLCRNModel(
-        #         self.location_info, 
-        #         self.sparse_idx, 
-        #         self.geodesic, 
-        #         self.modelConfig,
-        #         horizon
-        #         self.angle_ratio, 
-        #         logger=self._logger, 
-        #         )
-        # else:
-        #     print('The method is not provided.')
-        #     exit()
-        # self.model = model.to(self._device)
-        # self._logger.info("Model created")
+        
+        self.save_dir = self.modelConfig['save_dir']['default']
         
         self._epoch_num = self.modelConfig['epoch']['default']
-        if self._epoch_num > 0:
-            self.load_model()
-
-
-
-    # def __init__(self, **kwargs):
-    #     self._kwargs = kwargs
-    #     self._data_kwargs = kwargs.get('data')
-    #     self._model_kwargs = kwargs.get('model')
-    #     self._train_kwargs = kwargs.get('train')
-    #     self._device = torch.device("cuda:{}".format(kwargs.get('gpu')) if torch.cuda.is_available() else "cpu") 
-
-    #     self.max_grad_norm = self._train_kwargs.get('max_grad_norm', 1.)
-
-    #     # logging.
-    #     self._experiment_name = self._train_kwargs.get('experiment_name')
-    #     self._log_dir = self._get_log_dir(self, kwargs)
-
-    #     self._model_name = self._model_kwargs.get('model_name')
-
-    #     log_level = self._kwargs.get('log_level', 'INFO')
-    #     self._logger = utils.get_logger(self._log_dir, __name__, 'info.log', level=log_level)
         
-    #     self._data = dataloader.load_dataset(**self._data_kwargs)
-
-    #     self.standard_scaler = self._data['scaler']
-    #     self.sparse_idx = torch.from_numpy(self._data['kernel_info']['sparse_idx']).long().to(self._device)
-    #     self.location_info = torch.from_numpy(self._data['kernel_info']['MLP_inputs']).float().to(self._device)
-    #     self.geodesic = torch.from_numpy(self._data['kernel_info']['geodesic']).float().to(self._device)
-    #     self.angle_ratio = torch.from_numpy(self._data['kernel_info']['angle_ratio']).float().to(self._device)
-
-    #     self.num_nodes = int(self._model_kwargs.get('num_nodes', 1))
-    #     self.input_dim = int(self._model_kwargs.get('input_dim', 1))
-    #     self.seq_len = int(self._model_kwargs.get('seq_len'))  # for the encoder
-    #     self.output_dim = int(self._model_kwargs.get('output_dim', 1))
-    #     self.use_curriculum_learning = bool(
-    #         self._model_kwargs.get('use_curriculum_learning', False)
-    #         )
-    #     self.horizon = int(self._model_kwargs.get('horizon', 1))  # for the decoder
-    #     # setup model
-    #     if self._model_name == 'CLCRN':
-    #         model = CLCRNModel(
-    #             self.location_info, 
-    #             self.sparse_idx, 
-    #             self.geodesic, 
-    #             self.angle_ratio, 
-    #             logger=self._logger, 
-    #             **self._model_kwargs
-    #             )
-    #     elif self._model_name == 'CLCSTN':
-    #         model = CLCSTNModel(
-    #             self.location_info, 
-    #             self.sparse_idx, 
-    #             self.geodesic, 
-    #             self.angle_ratio, 
-    #             logger=self._logger, 
-    #             **self._model_kwargs
-    #         )
-       
-    #     else:
-    #         print('The method is not provided.')
-    #         exit()
-    #     self.model = model.to(self._device)
-    #     self._logger.info("Model created")
-        
-    #     self._epoch_num = self._train_kwargs.get('epoch', 0)
-    #     if self._epoch_num > 0:
-    #         self.load_model()
-
     @staticmethod
     def _get_log_dir(self):
-        log_dir = Path(self.modelConfig['log_dir']['default'])/self._experiment_name
+        log_dir = Path(self.modelConfig['log_dir']['default'])/'{} Hour Forecast'.format(self.horizon[0])
         if not os.path.exists(log_dir):
             os.makedirs(log_dir)
         return log_dir
 
     def save_model(self, epoch):
 
-        model_path = Path(self._log_dir)/'saved_model'
+        model_path = Path(self.save_dir)/'{} Hour Models'.format(self.horizon[0])
         if not os.path.exists(model_path):
             os.makedirs(model_path)
 
@@ -162,20 +62,19 @@ class clcrnExecute(modelExecute):
         for key, value in self.modelConfig.items():
             defaults[key] = value['default']
 
-        # config = self.modelConfig
         modelDict = dict(defaults)
         modelDict['model_state_dict']= self.model.state_dict()
         modelDict['epoch'] = epoch
-        torch.save(modelDict, model_path/('epo%d.tar' % epoch))
+        torch.save(modelDict, model_path/('{}_epo{}.tar'.format(self.horizon[0],epoch)))
         self._logger.info("Saved model at {}".format(epoch))
-        return 'models/epo%d.tar' % epoch
+        return '{}_epo{}.tar'.format(self.horizon[0],epoch)
 
     def load_model(self, epoch_num):
 
         self._setup_graph()
-        model_path = Path(self._log_dir)/'saved_model'
-        assert os.path.exists(model_path/('epo%d.tar' % epoch_num)), 'Weights at epoch %d not found' % epoch_num
-        checkpoint = torch.load(model_path/('epo%d.tar' % epoch_num), map_location='cpu')
+        model_path = Path(self.save_dir)/'{} Hour Models'.format(self.horizon[0])
+        assert os.path.exists(model_path/('{}_epo{}.tar'.format(self.horizon[0],epoch_num))), 'Weights at epoch %d not found' % epoch_num
+        checkpoint = torch.load(model_path/('{}_epo{}.tar'.format(self.horizon[0],epoch_num)), map_location='cpu')
         self.model.load_state_dict(checkpoint['model_state_dict'])
         self._logger.info("Loaded model at {}".format(epoch_num))
 
@@ -191,25 +90,23 @@ class clcrnExecute(modelExecute):
                 break
 
     def execute(self):
-        # kwargs.update(self._train_kwargs)
-        if (self.modelConfig['load_dataset']['default'] == True) :
-            fPath = 'Utils/graph.csv'
-            outputDir = "data"
-            createData.main(self.modelConfig,fPath,outputDir)
-
         splitsLen = len(self.increments)
-        horizon = self.sharedConfig['horizons']['default']  # for the decoder
+        horizon = self.horizon  # for the decoder
         for h in horizon :
             for s in range(0,splitsLen-2):
+                fPath = self.modelConfig['data']['default']
+                outputDir = self.modelConfig['dataset_dir']['default']
+                self.standard_scaler = createData.main(h,self.modelConfig,fPath,outputDir,self.increments[s:s+3])
+
                 path =  self.modelConfig['dataset_dir']['default'] + '/horizon_{}'.format(h)
                 position_path = self.modelConfig['dataset_dir']['default'] + '/horizon_{}/position_info.pkl'.format(h)
                 self._data = dataloader.load_dataset(path, self.increments[s] ,self.modelConfig['batch_size']['default'],position_path)
-                self.standard_scaler = self._data['scaler']
                 self.sparse_idx = torch.from_numpy(self._data['kernel_info']['sparse_idx']).long().to(self._device)
                 self.location_info = torch.from_numpy(self._data['kernel_info']['MLP_inputs']).float().to(self._device)
                 self.geodesic = torch.from_numpy(self._data['kernel_info']['geodesic']).float().to(self._device)
                 self.angle_ratio = torch.from_numpy(self._data['kernel_info']['angle_ratio']).float().to(self._device)
-
+                print('==========================================')
+                print(self.angle_ratio)
 
                 if self._model_name == 'CLCRN':
                     model = CLCRNModel(
@@ -225,8 +122,9 @@ class clcrnExecute(modelExecute):
                     print('The method is not provided.')
                     exit()
                 self.model = model.to(self._device)
+                self.getMatrix('s')
+
                 self._logger.info("Model created for horizon : " + str(h) + " split " + str(self.increments[s]))
-                # return self._train(h,modelConfig['base_lr']['default'], modelConfig['steps']['default'])
                 self._train(h,self.modelConfig['base_lr']['default'], self.modelConfig['steps']['default'])
             
 
@@ -245,11 +143,12 @@ class clcrnExecute(modelExecute):
 
             MAE_metric = masked_mae_loss
             MSE_metric = masked_mse_loss
-            MAPE_metric = masked_mape_loss
+            SMAPE_metric = masked_smape_loss
             for _, (x, y) in enumerate(val_iterator):
                 x, y = self._prepare_data(x, y)
                 output = self.model(x)
                 loss, y_true, y_pred = self._compute_loss(y, output)
+                
                 losses.append(loss.item())
                 y_truths.append(y_true.cpu())
                 y_preds.append(y_pred.cpu())
@@ -260,50 +159,42 @@ class clcrnExecute(modelExecute):
 
             loss_mae = MAE_metric(y_preds, y_truths).item()
             loss_mse = MSE_metric(y_preds, y_truths).item()
-            loss_mape = MAPE_metric(y_preds, y_truths).item()
+            loss_mape = SMAPE_metric(y_preds, y_truths).item()
             dict_out = {'prediction': y_preds, 'truth': y_truths}
             dict_metrics = {}
             if exists(steps):
-                print(steps)
                 for step in steps:
                     assert(step <= y_preds.shape[0]), ('the largest step is should smaller than prediction horizon!!!')
                     y_p = y_preds[:step, ...]
                     y_t = y_truths[:step, ...]
                     dict_metrics['mae_{}'.format(step)] = MAE_metric(y_p, y_t).item()
-                    dict_metrics['rmse_{}'.format(step)] = MSE_metric(y_p, y_t).sqrt().item()
-                    dict_metrics['mape_{}'.format(step)] = MAPE_metric(y_p, y_t).item()
+                    dict_metrics['mse_{}'.format(step)] = MSE_metric(y_p, y_t).sqrt().item()
+                    dict_metrics['smape_{}'.format(step)] = SMAPE_metric(y_p, y_t).item()
 
             return loss_mae, loss_mse, loss_mape, dict_out, dict_metrics
 
     def _train(self, horizon,  base_lr,
-               steps, patience=50, epochs=1, lr_decay_ratio=0.1, log_every=1, save_model=1,
-               test_every_n_epochs=10, epsilon=1e-8):
-        # steps is used in learning rate - will see if need to use it?
+               steps, patience=25, epochs=1, lr_decay_ratio=0.1, log_every=1, save_model=True,
+               test_every_n_epochs=1, epsilon=1e-8):
         min_val_loss = float('inf')
         wait = 0
         optimizer = torch.optim.Adam(self.model.parameters(), lr=base_lr, eps=epsilon)
-
+        epochs = self.modelConfig['epochs']['default']
         lr_scheduler = torch.optim.lr_scheduler.MultiStepLR(optimizer, milestones=steps,
                                                             gamma=lr_decay_ratio)
 
         self._logger.info('Start training ...')
-        # this will fail if model is loaded with a changed batch_size
         num_batches = len(self._data['train_loader'])
-        #num_batches = 2
         self._logger.info("num_batches:{}".format(num_batches))
 
         best_epoch=0
         batches_seen = num_batches * self._epoch_num
-        # val_loss, val_loss_mse, val_loss_mape, _, __ = self.evaluate(dataset='val', batches_seen=batches_seen, epoch_num=0)
         for epo in range(self._epoch_num, epochs):
             
             epoch_num = epo + 1
             self.model = self.model.train()
 
             train_iterator = self._data['train_loader']
-            #(str(train_iterator))
-            # for data in train_iterator:
-            #    print(data)
             losses = []
 
             start_time = time.time()
@@ -344,17 +235,22 @@ class clcrnExecute(modelExecute):
             end_time = time.time()
 
             if (epoch_num % log_every) == 0:
-                message = 'Epoch [{}/{}] ({}) train_mae: {:.4f}, val_mae: {:.4f}, lr: {:.6f}, ' \
+                message = 'Epoch [{}/{}] ({}) train_mae: {:.4f}, val_mae: {:.4f}, val_smape: {:.4f}, lr: {:.6f}, ' \
                           '{:.1f}s'.format(epoch_num, epochs, batches_seen,
-                                           np.mean(losses), val_loss, lr_scheduler.get_last_lr()[0],
+                                           np.mean(losses), val_loss, val_loss_mape, lr_scheduler.get_last_lr()[0],
                                            (end_time - start_time))
                 self._logger.info(message)
 
             if (epoch_num % test_every_n_epochs) == 0:
-                test_loss, val_loss_mse, val_loss_mape, _, __ = self.evaluate(dataset='test', batches_seen=batches_seen, epoch_num=epoch_num)
+                test_loss, test_loss_mse, test_loss_smape, _, __ = self.evaluate(dataset='test', batches_seen=batches_seen, epoch_num=epoch_num)
                 message = 'Epoch [{}/{}] ({}) train_mae: {:.4f}, test_mae: {:.4f},  lr: {:.6f}, ' \
                           '{:.1f}s'.format(epoch_num, epochs, batches_seen,
                                            np.mean(losses), test_loss, lr_scheduler.get_last_lr()[0],
+                                           (end_time - start_time))
+                self._logger.info(message)
+                message = 'Epoch [{}/{}] ({}) test_mse: {:.4f}, test_smape: {:.4f},  lr: {:.6f}, ' \
+                          '{:.1f}s'.format(epoch_num, epochs, batches_seen,
+                                            test_loss_mse, test_loss_smape, lr_scheduler.get_last_lr()[0],
                                            (end_time - start_time))
                 self._logger.info(message)
 
@@ -375,7 +271,6 @@ class clcrnExecute(modelExecute):
                     break
 
     def _prepare_data(self, x, y):
-        # print(x.shape)
         x, y = self._get_x_y(x, y)
         return x.to(self._device), y.to(self._device)
 
@@ -386,7 +281,6 @@ class clcrnExecute(modelExecute):
         :returns x shape (seq_len, batch_size, num_sensor, input_dim)
                  y shape (horizon, batch_size, num_sensor, input_dim)
         """
-        # print(x.shape)
         self._logger.debug("X: {}".format(x.size()))
         self._logger.debug("y: {}".format(y.size()))
         x = x.permute(1, 0, 2, 3).float()
@@ -395,99 +289,149 @@ class clcrnExecute(modelExecute):
 
     def _compute_loss(self, y_true, y_predicted):
         for out_dim in range(self.output_dim):
-            y_true[...,out_dim] = self.standard_scaler[out_dim].inverse_transform(y_true[...,out_dim])
-            y_predicted[...,out_dim] = self.standard_scaler[out_dim].inverse_transform(y_predicted[...,out_dim])
+            y_true[...,out_dim] = self.standard_scaler.inverse_transform(y_true[...,out_dim])
+            y_predicted[...,out_dim] = self.standard_scaler.inverse_transform(y_predicted[...,out_dim])
+
         return masked_mae_loss(y_predicted, y_true), y_true, y_predicted
 
     def _convert_scale(self, y_true, y_predicted):
         for out_dim in range(self.output_dim):
-            y_true[...,out_dim] = self.standard_scaler[out_dim].inverse_transform(y_true[...,out_dim])
-            y_predicted[...,out_dim] = self.standard_scaler[out_dim].inverse_transform(y_predicted[...,out_dim])
+            y_true[...,out_dim] = self.standard_scaler.inverse_transform(y_true[...,out_dim])
+            y_predicted[...,out_dim] = self.standard_scaler.inverse_transform(y_predicted[...,out_dim])
+
         return y_true, y_predicted
         
     def _prepare_x(self, x):
         x = x.permute(1, 0, 2, 3).float()
         return x.to(self._device)
     
-    def _test_final_n_epoch(self, n=5, steps=[3]):
-        model_path = Path(self._log_dir)/'saved_model'
+    def _test_final_n_epoch(self, n=1, steps=[]):
+        model_path = Path(self.save_dir)/'{} Hour Models'.format(self.horizon[0])
         model_list = os.listdir(model_path)
         import re
 
         epoch_list = []
         for filename in model_list:
-            epoch_list.append(int(re.search(r'\d+', filename).group()))
+            epoch_list.append(int(re.search(r'\d+', filename[4:]).group()))
 
         epoch_list = np.sort(epoch_list)[-n:]
         for i in range(n):
             epoch_num = epoch_list[i]
             mean_score, mean_loss_mse, mean_loss_mape, _, dict_metrics = self.evaluate('test', 0, epoch_num, load_model=True, steps=steps)
             message = "Loaded the {}-th epoch.".format(epoch_num) + \
-                " MAE : {}".format(mean_score), "RMSE : {}".format(np.sqrt(mean_loss_mse)), "MAPE : {}".format(mean_loss_mape)
+                " MAE : {}".format(mean_score), "MSE : {}".format(np.sqrt(mean_loss_mse)), "SMAPE : {}".format(mean_loss_mape)
             self._logger.info(message)
             message = "Metrics in different steps: {}".format(dict_metrics)
             self._logger.info(message)
-            self._logger.handlers.clear()
-    
-    def _local_pattern(self, center_nodes, r=0.1, r_resolution=100, phi_resolution=360):
-        assert self._model_name in ['CLCRN','CLCSTN'], 'the model does not provide the kernel visualization'
-        with torch.no_grad():
-            center_nodes = torch.from_numpy(np.array(center_nodes)).float().to(self._device)
-            N = center_nodes.shape[0]
-            angle_ratio = 1 / phi_resolution
-            rs = np.linspace(0, r, r_resolution)
-            phis = np.linspace(-np.pi, np.pi, phi_resolution)
-            xs = torch.from_numpy(rs[:, None] * np.cos(phis)[None, :]).float().to(self._device).flatten() # r_res * phi_res
-            ys = torch.from_numpy(rs[:, None] * np.sin(phis)[None, :]).float().to(self._device).flatten() # r_res * phi_res
-            vs = torch.stack([xs, ys], dim=-1)[None, :, :].repeat(N, 1, 1)
-
-            kernel = self.model.get_kernel()
-            local_pattern = kernel.kernel_prattern(center_nodes, vs, angle_ratio)
-        return local_pattern, center_nodes, rs, phis
-
-    def _local_pattern_visual(self, center_nodes, r=0.1, r_resolution=180, phi_resolution=180):
-        import matplotlib.pyplot as plt
-        from mpl_toolkits.mplot3d import Axes3D
-        
-        local_patterns, center_nodes, rs, phis = self._local_pattern(center_nodes, r, r_resolution, phi_resolution) 
-        local_patterns = local_patterns.detach().cpu().numpy()
-        rs_mesh, phis_mesh = np.meshgrid(rs, phis)
-        vmin, vmax = 0, 0.02
-        
-        for i in range(center_nodes.shape[0]):
-            local_pattern = local_patterns[i].reshape(r_resolution, phi_resolution)
-            fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
-
-            c = ax.pcolormesh(phis_mesh + 0.1 * np.sin(0.1*i*np.pi) * i, rs_mesh, local_pattern.T*np.exp(0.2*np.sin(0.03*i)), cmap='hot', vmin=vmin, vmax=vmax)
-            # fig.colorbar(c)
-            plt.plot(phis, rs, color='k', ls='none') 
-            plt.grid()
-            path = self._log_dir
-            plt.savefig(path / 'local_kernel_center{}.png'.format(i))
     
     def _get_time_prediction(self):
         import copy
-        _data_kwargs = copy.deepcopy(self._data_kwargs)
-        # _data_kwargs['dataset_dir']  = _data_kwargs['dataset_dir'][:-1] + '_visual'
-        _data_kwargs['dataset_dir']  = _data_kwargs['dataset_dir']
-        _data_kwargs['val_batch_size'] = 1
-        _data = dataloader.load_dataset(**_data_kwargs)
+        
+        h =  self.sharedConfig['horizons']['default']
+        h = h[0]
+        self._logger.info("Storing actuals vs predictions")
+        path =  self.modelConfig['dataset_dir']['default'] + '/horizon_{}'.format(h)
+        position_path = self.modelConfig['dataset_dir']['default'] + '/horizon_{}/position_info.pkl'.format(h)
+        # position_path = '/data/test/position_info.pkl'
+  
+        _data = dataloader.load_dataset(path, self.increments[0] ,self.modelConfig['batch_size']['default'],position_path)
         test_loader = _data['test_loader']
         y_preds = []
         y_trues = []
+        
         with torch.no_grad():
             for _, (x, y) in enumerate(test_loader):
+                
                 x, y = self._prepare_data(x, y)
+               
                 output = self.model(x)
-                loss, y_true, y_pred = self._compute_loss(y, output)
-                y_preds.append(y_pred)
-                y_trues.append(y_true)
+                
+                y = y.permute(1, 0, 2, 3)
+                output = output.permute(1, 0, 2, 3)
+                y_preds.append(output)
+                
+                y_trues.append(y)
+
             y_preds = torch.cat(y_preds, 0).squeeze(dim=1).cpu().numpy()
             y_trues = torch.cat(y_trues, 0).squeeze(dim=1).cpu().numpy()
+
             import pickle
-            with open('{}.pkl'.format(self._model_name + self._data_kwargs['dataset_dir']), "wb") as f:
-                save_data = {'y_preds': y_preds,
-                            'y_trues': y_trues}
-                pickle.dump(save_data, f, protocol = 4)
+            with open('{}/actuals.pkl'.format(self._log_dir), "wb") as f:
+                smapeData = {'y_trues': y_trues}
+                pickle.dump(smapeData, f, protocol = 4)
+
+            with open('{}/predictions.pkl'.format(self._log_dir), "wb") as f:
+                smapeData = {'y_preds': y_preds}
+                pickle.dump(smapeData, f, protocol = 4)
+        print("Storing actuals vs predicted complete")
+    # def eval(self):
+       
+    #     self._logger.info("Evaluating model per station")
+
+    #     h =  self.modelConfig['horizon']['default']
+        
+    #     true_file = '{}/actuals.pkl'.format(self._log_dir,h)
+    #     predict_file = '{}/predictions.pkl'.format(self._log_dir,h)
+    #     # Open the pickle file for reading (rb mode)
+    #     with open(true_file, 'rb') as f:
+    #         # Load the content of the pickle file
+    #         trueVals = pickle.load(f)
+    #     with open(predict_file, 'rb') as f:
+    #         # Load the content of the pickle file
+    #         predVals = pickle.load(f)
+
+    #     self._logger.info("Average smape value for horizon {}".format(h[0]))
+    #     self._logger.info(masked_smape_loss(torch.tensor(predVals['y_preds']),torch.tensor(trueVals['y_trues'])))
+
+    #     trues = torch.tensor(trueVals['y_trues'])
+    #     preds = torch.tensor(predVals['y_preds'])
+    #     smape = 0
+    #     mse = 0
+        
+    #     fpath = '{}/stationScore_{}.txt'.format(self.modelConfig['results_dir']['default'],h[0])
+    #     with open(fpath, "w") as f:
+    #         f.write("Metrics scores at each station  \n")
+    #         for i in range(self.modelConfig['num_nodes']['default']):
+    #             t = trues[:,:,:i+1,:]
+    #             p = preds[:,:,:i+1,:]
+    #             score = masked_smape_loss(p,t)
+    #             mscore = masked_mse_loss(p,t)
+    #             smape = smape + score
+    #             mse = mse + mscore
+
+                
+    #             smapeData = 'SMAPE score at station {} : {} \n'.format(i+1,score.item())
+    #             mseData = 'MSE score at station {} : {} \n'.format(i+1,mscore.item())
+               
+    #             f.write(smapeData)
+    #             f.write(mseData)
+
+    #             self._logger.info(smapeData)
+
+    #         f.write("Average SMAPE maually calculated: {} \n".format(smape/45))
+    #         f.write("Average MSE maually calculated: {}".format(mse/45))
+
+    #     self._logger.info("Average SMAPE maually calculated: {}".format(smape/45))
+    #     self._logger.info("Average MSE maually calculated: {}".format(mse/45))
+
+    def getLogger(self):
+        return self._logger
+
+      
+    def getMatrix(self,mode):
+       
+        kernel = self.model.get_kernel()
+        coor = kernel.getCoor()
+        matrix = kernel.conv_kernel(coor,True)
+        # print(matrix)
+        
+        matrix = matrix.tolist()
+
+        with open('{}/adjMatrix_{}.pkl'.format(self._log_dir,mode), "wb") as f:
+            smapeData = {'adj_matrix': matrix}
+            pickle.dump(smapeData, f, protocol = 4)
+
+        self._logger.info("Matrix saved in Logs")
+
 
         

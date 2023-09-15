@@ -1,3 +1,0 @@
-This is the MAE 4.763519
-This is the RMSE 6.084734855398224
-This is the MAPE 0.35789195

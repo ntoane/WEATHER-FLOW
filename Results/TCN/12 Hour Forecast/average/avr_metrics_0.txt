@@ -1,4 +1,0 @@
-This is the accumulative smape: 8.763400273310811
-This is the accumulative mse: 0.0022347207438823996
-This is the accumulative mae: 0.033896237795802496
-This is the accumulative rmse: 0.046929109612267705

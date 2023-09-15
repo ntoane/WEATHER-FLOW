@@ -1,5 +1,0 @@
-This is the mse: 0.0024607042208998828
-This is the rmse: 0.04960548579441474
-This is the mae: 0.037230591156078616
-This is the smape: 8.196831557436775
-This is the smape_std_dev: 8.707478348106436
