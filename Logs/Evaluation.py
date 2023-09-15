@@ -245,7 +245,6 @@ def AgcrnEval(modelConfig,sharedConfig):
                     with open(filename, 'r') as file:
                         return float(file.read().strip())
 
-                # Usage:
                 train_data_min_file = './Results/AGCRN/' + str(horizon) + ' Hour Forecast/scaler/min_' + str(k) + ".csv"
                 train_data_max_file = './Results/AGCRN/' + str(horizon) + ' Hour Forecast/scaler/max_' + str(k) + ".csv"
 
@@ -255,8 +254,6 @@ def AgcrnEval(modelConfig,sharedConfig):
                 y_pred=np.load(fileDictionary["predFile"] + ".npy")
                 y_true=np.load(fileDictionary["targetFile"] + ".npy")
 
-                print(y_true)
-
 
                 # # scaler = utils.NormScaler(0, 43)
                 # # scaler = utils.NormScaler(y_trueO.min(), y_trueO.max())
@@ -264,7 +261,7 @@ def AgcrnEval(modelConfig,sharedConfig):
                 # y_true = scaler.transform(y_trueO)
                 # y_pred = scaler.transform(y_predO)
 
-
+                #per station metrics
                 for i in range(45):
                     station_pred = y_pred[:, :, i, 0]
                     station_true = y_true[:, :, i, 0]
@@ -272,13 +269,10 @@ def AgcrnEval(modelConfig,sharedConfig):
                     print("Evaluating horizon:"+ str(horizon) + " split:" + str(k) + " for station:" + stations[i])
                     # print(station_pred)
 
-                    # mae, rmse, mape, _, _ = agcrnUtil.All_Metrics(station_pred, station_true, modelConfig['mae_thresh']['default'], modelConfig['mape_thresh']['default'])
-
                     rmse =  metrics.rmse(station_true, station_pred)
                     mse = metrics.mse(station_true, station_pred)
                     mae = metrics.mae(station_true, station_pred)
                     smape = metrics.smape(station_true.flatten(), station_pred.flatten())
-
 
 
                     filePath =fileDictionary['metricFile0'] +str(stations[i])
@@ -286,16 +280,13 @@ def AgcrnEval(modelConfig,sharedConfig):
                         os.makedirs(filePath)
 
                     with open(filePath + fileDictionary['metricFile1'], 'w') as file:
-                
-                        # file.write('This is the MAE ' + str(mae) + '\n')
-                        # file.write('This is the RMSE ' + str(rmse) + '\n')
-                        # file.write('This is the MAPE ' + str(mape) + '\n')
                         file.write('This is the RMSE ' + str(rmse) + '\n')
                         file.write('This is the MSE ' + str(mse) + '\n')
                         file.write('This is the MAE ' + str(mae) + '\n')
                         file.write('This is the SMAPE ' + str(smape) + '\n')
 
 
+                #all station collective metrics
                 y_true=y_true.flatten()
                 y_pred=y_pred.flatten()
                 rmse =  metrics.rmse(y_true, y_pred)
@@ -303,17 +294,11 @@ def AgcrnEval(modelConfig,sharedConfig):
                 mae = metrics.mae(y_true, y_pred)
                 smape = metrics.smape(y_true, y_pred)
 
-
-
                 filePath =fileDictionary['metricFile0'] +"average"
                 if not os.path.exists(filePath):
                     os.makedirs(filePath)
 
                 with open(filePath + fileDictionary['metricFile1'], 'w') as file:
-            
-                    # file.write('This is the MAE ' + str(mae) + '\n')
-                    # file.write('This is the RMSE ' + str(rmse) + '\n')
-                    # file.write('This is the MAPE ' + str(mape) + '\n')
                     file.write('This is the RMSE ' + str(rmse) + '\n')
                     file.write('This is the MSE ' + str(mse) + '\n')
                     file.write('This is the MAE ' + str(mae) + '\n')

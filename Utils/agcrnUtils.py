@@ -697,39 +697,27 @@ def generateRandomParameters(config):
     Returns:
         config - list of HPO parameters
     """
-    batch_size = [32]
-    rnn_units = [32] #new
-    #hidden_units = [22, 32, 42]
-    lag = [12]
-    #dropout = [0.1, 0.2, 0.3]
-    num_layers = [2, 3]
-    epochs = [5, 6, 2] #[30, 40, 50, 60]
+    batch_size = [32, 64, 128, 256] 
+    rnn_units = [32, 64, 128]
+    lag = [12, 24, 48] 
+    num_layers = [1, 2, 3]
+    epochs = [10, 20, 30, 40, 50]  
+    lr_init = [0.0001, 0.001, 0.01]
+    embed_dim = [5, 10, 15] 
 
-
-
-
-
-
-    # batch_size = [32, 64]
-    # rnn_units = [32, 64] #new
-    # #hidden_units = [22, 32, 42]
-    # lag = [12, 24]
-    # #dropout = [0.1, 0.2, 0.3]
-    # num_layers = [2, 3, 4]
-    # epochs = [5, 10, 15] #[30, 40, 50, 60]
 
     batch = batch_size[random.randint(0, len(batch_size)-1)]
-    # units = hidden_units[random.randint(len(hidden_units))]
     lag = lag[random.randint(0, len(lag)-1)]
-    # dropout = dropout[random.randint(len(dropout))]
     num_layers = num_layers[random.randint(0, len(num_layers)-1)]
     epoch = epochs[random.randint(0, len(epochs)-1)]
     rnn_units = rnn_units[random.randint(0, len(rnn_units)-1)]
+    embed_dim = embed_dim[random.randint(0, len(embed_dim)-1)]
+    lr_init = lr_init[random.randint(0, len(lr_init)-1)]
 
 
+    config['embed_dim']['default'] = embed_dim
+    config['lr_init']['default'] = lr_init
     config['batch_size']['default'] = batch
-    # config['dropout']['default'] = dropout
-    # config['nhid']['default'] = units
     config['lag']['default'] = lag
     config['num_layers']['default'] = num_layers
     config['epochs']['default'] = epoch
