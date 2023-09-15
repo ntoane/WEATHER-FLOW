@@ -27,7 +27,11 @@ tune_gwn:
 tune_agcrn:
   type: bool
   default: false
-  help: whether to perform random search HPO on GWN model
+  help: whether to perform random search HPO on AGCRN model
+tune_astgcn:
+  type: bool
+  default: false
+  help: whether to perform random search HPO on ASTGCN model
 num_configs:
   type: int
   default: 30

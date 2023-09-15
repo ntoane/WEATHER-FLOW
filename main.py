@@ -26,7 +26,7 @@ complete = False
 def main():
     configOptions = ['train_tcn', 'train_gwn','tune_tcn','tune_gwn','eval_tcn',
                      'eval_gwn','train_agcrn', 'eval_agcrn',
-                     'vis','train_astgcn', 'eval_astgcn','tune_agcrn']
+                     'vis','train_astgcn', 'eval_astgcn','tune_agcrn', 'tune_astgcn']
     loop = True
     global complete
 
@@ -83,6 +83,13 @@ def main():
         agcrnConfig = getSpecificConfig('agcrn')
         agcrn_hpo = agcrnHPO(sharedConfig, agcrnConfig)
         agcrn_hpo.hpo() 
+        complete = True
+        
+     # Random search ASTGCN
+    if sharedConfig['tune_astgcn']['default'] or args.mode == configOptions[12]:
+        astgcnConfig = getSpecificConfig('astgcn')
+        astgcn_hpo = astgcnHPO(sharedConfig, astgcnConfig)
+        astgcn_hpo.hpo() 
         complete = True
 
 ############ Recordings ##############
