@@ -64,19 +64,14 @@ class astgcnHPO:
                 utils.create_file_if_not_exists(save_File)
                 splits = [increment[k], increment[k + 1], increment[k + 2]]
                 pre_standardize_train, pre_standardize_validation, pre_standardize_test = utils.dataSplit(splits, input_data)
-                   
+                # print(pre_standardize_train.shape, np.any(pre_standardize_train))
+                
                 def normalize_data(data):
                     min_val = np.min(data)
                     max_val = np.max(data)
                     normalized_data = (data - min_val) / (max_val - min_val)
                     return normalized_data
-                
-                def split_data(self,input_data, increment,k):
-                    """Splits the input data into training, validation, and test sets."""
-                    splits = [increment[k], increment[k + 1], increment[k + 2]]
-                    standardized_train, standardized_validation, standardized_test = utils.dataSplit(splits, input_data)
-                    return (standardized_train, standardized_validation, standardized_test, splits)
-                                
+                    
                     # Normalizing splits of data
                 def normalize_splits(pre_standardize_train, pre_standardize_validation, pre_standardize_test, splits):
                     min_val = np.min(pre_standardize_train)
@@ -88,10 +83,11 @@ class astgcnHPO:
                         
                     return train_data, val_data, test_data, splits
                     
-                # train, validation, test, split = normalize_splits(pre_standardize_train, pre_standardize_validation,
-                #                                                     pre_standardize_test, splits)
-                input_data = normalize_data(input_data)
-                train, validation, test, split = self.split_data(input_data, self.increment,k)
+                    # train, validation, test, split = utils.min_max(pre_standardize_train, pre_standardize_validation,
+                                                                    # pre_standardize_test, splits)
+                train, validation, test, split = normalize_splits(pre_standardize_train, pre_standardize_validation,
+                                                                    pre_standardize_test, splits)
+                
                     
                 X_train, Y_train = utils.create_X_Y(train, time_steps, num_nodes, horizon)
                 X_val, Y_val = utils.create_X_Y(validation, time_steps, num_nodes, horizon)
@@ -146,4 +142,3 @@ class astgcnHPO:
         self.model_logger.info('This is the best configuration ' + str(best_cfg) + ' with an smape of ' + str(best_smape))
         self.model_logger.info("HPO finished successfully")
         print(f'HPO finished at all stations at {horizon} hour horizon')
-        

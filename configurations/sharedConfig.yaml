@@ -30,7 +30,7 @@ tune_agcrn:
   help: whether to perform random search HPO on AGCRN model
 tune_astgcn:
   type: bool
-  default: true
+  default: false
   help: whether to perform random search HPO on ASTGCN model
 num_configs:
   type: int
@@ -79,7 +79,7 @@ stations:
 
 horizons:
   type: int[]
-  default: [3,6,9,12,24]
+  default: [3] #,6,9,12,24]
   help: forecast horizons
 
 n_stations:
