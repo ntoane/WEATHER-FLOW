@@ -61,8 +61,8 @@ These are the steps to follow when integrating a new ST-GNN model (such as *<mod
   * Logging information can be saved to *Logs/<model_name>/<run_type</<model_name>*
     * <run_type> is the type of experiment with the model, usually either Training, HPO or Evaluation
 * Visualisation/ module:
-  * This module has "visualise.py" which contains the methods used for visualising the data collected from the experimentation.
-  * Currently visualised into either an adjacency matrix heatmap and a graph of South Africa with links between the weather stations across the provinces we have the data for in Western cape, Northern Cape and Eastern Cape, with the size of the node denoting the strength.
+  * This module has "visualise.py" which contains the methods used for visualising the the adjacency matrices collected from the experimentation.
+  * Currently visualised into either an adjacency matrix heatmap, strongest dependencies and strong chains of dependencies on a map.
   * Saved to ..
 * Plots/ module:
   * Module Plots/ has "plotter.py" which contains the logic for plotting graphs with the sepcified metrics
@@ -87,6 +87,20 @@ This subsection describes the methodology of the configurations/ module that set
   * Optimizers can be set to:
     * Adam, SGD, RMSprop.
   * If desired method/settings for above is not in options then it needs to be set in Model and Train code of the model in question.
+
+## Visualisations
+* Visualisations on the adjacency matrix can be generated using this platform.
+* There are 3 visualisations:
+  * Heatmap
+  * Strongest Dependencies
+  * Influencial Paths
+* How to use it
+  * To make use of the you need to open to the sharedConfig.yaml file and naviagte to the visualisation section.
+  * Change the parameter setting for visualisations to true and proceed to running the platform with the standard command "python3 main.py --mode config.yaml"
+  * Further adjust the parameters to the specific matrix needed to be visualised.
+  * Next adjust other parameters to fine tune the visualisations.
+
+
 
 ## Data Preprocessing
 
