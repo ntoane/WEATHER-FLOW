@@ -61,13 +61,8 @@ def sliding_window(df, lag, horizon, split, numOfStations,tData,lon,lat,scaler):
     Returns:
         x, y - returns x input and y output
     """
-    # if set == 0:
     samples = int(split)
-    # print(samples)
-    # if set == 1:
-    #     samples = int(split[1] / 45 - split[0] / numOfStations)
-    # if set == 2:
-    #     samples = int(split[2] / 45 - split[1] / numOfStations)
+    
 
 
     dfy = df.drop(['Rain', 'Humidity', 'Pressure', 'WindSpeed', 'WindDir'], axis=1)
@@ -77,17 +72,10 @@ def sliding_window(df, lag, horizon, split, numOfStations,tData,lon,lat,scaler):
     tfeatures = 6
 
     date_format = "%Y-%m-%d %H:%M:%S"
-    # print (df.shape)
     df = df.values.reshape(samples, stations, features)
-    # print(df)
     dfy = dfy.values.reshape(samples, stations, 1)
-    # print(lon.shape)
-    # tData = tData [:samples*stations]
-    # lon = lon[:samples*stations]
-    # print(lon.shape)
-    # lat = lat[:samples*stations]
+   
     l = len (tData)
-    # print(tData)
     time = []
     for w in range(l):
         temp = datetime.strptime(tData[w], date_format)
@@ -99,26 +87,18 @@ def sliding_window(df, lag, horizon, split, numOfStations,tData,lon,lat,scaler):
         lt = lat[w]
         time.append([year,month,day,hour,lt,lg])
 
-    # print(time)
 
     time =np.array(time)
-    # print(time.shape)
 
     time = time.reshape(samples, stations, tfeatures)
-    # print(time.shape)
 
     x_offsets = np.sort(np.concatenate((np.arange(-(lag - 1), 1, 1),)))
     y_offsets = np.sort(np.arange(1, (horizon + 1), 1))
-    # print('X offsets : ' + str(x_offsets))
-    # print('Y offsets : ' + str(y_offsets))
     data = np.expand_dims(df, axis=-1)
-    # print(data)
     data = data.reshape(samples, 1, stations, features)
     data = np.concatenate([data], axis=-1)
-    # print(data.shape)
     time = time.reshape(samples, 1, stations, tfeatures)
     time = np.concatenate([time], axis=-1)
-    # print(time.shape)
 
     datay = np.expand_dims(dfy, axis=-1)
     datay = datay.reshape(samples, 1, stations, 1)
@@ -143,20 +123,12 @@ def sliding_window(df, lag, horizon, split, numOfStations,tData,lon,lat,scaler):
     y = np.squeeze(y, axis=2)
     print('Shape of X : ' + str(x.shape))
     print('Shape of Y : ' + str(y.shape))
-    # print(y)
-    # q = scaler.inverse_transform(x)
-    # print(q[-1][-1][-1])
-    # print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
-    # print(y)
-    # print(time[-1][-1][-1])
-    # print('Shape of Y : ' + str(y.shape))
+   
     return x, y, times
 
 def split_data(data, split):
         return [data[:split[0]], data[split[0]:split[1]], data[split[1]:split[2]]]
 
-# def split_data(data, split):
-        # return [data[:split[0]], data[split[0]:split[1]], data[split[1]:split[2]]]
 
 def prepare_data_split(sharedConfig, increments):
         split = [increments[0] * sharedConfig['num_nodes']['default'],
@@ -167,16 +139,11 @@ def prepare_data_split(sharedConfig, increments):
 def main(h,modelConfig,filePath,outputDir,increments):
     print("Generating data")
     numOfStations = modelConfig['num_nodes']['default']
-    # split = modelConfig['increments']['default']
-    # set = 0
-    # increments = modelConfig['increments']['default']
     horizon = h
     lag = modelConfig['lag_length']['default']
 
     data = pd.read_csv(filePath)
-    # print(data['Latitude'])
     latitude = np.array(data['Latitude']).flatten()
-    # print(latitude)
     longitude = np.array(data['Longitude']).flatten()
 
     time = data['DateT']
@@ -186,61 +153,19 @@ def main(h,modelConfig,filePath,outputDir,increments):
     lonlat = lonlat.reshape(2,numOfStations).T
 
     raw_data = data.drop(['StasName', 'DateT', 'Latitude', 'Longitude'], axis=1)
-    # print(raw_data)
 
-    # for h in horizon:
-    # for c in range(0,len(increments)-2):
     print('Generating data for horizon ' + str(h)+ ' split ' + str(increments[0]))
     splits = prepare_data_split(modelConfig,increments)
     sets = split_data(raw_data, splits)
     t_sets = split_data(time_data,splits)
     lo = split_data(longitude,splits)
     la = split_data(latitude,splits)
-    # print(sets[0])
     scaler = NormScaler(raw_data[:splits[0]].min(), raw_data[:splits[0]].max())
-    # scaler = [StandardScaler(mean=raw_data[:splits[0]].mean(), std=raw_data[:splits[0]].std()) for i in range(6)]
 
-    # print(raw_data[:splits[0]].min())
-    # seq2seq_data, seq2seq_label, context = sliding_window(scaler.transform(raw_data[:increments[0]*numOfStations]), lag, h, increments[0], numOfStations, time_data,longitude,latitude)
-    
-    # train_x, train_y, train_context = sliding_window(sets[0], lag, h, increments[0], numOfStations, t_sets[0].values,lo[0],la[0],scaler)
     train_x, train_y, train_context = sliding_window(scaler.transform(sets[0]), lag, h, increments[0], numOfStations, t_sets[0].values,lo[0],la[0],scaler)
     val_x, val_y, val_context = sliding_window(scaler.transform(sets[1]), lag, h, increments[1] - increments[0], numOfStations, t_sets[1].values,lo[1],la[1],scaler)
     test_x, test_y, test_context = sliding_window(scaler.transform(sets[2]), lag, h, increments[2] - increments[1], numOfStations, t_sets[2].values,lo[2],la[2],scaler)
-    # train_x, train_y, train_context = sliding_window(sets[0], lag, h, increments[0], numOfStations, time_data,longitude,latitude)
-    # val_x, val_y, val_context = sliding_window(sets[1], lag, h, increments[1] - increments[0], numOfStations, time_data,longitude,latitude)
-    # test_x, test_y, test_context = sliding_window(sets[2], lag, h, increments[2] - increments[1], numOfStations, time_data,longitude,latitude)
-    # print(test_y)
-    # num_samples = seq2seq_data.shape[0]
     
-    # num_test = round(num_samples * 0.2)
-    # num_train = round(num_samples * 0.7)
-    # num_val = num_samples - num_test - num_train
-
-    # num_train =int(increments[0] )
-    # num_val = int(increments[c+1] - increments[0])
-    # num_test = int(increments[c+2] - increments[c+1])
-    # print('Number of training samples: {}, validation samples:{}, test samples:{}'.format(train_x[0].shape, val_x[0].shape, test_x[0].shape))
-
-    # if modelConfig['shuffle']['default'] == True :
-    #     idx = np.random.permutation(np.arange(num_samples))
-    #     seq2seq_data = seq2seq_data[idx]
-    #     context = context[idx]
-    #     seq2seq_label = seq2seq_label[idx]
-
-    # train_x = seq2seq_data[:num_train]
-    # # print(train_x.shape)
-    # train_context = context[:num_train]
-    # train_y = seq2seq_label[:num_train]
-    # # print(train_y.shape)
-    
-    # val_x = seq2seq_data[num_train:num_train+num_val]
-    # val_context = context[num_train:num_train+num_val]
-    # val_y = seq2seq_label[num_train:num_train+num_val]
-
-    # test_x = seq2seq_data[num_train+num_val:]
-    # test_context = context[num_train+num_val:]
-    # test_y = seq2seq_label[num_train+num_val:]
     datasets =[[train_x, train_y, train_context], [val_x, val_y, val_context], [test_x,test_y, test_context]]
     subsets = ['trn','val','test']
     path = outputDir + "/horizon_{}".format(h)
@@ -261,45 +186,6 @@ def main(h,modelConfig,filePath,outputDir,increments):
     return scaler
 
 if __name__ == "__main__":
-    # parser = argparse.ArgumentParser()
-    # parser.add_argument(
-    #     "--raw_dataset_dir",
-    #     type=str,
-    #     default='dataset_release/WeatherBench/datasets'
-    # )
-    # parser.add_argument(
-    #     "--datasets", type=list, default=[
-    #         '2m_temperature',
-    #         'relative_humidity', 
-    #         'component_of_wind', 
-    #         'total_cloud_cover'
-    #         ], help="dataset name."
-    # )
-    # parser.add_argument(
-    #     "--attri_names", type=list, default=['t2m', 'r','uv10','tcc'], help="data name."
-    # )
-    # parser.add_argument(
-    #     "--output_dirs", type=list, default=['data/temperature','data/humidity', 'data/component_of_wind','data/cloud_cover'], help="Output directory."
-    # )
-    # parser.add_argument(
-    #     "--step_size", type=int, default=24
-    # )
-    # parser.add_argument(
-    #     "--input_seq_len", type=int, default=12
-    # )
-    # parser.add_argument(
-    #     "--output_horizon_len", type=int, default=12
-    # )
-    # parser.add_argument(
-    #     '--start_date', type=str, default='2010-01-01'
-    # )
-    # parser.add_argument(
-    #     '--end_date', type=str, default='2019-01-01'
-    # )
-    # parser.add_argument(
-    #     "--shuffle", type=bool, default=False
-    # )
-    # args = parser.parse_args()
     
     modelName = 'clcrn'
     with open('../configurations/'+ modelName +'Config.yaml', 'r') as file:

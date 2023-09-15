@@ -76,3 +76,6 @@ GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon on each of the 21 weat
 In config yalm set:  vis default value to true
 Then run:
 python3 main.py --mode config.yaml
+
+##Link to full codebase on github
+https://github.com/CodeWizards123/WEATHER-FLOW/tree/main

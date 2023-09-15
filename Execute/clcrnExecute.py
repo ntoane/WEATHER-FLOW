@@ -5,11 +5,12 @@ import torch
 from Utils.CLCRN_Utils import dataloader ,createData, utils
 import yaml
 from Models.CLCRN.clcnn import CLCRNModel
-from Utils.CLCRN_Utils.loss import masked_mae_loss, masked_mse_loss, masked_mape_loss, masked_smape_loss
+from Utils.CLCRN_Utils.loss import masked_mae_loss, masked_mse_loss, masked_smape_loss
 from tqdm import tqdm
 from pathlib import Path
 from Execute.modelExecute import modelExecute
 import pickle
+import warnings
 torch.set_num_threads(4)
 
 def exists(val):
@@ -224,9 +225,11 @@ class clcrnExecute(modelExecute):
                 torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.max_grad_norm)
                 optimizer.step()
             
-    
             self._logger.info("epoch complete")
-            lr_scheduler.step()
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                lr_scheduler.step()
+            # lr_scheduler.step()
             self._logger.info("evaluating now!")
 
     
