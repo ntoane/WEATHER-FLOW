@@ -70,7 +70,13 @@ class astgcnHPO:
                     max_val = np.max(data)
                     normalized_data = (data - min_val) / (max_val - min_val)
                     return normalized_data
-                    
+                
+                def split_data(self,input_data, increment,k):
+                    """Splits the input data into training, validation, and test sets."""
+                    splits = [increment[k], increment[k + 1], increment[k + 2]]
+                    standardized_train, standardized_validation, standardized_test = utils.dataSplit(splits, input_data)
+                    return (standardized_train, standardized_validation, standardized_test, splits)
+                                
                     # Normalizing splits of data
                 def normalize_splits(pre_standardize_train, pre_standardize_validation, pre_standardize_test, splits):
                     min_val = np.min(pre_standardize_train)
@@ -82,10 +88,10 @@ class astgcnHPO:
                         
                     return train_data, val_data, test_data, splits
                     
-                    # train, validation, test, split = utils.min_max(pre_standardize_train, pre_standardize_validation,
-                                                                    # pre_standardize_test, splits)
-                train, validation, test, split = normalize_splits(pre_standardize_train, pre_standardize_validation,
-                                                                    pre_standardize_test, splits)
+                # train, validation, test, split = normalize_splits(pre_standardize_train, pre_standardize_validation,
+                #                                                     pre_standardize_test, splits)
+                input_data = normalize_data(input_data)
+                train, validation, test, split = self.split_data(input_data, self.increment,k)
                     
                 X_train, Y_train = utils.create_X_Y(train, time_steps, num_nodes, horizon)
                 X_val, Y_val = utils.create_X_Y(validation, time_steps, num_nodes, horizon)
