@@ -15,9 +15,10 @@ def create_graph(adj_matrix, config):
     G = nx.DiGraph()
     locations_path = config['locations_path']['default']
    
+   # Adds all nodes to graph
     with open(locations_path, 'r') as file:
         reader = csv.reader(file)
-        next(reader)  # Skip the header row
+        next(reader)  
         for row in reader:
             number, station_name, lat, lon, province = row
             G.add_node(number, pos=(float(lon), float(lat)), province=province)
@@ -25,7 +26,8 @@ def create_graph(adj_matrix, config):
     if config['x_influences_y']['default']==False:
         adj_matrix=adj_matrix.T
 
-    for i in range(adj_matrix.shape[1]):  # Iterate over the columns instead of rows
+    # Adds most influencial edges to graph
+    for i in range(adj_matrix.shape[1]):  
         strongest_influence_indices = np.argsort(adj_matrix[i, :])[-2:]
         for j in strongest_influence_indices:
             weight = adj_matrix[i, j]
@@ -35,7 +37,7 @@ def create_graph(adj_matrix, config):
     return G
 
 
-
+# Plots strong dependency visualisation
 def plot_map(adj_matrix, config):
     # Create graph using adjacency matrix
     G = create_graph(adj_matrix, config)
@@ -65,8 +67,6 @@ def plot_map(adj_matrix, config):
     m.drawparallels(parallels, labels=[True, False, False, False], fontsize=8, color='none')
     m.drawmeridians(meridians, labels=[False, False, False, True], fontsize=8, color='none')
 
-
-
     # Drawing nodes, edges, and labels
     node_degrees = list(G.out_degree())
     numberNodesDisplay = config['numberNodesDisplay']['default']
@@ -74,16 +74,11 @@ def plot_map(adj_matrix, config):
     drawn_nodes = [node[0] for node in top_nodes]
     
     edge_weights = nx.get_edge_attributes(G, "weight")
-    # min_weight, max_weight = min(edge_weights.values()), max(edge_weights.values())
-    # normalized_weights = [(w - min_weight) / (max_weight - min_weight) for w in edge_weights.values()]
     min_weight, max_weight = np.min(adj_matrix), np.max(adj_matrix)
-    # normalized_weights = [(w - min_weight) / (max_weight - min_weight) for w in edge_weights.values()]
-    if max_weight == min_weight:  # All weights are the same
-        normalized_weights = [0.5 for w in edge_weights.values()]  # Use 0.5 as a default normalized value
+    if max_weight == min_weight:  
+        normalized_weights = [0.5 for w in edge_weights.values()] 
     else:
         normalized_weights = [(w - min_weight) / (max_weight - min_weight) for w in edge_weights.values()]
-
-
 
 
     colormap = plt.cm.viridis_r
@@ -101,8 +96,6 @@ def plot_map(adj_matrix, config):
     cbar = plt.colorbar(sm, orientation='horizontal', ax=ax)
     cbar.set_label('Edge Weight')
 
-    # ax.set_title("Strongest Dependencies")
-    
     # Save the plot
     directory = f"Visualisations/{config['modelVis']['default']}/horizon_{config['horizonVis']['default']}/geographicVis/"
     if not os.path.exists(directory):
@@ -112,12 +105,10 @@ def plot_map(adj_matrix, config):
     fig.savefig(filepath, dpi=600)
 
 
-
-
+# Plots heatmap
 def plot_heatmap(adj_matrix, config):
     fig_heatmap, ax_heatmap = plt.subplots()
     sns.heatmap(adj_matrix, cmap='YlGnBu', ax=ax_heatmap)
-    # ax_heatmap.set_title("Adjacency Matrix Heatmap")
 
     split = config['splitVis']['default']
     directory = 'Visualisations/' + config['modelVis']['default']+ '/horizon_' + config['horizonVis']['default'] + '/' + 'heatmap/'
@@ -131,9 +122,8 @@ def plot_heatmap(adj_matrix, config):
     fig_heatmap.savefig(filepath, dpi=600)
 
 
-
+# Recursively finds strong paths using DFS
 def strong_dfs_paths(G, source, visited=None, path=None):
-    """Recursively finds strong paths using DFS."""
     if visited is None:
         visited = set()
     if path is None:
@@ -143,7 +133,6 @@ def strong_dfs_paths(G, source, visited=None, path=None):
 
     strong_paths = []
     for neighbor in G[source]:
-        weight = G[source][neighbor].get('weight', 0)  # Safely get the weight attribute with a default value of 0
         if neighbor not in visited:
             visited.add(neighbor)
             path.append(neighbor)
@@ -153,8 +142,7 @@ def strong_dfs_paths(G, source, visited=None, path=None):
 
     return strong_paths
 
-
-
+# Plots the strong paths visualisation
 def plot_strong_chains(adj_matrix, config):
     G = create_graph(adj_matrix, config)
     strong_paths = []
@@ -163,10 +151,9 @@ def plot_strong_chains(adj_matrix, config):
     for node in G:
         strong_paths.extend(strong_dfs_paths(G, node))
     
-    # Filter paths with 2 or more edges (i.e., 3 or more nodes)
+    # set minimim path length
     strong_paths = [path for path in strong_paths if len(path) >= 3]
 
-    # Extract unique nodes from the strong paths
     strong_nodes = set()
     for path in strong_paths:
         strong_nodes.update(path)
@@ -191,13 +178,10 @@ def plot_strong_chains(adj_matrix, config):
     m.drawmapboundary(fill_color='lightblue')
     m.fillcontinents(color='white', lake_color='lightblue')
 
-
-
     parallels = np.arange(int(min_lat - 0.1 * height), int(max_lat + 0.1 * height), 1)
     meridians = np.arange(int(min_lon - 0.1 * width), int(max_lon + 0.1 * width), 1)
     m.drawparallels(parallels, labels=[True, False, False, False], fontsize=8, color='none')
     m.drawmeridians(meridians, labels=[False, False, False, True], fontsize=8, color='none')
-
 
 
     # Convert latitude and longitude to x, y for the basemap
@@ -207,7 +191,7 @@ def plot_strong_chains(adj_matrix, config):
     nx.draw_networkx_nodes(G, pos, nodelist=strong_nodes, node_size=300, node_color="white", edgecolors="black", ax=ax)
     nx.draw_networkx_labels(G, pos, labels={node: node for node in strong_nodes}, font_size=9, ax=ax)
 
-    # Getting edge weights and normalizing them for color mapping
+    # Getting edge weights and normalising them for color mapping
     edge_weights = nx.get_edge_attributes(G, "weight")
 
     colormap = plt.cm.viridis_r
@@ -238,13 +222,16 @@ def plot_strong_chains(adj_matrix, config):
 
 
 def plot(config):
+    # Get adjacency matrix for results folder
     matrix_path = "Results/" + config['modelVis']['default'] + "/" + config['horizonVis']['default'] + " Hour Forecast/Matrices/adjacency_matrix_" + config['splitVis']['default'] + ".csv"
     df = pd.read_csv(matrix_path, index_col=0)
     adj_matrix = df.values
-
+    # Normalise matrix 
     adj_matrix = (adj_matrix - np.min(adj_matrix)) / (np.max(adj_matrix) - np.min(adj_matrix))
 
-    
+    # Make all plots
+    print("Creating Visualisations")
     plot_map(adj_matrix, config )
     plot_strong_chains(adj_matrix, config)
     plot_heatmap(adj_matrix, config)
+    print("Visualisations complete")
