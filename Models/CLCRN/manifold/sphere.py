@@ -2,7 +2,7 @@ import re
 import numpy as np
 from numpy.core.fromnumeric import product
 import torch
-import torch_scatter 
+# import torch_scatter 
 import math
 
 class Sphere:
@@ -144,7 +144,7 @@ class Sphere:
             x: (N, 3)
             v: (N, M, 3) # v is on the ctangent space of x
         outputs:
-            \Pi_x(v): (N, M, 2)
+            \\Pi_x(v): (N, M, 2)
         '''
         assert x.shape[1] == v.shape[2] == 3, 'the method can only used for 2d sphere, so the input should be in R^3.'
         self._ensure_in_ctangent_space(x, v)
@@ -169,7 +169,7 @@ class Sphere:
             x: (N, 3)
             v: (N, M, 3) # v is on the tangent space of x
         outputs:
-            \Pi_x(v): (N, M, 2)
+            \\Pi_x(v): (N, M, 2)
         '''
         assert x.shape[1] == v.shape[2] == 3, 'the method can only used for 2d sphere, so the input should be in R^3.'
         self._ensure_in_tangent_space(x, v)

@@ -7,7 +7,7 @@ from Utils.astgcn_Data_PreProcess.data_preprocess import data_preprocess_AST_GCN
 from Logs.modelLogger import modelLogger 
 
 class astgcnHPO:
-    def __init__(self, config, sharedConfig):
+    def __init__(self, sharedConfig, config):
         self.config = config
 
     def hpo(self):
@@ -37,8 +37,6 @@ class astgcnHPO:
         f = open(textFile, 'w')
         best_smape = np.inf
             
-        # for station in stations:
-            # processed_data, attribute_data, adjacency_matrix, num_nodes = data_preprocess_HPO_AST_GCN()
         processed_data, attribute_data, adjacency_matrix, num_nodes = data_preprocess_AST_GCN()
         lossData, resultsData, targetData = [], [], []
                 
@@ -64,8 +62,7 @@ class astgcnHPO:
                 utils.create_file_if_not_exists(save_File)
                 splits = [increment[k], increment[k + 1], increment[k + 2]]
                 pre_standardize_train, pre_standardize_validation, pre_standardize_test = utils.dataSplit(splits, input_data)
-                # print(pre_standardize_train.shape, np.any(pre_standardize_train))
-                
+                   
                 def normalize_data(data):
                     min_val = np.min(data)
                     max_val = np.max(data)
@@ -87,7 +84,7 @@ class astgcnHPO:
                                                                     # pre_standardize_test, splits)
                 train, validation, test, split = normalize_splits(pre_standardize_train, pre_standardize_validation,
                                                                     pre_standardize_test, splits)
-                
+                print(validation.shape, np.any(validation))
                     
                 X_train, Y_train = utils.create_X_Y(train, time_steps, num_nodes, horizon)
                 X_val, Y_val = utils.create_X_Y(validation, time_steps, num_nodes, horizon)

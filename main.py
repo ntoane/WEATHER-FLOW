@@ -5,12 +5,12 @@ from HPO.gwnHPO import GWNHPO
 from Execute.agcrnExecute import agcrnExecute
 from Execute.tcnExecute import tcnExecute
 from Execute.gwnExecute import gwnExecute
-from Execute.clcrnExecute import clcrnExecute
+# from Execute.clcrnExecute import clcrnExecute
 from Execute.astgcnExecute import astgcnExecute
 from HPO.astgcnHPO import astgcnHPO as astgcnHPO
 import Plots.plotter as plotter 
-from Plots import lossVStime , clcrnPlotter
-# import Visualisations.visualise as visualise
+# from Plots import lossVStime , clcrnPlotter
+import Visualisations.visualise as visualise
 import Logs.Evaluation as Evaluation
 from HPO.agcrnHPO import agcrnHPO
 
@@ -29,7 +29,7 @@ def main():
     configOptions = ['train_tcn', 'train_gwn','tune_tcn','tune_gwn','eval_tcn',
                      'eval_gwn','train_agcrn', 'eval_agcrn',
                      'vis','train_astgcn', 'eval_astgcn','tune_agcrn',
-                     'train_clcrn', 'eval_clcrn','tune_clcrn']
+                     'train_clcrn', 'eval_clcrn','tune_clcrn', 'tune_astgcn']
     loop = True
     global complete
 
@@ -68,14 +68,14 @@ def main():
         complete = True
 
     # Train final CLCRN models using config settings specified
-    if sharedConfig['train_clcrn']['default'] or args.mode == configOptions[12]:
-        clcrnConfig = getSpecificConfig('clcrn')
-        clcrn_trainer = clcrnExecute(sharedConfig, clcrnConfig)
-        clcrn_trainer.execute()
-        clcrn_trainer.getMatrix('f')
-        clcrn_trainer._test_final_n_epoch(1)
-        clcrn_trainer._get_time_prediction()
-        complete = True
+    # if sharedConfig['train_clcrn']['default'] or args.mode == configOptions[12]:
+    #     clcrnConfig = getSpecificConfig('clcrn')
+    #     clcrn_trainer = clcrnExecute(sharedConfig, clcrnConfig)
+    #     clcrn_trainer.execute()
+    #     clcrn_trainer.getMatrix('f')
+    #     clcrn_trainer._test_final_n_epoch(1)
+    #     clcrn_trainer._get_time_prediction()
+    #     complete = True
 
 ######### Random Search ##############
     # Random search TCN
@@ -97,6 +97,13 @@ def main():
         agcrnConfig = getSpecificConfig('agcrn')
         agcrn_hpo = agcrnHPO(sharedConfig, agcrnConfig)
         agcrn_hpo.hpo() 
+        complete = True
+        
+    # Random search ASTGCN
+    if sharedConfig['tune_astgcn']['default'] or args.mode == configOptions[15]:
+        astgcnConfig = getSpecificConfig('astgcn')
+        astgcn_hpo = astgcnHPO(sharedConfig, astgcnConfig)
+        astgcn_hpo.hpo() 
         complete = True
 
 ############ Recordings ##############
@@ -128,14 +135,14 @@ def main():
         #plotter.create('ASTGCN',config)
 
     # Record metrics for final ASTGCN models  
-    if sharedConfig['eval_clcrn']['default'] or args.mode == configOptions[13]:
-        clcrnConfig = getSpecificConfig('clcrn')
-        Evaluation.ClcrnEval(sharedConfig,clcrnConfig)
-        clcrnPlotter.create('CLCRN',sharedConfig)
-        horizons = sharedConfig['horizons']['default']
-        for h in horizons:
-            lossVStime.visualize_results(h, sharedConfig['stations']['default'])
-        complete = True
+    # if sharedConfig['eval_clcrn']['default'] or args.mode == configOptions[13]:
+    #     clcrnConfig = getSpecificConfig('clcrn')
+    #     Evaluation.ClcrnEval(sharedConfig,clcrnConfig)
+    #     clcrnPlotter.create('CLCRN',sharedConfig)
+    #     horizons = sharedConfig['horizons']['default']
+    #     for h in horizons:
+    #         lossVStime.visualize_results(h, sharedConfig['stations']['default'])
+    #     complete = True
 
 # ############ Visualisations #############
     if sharedConfig['vis']['default'] or args.mode == configOptions[8]:
