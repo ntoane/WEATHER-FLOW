@@ -139,17 +139,6 @@ def weight_variable_glorot(input_dim, output_dim, name=""):
     # Return the weight variable
     return tf.Variable(initial,name=name)  
 
-# def SMAPE(actual, predicted):
-#     """
-#     Calculates the SMAPE metric
-#     Parameters:
-#         actual - target values
-#         predicted - output values predicted by model
-#     Returns:
-#         smape - returns smape metric
-#     """
-#     return (np.mean(abs(predicted - actual)  / ((abs(predicted) + abs(actual)) / 2)) * 100) 
-
 def SMAPE(actual, predicted):
     denominator = (np.abs(actual) + np.abs(predicted)) / 2.0
     diff = np.abs(predicted - actual)

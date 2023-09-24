@@ -13,7 +13,7 @@ train_agcrn:
   help: whether to train final AGCRN model
 train_ast_gcn:
   type: bool
-  default: false
+  default: true
   help: whether to train final ASTGCN model
 train_clcrn:
   type: bool
@@ -35,7 +35,7 @@ tune_agcrn:
   help: whether to perform random search HPO on GWN model
 tune_astgcn:
   type: bool
-  default: true
+  default: false
   help: whether to perform random search HPO on GWN model
 num_configs:
   type: int
@@ -68,7 +68,6 @@ increment:
   #all splits  (set num_split=6):
   # default: [8760, 17520, 26280, 35040, 43800, 52560, 61320, 70080] 
   default: [79750, 96839, 113929]
-
   help:  (from davidson) List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 
     8784 is one year's worth of data, the next step is 3 months of data, and the following step is also 3 months of 
     data, resulting in rolling walk-forward validation where the train size increases each increment, with the 

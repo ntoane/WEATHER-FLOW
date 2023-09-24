@@ -96,12 +96,6 @@ class astgcnExecute:
         input_data = normalize_data(input_data)
         train, validation, test, split = self.split_data(input_data, self.increment,k)
         
-        print("This is the shape of validation")
-        print(validation.shape, np.any(validation))
-                
-        # standardized_train, standardized_validation, standardized_test, splits = self.split_data(input_data, self.increment,k)
-        # train, validation, test, split = normalize_splits(standardized_train, standardized_validation, standardized_test, splits )
-        
         X_train, Y_train = utils.create_X_Y(train, self.time_steps, num_nodes, self.forecast_len)
         X_val, Y_val = utils.create_X_Y(validation, self.time_steps, num_nodes, self.forecast_len)
         X_test, Y_test = utils.create_X_Y(test, self.time_steps, num_nodes, self.forecast_len)
@@ -110,7 +104,6 @@ class astgcnExecute:
         attribute_data = normalize_data(attribute_data)
         
         # Instantiate the AstGcn class
-        # attribute data gets split up seperately in astgcn ->  prepare_data_astgcn (CHECK)
         astgcn = AstGcn(self.time_steps, num_nodes, adjacency_matrix, 
                                     attribute_data, save_File, self.forecast_len, 
                                     X_train, Y_train, X_val, Y_val, split, self.batch_size, self.epochs, 
