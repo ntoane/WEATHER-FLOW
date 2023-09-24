@@ -85,6 +85,7 @@ trio==0.22.2
 trio-websocket==0.10.3
 typeguard==2.13.3
 typing-extensions==4.6.3
+tqdm==4.66.1
 urllib3==1.26.16
 Werkzeug==2.3.6
 wrapt==1.15.0

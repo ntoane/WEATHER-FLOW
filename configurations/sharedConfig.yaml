@@ -13,7 +13,7 @@ train_agcrn:
   help: whether to train final AGCRN model
 train_ast_gcn:
   type: bool
-  default: true
+  default: false
   help: whether to train final ASTGCN model
 train_clcrn:
   type: bool
@@ -60,7 +60,7 @@ eval_ast_gcn:
   help: whether to report final ASTGCN metrics
 eval_clcrn:
   type: bool
-  default: true
+  default: false
   help: whether to report final CLCRN metrics
 ############################ General data configurations ############################
 increment: 
