@@ -1,7 +1,7 @@
 ############################ Experimentation configurations ############################
 train_ast_gcn:
   type: bool
-  default: true
+  default: false
   help: whether to train AST-GCN model (Attribute-Augmented Spatiotemporal Graph Convolutional Network)
 eval_ast_gcn:
   type: bool
@@ -19,7 +19,7 @@ vis:
   help: whether to create visualisations
 modelVis:
   type: str
-  default: GWN
+  default: ASTGCN
   help: the model to visualise
 horizonVis:
   type: str
@@ -37,7 +37,6 @@ locations_path:
 ############################ General data configurations ############################
 forecasting_horizons:
   type: int[]
-  # default: [3]
   default: [3,6,9,12,24]
   help: forecast horizons for time step forecasting
 
@@ -55,13 +54,8 @@ stations:
 
 increment: 
   type: int[]
-  # default: [8760, 10920, 13106, 15312, 17520, 19704, 21888, 24096, 26304,
-                #  28464, 30648, 32856, 35064, 37224, 39408, 41616, 43824, 45984,
-                #  48168, 50376, 52584, 54768, 56952, 59160, 61368, 63528, 65712,
-                #  67920, 70128, 72288, 74472, 76680, 78888, 81048, 83232, 85440,
-                #  87648, 89832, 92016, 94224, 96432, 98592, 100776, 102984, 105192,
-                #  107352, 109536, 111744, 113929]
-  default: [5000, 1000, 1000]
+  # default: [79750, 96839, 113929]
+  default: [1000,2000,3000] 
   help:  List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 
     8784 is one year's worth of data, the next step is 3 months of data, and the following step is also 3 months of 
     data, resulting in rolling walk-forward validation where the train size increases each increment, with the 
@@ -76,6 +70,8 @@ num_splits:
   type: int
   default: 1
   help: number of splits in walk-forward validation
+
+
 
 time_steps:
   type: int

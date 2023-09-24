@@ -9,7 +9,7 @@ from Logs.modelLogger import modelLogger
 class astgcnHPO:
     def __init__(self, sharedConfig, config):
         self.config = config
-
+        
     def hpo(self):
         increment = self.config['increment']['default']
         stations = self.config['stations']['default']
@@ -34,101 +34,81 @@ class astgcnHPO:
         if not os.path.exists('HPO/Best Parameters/AST-GCN/'):
             os.makedirs('HPO/Best Parameters/AST-GCN/')
         print("File with best configs is in ", textFile)
-        f = open(textFile, 'w')
-        best_smape = np.inf
-            
-        processed_data, attribute_data, adjacency_matrix, num_nodes = data_preprocess_AST_GCN()
-        lossData, resultsData, targetData = [], [], []
+        
+        with open(textFile, 'w') as f:
+            best_smape = np.inf
                 
-        folder_path = f'Results/ASTGCN/HPO/{horizon} Hour Forecast/all_stations'
-        targetFile, resultsFile, lossFile, actual_vs_predicted_file = utils.generate_execute_file_paths(folder_path)
-        input_data, target_data = sliding_window_AST_GCN(processed_data, time_steps, num_nodes)
+            processed_data, attribute_data, adjacency_matrix, num_nodes = data_preprocess_AST_GCN()
+            lossData, resultsData, targetData = [], [], []
+                    
+            folder_path = f'Results/ASTGCN/HPO/{horizon} Hour Forecast/all_stations'
+            targetFile, resultsFile, lossFile, actual_vs_predicted_file = utils.generate_execute_file_paths(folder_path)
+            input_data, target_data = sliding_window_AST_GCN(processed_data, time_steps, num_nodes)
 
-        num_splits = 1
-        for i in range(self.config['num_configs']['default']):
-            config = utils.generateRandomParameters(self.config)
-            print(f"Trying configuration {i+1}/{self.config['num_configs']['default']}: {config}")
-            self.model_logger.info("Generating random parameters for ASTGCN")
-            self.model_logger.info(f"Trying configuration {i+1}/{self.config['num_configs']['default']}: {config}")
-                    
-            valid_config = True
-            targets = []
-            preds = []
-                
-            for k in range(num_splits):
-                print('ASTGCN HPO training started on split {0}/{2} at all stations forecasting {1} hours ahead.'.format(k + 1, horizon, num_splits))
-                save_File = f'Garage/Final Models/ASTGCN/{str(horizon)}Hour Models/all_stations/Best_Model_' + \
-                                    f'{str(horizon)}_walk_{str(k)}.h5'
-                utils.create_file_if_not_exists(save_File)
-                splits = [increment[k], increment[k + 1], increment[k + 2]]
-                pre_standardize_train, pre_standardize_validation, pre_standardize_test = utils.dataSplit(splits, input_data)
-                   
-                def normalize_data(data):
-                    min_val = np.min(data)
-                    max_val = np.max(data)
-                    normalized_data = (data - min_val) / (max_val - min_val)
-                    return normalized_data
-                    
-                    # Normalizing splits of data
-                def normalize_splits(pre_standardize_train, pre_standardize_validation, pre_standardize_test, splits):
-                    min_val = np.min(pre_standardize_train)
-                    max_val = np.max(pre_standardize_train)
-                    # Normalizing the data
-                    train_data = (pre_standardize_train - min_val) / (max_val - min_val)
-                    val_data = (pre_standardize_validation - min_val) / (max_val - min_val)
-                    test_data = (pre_standardize_test - min_val) / (max_val - min_val)
+            num_splits = 1
+            for i in range(self.config['num_configs']['default']):
+                config = utils.generateRandomParameters(self.config)
+                print(f"Trying configuration {i+1}/{self.config['num_configs']['default']}: {config}")
+                self.model_logger.info("Generating random parameters for ASTGCN")
+                self.model_logger.info(f"Trying configuration {i+1}/{self.config['num_configs']['default']}: {config}")
                         
-                    return train_data, val_data, test_data, splits
+                valid_config = True
+                targets = []
+                preds = []
                     
-                    # train, validation, test, split = utils.min_max(pre_standardize_train, pre_standardize_validation,
-                                                                    # pre_standardize_test, splits)
-                train, validation, test, split = normalize_splits(pre_standardize_train, pre_standardize_validation,
-                                                                    pre_standardize_test, splits)
-                print(validation.shape, np.any(validation))
+                for k in range(num_splits):
+                    print('ASTGCN HPO training started on split {0}/{2} at all stations forecasting {1} hours ahead.'.format(k + 1, horizon, num_splits))
                     
-                X_train, Y_train = utils.create_X_Y(train, time_steps, num_nodes, horizon)
-                X_val, Y_val = utils.create_X_Y(validation, time_steps, num_nodes, horizon)
-                X_test, Y_test = utils.create_X_Y(test, time_steps, num_nodes, horizon)
-                try:
-                    print('This is the HPO configuration: \n',
-                        'Batch Size - ', self.config['batch_size']['default'], '\n',
-                        'Epochs - ', self.config['training_epoch']['default'], '\n',
-                        'Hidden GRU units - ', self.config['gru_units']['default'], '\n'
-                        'LSTM units - ', self.config['lstm_neurons']['default'], '\n'
-                        ) 
-                   
-                    attribute_data = normalize_data(attribute_data)
+                    save_File = f'Garage/Final Models/ASTGCN/All Stations/{str(horizon)}Hour Models/Best_Model_\
+                        {str(horizon)}_walk_{str(k)}.h5'
+                    utils.create_file_if_not_exists(save_File) 
                     
+                    # Normalize the input data then split it into train,test,validate
+                    input_data = utils.normalize_data(input_data)
+                    train, validation, test, split = utils.split_data(input_data, increment,k)
+                        
+                    X_train, Y_train = utils.create_X_Y(train, time_steps, num_nodes, horizon)
+                    X_val, Y_val = utils.create_X_Y(validation, time_steps, num_nodes, horizon)
+                    X_test, Y_test = utils.create_X_Y(test, time_steps, num_nodes, horizon)
+                    try:
+                        print('This is the HPO configuration: \n',
+                            'Batch Size - ', self.config['batch_size']['default'], '\n',
+                            'Epochs - ', self.config['training_epoch']['default'], '\n',
+                            'Hidden GRU units - ', self.config['gru_units']['default'], '\n'
+                            'LSTM units - ', self.config['lstm_neurons']['default'], '\n'
+                            ) 
+                        attribute_data = utils.normalize_data(attribute_data)
+                        
                         # Instantiation and training
-                    astgcn = AstGcn(time_steps, num_nodes, adjacency_matrix,
-                                                    attribute_data, save_File, horizon,
-                                                    X_train, Y_train, X_val, Y_val, split, 
-                                                    self.config['batch_size']['default'], self.config['training_epoch']['default'], 
-                                                    self.config['gru_units']['default'], self.config['lstm_neurons']['default'])
-                    model, history = astgcn.astgcnModel()
-                    lossData.append([history.history['loss']])
-                    yhat = model.predict(X_test)
-                    Y_test = np.expand_dims(Y_test, axis=2)
-                    resultsData.append(yhat.reshape(-1,))
-                    targetData.append(Y_test.reshape(-1,))
-                except Warning:
-                    valid_config = False
-                    print(f"Error encountered during training with configuration {config}. Error message: {e}")
-                    break
-                targets.append(np.array(targetData).flatten())
-                preds.append(np.array(resultsData).flatten())
-            if valid_config:
-                    
-                smape = utils.SMAPE(np.concatenate(np.array(targets, dtype=object)),
-                                np.concatenate(np.array(preds, dtype=object)))
-                if smape < best_smape:  # Note that "less is better" for SMAPE
-                    print(f"Current smape {smape:.2f} is better than previous best smape {best_smape:.2f}.")
-                    self.model_logger.info(f"Current smape {smape:.2f} is better than previous best smape {best_smape:.2f}.")
-                    best_cfg = config
-                    best_smape = smape
-                else:
-                    print(f"Current smape {smape:.2f} is NOT better than previous best smape {best_smape:.2f}.")
-                    self.model_logger.info(f"Current smape {smape:.2f} is NOT better than previous best smape {best_smape:.2f}.")
+                        astgcn = AstGcn(time_steps, num_nodes, adjacency_matrix,
+                                                        attribute_data, save_File, horizon,
+                                                        X_train, Y_train, X_val, Y_val, split, 
+                                                        self.config['batch_size']['default'], self.config['training_epoch']['default'], 
+                                                        self.config['gru_units']['default'], self.config['lstm_neurons']['default'])
+                        model, history = astgcn.astgcnModel()
+                        lossData.append([history.history['loss']])
+                        yhat = model.predict(X_test)
+                        Y_test = np.expand_dims(Y_test, axis=2)
+                        resultsData.append(yhat.reshape(-1,))
+                        targetData.append(Y_test.reshape(-1,))
+                    except Warning:
+                        valid_config = False
+                        print(f"Error encountered during training with configuration {config}. Error message: {e}")
+                        break
+                    targets.append(np.array(targetData).flatten())
+                    preds.append(np.array(resultsData).flatten())
+                if valid_config:
+                        
+                    smape = utils.SMAPE(np.concatenate(np.array(targets, dtype=object)),
+                                    np.concatenate(np.array(preds, dtype=object)))
+                    if smape < best_smape:  # Note that "less is better" for SMAPE
+                        print(f"Current smape {smape:.2f} is better than previous best smape {best_smape:.2f}.")
+                        self.model_logger.info(f"Current smape {smape:.2f} is better than previous best smape {best_smape:.2f}.")
+                        best_cfg = config
+                        best_smape = smape
+                    else:
+                        print(f"Current smape {smape:.2f} is NOT better than previous best smape {best_smape:.2f}.")
+                        self.model_logger.info(f"Current smape {smape:.2f} is NOT better than previous best smape {best_smape:.2f}.")
 
             # f.write('This is the best configuration ' + str(best_cfg) + ' with an smape of ' + str(best_smape))
         with open(textFile, 'a') as f:

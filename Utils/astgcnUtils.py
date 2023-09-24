@@ -92,6 +92,30 @@ def calculate_laplacian_astgcn(adj, num_nodes):
     laplacian = tf.reshape(laplacian, [num_nodes, num_nodes])
     return laplacian
 
+def split_data(input_data, increment,k):
+    """Splits the input data into training, validation, and test sets."""
+    splits = [increment[k], increment[k + 1], increment[k + 2]]
+    standardized_train, standardized_validation, standardized_test = dataSplit(splits, input_data)
+    return (standardized_train, standardized_validation, standardized_test, splits)
+
+### Normalize input data as a whole
+def normalize_data(data):
+    min_val = np.min(data)
+    max_val = np.max(data)
+    normalized_data = (data - min_val) / (max_val - min_val)
+    return normalized_data
+                
+# Normalizing splits of data
+def normalize_splits(pre_standardize_train, pre_standardize_validation, pre_standardize_test, splits):
+    min_val = np.min(pre_standardize_train)
+    max_val = np.max(pre_standardize_train)
+    # Normalizing the data
+    train_data = (pre_standardize_train - min_val) / (max_val - min_val)
+    val_data = (pre_standardize_validation - min_val) / (max_val - min_val)
+    test_data = (pre_standardize_test - min_val) / (max_val - min_val)
+    return train_data, val_data, test_data, splits
+                
+
 def normalize_adj(adj):
     """
     Normalize the adjacency matrix.

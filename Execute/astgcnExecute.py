@@ -96,6 +96,9 @@ class astgcnExecute:
         input_data = normalize_data(input_data)
         train, validation, test, split = self.split_data(input_data, self.increment,k)
         
+        print("This is the shape of validation")
+        print(validation.shape, np.any(validation))
+                
         # standardized_train, standardized_validation, standardized_test, splits = self.split_data(input_data, self.increment,k)
         # train, validation, test, split = normalize_splits(standardized_train, standardized_validation, standardized_test, splits )
         
@@ -116,12 +119,9 @@ class astgcnExecute:
         model, history = astgcn.astgcnModel()
         
         self.lossData.append([history.history['loss']])
-        # predictions = self.predict(model, num_nodes, scaler)
         yhat = model.predict(X_test)
 
         self.resultsData.append(yhat.reshape(-1,))
-        # self.targetData.append(Y_test.reshape(-1,))
-        # self.save_data(Y_test, yhat)
         self.targetData.append(Y_test.reshape(-1,))
         self.save_data(Y_test, yhat)
 

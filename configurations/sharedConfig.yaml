@@ -17,7 +17,7 @@ train_ast_gcn:
   help: whether to train final ASTGCN model
 train_clcrn:
   type: bool
-  default: true
+  default: false
   help: whether to train final CLCRN model
 
 ############################ Random Search HPO arguments  ############################ 
@@ -35,7 +35,7 @@ tune_agcrn:
   help: whether to perform random search HPO on GWN model
 tune_astgcn:
   type: bool
-  default: false
+  default: true
   help: whether to perform random search HPO on GWN model
 num_configs:
   type: int
