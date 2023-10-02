@@ -250,21 +250,10 @@ def AgcrnEval(modelConfig,sharedConfig):
                     with open(filename, 'r') as file:
                         return float(file.read().strip())
 
-                train_data_min_file = './Results/AGCRN/' + str(horizon) + ' Hour Forecast/scaler/min_' + str(k) + ".csv"
-                train_data_max_file = './Results/AGCRN/' + str(horizon) + ' Hour Forecast/scaler/max_' + str(k) + ".csv"
-
-                min_scalar = read_value_from_file(train_data_min_file)
-                max_scalar = read_value_from_file(train_data_max_file)
 
                 y_pred=np.load(fileDictionary["predFile"] + ".npy")
                 y_true=np.load(fileDictionary["targetFile"] + ".npy")
 
-
-                # # scaler = utils.NormScaler(0, 43)
-                # # scaler = utils.NormScaler(y_trueO.min(), y_trueO.max())
-                # scaler = utils.NormScaler(min_scalar, max_scalar)
-                # y_true = scaler.transform(y_trueO)
-                # y_pred = scaler.transform(y_predO)
 
                 #per station metrics
                 for i in range(45):
