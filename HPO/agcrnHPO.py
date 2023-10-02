@@ -223,7 +223,8 @@ class agcrnHPO(modelHPO):
 
     def prep_split_data(self, horizon, k):
         increments = self.sharedConfig['increment']['default']
-        self.train_loader, self.val_loader, self.test_loader, self.scaler = agcrnUtil.get_dataloader(horizon, k, increments, self.modelConfig,
+        n_stations = self.sharedConfig['n_stations']['default']
+        self.train_loader, self.val_loader, self.test_loader, self.scaler = agcrnUtil.get_dataloader(horizon, k, increments, n_stations, self.modelConfig,
                                                                     normalizer=self.modelConfig['normalizer']['default'],
                                                                     tod=self.modelConfig['tod']['default'], dow=False,
                                                                     weather=False, single=False)

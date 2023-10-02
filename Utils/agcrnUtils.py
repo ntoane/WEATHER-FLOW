@@ -170,9 +170,9 @@ def min_max(train, validation, test):
 
 
 
-def get_dataloader(horizon, k, increment ,agcrnConfig, normalizer = 'std', tod=False, dow=False, weather=False, single=True):
+def get_dataloader(horizon, k, increment, n_stations, agcrnConfig, normalizer = 'std', tod=False, dow=False, weather=False, single=True):
     #load raw st dataset
-    data = load_st_dataset()        # B, N, D     
+    data = load_st_dataset(n_stations)        # B, N, D     
     
     #train data prenormalised
     split = [increment[k], increment[k + 1], increment[k + 2] ]
@@ -219,17 +219,20 @@ import numpy as np
 import pandas as pd
 
 
-def load_st_dataset():
+def load_st_dataset(n_stations):
     #output B, N, D
  
     data = pd.read_csv('DataNew/Graph Neural Network Data/Graph Station Data/graph.csv')
     data = data.drop(['StasName', 'DateT', 'Latitude', 'Longitude'], axis=1)  #added latitude and longitude
     data = np.array(data)
 
-    data = np.reshape(data, (113929, 45, 6))
+    n_rows = data.shape[0]
+    data = np.reshape(data, (int(n_rows/n_stations), n_stations, 6))
 
     if len(data.shape) == 2:
         data = np.expand_dims(data, axis=-1)
+
+    print("Data Shape:   " + str(data.shape))
 
     return data
 

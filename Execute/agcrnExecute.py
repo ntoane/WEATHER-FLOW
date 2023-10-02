@@ -168,11 +168,9 @@ class agcrnExecute(modelExecute):
         with torch.no_grad():
             for batch_idx, (data, target) in enumerate(val_dataloader):
 
-                data = data[..., :self.modelConfig['input_dim']['default']]  #need to make 6 (inputs)
-                label = target[..., :self.modelConfig['output_dim']['default']]   #need to make 1 (output supposed to predict)
+                data = data[..., :self.modelConfig['input_dim']['default']]  
+                label = target[..., :self.modelConfig['output_dim']['default']]   
                 output = self.model(data, target, teacher_forcing_ratio=0.)
-                # if self.modelConfig['real_value']['default']:
-                #     label = self.scaler.inverse_transform(label)
                 loss = self.loss(output.cpu(), label) #changes from cuda
                 #a whole batch of Metr_LA is filtered
                 if not torch.isnan(loss):
@@ -231,8 +229,9 @@ class agcrnExecute(modelExecute):
 
     def prep_split_data(self, horizon, k):
         increments = self.sharedConfig['increment']['default']
+        n_stations = self.sharedConfig['n_stations']['default']
         self.train_loader, self.val_loader, self.test_loader, self.scaler = agcrnUtil.get_dataloader(horizon, k, 
-                                                                    increments, self.modelConfig,
+                                                                    increments, n_stations, self.modelConfig,
                                                                     normalizer=self.modelConfig['normalizer']['default'],
                                                                     tod=self.modelConfig['tod']['default'], dow=False,
                                                                     weather=False, single=False)
