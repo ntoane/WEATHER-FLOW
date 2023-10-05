@@ -37,6 +37,10 @@ tune_astgcn:
   type: bool
   default: false
   help: whether to perform random search HPO on GWN model
+tune_clcrn:
+  type: bool
+  default: false
+  help: whether to perform random search HPO on GWN model
 num_configs:
   type: int
   default: 30
@@ -60,7 +64,7 @@ eval_ast_gcn:
   help: whether to report final ASTGCN metrics
 eval_clcrn:
   type: bool
-  default: false
+  default: true
   help: whether to report final CLCRN metrics
 ############################ General data configurations ############################
 increment: 
@@ -87,8 +91,8 @@ stations:
 
 horizons:
   type: int[]
-  default: [3,6,9,12,24]
-  # default: [3]
+  # default: [3,6,9,12,24]
+  default: [24]
   help: forecast horizons (Preferably use one horizon per run)
 
 n_stations:

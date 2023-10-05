@@ -8,10 +8,10 @@ from Models.CLCRN.clcnn import CLCRNModel
 from Utils.CLCRN_Utils.loss import masked_mae_loss, masked_mse_loss, masked_mape_loss, masked_smape_loss
 from tqdm import tqdm
 from pathlib import Path
-from Execute.modelExecute import modelExecute
+# from Execute.modelExecute import modelExecute
 from Logs import Evaluation
 import pickle
-from Logs.modelLogger import modelLogger
+# from Logs.modelLogger import modelLogger
 from HPO.modelHPO import modelHPO
 import pandas as pd
 import Utils.gwnUtils as util
@@ -23,15 +23,21 @@ class CLCRNHPO(modelHPO):
 
     def hpo(self):
         increment = self.sharedConfig['increment']['default']
-        data = self.prepare_data() 
-        textFile = 'HPO/Best Parameters/clcrn/configurations.txt'
+        # data = self.prepare_data() 
+        h = 3
+        path =  self.modelConfig['dataset_dir']['default'] + '/horizon_{}'.format(h)
+        position_path = self.modelConfig['dataset_dir']['default'] + '/horizon_{}/position_info.pkl'.format(h)
+        data = dataloader.load_dataset(path, increment[0] ,self.modelConfig['batch_size']['default'],position_path)
+        textFile = 'HPO/Best Parameters/CLCRN/configurations.txt'
         f = open(textFile, 'w')
+
+        self._model_name = self.modelConfig['model_name']['default']
 
         # best_mse = np.inf
 
         num_splits = 2
         for i in range(self.sharedConfig['num_configs']['default']):
-            config = util.generateRandomParameters(self.clcrnConfig)
+            config = util.generateRandomParameters(self.modelConfig)
             valid_config = True
             targets = []
             preds = []
@@ -39,18 +45,18 @@ class CLCRNHPO(modelHPO):
             for k in range(num_splits):
                 modelFile = 'Garage/HPO Models/CLCRN/{} Hour Models/{}_epo1.tar'
                 n_stations= int(self.sharedConfig['n_stations']['default'])
-                data_sets, split = self.split_data(data, increment, k, n_stations)
+                # data_sets, split = split_data(data, increment, k, n_stations)
                 # split = [increment[k] * n_stations, increment[k + 1] * n_stations, increment[k + 2] * n_stations]
                 # data_sets = [data[:split[0]], data[split[0]:split[1]], data[split[1]:split[2]]]
 
                 try:
                     print('This is the HPO configuration: \n',
-                          'Dropout - ', self.clcrnConfig['dropout']['default'], '\n',
-                          'Lag_length - ', self.clcrnConfig['lag_length']['default'], '\n',
-                          'Hidden Units - ', self.clcrnConfig['nhid']['default'], '\n',
-                          'Layers - ', self.clcrnConfig['num_layers']['default'], '\n',
-                          'Batch Size - ', self.clcrnConfig['batch_size']['default'], '\n',
-                          'Epochs - ', self.clcrnConfig['epochs']['default'])
+                          'Dropout - ', self.modelConfig['dropout']['default'], '\n',
+                          'Lag_length - ', self.modelConfig['lag_length']['default'], '\n',
+                          'Hidden Units - ', self.modelConfig['hidden_units']['default'], '\n',
+                          'Layers - ', self.modelConfig['layer_num']['default'], '\n',
+                          'Batch Size - ', self.modelConfig['batch_size']['default'], '\n',
+                          'Epochs - ', self.modelConfig['epochs']['default'])
 
                     self._train(h,self.modelConfig['base_lr']['default'], self.modelConfig['steps']['default'])
             
@@ -59,7 +65,7 @@ class CLCRNHPO(modelHPO):
                     break
                 
                 # clcrn_trainer = clcrnExecute(sharedConfig, clcrnConfig)
-                self.execute()
+                self.train_model()
                 self.get_time_prediction()
                 
 
@@ -87,7 +93,7 @@ class CLCRNHPO(modelHPO):
         self.model_logger.info('clcrnHPO : clcrn best configuration found = ' +str(best_cfg) + ' with an MSE of ' + str(best_mse))
         self.model_logger.info('clcrnHPO : clcrn HPO finished at all stations :)')
 
-    def execute(self):
+    def train_model(self):
         splitsLen = len(self.increments)
         horizon = self.horizon  # for the decoder
         for h in horizon :
@@ -120,7 +126,6 @@ class CLCRNHPO(modelHPO):
                     print('The method is not provided.')
                     exit()
                 self.model = model.to(self._device)
-                self.getMatrix('s')
 
                 self._logger.info("Model created for horizon : " + str(h) + " split " + str(self.increments[s]))
                 self._train(h,self.modelConfig['base_lr']['default'], self.modelConfig['steps']['default'])
@@ -156,7 +161,7 @@ class CLCRNHPO(modelHPO):
                 
                 optimizer.zero_grad()
 
-                x, y = self._prepare_data(x, y)
+                x, y = self.prepare_data(x, y)
                 output = self.model(x, y, batches_seen = batches_seen)
                 if batches_seen == 0:
                     # this is a workaround to accommodate dynamically registered parameters in DCGRUCell
@@ -222,43 +227,13 @@ class CLCRNHPO(modelHPO):
                     self._logger.warning('Early stopping at epoch: %d' % epoch_num)
                     break        
 
-def _get_time_prediction(self):
-        import copy
-        
-        h =  self.sharedConfig['horizons']['default']
-        h = h[0]
-        self._logger.info("Storing actuals vs predictions")
-        path =  self.modelConfig['dataset_dir']['default'] + '/horizon_{}'.format(h)
-        position_path = self.modelConfig['dataset_dir']['default'] + '/horizon_{}/position_info.pkl'.format(h)
-        # position_path = '/data/test/position_info.pkl'
-  
-        _data = dataloader.load_dataset(path, self.increments[0] ,self.modelConfig['batch_size']['default'],position_path)
-        test_loader = _data['test_loader']
-        y_preds = []
-        y_trues = []
-        
-        with torch.no_grad():
-            for _, (x, y) in enumerate(test_loader):
-                
-                x, y = self._prepare_data(x, y)
-               
-                output = self.model(x)
-                
-                y = y.permute(1, 0, 2, 3)
-                output = output.permute(1, 0, 2, 3)
-                y_preds.append(output)
-                
-                y_trues.append(y)
+    
+def prepare_data(self, x, y):
+        x, y = self._get_x_y(x, y)
+        return x.to(self._device), y.to(self._device)
 
-            y_preds = torch.cat(y_preds, 0).squeeze(dim=1).cpu().numpy()
-            y_trues = torch.cat(y_trues, 0).squeeze(dim=1).cpu().numpy()
+def split_data(self, data, increment, k, n_stations):
+        split = [increment[k] * n_stations, increment[k + 1] * n_stations, increment[k + 2] * n_stations]
+        data_sets = [data[:split[0]], data[split[0]:split[1]], data[split[1]:split[2]]]
+        return data_sets, split
 
-            import pickle
-            with open('{}/actuals.pkl'.format(self._log_dir), "wb") as f:
-                smapeData = {'y_trues': y_trues}
-                pickle.dump(smapeData, f, protocol = 4)
-
-            with open('{}/predictions.pkl'.format(self._log_dir), "wb") as f:
-                smapeData = {'y_preds': y_preds}
-                pickle.dump(smapeData, f, protocol = 4)
-        print("Storing actuals vs predicted complete")

@@ -1,203 +1,199 @@
-###################### CLCRN model args, default arguments are optimal hyper-parameters ######################
+############################################# Model Configuration ###############################################
 device:
   type: int
   default: 0
-  help: device to place model on gpu used 1 or not 0 
-model_name : 
+  help: Device to place model on (1 for GPU, 0 for CPU)
+model_name:
   type: str
   default: 'CLCRN'
-  help: name of model being used #wont need in future
-data:
-  type: str
-  default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv'
-  # default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv' #DataNew
-  help: data path
-dataset_dir:
-  type: str
-  default: 'DataNew/CLCRN Train Data'
-  # default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv' #DataNew
-  help: data path
-position_file:
-  type: str
-  default: 'data/test/position_info.pkl'
-  help: directory to position_info of weather stations 
-test_batch_size:
-  type: int
-  default: 128
-  help: length of output sequence
-cl_decay_steps:
-  type: int
-  default: 2
-  help: number of decay steps
-horizon:
-  type: int[]
-  default: [24]
-  help: prediction horizon
-steps:
-  type: int[]
-  default: [6]
-  help: prediction horizon
-input_dim:
-  type: int
-  default: 6
-  help: number of input dimensions in input data
-output_dim:
+  help: Name of the model being used
+max_view:
   type: int
   default: 1
-  help: number of output dimensions in input data
-l1_decay:
-  type: int
-  default: 0
-  help: first layer decay
-max_view: 
-  type: int
-  default: 1
-  help: max view of model
+  help: Maximum view of the model
 num_nodes:
   type: int
   default: 45
-  help: number of weather stations
-layer_num:  
+  help: Number of weather stations
+layer_num:
   type: int
   default: 1
-  help: number of layers on model
+  help: Number of layers in the model
 rnn_units:
   type: int
   default: 32
-  help: number of rnn units
-seq_len: 
-  type: int
-  default: 12
-  help: sequence length
-lag_length:
-  type: int
-  default: 12
-  help: length of input sequence
-use_curriculum_learning:
-  type: boolean
-  default: true
-  help: flag to use curriculum  learning or not
+  help: Number of RNN units
 embed_dim:
   type: int
   default: 6
-  help: number of embedded dimensions
-lck_structure: 
+  help: Number of embedded dimensions
+lck_structure:
   type: int[]
   default: [10, 8, 6]
-  help: lock structure of model
-location_dim: 
+  help: Lock structure of the model
+location_dim:
   type: int
   default: 2
-  help: dimensions at location
-block_num: 
+  help: Dimensions at location
+block_num:
   type: int
   default: 2
-  help: dimensions at location
-hidden_units: 
+  help: Dimensions at location
+hidden_units:
   type: int
   default: 16
-  help: dimensions at location
-batch_size:
-  type: int
-  default: 32
-  help: batch size
-patience:
-  type: int
-  default: 50
-  help: patience
-base_lr:
-  type: float
-  default: 0.005
-  help: learning rate
-dropout:
-  type: float
-  default: 0
-  help: dropout rate
-use_loss_function:
-  type: boolean
-  default: false
-  help: should it model used independent loss metric or shared
-loss_metric:
+  help: Dimensions at location
+
+################################################# Data Configuration ###############################################
+data:
   type: str
-  default: 'MSE'  #Only accepts MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
-  help: independent loss metric to optimize
-epoch:
-  type: int
-  default: 0
-  help: epoch 
-epsilon:
-  type: float
-  default: 0.001
-  help: epsilon value
-log_dir: 
+  default: 'DataNew/Graph Neural Network Data/Graph Station Data/graph.csv'
+  help: Data path
+dataset_dir:
   type: str
-  default: 'Logs/CLCRN'
-  help: Log file directory
-results_dir: 
+  default: 'DataNew/CLCRN Train Data'
+  help: Data path
+position_file:
   type: str
-  default: 'Results/CLCRN'
-lr_decay_ratio: 
-  type: float
-  default: 0.05
-  help: ''
-max_grad_norm: 
-  type: int
-  default: 5
-  help: ''
-max_to_keep: 
-  type: int
-  default: 100
-  help : ''
-min_learning_rate: 
-  type: float
-  default: 1.0e-08
-  help: ''
-epochs:
-  type: int
-  default: 1
-  help: ''
-# save:
-#   type: str
-#   default: 'Garage/Final Models/GWN/'
-#   help: save path
-test_every_n_epochs: 
-  type: int
-  default: 1
-  help: ''
-use_optimizer:
-  type: boolean
-  default: false
-  help: should model used independent optimizer or shared
-optimizer:
-  type: str
-  default: adam     #Only accepts Adam, SGD, RMSprop.
-  help: type of optimizers used for model (to add another method look at User Guide), default type set to Adam
-experiment_name:
-  type: str
-  default: ''
-  help: ''
-model_state_dict:
-  type: str
-  default: None
-  help: ''
-shuffle:
-  type: boolean
-  default: False
-  help: ''
+  default: 'data/test/position_info.pkl'
+  help: Directory to position_info of weather stations
 increments:
   type: int[]
-  # default: [79750, 96839, 113929]
-  # default: [52560, 61320, 70080]
-  # default: [8760, 10920, 13106]
-  default: [50,100,150]     
-  help: "splits for walk forward validation"
+  default: [50, 100, 150]
+  help: Splits for walk forward validation
 load_dataset:
   type: boolean
   default: True
-  help: 'Should dataset be divided or not'
+  help: Should the dataset be divided or not
+
+################################################# Training Configuration ###########################################
+
+test_batch_size:
+  type: int
+  default: 128
+  help: Length of output sequence
+cl_decay_steps:
+  type: int
+  default: 2
+  help: Number of decay steps
+# horizon:
+#   type: int[]
+#   default: [24]
+#   help: Prediction horizon
+steps:
+  type: int[]
+  default: [6]
+  help: Prediction horizon
+input_dim:
+  type: int
+  default: 6
+  help: Number of input dimensions in input data
+output_dim:
+  type: int
+  default: 1
+  help: Number of output dimensions in input data
+l1_decay:
+  type: int
+  default: 0
+  help: First layer decay
+seq_len:
+  type: int
+  default: 12
+  help: Sequence length
+lag_length:
+  type: int
+  default: 12
+  help: Length of input sequence
+use_curriculum_learning:
+  type: boolean
+  default: true
+  help: Flag to use curriculum learning or not
+batch_size:
+  type: int
+  default: 32
+  help: Batch size
+patience:
+  type: int
+  default: 50
+  help: Patience
+base_lr:
+  type: float
+  default: 0.005
+  help: Learning rate
+dropout:
+  type: float
+  default: 0
+  help: Dropout rate
+use_loss_function:
+  type: boolean
+  default: false
+  help: Should the model use an independent loss metric or shared
+loss_metric:
+  type: str
+  default: 'MSE'
+  help: Independent loss metric to optimize
+epoch:
+  type: int
+  default: 0
+  help: Epoch
+epsilon:
+  type: float
+  default: 0.001
+  help: Epsilon value
+log_dir:
+  type: str
+  default: 'Logs/CLCRN'
+  help: Log file directory
+results_dir:
+  type: str
+  default: 'Results/CLCRN'
+  help: Results directory
+lr_decay_ratio:
+  type: float
+  default: 0.05
+  help: Learning rate decay ratio
+max_grad_norm:
+  type: int
+  default: 5
+  help: Maximum gradient norm
+max_to_keep:
+  type: int
+  default: 100
+  help: Maximum models to keep
+min_learning_rate:
+  type: float
+  default: 1.0e-08
+  help: Minimum learning rate
+epochs:
+  type: int
+  default: 30
+  help: Number of training epochs
+test_every_n_epochs:
+  type: int
+  default: 1
+  help: Test the model every n epochs
+use_optimizer:
+  type: boolean
+  default: false
+  help: Should the model use an independent optimizer or shared
+optimizer:
+  type: str
+  default: adam
+  help: Type of optimizer used for the model
+experiment_name:
+  type: str
+  default: ''
+  help: Experiment name
+model_state_dict:
+  type: str
+  default: None
+  help: Model state dictionary file
+shuffle:
+  type: boolean
+  default: False
+  help: Shuffle the dataset
 save_dir:
   type: str
   default: 'Garage/Final Models/CLCRN'
-  help: 'Should dataset be divided or not'
-
+  help: Directory to save the model
 
