@@ -1,0 +1,57 @@
+####################### Baseline TCN args, default arguments are optimal hyper-parameters ########################
+epochs: 
+  type: int
+  default: 2
+  help: epochs to run for training
+batch_size:
+  type: int
+  default: 64
+  help: batch size
+lr:
+  type: float
+  default: 0.01
+  help: learning rate
+patience:
+  type: int
+  default: 5
+  help: patience value for early stopping
+use_loss_function:
+  type: boolean
+  default: false
+  help: should model use independent loss metric or shared
+loss_metric:
+  type: str
+  default: 'MSE'  #Only accepts MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
+  help: independent loss metric to optimize
+kernels:
+  type: int
+  default: 2
+  help: number of kernels
+dilations:
+  type: list
+  default: [1, 2, 4, 8, 16, 32, 64]
+  help: list of dilation values
+batch_norm:
+  type: bool
+  default: false
+  help: whether to use batch normalization
+weight_norm:
+  type: bool
+  default: false
+  help: whether to use weight normalization
+layer_norm:
+  type: bool
+  default: true
+  help: whether to use layer normalization
+padding:
+  type: str
+  default: 'causal'
+  help: type of padding to use
+use_optimizer:
+  type: boolean
+  default: false
+  help: should model used independent optimizer or shared
+optimizer:
+  type: string
+  default: 'Adam'     #Only accepts Adam, SGD, RMSprop.
+  help: type of optimizers used for model (to add another method look at User Guide), default type set to Adam

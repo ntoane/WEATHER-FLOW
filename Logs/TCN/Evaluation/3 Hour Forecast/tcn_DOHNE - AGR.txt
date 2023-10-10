@@ -1,0 +1,316 @@
+2023-08-13 00:19:39,942 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 3
+2023-08-13 00:19:40,169 - DOHNE - AGR - INFO - actual vs prediced is :       Actual  Predicted
+0    0.604651  -4.309639
+1    0.539535   2.331217
+2    0.404651   0.002423
+3    0.330233  -4.863772
+4    0.386047   2.614470
+..        ...        ...
+142  0.204651   2.594570
+143  0.218605   1.067089
+144  0.186047  -4.777468
+145  0.190698   2.604377
+146  0.190698   1.041578
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,169 - DOHNE - AGR - INFO - saved to file :Results/TCN/3 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,171 - DOHNE - AGR - ERROR - Error! : Unable to read data or write metrics for station DOHNE - AGR and horizon length 3.
+2023-08-13 00:23:06,438 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 3
+2023-08-13 00:23:06,548 - DOHNE - AGR - INFO - actual vs prediced is :       Actual  Predicted
+0    0.604651  -4.309639
+1    0.539535   2.331217
+2    0.404651   0.002423
+3    0.330233  -4.863772
+4    0.386047   2.614470
+..        ...        ...
+142  0.204651   2.594570
+143  0.218605   1.067089
+144  0.186047  -4.777468
+145  0.190698   2.604377
+146  0.190698   1.041578
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,548 - DOHNE - AGR - INFO - saved to file :Results/TCN/3 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,550 - DOHNE - AGR - INFO - This is the mse: 10.47818895121882
+
+2023-08-13 00:23:06,550 - DOHNE - AGR - INFO - This is the rmse: 3.237003081743794
+
+2023-08-13 00:23:06,550 - DOHNE - AGR - INFO - This is the mae: 2.652024108035596
+
+2023-08-13 00:23:06,550 - DOHNE - AGR - INFO - This is the smape: 160.1833754733656
+
+2023-08-13 00:23:06,550 - DOHNE - AGR - INFO - This is the smape_std_dev: 46.33673920348105
+
+2023-08-13 00:23:06,551 - DOHNE - AGR - INFO - TCN evaluation of DOHNE - AGR for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:26,830 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 3
+2023-08-13 00:34:27,011 - DOHNE - AGR - INFO - actual vs prediced is :       Actual  Predicted
+0    0.604651  -4.309639
+1    0.539535   2.331217
+2    0.404651   0.002423
+3    0.330233  -4.863772
+4    0.386047   2.614470
+..        ...        ...
+142  0.204651   2.594570
+143  0.218605   1.067089
+144  0.186047  -4.777468
+145  0.190698   2.604377
+146  0.190698   1.041578
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,011 - DOHNE - AGR - INFO - saved to file :Results/TCN/3 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,013 - DOHNE - AGR - INFO - This is the mse: 10.47818895121882
+
+2023-08-13 00:34:27,013 - DOHNE - AGR - INFO - This is the rmse: 3.237003081743794
+
+2023-08-13 00:34:27,013 - DOHNE - AGR - INFO - This is the mae: 2.652024108035596
+
+2023-08-13 00:34:27,013 - DOHNE - AGR - INFO - This is the smape: 160.1833754733656
+
+2023-08-13 00:34:27,013 - DOHNE - AGR - INFO - This is the smape_std_dev: 46.33673920348105
+
+2023-08-13 00:34:27,013 - DOHNE - AGR - INFO - TCN evaluation of DOHNE - AGR for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:40:59,694 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 3
+2023-08-13 00:40:59,822 - DOHNE - AGR - INFO - actual vs prediced is :       Actual  Predicted
+0    0.604651  -4.309639
+1    0.539535   2.331217
+2    0.404651   0.002423
+3    0.330233  -4.863772
+4    0.386047   2.614470
+..        ...        ...
+142  0.204651   2.594570
+143  0.218605   1.067089
+144  0.186047  -4.777468
+145  0.190698   2.604377
+146  0.190698   1.041578
+
+[147 rows x 2 columns]
+2023-08-13 00:40:59,822 - DOHNE - AGR - INFO - saved to file :Results/TCN/3 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-08-13 00:40:59,823 - DOHNE - AGR - INFO - This is the mse: 10.47818895121882
+
+2023-08-13 00:40:59,823 - DOHNE - AGR - INFO - This is the rmse: 3.237003081743794
+
+2023-08-13 00:40:59,823 - DOHNE - AGR - INFO - This is the mae: 2.652024108035596
+
+2023-08-13 00:40:59,823 - DOHNE - AGR - INFO - This is the smape: 160.1833754733656
+
+2023-08-13 00:40:59,823 - DOHNE - AGR - INFO - This is the smape_std_dev: 46.33673920348105
+
+2023-08-13 00:40:59,825 - DOHNE - AGR - INFO - TCN evaluation of DOHNE - AGR for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,871 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 3 for split 0
+2023-08-13 13:10:41,887 - DOHNE - AGR - INFO - actual vs prediced is :       Actual  Predicted
+0    0.604651  -3.222608
+1    0.539535   1.716409
+2    0.404651  -3.521460
+3    0.330233  -2.483700
+4    0.386047   1.362630
+..        ...        ...
+142  0.204651   1.589040
+143  0.218605  -3.094571
+144  0.186047  -2.913785
+145  0.190698   1.748696
+146  0.190698  -2.974013
+
+[147 rows x 2 columns]
+2023-08-13 13:10:41,888 - DOHNE - AGR - INFO - saved to file :Results/TCN/3 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:41,889 - DOHNE - AGR - INFO - This is the mse: 7.564827971105162
+
+2023-08-13 13:10:41,890 - DOHNE - AGR - INFO - This is the rmse: 2.7504232349049778
+
+2023-08-13 13:10:41,890 - DOHNE - AGR - INFO - This is the mae: 2.546790249254865
+
+2023-08-13 13:10:41,890 - DOHNE - AGR - INFO - This is the smape: 180.41748953741228
+
+2023-08-13 13:10:41,890 - DOHNE - AGR - INFO - This is the smape_std_dev: 31.398288267656675
+
+2023-08-13 13:10:41,890 - DOHNE - AGR - INFO - TCN evaluation of DOHNE - AGR for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,890 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 3 for split 1
+2023-08-13 13:10:41,890 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 3 for split 1
+2023-08-13 13:10:41,908 - DOHNE - AGR - INFO - actual vs prediced is :       Actual  Predicted
+0    0.231373  -1.054764
+1    0.196078   1.124489
+2    0.152941   0.272834
+3    0.109804  -1.287915
+4    0.105882   1.030559
+..        ...        ...
+142  0.513725   1.201455
+143  0.552941   0.458937
+144  0.247059  -0.896822
+145  0.337255   0.807352
+146  0.403922   0.474451
+
+[147 rows x 2 columns]
+2023-08-13 13:10:41,908 - DOHNE - AGR - INFO - actual vs prediced is :       Actual  Predicted
+0    0.231373  -1.054764
+1    0.196078   1.124489
+2    0.152941   0.272834
+3    0.109804  -1.287915
+4    0.105882   1.030559
+..        ...        ...
+142  0.513725   1.201455
+143  0.552941   0.458937
+144  0.247059  -0.896822
+145  0.337255   0.807352
+146  0.403922   0.474451
+
+[147 rows x 2 columns]
+2023-08-13 13:10:41,908 - DOHNE - AGR - INFO - saved to file :Results/TCN/3 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:41,908 - DOHNE - AGR - INFO - saved to file :Results/TCN/3 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - This is the mse: 1.0430765767763965
+
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - This is the mse: 1.0430765767763965
+
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - This is the rmse: 1.0213112046660393
+
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - This is the rmse: 1.0213112046660393
+
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - This is the mae: 0.8479158731272509
+
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - This is the mae: 0.8479158731272509
+
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - This is the smape: 152.51618717706415
+
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - This is the smape: 152.51618717706415
+
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - This is the smape_std_dev: 57.99670920932551
+
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - This is the smape_std_dev: 57.99670920932551
+
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - TCN evaluation of DOHNE - AGR for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,911 - DOHNE - AGR - INFO - TCN evaluation of DOHNE - AGR for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:41,912 - DOHNE - AGR - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:41,912 - DOHNE - AGR - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-09-04 11:30:43,724 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 3 for split 0
+2023-09-04 11:30:43,754 - DOHNE - AGR - INFO - actual vs prediced is :         Actual  Predicted
+0      0.420705   0.401723
+1      0.409692   0.393397
+2      0.429515   0.378963
+3      0.319383   0.311425
+4      0.312775   0.318561
+...         ...        ...
+26122  0.400881   0.399591
+26123  0.385463   0.395436
+26124  0.422907   0.433121
+26125  0.409692   0.411808
+26126  0.400881   0.385011
+
+[26127 rows x 2 columns]
+2023-09-04 11:30:43,755 - DOHNE - AGR - INFO - saved to file :Results/TCN/3 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:43,755 - DOHNE - AGR - INFO - This is the mse: 0.0013511072076846631
+
+2023-09-04 11:30:43,755 - DOHNE - AGR - INFO - This is the rmse: 0.036757410241809244
+
+2023-09-04 11:30:43,755 - DOHNE - AGR - INFO - This is the mae: 0.02583297069922772
+
+2023-09-04 11:30:43,756 - DOHNE - AGR - INFO - This is the smape: 6.256201745288287
+
+2023-09-04 11:30:43,756 - DOHNE - AGR - INFO - This is the smape_std_dev: 6.362178458931298
+
+2023-09-04 11:30:43,756 - DOHNE - AGR - INFO - TCN evaluation of DOHNE - AGR for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:45,188 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 6 for split 0
+2023-09-04 11:30:45,223 - DOHNE - AGR - INFO - actual vs prediced is :         Actual  Predicted
+0      0.420705   0.401235
+1      0.409692   0.395951
+2      0.429515   0.390737
+3      0.440529   0.381345
+4      0.444934   0.378775
+...         ...        ...
+52231  0.409692   0.414727
+52232  0.400881   0.402619
+52233  0.389868   0.391042
+52234  0.381057   0.386198
+52235  0.378855   0.384667
+
+[52236 rows x 2 columns]
+2023-09-04 11:30:45,223 - DOHNE - AGR - INFO - saved to file :Results/TCN/6 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:45,223 - DOHNE - AGR - INFO - This is the mse: 0.0019127895171005406
+
+2023-09-04 11:30:45,223 - DOHNE - AGR - INFO - This is the rmse: 0.0437354492042844
+
+2023-09-04 11:30:45,224 - DOHNE - AGR - INFO - This is the mae: 0.03076100293977132
+
+2023-09-04 11:30:45,224 - DOHNE - AGR - INFO - This is the smape: 7.325915486891642
+
+2023-09-04 11:30:45,224 - DOHNE - AGR - INFO - This is the smape_std_dev: 7.265553506042984
+
+2023-09-04 11:30:45,224 - DOHNE - AGR - INFO - TCN evaluation of DOHNE - AGR for the horizon of 6 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:47,037 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 9 for split 0
+2023-09-04 11:30:47,087 - DOHNE - AGR - INFO - actual vs prediced is :         Actual  Predicted
+0      0.645374   0.584496
+1      0.691630   0.619521
+2      0.687225   0.652493
+3      0.735683   0.674540
+4      0.777533   0.682946
+...         ...        ...
+78322  0.381057   0.398573
+78323  0.378855   0.387631
+78324  0.372247   0.382581
+78325  0.365639   0.382820
+78326  0.359031   0.388128
+
+[78327 rows x 2 columns]
+2023-09-04 11:30:47,087 - DOHNE - AGR - INFO - saved to file :Results/TCN/9 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:47,087 - DOHNE - AGR - INFO - This is the mse: 0.002409492561012447
+
+2023-09-04 11:30:47,088 - DOHNE - AGR - INFO - This is the rmse: 0.04908658229101357
+
+2023-09-04 11:30:47,088 - DOHNE - AGR - INFO - This is the mae: 0.03538982876656989
+
+2023-09-04 11:30:47,088 - DOHNE - AGR - INFO - This is the smape: 8.393399074586986
+
+2023-09-04 11:30:47,088 - DOHNE - AGR - INFO - This is the smape_std_dev: 7.839415143177473
+
+2023-09-04 11:30:47,089 - DOHNE - AGR - INFO - TCN evaluation of DOHNE - AGR for the horizon of 9 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:49,521 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 12 for split 0
+2023-09-04 11:30:49,591 - DOHNE - AGR - INFO - actual vs prediced is :          Actual  Predicted
+0       0.645374   0.581284
+1       0.691630   0.622805
+2       0.687225   0.655247
+3       0.735683   0.689187
+4       0.777533   0.698252
+...          ...        ...
+104395  0.365639   0.367504
+104396  0.359031   0.366301
+104397  0.350220   0.367708
+104398  0.343612   0.374228
+104399  0.343612   0.388225
+
+[104400 rows x 2 columns]
+2023-09-04 11:30:49,592 - DOHNE - AGR - INFO - saved to file :Results/TCN/12 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:49,592 - DOHNE - AGR - INFO - This is the mse: 0.002896729076783592
+
+2023-09-04 11:30:49,592 - DOHNE - AGR - INFO - This is the rmse: 0.05382126974332352
+
+2023-09-04 11:30:49,592 - DOHNE - AGR - INFO - This is the mae: 0.03916602596043725
+
+2023-09-04 11:30:49,592 - DOHNE - AGR - INFO - This is the smape: 9.282802940900707
+
+2023-09-04 11:30:49,592 - DOHNE - AGR - INFO - This is the smape_std_dev: 8.468599320904517
+
+2023-09-04 11:30:49,592 - DOHNE - AGR - INFO - TCN evaluation of DOHNE - AGR for the horizon of 12 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:53,087 - DOHNE - AGR - INFO - TCN evaluation started atDOHNE - AGR for the horizon of 24 for split 0
+2023-09-04 11:30:53,218 - DOHNE - AGR - INFO - actual vs prediced is :          Actual  Predicted
+0       0.374449   0.345125
+1       0.337004   0.342643
+2       0.310573   0.347868
+3       0.299559   0.348701
+4       0.301762   0.343999
+...          ...        ...
+208507  0.480176   0.532843
+208508  0.484581   0.521469
+208509  0.427313   0.503093
+208510  0.387665   0.485172
+208511  0.359031   0.468312
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:53,219 - DOHNE - AGR - INFO - saved to file :Results/TCN/24 Hour Forecast/DOHNE - AGR/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:53,219 - DOHNE - AGR - INFO - This is the mse: 0.004207148742518351
+
+2023-09-04 11:30:53,219 - DOHNE - AGR - INFO - This is the rmse: 0.06486253728091702
+
+2023-09-04 11:30:53,220 - DOHNE - AGR - INFO - This is the mae: 0.04842287200285139
+
+2023-09-04 11:30:53,220 - DOHNE - AGR - INFO - This is the smape: 11.547250155229907
+
+2023-09-04 11:30:53,220 - DOHNE - AGR - INFO - This is the smape_std_dev: 10.234687937983258
+
+2023-09-04 11:30:53,220 - DOHNE - AGR - INFO - TCN evaluation of DOHNE - AGR for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

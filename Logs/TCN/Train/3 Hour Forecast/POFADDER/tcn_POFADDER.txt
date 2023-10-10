@@ -1,0 +1,9 @@
+2023-08-13 00:15:28,509 - POFADDER - INFO - TCN model training started at POFADDER
+2023-08-13 00:15:28,670 - POFADDER - INFO - TCN Model on split 1/1 at POFADDER station forecasting 3 hours ahead.
+2023-08-13 00:15:34,591 - POFADDER - INFO - Loss: [28.4139461517334, 94.73954010009766]
+2023-08-13 00:15:34,591 - POFADDER - INFO - Val Loss: [112.7547836303711, 25.437091827392578]
+2023-08-13 00:15:36,065 - POFADDER - INFO - TCN training done on split 1/1 at POFADDER station forecasting 3 hours ahead.
+2023-08-13 00:15:36,066 - POFADDER - INFO - TCN training finished at POFADDER
+2023-08-13 13:01:10,578 - POFADDER - INFO - TCN model training started at POFADDER
+2023-08-13 13:01:10,753 - POFADDER - INFO - TCN Model on split 1/2 at POFADDER station forecasting 3 hours ahead.
+2023-08-13 13:01:18,211 - POFADDER - INFO - TCN Model on split 2/2 at POFADDER station forecasting 3 hours ahead.

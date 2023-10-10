@@ -1,0 +1,9 @@
+2023-08-13 00:15:20,756 - PATENSIE - INFO - TCN model training started at PATENSIE
+2023-08-13 00:15:21,027 - PATENSIE - INFO - TCN Model on split 1/1 at PATENSIE station forecasting 3 hours ahead.
+2023-08-13 00:15:26,563 - PATENSIE - INFO - Loss: [14.027605056762695, 106.12484741210938]
+2023-08-13 00:15:26,563 - PATENSIE - INFO - Val Loss: [139.5680389404297, 24.80202865600586]
+2023-08-13 00:15:28,503 - PATENSIE - INFO - TCN training done on split 1/1 at PATENSIE station forecasting 3 hours ahead.
+2023-08-13 00:15:28,504 - PATENSIE - INFO - TCN training finished at PATENSIE
+2023-08-13 13:00:53,891 - PATENSIE - INFO - TCN model training started at PATENSIE
+2023-08-13 13:00:54,074 - PATENSIE - INFO - TCN Model on split 1/2 at PATENSIE station forecasting 3 hours ahead.
+2023-08-13 13:01:01,960 - PATENSIE - INFO - TCN Model on split 2/2 at PATENSIE station forecasting 3 hours ahead.

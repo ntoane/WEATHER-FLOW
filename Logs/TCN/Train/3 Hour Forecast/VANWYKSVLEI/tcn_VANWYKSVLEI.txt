@@ -1,0 +1,9 @@
+2023-08-13 00:18:08,427 - VANWYKSVLEI - INFO - TCN model training started at VANWYKSVLEI
+2023-08-13 00:18:08,592 - VANWYKSVLEI - INFO - TCN Model on split 1/1 at VANWYKSVLEI station forecasting 3 hours ahead.
+2023-08-13 00:18:15,943 - VANWYKSVLEI - INFO - Loss: [7.650578498840332, 434.56146240234375]
+2023-08-13 00:18:15,943 - VANWYKSVLEI - INFO - Val Loss: [472.879638671875, 58.20138168334961]
+2023-08-13 00:18:17,416 - VANWYKSVLEI - INFO - TCN training done on split 1/1 at VANWYKSVLEI station forecasting 3 hours ahead.
+2023-08-13 00:18:17,416 - VANWYKSVLEI - INFO - TCN training finished at VANWYKSVLEI
+2023-08-13 13:05:18,892 - VANWYKSVLEI - INFO - TCN model training started at VANWYKSVLEI
+2023-08-13 13:05:19,062 - VANWYKSVLEI - INFO - TCN Model on split 1/2 at VANWYKSVLEI station forecasting 3 hours ahead.
+2023-08-13 13:05:26,820 - VANWYKSVLEI - INFO - TCN Model on split 2/2 at VANWYKSVLEI station forecasting 3 hours ahead.

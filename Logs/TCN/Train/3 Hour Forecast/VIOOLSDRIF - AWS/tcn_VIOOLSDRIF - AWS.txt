@@ -1,0 +1,9 @@
+2023-08-13 00:18:17,421 - VIOOLSDRIF - AWS - INFO - TCN model training started at VIOOLSDRIF - AWS
+2023-08-13 00:18:17,588 - VIOOLSDRIF - AWS - INFO - TCN Model on split 1/1 at VIOOLSDRIF - AWS station forecasting 3 hours ahead.
+2023-08-13 00:18:23,647 - VIOOLSDRIF - AWS - INFO - Loss: [27.97195816040039, 51.013668060302734]
+2023-08-13 00:18:23,647 - VIOOLSDRIF - AWS - INFO - Val Loss: [69.98633575439453, 21.837778091430664]
+2023-08-13 00:18:25,050 - VIOOLSDRIF - AWS - INFO - TCN training done on split 1/1 at VIOOLSDRIF - AWS station forecasting 3 hours ahead.
+2023-08-13 00:18:25,051 - VIOOLSDRIF - AWS - INFO - TCN training finished at VIOOLSDRIF - AWS
+2023-08-13 13:05:35,427 - VIOOLSDRIF - AWS - INFO - TCN model training started at VIOOLSDRIF - AWS
+2023-08-13 13:05:35,605 - VIOOLSDRIF - AWS - INFO - TCN Model on split 1/2 at VIOOLSDRIF - AWS station forecasting 3 hours ahead.
+2023-08-13 13:05:43,064 - VIOOLSDRIF - AWS - INFO - TCN Model on split 2/2 at VIOOLSDRIF - AWS station forecasting 3 hours ahead.

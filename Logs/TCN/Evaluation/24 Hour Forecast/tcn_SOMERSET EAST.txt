@@ -1,0 +1,29 @@
+2023-08-05 13:45:57,491 - SOMERSET EAST - INFO - TCN evaluation started atSOMERSET EAST for the horizon of 24
+2023-08-05 13:45:57,492 - SOMERSET EAST - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 24.
+2023-09-04 11:30:56,849 - SOMERSET EAST - INFO - TCN evaluation started atSOMERSET EAST for the horizon of 24 for split 0
+2023-09-04 11:30:57,011 - SOMERSET EAST - INFO - actual vs prediced is :          Actual  Predicted
+0       0.387295   0.380418
+1       0.381148   0.369256
+2       0.393443   0.362642
+3       0.399590   0.353954
+4       0.399590   0.343029
+...          ...        ...
+208507  0.590164   0.627323
+208508  0.590164   0.615265
+208509  0.557377   0.586241
+208510  0.497951   0.544858
+208511  0.481557   0.509220
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:57,012 - SOMERSET EAST - INFO - saved to file :Results/TCN/24 Hour Forecast/SOMERSET EAST/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:57,012 - SOMERSET EAST - INFO - This is the mse: 0.0038233217993060477
+
+2023-09-04 11:30:57,013 - SOMERSET EAST - INFO - This is the rmse: 0.061833015447300056
+
+2023-09-04 11:30:57,013 - SOMERSET EAST - INFO - This is the mae: 0.046289889634598076
+
+2023-09-04 11:30:57,013 - SOMERSET EAST - INFO - This is the smape: 10.71518667555316
+
+2023-09-04 11:30:57,013 - SOMERSET EAST - INFO - This is the smape_std_dev: 10.911874877185884
+
+2023-09-04 11:30:57,013 - SOMERSET EAST - INFO - TCN evaluation of SOMERSET EAST for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

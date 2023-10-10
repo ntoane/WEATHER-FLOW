@@ -1,0 +1,316 @@
+2023-08-13 00:19:40,531 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 00:19:40,552 - PATENSIE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.654008   6.904838
+1    0.759494   6.294054
+2    0.751055   0.259873
+3    0.333333   6.335431
+4    0.396624   6.707722
+..        ...        ...
+142  0.405063   6.224206
+143  0.464135  -1.158697
+144  0.278481   6.432519
+145  0.295359   6.549451
+146  0.303797  -1.096618
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,552 - PATENSIE - INFO - saved to file :Results/TCN/3 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,554 - PATENSIE - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 3.
+2023-08-13 00:23:07,004 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 00:23:07,019 - PATENSIE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.654008   6.904838
+1    0.759494   6.294054
+2    0.751055   0.259873
+3    0.333333   6.335431
+4    0.396624   6.707722
+..        ...        ...
+142  0.405063   6.224206
+143  0.464135  -1.158697
+144  0.278481   6.432519
+145  0.295359   6.549451
+146  0.303797  -1.096618
+
+[147 rows x 2 columns]
+2023-08-13 00:23:07,019 - PATENSIE - INFO - saved to file :Results/TCN/3 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:07,021 - PATENSIE - INFO - This is the mse: 24.345707212620713
+
+2023-08-13 00:23:07,021 - PATENSIE - INFO - This is the rmse: 4.934136926821216
+
+2023-08-13 00:23:07,021 - PATENSIE - INFO - This is the mae: 4.3432029291254635
+
+2023-08-13 00:23:07,021 - PATENSIE - INFO - This is the smape: 177.1528794780753
+
+2023-08-13 00:23:07,021 - PATENSIE - INFO - This is the smape_std_dev: 28.028435675007188
+
+2023-08-13 00:23:07,021 - PATENSIE - INFO - TCN evaluation of PATENSIE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,392 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 00:34:27,407 - PATENSIE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.654008   6.904838
+1    0.759494   6.294054
+2    0.751055   0.259873
+3    0.333333   6.335431
+4    0.396624   6.707722
+..        ...        ...
+142  0.405063   6.224206
+143  0.464135  -1.158697
+144  0.278481   6.432519
+145  0.295359   6.549451
+146  0.303797  -1.096618
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,407 - PATENSIE - INFO - saved to file :Results/TCN/3 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,409 - PATENSIE - INFO - This is the mse: 24.345707212620713
+
+2023-08-13 00:34:27,409 - PATENSIE - INFO - This is the rmse: 4.934136926821216
+
+2023-08-13 00:34:27,409 - PATENSIE - INFO - This is the mae: 4.3432029291254635
+
+2023-08-13 00:34:27,409 - PATENSIE - INFO - This is the smape: 177.1528794780753
+
+2023-08-13 00:34:27,409 - PATENSIE - INFO - This is the smape_std_dev: 28.028435675007188
+
+2023-08-13 00:34:27,409 - PATENSIE - INFO - TCN evaluation of PATENSIE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,439 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 00:41:00,465 - PATENSIE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.654008   6.904838
+1    0.759494   6.294054
+2    0.751055   0.259873
+3    0.333333   6.335431
+4    0.396624   6.707722
+..        ...        ...
+142  0.405063   6.224206
+143  0.464135  -1.158697
+144  0.278481   6.432519
+145  0.295359   6.549451
+146  0.303797  -1.096618
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,465 - PATENSIE - INFO - saved to file :Results/TCN/3 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,467 - PATENSIE - INFO - This is the mse: 24.345707212620713
+
+2023-08-13 00:41:00,467 - PATENSIE - INFO - This is the rmse: 4.934136926821216
+
+2023-08-13 00:41:00,467 - PATENSIE - INFO - This is the mae: 4.3432029291254635
+
+2023-08-13 00:41:00,467 - PATENSIE - INFO - This is the smape: 177.1528794780753
+
+2023-08-13 00:41:00,467 - PATENSIE - INFO - This is the smape_std_dev: 28.028435675007188
+
+2023-08-13 00:41:00,468 - PATENSIE - INFO - TCN evaluation of PATENSIE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,845 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 3 for split 0
+2023-08-13 13:10:42,859 - PATENSIE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.654008  -8.062425
+1    0.759494   0.243339
+2    0.751055   0.444901
+3    0.333333  -8.343428
+4    0.396624  -0.656997
+..        ...        ...
+142  0.405063  -0.626667
+143  0.464135   0.937111
+144  0.278481  -8.489231
+145  0.295359  -0.607539
+146  0.303797   0.695692
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,859 - PATENSIE - INFO - saved to file :Results/TCN/3 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,860 - PATENSIE - INFO - This is the mse: 25.626161966603405
+
+2023-08-13 13:10:42,860 - PATENSIE - INFO - This is the rmse: 5.062228952408554
+
+2023-08-13 13:10:42,860 - PATENSIE - INFO - This is the mae: 3.296852749191767
+
+2023-08-13 13:10:42,860 - PATENSIE - INFO - This is the smape: 154.8375024573025
+
+2023-08-13 13:10:42,860 - PATENSIE - INFO - This is the smape_std_dev: 63.21517562858928
+
+2023-08-13 13:10:42,860 - PATENSIE - INFO - TCN evaluation of PATENSIE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,861 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 3 for split 1
+2023-08-13 13:10:42,861 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 3 for split 1
+2023-08-13 13:10:42,875 - PATENSIE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.446735  -0.891287
+1    0.398625   1.130078
+2    0.336770   0.311928
+3    0.312715  -1.095859
+4    0.302405   1.163097
+..        ...        ...
+142  0.615120   1.227491
+143  0.646048   0.433849
+144  0.202749  -0.812728
+145  0.333333   1.331051
+146  0.453608   0.997404
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,875 - PATENSIE - INFO - actual vs prediced is :       Actual  Predicted
+0    0.446735  -0.891287
+1    0.398625   1.130078
+2    0.336770   0.311928
+3    0.312715  -1.095859
+4    0.302405   1.163097
+..        ...        ...
+142  0.615120   1.227491
+143  0.646048   0.433849
+144  0.202749  -0.812728
+145  0.333333   1.331051
+146  0.453608   0.997404
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,876 - PATENSIE - INFO - saved to file :Results/TCN/3 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,876 - PATENSIE - INFO - saved to file :Results/TCN/3 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,877 - PATENSIE - INFO - This is the mse: 0.8956570595243275
+
+2023-08-13 13:10:42,877 - PATENSIE - INFO - This is the mse: 0.8956570595243275
+
+2023-08-13 13:10:42,877 - PATENSIE - INFO - This is the rmse: 0.9463915994578183
+
+2023-08-13 13:10:42,877 - PATENSIE - INFO - This is the rmse: 0.9463915994578183
+
+2023-08-13 13:10:42,877 - PATENSIE - INFO - This is the mae: 0.8659299400981836
+
+2023-08-13 13:10:42,877 - PATENSIE - INFO - This is the mae: 0.8659299400981836
+
+2023-08-13 13:10:42,877 - PATENSIE - INFO - This is the smape: 143.57881697373168
+
+2023-08-13 13:10:42,877 - PATENSIE - INFO - This is the smape: 143.57881697373168
+
+2023-08-13 13:10:42,877 - PATENSIE - INFO - This is the smape_std_dev: 59.32411632407549
+
+2023-08-13 13:10:42,877 - PATENSIE - INFO - This is the smape_std_dev: 59.32411632407549
+
+2023-08-13 13:10:42,877 - PATENSIE - INFO - TCN evaluation of PATENSIE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,877 - PATENSIE - INFO - TCN evaluation of PATENSIE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,877 - PATENSIE - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:42,877 - PATENSIE - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-09-04 11:30:44,274 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 3 for split 0
+2023-09-04 11:30:44,305 - PATENSIE - INFO - actual vs prediced is :         Actual  Predicted
+0      0.200466   0.208782
+1      0.212121   0.198847
+2      0.226107   0.191979
+3      0.158508   0.171550
+4      0.165501   0.170903
+...         ...        ...
+26122  0.270396   0.286415
+26123  0.247086   0.278364
+26124  0.358974   0.348462
+26125  0.351981   0.330742
+26126  0.321678   0.315833
+
+[26127 rows x 2 columns]
+2023-09-04 11:30:44,305 - PATENSIE - INFO - saved to file :Results/TCN/3 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:44,306 - PATENSIE - INFO - This is the mse: 0.001186765520405194
+
+2023-09-04 11:30:44,306 - PATENSIE - INFO - This is the rmse: 0.03444946328181608
+
+2023-09-04 11:30:44,306 - PATENSIE - INFO - This is the mae: 0.023934139248991057
+
+2023-09-04 11:30:44,306 - PATENSIE - INFO - This is the smape: 6.618417988256555
+
+2023-09-04 11:30:44,306 - PATENSIE - INFO - This is the smape_std_dev: 7.999104237942315
+
+2023-09-04 11:30:44,306 - PATENSIE - INFO - TCN evaluation of PATENSIE for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:45,850 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 6 for split 0
+2023-09-04 11:30:45,889 - PATENSIE - INFO - actual vs prediced is :         Actual  Predicted
+0      0.200466   0.194889
+1      0.212121   0.184309
+2      0.226107   0.177249
+3      0.307692   0.171902
+4      0.377622   0.167153
+...         ...        ...
+52231  0.351981   0.332806
+52232  0.321678   0.319906
+52233  0.300699   0.308893
+52234  0.289044   0.302374
+52235  0.261072   0.295521
+
+[52236 rows x 2 columns]
+2023-09-04 11:30:45,889 - PATENSIE - INFO - saved to file :Results/TCN/6 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:45,889 - PATENSIE - INFO - This is the mse: 0.002081430137803789
+
+2023-09-04 11:30:45,889 - PATENSIE - INFO - This is the rmse: 0.04562269323268618
+
+2023-09-04 11:30:45,890 - PATENSIE - INFO - This is the mae: 0.03220802374641841
+
+2023-09-04 11:30:45,890 - PATENSIE - INFO - This is the smape: 8.773302151596827
+
+2023-09-04 11:30:45,890 - PATENSIE - INFO - This is the smape_std_dev: 9.722193002652961
+
+2023-09-04 11:30:45,890 - PATENSIE - INFO - TCN evaluation of PATENSIE for the horizon of 6 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:47,900 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 9 for split 0
+2023-09-04 11:30:47,953 - PATENSIE - INFO - actual vs prediced is :         Actual  Predicted
+0      0.438228   0.393868
+1      0.517483   0.471455
+2      0.617716   0.548362
+3      0.689977   0.608211
+4      0.741259   0.644886
+...         ...        ...
+78322  0.289044   0.288946
+78323  0.261072   0.281505
+78324  0.240093   0.274249
+78325  0.242424   0.270703
+78326  0.230769   0.268503
+
+[78327 rows x 2 columns]
+2023-09-04 11:30:47,954 - PATENSIE - INFO - saved to file :Results/TCN/9 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:47,954 - PATENSIE - INFO - This is the mse: 0.002510579036494984
+
+2023-09-04 11:30:47,954 - PATENSIE - INFO - This is the rmse: 0.05010567868510498
+
+2023-09-04 11:30:47,954 - PATENSIE - INFO - This is the mae: 0.03542603906951344
+
+2023-09-04 11:30:47,955 - PATENSIE - INFO - This is the smape: 9.539682800743043
+
+2023-09-04 11:30:47,955 - PATENSIE - INFO - This is the smape_std_dev: 10.203595997776146
+
+2023-09-04 11:30:47,955 - PATENSIE - INFO - TCN evaluation of PATENSIE for the horizon of 9 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:50,771 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 12 for split 0
+2023-09-04 11:30:50,834 - PATENSIE - INFO - actual vs prediced is :          Actual  Predicted
+0       0.438228   0.373201
+1       0.517483   0.460623
+2       0.617716   0.547882
+3       0.689977   0.623506
+4       0.741259   0.669848
+...          ...        ...
+104395  0.242424   0.247806
+104396  0.230769   0.239201
+104397  0.212121   0.232896
+104398  0.212121   0.235313
+104399  0.205128   0.252085
+
+[104400 rows x 2 columns]
+2023-09-04 11:30:50,834 - PATENSIE - INFO - saved to file :Results/TCN/12 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:50,834 - PATENSIE - INFO - This is the mse: 0.0028865021590918057
+
+2023-09-04 11:30:50,835 - PATENSIE - INFO - This is the rmse: 0.053726177596138416
+
+2023-09-04 11:30:50,835 - PATENSIE - INFO - This is the mae: 0.03821164167550604
+
+2023-09-04 11:30:50,835 - PATENSIE - INFO - This is the smape: 10.29189987100367
+
+2023-09-04 11:30:50,835 - PATENSIE - INFO - This is the smape_std_dev: 11.006605125459132
+
+2023-09-04 11:30:50,835 - PATENSIE - INFO - TCN evaluation of PATENSIE for the horizon of 12 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:55,239 - PATENSIE - INFO - TCN evaluation started atPATENSIE for the horizon of 24 for split 0
+2023-09-04 11:30:55,357 - PATENSIE - INFO - actual vs prediced is :          Actual  Predicted
+0       0.361305   0.351802
+1       0.354312   0.337534
+2       0.347319   0.328064
+3       0.342657   0.317945
+4       0.333333   0.304607
+...          ...        ...
+208507  0.596737   0.544420
+208508  0.617716   0.513193
+208509  0.561772   0.475687
+208510  0.482517   0.435485
+208511  0.417249   0.403790
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:55,357 - PATENSIE - INFO - saved to file :Results/TCN/24 Hour Forecast/PATENSIE/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:55,357 - PATENSIE - INFO - This is the mse: 0.004104443798964501
+
+2023-09-04 11:30:55,357 - PATENSIE - INFO - This is the rmse: 0.06406593321699529
+
+2023-09-04 11:30:55,358 - PATENSIE - INFO - This is the mae: 0.04657582044601537
+
+2023-09-04 11:30:55,358 - PATENSIE - INFO - This is the smape: 12.586937046172592
+
+2023-09-04 11:30:55,358 - PATENSIE - INFO - This is the smape_std_dev: 13.058426338592593
+
+2023-09-04 11:30:55,358 - PATENSIE - INFO - TCN evaluation of PATENSIE for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

@@ -1,0 +1,160 @@
+2023-08-12 23:52:46,883 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-08-12 23:52:46,886 - FORT BEAUFORT - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 3.
+2023-08-12 23:52:46,887 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-08-12 23:52:46,887 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-08-12 23:52:46,890 - FORT BEAUFORT - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 6.
+2023-08-12 23:52:46,890 - FORT BEAUFORT - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 6.
+2023-08-13 00:44:40,782 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-08-13 00:44:40,785 - FORT BEAUFORT - ERROR - Error! : Unable to read data or write metrics for station FORT BEAUFORT and horizon length 3.
+2023-08-13 01:02:48,410 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-08-13 01:02:48,413 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,595 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-08-13 01:07:12,598 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,112 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-08-13 01:10:07,115 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,120 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,122 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,123 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-08-13 01:10:07,123 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-08-13 01:10:07,131 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,131 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,151 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,151 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,162 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,162 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,444 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-08-13 12:35:14,446 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,450 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,453 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,008 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-08-13 12:44:40,013 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,017 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,020 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,020 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-08-13 12:44:40,020 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-08-13 12:44:40,023 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,023 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,027 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,027 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,030 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,030 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:09,247 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-09-07 14:50:09,765 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:09,765 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-09-07 14:50:09,765 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-09-07 14:50:10,891 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:10,891 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:10,891 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 9
+2023-09-07 14:50:10,891 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 9
+2023-09-07 14:50:10,891 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 9
+2023-09-07 14:50:11,970 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:11,970 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:11,970 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:11,971 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 14:50:11,971 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 14:50:11,971 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 14:50:11,971 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 14:50:13,425 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:13,425 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:13,425 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:13,425 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:13,426 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 14:50:13,426 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 14:50:13,426 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 14:50:13,426 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 14:50:13,426 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 14:50:15,136 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:15,136 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:15,136 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:15,136 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:50:15,136 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,020 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-09-07 15:20:36,201 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,202 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,202 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-09-07 15:20:36,202 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-09-07 15:20:36,540 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,540 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,541 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,541 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:36,541 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 9
+2023-09-07 15:20:36,541 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 9
+2023-09-07 15:20:36,541 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 9
+2023-09-07 15:20:37,049 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,049 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,049 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,049 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,049 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,049 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,049 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 15:20:37,049 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 15:20:37,049 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 15:20:37,049 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 15:20:37,708 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,708 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,708 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,708 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,709 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,709 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,709 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,709 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:37,709 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 15:20:37,709 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 15:20:37,709 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 15:20:37,709 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 15:20:37,709 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 15:20:39,328 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,328 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,328 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,328 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,328 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,329 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,329 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,329 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,329 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:39,329 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:10,831 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 3
+2023-09-07 15:24:10,999 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,000 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,000 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-09-07 15:24:11,000 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 6
+2023-09-07 15:24:11,333 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,333 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,333 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,333 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,334 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 9
+2023-09-07 15:24:11,334 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 9
+2023-09-07 15:24:11,334 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 9
+2023-09-07 15:24:11,851 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,851 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,851 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,851 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,851 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,851 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:11,851 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 15:24:11,851 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 15:24:11,851 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 15:24:11,851 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 12
+2023-09-07 15:24:12,519 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:12,519 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:12,519 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:12,519 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:12,519 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:12,519 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:12,519 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:12,519 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:12,520 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 15:24:12,520 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 15:24:12,520 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 15:24:12,520 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 15:24:12,520 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-09-07 15:24:14,138 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,138 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,138 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,138 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,138 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,139 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,139 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,139 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,139 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:14,139 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.

@@ -1,0 +1,160 @@
+2023-08-12 23:52:47,196 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-12 23:52:47,214 - PRIESKA - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 3.
+2023-08-12 23:52:47,215 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-08-12 23:52:47,215 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-08-12 23:52:47,224 - PRIESKA - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 6.
+2023-08-12 23:52:47,224 - PRIESKA - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 6.
+2023-08-13 00:44:40,829 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 00:44:40,830 - PRIESKA - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 3.
+2023-08-13 01:02:48,505 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 01:02:48,507 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,696 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 01:07:12,698 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,054 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 01:10:08,057 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,060 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,063 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,064 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-08-13 01:10:08,064 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-08-13 01:10:08,069 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,069 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,073 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,073 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,076 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,076 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,102 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 12:35:15,107 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,110 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,114 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,854 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-08-13 12:44:40,863 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,868 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,872 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,902 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-08-13 12:44:40,902 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-08-13 12:44:40,906 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,906 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,916 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,916 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,932 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,932 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:13,034 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-09-07 14:52:13,703 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:13,705 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-09-07 14:52:13,705 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-09-07 14:52:14,654 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:14,654 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:14,654 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 9
+2023-09-07 14:52:14,654 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 9
+2023-09-07 14:52:14,654 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 9
+2023-09-07 14:52:16,020 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:16,020 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:16,020 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:16,021 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 14:52:16,021 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 14:52:16,021 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 14:52:16,021 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 14:52:17,294 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:17,294 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:17,294 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:17,294 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:17,295 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 14:52:17,295 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 14:52:17,295 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 14:52:17,295 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 14:52:17,295 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 14:52:18,871 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:18,871 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:18,871 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:18,871 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:18,871 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,440 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-09-07 15:21:52,646 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,646 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,647 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-09-07 15:21:52,647 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-09-07 15:21:52,998 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,998 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,998 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,998 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,999 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 9
+2023-09-07 15:21:52,999 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 9
+2023-09-07 15:21:52,999 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 9
+2023-09-07 15:21:53,516 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:53,516 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:53,516 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:53,516 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:53,516 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:53,516 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:53,517 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 15:21:53,517 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 15:21:53,517 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 15:21:53,517 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 15:21:54,184 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:54,184 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:54,184 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:54,184 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:54,184 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:54,184 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:54,184 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:54,184 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:54,185 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 15:21:54,185 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 15:21:54,185 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 15:21:54,185 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 15:21:54,185 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 15:21:55,971 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:55,971 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:55,971 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:55,971 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:55,971 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:55,972 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:55,972 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:55,972 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:55,972 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:55,972 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,435 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 3
+2023-09-07 15:25:26,628 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,628 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,629 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-09-07 15:25:26,629 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 6
+2023-09-07 15:25:27,122 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:27,122 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:27,122 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:27,122 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:27,123 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 9
+2023-09-07 15:25:27,123 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 9
+2023-09-07 15:25:27,123 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 9
+2023-09-07 15:25:27,671 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:27,671 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:27,671 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:27,672 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:27,672 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:27,672 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:27,674 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 15:25:27,674 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 15:25:27,674 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 15:25:27,674 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 12
+2023-09-07 15:25:28,327 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:28,327 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:28,327 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:28,327 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:28,327 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:28,327 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:28,327 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:28,327 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:28,328 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 15:25:28,328 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 15:25:28,328 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 15:25:28,328 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 15:25:28,328 - PRIESKA - INFO - GWN evaluation started atPRIESKA for the horizon of 24
+2023-09-07 15:25:29,954 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:29,954 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:29,954 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:29,954 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:29,954 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:29,955 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:29,955 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:29,955 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:29,955 - PRIESKA - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:29,955 - PRIESKA - INFO - Finished computing evaluation error metrics.

@@ -1,0 +1,29 @@
+2023-08-05 13:45:57,329 - GEORGE WITFONTEIN - INFO - TCN evaluation started atGEORGE WITFONTEIN for the horizon of 24
+2023-08-05 13:45:57,330 - GEORGE WITFONTEIN - ERROR - Error! : Unable to read data or write metrics for station GEORGE WITFONTEIN and horizon length 24.
+2023-09-04 11:30:53,730 - GEORGE WITFONTEIN - INFO - TCN evaluation started atGEORGE WITFONTEIN for the horizon of 24 for split 0
+2023-09-04 11:30:53,936 - GEORGE WITFONTEIN - INFO - actual vs prediced is :          Actual  Predicted
+0       0.235602   0.201062
+1       0.217277   0.198264
+2       0.204188   0.193828
+3       0.178010   0.190624
+4       0.141361   0.192247
+...          ...        ...
+208507  0.596859   0.574298
+208508  0.591623   0.534605
+208509  0.573298   0.480888
+208510  0.382199   0.420346
+208511  0.319372   0.376542
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:53,936 - GEORGE WITFONTEIN - INFO - saved to file :Results/TCN/24 Hour Forecast/GEORGE WITFONTEIN/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:53,937 - GEORGE WITFONTEIN - INFO - This is the mse: 0.006300734085341609
+
+2023-09-04 11:30:53,937 - GEORGE WITFONTEIN - INFO - This is the rmse: 0.07937716350022599
+
+2023-09-04 11:30:53,937 - GEORGE WITFONTEIN - INFO - This is the mae: 0.057647978983744505
+
+2023-09-04 11:30:53,937 - GEORGE WITFONTEIN - INFO - This is the smape: 17.827254516626695
+
+2023-09-04 11:30:53,937 - GEORGE WITFONTEIN - INFO - This is the smape_std_dev: 16.97329200248231
+
+2023-09-04 11:30:53,938 - GEORGE WITFONTEIN - INFO - TCN evaluation of GEORGE WITFONTEIN for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

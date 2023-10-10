@@ -1,0 +1,9 @@
+2023-08-13 00:14:49,518 - MALMESBURY - INFO - TCN model training started at MALMESBURY
+2023-08-13 00:14:49,793 - MALMESBURY - INFO - TCN Model on split 1/1 at MALMESBURY station forecasting 3 hours ahead.
+2023-08-13 00:14:55,766 - MALMESBURY - INFO - Loss: [26.094623565673828, 31.426349639892578]
+2023-08-13 00:14:55,766 - MALMESBURY - INFO - Val Loss: [43.2193603515625, 7.386438846588135]
+2023-08-13 00:14:57,187 - MALMESBURY - INFO - TCN training done on split 1/1 at MALMESBURY station forecasting 3 hours ahead.
+2023-08-13 00:14:57,188 - MALMESBURY - INFO - TCN training finished at MALMESBURY
+2023-08-13 12:59:51,417 - MALMESBURY - INFO - TCN model training started at MALMESBURY
+2023-08-13 12:59:51,594 - MALMESBURY - INFO - TCN Model on split 1/2 at MALMESBURY station forecasting 3 hours ahead.
+2023-08-13 12:59:59,145 - MALMESBURY - INFO - TCN Model on split 2/2 at MALMESBURY station forecasting 3 hours ahead.

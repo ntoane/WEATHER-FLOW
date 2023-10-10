@@ -1,0 +1,9 @@
+2023-08-13 00:13:59,462 - GRAAFF - REINET - INFO - TCN model training started at GRAAFF - REINET
+2023-08-13 00:13:59,634 - GRAAFF - REINET - INFO - TCN Model on split 1/1 at GRAAFF - REINET station forecasting 3 hours ahead.
+2023-08-13 00:14:06,010 - GRAAFF - REINET - INFO - Loss: [20.651391983032227, 8.232516288757324]
+2023-08-13 00:14:06,010 - GRAAFF - REINET - INFO - Val Loss: [7.803843021392822, 11.962642669677734]
+2023-08-13 00:14:07,421 - GRAAFF - REINET - INFO - TCN training done on split 1/1 at GRAAFF - REINET station forecasting 3 hours ahead.
+2023-08-13 00:14:07,422 - GRAAFF - REINET - INFO - TCN training finished at GRAAFF - REINET
+2023-08-13 12:58:14,331 - GRAAFF - REINET - INFO - TCN model training started at GRAAFF - REINET
+2023-08-13 12:58:14,497 - GRAAFF - REINET - INFO - TCN Model on split 1/2 at GRAAFF - REINET station forecasting 3 hours ahead.
+2023-08-13 12:58:21,630 - GRAAFF - REINET - INFO - TCN Model on split 2/2 at GRAAFF - REINET station forecasting 3 hours ahead.

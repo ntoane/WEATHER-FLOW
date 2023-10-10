@@ -1,0 +1,29 @@
+2023-08-05 13:45:57,443 - PORT ELIZABETH AWOS - INFO - TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 24
+2023-08-05 13:45:57,444 - PORT ELIZABETH AWOS - ERROR - Error! : Unable to read data or write metrics for station PORT ELIZABETH AWOS and horizon length 24.
+2023-09-04 11:30:55,589 - PORT ELIZABETH AWOS - INFO - TCN evaluation started atPORT ELIZABETH AWOS for the horizon of 24 for split 0
+2023-09-04 11:30:55,729 - PORT ELIZABETH AWOS - INFO - actual vs prediced is :          Actual  Predicted
+0       0.361257   0.367360
+1       0.353403   0.354194
+2       0.348168   0.342053
+3       0.348168   0.329349
+4       0.335079   0.323194
+...          ...        ...
+208507  0.502618   0.534881
+208508  0.479058   0.513744
+208509  0.460733   0.489397
+208510  0.447644   0.468245
+208511  0.431937   0.446097
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:55,729 - PORT ELIZABETH AWOS - INFO - saved to file :Results/TCN/24 Hour Forecast/PORT ELIZABETH AWOS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:55,730 - PORT ELIZABETH AWOS - INFO - This is the mse: 0.0030359778150504265
+
+2023-09-04 11:30:55,730 - PORT ELIZABETH AWOS - INFO - This is the rmse: 0.05509970793979244
+
+2023-09-04 11:30:55,730 - PORT ELIZABETH AWOS - INFO - This is the mae: 0.03918233268049911
+
+2023-09-04 11:30:55,731 - PORT ELIZABETH AWOS - INFO - This is the smape: 9.970367921540175
+
+2023-09-04 11:30:55,731 - PORT ELIZABETH AWOS - INFO - This is the smape_std_dev: 11.590206145434351
+
+2023-09-04 11:30:55,732 - PORT ELIZABETH AWOS - INFO - TCN evaluation of PORT ELIZABETH AWOS for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

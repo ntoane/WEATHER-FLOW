@@ -1,0 +1,160 @@
+2023-08-12 23:52:47,257 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-08-12 23:52:47,260 - SOMERSET EAST - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 3.
+2023-08-12 23:52:47,261 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-08-12 23:52:47,261 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-08-12 23:52:47,263 - SOMERSET EAST - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 6.
+2023-08-12 23:52:47,263 - SOMERSET EAST - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 6.
+2023-08-13 00:44:40,833 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-08-13 00:44:40,835 - SOMERSET EAST - ERROR - Error! : Unable to read data or write metrics for station SOMERSET EAST and horizon length 3.
+2023-08-13 01:02:48,518 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-08-13 01:02:48,521 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,708 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-08-13 01:07:12,711 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,118 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-08-13 01:10:08,121 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,125 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,128 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,128 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-08-13 01:10:08,128 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-08-13 01:10:08,132 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,132 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,135 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,135 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,138 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,138 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,218 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-08-13 12:35:15,228 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,232 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,240 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,011 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-08-13 12:44:41,015 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,021 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,025 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,029 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-08-13 12:44:41,029 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-08-13 12:44:41,039 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,039 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,047 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,047 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,053 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,053 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:30,110 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-09-07 14:52:30,618 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:30,618 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-09-07 14:52:30,618 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-09-07 14:52:31,668 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:31,668 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:31,668 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 9
+2023-09-07 14:52:31,668 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 9
+2023-09-07 14:52:31,668 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 9
+2023-09-07 14:52:32,810 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:32,810 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:32,810 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:32,811 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 14:52:32,811 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 14:52:32,811 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 14:52:32,811 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 14:52:34,093 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:34,093 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:34,093 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:34,093 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:34,093 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 14:52:34,093 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 14:52:34,093 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 14:52:34,093 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 14:52:34,093 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 14:52:35,775 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:35,775 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:35,775 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:35,775 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:35,775 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,235 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-09-07 15:22:03,436 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,436 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,437 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-09-07 15:22:03,437 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-09-07 15:22:03,951 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,951 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,952 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,952 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:03,952 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 9
+2023-09-07 15:22:03,952 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 9
+2023-09-07 15:22:03,952 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 9
+2023-09-07 15:22:04,495 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:04,495 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:04,495 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:04,496 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:04,496 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:04,496 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:04,496 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 15:22:04,496 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 15:22:04,496 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 15:22:04,496 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 15:22:05,198 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:05,198 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:05,198 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:05,198 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:05,199 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:05,199 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:05,199 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:05,199 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:05,199 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 15:22:05,199 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 15:22:05,199 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 15:22:05,199 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 15:22:05,199 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 15:22:06,828 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:06,828 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:06,828 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:06,828 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:06,828 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:06,828 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:06,828 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:06,828 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:06,828 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:06,828 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:36,910 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 3
+2023-09-07 15:25:37,084 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,084 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,085 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-09-07 15:25:37,085 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 6
+2023-09-07 15:25:37,434 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,434 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,434 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,434 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,435 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 9
+2023-09-07 15:25:37,435 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 9
+2023-09-07 15:25:37,435 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 9
+2023-09-07 15:25:37,933 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,933 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,933 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,935 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,935 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,935 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:37,936 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 15:25:37,936 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 15:25:37,936 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 15:25:37,936 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 12
+2023-09-07 15:25:38,589 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:38,589 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:38,589 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:38,589 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:38,589 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:38,589 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:38,589 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:38,589 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:38,590 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 15:25:38,590 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 15:25:38,590 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 15:25:38,590 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 15:25:38,590 - SOMERSET EAST - INFO - GWN evaluation started atSOMERSET EAST for the horizon of 24
+2023-09-07 15:25:40,235 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,235 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,235 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,235 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,235 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,235 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,235 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,235 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,235 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,235 - SOMERSET EAST - INFO - Finished computing evaluation error metrics.

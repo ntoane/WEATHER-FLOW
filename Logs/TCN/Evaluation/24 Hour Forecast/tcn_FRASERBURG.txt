@@ -1,0 +1,29 @@
+2023-08-05 13:45:57,327 - FRASERBURG - INFO - TCN evaluation started atFRASERBURG for the horizon of 24
+2023-08-05 13:45:57,328 - FRASERBURG - ERROR - Error! : Unable to read data or write metrics for station FRASERBURG and horizon length 24.
+2023-09-04 11:30:53,608 - FRASERBURG - INFO - TCN evaluation started atFRASERBURG for the horizon of 24 for split 0
+2023-09-04 11:30:53,728 - FRASERBURG - INFO - actual vs prediced is :          Actual  Predicted
+0       0.331839   0.311402
+1       0.336323   0.287071
+2       0.311659   0.265584
+3       0.307175   0.254092
+4       0.304933   0.242898
+...          ...        ...
+208507  0.735426   0.701557
+208508  0.733184   0.683505
+208509  0.710762   0.647804
+208510  0.665919   0.607741
+208511  0.591928   0.562909
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:53,728 - FRASERBURG - INFO - saved to file :Results/TCN/24 Hour Forecast/FRASERBURG/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:53,728 - FRASERBURG - INFO - This is the mse: 0.003107818359837165
+
+2023-09-04 11:30:53,728 - FRASERBURG - INFO - This is the rmse: 0.05574781035912679
+
+2023-09-04 11:30:53,729 - FRASERBURG - INFO - This is the mae: 0.04182660797268425
+
+2023-09-04 11:30:53,729 - FRASERBURG - INFO - This is the smape: 9.759444281813764
+
+2023-09-04 11:30:53,729 - FRASERBURG - INFO - This is the smape_std_dev: 11.568908348546884
+
+2023-09-04 11:30:53,729 - FRASERBURG - INFO - TCN evaluation of FRASERBURG for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

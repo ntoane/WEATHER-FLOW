@@ -1,0 +1,316 @@
+2023-08-13 00:19:40,311 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 3
+2023-08-13 00:19:40,329 - GRAAFF - REINET - INFO - actual vs prediced is :       Actual  Predicted
+0    0.733668  -3.050959
+1    0.778894   2.000014
+2    0.723618   2.767231
+3    0.512563  -3.053332
+4    0.512563   1.530393
+..        ...        ...
+142  0.195980   1.554052
+143  0.261307   2.885694
+144  0.145729  -3.008616
+145  0.135678   1.517620
+146  0.135678   2.710126
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,329 - GRAAFF - REINET - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,331 - GRAAFF - REINET - ERROR - Error! : Unable to read data or write metrics for station GRAAFF - REINET and horizon length 3.
+2023-08-13 00:23:06,719 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 3
+2023-08-13 00:23:06,758 - GRAAFF - REINET - INFO - actual vs prediced is :       Actual  Predicted
+0    0.733668  -3.050959
+1    0.778894   2.000014
+2    0.723618   2.767231
+3    0.512563  -3.053332
+4    0.512563   1.530393
+..        ...        ...
+142  0.195980   1.554052
+143  0.261307   2.885694
+144  0.145729  -3.008616
+145  0.135678   1.517620
+146  0.135678   2.710126
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,758 - GRAAFF - REINET - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,761 - GRAAFF - REINET - INFO - This is the mse: 7.617346073843738
+
+2023-08-13 00:23:06,762 - GRAAFF - REINET - INFO - This is the rmse: 2.7599539985013766
+
+2023-08-13 00:23:06,762 - GRAAFF - REINET - INFO - This is the mae: 2.5983409444262127
+
+2023-08-13 00:23:06,762 - GRAAFF - REINET - INFO - This is the smape: 166.86505934751926
+
+2023-08-13 00:23:06,762 - GRAAFF - REINET - INFO - This is the smape_std_dev: 32.89357301552425
+
+2023-08-13 00:23:06,762 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,210 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 3
+2023-08-13 00:34:27,231 - GRAAFF - REINET - INFO - actual vs prediced is :       Actual  Predicted
+0    0.733668  -3.050959
+1    0.778894   2.000014
+2    0.723618   2.767231
+3    0.512563  -3.053332
+4    0.512563   1.530393
+..        ...        ...
+142  0.195980   1.554052
+143  0.261307   2.885694
+144  0.145729  -3.008616
+145  0.135678   1.517620
+146  0.135678   2.710126
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,231 - GRAAFF - REINET - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,233 - GRAAFF - REINET - INFO - This is the mse: 7.617346073843738
+
+2023-08-13 00:34:27,233 - GRAAFF - REINET - INFO - This is the rmse: 2.7599539985013766
+
+2023-08-13 00:34:27,233 - GRAAFF - REINET - INFO - This is the mae: 2.5983409444262127
+
+2023-08-13 00:34:27,233 - GRAAFF - REINET - INFO - This is the smape: 166.86505934751926
+
+2023-08-13 00:34:27,233 - GRAAFF - REINET - INFO - This is the smape_std_dev: 32.89357301552425
+
+2023-08-13 00:34:27,234 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:40:59,969 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 3
+2023-08-13 00:40:59,997 - GRAAFF - REINET - INFO - actual vs prediced is :       Actual  Predicted
+0    0.733668  -3.050959
+1    0.778894   2.000014
+2    0.723618   2.767231
+3    0.512563  -3.053332
+4    0.512563   1.530393
+..        ...        ...
+142  0.195980   1.554052
+143  0.261307   2.885694
+144  0.145729  -3.008616
+145  0.135678   1.517620
+146  0.135678   2.710126
+
+[147 rows x 2 columns]
+2023-08-13 00:40:59,997 - GRAAFF - REINET - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-08-13 00:40:59,999 - GRAAFF - REINET - INFO - This is the mse: 7.617346073843738
+
+2023-08-13 00:40:59,999 - GRAAFF - REINET - INFO - This is the rmse: 2.7599539985013766
+
+2023-08-13 00:40:59,999 - GRAAFF - REINET - INFO - This is the mae: 2.5983409444262127
+
+2023-08-13 00:40:59,999 - GRAAFF - REINET - INFO - This is the smape: 166.86505934751926
+
+2023-08-13 00:41:00,000 - GRAAFF - REINET - INFO - This is the smape_std_dev: 32.89357301552425
+
+2023-08-13 00:41:00,000 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,304 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 3 for split 0
+2023-08-13 13:10:42,321 - GRAAFF - REINET - INFO - actual vs prediced is :       Actual  Predicted
+0    0.733668  -0.630288
+1    0.778894   0.109916
+2    0.723618   0.844671
+3    0.512563  -0.347962
+4    0.512563   0.069970
+..        ...        ...
+142  0.195980   0.392932
+143  0.261307   1.128272
+144  0.145729  -0.742241
+145  0.135678   0.965613
+146  0.135678   1.189357
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,321 - GRAAFF - REINET - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,323 - GRAAFF - REINET - INFO - This is the mse: 0.5605427445392593
+
+2023-08-13 13:10:42,323 - GRAAFF - REINET - INFO - This is the rmse: 0.748694025980747
+
+2023-08-13 13:10:42,324 - GRAAFF - REINET - INFO - This is the mae: 0.63787947415636
+
+2023-08-13 13:10:42,324 - GRAAFF - REINET - INFO - This is the smape: 133.60722381200273
+
+2023-08-13 13:10:42,324 - GRAAFF - REINET - INFO - This is the smape_std_dev: 67.47460598127526
+
+2023-08-13 13:10:42,324 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,324 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 3 for split 1
+2023-08-13 13:10:42,324 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 3 for split 1
+2023-08-13 13:10:42,340 - GRAAFF - REINET - INFO - actual vs prediced is :       Actual  Predicted
+0    0.615672  -0.692095
+1    0.578358   0.923737
+2    0.541045   1.085660
+3    0.332090  -0.550241
+4    0.302239   0.793035
+..        ...        ...
+142  0.593284   0.786384
+143  0.649254   2.050746
+144  0.208955  -0.330539
+145  0.324627   0.584406
+146  0.432836   2.082629
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,340 - GRAAFF - REINET - INFO - actual vs prediced is :       Actual  Predicted
+0    0.615672  -0.692095
+1    0.578358   0.923737
+2    0.541045   1.085660
+3    0.332090  -0.550241
+4    0.302239   0.793035
+..        ...        ...
+142  0.593284   0.786384
+143  0.649254   2.050746
+144  0.208955  -0.330539
+145  0.324627   0.584406
+146  0.432836   2.082629
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,340 - GRAAFF - REINET - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,340 - GRAAFF - REINET - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - This is the mse: 1.2403009360303543
+
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - This is the mse: 1.2403009360303543
+
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - This is the rmse: 1.1136879886352167
+
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - This is the rmse: 1.1136879886352167
+
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - This is the mae: 0.9568103356594576
+
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - This is the mae: 0.9568103356594576
+
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - This is the smape: 151.15719386107125
+
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - This is the smape: 151.15719386107125
+
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - This is the smape_std_dev: 53.28820352373006
+
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - This is the smape_std_dev: 53.28820352373006
+
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:42,342 - GRAAFF - REINET - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-09-04 11:30:43,957 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 3 for split 0
+2023-09-04 11:30:43,996 - GRAAFF - REINET - INFO - actual vs prediced is :         Actual  Predicted
+0      0.547284   0.490827
+1      0.523139   0.471614
+2      0.515091   0.456215
+3      0.350101   0.332814
+4      0.382294   0.329454
+...         ...        ...
+26122  0.293763   0.283271
+26123  0.267606   0.277881
+26124  0.482897   0.438254
+26125  0.458753   0.400460
+26126  0.432596   0.368799
+
+[26127 rows x 2 columns]
+2023-09-04 11:30:43,996 - GRAAFF - REINET - INFO - saved to file :Results/TCN/3 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:43,996 - GRAAFF - REINET - INFO - This is the mse: 0.001375976974529573
+
+2023-09-04 11:30:43,997 - GRAAFF - REINET - INFO - This is the rmse: 0.037094163618143126
+
+2023-09-04 11:30:43,997 - GRAAFF - REINET - INFO - This is the mae: 0.026675678249523084
+
+2023-09-04 11:30:43,997 - GRAAFF - REINET - INFO - This is the smape: 6.31816248142914
+
+2023-09-04 11:30:43,997 - GRAAFF - REINET - INFO - This is the smape_std_dev: 8.272911197925094
+
+2023-09-04 11:30:43,997 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:45,458 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 6 for split 0
+2023-09-04 11:30:45,496 - GRAAFF - REINET - INFO - actual vs prediced is :         Actual  Predicted
+0      0.547284   0.509384
+1      0.523139   0.498365
+2      0.515091   0.494044
+3      0.517103   0.487154
+4      0.511066   0.480224
+...         ...        ...
+52231  0.458753   0.401609
+52232  0.432596   0.380020
+52233  0.370221   0.363464
+52234  0.329980   0.354292
+52235  0.299799   0.345600
+
+[52236 rows x 2 columns]
+2023-09-04 11:30:45,496 - GRAAFF - REINET - INFO - saved to file :Results/TCN/6 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:45,497 - GRAAFF - REINET - INFO - This is the mse: 0.0019767216605226373
+
+2023-09-04 11:30:45,497 - GRAAFF - REINET - INFO - This is the rmse: 0.04446033806127251
+
+2023-09-04 11:30:45,497 - GRAAFF - REINET - INFO - This is the mae: 0.03224212346290735
+
+2023-09-04 11:30:45,497 - GRAAFF - REINET - INFO - This is the smape: 7.334901693992606
+
+2023-09-04 11:30:45,497 - GRAAFF - REINET - INFO - This is the smape_std_dev: 8.54037554678375
+
+2023-09-04 11:30:45,497 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 6 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:47,375 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 9 for split 0
+2023-09-04 11:30:47,424 - GRAAFF - REINET - INFO - actual vs prediced is :         Actual  Predicted
+0      0.565392   0.563181
+1      0.623742   0.625891
+2      0.724346   0.689007
+3      0.820926   0.743197
+4      0.875252   0.783453
+...         ...        ...
+78322  0.329980   0.357108
+78323  0.299799   0.346159
+78324  0.271630   0.333372
+78325  0.265594   0.324033
+78326  0.273642   0.318727
+
+[78327 rows x 2 columns]
+2023-09-04 11:30:47,424 - GRAAFF - REINET - INFO - saved to file :Results/TCN/9 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:47,424 - GRAAFF - REINET - INFO - This is the mse: 0.00267569100663963
+
+2023-09-04 11:30:47,424 - GRAAFF - REINET - INFO - This is the rmse: 0.051727081945917165
+
+2023-09-04 11:30:47,424 - GRAAFF - REINET - INFO - This is the mae: 0.03833616811655827
+
+2023-09-04 11:30:47,424 - GRAAFF - REINET - INFO - This is the smape: 8.804312123671497
+
+2023-09-04 11:30:47,425 - GRAAFF - REINET - INFO - This is the smape_std_dev: 10.19972461163914
+
+2023-09-04 11:30:47,425 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 9 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:50,055 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 12 for split 0
+2023-09-04 11:30:50,117 - GRAAFF - REINET - INFO - actual vs prediced is :          Actual  Predicted
+0       0.565392   0.529108
+1       0.623742   0.596306
+2       0.724346   0.658795
+3       0.820926   0.702165
+4       0.875252   0.737419
+...          ...        ...
+104395  0.265594   0.324596
+104396  0.273642   0.314051
+104397  0.231388   0.303516
+104398  0.223340   0.307487
+104399  0.207243   0.329087
+
+[104400 rows x 2 columns]
+2023-09-04 11:30:50,117 - GRAAFF - REINET - INFO - saved to file :Results/TCN/12 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:50,118 - GRAAFF - REINET - INFO - This is the mse: 0.003582547928474683
+
+2023-09-04 11:30:50,118 - GRAAFF - REINET - INFO - This is the rmse: 0.05985438938352544
+
+2023-09-04 11:30:50,118 - GRAAFF - REINET - INFO - This is the mae: 0.045216261759813504
+
+2023-09-04 11:30:50,118 - GRAAFF - REINET - INFO - This is the smape: 10.38675141751002
+
+2023-09-04 11:30:50,118 - GRAAFF - REINET - INFO - This is the smape_std_dev: 11.88385674872644
+
+2023-09-04 11:30:50,118 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 12 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:54,062 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 24 for split 0
+2023-09-04 11:30:54,181 - GRAAFF - REINET - INFO - actual vs prediced is :          Actual  Predicted
+0       0.380282   0.418199
+1       0.358149   0.396903
+2       0.394366   0.379977
+3       0.372233   0.366443
+4       0.319920   0.346030
+...          ...        ...
+208507  0.613682   0.687554
+208508  0.613682   0.678448
+208509  0.595573   0.660853
+208510  0.547284   0.620124
+208511  0.472837   0.574589
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:54,181 - GRAAFF - REINET - INFO - saved to file :Results/TCN/24 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:54,181 - GRAAFF - REINET - INFO - This is the mse: 0.004945075583341239
+
+2023-09-04 11:30:54,181 - GRAAFF - REINET - INFO - This is the rmse: 0.0703212313838519
+
+2023-09-04 11:30:54,181 - GRAAFF - REINET - INFO - This is the mae: 0.0539022146710681
+
+2023-09-04 11:30:54,182 - GRAAFF - REINET - INFO - This is the smape: 12.280008313265503
+
+2023-09-04 11:30:54,182 - GRAAFF - REINET - INFO - This is the smape_std_dev: 13.524113091674357
+
+2023-09-04 11:30:54,182 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

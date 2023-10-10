@@ -1,0 +1,20 @@
+2023-08-13 00:09:32,062 - DOHNE - AGR - INFO - TCN model training started at DOHNE - AGR
+2023-08-13 00:09:32,213 - DOHNE - AGR - INFO - TCN Model on split 1/3 at DOHNE - AGR station forecasting 3 hours ahead.
+2023-08-13 00:09:38,303 - DOHNE - AGR - INFO - Loss: [23.394184112548828, 11.41375732421875]
+2023-08-13 00:09:38,303 - DOHNE - AGR - INFO - Val Loss: [9.248221397399902, 9.561175346374512]
+2023-08-13 00:09:39,730 - DOHNE - AGR - INFO - TCN training done on split 1/3 at DOHNE - AGR station forecasting 3 hours ahead.
+2023-08-13 00:09:39,731 - DOHNE - AGR - INFO - TCN Model on split 2/3 at DOHNE - AGR station forecasting 3 hours ahead.
+2023-08-13 00:09:45,911 - DOHNE - AGR - INFO - Loss: [18.628482818603516, 8.214656829833984]
+2023-08-13 00:09:45,911 - DOHNE - AGR - INFO - Val Loss: [13.287955284118652, 0.14156709611415863]
+2023-08-13 00:09:47,372 - DOHNE - AGR - INFO - TCN training done on split 2/3 at DOHNE - AGR station forecasting 3 hours ahead.
+2023-08-13 00:09:47,372 - DOHNE - AGR - INFO - TCN Model on split 3/3 at DOHNE - AGR station forecasting 3 hours ahead.
+2023-08-13 00:09:53,646 - DOHNE - AGR - INFO - Loss: [9.538366317749023, 4.2310967445373535]
+2023-08-13 00:09:53,646 - DOHNE - AGR - INFO - Val Loss: [0.29141080379486084, 1.073778510093689]
+2023-08-13 00:09:55,096 - DOHNE - AGR - INFO - TCN training done on split 3/3 at DOHNE - AGR station forecasting 3 hours ahead.
+2023-08-13 00:09:55,096 - DOHNE - AGR - INFO - TCN training finished at DOHNE - AGR
+2023-08-13 00:12:59,159 - DOHNE - AGR - INFO - TCN model training started at DOHNE - AGR
+2023-08-13 00:12:59,329 - DOHNE - AGR - INFO - TCN Model on split 1/1 at DOHNE - AGR station forecasting 3 hours ahead.
+2023-08-13 00:13:04,726 - DOHNE - AGR - INFO - Loss: [18.604042053222656, 11.037976264953613]
+2023-08-13 00:13:04,726 - DOHNE - AGR - INFO - Val Loss: [10.941596984863281, 10.903695106506348]
+2023-08-13 00:13:07,144 - DOHNE - AGR - INFO - TCN training done on split 1/1 at DOHNE - AGR station forecasting 3 hours ahead.
+2023-08-13 00:13:07,145 - DOHNE - AGR - INFO - TCN training finished at DOHNE - AGR

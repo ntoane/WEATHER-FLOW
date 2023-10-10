@@ -1,0 +1,158 @@
+############################ Train any model ############################
+train_tcn:
+  type: bool
+  default: false
+  help: whether to train final TCN models
+train_gwn:
+  type: bool
+  default: false
+  help: whether to train final GWN model
+train_agcrn:
+  type: bool
+  default: false
+  help: whether to train final AGCRN model
+train_ast_gcn:
+  type: bool
+  default: false
+  help: whether to train final ASTGCN model
+train_clcrn:
+  type: bool
+  default: false
+  help: whether to train final CLCRN model
+
+############################ Random Search HPO arguments  ############################ 
+tune_tcn:
+  type: bool
+  default: false
+  help: whether to perform random search HPO on TCN models
+tune_gwn:
+  type: bool
+  default: false
+  help: whether to perform random search HPO on GWN model
+tune_agcrn:
+  type: bool
+  default: false
+  help: whether to perform random search HPO on GWN model
+tune_astgcn:
+  type: bool
+  default: false
+  help: whether to perform random search HPO on GWN model
+tune_clcrn:
+  type: bool
+  default: false
+  help: whether to perform random search HPO on GWN model
+num_configs:
+  type: int
+  default: 30
+  help: number of random configurations to search through
+############################ Perform evaluations calculating metrics of final models' results  ############################
+eval_tcn:
+  type: bool
+  default: false
+  help: whether to report final TCN metrics
+eval_gwn:
+  type: bool
+  default: false
+  help: whether to report final GWN metrics
+eval_agcrn:
+  type: bool
+  default: false
+  help: whether to report final AGCRN metrics
+eval_ast_gcn:
+  type: bool
+  default: false
+  help: whether to report final ASTGCN metrics
+eval_clcrn:
+  type: bool
+  default: true
+  help: whether to report final CLCRN metrics
+############################ General data configurations ############################
+increment: 
+  type: int[]
+  #all splits  (set num_split=6):
+  # default: [8760, 17520, 26280, 35040, 43800, 52560, 61320, 70080] 
+  default: [79750, 96839, 113929]
+  help:  (from davidson) List of points to split data in train, validation, and test sets for walk-forward validation. The first marker, 
+    8784 is one year's worth of data, the next step is 3 months of data, and the following step is also 3 months of 
+    data, resulting in rolling walk-forward validation where the train size increases each increment, with the 
+    validation and test sets each being 3 months' worth of data.
+
+stations:
+  type: str[]
+  default: ['ADDO ELEPHANT PARK', 'ALEXANDERBAAI', 'ALIWAL-NORTH PLAATKOP', 'BARKLY-OOS (CAERLEON)',
+                'BRANDVLEI', 'CALVINIA WO', 'CAPE TOWN WO', 'DE AAR WO', 'DOHNE - AGR', 'EAST LONDON WO',
+                'EXCELSIOR CERES', 'FORT BEAUFORT', 'FRASERBURG', 'GEORGE WITFONTEIN', 'GEORGE WO', 
+                'GRAAFF - REINET', 'GRAHAMSTOWN', 'KOINGNAAS', 'LADISMITH', 'LAINGSBURG', 'LANGGEWENS',
+                'MALMESBURY', 'MOLTENO RESERVOIR','NOUPOORT','OUDTSHOORN', 'PATENSIE','POFADDER', 
+                'PORT ALFRED - AIRPORT','PORT ELIZABETH AWOS', 'PORT ELIZABETH AWS','PORT NOLLOTH','PORTERVILLE', 
+                'PRIESKA', 'REDELINGSHUYS-AWS','RIVERSDALE','SOMERSET EAST','SPRINGBOK WO','TWEE RIVIEREN',
+                'UITENHAGE','UPINGTON WO', 'VANWYKSVLEI','VIOOLSDRIF - AWS','VREDENDAL','WILLOWMORE','WORCESTER-AWS']
+  help: list of all stations names
+
+horizons:
+  type: int[]
+  # default: [3,6,9,12,24]
+  default: [24]
+  help: forecast horizons (Preferably use one horizon per run)
+
+n_stations:
+  type: int
+  default: 45
+  help: number of weather stations
+
+n_split:
+  type: int
+  default: 1
+  help: number of splits in walk-forward validation
+
+################################# Loss and Optimizer  ###############################
+loss_function:
+  type: string
+  default: 'MSE'     #Only accepts MSE, MAE, sparse_categorical_crossentropy, categorical_crossentropy.
+  help: type of loss function used (to add another method look at User Guide), default type set to MSE
+
+optimizer:
+  type: string
+  default: 'Adam'     #Only accepts Adam, SGD, RMSprop.
+  help: type of optimizers used for model (to add another method look at User Guide), default type set to Adam
+
+############################ Visualise Adjacency Matrix ############################
+vis:
+  type: bool
+  default: false
+  help: whether to visualise adjacency matrix or not
+
+modelVis:
+  type: str
+  default: GWN
+  help: the model to visualise
+
+horizonVis:
+  type: str
+  default: "9"
+  help: the horizon to visualise
+
+splitVis:
+  type: str
+  default: "0"
+  help: the split which should be visualised
+
+thresholdVis:
+  type: float
+  default: 0.1
+  help: the value an edge weight should be above in order to be considered influencial
+
+numberNodesDisplay:
+  type: int
+  default: 45
+  help: the number of nodes that should be displayed in the visualisation (reduce if too much overlapping)
+
+x_influences_y:
+  type: bool
+  default: True
+  help: If we represent a matrix entry as (x, y). Select "True" if the influence of node x is on node y.
+
+locations_path:
+  type: str
+  default: DataNew/Locations/Locations.csv
+  help: path to csv containg station coordinates

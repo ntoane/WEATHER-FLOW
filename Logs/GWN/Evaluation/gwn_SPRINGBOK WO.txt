@@ -1,0 +1,160 @@
+2023-08-12 23:52:47,264 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-08-12 23:52:47,266 - SPRINGBOK WO - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 3.
+2023-08-12 23:52:47,271 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-08-12 23:52:47,271 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-08-12 23:52:47,274 - SPRINGBOK WO - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 6.
+2023-08-12 23:52:47,274 - SPRINGBOK WO - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 6.
+2023-08-13 00:44:40,836 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-08-13 00:44:40,839 - SPRINGBOK WO - ERROR - Error! : Unable to read data or write metrics for station SPRINGBOK WO and horizon length 3.
+2023-08-13 01:02:48,522 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-08-13 01:02:48,525 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,711 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-08-13 01:07:12,714 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,139 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-08-13 01:10:08,143 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,146 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,149 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,150 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-08-13 01:10:08,150 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-08-13 01:10:08,153 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,153 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,155 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,155 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,159 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,159 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,242 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-08-13 12:35:15,245 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,252 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,257 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,054 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-08-13 12:44:41,058 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,073 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,259 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,260 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-08-13 12:44:41,260 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-08-13 12:44:41,314 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,314 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,320 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,320 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,328 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,328 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:35,775 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-09-07 14:52:36,281 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:36,282 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-09-07 14:52:36,282 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-09-07 14:52:37,330 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:37,330 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:37,330 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 9
+2023-09-07 14:52:37,330 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 9
+2023-09-07 14:52:37,330 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 9
+2023-09-07 14:52:38,725 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:38,725 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:38,725 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:38,725 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 14:52:38,725 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 14:52:38,725 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 14:52:38,725 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 14:52:39,939 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:39,939 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:39,939 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:39,939 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:39,939 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 14:52:39,939 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 14:52:39,939 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 14:52:39,939 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 14:52:39,939 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 14:52:41,420 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:41,420 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:41,420 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:41,420 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:41,420 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:06,829 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-09-07 15:22:07,012 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,013 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,013 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-09-07 15:22:07,013 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-09-07 15:22:07,353 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,353 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,353 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,353 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,354 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 9
+2023-09-07 15:22:07,354 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 9
+2023-09-07 15:22:07,354 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 9
+2023-09-07 15:22:07,916 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,916 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,916 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,917 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,917 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,917 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:07,917 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 15:22:07,917 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 15:22:07,917 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 15:22:07,917 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 15:22:08,703 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:08,703 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:08,703 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:08,703 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:08,704 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:08,704 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:08,704 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:08,704 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:08,704 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 15:22:08,704 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 15:22:08,704 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 15:22:08,704 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 15:22:08,704 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 15:22:10,310 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:10,310 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:10,310 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:10,310 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:10,310 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:10,310 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:10,310 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:10,310 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:10,310 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:10,310 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,236 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 3
+2023-09-07 15:25:40,418 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,418 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,419 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-09-07 15:25:40,419 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 6
+2023-09-07 15:25:40,881 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,881 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,882 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,882 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:40,882 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 9
+2023-09-07 15:25:40,882 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 9
+2023-09-07 15:25:40,882 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 9
+2023-09-07 15:25:41,375 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:41,375 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:41,375 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:41,375 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:41,375 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:41,375 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:41,376 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 15:25:41,376 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 15:25:41,376 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 15:25:41,376 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 12
+2023-09-07 15:25:42,032 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:42,032 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:42,032 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:42,032 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:42,033 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:42,033 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:42,033 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:42,033 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:42,033 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 15:25:42,033 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 15:25:42,033 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 15:25:42,033 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 15:25:42,033 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-09-07 15:25:43,621 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:43,621 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:43,621 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:43,621 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:43,621 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:43,622 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:43,622 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:43,622 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:43,622 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:43,622 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.

@@ -1,0 +1,316 @@
+2023-08-13 00:19:40,838 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 3
+2023-08-13 00:19:40,853 - VANWYKSVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    1.080000   2.866803
+1    0.988571  -2.670626
+2    0.988571  13.544825
+3    0.588571   2.508866
+4    0.725714  -2.953228
+..        ...        ...
+142  0.377143  -2.657410
+143  0.514286  13.601676
+144  0.040000   2.448939
+145  0.005714  -2.768751
+146 -0.022857  13.480328
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,853 - VANWYKSVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,854 - VANWYKSVLEI - ERROR - Error! : Unable to read data or write metrics for station VANWYKSVLEI and horizon length 3.
+2023-08-13 00:23:07,273 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 3
+2023-08-13 00:23:07,297 - VANWYKSVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    1.080000   2.866803
+1    0.988571  -2.670626
+2    0.988571  13.544825
+3    0.588571   2.508866
+4    0.725714  -2.953228
+..        ...        ...
+142  0.377143  -2.657410
+143  0.514286  13.601676
+144  0.040000   2.448939
+145  0.005714  -2.768751
+146 -0.022857  13.480328
+
+[147 rows x 2 columns]
+2023-08-13 00:23:07,297 - VANWYKSVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:07,300 - VANWYKSVLEI - INFO - This is the mse: 61.634741341613505
+
+2023-08-13 00:23:07,300 - VANWYKSVLEI - INFO - This is the rmse: 7.850779664569214
+
+2023-08-13 00:23:07,300 - VANWYKSVLEI - INFO - This is the mae: 6.055248092419825
+
+2023-08-13 00:23:07,300 - VANWYKSVLEI - INFO - This is the smape: 177.94299629222257
+
+2023-08-13 00:23:07,302 - VANWYKSVLEI - INFO - This is the smape_std_dev: 29.86635636930786
+
+2023-08-13 00:23:07,302 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,653 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 3
+2023-08-13 00:34:27,675 - VANWYKSVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    1.080000   2.866803
+1    0.988571  -2.670626
+2    0.988571  13.544825
+3    0.588571   2.508866
+4    0.725714  -2.953228
+..        ...        ...
+142  0.377143  -2.657410
+143  0.514286  13.601676
+144  0.040000   2.448939
+145  0.005714  -2.768751
+146 -0.022857  13.480328
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,675 - VANWYKSVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,677 - VANWYKSVLEI - INFO - This is the mse: 61.634741341613505
+
+2023-08-13 00:34:27,677 - VANWYKSVLEI - INFO - This is the rmse: 7.850779664569214
+
+2023-08-13 00:34:27,677 - VANWYKSVLEI - INFO - This is the mae: 6.055248092419825
+
+2023-08-13 00:34:27,677 - VANWYKSVLEI - INFO - This is the smape: 177.94299629222257
+
+2023-08-13 00:34:27,677 - VANWYKSVLEI - INFO - This is the smape_std_dev: 29.86635636930786
+
+2023-08-13 00:34:27,678 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,853 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 3
+2023-08-13 00:41:00,877 - VANWYKSVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    1.080000   2.866803
+1    0.988571  -2.670626
+2    0.988571  13.544825
+3    0.588571   2.508866
+4    0.725714  -2.953228
+..        ...        ...
+142  0.377143  -2.657410
+143  0.514286  13.601676
+144  0.040000   2.448939
+145  0.005714  -2.768751
+146 -0.022857  13.480328
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,877 - VANWYKSVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,879 - VANWYKSVLEI - INFO - This is the mse: 61.634741341613505
+
+2023-08-13 00:41:00,879 - VANWYKSVLEI - INFO - This is the rmse: 7.850779664569214
+
+2023-08-13 00:41:00,879 - VANWYKSVLEI - INFO - This is the mae: 6.055248092419825
+
+2023-08-13 00:41:00,879 - VANWYKSVLEI - INFO - This is the smape: 177.94299629222257
+
+2023-08-13 00:41:00,880 - VANWYKSVLEI - INFO - This is the smape_std_dev: 29.86635636930786
+
+2023-08-13 00:41:00,880 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,438 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 3 for split 0
+2023-08-13 13:10:43,455 - VANWYKSVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    1.080000   4.531923
+1    0.988571   9.794481
+2    0.988571   0.130110
+3    0.588571   4.488965
+4    0.725714   9.567080
+..        ...        ...
+142  0.377143   9.624003
+143  0.514286  -0.264277
+144  0.040000   4.347189
+145  0.005714   9.673481
+146 -0.022857  -0.398790
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,456 - VANWYKSVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,457 - VANWYKSVLEI - INFO - This is the mse: 35.21545606577085
+
+2023-08-13 13:10:43,458 - VANWYKSVLEI - INFO - This is the rmse: 5.934261206398894
+
+2023-08-13 13:10:43,458 - VANWYKSVLEI - INFO - This is the mae: 4.684925659233236
+
+2023-08-13 13:10:43,458 - VANWYKSVLEI - INFO - This is the smape: 173.80006817781225
+
+2023-08-13 13:10:43,458 - VANWYKSVLEI - INFO - This is the smape_std_dev: 34.81829213045649
+
+2023-08-13 13:10:43,458 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,459 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 3 for split 1
+2023-08-13 13:10:43,459 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 3 for split 1
+2023-08-13 13:10:43,476 - VANWYKSVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    0.805128  -2.808426
+1    0.851282  -1.335188
+2    0.758974  -1.328101
+3    0.712821  -2.840908
+4    0.712821  -1.314746
+..        ...        ...
+142  0.866667  -1.335351
+143  0.923077  -1.007145
+144  0.353846  -3.453682
+145  0.512821  -1.337681
+146  0.630769  -0.879578
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,476 - VANWYKSVLEI - INFO - actual vs prediced is :       Actual  Predicted
+0    0.805128  -2.808426
+1    0.851282  -1.335188
+2    0.758974  -1.328101
+3    0.712821  -2.840908
+4    0.712821  -1.314746
+..        ...        ...
+142  0.866667  -1.335351
+143  0.923077  -1.007145
+144  0.353846  -3.453682
+145  0.512821  -1.337681
+146  0.630769  -0.879578
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,476 - VANWYKSVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,476 - VANWYKSVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - This is the mse: 6.134899072773837
+
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - This is the mse: 6.134899072773837
+
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - This is the rmse: 2.476872841462362
+
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - This is the rmse: 2.476872841462362
+
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - This is the mae: 2.290146912475144
+
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - This is the mae: 2.290146912475144
+
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - This is the smape: 199.33422879698142
+
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - This is the smape: 199.33422879698142
+
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - This is the smape_std_dev: 3.0370390000792367
+
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - This is the smape_std_dev: 3.0370390000792367
+
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:43,478 - VANWYKSVLEI - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-09-04 11:30:44,728 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 3 for split 0
+2023-09-04 11:30:44,758 - VANWYKSVLEI - INFO - actual vs prediced is :         Actual  Predicted
+0      0.331301   0.324701
+1      0.351626   0.302954
+2      0.392276   0.289253
+3      0.310976   0.281806
+4      0.325203   0.270097
+...         ...        ...
+26122  0.325203   0.333829
+26123  0.298780   0.324718
+26124  0.532520   0.513362
+26125  0.485772   0.490533
+26126  0.479675   0.474472
+
+[26127 rows x 2 columns]
+2023-09-04 11:30:44,758 - VANWYKSVLEI - INFO - saved to file :Results/TCN/3 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:44,759 - VANWYKSVLEI - INFO - This is the mse: 0.0007590178243276325
+
+2023-09-04 11:30:44,759 - VANWYKSVLEI - INFO - This is the rmse: 0.027550278117065036
+
+2023-09-04 11:30:44,759 - VANWYKSVLEI - INFO - This is the mae: 0.01937765949312349
+
+2023-09-04 11:30:44,759 - VANWYKSVLEI - INFO - This is the smape: 4.294638936046273
+
+2023-09-04 11:30:44,759 - VANWYKSVLEI - INFO - This is the smape_std_dev: 4.942788105758402
+
+2023-09-04 11:30:44,759 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:46,432 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 6 for split 0
+2023-09-04 11:30:46,467 - VANWYKSVLEI - INFO - actual vs prediced is :         Actual  Predicted
+0      0.331301   0.320765
+1      0.351626   0.305299
+2      0.392276   0.285215
+3      0.390244   0.270004
+4      0.406504   0.261556
+...         ...        ...
+52231  0.485772   0.494717
+52232  0.479675   0.469690
+52233  0.447154   0.452834
+52234  0.418699   0.441129
+52235  0.398374   0.430527
+
+[52236 rows x 2 columns]
+2023-09-04 11:30:46,467 - VANWYKSVLEI - INFO - saved to file :Results/TCN/6 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:46,468 - VANWYKSVLEI - INFO - This is the mse: 0.0011222306185365261
+
+2023-09-04 11:30:46,468 - VANWYKSVLEI - INFO - This is the rmse: 0.03349971072317679
+
+2023-09-04 11:30:46,468 - VANWYKSVLEI - INFO - This is the mae: 0.024120383054020162
+
+2023-09-04 11:30:46,468 - VANWYKSVLEI - INFO - This is the smape: 5.259944619098727
+
+2023-09-04 11:30:46,468 - VANWYKSVLEI - INFO - This is the smape_std_dev: 5.812868051646232
+
+2023-09-04 11:30:46,468 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 6 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:48,662 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 9 for split 0
+2023-09-04 11:30:48,715 - VANWYKSVLEI - INFO - actual vs prediced is :         Actual  Predicted
+0      0.613821   0.596400
+1      0.717480   0.675888
+2      0.770325   0.737633
+3      0.790650   0.778722
+4      0.831301   0.805127
+...         ...        ...
+78322  0.418699   0.430018
+78323  0.398374   0.414855
+78324  0.402439   0.400517
+78325  0.382114   0.384001
+78326  0.376016   0.372733
+
+[78327 rows x 2 columns]
+2023-09-04 11:30:48,715 - VANWYKSVLEI - INFO - saved to file :Results/TCN/9 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:48,715 - VANWYKSVLEI - INFO - This is the mse: 0.0014474418997372119
+
+2023-09-04 11:30:48,716 - VANWYKSVLEI - INFO - This is the rmse: 0.03804526119948727
+
+2023-09-04 11:30:48,716 - VANWYKSVLEI - INFO - This is the mae: 0.027258292096617877
+
+2023-09-04 11:30:48,716 - VANWYKSVLEI - INFO - This is the smape: 5.9343132031537005
+
+2023-09-04 11:30:48,716 - VANWYKSVLEI - INFO - This is the smape_std_dev: 6.605385268649585
+
+2023-09-04 11:30:48,716 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 9 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:51,679 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 12 for split 0
+2023-09-04 11:30:51,737 - VANWYKSVLEI - INFO - actual vs prediced is :          Actual  Predicted
+0       0.613821   0.594927
+1       0.717480   0.672322
+2       0.770325   0.739457
+3       0.790650   0.782327
+4       0.831301   0.811540
+...          ...        ...
+104395  0.382114   0.381959
+104396  0.376016   0.367781
+104397  0.361789   0.356769
+104398  0.357724   0.352041
+104399  0.329268   0.367476
+
+[104400 rows x 2 columns]
+2023-09-04 11:30:51,737 - VANWYKSVLEI - INFO - saved to file :Results/TCN/12 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:51,737 - VANWYKSVLEI - INFO - This is the mse: 0.0017712367671506224
+
+2023-09-04 11:30:51,737 - VANWYKSVLEI - INFO - This is the rmse: 0.04208606381155908
+
+2023-09-04 11:30:51,738 - VANWYKSVLEI - INFO - This is the mae: 0.030411620330471453
+
+2023-09-04 11:30:51,738 - VANWYKSVLEI - INFO - This is the smape: 6.574772854643456
+
+2023-09-04 11:30:51,738 - VANWYKSVLEI - INFO - This is the smape_std_dev: 7.145873136244675
+
+2023-09-04 11:30:51,738 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 12 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:57,618 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 24 for split 0
+2023-09-04 11:30:57,728 - VANWYKSVLEI - INFO - actual vs prediced is :          Actual  Predicted
+0       0.416667   0.426514
+1       0.361789   0.400653
+2       0.363821   0.380910
+3       0.349593   0.362736
+4       0.357724   0.349847
+...          ...        ...
+208507  0.709350   0.692191
+208508  0.695122   0.686279
+208509  0.670732   0.666035
+208510  0.638211   0.628214
+208511  0.597561   0.581809
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:57,728 - VANWYKSVLEI - INFO - saved to file :Results/TCN/24 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - This is the mse: 0.002442115979662398
+
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - This is the rmse: 0.04941776987746815
+
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - This is the mae: 0.036606876577421135
+
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - This is the smape: 7.953720536639961
+
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - This is the smape_std_dev: 8.563745475447227
+
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

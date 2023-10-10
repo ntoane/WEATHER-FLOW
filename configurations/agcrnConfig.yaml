@@ -1,0 +1,146 @@
+num_nodes:
+  type: int
+  default: 45
+  help: number of nodes in the graph
+lag:
+  type: int
+  default: 24
+  help: lag value for the model
+horizon:
+  type: int
+  default: 24
+  help: prediction horizon
+val_ratio:
+  type: float
+  default: 0.2
+  help: validation set ratio
+test_ratio:
+  type: float
+  default: 0.2
+  help: test set ratio
+tod:
+  type: bool
+  default: false
+  help: time of day flag
+normalizer:
+  type: str
+  default: 'std'
+  help: type of normalizer used
+column_wise:
+  type: bool
+  default: true
+  help: whether normalization is column-wise
+default_graph:
+  type: bool
+  default: true
+  help: whether to use the default graph
+input_dim:
+  type: int
+  default: 6
+  help: dimension of input data
+output_dim:
+  type: int
+  default: 1
+  help: dimension of output data
+embed_dim:
+  type: int
+  default: 10
+  help: embedding dimension
+rnn_units:
+  type: int
+  default: 64
+  help: number of RNN units
+num_layers:
+  type: int
+  default: 2
+  help: number of RNN layers
+cheb_order:
+  type: int
+  default: 2
+  help: order of Chebyshev polynomial
+loss_func:
+  type: str
+  default: 'mae'
+  help: loss function for training
+seed:
+  type: int
+  default: 10
+  help: random seed
+batch_size:
+  type: int
+  default: 32
+  help: size of batches for training
+epochs:
+  type: int
+  default: 40
+  help: number of training epochs
+lr_init:
+  type: float
+  default: 0.003 #0.003
+  help: initial learning rate
+lr_decay:
+  type: bool
+  default: false
+  help: whether to use learning rate decay
+lr_decay_rate:
+  type: float
+  default: 0.3
+  help: learning rate decay rate
+lr_decay_step:
+  type: list
+  default: [5, 20, 40, 70]
+  help: learning rate decay steps
+early_stop:
+  type: bool
+  default: true
+  help: whether to use early stopping
+early_stop_patience:
+  type: int
+  default: 15
+  help: patience for early stopping
+grad_norm:
+  type: bool
+  default: false
+  help: whether to normalize gradients
+max_grad_norm:
+  type: int
+  default: 5
+  help: maximum gradient norm
+real_value:
+  type: bool
+  default: false
+  help: whether to use real values
+mae_thresh:
+  type: str
+  default: None
+  help: MAE threshold for testing
+mape_thresh:
+  type: float
+  default: None
+  help: MAPE threshold for testing
+log_step:
+  type: int
+  default: 20
+  help: step size for logging
+plot:
+  type: bool
+  default: false
+  help: whether to plot results
+
+debug:
+  type: bool
+  default: false
+  help: debug
+model:
+  type: str
+  default: AGCRN
+  help: model name
+teacher_forcing:
+  type: bool
+  default: False
+  help: teacher forcing
+
+device:
+  type: string
+  default: cuda:0
+  help: device

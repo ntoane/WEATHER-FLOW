@@ -1,0 +1,160 @@
+2023-08-12 23:52:47,163 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-12 23:52:47,180 - PORTERVILLE - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 3.
+2023-08-12 23:52:47,185 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-08-12 23:52:47,185 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-08-12 23:52:47,196 - PORTERVILLE - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 6.
+2023-08-12 23:52:47,196 - PORTERVILLE - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 6.
+2023-08-13 00:44:40,827 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-13 00:44:40,829 - PORTERVILLE - ERROR - Error! : Unable to read data or write metrics for station PORTERVILLE and horizon length 3.
+2023-08-13 01:02:48,502 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-13 01:02:48,505 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,691 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-13 01:07:12,696 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,015 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-13 01:10:08,023 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,030 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,038 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,039 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-08-13 01:10:08,039 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-08-13 01:10:08,042 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,042 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,045 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,045 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,053 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,053 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,090 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-13 12:35:15,095 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,098 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,101 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,817 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-08-13 12:44:40,828 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,834 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,837 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,838 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-08-13 12:44:40,838 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-08-13 12:44:40,844 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,844 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,848 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,848 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,853 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,853 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:07,554 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-09-07 14:52:08,071 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:08,071 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-09-07 14:52:08,071 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-09-07 14:52:09,116 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:09,116 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:09,117 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 9
+2023-09-07 14:52:09,117 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 9
+2023-09-07 14:52:09,117 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 9
+2023-09-07 14:52:10,332 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:10,332 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:10,332 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:10,333 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 14:52:10,333 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 14:52:10,333 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 14:52:10,333 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 14:52:11,561 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:11,561 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:11,561 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:11,561 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:11,562 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 14:52:11,562 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 14:52:11,562 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 14:52:11,562 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 14:52:11,562 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 14:52:13,033 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:13,033 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:13,033 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:13,033 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:13,033 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,673 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-09-07 15:21:48,854 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,855 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:48,855 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-09-07 15:21:48,855 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-09-07 15:21:49,242 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:49,242 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:49,242 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:49,242 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:49,243 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 9
+2023-09-07 15:21:49,243 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 9
+2023-09-07 15:21:49,243 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 9
+2023-09-07 15:21:49,815 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:49,815 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:49,815 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:49,815 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:49,815 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:49,815 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:49,816 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 15:21:49,816 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 15:21:49,816 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 15:21:49,816 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 15:21:50,764 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:50,764 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:50,764 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:50,764 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:50,765 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:50,765 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:50,765 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:50,765 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:50,766 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 15:21:50,766 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 15:21:50,766 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 15:21:50,766 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 15:21:50,766 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 15:21:52,439 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,439 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,439 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,439 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,439 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,439 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,439 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,439 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,439 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:52,439 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,128 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 3
+2023-09-07 15:25:23,301 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,301 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,302 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-09-07 15:25:23,302 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 6
+2023-09-07 15:25:23,632 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,632 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,635 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,635 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:23,635 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 9
+2023-09-07 15:25:23,635 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 9
+2023-09-07 15:25:23,635 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 9
+2023-09-07 15:25:24,132 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,132 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,132 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,133 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,133 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,133 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,133 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 15:25:24,133 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 15:25:24,133 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 15:25:24,133 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 12
+2023-09-07 15:25:24,825 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,825 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,825 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,825 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,826 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,826 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,826 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,826 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:24,827 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 15:25:24,827 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 15:25:24,827 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 15:25:24,827 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 15:25:24,827 - PORTERVILLE - INFO - GWN evaluation started atPORTERVILLE for the horizon of 24
+2023-09-07 15:25:26,434 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,434 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,434 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,434 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,434 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,434 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,434 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,434 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,434 - PORTERVILLE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:26,434 - PORTERVILLE - INFO - Finished computing evaluation error metrics.

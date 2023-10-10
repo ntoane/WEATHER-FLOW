@@ -1,0 +1,29 @@
+2023-08-05 13:45:57,334 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 24
+2023-08-05 13:45:57,335 - GRAAFF - REINET - ERROR - Error! : Unable to read data or write metrics for station GRAAFF - REINET and horizon length 24.
+2023-09-04 11:30:54,062 - GRAAFF - REINET - INFO - TCN evaluation started atGRAAFF - REINET for the horizon of 24 for split 0
+2023-09-04 11:30:54,181 - GRAAFF - REINET - INFO - actual vs prediced is :          Actual  Predicted
+0       0.380282   0.418199
+1       0.358149   0.396903
+2       0.394366   0.379977
+3       0.372233   0.366443
+4       0.319920   0.346030
+...          ...        ...
+208507  0.613682   0.687554
+208508  0.613682   0.678448
+208509  0.595573   0.660853
+208510  0.547284   0.620124
+208511  0.472837   0.574589
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:54,181 - GRAAFF - REINET - INFO - saved to file :Results/TCN/24 Hour Forecast/GRAAFF - REINET/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:54,181 - GRAAFF - REINET - INFO - This is the mse: 0.004945075583341239
+
+2023-09-04 11:30:54,181 - GRAAFF - REINET - INFO - This is the rmse: 0.0703212313838519
+
+2023-09-04 11:30:54,181 - GRAAFF - REINET - INFO - This is the mae: 0.0539022146710681
+
+2023-09-04 11:30:54,182 - GRAAFF - REINET - INFO - This is the smape: 12.280008313265503
+
+2023-09-04 11:30:54,182 - GRAAFF - REINET - INFO - This is the smape_std_dev: 13.524113091674357
+
+2023-09-04 11:30:54,182 - GRAAFF - REINET - INFO - TCN evaluation of GRAAFF - REINET for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

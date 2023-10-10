@@ -1,0 +1,29 @@
+2023-08-05 13:45:57,508 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 24
+2023-08-05 13:45:57,509 - VANWYKSVLEI - ERROR - Error! : Unable to read data or write metrics for station VANWYKSVLEI and horizon length 24.
+2023-09-04 11:30:57,618 - VANWYKSVLEI - INFO - TCN evaluation started atVANWYKSVLEI for the horizon of 24 for split 0
+2023-09-04 11:30:57,728 - VANWYKSVLEI - INFO - actual vs prediced is :          Actual  Predicted
+0       0.416667   0.426514
+1       0.361789   0.400653
+2       0.363821   0.380910
+3       0.349593   0.362736
+4       0.357724   0.349847
+...          ...        ...
+208507  0.709350   0.692191
+208508  0.695122   0.686279
+208509  0.670732   0.666035
+208510  0.638211   0.628214
+208511  0.597561   0.581809
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:57,728 - VANWYKSVLEI - INFO - saved to file :Results/TCN/24 Hour Forecast/VANWYKSVLEI/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - This is the mse: 0.002442115979662398
+
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - This is the rmse: 0.04941776987746815
+
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - This is the mae: 0.036606876577421135
+
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - This is the smape: 7.953720536639961
+
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - This is the smape_std_dev: 8.563745475447227
+
+2023-09-04 11:30:57,729 - VANWYKSVLEI - INFO - TCN evaluation of VANWYKSVLEI for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

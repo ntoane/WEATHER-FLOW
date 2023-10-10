@@ -1,0 +1,160 @@
+2023-08-12 23:52:47,283 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-12 23:52:47,285 - UITENHAGE - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 3.
+2023-08-12 23:52:47,285 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-08-12 23:52:47,285 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-08-12 23:52:47,292 - UITENHAGE - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 6.
+2023-08-12 23:52:47,292 - UITENHAGE - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 6.
+2023-08-13 00:44:40,842 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-13 00:44:40,843 - UITENHAGE - ERROR - Error! : Unable to read data or write metrics for station UITENHAGE and horizon length 3.
+2023-08-13 01:02:48,531 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-13 01:02:48,535 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,718 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-13 01:07:12,722 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,181 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-13 01:10:08,186 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,189 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,194 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,194 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-08-13 01:10:08,194 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-08-13 01:10:08,205 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,205 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,209 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,209 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,215 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,215 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,275 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-13 12:35:15,279 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,289 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,293 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,372 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-08-13 12:44:41,376 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,390 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,399 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,401 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-08-13 12:44:41,401 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-08-13 12:44:41,411 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,411 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,417 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,417 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,426 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,426 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:47,089 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-09-07 14:52:47,673 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:47,674 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-09-07 14:52:47,674 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-09-07 14:52:48,606 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:48,606 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:48,607 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 9
+2023-09-07 14:52:48,607 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 9
+2023-09-07 14:52:48,607 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 9
+2023-09-07 14:52:49,868 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:49,868 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:49,868 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:49,868 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 14:52:49,868 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 14:52:49,868 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 14:52:49,868 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 14:52:51,103 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:51,103 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:51,103 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:51,103 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:51,103 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 14:52:51,103 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 14:52:51,103 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 14:52:51,103 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 14:52:51,103 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 14:52:52,586 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:52,586 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:52,586 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:52,586 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:52:52,586 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:13,653 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-09-07 15:22:13,839 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:13,840 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:13,840 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-09-07 15:22:13,840 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-09-07 15:22:14,309 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:14,309 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:14,310 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:14,310 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:14,310 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 9
+2023-09-07 15:22:14,310 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 9
+2023-09-07 15:22:14,310 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 9
+2023-09-07 15:22:14,829 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:14,829 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:14,829 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:14,831 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:14,831 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:14,831 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:14,832 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 15:22:14,832 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 15:22:14,832 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 15:22:14,832 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 15:22:15,617 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:15,617 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:15,617 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:15,617 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:15,618 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:15,618 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:15,618 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:15,618 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:15,619 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 15:22:15,619 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 15:22:15,619 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 15:22:15,619 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 15:22:15,619 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 15:22:17,620 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,620 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,620 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,620 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,620 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,620 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,620 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,620 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,620 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:17,620 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:47,189 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 3
+2023-09-07 15:25:47,376 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:47,376 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:47,377 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-09-07 15:25:47,377 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 6
+2023-09-07 15:25:47,754 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:47,754 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:47,755 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:47,755 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:47,755 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 9
+2023-09-07 15:25:47,755 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 9
+2023-09-07 15:25:47,755 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 9
+2023-09-07 15:25:48,258 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,258 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,258 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,258 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,258 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,258 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,259 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 15:25:48,259 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 15:25:48,259 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 15:25:48,259 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 12
+2023-09-07 15:25:48,902 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,902 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,902 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,902 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,902 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,902 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,902 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,902 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:48,903 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 15:25:48,903 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 15:25:48,903 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 15:25:48,903 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 15:25:48,903 - UITENHAGE - INFO - GWN evaluation started atUITENHAGE for the horizon of 24
+2023-09-07 15:25:51,377 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,377 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,377 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,377 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,377 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,378 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,378 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,378 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,378 - UITENHAGE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:51,378 - UITENHAGE - INFO - Finished computing evaluation error metrics.

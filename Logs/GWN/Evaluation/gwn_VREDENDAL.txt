@@ -1,0 +1,160 @@
+2023-08-12 23:52:47,319 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-12 23:52:47,323 - VREDENDAL - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 3.
+2023-08-12 23:52:47,324 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-12 23:52:47,324 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-12 23:52:47,326 - VREDENDAL - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 6.
+2023-08-12 23:52:47,326 - VREDENDAL - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 6.
+2023-08-13 00:44:40,849 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 00:44:40,850 - VREDENDAL - ERROR - Error! : Unable to read data or write metrics for station VREDENDAL and horizon length 3.
+2023-08-13 01:02:48,546 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 01:02:48,549 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,735 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 01:07:12,739 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,494 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 01:10:08,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,503 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,506 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,507 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-13 01:10:08,507 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-13 01:10:08,514 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,514 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,522 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,522 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,529 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:08,529 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,353 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 12:35:15,357 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,361 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,367 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,550 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-08-13 12:44:41,554 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,563 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,568 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,569 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-13 12:44:41,569 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-08-13 12:44:41,573 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,573 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,582 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,582 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,587 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:41,587 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:09,854 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-09-07 14:53:10,365 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:10,365 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-09-07 14:53:10,365 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-09-07 14:53:11,331 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:11,331 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:11,332 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 9
+2023-09-07 14:53:11,332 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 9
+2023-09-07 14:53:11,332 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 9
+2023-09-07 14:53:12,659 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:12,659 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:12,659 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:12,660 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 14:53:12,660 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 14:53:12,660 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 14:53:12,660 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 14:53:13,947 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:13,947 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:13,947 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:13,947 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:13,948 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 14:53:13,948 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 14:53:13,948 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 14:53:13,948 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 14:53:13,948 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 14:53:15,652 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:15,652 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:15,652 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:15,652 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:53:15,652 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:29,058 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-09-07 15:22:29,237 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:29,237 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:29,238 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-09-07 15:22:29,238 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-09-07 15:22:29,577 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:29,577 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:29,578 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:29,578 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:29,580 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 9
+2023-09-07 15:22:29,580 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 9
+2023-09-07 15:22:29,580 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 9
+2023-09-07 15:22:30,085 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,085 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,085 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,085 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,085 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,085 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,086 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 15:22:30,086 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 15:22:30,086 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 15:22:30,086 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 15:22:30,754 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,754 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,754 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,754 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,755 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,755 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,755 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,755 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:30,755 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 15:22:30,755 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 15:22:30,755 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 15:22:30,755 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 15:22:30,755 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 15:22:32,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:32,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:32,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:32,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:32,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:32,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:32,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:32,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:32,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:22:32,497 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:02,204 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 3
+2023-09-07 15:26:02,749 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:02,749 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:02,750 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-09-07 15:26:02,750 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 6
+2023-09-07 15:26:03,147 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:03,147 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:03,147 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:03,147 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:03,148 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 9
+2023-09-07 15:26:03,148 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 9
+2023-09-07 15:26:03,148 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 9
+2023-09-07 15:26:03,800 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:03,800 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:03,800 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:03,801 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:03,801 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:03,801 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:03,801 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 15:26:03,801 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 15:26:03,801 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 15:26:03,801 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 12
+2023-09-07 15:26:04,444 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:04,444 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:04,444 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:04,444 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:04,444 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:04,444 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:04,444 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:04,444 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:04,445 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 15:26:04,445 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 15:26:04,445 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 15:26:04,445 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 15:26:04,445 - VREDENDAL - INFO - GWN evaluation started atVREDENDAL for the horizon of 24
+2023-09-07 15:26:06,327 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:06,327 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:06,327 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:06,327 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:06,327 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:06,330 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:06,330 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:06,330 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:06,330 - VREDENDAL - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:26:06,330 - VREDENDAL - INFO - Finished computing evaluation error metrics.

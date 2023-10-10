@@ -1,0 +1,160 @@
+2023-08-12 23:52:46,852 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-12 23:52:46,854 - CALVINIA WO - ERROR - Error! : Unable to read data or write metrics for station CALVINIA WO and horizon length 3.
+2023-08-12 23:52:46,854 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-08-12 23:52:46,854 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-08-12 23:52:46,857 - CALVINIA WO - ERROR - Error! : Unable to read data or write metrics for station CALVINIA WO and horizon length 6.
+2023-08-12 23:52:46,857 - CALVINIA WO - ERROR - Error! : Unable to read data or write metrics for station CALVINIA WO and horizon length 6.
+2023-08-13 00:44:40,769 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-13 00:44:40,770 - CALVINIA WO - ERROR - Error! : Unable to read data or write metrics for station CALVINIA WO and horizon length 3.
+2023-08-13 01:02:48,382 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-13 01:02:48,386 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,567 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-13 01:07:12,570 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,647 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-13 01:10:06,651 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,654 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,660 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,663 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-08-13 01:10:06,663 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-08-13 01:10:06,668 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,668 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,673 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,673 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,677 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:06,677 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,369 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-13 12:35:14,373 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,377 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,381 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,772 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 3
+2023-08-13 12:44:39,775 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,779 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,785 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,785 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-08-13 12:44:39,785 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-08-13 12:44:39,789 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,789 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,793 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,793 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,797 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:39,797 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:35,739 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 3
+2023-09-07 14:49:36,258 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:36,260 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-09-07 14:49:36,260 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-09-07 14:49:37,253 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:37,253 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:37,254 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 9
+2023-09-07 14:49:37,254 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 9
+2023-09-07 14:49:37,254 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 9
+2023-09-07 14:49:38,381 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:38,381 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:38,381 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:38,382 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 14:49:38,382 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 14:49:38,382 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 14:49:38,382 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 14:49:39,602 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:39,602 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:39,602 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:39,602 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:39,603 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 14:49:39,603 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 14:49:39,603 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 14:49:39,603 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 14:49:39,603 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 14:49:41,234 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:41,234 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:41,234 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:41,234 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:49:41,234 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:14,481 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 3
+2023-09-07 15:20:14,661 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:14,661 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:14,662 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-09-07 15:20:14,662 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-09-07 15:20:14,999 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:14,999 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:15,000 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:15,000 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:15,000 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 9
+2023-09-07 15:20:15,000 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 9
+2023-09-07 15:20:15,000 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 9
+2023-09-07 15:20:15,512 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:15,512 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:15,512 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:15,512 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:15,512 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:15,512 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:15,513 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 15:20:15,513 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 15:20:15,513 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 15:20:15,513 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 15:20:16,325 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:16,325 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:16,325 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:16,325 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:16,326 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:16,326 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:16,326 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:16,326 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:16,326 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 15:20:16,326 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 15:20:16,326 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 15:20:16,326 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 15:20:16,326 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 15:20:18,239 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,239 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,239 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,239 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,239 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,240 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,240 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,240 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,240 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:20:18,240 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:46,646 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 3
+2023-09-07 15:23:46,838 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:46,839 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:46,839 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-09-07 15:23:46,839 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 6
+2023-09-07 15:23:47,287 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:47,287 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:47,289 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:47,289 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:47,297 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 9
+2023-09-07 15:23:47,297 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 9
+2023-09-07 15:23:47,297 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 9
+2023-09-07 15:23:47,892 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:47,892 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:47,892 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:47,892 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:47,892 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:47,892 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:47,893 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 15:23:47,893 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 15:23:47,893 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 15:23:47,893 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 12
+2023-09-07 15:23:48,614 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:48,614 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:48,614 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:48,614 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:48,615 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:48,615 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:48,615 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:48,615 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:48,615 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 15:23:48,615 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 15:23:48,615 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 15:23:48,615 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 15:23:48,615 - CALVINIA WO - INFO - GWN evaluation started atCALVINIA WO for the horizon of 24
+2023-09-07 15:23:50,425 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,425 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,425 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,425 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,425 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,426 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,426 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,426 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,426 - CALVINIA WO - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:23:50,426 - CALVINIA WO - INFO - Finished computing evaluation error metrics.

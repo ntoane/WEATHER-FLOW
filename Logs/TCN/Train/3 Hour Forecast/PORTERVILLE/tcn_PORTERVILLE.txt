@@ -1,0 +1,9 @@
+2023-08-13 00:16:56,116 - PORTERVILLE - INFO - TCN model training started at PORTERVILLE
+2023-08-13 00:16:56,286 - PORTERVILLE - INFO - TCN Model on split 1/1 at PORTERVILLE station forecasting 3 hours ahead.
+2023-08-13 00:17:01,624 - PORTERVILLE - INFO - Loss: [25.5097713470459, 55.90498352050781]
+2023-08-13 00:17:01,624 - PORTERVILLE - INFO - Val Loss: [55.600433349609375, 2.0981802940368652]
+2023-08-13 00:17:03,008 - PORTERVILLE - INFO - TCN training done on split 1/1 at PORTERVILLE station forecasting 3 hours ahead.
+2023-08-13 00:17:03,009 - PORTERVILLE - INFO - TCN training finished at PORTERVILLE
+2023-08-13 13:03:01,152 - PORTERVILLE - INFO - TCN model training started at PORTERVILLE
+2023-08-13 13:03:01,326 - PORTERVILLE - INFO - TCN Model on split 1/2 at PORTERVILLE station forecasting 3 hours ahead.
+2023-08-13 13:03:08,338 - PORTERVILLE - INFO - TCN Model on split 2/2 at PORTERVILLE station forecasting 3 hours ahead.

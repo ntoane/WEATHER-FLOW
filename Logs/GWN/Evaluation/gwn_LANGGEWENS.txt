@@ -1,0 +1,160 @@
+2023-08-12 23:52:46,942 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-12 23:52:46,943 - LANGGEWENS - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 3.
+2023-08-12 23:52:46,944 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-08-12 23:52:46,944 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-08-12 23:52:46,946 - LANGGEWENS - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 6.
+2023-08-12 23:52:46,946 - LANGGEWENS - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 6.
+2023-08-13 00:44:40,801 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 00:44:40,804 - LANGGEWENS - ERROR - Error! : Unable to read data or write metrics for station LANGGEWENS and horizon length 3.
+2023-08-13 01:02:48,451 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 01:02:48,455 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,635 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 01:07:12,639 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,640 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 01:10:07,644 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,648 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,653 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,654 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-08-13 01:10:07,654 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-08-13 01:10:07,659 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,659 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,663 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,663 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,669 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,669 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,827 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 12:35:14,830 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,836 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,842 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,196 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-08-13 12:44:40,199 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,202 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,205 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,206 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-08-13 12:44:40,206 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-08-13 12:44:40,210 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,210 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,213 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,213 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,216 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,216 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:01,498 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-09-07 14:51:02,102 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:02,102 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-09-07 14:51:02,102 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-09-07 14:51:02,998 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:02,998 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:02,998 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 9
+2023-09-07 14:51:02,998 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 9
+2023-09-07 14:51:02,998 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 9
+2023-09-07 14:51:04,353 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:04,353 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:04,353 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:04,353 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 14:51:04,353 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 14:51:04,353 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 14:51:04,353 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 14:51:05,546 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:05,546 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:05,546 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:05,546 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:05,547 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 14:51:05,547 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 14:51:05,547 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 14:51:05,547 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 14:51:05,547 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 14:51:07,540 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:07,540 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:07,540 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:07,540 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:07,540 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,293 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-09-07 15:21:07,475 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,476 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,476 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-09-07 15:21:07,476 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-09-07 15:21:07,814 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,814 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,814 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,814 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:07,815 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 9
+2023-09-07 15:21:07,815 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 9
+2023-09-07 15:21:07,815 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 9
+2023-09-07 15:21:08,460 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:08,460 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:08,460 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:08,460 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:08,460 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:08,460 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:08,461 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 15:21:08,461 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 15:21:08,461 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 15:21:08,461 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 15:21:09,125 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:09,125 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:09,125 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:09,125 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:09,126 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:09,126 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:09,126 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:09,126 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:09,127 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 15:21:09,127 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 15:21:09,127 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 15:21:09,127 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 15:21:09,127 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 15:21:10,768 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,768 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,768 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,768 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,768 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,769 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,769 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,769 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,769 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,769 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,290 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 3
+2023-09-07 15:24:44,860 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,861 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:44,862 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-09-07 15:24:44,862 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 6
+2023-09-07 15:24:45,304 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:45,304 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:45,305 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:45,305 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:45,305 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 9
+2023-09-07 15:24:45,305 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 9
+2023-09-07 15:24:45,305 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 9
+2023-09-07 15:24:45,906 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:45,906 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:45,906 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:45,906 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:45,906 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:45,906 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:45,907 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 15:24:45,907 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 15:24:45,907 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 15:24:45,907 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 12
+2023-09-07 15:24:46,607 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:46,607 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:46,607 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:46,607 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:46,607 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:46,607 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:46,607 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:46,607 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:46,608 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 15:24:46,608 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 15:24:46,608 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 15:24:46,608 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 15:24:46,608 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.

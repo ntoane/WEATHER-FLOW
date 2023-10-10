@@ -1,0 +1,9 @@
+2023-08-13 00:17:27,839 - SOMERSET EAST - INFO - TCN model training started at SOMERSET EAST
+2023-08-13 00:17:28,115 - SOMERSET EAST - INFO - TCN Model on split 1/1 at SOMERSET EAST station forecasting 3 hours ahead.
+2023-08-13 00:17:35,163 - SOMERSET EAST - INFO - Loss: [23.187192916870117, 7.276095867156982]
+2023-08-13 00:17:35,163 - SOMERSET EAST - INFO - Val Loss: [7.188308238983154, 6.887502670288086]
+2023-08-13 00:17:37,254 - SOMERSET EAST - INFO - TCN training done on split 1/1 at SOMERSET EAST station forecasting 3 hours ahead.
+2023-08-13 00:17:37,255 - SOMERSET EAST - INFO - TCN training finished at SOMERSET EAST
+2023-08-13 13:04:03,594 - SOMERSET EAST - INFO - TCN model training started at SOMERSET EAST
+2023-08-13 13:04:03,761 - SOMERSET EAST - INFO - TCN Model on split 1/2 at SOMERSET EAST station forecasting 3 hours ahead.
+2023-08-13 13:04:10,873 - SOMERSET EAST - INFO - TCN Model on split 2/2 at SOMERSET EAST station forecasting 3 hours ahead.

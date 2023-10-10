@@ -1,0 +1,29 @@
+2023-08-05 13:45:57,367 - POFADDER - INFO - TCN evaluation started atPOFADDER for the horizon of 24
+2023-08-05 13:45:57,368 - POFADDER - ERROR - Error! : Unable to read data or write metrics for station POFADDER and horizon length 24.
+2023-09-04 11:30:55,359 - POFADDER - INFO - TCN evaluation started atPOFADDER for the horizon of 24 for split 0
+2023-09-04 11:30:55,476 - POFADDER - INFO - actual vs prediced is :          Actual  Predicted
+0       0.361702   0.360623
+1       0.349882   0.346174
+2       0.335697   0.332012
+3       0.328605   0.323445
+4       0.323877   0.318181
+...          ...        ...
+208507  0.654846   0.661208
+208508  0.650118   0.659538
+208509  0.638298   0.639750
+208510  0.607565   0.614323
+208511  0.588652   0.581499
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:55,476 - POFADDER - INFO - saved to file :Results/TCN/24 Hour Forecast/POFADDER/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:55,476 - POFADDER - INFO - This is the mse: 0.0030245722229707735
+
+2023-09-04 11:30:55,477 - POFADDER - INFO - This is the rmse: 0.05499611098042091
+
+2023-09-04 11:30:55,477 - POFADDER - INFO - This is the mae: 0.04180576323535335
+
+2023-09-04 11:30:55,477 - POFADDER - INFO - This is the smape: 9.78454454516697
+
+2023-09-04 11:30:55,477 - POFADDER - INFO - This is the smape_std_dev: 10.773711803204378
+
+2023-09-04 11:30:55,477 - POFADDER - INFO - TCN evaluation of POFADDER for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

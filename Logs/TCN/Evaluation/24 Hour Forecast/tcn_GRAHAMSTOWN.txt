@@ -1,0 +1,29 @@
+2023-08-05 13:45:57,336 - GRAHAMSTOWN - INFO - TCN evaluation started atGRAHAMSTOWN for the horizon of 24
+2023-08-05 13:45:57,337 - GRAHAMSTOWN - ERROR - Error! : Unable to read data or write metrics for station GRAHAMSTOWN and horizon length 24.
+2023-09-04 11:30:54,183 - GRAHAMSTOWN - INFO - TCN evaluation started atGRAHAMSTOWN for the horizon of 24 for split 0
+2023-09-04 11:30:54,303 - GRAHAMSTOWN - INFO - actual vs prediced is :          Actual  Predicted
+0       0.288221   0.287381
+1       0.280702   0.284788
+2       0.305764   0.284944
+3       0.310777   0.283130
+4       0.305764   0.281520
+...          ...        ...
+208507  0.473684   0.507329
+208508  0.453634   0.484201
+208509  0.423559   0.454652
+208510  0.390977   0.424126
+208511  0.388471   0.395061
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:54,304 - GRAHAMSTOWN - INFO - saved to file :Results/TCN/24 Hour Forecast/GRAHAMSTOWN/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:54,304 - GRAHAMSTOWN - INFO - This is the mse: 0.004337256499627182
+
+2023-09-04 11:30:54,304 - GRAHAMSTOWN - INFO - This is the rmse: 0.06585785070610171
+
+2023-09-04 11:30:54,304 - GRAHAMSTOWN - INFO - This is the mae: 0.04835582484354603
+
+2023-09-04 11:30:54,305 - GRAHAMSTOWN - INFO - This is the smape: 12.653768529856386
+
+2023-09-04 11:30:54,305 - GRAHAMSTOWN - INFO - This is the smape_std_dev: 11.692738563746595
+
+2023-09-04 11:30:54,305 - GRAHAMSTOWN - INFO - TCN evaluation of GRAHAMSTOWN for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

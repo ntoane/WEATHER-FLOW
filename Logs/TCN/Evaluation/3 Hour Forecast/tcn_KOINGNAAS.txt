@@ -1,0 +1,316 @@
+2023-08-13 00:19:40,350 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 3
+2023-08-13 00:19:40,364 - KOINGNAAS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.855856  -6.333919
+1    0.837838  -1.597403
+2    0.864865  -2.361102
+3    0.945946  -6.612125
+4    0.954955  -1.378400
+..        ...        ...
+142  0.288288  -2.021002
+143  0.405405  -2.965117
+144  0.090090  -6.271666
+145  0.045045  -1.489513
+146  0.036036  -3.100274
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,364 - KOINGNAAS - INFO - saved to file :Results/TCN/3 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,366 - KOINGNAAS - ERROR - Error! : Unable to read data or write metrics for station KOINGNAAS and horizon length 3.
+2023-08-13 00:23:06,807 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 3
+2023-08-13 00:23:06,834 - KOINGNAAS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.855856  -6.333919
+1    0.837838  -1.597403
+2    0.864865  -2.361102
+3    0.945946  -6.612125
+4    0.954955  -1.378400
+..        ...        ...
+142  0.288288  -2.021002
+143  0.405405  -2.965117
+144  0.090090  -6.271666
+145  0.045045  -1.489513
+146  0.036036  -3.100274
+
+[147 rows x 2 columns]
+2023-08-13 00:23:06,835 - KOINGNAAS - INFO - saved to file :Results/TCN/3 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:06,842 - KOINGNAAS - INFO - This is the mse: 20.663949930193024
+
+2023-08-13 00:23:06,842 - KOINGNAAS - INFO - This is the rmse: 4.54576175466698
+
+2023-08-13 00:23:06,842 - KOINGNAAS - INFO - This is the mae: 3.988787327076056
+
+2023-08-13 00:23:06,842 - KOINGNAAS - INFO - This is the smape: 199.92368283978323
+
+2023-08-13 00:23:06,842 - KOINGNAAS - INFO - This is the smape_std_dev: 0.5787599793586128
+
+2023-08-13 00:23:06,842 - KOINGNAAS - INFO - TCN evaluation of KOINGNAAS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,257 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 3
+2023-08-13 00:34:27,272 - KOINGNAAS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.855856  -6.333919
+1    0.837838  -1.597403
+2    0.864865  -2.361102
+3    0.945946  -6.612125
+4    0.954955  -1.378400
+..        ...        ...
+142  0.288288  -2.021002
+143  0.405405  -2.965117
+144  0.090090  -6.271666
+145  0.045045  -1.489513
+146  0.036036  -3.100274
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,272 - KOINGNAAS - INFO - saved to file :Results/TCN/3 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,274 - KOINGNAAS - INFO - This is the mse: 20.663949930193024
+
+2023-08-13 00:34:27,274 - KOINGNAAS - INFO - This is the rmse: 4.54576175466698
+
+2023-08-13 00:34:27,274 - KOINGNAAS - INFO - This is the mae: 3.988787327076056
+
+2023-08-13 00:34:27,274 - KOINGNAAS - INFO - This is the smape: 199.92368283978323
+
+2023-08-13 00:34:27,274 - KOINGNAAS - INFO - This is the smape_std_dev: 0.5787599793586128
+
+2023-08-13 00:34:27,274 - KOINGNAAS - INFO - TCN evaluation of KOINGNAAS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,050 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 3
+2023-08-13 00:41:00,176 - KOINGNAAS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.855856  -6.333919
+1    0.837838  -1.597403
+2    0.864865  -2.361102
+3    0.945946  -6.612125
+4    0.954955  -1.378400
+..        ...        ...
+142  0.288288  -2.021002
+143  0.405405  -2.965117
+144  0.090090  -6.271666
+145  0.045045  -1.489513
+146  0.036036  -3.100274
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,176 - KOINGNAAS - INFO - saved to file :Results/TCN/3 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,178 - KOINGNAAS - INFO - This is the mse: 20.663949930193024
+
+2023-08-13 00:41:00,178 - KOINGNAAS - INFO - This is the rmse: 4.54576175466698
+
+2023-08-13 00:41:00,178 - KOINGNAAS - INFO - This is the mae: 3.988787327076056
+
+2023-08-13 00:41:00,178 - KOINGNAAS - INFO - This is the smape: 199.92368283978323
+
+2023-08-13 00:41:00,178 - KOINGNAAS - INFO - This is the smape_std_dev: 0.5787599793586128
+
+2023-08-13 00:41:00,178 - KOINGNAAS - INFO - TCN evaluation of KOINGNAAS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,418 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 3 for split 0
+2023-08-13 13:10:42,482 - KOINGNAAS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.855856   0.576808
+1    0.837838  -7.491098
+2    0.864865   2.262276
+3    0.945946   0.859573
+4    0.954955  -7.474851
+..        ...        ...
+142  0.288288  -7.617916
+143  0.405405  -0.313455
+144  0.090090   0.718294
+145  0.045045  -7.099237
+146  0.036036   0.367435
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,482 - KOINGNAAS - INFO - saved to file :Results/TCN/3 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,485 - KOINGNAAS - INFO - This is the mse: 21.63424977329012
+
+2023-08-13 13:10:42,486 - KOINGNAAS - INFO - This is the rmse: 4.651263244892737
+
+2023-08-13 13:10:42,486 - KOINGNAAS - INFO - This is the mae: 3.0940813667653364
+
+2023-08-13 13:10:42,486 - KOINGNAAS - INFO - This is the smape: 129.31426908922035
+
+2023-08-13 13:10:42,486 - KOINGNAAS - INFO - This is the smape_std_dev: 73.02246134714561
+
+2023-08-13 13:10:42,486 - KOINGNAAS - INFO - TCN evaluation of KOINGNAAS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,489 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 3 for split 1
+2023-08-13 13:10:42,489 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 3 for split 1
+2023-08-13 13:10:42,509 - KOINGNAAS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.707692   1.331522
+1    0.630769  -0.107475
+2    0.523077  -0.681645
+3    0.753846   1.310012
+4    0.638462  -0.011829
+..        ...        ...
+142  0.653846  -0.212768
+143  0.738462  -0.718343
+144  0.307692   0.735215
+145  0.469231  -0.198342
+146  0.630769  -1.441852
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,509 - KOINGNAAS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.707692   1.331522
+1    0.630769  -0.107475
+2    0.523077  -0.681645
+3    0.753846   1.310012
+4    0.638462  -0.011829
+..        ...        ...
+142  0.653846  -0.212768
+143  0.738462  -0.718343
+144  0.307692   0.735215
+145  0.469231  -0.198342
+146  0.630769  -1.441852
+
+[147 rows x 2 columns]
+2023-08-13 13:10:42,509 - KOINGNAAS - INFO - saved to file :Results/TCN/3 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,509 - KOINGNAAS - INFO - saved to file :Results/TCN/3 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:42,513 - KOINGNAAS - INFO - This is the mse: 0.9293060405853906
+
+2023-08-13 13:10:42,513 - KOINGNAAS - INFO - This is the mse: 0.9293060405853906
+
+2023-08-13 13:10:42,520 - KOINGNAAS - INFO - This is the rmse: 0.9640052077584387
+
+2023-08-13 13:10:42,520 - KOINGNAAS - INFO - This is the rmse: 0.9640052077584387
+
+2023-08-13 13:10:42,521 - KOINGNAAS - INFO - This is the mae: 0.8562557197241235
+
+2023-08-13 13:10:42,521 - KOINGNAAS - INFO - This is the mae: 0.8562557197241235
+
+2023-08-13 13:10:42,521 - KOINGNAAS - INFO - This is the smape: 164.14827649907355
+
+2023-08-13 13:10:42,521 - KOINGNAAS - INFO - This is the smape: 164.14827649907355
+
+2023-08-13 13:10:42,522 - KOINGNAAS - INFO - This is the smape_std_dev: 56.55141574845305
+
+2023-08-13 13:10:42,522 - KOINGNAAS - INFO - This is the smape_std_dev: 56.55141574845305
+
+2023-08-13 13:10:42,522 - KOINGNAAS - INFO - TCN evaluation of KOINGNAAS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,522 - KOINGNAAS - INFO - TCN evaluation of KOINGNAAS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:42,522 - KOINGNAAS - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:42,522 - KOINGNAAS - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-09-04 11:30:44,028 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 3 for split 0
+2023-09-04 11:30:44,058 - KOINGNAAS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.448878   0.405701
+1      0.399002   0.384219
+2      0.376559   0.368011
+3      0.214464   0.224995
+4      0.187032   0.222968
+...         ...        ...
+26122  0.289277   0.320261
+26123  0.306733   0.316309
+26124  0.613466   0.563123
+26125  0.598504   0.524469
+26126  0.613466   0.489504
+
+[26127 rows x 2 columns]
+2023-09-04 11:30:44,058 - KOINGNAAS - INFO - saved to file :Results/TCN/3 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:44,058 - KOINGNAAS - INFO - This is the mse: 0.001456735516154041
+
+2023-09-04 11:30:44,058 - KOINGNAAS - INFO - This is the rmse: 0.03816720472020503
+
+2023-09-04 11:30:44,058 - KOINGNAAS - INFO - This is the mae: 0.02502175222205586
+
+2023-09-04 11:30:44,058 - KOINGNAAS - INFO - This is the smape: 6.877899240825935
+
+2023-09-04 11:30:44,058 - KOINGNAAS - INFO - This is the smape_std_dev: 8.420520159025997
+
+2023-09-04 11:30:44,058 - KOINGNAAS - INFO - TCN evaluation of KOINGNAAS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:45,541 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 6 for split 0
+2023-09-04 11:30:45,578 - KOINGNAAS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.448878   0.401420
+1      0.399002   0.384981
+2      0.376559   0.370341
+3      0.346633   0.355070
+4      0.329177   0.343087
+...         ...        ...
+52231  0.598504   0.540593
+52232  0.613466   0.520028
+52233  0.625935   0.499023
+52234  0.615960   0.480034
+52235  0.548628   0.464682
+
+[52236 rows x 2 columns]
+2023-09-04 11:30:45,578 - KOINGNAAS - INFO - saved to file :Results/TCN/6 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:45,578 - KOINGNAAS - INFO - This is the mse: 0.002002869606189633
+
+2023-09-04 11:30:45,578 - KOINGNAAS - INFO - This is the rmse: 0.044753431222529
+
+2023-09-04 11:30:45,578 - KOINGNAAS - INFO - This is the mae: 0.029441888268836494
+
+2023-09-04 11:30:45,578 - KOINGNAAS - INFO - This is the smape: 8.076392731908328
+
+2023-09-04 11:30:45,578 - KOINGNAAS - INFO - This is the smape_std_dev: 9.527737712285063
+
+2023-09-04 11:30:45,579 - KOINGNAAS - INFO - TCN evaluation of KOINGNAAS for the horizon of 6 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:47,487 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 9 for split 0
+2023-09-04 11:30:47,536 - KOINGNAAS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.399002   0.390798
+1      0.481297   0.443549
+2      0.533666   0.486996
+3      0.541147   0.521617
+4      0.528678   0.534903
+...         ...        ...
+78322  0.615960   0.487861
+78323  0.548628   0.473508
+78324  0.578554   0.463776
+78325  0.588529   0.462360
+78326  0.615960   0.460105
+
+[78327 rows x 2 columns]
+2023-09-04 11:30:47,536 - KOINGNAAS - INFO - saved to file :Results/TCN/9 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:47,536 - KOINGNAAS - INFO - This is the mse: 0.0025321287234723435
+
+2023-09-04 11:30:47,537 - KOINGNAAS - INFO - This is the rmse: 0.050320261560054945
+
+2023-09-04 11:30:47,537 - KOINGNAAS - INFO - This is the mae: 0.03333584502752102
+
+2023-09-04 11:30:47,537 - KOINGNAAS - INFO - This is the smape: 9.123009854668338
+
+2023-09-04 11:30:47,537 - KOINGNAAS - INFO - This is the smape_std_dev: 10.656502539704153
+
+2023-09-04 11:30:47,537 - KOINGNAAS - INFO - TCN evaluation of KOINGNAAS for the horizon of 9 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:50,189 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 12 for split 0
+2023-09-04 11:30:50,255 - KOINGNAAS - INFO - actual vs prediced is :          Actual  Predicted
+0       0.399002   0.383391
+1       0.481297   0.439103
+2       0.533666   0.488580
+3       0.541147   0.514293
+4       0.528678   0.520998
+...          ...        ...
+104395  0.588529   0.462114
+104396  0.615960   0.453799
+104397  0.625935   0.447383
+104398  0.618454   0.450239
+104399  0.600998   0.456583
+
+[104400 rows x 2 columns]
+2023-09-04 11:30:50,256 - KOINGNAAS - INFO - saved to file :Results/TCN/12 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:50,256 - KOINGNAAS - INFO - This is the mse: 0.0029139615972968466
+
+2023-09-04 11:30:50,256 - KOINGNAAS - INFO - This is the rmse: 0.05398112260130245
+
+2023-09-04 11:30:50,256 - KOINGNAAS - INFO - This is the mae: 0.035797644156836415
+
+2023-09-04 11:30:50,256 - KOINGNAAS - INFO - This is the smape: 9.759542328966099
+
+2023-09-04 11:30:50,256 - KOINGNAAS - INFO - This is the smape_std_dev: 11.088312550361895
+
+2023-09-04 11:30:50,257 - KOINGNAAS - INFO - TCN evaluation of KOINGNAAS for the horizon of 12 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:54,305 - KOINGNAAS - INFO - TCN evaluation started atKOINGNAAS for the horizon of 24 for split 0
+2023-09-04 11:30:54,423 - KOINGNAAS - INFO - actual vs prediced is :          Actual  Predicted
+0       0.259352   0.243996
+1       0.259352   0.231730
+2       0.251870   0.223641
+3       0.256858   0.209732
+4       0.239401   0.200224
+...          ...        ...
+208507  0.842893   0.589800
+208508  0.773067   0.570683
+208509  0.695761   0.539454
+208510  0.665835   0.507607
+208511  0.600998   0.483213
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:54,423 - KOINGNAAS - INFO - saved to file :Results/TCN/24 Hour Forecast/KOINGNAAS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:54,423 - KOINGNAAS - INFO - This is the mse: 0.004454088333069998
+
+2023-09-04 11:30:54,423 - KOINGNAAS - INFO - This is the rmse: 0.06673895663755913
+
+2023-09-04 11:30:54,423 - KOINGNAAS - INFO - This is the mae: 0.0451943373623491
+
+2023-09-04 11:30:54,424 - KOINGNAAS - INFO - This is the smape: 12.257081812171593
+
+2023-09-04 11:30:54,424 - KOINGNAAS - INFO - This is the smape_std_dev: 13.177074625994855
+
+2023-09-04 11:30:54,424 - KOINGNAAS - INFO - TCN evaluation of KOINGNAAS for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

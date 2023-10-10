@@ -1,0 +1,29 @@
+2023-08-05 13:45:57,478 - PRIESKA - INFO - TCN evaluation started atPRIESKA for the horizon of 24
+2023-08-05 13:45:57,479 - PRIESKA - ERROR - Error! : Unable to read data or write metrics for station PRIESKA and horizon length 24.
+2023-09-04 11:30:56,333 - PRIESKA - INFO - TCN evaluation started atPRIESKA for the horizon of 24 for split 0
+2023-09-04 11:30:56,501 - PRIESKA - INFO - actual vs prediced is :          Actual  Predicted
+0       0.396146   0.405884
+1       0.402570   0.388411
+2       0.376874   0.374117
+3       0.370450   0.352353
+4       0.346895   0.332650
+...          ...        ...
+208507  0.680942   0.692543
+208508  0.695931   0.684476
+208509  0.670236   0.658169
+208510  0.610278   0.623813
+208511  0.567452   0.581251
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:56,501 - PRIESKA - INFO - saved to file :Results/TCN/24 Hour Forecast/PRIESKA/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:56,501 - PRIESKA - INFO - This is the mse: 0.0026269638810599216
+
+2023-09-04 11:30:56,502 - PRIESKA - INFO - This is the rmse: 0.05125391576318752
+
+2023-09-04 11:30:56,502 - PRIESKA - INFO - This is the mae: 0.037760684760933694
+
+2023-09-04 11:30:56,503 - PRIESKA - INFO - This is the smape: 8.40324436976956
+
+2023-09-04 11:30:56,503 - PRIESKA - INFO - This is the smape_std_dev: 9.548830005057813
+
+2023-09-04 11:30:56,503 - PRIESKA - INFO - TCN evaluation of PRIESKA for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

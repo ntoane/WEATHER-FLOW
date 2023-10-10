@@ -1,0 +1,29 @@
+2023-08-05 13:45:57,356 - OUDTSHOORN - INFO - TCN evaluation started atOUDTSHOORN for the horizon of 24
+2023-08-05 13:45:57,357 - OUDTSHOORN - ERROR - Error! : Unable to read data or write metrics for station OUDTSHOORN and horizon length 24.
+2023-09-04 11:30:55,121 - OUDTSHOORN - INFO - TCN evaluation started atOUDTSHOORN for the horizon of 24 for split 0
+2023-09-04 11:30:55,237 - OUDTSHOORN - INFO - actual vs prediced is :          Actual  Predicted
+0       0.327549   0.298005
+1       0.323210   0.281286
+2       0.312364   0.269536
+3       0.290672   0.253793
+4       0.288503   0.237692
+...          ...        ...
+208507  0.648590   0.683711
+208508  0.657267   0.665829
+208509  0.663774   0.625111
+208510  0.553145   0.569723
+208511  0.490239   0.510512
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:55,237 - OUDTSHOORN - INFO - saved to file :Results/TCN/24 Hour Forecast/OUDTSHOORN/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:55,237 - OUDTSHOORN - INFO - This is the mse: 0.003324411111648955
+
+2023-09-04 11:30:55,237 - OUDTSHOORN - INFO - This is the rmse: 0.05765770643763898
+
+2023-09-04 11:30:55,238 - OUDTSHOORN - INFO - This is the mae: 0.041434348192076684
+
+2023-09-04 11:30:55,238 - OUDTSHOORN - INFO - This is the smape: 10.757884417829523
+
+2023-09-04 11:30:55,238 - OUDTSHOORN - INFO - This is the smape_std_dev: 11.397362235416294
+
+2023-09-04 11:30:55,238 - OUDTSHOORN - INFO - TCN evaluation of OUDTSHOORN for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

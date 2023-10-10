@@ -1,0 +1,316 @@
+2023-08-13 00:19:40,855 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 3
+2023-08-13 00:19:40,872 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.945455  -6.648310
+1    0.986364  -1.808262
+2    1.022727  -1.601116
+3    0.640909  -6.397382
+4    0.745455  -1.538199
+..        ...        ...
+142  0.654545  -2.589633
+143  0.754545  -1.611952
+144  0.504545  -6.617971
+145  0.495455  -2.376343
+146  0.472727  -1.829791
+
+[147 rows x 2 columns]
+2023-08-13 00:19:40,872 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:19:40,874 - VIOOLSDRIF - AWS - ERROR - Error! : Unable to read data or write metrics for station VIOOLSDRIF - AWS and horizon length 3.
+2023-08-13 00:23:07,303 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 3
+2023-08-13 00:23:07,322 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.945455  -6.648310
+1    0.986364  -1.808262
+2    1.022727  -1.601116
+3    0.640909  -6.397382
+4    0.745455  -1.538199
+..        ...        ...
+142  0.654545  -2.589633
+143  0.754545  -1.611952
+144  0.504545  -6.617971
+145  0.495455  -2.376343
+146  0.472727  -1.829791
+
+[147 rows x 2 columns]
+2023-08-13 00:23:07,323 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:23:07,324 - VIOOLSDRIF - AWS - INFO - This is the mse: 22.35807397573692
+
+2023-08-13 00:23:07,325 - VIOOLSDRIF - AWS - INFO - This is the rmse: 4.72843250726252
+
+2023-08-13 00:23:07,325 - VIOOLSDRIF - AWS - INFO - This is the mae: 4.186261822572666
+
+2023-08-13 00:23:07,325 - VIOOLSDRIF - AWS - INFO - This is the smape: 200.0
+
+2023-08-13 00:23:07,325 - VIOOLSDRIF - AWS - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 00:23:07,325 - VIOOLSDRIF - AWS - INFO - TCN evaluation of VIOOLSDRIF - AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:34:27,679 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 3
+2023-08-13 00:34:27,696 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.945455  -6.648310
+1    0.986364  -1.808262
+2    1.022727  -1.601116
+3    0.640909  -6.397382
+4    0.745455  -1.538199
+..        ...        ...
+142  0.654545  -2.589633
+143  0.754545  -1.611952
+144  0.504545  -6.617971
+145  0.495455  -2.376343
+146  0.472727  -1.829791
+
+[147 rows x 2 columns]
+2023-08-13 00:34:27,696 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:34:27,698 - VIOOLSDRIF - AWS - INFO - This is the mse: 22.35807397573692
+
+2023-08-13 00:34:27,698 - VIOOLSDRIF - AWS - INFO - This is the rmse: 4.72843250726252
+
+2023-08-13 00:34:27,698 - VIOOLSDRIF - AWS - INFO - This is the mae: 4.186261822572666
+
+2023-08-13 00:34:27,698 - VIOOLSDRIF - AWS - INFO - This is the smape: 200.0
+
+2023-08-13 00:34:27,698 - VIOOLSDRIF - AWS - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 00:34:27,698 - VIOOLSDRIF - AWS - INFO - TCN evaluation of VIOOLSDRIF - AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 00:41:00,882 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 3
+2023-08-13 00:41:00,906 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.945455  -6.648310
+1    0.986364  -1.808262
+2    1.022727  -1.601116
+3    0.640909  -6.397382
+4    0.745455  -1.538199
+..        ...        ...
+142  0.654545  -2.589633
+143  0.754545  -1.611952
+144  0.504545  -6.617971
+145  0.495455  -2.376343
+146  0.472727  -1.829791
+
+[147 rows x 2 columns]
+2023-08-13 00:41:00,906 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-08-13 00:41:00,910 - VIOOLSDRIF - AWS - INFO - This is the mse: 22.35807397573692
+
+2023-08-13 00:41:00,910 - VIOOLSDRIF - AWS - INFO - This is the rmse: 4.72843250726252
+
+2023-08-13 00:41:00,910 - VIOOLSDRIF - AWS - INFO - This is the mae: 4.186261822572666
+
+2023-08-13 00:41:00,910 - VIOOLSDRIF - AWS - INFO - This is the smape: 200.0
+
+2023-08-13 00:41:00,910 - VIOOLSDRIF - AWS - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 00:41:00,911 - VIOOLSDRIF - AWS - INFO - TCN evaluation of VIOOLSDRIF - AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,479 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 3 for split 0
+2023-08-13 13:10:43,495 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.945455  -4.600430
+1    0.986364   2.795585
+2    1.022727   5.833013
+3    0.640909  -4.434349
+4    0.745455   2.751924
+..        ...        ...
+142  0.654545   2.733146
+143  0.754545   4.956787
+144  0.504545  -6.029583
+145  0.495455   2.618945
+146  0.472727   5.488854
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,496 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,497 - VIOOLSDRIF - AWS - INFO - This is the mse: 20.012124177362992
+
+2023-08-13 13:10:43,497 - VIOOLSDRIF - AWS - INFO - This is the rmse: 4.473491273866865
+
+2023-08-13 13:10:43,497 - VIOOLSDRIF - AWS - INFO - This is the mae: 4.150042014347557
+
+2023-08-13 13:10:43,497 - VIOOLSDRIF - AWS - INFO - This is the smape: 159.95157428137327
+
+2023-08-13 13:10:43,497 - VIOOLSDRIF - AWS - INFO - This is the smape_std_dev: 35.70164188841296
+
+2023-08-13 13:10:43,497 - VIOOLSDRIF - AWS - INFO - TCN evaluation of VIOOLSDRIF - AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,498 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 3 for split 1
+2023-08-13 13:10:43,498 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 3 for split 1
+2023-08-13 13:10:43,520 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.824701  -2.460799
+1    0.776892  -2.206248
+2    0.685259  -0.623252
+3    0.621514  -2.787195
+4    0.613546  -2.054771
+..        ...        ...
+142  0.717131  -2.451699
+143  0.808765  -0.459458
+144  0.370518  -2.521612
+145  0.454183  -2.622239
+146  0.541833  -0.307060
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,520 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :       Actual  Predicted
+0    0.824701  -2.460799
+1    0.776892  -2.206248
+2    0.685259  -0.623252
+3    0.621514  -2.787195
+4    0.613546  -2.054771
+..        ...        ...
+142  0.717131  -2.451699
+143  0.808765  -0.459458
+144  0.370518  -2.521612
+145  0.454183  -2.622239
+146  0.541833  -0.307060
+
+[147 rows x 2 columns]
+2023-08-13 13:10:43,520 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,520 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - This is the mse: 5.904668644947854
+
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - This is the mse: 5.904668644947854
+
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - This is the rmse: 2.4299523956135136
+
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - This is the rmse: 2.4299523956135136
+
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - This is the mae: 2.243778632617828
+
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - This is the mae: 2.243778632617828
+
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - This is the smape: 200.0
+
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - This is the smape: 200.0
+
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - This is the smape_std_dev: 0.0
+
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - TCN evaluation of VIOOLSDRIF - AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - TCN evaluation of VIOOLSDRIF - AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-08-13 13:10:43,522 - VIOOLSDRIF - AWS - INFO - Finished evaluation of TCN error metrics for all stations.
+2023-09-04 11:30:44,760 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 3 for split 0
+2023-09-04 11:30:44,785 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.334928   0.308028
+1      0.299043   0.286379
+2      0.258373   0.270203
+3      0.234450   0.246520
+4      0.239234   0.236014
+...         ...        ...
+26122  0.356459   0.358794
+26123  0.342105   0.342488
+26124  0.626794   0.588401
+26125  0.595694   0.557529
+26126  0.593301   0.530097
+
+[26127 rows x 2 columns]
+2023-09-04 11:30:44,785 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/3 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:44,786 - VIOOLSDRIF - AWS - INFO - This is the mse: 0.0008369899216575876
+
+2023-09-04 11:30:44,786 - VIOOLSDRIF - AWS - INFO - This is the rmse: 0.028930778103217127
+
+2023-09-04 11:30:44,786 - VIOOLSDRIF - AWS - INFO - This is the mae: 0.02124209705411934
+
+2023-09-04 11:30:44,786 - VIOOLSDRIF - AWS - INFO - This is the smape: 5.1352552901395425
+
+2023-09-04 11:30:44,786 - VIOOLSDRIF - AWS - INFO - This is the smape_std_dev: 5.435921132786156
+
+2023-09-04 11:30:44,786 - VIOOLSDRIF - AWS - INFO - TCN evaluation of VIOOLSDRIF - AWS for the horizon of 3 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:46,469 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 6 for split 0
+2023-09-04 11:30:46,503 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.334928   0.297164
+1      0.299043   0.276618
+2      0.258373   0.263298
+3      0.241627   0.248320
+4      0.251196   0.236810
+...         ...        ...
+52231  0.595694   0.547358
+52232  0.593301   0.520316
+52233  0.552632   0.493031
+52234  0.545455   0.468745
+52235  0.531100   0.450218
+
+[52236 rows x 2 columns]
+2023-09-04 11:30:46,504 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/6 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:46,504 - VIOOLSDRIF - AWS - INFO - This is the mse: 0.001605396381806135
+
+2023-09-04 11:30:46,504 - VIOOLSDRIF - AWS - INFO - This is the rmse: 0.04006739799146102
+
+2023-09-04 11:30:46,504 - VIOOLSDRIF - AWS - INFO - This is the mae: 0.029479135288033306
+
+2023-09-04 11:30:46,504 - VIOOLSDRIF - AWS - INFO - This is the smape: 7.078978414316525
+
+2023-09-04 11:30:46,504 - VIOOLSDRIF - AWS - INFO - This is the smape_std_dev: 7.296501618542869
+
+2023-09-04 11:30:46,504 - VIOOLSDRIF - AWS - INFO - TCN evaluation of VIOOLSDRIF - AWS for the horizon of 6 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:48,717 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 9 for split 0
+2023-09-04 11:30:48,770 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :         Actual  Predicted
+0      0.526316   0.548166
+1      0.581340   0.606198
+2      0.612440   0.661944
+3      0.645933   0.710519
+4      0.686603   0.749423
+...         ...        ...
+78322  0.545455   0.500436
+78323  0.531100   0.482358
+78324  0.516746   0.466081
+78325  0.504785   0.447438
+78326  0.500000   0.435969
+
+[78327 rows x 2 columns]
+2023-09-04 11:30:48,770 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/9 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:48,770 - VIOOLSDRIF - AWS - INFO - This is the mse: 0.0018334687973332545
+
+2023-09-04 11:30:48,770 - VIOOLSDRIF - AWS - INFO - This is the rmse: 0.042819023778377464
+
+2023-09-04 11:30:48,770 - VIOOLSDRIF - AWS - INFO - This is the mae: 0.03191942565523116
+
+2023-09-04 11:30:48,770 - VIOOLSDRIF - AWS - INFO - This is the smape: 7.52893312392984
+
+2023-09-04 11:30:48,771 - VIOOLSDRIF - AWS - INFO - This is the smape_std_dev: 7.280056903571036
+
+2023-09-04 11:30:48,771 - VIOOLSDRIF - AWS - INFO - TCN evaluation of VIOOLSDRIF - AWS for the horizon of 9 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:51,739 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 12 for split 0
+2023-09-04 11:30:51,802 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :          Actual  Predicted
+0       0.526316   0.561183
+1       0.581340   0.620325
+2       0.612440   0.678087
+3       0.645933   0.730784
+4       0.686603   0.765235
+...          ...        ...
+104395  0.504785   0.461987
+104396  0.500000   0.444119
+104397  0.478469   0.430848
+104398  0.476077   0.429211
+104399  0.468900   0.433211
+
+[104400 rows x 2 columns]
+2023-09-04 11:30:51,803 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/12 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:51,803 - VIOOLSDRIF - AWS - INFO - This is the mse: 0.002148267332368154
+
+2023-09-04 11:30:51,803 - VIOOLSDRIF - AWS - INFO - This is the rmse: 0.04634940487609473
+
+2023-09-04 11:30:51,803 - VIOOLSDRIF - AWS - INFO - This is the mae: 0.03458643047512772
+
+2023-09-04 11:30:51,803 - VIOOLSDRIF - AWS - INFO - This is the smape: 8.267698486287271
+
+2023-09-04 11:30:51,803 - VIOOLSDRIF - AWS - INFO - This is the smape_std_dev: 8.140460930878149
+
+2023-09-04 11:30:51,804 - VIOOLSDRIF - AWS - INFO - TCN evaluation of VIOOLSDRIF - AWS for the horizon of 12 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt
+2023-09-04 11:30:57,730 - VIOOLSDRIF - AWS - INFO - TCN evaluation started atVIOOLSDRIF - AWS for the horizon of 24 for split 0
+2023-09-04 11:30:57,857 - VIOOLSDRIF - AWS - INFO - actual vs prediced is :          Actual  Predicted
+0       0.356459   0.353348
+1       0.294258   0.330158
+2       0.287081   0.308975
+3       0.265550   0.292300
+4       0.258373   0.275744
+...          ...        ...
+208507  0.660287   0.687525
+208508  0.681818   0.687282
+208509  0.660287   0.673191
+208510  0.636364   0.647295
+208511  0.600478   0.617500
+
+[208512 rows x 2 columns]
+2023-09-04 11:30:57,857 - VIOOLSDRIF - AWS - INFO - saved to file :Results/TCN/24 Hour Forecast/VIOOLSDRIF - AWS/Metrics/actual_vs_predicted.txt
+2023-09-04 11:30:57,857 - VIOOLSDRIF - AWS - INFO - This is the mse: 0.003242960259458548
+
+2023-09-04 11:30:57,857 - VIOOLSDRIF - AWS - INFO - This is the rmse: 0.05694699517497431
+
+2023-09-04 11:30:57,858 - VIOOLSDRIF - AWS - INFO - This is the mae: 0.0433278270548579
+
+2023-09-04 11:30:57,858 - VIOOLSDRIF - AWS - INFO - This is the smape: 10.266090673502429
+
+2023-09-04 11:30:57,858 - VIOOLSDRIF - AWS - INFO - This is the smape_std_dev: 9.6285874583523
+
+2023-09-04 11:30:57,858 - VIOOLSDRIF - AWS - INFO - TCN evaluation of VIOOLSDRIF - AWS for the horizon of 24 was saved to Results/{model}/{horizon} Hour Forecast/{station}/Metrics/metrics.txt

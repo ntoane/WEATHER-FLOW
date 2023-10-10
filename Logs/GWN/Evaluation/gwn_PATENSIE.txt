@@ -1,0 +1,160 @@
+2023-08-12 23:52:46,984 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-12 23:52:46,991 - PATENSIE - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 3.
+2023-08-12 23:52:46,992 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-08-12 23:52:46,992 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-08-12 23:52:46,995 - PATENSIE - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 6.
+2023-08-12 23:52:46,995 - PATENSIE - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 6.
+2023-08-13 00:44:40,813 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 00:44:40,814 - PATENSIE - ERROR - Error! : Unable to read data or write metrics for station PATENSIE and horizon length 3.
+2023-08-13 01:02:48,474 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 01:02:48,477 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,662 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 01:07:12,665 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,801 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 01:10:07,805 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,808 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,811 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,812 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-08-13 01:10:07,812 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-08-13 01:10:07,825 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,825 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,827 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,827 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,830 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,830 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,007 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 12:35:15,012 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,021 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:15,025 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,327 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-08-13 12:44:40,331 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,334 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,337 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,339 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-08-13 12:44:40,339 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-08-13 12:44:40,346 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,346 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,429 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,429 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,468 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,468 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:32,695 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-09-07 14:51:33,270 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:33,271 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-09-07 14:51:33,271 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-09-07 14:51:34,336 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:34,336 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:34,337 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 9
+2023-09-07 14:51:34,337 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 9
+2023-09-07 14:51:34,337 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 9
+2023-09-07 14:51:35,479 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:35,479 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:35,479 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:35,480 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 14:51:35,480 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 14:51:35,480 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 14:51:35,480 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 14:51:36,604 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:36,604 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:36,604 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:36,604 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:36,604 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 14:51:36,604 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 14:51:36,604 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 14:51:36,604 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 14:51:36,604 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 14:51:38,359 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:38,359 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:38,359 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:38,359 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:38,359 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:26,023 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-09-07 15:21:26,203 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:26,204 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:26,204 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-09-07 15:21:26,204 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-09-07 15:21:26,585 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:26,585 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:26,585 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:26,585 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:26,586 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 9
+2023-09-07 15:21:26,586 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 9
+2023-09-07 15:21:26,586 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 9
+2023-09-07 15:21:27,091 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,091 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,091 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,092 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,092 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,092 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,092 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 15:21:27,092 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 15:21:27,092 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 15:21:27,092 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 15:21:27,759 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,759 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,759 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,759 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,759 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,759 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,759 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,759 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:27,760 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 15:21:27,760 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 15:21:27,760 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 15:21:27,760 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 15:21:27,760 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 15:21:29,366 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:29,366 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:29,366 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:29,366 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:29,366 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:29,367 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:29,367 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:29,367 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:29,367 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:29,367 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:02,316 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 3
+2023-09-07 15:25:02,502 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:02,502 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:02,503 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-09-07 15:25:02,503 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 6
+2023-09-07 15:25:02,853 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:02,853 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:02,854 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:02,854 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:02,854 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 9
+2023-09-07 15:25:02,854 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 9
+2023-09-07 15:25:02,854 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 9
+2023-09-07 15:25:03,577 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:03,577 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:03,577 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:03,579 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:03,579 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:03,579 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:03,580 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 15:25:03,580 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 15:25:03,580 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 15:25:03,580 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 12
+2023-09-07 15:25:04,314 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:04,314 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:04,314 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:04,314 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:04,315 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:04,315 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:04,315 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:04,315 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:04,315 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 15:25:04,315 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 15:25:04,315 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 15:25:04,315 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 15:25:04,315 - PATENSIE - INFO - GWN evaluation started atPATENSIE for the horizon of 24
+2023-09-07 15:25:06,149 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:06,149 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:06,149 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:06,149 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:06,149 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:06,150 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:06,150 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:06,150 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:06,150 - PATENSIE - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:25:06,150 - PATENSIE - INFO - Finished computing evaluation error metrics.

@@ -1,0 +1,9 @@
+2023-08-13 00:13:32,279 - FRASERBURG - INFO - TCN model training started at FRASERBURG
+2023-08-13 00:13:32,465 - FRASERBURG - INFO - TCN Model on split 1/1 at FRASERBURG station forecasting 3 hours ahead.
+2023-08-13 00:13:40,459 - FRASERBURG - INFO - Loss: [5.952898979187012, 376.80584716796875]
+2023-08-13 00:13:40,459 - FRASERBURG - INFO - Val Loss: [392.93011474609375, 35.17673110961914]
+2023-08-13 00:13:42,491 - FRASERBURG - INFO - TCN training done on split 1/1 at FRASERBURG station forecasting 3 hours ahead.
+2023-08-13 00:13:42,492 - FRASERBURG - INFO - TCN training finished at FRASERBURG
+2023-08-13 12:57:26,933 - FRASERBURG - INFO - TCN model training started at FRASERBURG
+2023-08-13 12:57:27,113 - FRASERBURG - INFO - TCN Model on split 1/2 at FRASERBURG station forecasting 3 hours ahead.
+2023-08-13 12:57:35,516 - FRASERBURG - INFO - TCN Model on split 2/2 at FRASERBURG station forecasting 3 hours ahead.

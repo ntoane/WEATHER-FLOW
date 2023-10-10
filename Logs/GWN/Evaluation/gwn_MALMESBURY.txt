@@ -1,0 +1,160 @@
+2023-08-12 23:52:46,948 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 3
+2023-08-12 23:52:46,950 - MALMESBURY - ERROR - Error! : Unable to read data or write metrics for station MALMESBURY and horizon length 3.
+2023-08-12 23:52:46,950 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-08-12 23:52:46,950 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-08-12 23:52:46,951 - MALMESBURY - ERROR - Error! : Unable to read data or write metrics for station MALMESBURY and horizon length 6.
+2023-08-12 23:52:46,951 - MALMESBURY - ERROR - Error! : Unable to read data or write metrics for station MALMESBURY and horizon length 6.
+2023-08-13 00:44:40,805 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 3
+2023-08-13 00:44:40,807 - MALMESBURY - ERROR - Error! : Unable to read data or write metrics for station MALMESBURY and horizon length 3.
+2023-08-13 01:02:48,456 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 3
+2023-08-13 01:02:48,459 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:07:12,640 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 3
+2023-08-13 01:07:12,645 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,670 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 3
+2023-08-13 01:10:07,676 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,679 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,685 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,686 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-08-13 01:10:07,686 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-08-13 01:10:07,690 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,690 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,695 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,695 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,699 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 01:10:07,699 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,843 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 3
+2023-08-13 12:35:14,847 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,854 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:35:14,859 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,217 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 3
+2023-08-13 12:44:40,220 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,222 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,225 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,226 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-08-13 12:44:40,226 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-08-13 12:44:40,229 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,229 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,235 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,235 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,239 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-08-13 12:44:40,239 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:07,541 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 3
+2023-09-07 14:51:08,048 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:08,048 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-09-07 14:51:08,048 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-09-07 14:51:09,287 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:09,287 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:09,287 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 9
+2023-09-07 14:51:09,287 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 9
+2023-09-07 14:51:09,287 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 9
+2023-09-07 14:51:10,450 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:10,450 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:10,450 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:10,451 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 14:51:10,451 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 14:51:10,451 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 14:51:10,451 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 14:51:11,675 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:11,675 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:11,675 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:11,675 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:11,675 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 14:51:11,675 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 14:51:11,675 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 14:51:11,675 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 14:51:11,675 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 14:51:13,223 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:13,223 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:13,223 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:13,223 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 14:51:13,223 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,769 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 3
+2023-09-07 15:21:10,951 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,952 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:10,952 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-09-07 15:21:10,952 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-09-07 15:21:11,314 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:11,314 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:11,314 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:11,314 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:11,315 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 9
+2023-09-07 15:21:11,315 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 9
+2023-09-07 15:21:11,315 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 9
+2023-09-07 15:21:11,817 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:11,817 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:11,817 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:11,818 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:11,818 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:11,818 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:11,818 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 15:21:11,818 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 15:21:11,818 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 15:21:11,818 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 15:21:12,594 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:12,594 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:12,594 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:12,594 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:12,595 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:12,595 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:12,595 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:12,595 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:12,595 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 15:21:12,595 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 15:21:12,595 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 15:21:12,595 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 15:21:12,595 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 15:21:14,201 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:14,201 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:14,201 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:14,201 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:14,201 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:14,201 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:14,201 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:14,201 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:14,201 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:21:14,201 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,466 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 3
+2023-09-07 15:24:48,652 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,652 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,652 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-09-07 15:24:48,652 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 6
+2023-09-07 15:24:48,997 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,997 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,997 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,997 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:48,998 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 9
+2023-09-07 15:24:48,998 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 9
+2023-09-07 15:24:48,998 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 9
+2023-09-07 15:24:49,518 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:49,518 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:49,518 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:49,519 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:49,519 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:49,519 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:49,519 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 15:24:49,519 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 15:24:49,519 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 15:24:49,519 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 12
+2023-09-07 15:24:50,210 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:50,210 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:50,210 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:50,210 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:50,211 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:50,211 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:50,211 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:50,211 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:50,211 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 15:24:50,211 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 15:24:50,211 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 15:24:50,211 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 15:24:50,211 - MALMESBURY - INFO - GWN evaluation started atMALMESBURY for the horizon of 24
+2023-09-07 15:24:51,881 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:51,881 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:51,881 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:51,881 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:51,881 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:51,881 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:51,881 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:51,881 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:51,881 - MALMESBURY - INFO - Finished computing evaluation error metrics.
+2023-09-07 15:24:51,881 - MALMESBURY - INFO - Finished computing evaluation error metrics.
