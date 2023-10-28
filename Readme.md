@@ -49,7 +49,9 @@ Besides from above method there are 2 other methods to run experiments:
 
 1. Through command line arguments.
 - One can run the platform using predefined experiment intructions. An example is shown below:
-  python3 main.py --mode train_tcn
+  
+    python3 main.py --mode train_tcn
+
 - There are many possible texperiment instructions that can be used. The list is shown below:
 
 | NN Model & functionality  | Instruction    |
