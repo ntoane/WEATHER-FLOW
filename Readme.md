@@ -52,7 +52,7 @@ Besides from above method there are 2 other methods to run experiments:
   
     python3 main.py --mode train_tcn
 
-- There are many possible texperiment instructions that can be used. The list is shown below:
+- There are many possible experiment instructions that can be used. The list is shown below:
 
 | NN Model & functionality  | Instruction    |
 | ------------------------- | -------------- |
