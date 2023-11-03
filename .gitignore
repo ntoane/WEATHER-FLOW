@@ -5,3 +5,5 @@ venvName/
 DataNew/
 Logs/
 Garage/
+__pycache__/
+Results/
