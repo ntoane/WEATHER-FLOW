@@ -1,7 +1,7 @@
 ############################################# Model Configuration ###############################################
 device:
   type: int
-  default: 0
+  default: 1
   help: Device to place model on (1 for GPU, 0 for CPU)
 model_name:
   type: str
@@ -166,7 +166,7 @@ min_learning_rate:
   help: Minimum learning rate
 epochs:
   type: int
-  default: 30
+  default: 10 # was 30
   help: Number of training epochs
 test_every_n_epochs:
   type: int
@@ -196,4 +196,3 @@ save_dir:
   type: str
   default: 'Garage/Final Models/CLCRN'
   help: Directory to save the model
-

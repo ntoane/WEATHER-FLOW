@@ -2,6 +2,8 @@ import numpy as np
 import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
+import warnings
+warnings.filterwarnings("ignore", category=DeprecationWarning) # Suppress the DeprecationWarning
 from mpl_toolkits.basemap import Basemap
 import seaborn as sns
 import csv

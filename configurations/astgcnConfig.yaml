@@ -93,7 +93,7 @@ adjdata:
 
 num_configs:
   type: int
-  default: 50
+  default: 5 # was 50
   help: number of random configurations to search through
 
 batch_size :
@@ -103,8 +103,8 @@ batch_size :
 
 training_epoch:
   type: int
-  default : 30 #this was HPO amount
-  # default: 5
+  # default : 30 #this was HPO amount
+  default: 5
   help :  Number of epochs to train. 
 
 gru_units: 

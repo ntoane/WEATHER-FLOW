@@ -43,7 +43,7 @@ tune_clcrn:
   help: whether to perform random search HPO on GWN model
 num_configs:
   type: int
-  default: 30
+  default: 2 # was 30
   help: number of random configurations to search through
 ############################ Perform evaluations calculating metrics of final models' results  ############################
 eval_tcn:
@@ -124,12 +124,12 @@ vis:
 
 modelVis:
   type: str
-  default: GWN
+  default: AGCRN
   help: the model to visualise
 
 horizonVis:
   type: str
-  default: "9"
+  default: "24" # was 9
   help: the horizon to visualise
 
 splitVis:
