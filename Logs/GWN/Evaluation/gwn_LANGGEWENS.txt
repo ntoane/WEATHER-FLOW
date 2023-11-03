@@ -158,3 +158,6 @@
 2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:48,465 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:38,910 - LANGGEWENS - INFO - GWN evaluation started atLANGGEWENS for the horizon of 24
+2023-11-03 12:18:40,671 - LANGGEWENS - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:40,673 - LANGGEWENS - INFO - Finished computing evaluation error metrics.

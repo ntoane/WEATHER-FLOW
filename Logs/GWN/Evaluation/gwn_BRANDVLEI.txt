@@ -158,3 +158,6 @@
 2023-09-07 15:23:46,644 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:23:46,644 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:23:46,644 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:13,571 - BRANDVLEI - INFO - GWN evaluation started atBRANDVLEI for the horizon of 24
+2023-11-03 12:18:15,037 - BRANDVLEI - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:15,037 - BRANDVLEI - INFO - Finished computing evaluation error metrics.

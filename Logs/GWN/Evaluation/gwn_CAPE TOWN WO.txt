@@ -158,3 +158,6 @@
 2023-09-07 15:23:54,472 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:23:54,472 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:23:54,472 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:16,885 - CAPE TOWN WO - INFO - GWN evaluation started atCAPE TOWN WO for the horizon of 24
+2023-11-03 12:18:18,175 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:18,176 - CAPE TOWN WO - INFO - Finished computing evaluation error metrics.

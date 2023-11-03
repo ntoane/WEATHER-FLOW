@@ -158,3 +158,6 @@
 2023-09-07 15:24:14,139 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:14,139 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:14,139 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:24,792 - FORT BEAUFORT - INFO - GWN evaluation started atFORT BEAUFORT for the horizon of 24
+2023-11-03 12:18:26,104 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:26,105 - FORT BEAUFORT - INFO - Finished computing evaluation error metrics.

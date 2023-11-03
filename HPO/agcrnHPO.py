@@ -80,7 +80,8 @@ class agcrnHPO(modelHPO):
                 data = data[..., :self.modelConfig['input_dim']['default']]  #need to make 6 (inputs)
                 label = target[..., :self.modelConfig['output_dim']['default']]   #need to make 1 (output supposed to predict)
                 output = self.model(data, target, teacher_forcing_ratio=0.)
-                loss = self.loss(output.cpu(), label) #changes from cuda
+                # loss = self.loss(output.cpu(), label) #changes from cuda
+                loss = self.loss(output, label) #changes from cuda
                 #a whole batch of Metr_LA is filtered
                 if not torch.isnan(loss):
                     total_val_loss += loss.item()
@@ -108,7 +109,8 @@ class agcrnHPO(modelHPO):
 
             output = self.model(data, target, teacher_forcing_ratio=teacher_forcing_ratio)
 
-            loss = self.loss(output.cpu(), label)
+            # loss = self.loss(output.cpu(), label)
+            loss = self.loss(output, label)
             loss.backward()
 
             # add max grad clipping
@@ -183,10 +185,16 @@ class agcrnHPO(modelHPO):
         agcrnUtil.init_seed(self.modelConfig['seed']['default'])
 
         if torch.cuda.is_available():
-            torch.cuda.set_device(int(DEVICE))
+            # MODIFIED: Extract the device index from the string 'cuda:1'
+            device_index = int(DEVICE.split(':')[-1])
+            torch.cuda.set_device(device_index)
+            # torch.cuda.set_device(int(DEVICE))
         else:
             DEVICE= 'cpu'
-
+        
+        # MODIFIED: Force device to be CPU for now
+        # DEVICE = 'cpu'
+        print('Using device:', DEVICE)
         #init model
         model = Network(self.modelConfig)
         model = model.to(DEVICE)

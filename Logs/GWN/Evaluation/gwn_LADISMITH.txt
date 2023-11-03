@@ -158,3 +158,6 @@
 2023-09-07 15:24:40,750 - LADISMITH - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:40,750 - LADISMITH - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:40,750 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:35,853 - LADISMITH - INFO - GWN evaluation started atLADISMITH for the horizon of 24
+2023-11-03 12:18:37,303 - LADISMITH - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:37,304 - LADISMITH - INFO - Finished computing evaluation error metrics.

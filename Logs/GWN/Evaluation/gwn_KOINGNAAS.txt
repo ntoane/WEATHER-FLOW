@@ -158,3 +158,6 @@
 2023-09-07 15:24:37,467 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:37,467 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:37,467 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:34,018 - KOINGNAAS - INFO - GWN evaluation started atKOINGNAAS for the horizon of 24
+2023-11-03 12:18:35,852 - KOINGNAAS - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:35,852 - KOINGNAAS - INFO - Finished computing evaluation error metrics.

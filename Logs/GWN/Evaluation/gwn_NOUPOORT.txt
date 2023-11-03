@@ -158,3 +158,6 @@
 2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:58,742 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:43,791 - NOUPOORT - INFO - GWN evaluation started atNOUPOORT for the horizon of 24
+2023-11-03 12:18:45,249 - NOUPOORT - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:45,250 - NOUPOORT - INFO - Finished computing evaluation error metrics.

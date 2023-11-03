@@ -172,3 +172,6 @@
 2023-09-07 15:23:30,895 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:23:30,895 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:23:30,895 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:06,863 - ADDO ELEPHANT PARK - INFO - GWN evaluation started atADDO ELEPHANT PARK for the horizon of 24
+2023-11-03 12:18:08,820 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:08,822 - ADDO ELEPHANT PARK - INFO - Finished computing evaluation error metrics.

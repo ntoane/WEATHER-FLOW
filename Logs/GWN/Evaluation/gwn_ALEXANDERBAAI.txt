@@ -158,3 +158,6 @@
 2023-09-07 15:23:35,000 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:23:35,000 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:23:35,000 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:08,823 - ALEXANDERBAAI - INFO - GWN evaluation started atALEXANDERBAAI for the horizon of 24
+2023-11-03 12:18:10,167 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:10,168 - ALEXANDERBAAI - INFO - Finished computing evaluation error metrics.

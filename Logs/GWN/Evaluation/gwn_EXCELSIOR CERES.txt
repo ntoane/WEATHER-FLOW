@@ -158,3 +158,6 @@
 2023-09-07 15:24:10,831 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:10,831 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:10,831 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:22,978 - EXCELSIOR CERES - INFO - GWN evaluation started atEXCELSIOR CERES for the horizon of 24
+2023-11-03 12:18:24,791 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:24,792 - EXCELSIOR CERES - INFO - Finished computing evaluation error metrics.

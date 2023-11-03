@@ -1,0 +1,14 @@
+Lag - 24
+Rnn Units - 64
+Layers - 2
+Batch Size - 256
+Epochs - 10
+Total Loss: 0.028693347633110756
+
+Lag - 24
+Rnn Units - 32
+Layers - 2
+Batch Size - 32
+Epochs - 50
+Total Loss: 0.026288468982408147
+

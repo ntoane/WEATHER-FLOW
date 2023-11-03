@@ -1,0 +1,1 @@
+This is the best configuration [32, 40, 123, 256] with an smape of 15.047389603391787

@@ -158,3 +158,6 @@
 2023-09-07 15:25:23,128 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:25:23,128 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:25:23,128 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:54,773 - PORT NOLLOTH - INFO - GWN evaluation started atPORT NOLLOTH for the horizon of 24
+2023-11-03 12:18:56,436 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:56,437 - PORT NOLLOTH - INFO - Finished computing evaluation error metrics.

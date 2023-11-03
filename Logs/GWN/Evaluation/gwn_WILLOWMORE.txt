@@ -125,3 +125,6 @@
 2023-09-07 15:26:09,644 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:26:09,644 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:26:09,644 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:19:15,532 - WILLOWMORE - INFO - GWN evaluation started atWILLOWMORE for the horizon of 24
+2023-11-03 12:19:17,103 - WILLOWMORE - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:19:17,103 - WILLOWMORE - INFO - Finished computing evaluation error metrics.

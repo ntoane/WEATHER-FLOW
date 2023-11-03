@@ -158,3 +158,6 @@
 2023-09-07 15:25:43,622 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:25:43,622 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:25:43,622 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:19:04,257 - SPRINGBOK WO - INFO - GWN evaluation started atSPRINGBOK WO for the horizon of 24
+2023-11-03 12:19:06,033 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:19:06,034 - SPRINGBOK WO - INFO - Finished computing evaluation error metrics.

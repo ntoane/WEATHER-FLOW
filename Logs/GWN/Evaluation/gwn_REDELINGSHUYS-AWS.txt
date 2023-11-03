@@ -158,3 +158,6 @@
 2023-09-07 15:25:33,234 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:25:33,234 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:25:33,234 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:59,722 - REDELINGSHUYS-AWS - INFO - GWN evaluation started atREDELINGSHUYS-AWS for the horizon of 24
+2023-11-03 12:19:01,073 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:19:01,074 - REDELINGSHUYS-AWS - INFO - Finished computing evaluation error metrics.

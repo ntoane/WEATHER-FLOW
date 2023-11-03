@@ -158,3 +158,6 @@
 2023-09-07 15:24:21,305 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:21,305 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
 2023-09-07 15:24:21,305 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:27,831 - GEORGE WITFONTEIN - INFO - GWN evaluation started atGEORGE WITFONTEIN for the horizon of 24
+2023-11-03 12:18:29,385 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
+2023-11-03 12:18:29,385 - GEORGE WITFONTEIN - INFO - Finished computing evaluation error metrics.
