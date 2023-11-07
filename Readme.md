@@ -1,5 +1,4 @@
-# Weather-Flow
-test server github
+# Weather-Flow Experimental Platform
 
 *The Deep Learning pipeline for weather prediction, developed as an experimental platform for the UCT Cognitive Systems Lab, incorporates temporal and spatio-temporal deep learning models. This pipeline aims to facilitate experimentation and integration of the latest and most cutting-edge ST-GNN (Spatio-Temporal Graph Neural Network) models for weather forecasting.*
 
@@ -41,6 +40,10 @@ See `requirements_all.txt`
 
 # Experiments:
 
+## Data
+
+For ST-GNNs, unzip the graph station data found in <DataNew/Graph Neural Network Data/Graph Station Data/graph.zip>
+
 *Only use the following command for all training, HPO and evaluation experiments with the models. Change the default configuration in the config.yaml file for the intended option of either training or performing HPO or evaluating the models to true.*
 
 python3 main.py --mode config.yaml
@@ -66,7 +69,7 @@ GWN GNN HPO on 24 hour forecasting horizon.
 ***Evaluating Models' Performance(MSE, RMSE, MAE, SMAPE)***
 
 For TCN:
-Evaluation across 21 weather stations on [3, 6, 9, 12, 24] hour forecasting horizon.
+Evaluation across 45 weather stations on [3, 6, 9, 12, 24] hour forecasting horizon.
 
 For GWN:
 GWN GNN HPO on [3, 6, 9, 12, 24] hour forecasting horizon on each of the 21 weather stations:
